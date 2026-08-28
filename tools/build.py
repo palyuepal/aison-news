@@ -46,7 +46,7 @@ def build_rss(data,site):
         url=urljoin(base,f"article.html?id={n['id']}")
         items.append(f'''<item><title>{html.escape(n['title'])}</title><link>{html.escape(url)}</link><guid>{html.escape(url)}</guid><pubDate>{format_datetime(dt)}</pubDate><description>{html.escape(n['excerpt'])}</description></item>''')
     rss=f'''<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{html.escape(site['name'])}｜每日 AI 新聞・香港</title><link>{html.escape(base)}</link><description>{html.escape(site['description'])}</description><language>zh-HK</language>{''.join(items)}</channel></rss>'''
-    (ROOT/'rss.xml').write_text(rss,encoding='utf-8')
+    (ROOT/'rss.xml').write_text(rss+'\n',encoding='utf-8')
 
 def build_sitemap(data,site):
     base=site['baseUrl']; pages=['','daily.html','archive.html','about.html','privacy.html']
@@ -55,7 +55,7 @@ def build_sitemap(data,site):
         u=urljoin(base,'article.html?id='+n['id'])
         urls.append(f'<url><loc>{html.escape(u)}</loc><lastmod>{n["date"]}</lastmod></url>')
     xml='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(urls)+'</urlset>'
-    (ROOT/'sitemap.xml').write_text(xml,encoding='utf-8')
+    (ROOT/'sitemap.xml').write_text(xml+'\n',encoding='utf-8')
 
 def build_search(data):
     slim=[{'id':n['id'],'rank':n['rank'],'title':n['title'],'excerpt':n['excerpt'],'category':n['category'],'tags':n.get('tags',[]),'date':n['date']} for n in data]
