@@ -13,14 +13,14 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="alternate" type="application/rss+xml" title="AIson RSS" href="rss.xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260829-design">
 </head>
 <body data-page="home">
 <header class="topbar">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="AIson 首頁"><img src="assets/mascot.webp" alt="AIson 狗狗 IP"><div><strong><span>AI</span>son</strong><small>每日 AI 新聞站</small></div></a>
-    <nav class="navlinks" aria-label="主要導覽"><a class="active" href="index.html">首頁</a><a href="daily.html">今日 AI 10 件事</a><a href="#categories">分類</a><a href="archive.html">新聞庫</a><a href="about.html">關於 AIson</a></nav>
-    <button class="search-trigger" id="searchTrigger" aria-label="開啟搜尋">⌕ <span>搜尋</span></button>
+    <nav class="navlinks" aria-label="主要導覽"><a class="active" href="index.html"><i>⌂</i>首頁</a><a href="daily.html"><i>☀</i>今日 AI 10 件事</a><a href="#categories"><i>◌</i>分類瀏覽</a><a href="archive.html"><i>▤</i>熱門標籤</a><a href="about.html"><i>✦</i>關於 AIson</a></nav>
+    <button class="search-trigger" id="searchTrigger" aria-label="開啟搜尋"><b>⌕</b><span>搜尋新聞、主題、工具…</span><kbd>⌘K</kbd></button>
     <button class="menuBtn" id="menuBtn" aria-label="開啟選單">☰</button>
   </div>
   <div class="mobile-nav" id="mobileNav"><a href="index.html">首頁</a><a href="daily.html">今日 AI 10 件事</a><a href="#categories">分類</a><a href="archive.html">新聞庫</a><a href="about.html">關於 AIson</a></div>
@@ -29,35 +29,35 @@
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <div class="eyebrow">🐶 香港人的 AI 新聞懶人包</div>
-      <h1>每日 AI 大事，<br><em>10 件就夠。</em></h1>
-      <p>AIson 每日幫你由全球資訊入面篩選最值得知道嘅消息，唔止講發生咩事，仲會講埋<strong>同香港人、打工仔、做生意同創作者有咩關係。</strong></p>
+      <div class="eyebrow"><span>✦</span> 香港人的 AI 新聞懶人包</div>
+      <h1>每日幫你睇晒<br><em>全球 AI 大事。</em></h1>
+      <p>由 AIson 每日為你篩選最值得知道嘅 10 件新聞，唔止講發生咩事，仲會講埋<strong>同香港人、打工仔、做生意同創作者有咩關係。</strong></p>
       <div class="hero-actions"><a class="primary-btn" href="daily.html">睇今日 10 件事 →</a><button class="ghost-btn" id="heroSearch">搜尋舊新聞</button></div>
-      <div class="proof-row"><span>✓ 每日精選</span><span>✓ 來源核實</span><span>✓ 香港視點</span><span>✓ 可搜尋保存</span></div>
+      <div class="proof-row"><span><i>⚡</i><b>每日更新</b><small>10 件 AI 大事</small></span><span><i>◎</i><b>幫你整理</b><small>重點唔沉底</small></span><span><i>🇭🇰</i><b>香港視點</b><small>同你有咩關係</small></span><span><i>🔖</i><b>長期保存</b><small>隨時搵得返</small></span></div>
     </div>
-    <div class="hero-mascot"><div class="glow"></div><img src="assets/mascot.webp" alt="AIson 狗狗拿著 AIson 標誌"><div class="speech"><b>今日幫你睇咗好多 AI 資訊</b><span>最後只留最值得知道嘅 10 件 👇</span></div></div>
+    <div class="hero-mascot"><div class="glow"></div><div class="hero-orbit one"></div><div class="hero-orbit two"></div><img src="assets/mascot.webp" alt="AIson 狗狗拿著 AIson 標誌"><div class="speech"><small>AIson 今日幫你篩咗</small><b><em>20+</em> 則新聞</b><span>最後只保留最值得知道嘅 <strong>10 件！</strong></span></div><div class="scan-chip">✦ AIson Daily Brief</div></div>
   </div>
 </section>
 <section class="ticker" aria-label="AIson 網站特色"><div class="container ticker-inner"><b>AIson NOW</b><span>每日 AI 10 件事</span><span>OpenAI</span><span>Google</span><span>Claude</span><span>AI Agent</span><span>AI 影片</span><span>香港 AI</span></div></section>
 <section class="section" id="today">
   <div class="container">
-    <div class="section-title"><div><div class="mini-label">DAILY BRIEF</div><h2>🔥 今日 AI 10 件事</h2><p id="editionDate">2026.08.28 · 已核實新聞版</p></div><div class="section-actions"><button class="filter-btn active" data-cat="全部">全部</button><button class="filter-btn" data-cat="OpenAI">OpenAI</button><button class="filter-btn" data-cat="Google">Google</button><button class="filter-btn" data-cat="AI 工具">AI 工具</button></div></div>
+    <div class="section-title"><div><div class="mini-label">DAILY BRIEF</div><h2><span class="title-mark">✦</span> 今日 AI 10 件事</h2><p id="editionDate">2026.08.28 · 已核實新聞版</p></div><div class="section-actions"><button class="filter-btn active" data-cat="全部">全部</button><button class="filter-btn" data-cat="OpenAI">◉ OpenAI</button><button class="filter-btn" data-cat="Google">G Google</button><button class="filter-btn" data-cat="AI 工具">✣ AI 工具</button></div></div>
     <div class="layout">
       <div>
-        <div class="build-note"><span>🚧</span><div><b>V3 Newsroom 已啟用</b><p>今日 10 件事可獨立分享、Copy Threads 版本；內容亦可由 Newsroom Editor 排序、修改及匯出。</p></div></div>
+        <div class="build-note"><span>✦</span><div><b>AIson Newsroom</b><p>每篇都保留已核實來源、香港影響與 AIson Take；一鍵分享，亦可長期搜尋。</p></div><a href="daily.html">查看今日完整版 →</a></div>
         <div class="news-grid" id="newsGrid"></div><div class="empty" id="empty">搵唔到相關新聞，試下其他關鍵字。</div>
       </div>
       <aside class="sidebar">
-        <div class="panel dark"><div class="panel-kicker">TODAY</div><h3>⭐ 今日最重要 3 件事</h3><div class="top-list" id="topList"></div></div>
+        <div class="panel dark key-stories"><div class="panel-kicker">TODAY'S PICK</div><h3><span>★</span> 今日最重要 3 件事</h3><div class="top-list" id="topList"></div></div>
         <div class="panel" id="categories"><div class="panel-kicker">EXPLORE</div><h3>熱門分類</h3><div class="categories" id="categoryList"></div></div>
-        <div class="panel newsletter"><div class="newsletter-mascot"><img src="assets/mascot.webp" alt="AIson"></div><div><div class="panel-kicker">NEWSLETTER</div><h3>每日 AI 精選送到 Email</h3><p>正式上線後可每日早上收到 AIson 10 件事。</p><form class="subscribe" name="newsletter" method="POST" data-netlify="true" onsubmit="subscribe(event)"><input type="hidden" name="form-name" value="newsletter"><input type="email" name="email" placeholder="你的 Email" aria-label="Email" required><button>訂閱</button></form></div></div>
+        <div class="panel newsletter"><div class="newsletter-mascot"><img src="assets/mascot.webp" alt="AIson"></div><div><div class="panel-kicker">DAILY NEWSLETTER</div><h3>訂閱每日 <em>AI 新聞</em></h3><p>每日早上收到 AIson 精選 10 件事，直接送到你的 Email。</p><form class="subscribe" name="newsletter" method="POST" data-netlify="true" onsubmit="subscribe(event)"><input type="hidden" name="form-name" value="newsletter"><input type="email" name="email" placeholder="輸入你的 Email" aria-label="Email" required><button>立即訂閱</button></form></div></div>
       </aside>
     </div>
   </div>
 </section>
 <section class="section soft" id="why">
   <div class="container"><div class="section-title"><div><div class="mini-label">WHY AISON</div><h2>Threads 會沉底，網站唔會。</h2><p>每篇內容都變成一個可以搜尋、分類、分享同長期累積嘅 AI 資料庫。</p></div></div>
-  <div class="features"><article><i>⌕</i><h3>搜尋舊新聞</h3><p>按公司、工具、主題或關鍵字搵返內容。</p></article><article><i>🇭🇰</i><h3>香港視點</h3><p>每篇固定回答「同香港人有咩關係？」</p></article><article><i>🐶</i><h3>AIson Take</h3><p>唔只翻譯新聞，加入判斷、用途同實際影響。</p></article><article><i>↗</i><h3>一篇一網址</h3><p>方便 Threads、IG、WhatsApp 直接分享。</p></article></div></div>
+  <div class="features"><article><i>⌕</i><h3>強大搜尋功能</h3><p>關鍵字、標籤、日期，快速搵返想睇嘅新聞。</p></article><article><i>🔖</i><h3>長期保存，隨時回顧</h3><p>所有新聞分類整理，唔怕內容沉底。</p></article><article><i>↗</i><h3>一鍵分享</h3><p>每篇文章都有獨立網址，方便即時分享。</p></article><article><i>♡</i><h3>香港視點</h3><p>所有新聞都會話你知，同香港人有咩關係。</p></article></div></div>
 </section>
 <section class="cta"><div class="container cta-card"><div><span>AIson DAILY</span><h2>複雜嘅 AI，AIson 幫你講簡單。</h2><p>網站會成為每日新聞嘅「永久主頁」，Threads 同 IG 就負責即時觸及同引流。</p></div><a class="primary-btn" href="about.html">了解 AIson →</a></div></section>
 </main>
