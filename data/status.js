@@ -7,5 +7,5 @@ window.AISON_STATUS = {
   "articleCount": 30,
   "verifiedCount": 30,
   "latestEdition": "2026-08-30",
-  "generatedAt": "2026-08-30T13:24:58.881341+00:00"
+  "generatedAt": "2026-08-30T14:07:41.782882+00:00"
 };

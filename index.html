@@ -13,17 +13,17 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="alternate" type="application/rss+xml" title="AIson RSS" href="rss.xml">
-  <link rel="stylesheet" href="styles.css?v=20260829-reporting">
+  <link rel="stylesheet" href="styles.css?v=20260830-features">
 </head>
 <body data-page="home">
 <header class="topbar">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="AIson 首頁"><img src="assets/mascot.webp" alt="AIson 狗狗 IP"><div><strong><span>AI</span>son</strong><small>每日 AI 新聞站</small></div></a>
-    <nav class="navlinks" aria-label="主要導覽"><a class="active" href="index.html"><i>⌂</i>首頁</a><a href="daily.html"><i>☀</i>今日 AI 10 件事</a><a href="#categories"><i>◌</i>分類瀏覽</a><a href="archive.html"><i>▤</i>熱門標籤</a><a href="about.html"><i>✦</i>關於 AIson</a></nav>
+    <nav class="navlinks" aria-label="主要導覽"><a class="active" href="index.html"><i>⌂</i>首頁</a><a href="daily.html"><i>☀</i>今日 AI 10 件事</a><a href="guides.html"><i>✦</i>實用指南</a><a href="#categories"><i>◌</i>分類瀏覽</a><a href="archive.html"><i>▤</i>熱門標籤</a><a href="about.html"><i>✦</i>關於 AIson</a></nav>
     <button class="search-trigger" id="searchTrigger" aria-label="開啟搜尋"><b>⌕</b><span>搜尋新聞、主題、工具…</span><kbd>⌘K</kbd></button>
     <button class="menuBtn" id="menuBtn" aria-label="開啟選單">☰</button>
   </div>
-  <div class="mobile-nav" id="mobileNav"><a href="index.html">首頁</a><a href="daily.html">今日 AI 10 件事</a><a href="#categories">分類</a><a href="archive.html">新聞庫</a><a href="about.html">關於 AIson</a></div>
+  <div class="mobile-nav" id="mobileNav"><a href="index.html">首頁</a><a href="daily.html">今日 AI 10 件事</a><a href="guides.html">香港 AI 實用指南</a><a href="#categories">分類</a><a href="archive.html">新聞庫</a><a href="about.html">關於 AIson</a></div>
 </header>
 <main>
 <section class="hero">
@@ -49,6 +49,7 @@
       </div>
       <aside class="sidebar">
         <div class="panel dark key-stories"><div class="panel-kicker">TODAY'S PICK</div><h3><span>★</span> 今日最重要 3 件事</h3><div class="top-list" id="topList"></div></div>
+        <div class="panel saved-panel"><div class="panel-kicker">READ LATER</div><div class="saved-head"><h3>稍後閱讀 <span id="savedCount">0</span></h3><button id="clearSaved" type="button" hidden>清除</button></div><div id="savedList"></div></div>
         <div class="panel" id="categories"><div class="panel-kicker">EXPLORE</div><h3>熱門分類</h3><div class="categories" id="categoryList"></div></div>
         <div class="panel newsletter"><div class="newsletter-mascot"><img src="assets/mascot.webp" alt="AIson"></div><div><div class="panel-kicker">DAILY NEWSLETTER</div><h3>訂閱每日 <em>AI 新聞</em></h3><p>每日早上收到 AIson 精選 10 件事，直接送到你的 Email。</p><form class="subscribe" name="newsletter" method="POST" data-netlify="true" onsubmit="subscribe(event)"><input type="hidden" name="form-name" value="newsletter"><input type="email" name="email" placeholder="輸入你的 Email" aria-label="Email" required><button>立即訂閱</button></form></div></div>
       </aside>
@@ -61,8 +62,8 @@
 </section>
 <section class="cta"><div class="container cta-card"><div><span>AIson DAILY</span><h2>複雜嘅 AI，AIson 幫你講簡單。</h2><p>網站會成為每日新聞嘅「永久主頁」，Threads 同 IG 就負責即時觸及同引流。</p></div><a class="primary-btn" href="about.html">了解 AIson →</a></div></section>
 </main>
-<footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="assets/mascot.webp" alt="AIson"><div><strong><span>AI</span>son</strong><small>每日 AI 新聞站</small></div></a><p>每日幫香港人篩選全球 AI 大事。</p></div><div><h4>瀏覽</h4><a href="daily.html">今日 AI 10 件事</a><a href="#categories">分類</a><a href="archive.html">新聞庫</a><a href="about.html">關於 AIson</a></div><div><h4>內容</h4><a href="archive.html">全部新聞</a><a href="#why">網站特色</a><a href="#">Threads</a></div><div><h4>網站</h4><a href="privacy.html">私隱政策</a><a href="about.html#contact">聯絡</a><span class="status-dot">● V3 Newsroom Ready</span></div></div><div class="container copyright">© 2026 AIson. All rights reserved. · V3</div></footer>
+<footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="assets/mascot.webp" alt="AIson"><div><strong><span>AI</span>son</strong><small>每日 AI 新聞站</small></div></a><p>每日幫香港人篩選全球 AI 大事。</p></div><div><h4>瀏覽</h4><a href="daily.html">今日 AI 10 件事</a><a href="guides.html">香港 AI 實用指南</a><a href="#categories">分類</a><a href="archive.html">新聞庫</a></div><div><h4>內容</h4><a href="archive.html">全部新聞</a><a href="#why">網站特色</a><a href="#">Threads</a></div><div><h4>網站</h4><a href="about.html">關於 AIson</a><a href="privacy.html">私隱政策</a><a href="about.html#contact">聯絡</a><span class="status-dot">● V3 Newsroom Ready</span></div></div><div class="container copyright">© 2026 AIson. All rights reserved. · V3</div></footer>
 <div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-card"><button class="close" id="closeSearch" aria-label="關閉">×</button><div class="mini-label">SEARCH AISON</div><h2>搜尋 AI 新聞</h2><label class="big-search">⌕<input id="searchInput" autofocus placeholder="例如：Gemini、OpenAI、AI 影片…"></label><div class="search-results" id="searchResults"></div></div></div>
 <div class="toast" id="toast"></div>
-<script src="data/news.js?v=20260830"></script><script src="data/site.js?v=20260830"></script><script src="app.js?v=20260829-reporting"></script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js").catch(()=>{})}</script>
+<script src="data/news.js?v=20260830"></script><script src="data/site.js?v=20260830"></script><script src="app.js?v=20260830-features"></script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js").catch(()=>{})}</script>
 </body></html>
