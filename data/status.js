@@ -4,8 +4,8 @@ window.AISON_STATUS = {
   "editionDate": "2026-08-30",
   "workflow": "人工核實後一鍵發布",
   "notes": "2026.08.30 編輯更新：今日版會獨立顯示，文章則保留原始發布日期。",
-  "articleCount": 20,
-  "verifiedCount": 20,
-  "latestEdition": "2026-08-29",
-  "generatedAt": "2026-08-30T12:55:45.560616+00:00"
+  "articleCount": 30,
+  "verifiedCount": 30,
+  "latestEdition": "2026-08-30",
+  "generatedAt": "2026-08-30T13:24:58.881341+00:00"
 };

@@ -15,8 +15,8 @@ ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "content/news.json"
 REQUIRED = {
     "id", "rank", "title", "excerpt", "summary", "category", "tags", "date",
-    "readTime", "featured", "verified", "freshness", "whatHappened",
-    "whyImportant", "hkImpact", "take", "sourceLabel", "sourceUrl", "sourceType",
+    "readTime", "featured", "verified", "freshness", "whatHappened", "reportingContext",
+    "whyImportant", "whatToWatch", "hkImpact", "take", "sourceLabel", "sourceUrl", "sourceType",
 }
 
 
