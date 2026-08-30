@@ -1,6 +1,7 @@
 {
   "mode": "editorial",
-  "lastBuild": "2026-08-28T18:30:00+08:00",
+  "lastBuild": "2026-08-30T17:10:00+08:00",
+  "editionDate": "2026-08-30",
   "workflow": "人工核實後一鍵發布",
-  "notes": "V3 已加入 Daily Brief、Newsroom Editor、內容匯出及部署工作流。"
+  "notes": "2026.08.30 編輯更新：今日版會獨立顯示，文章則保留原始發布日期。"
 }
