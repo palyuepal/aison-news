@@ -63,8 +63,10 @@ def build_search(data):
 
 def build_status(data,status):
     dates=sorted([n['date'] for n in data if n.get('date')])
+    latest=dates[-1] if dates else None
+    generated_at=datetime.now(timezone.utc).isoformat()
     out=dict(status)
-    out.update({'articleCount':len(data),'verifiedCount':sum(1 for n in data if n.get('verified')),'latestEdition':dates[-1] if dates else None,'generatedAt':datetime.now(timezone.utc).isoformat()})
+    out.update({'articleCount':len(data),'verifiedCount':sum(1 for n in data if n.get('verified')),'editionDate':latest,'latestEdition':latest,'lastBuild':generated_at,'generatedAt':generated_at})
     write_js(ROOT/'data/status.js','AISON_STATUS',out)
 
 def main():
