@@ -49,7 +49,7 @@ def build_rss(data,site):
     (ROOT/'rss.xml').write_text(rss+'\n',encoding='utf-8')
 
 def build_sitemap(data,site):
-    base=site['baseUrl']; pages=['','daily.html','weekly.html','guides.html','archive.html','about.html','privacy.html']
+    base=site['baseUrl']; pages=['','daily.html','weekly.html','guides.html','topics.html','archive.html','about.html','privacy.html']
     urls=[f'<url><loc>{html.escape(urljoin(base,p))}</loc></url>' for p in pages]
     for n in data:
         u=urljoin(base,'article.html?id='+n['id'])

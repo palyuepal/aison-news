@@ -6,6 +6,10 @@ window.AISON_SITE = {
   "locale": "zh-Hant-HK",
   "timezone": "Asia/Hong_Kong",
   "editionSize": 10,
+  "newsletter": {
+    "provider": "Beehiiv",
+    "subscribeUrl": "https://yues-newsletter-c6d023.beehiiv.com/subscribe"
+  },
   "social": {
     "threads": "",
     "instagram": "",
