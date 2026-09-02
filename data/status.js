@@ -1,11 +1,11 @@
 window.AISON_STATUS = {
   "mode": "editorial",
-  "lastBuild": "2026-09-01T03:32:36.227964+00:00",
-  "editionDate": "2026-09-01",
+  "lastBuild": "2026-09-02T00:07:50.000370+00:00",
+  "editionDate": "2026-09-02",
   "workflow": "人工核實後一鍵發布",
-  "notes": "2026.09.01 編輯更新：今日版會獨立顯示，文章則保留原始發布日期。",
-  "articleCount": 50,
-  "verifiedCount": 50,
-  "latestEdition": "2026-09-01",
-  "generatedAt": "2026-09-01T03:32:36.227964+00:00"
+  "notes": "2026.09.02 編輯更新：今日版會獨立顯示，文章則保留原始發布日期。",
+  "articleCount": 60,
+  "verifiedCount": 60,
+  "latestEdition": "2026-09-02",
+  "generatedAt": "2026-09-02T00:07:50.000370+00:00"
 };
