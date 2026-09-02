@@ -1,4 +1,4 @@
-const CACHE='aison-v3-20260901-trust';
+const CACHE='aison-v3-20260902-newsletter';
 const CORE=['./','index.html','daily.html','weekly.html','guides.html','topics.html','archive.html','article.html','about.html','methodology.html','privacy.html','offline.html','styles.css','app.js','data/news.js','data/site.js','data/status.js','assets/mascot.webp','assets/favicon.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));

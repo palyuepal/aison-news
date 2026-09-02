@@ -18,7 +18,7 @@ function topItem(n){const v=categoryVisual(n.category);return '<a class="top-ite
 function briefText(text='',limit=88){const clean=String(text).replace(/\s+/g,' ').trim();return clean.length>limit?clean.slice(0,limit).replace(/[，。；、\s]+$/,'')+'…':clean}
 function topBrief(n){const v=categoryVisual(n.category),why=briefText(n.whyImportant||n.summary||n.excerpt),hk=briefText((n.hkImpact||[])[0]||'了解這項改變對香港使用者的實際影響。',54);return '<a class="top-brief" href="article.html?id='+encodeURIComponent(n.id)+'"><div class="top-brief-head"><span class="num">'+String(n.rank).padStart(2,'0')+'</span><span class="top-symbol '+v.tone+'" aria-hidden="true">'+v.icon+'</span><span><b>'+esc(n.title)+'</b><small>'+esc(n.category)+' · 30 秒重點</small></span></div><p><strong>為何重要：</strong>'+esc(why)+'</p><span class="top-brief-hk">🇭🇰 '+esc(hk)+'</span><span class="top-brief-link">睇完整報導 →</span></a>'}
 function toast(msg){const t=$('#toast');if(!t)return;t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
-function newsletterUrl(){return SITE.newsletter?.subscribeUrl||'https://yues-newsletter-c6d023.beehiiv.com/subscribe'}
+function newsletterUrl(){return SITE.newsletter?.subscribeUrl||'https://aison-news.beehiiv.com/'}
 function setupNewsletterLinks(){$$('[data-newsletter-link]').forEach(link=>link.setAttribute('href',newsletterUrl()))}
 function savedIds(){try{const ids=JSON.parse(localStorage.getItem(SAVED_NEWS_KEY)||'[]');return Array.isArray(ids)?ids.filter(id=>typeof id==='string'):[]}catch{return []}}
 function setSavedIds(ids){try{localStorage.setItem(SAVED_NEWS_KEY,JSON.stringify([...new Set(ids)]))}catch{toast('暫時未能儲存，請檢查瀏覽器設定')}}
