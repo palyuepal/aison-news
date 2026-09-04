@@ -10,7 +10,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python tools/build.py
+      - name: Install social card renderer
+        run: |
+          python -m pip install --disable-pip-version-check "Pillow>=11,<13"
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+      - name: Build AIson
+        env:
+          AISON_REQUIRE_SOCIAL_CARDS: '1'
+        run: python tools/build.py
       - run: git diff --exit-code -- . ':!data/status.js'
       - name: Check latest verified source links
         run: python tools/check_sources.py

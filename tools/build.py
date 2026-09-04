@@ -4,6 +4,8 @@ import json, html, shutil
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from urllib.parse import urljoin
+from social_cards import build_social_cards
+
 ROOT=Path(__file__).resolve().parents[1]
 NEWS=ROOT/'content/news.json'
 SITE=ROOT/'content/site.json'
@@ -39,11 +41,11 @@ def load_news():
 def write_js(path,var,obj):
     path.write_text(f'window.{var} = '+json.dumps(obj,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
 
-
 def article_url(base, story_id):
     return urljoin(base,f"news/{story_id}.html")
 
-def build_article_pages(data,site):
+def build_article_pages(data,site,social_card_ids=None):
+    social_card_ids=set(social_card_ids or [])
     template=(ROOT/'article.html').read_text(encoding='utf-8')
     markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<meta property="og:type" content="article">','<script type="application/ld+json" id="jsonld"></script>','<script src="data/news.js']
     missing=[marker for marker in markers if marker not in template]
@@ -51,10 +53,15 @@ def build_article_pages(data,site):
     out_dir=ROOT/'news'
     if out_dir.exists(): shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
-    image=urljoin(site['baseUrl'],'assets/icon-512.png')
-    image_alt='AIson 狗仔 IP｜香港人的每日 AI 新聞站'
+    generic_image=urljoin(site['baseUrl'],'assets/icon-512.png')
+    publisher_logo=generic_image
     for n in data:
         url=article_url(site['baseUrl'],n['id'])
+        has_social_card=n['id'] in social_card_ids
+        image=urljoin(site['baseUrl'],f"assets/social/{n['id']}.jpg") if has_social_card else generic_image
+        image_width,image_height=(1200,630) if has_social_card else (512,512)
+        image_type='image/jpeg' if has_social_card else 'image/png'
+        image_alt=f"{n['title']}｜AIson"
         title=html.escape(n['title']+'｜AIson',quote=True)
         desc=html.escape(n['excerpt'],quote=True)
         page=template.replace('<head>','<head><base href="../">',1)
@@ -63,7 +70,7 @@ def build_article_pages(data,site):
         og=(f'<meta property="og:type" content="article"><meta property="og:site_name" content="AIson"><meta property="og:locale" content="zh_HK">'
             f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">'
             f'<meta property="og:url" content="{html.escape(url,quote=True)}"><meta property="og:image" content="{html.escape(image,quote=True)}">'
-            f'<meta property="og:image:width" content="512"><meta property="og:image:height" content="512"><meta property="og:image:alt" content="{html.escape(image_alt,quote=True)}">'
+            f'<meta property="og:image:type" content="{image_type}"><meta property="og:image:width" content="{image_width}"><meta property="og:image:height" content="{image_height}"><meta property="og:image:alt" content="{html.escape(image_alt,quote=True)}">'
             f'<meta property="article:published_time" content="{n["date"]}"><meta property="article:section" content="{html.escape(n["category"],quote=True)}">'
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{desc}">'
             f'<meta name="twitter:image" content="{html.escape(image,quote=True)}"><meta name="twitter:image:alt" content="{html.escape(image_alt,quote=True)}">'
@@ -73,7 +80,7 @@ def build_article_pages(data,site):
             '@context':'https://schema.org','@type':'NewsArticle','headline':n['title'],'description':n['excerpt'],
             'datePublished':n['date'],'dateModified':n['date'],'mainEntityOfPage':url,'image':[image],
             'articleSection':n['category'],'inLanguage':'zh-Hant-HK',
-            'publisher':{'@type':'Organization','name':'AIson','logo':{'@type':'ImageObject','url':image}},
+            'publisher':{'@type':'Organization','name':'AIson','logo':{'@type':'ImageObject','url':publisher_logo}},
             'author':{'@type':'Organization','name':'AIson'}
         }
         jsonld=json.dumps(structured,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
@@ -83,6 +90,8 @@ def build_article_pages(data,site):
         injected=f'<script>window.AISON_ARTICLE_ID={story_id};if(!new URLSearchParams(location.search).get("id"))history.replaceState({{}},"",location.pathname+"?id="+encodeURIComponent(window.AISON_ARTICLE_ID));</script>'
         page=page.replace(marker,injected+marker,1)
         required=[f'<title>{title}</title>','property="og:title"','name="twitter:card" content="summary_large_image"','rel="canonical"','"@type":"NewsArticle"',f'window.AISON_ARTICLE_ID={story_id}']
+        if has_social_card:
+            required.extend([f'assets/social/{n["id"]}.jpg','content="1200"','content="630"'])
         if not all(token in page for token in required):
             raise SystemExit(f'failed to generate metadata for {n["id"]}')
         (out_dir/f'{n["id"]}.html').write_text(page,encoding='utf-8')
@@ -121,9 +130,10 @@ def build_status(data,status):
 
 def main():
     site=load_site(); data=load_news(); status=read_json(STATUS)
+    social_card_ids=build_social_cards(data,site,ROOT)
     write_js(ROOT/'data/news.js','AISON_NEWS',data)
     write_js(ROOT/'data/site.js','AISON_SITE',site)
-    build_search(data); build_article_pages(data,site); build_rss(data,site); build_sitemap(data,site); build_status(data,status)
-    print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified')
+    build_search(data); build_article_pages(data,site,social_card_ids); build_rss(data,site); build_sitemap(data,site); build_status(data,status)
+    print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards')
 
 if __name__=='__main__': main()

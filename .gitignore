@@ -2,5 +2,6 @@ news/
 public/
 rss.xml
 sitemap.xml
+assets/social/
 __pycache__/
 *.pyc
