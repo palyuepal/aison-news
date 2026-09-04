@@ -1,4 +1,6 @@
 news/
 public/
+rss.xml
+sitemap.xml
 __pycache__/
 *.pyc
