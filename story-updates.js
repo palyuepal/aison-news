@@ -23,8 +23,10 @@
     document.querySelectorAll('a[href*="article.html?id="]').forEach(link=>{
       const id=storyIdFromHref(link.getAttribute('href'));
       const info=updates[id];
-      if(!info || link.querySelector('.aison-update-badge')) return;
-      const target=link.querySelector('.card-overline,.daily-meta,.search-result div,.related-reason') || link.querySelector('small');
+      if(!info) return;
+      const container=link.closest('.news-card,.daily-item,.top-brief,.top-item,.search-result,.related-card')||link;
+      if(container.querySelector('.aison-update-badge')) return;
+      const target=container.querySelector('.card-overline,.daily-meta,.search-result div,.related-reason,small');
       if(!target) return;
       const badge=document.createElement('span');
       badge.className='aison-update-badge';
