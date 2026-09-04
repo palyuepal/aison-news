@@ -12,3 +12,5 @@ jobs:
           python-version: '3.12'
       - run: python tools/build.py
       - run: git diff --exit-code -- . ':!data/status.js'
+      - name: Check latest verified source links
+        run: python tools/check_sources.py
