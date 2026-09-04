@@ -16,11 +16,18 @@
   }
 
   function storyIdFromHref(href=''){
-    try{return new URL(href,location.href).searchParams.get('id')||''}catch{return ''}
+    try{const url=new URL(href,location.href),queryId=url.searchParams.get('id');if(queryId)return queryId;const match=url.pathname.match(/\/news\/([^/]+)\.html$/);return match?decodeURIComponent(match[1]):''}catch{return ''}
+  }
+
+  function rewriteArticleLinks(){
+    document.querySelectorAll('a[href*="article.html?id="]').forEach(link=>{
+      const id=storyIdFromHref(link.getAttribute('href'));
+      if(id) link.setAttribute('href','news/'+encodeURIComponent(id)+'.html');
+    });
   }
 
   function badgeCards(){
-    document.querySelectorAll('a[href*="article.html?id="]').forEach(link=>{
+    document.querySelectorAll('a[href*="article.html?id="],a[href*="news/"][href$=".html"]').forEach(link=>{
       const id=storyIdFromHref(link.getAttribute('href'));
       const info=updates[id];
       if(!info) return;
@@ -37,21 +44,21 @@
 
   function markArticle(){
     if(document.body?.dataset.page!=='article') return;
-    const id=new URLSearchParams(location.search).get('id')||'';
+    const id=window.AISON_ARTICLE_ID||new URLSearchParams(location.search).get('id')||'';
     const info=updates[id];
     if(!info || document.querySelector('.aison-update-note')) return;
     const body=document.getElementById('articleBody');
     if(!body) return;
     const note=document.createElement('div');
     note.className='aison-update-note';
-    note.innerHTML='<b>'+info.label+'｜同一事件後續</b><span>'+info.note+'</span> <a href="article.html?id='+encodeURIComponent(info.previousId)+'">睇返較早報道 →</a>';
+    note.innerHTML='<b>'+info.label+'｜同一事件後續</b><span>'+info.note+'</span> <a href="news/'+encodeURIComponent(info.previousId)+'.html">睇返較早報道 →</a>';
     body.insertBefore(note,body.firstChild);
   }
 
-  function apply(){addStyles();badgeCards();markArticle()}
+  function apply(){addStyles();rewriteArticleLinks();badgeCards();markArticle()}
   document.addEventListener('DOMContentLoaded',()=>{
     apply();
-    const observer=new MutationObserver(()=>badgeCards());
+    const observer=new MutationObserver(()=>{rewriteArticleLinks();badgeCards()});
     observer.observe(document.body,{childList:true,subtree:true});
   });
 })();

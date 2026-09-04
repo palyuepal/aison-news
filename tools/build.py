@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json, html
+import json, html, shutil
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from urllib.parse import urljoin
@@ -39,11 +39,48 @@ def load_news():
 def write_js(path,var,obj):
     path.write_text(f'window.{var} = '+json.dumps(obj,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
 
+
+def article_url(base, story_id):
+    return urljoin(base,f"news/{story_id}.html")
+
+def build_article_pages(data,site):
+    template=(ROOT/'article.html').read_text(encoding='utf-8')
+    markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<meta property="og:type" content="article">','<script src="data/news.js']
+    missing=[marker for marker in markers if marker not in template]
+    if missing: raise SystemExit(f'article template missing expected markers: {missing}')
+    out_dir=ROOT/'news'
+    if out_dir.exists(): shutil.rmtree(out_dir)
+    out_dir.mkdir(parents=True)
+    image=urljoin(site['baseUrl'],'assets/icon-512.png')
+    for n in data:
+        url=article_url(site['baseUrl'],n['id'])
+        title=html.escape(n['title']+'｜AIson',quote=True)
+        desc=html.escape(n['excerpt'],quote=True)
+        page=template.replace('<head>','<head><base href="../">',1)
+        page=page.replace('<title>文章｜AIson</title>',f'<title>{title}</title>',1)
+        page=page.replace('<meta name="description" content="AIson AI 新聞文章">',f'<meta name="description" content="{desc}">',1)
+        og=(f'<meta property="og:type" content="article"><meta property="og:site_name" content="AIson">'
+            f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">'
+            f'<meta property="og:url" content="{html.escape(url,quote=True)}"><meta property="og:image" content="{html.escape(image,quote=True)}">'
+            f'<meta property="article:published_time" content="{n["date"]}"><meta name="twitter:card" content="summary">'
+            f'<link rel="canonical" href="{html.escape(url,quote=True)}">')
+        page=page.replace('<meta property="og:type" content="article">',og,1)
+        marker='<script src="data/news.js'
+        story_id=json.dumps(n['id'],ensure_ascii=False)
+        injected=f'<script>window.AISON_ARTICLE_ID={story_id};if(!new URLSearchParams(location.search).get("id"))history.replaceState({{}},"",location.pathname+"?id="+encodeURIComponent(window.AISON_ARTICLE_ID));</script>'
+        page=page.replace(marker,injected+marker,1)
+        required=[f'<title>{title}</title>','property="og:title"','rel="canonical"',f'window.AISON_ARTICLE_ID={story_id}']
+        if not all(token in page for token in required):
+            raise SystemExit(f'failed to generate metadata for {n["id"]}')
+        (out_dir/f'{n["id"]}.html').write_text(page,encoding='utf-8')
+    if len(list(out_dir.glob('*.html'))) != len(data):
+        raise SystemExit('generated article page count does not match news data')
+
 def build_rss(data,site):
     base=site['baseUrl']; items=[]
     for n in sorted(data,key=lambda x:(x['date'],-x.get('rank',99)),reverse=True)[:50]:
         dt=datetime.strptime(n['date'],'%Y-%m-%d').replace(tzinfo=timezone.utc)
-        url=urljoin(base,f"article.html?id={n['id']}")
+        url=article_url(base,n['id'])
         items.append(f'''<item><title>{html.escape(n['title'])}</title><link>{html.escape(url)}</link><guid>{html.escape(url)}</guid><pubDate>{format_datetime(dt)}</pubDate><description>{html.escape(n['excerpt'])}</description></item>''')
     rss=f'''<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{html.escape(site['name'])}｜每日 AI 新聞・香港</title><link>{html.escape(base)}</link><description>{html.escape(site['description'])}</description><language>zh-HK</language>{''.join(items)}</channel></rss>'''
     (ROOT/'rss.xml').write_text(rss+'\n',encoding='utf-8')
@@ -52,7 +89,7 @@ def build_sitemap(data,site):
     base=site['baseUrl']; pages=['','daily.html','weekly.html','guides.html','topics.html','archive.html','about.html','methodology.html','privacy.html']
     urls=[f'<url><loc>{html.escape(urljoin(base,p))}</loc></url>' for p in pages]
     for n in data:
-        u=urljoin(base,'article.html?id='+n['id'])
+        u=article_url(base,n['id'])
         urls.append(f'<url><loc>{html.escape(u)}</loc><lastmod>{n["date"]}</lastmod></url>')
     xml='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(urls)+'</urlset>'
     (ROOT/'sitemap.xml').write_text(xml+'\n',encoding='utf-8')
@@ -73,7 +110,7 @@ def main():
     site=load_site(); data=load_news(); status=read_json(STATUS)
     write_js(ROOT/'data/news.js','AISON_NEWS',data)
     write_js(ROOT/'data/site.js','AISON_SITE',site)
-    build_search(data); build_rss(data,site); build_sitemap(data,site); build_status(data,status)
+    build_search(data); build_article_pages(data,site); build_rss(data,site); build_sitemap(data,site); build_status(data,status)
     print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified')
 
 if __name__=='__main__': main()

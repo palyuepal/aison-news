@@ -1,0 +1,4 @@
+news/
+public/
+__pycache__/
+*.pyc
