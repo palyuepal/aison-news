@@ -55,10 +55,70 @@
     body.insertBefore(note,body.firstChild);
   }
 
-  function apply(){addStyles();rewriteArticleLinks();badgeCards();markArticle()}
+  function canonicalArticleUrl(){
+    const canonical=document.querySelector('link[rel="canonical"]')?.href;
+    if(canonical) return canonical;
+    const url=new URL(location.href);
+    url.search='';url.hash='';
+    return url.href;
+  }
+
+  function articleShareText(){
+    const title=document.getElementById('articleTitle')?.textContent?.trim()||document.title.replace(/｜AIson$/,'')||'AIson';
+    const excerpt=document.getElementById('articleExcerpt')?.textContent?.trim()||document.querySelector('meta[name="description"]')?.content||'';
+    return {title,excerpt,url:canonicalArticleUrl()};
+  }
+
+  async function shareCanonicalArticle(){
+    const {title,excerpt,url}=articleShareText();
+    if(navigator.share){
+      try{await navigator.share({title:title+'｜AIson',text:excerpt,url});return}catch(error){if(error?.name==='AbortError')return}
+    }
+    copyCanonicalLink();
+  }
+
+  function copyCanonicalLink(){
+    const url=canonicalArticleUrl();
+    navigator.clipboard?.writeText(url).then(()=>window.dispatchEvent(new CustomEvent('aison-toast',{detail:'已複製文章連結'}))).catch(()=>window.dispatchEvent(new CustomEvent('aison-toast',{detail:'請手動複製網址'})));
+  }
+
+  function shareWhatsApp(){
+    const {title,excerpt,url}=articleShareText();
+    const text=[title,excerpt,url].filter(Boolean).join('\n\n');
+    window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank','noopener,noreferrer');
+  }
+
+  function fixJsonLd(){
+    const jsonld=document.getElementById('jsonld');
+    if(!jsonld?.textContent) return;
+    try{
+      const data=JSON.parse(jsonld.textContent);
+      const canonical=canonicalArticleUrl();
+      const image=new URL('assets/icon-512.png',location.href).href;
+      data.mainEntityOfPage=canonical;
+      data.image=[image];
+      if(data.publisher?.logo) data.publisher.logo.url=image;
+      jsonld.textContent=JSON.stringify(data);
+    }catch{}
+  }
+
+  function showToast(message){
+    const toast=document.getElementById('toast');
+    if(!toast)return;
+    toast.textContent=message;
+    toast.classList.add('show');
+    setTimeout(()=>toast.classList.remove('show'),1800);
+  }
+
+  window.addEventListener('aison-toast',event=>showToast(event.detail||''));
+  window.shareArticle=shareCanonicalArticle;
+  window.copyLink=copyCanonicalLink;
+  window.shareWhatsApp=shareWhatsApp;
+
+  function apply(){addStyles();rewriteArticleLinks();badgeCards();markArticle();fixJsonLd()}
   document.addEventListener('DOMContentLoaded',()=>{
     apply();
-    const observer=new MutationObserver(()=>{rewriteArticleLinks();badgeCards()});
+    const observer=new MutationObserver(()=>{rewriteArticleLinks();badgeCards();fixJsonLd()});
     observer.observe(document.body,{childList:true,subtree:true});
   });
 })();
