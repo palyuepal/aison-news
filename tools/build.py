@@ -45,13 +45,14 @@ def article_url(base, story_id):
 
 def build_article_pages(data,site):
     template=(ROOT/'article.html').read_text(encoding='utf-8')
-    markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<meta property="og:type" content="article">','<script src="data/news.js']
+    markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<meta property="og:type" content="article">','<script type="application/ld+json" id="jsonld"></script>','<script src="data/news.js']
     missing=[marker for marker in markers if marker not in template]
     if missing: raise SystemExit(f'article template missing expected markers: {missing}')
     out_dir=ROOT/'news'
     if out_dir.exists(): shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
     image=urljoin(site['baseUrl'],'assets/icon-512.png')
+    image_alt='AIson 狗仔 IP｜香港人的每日 AI 新聞站'
     for n in data:
         url=article_url(site['baseUrl'],n['id'])
         title=html.escape(n['title']+'｜AIson',quote=True)
@@ -59,17 +60,29 @@ def build_article_pages(data,site):
         page=template.replace('<head>','<head><base href="../">',1)
         page=page.replace('<title>文章｜AIson</title>',f'<title>{title}</title>',1)
         page=page.replace('<meta name="description" content="AIson AI 新聞文章">',f'<meta name="description" content="{desc}">',1)
-        og=(f'<meta property="og:type" content="article"><meta property="og:site_name" content="AIson">'
+        og=(f'<meta property="og:type" content="article"><meta property="og:site_name" content="AIson"><meta property="og:locale" content="zh_HK">'
             f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">'
             f'<meta property="og:url" content="{html.escape(url,quote=True)}"><meta property="og:image" content="{html.escape(image,quote=True)}">'
-            f'<meta property="article:published_time" content="{n["date"]}"><meta name="twitter:card" content="summary">'
-            f'<link rel="canonical" href="{html.escape(url,quote=True)}">')
+            f'<meta property="og:image:width" content="512"><meta property="og:image:height" content="512"><meta property="og:image:alt" content="{html.escape(image_alt,quote=True)}">'
+            f'<meta property="article:published_time" content="{n["date"]}"><meta property="article:section" content="{html.escape(n["category"],quote=True)}">'
+            f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{desc}">'
+            f'<meta name="twitter:image" content="{html.escape(image,quote=True)}"><meta name="twitter:image:alt" content="{html.escape(image_alt,quote=True)}">'
+            f'<meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="{html.escape(url,quote=True)}">')
         page=page.replace('<meta property="og:type" content="article">',og,1)
+        structured={
+            '@context':'https://schema.org','@type':'NewsArticle','headline':n['title'],'description':n['excerpt'],
+            'datePublished':n['date'],'dateModified':n['date'],'mainEntityOfPage':url,'image':[image],
+            'articleSection':n['category'],'inLanguage':'zh-Hant-HK',
+            'publisher':{'@type':'Organization','name':'AIson','logo':{'@type':'ImageObject','url':image}},
+            'author':{'@type':'Organization','name':'AIson'}
+        }
+        jsonld=json.dumps(structured,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
+        page=page.replace('<script type="application/ld+json" id="jsonld"></script>',f'<script type="application/ld+json" id="jsonld">{jsonld}</script>',1)
         marker='<script src="data/news.js'
         story_id=json.dumps(n['id'],ensure_ascii=False)
         injected=f'<script>window.AISON_ARTICLE_ID={story_id};if(!new URLSearchParams(location.search).get("id"))history.replaceState({{}},"",location.pathname+"?id="+encodeURIComponent(window.AISON_ARTICLE_ID));</script>'
         page=page.replace(marker,injected+marker,1)
-        required=[f'<title>{title}</title>','property="og:title"','rel="canonical"',f'window.AISON_ARTICLE_ID={story_id}']
+        required=[f'<title>{title}</title>','property="og:title"','name="twitter:card" content="summary_large_image"','rel="canonical"','"@type":"NewsArticle"',f'window.AISON_ARTICLE_ID={story_id}']
         if not all(token in page for token in required):
             raise SystemExit(f'failed to generate metadata for {n["id"]}')
         (out_dir/f'{n["id"]}.html').write_text(page,encoding='utf-8')
