@@ -51,7 +51,7 @@ def build_article_pages(data,site):
     out_dir=ROOT/'news'
     if out_dir.exists(): shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True)
-    image=urljoin(site['baseUrl'],'assets/mascot.webp')
+    image=urljoin(site['baseUrl'],'assets/og-image.jpg')
     for n in data:
         url=article_url(site['baseUrl'],n['id'])
         title=html.escape(n['title']+'｜AIson',quote=True)
