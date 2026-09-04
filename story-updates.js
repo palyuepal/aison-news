@@ -55,72 +55,10 @@
     body.insertBefore(note,body.firstChild);
   }
 
-  function refreshBrand(root=document){
-    const target=root.nodeType===1||root.nodeType===9?root:document;
-    const walker=document.createTreeWalker(target,NodeFilter.SHOW_TEXT);
-    let node;
-    while((node=walker.nextNode())){
-      if(node.nodeValue && (node.nodeValue.includes('🐶')||node.nodeValue.includes('狗狗'))){
-        node.nodeValue=node.nodeValue.replaceAll('🐶','🤖').replaceAll('狗狗','機械人');
-      }
-    }
-    if(target.querySelectorAll){
-      target.querySelectorAll('[alt*="狗狗"]').forEach(el=>el.alt=el.alt.replaceAll('狗狗','機械人'));
-    }
-    const jsonld=document.getElementById('jsonld');
-    if(jsonld?.textContent){
-      try{
-        const data=JSON.parse(jsonld.textContent);
-        if(data?.publisher?.logo?.url){
-          data.publisher.logo.url=new URL('assets/mascot.webp',location.href).href;
-          jsonld.textContent=JSON.stringify(data);
-        }
-      }catch{}
-    }
-  }
-
-  function latestNews(){
-    return (window.AISON_NEWS||[]).slice().sort((a,b)=>(a.rank||99)-(b.rank||99)).slice(0,10);
-  }
-
-  function editionDate(){
-    return window.AISON_STATUS?.editionDate||latestNews().map(n=>n.date).filter(Boolean).sort().at(-1)||'';
-  }
-
-  function fmtDate(value=''){
-    try{return new Intl.DateTimeFormat('zh-HK',{year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value+'T00:00:00'))}catch{return value}
-  }
-
-  function robotThreadsText(){
-    const lines=latestNews().map(n=>`${String(n.rank).padStart(2,'0')}｜${n.title}\n${n.excerpt}`);
-    return `🤖 AIson｜今日 AI 10 件事 ${fmtDate(editionDate())}\n\n${lines.join('\n\n')}\n\n🇭🇰 每篇完整內容都有「同香港人有咩關係？」＋ AIson Take。`;
-  }
-
-  function showToast(message){
-    const toast=document.getElementById('toast');
-    if(!toast)return;
-    toast.textContent=message;
-    toast.classList.add('show');
-    setTimeout(()=>toast.classList.remove('show'),1800);
-  }
-
-  document.addEventListener('click',event=>{
-    const button=event.target.closest?.('#copyThreads');
-    if(!button)return;
-    event.preventDefault();
-    event.stopImmediatePropagation();
-    navigator.clipboard?.writeText(robotThreadsText()).then(()=>showToast('已 Copy Threads 版本')).catch(()=>showToast('請手動複製內容'));
-  },true);
-
-  function apply(){addStyles();rewriteArticleLinks();badgeCards();markArticle();refreshBrand()}
+  function apply(){addStyles();rewriteArticleLinks();badgeCards();markArticle()}
   document.addEventListener('DOMContentLoaded',()=>{
     apply();
-    const observer=new MutationObserver(mutations=>{
-      for(const mutation of mutations){
-        mutation.addedNodes.forEach(node=>{if(node.nodeType===1)refreshBrand(node)});
-      }
-      rewriteArticleLinks();badgeCards();refreshBrand();
-    });
+    const observer=new MutationObserver(()=>{rewriteArticleLinks();badgeCards()});
     observer.observe(document.body,{childList:true,subtree:true});
   });
 })();
