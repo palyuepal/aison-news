@@ -19,10 +19,18 @@ jobs:
         with:
           python-version: '3.12'
       - run: python tools/build.py
+      - name: Prepare public site artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf public
+          mkdir -p public
+          cp -a assets data public/
+          cp -a *.html *.css *.js *.xml *.txt *.webmanifest CNAME public/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: public
   deploy:
     environment:
       name: github-pages
