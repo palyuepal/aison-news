@@ -1,0 +1,73 @@
+name: Validate Weekly Deep Dive
+on:
+  push:
+    paths:
+      - 'weekly.html'
+      - 'weekly.js'
+      - 'service-worker.js'
+      - '.github/workflows/validate-weekly.yml'
+  pull_request:
+    paths:
+      - 'weekly.html'
+      - 'weekly.js'
+      - 'service-worker.js'
+      - '.github/workflows/validate-weekly.yml'
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check Weekly renderer syntax
+        run: node --check weekly.js
+      - name: Verify Weekly structural deep dive
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'WEEKLY INTELLIGENCE' weekly.html
+          grep -q 'STRUCTURAL SHIFTS' weekly.html
+          grep -q 'id="weeklyTake"' weekly.html
+          grep -q 'id="weeklyShifts"' weekly.html
+          grep -q 'id="weeklyStorylines"' weekly.html
+          grep -q 'id="weeklyList"' weekly.html
+          grep -q 'id="weeklyLoadMore"' weekly.html
+          grep -q 'weekly.js' weekly.html
+          grep -q 'structuralShifts' weekly.js
+          grep -q 'storylineCards' weekly.js
+          grep -q 'AIson TAKE' weekly.js
+          if grep -q 'data/news.js' weekly.html; then echo 'weekly must not load full news payload' >&2; exit 1; fi
+          if grep -q 'app.js' weekly.html; then echo 'weekly must use dedicated lightweight renderer' >&2; exit 1; fi
+          grep -q "'weekly.js'" service-worker.js
+          grep -q 'phase6-weekly-deep' service-worker.js
+      - name: Verify current archive can produce three Weekly signals
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, datetime
+          rows=json.load(open('data/search-index.json',encoding='utf-8'))
+          end=max(r['date'] for r in rows)
+          end_date=datetime.date.fromisoformat(end)
+          start=(end_date-datetime.timedelta(days=6)).isoformat()
+          week=[r for r in rows if start<=r.get('date','')<=end]
+          groups={
+            'models':['openai','chatgpt','gpt','google','gemini','anthropic','claude','meta','llama','模型','agent','產品'],
+            'infra':['nvidia','tsmc','hbm','晶片','gpu','資料中心','電網','電力','算力','基建'],
+            'policy':['政策','監管','安全','治理','政府','regulation','policy','safety','security'],
+            'capital':['ipo','融資','收購','投資','估值','資本','企業','商業化'],
+            'ecosystem':['mistral','hugging face','開源','connector','developer','api','生態','平台','工作流'],
+            'workflow':['創作','影片','video','image','設計','creator','workflow','生產力','audit','copilot'],
+          }
+          hits=[]
+          for key,words in groups.items():
+              count=0
+              for row in week:
+                  hay=' '.join([str(row.get('title','')),str(row.get('excerpt','')),str(row.get('category','')),*map(str,row.get('tags',[]))]).lower()
+                  if any(w in hay for w in words): count+=1
+              if count: hits.append((key,count))
+          assert len(week)>0, 'weekly window empty'
+          assert len(hits)>=3, hits
+          print('weekly window',start,'to',end,'stories',len(week),'signals',hits)
+          PY
