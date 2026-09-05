@@ -12,7 +12,10 @@
   }
 
   function editionDate() {
-    return window.AISON_STATUS?.editionDate || new Date().toISOString().slice(0, 10);
+    const latest = (window.AISON_NEWS || [])
+      .slice()
+      .sort((a, b) => (a.rank || 999) - (b.rank || 999))[0];
+    return window.AISON_STATUS?.editionDate || latest?.date || new Date().toISOString().slice(0, 10);
   }
 
   async function cardFile() {
