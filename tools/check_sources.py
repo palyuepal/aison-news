@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-import json
 import sys
 import urllib.error
 import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse
 
-NEWS_PATH = Path("content/news.json")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build import load_news
+
 TIMEOUT = 12
 USER_AGENT = "AIson-source-check/1.0 (+https://aison.hk/)"
 
@@ -30,7 +31,7 @@ def request_status(url: str):
 
 
 def main() -> int:
-    stories = json.loads(NEWS_PATH.read_text(encoding="utf-8"))
+    stories = load_news()
     dates = [story.get("date") for story in stories if story.get("date")]
     if not dates:
         print("No dated stories found")
