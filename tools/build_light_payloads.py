@@ -78,7 +78,7 @@ def patch_article_pages(data):
             raise SystemExit(f'{path}: unknown story id {story_id}')
         subset = article_subset(current, data)
         inline = '<script>window.AISON_NEWS=' + safe_json(subset) + ';</script>'
-        new_text, count = script_pattern.subn(inline, text, count=1)
+        new_text, count = script_pattern.subn(lambda _match: inline, text, count=1)
         if count != 1:
             raise SystemExit(f'{path}: expected one full news payload script')
         if 'src="data/news.js' in new_text:
