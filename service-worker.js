@@ -1,4 +1,4 @@
-const CACHE='aison-v3-20260906-phase6-weekly-deep';
+const CACHE='aison-v3-20260906-phase5-storylines-phase6-weekly-deep';
 const CORE=['./','index.html','daily.html','live.html','weekly.html','guides.html','topics.html','archive.html','article.html','about.html','methodology.html','privacy.html','offline.html','styles.css','app.js','archive.js','topics.js','weekly.js','lite-home.js','story-updates.js','daily-share.js','live.js','live-timeline.js','data/live.js','data/latest.js','data/search-index.json','data/site.js','data/status.js','assets/mascot.webp','assets/favicon.png','assets/icon-192.png','assets/icon-512.png','assets/apple-touch-icon.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
