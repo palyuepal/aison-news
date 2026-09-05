@@ -31,6 +31,16 @@ jobs:
           test -f data/live.js
           grep -q 'window.AISON_LIVE' data/live.js
           grep -q '2026-' data/news.js
+      - name: Verify dated social preview patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/aison-share-preview
+          mkdir -p /tmp/aison-share-preview
+          cp index.html daily.html /tmp/aison-share-preview/
+          python tools/patch_share_meta.py /tmp/aison-share-preview
+          grep -q 'assets/social/daily-20' /tmp/aison-share-preview/index.html
+          grep -q 'assets/social/daily-20' /tmp/aison-share-preview/daily.html
       - run: git diff --exit-code -- . ':!data/status.js' ':!data/news.js' ':!data/search-index.json'
       - name: Check latest verified source links
         run: python tools/check_sources.py
