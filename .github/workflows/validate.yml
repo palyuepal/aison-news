@@ -103,7 +103,7 @@ jobs:
           rows=json.load(open('data/search-index.json',encoding='utf-8'))
           news=load_news()
           assert len(rows)==len(news), (len(rows),len(news))
-          assert len({r['id'] for r in rows)==len(rows)
+          assert len({r['id'] for r in rows})==len(rows)
           assert all({'id','rank','title','excerpt','category','tags','date'} <= set(r) for r in rows)
           print(f'lightweight search index ok: {len(rows)} stories')
           PY
