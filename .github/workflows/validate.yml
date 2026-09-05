@@ -19,6 +19,10 @@ jobs:
         env:
           AISON_REQUIRE_SOCIAL_CARDS: '1'
         run: python tools/build.py
+      - name: Build daily overview card
+        env:
+          AISON_REQUIRE_SOCIAL_CARDS: '1'
+        run: python tools/daily_overview.py
       - run: git diff --exit-code -- . ':!data/status.js'
       - name: Check latest verified source links
         run: python tools/check_sources.py
