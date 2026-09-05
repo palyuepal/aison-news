@@ -23,14 +23,10 @@ jobs:
           python -m pip install --disable-pip-version-check "Pillow>=11,<13"
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends fonts-noto-cjk
-      - name: Build AIson with social cards
+      - name: Build AIson with social cards and daily overview
         env:
           AISON_REQUIRE_SOCIAL_CARDS: '1'
         run: python tools/build.py
-      - name: Build daily overview card
-        env:
-          AISON_REQUIRE_SOCIAL_CARDS: '1'
-        run: python tools/daily_overview.py
       - name: Prepare public site artifact
         shell: bash
         run: |
