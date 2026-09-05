@@ -8,6 +8,75 @@
   };
 
   const esc=(s='')=>String(s).replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
+  const fmt=s=>{try{return new Intl.DateTimeFormat('zh-HK',{year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(s+'T00:00:00'))}catch{return s}};
+
+  function loadSearchIndex(){
+    if(window.AISON_SEARCH_INDEX_PROMISE) return window.AISON_SEARCH_INDEX_PROMISE;
+    window.AISON_SEARCH_INDEX_PROMISE=fetch('data/search-index.json',{cache:'no-cache'}).then(response=>{
+      if(!response.ok) throw new Error(`search index ${response.status}`);
+      return response.json();
+    }).then(rows=>Array.isArray(rows)?rows:[]).catch(()=>{
+      return (window.AISON_NEWS||[]).map(n=>({id:n.id,rank:n.rank,title:n.title,excerpt:n.excerpt,category:n.category,tags:n.tags||[],date:n.date}));
+    });
+    return window.AISON_SEARCH_INDEX_PROMISE;
+  }
+
+  function searchIndexHits(index,q=''){
+    const term=q.trim().toLowerCase();
+    if(!term) return index.slice(0,6);
+    return index.filter(n=>[n.title,n.excerpt,n.category,...(n.tags||[])].join(' ').toLowerCase().includes(term)).slice(0,12);
+  }
+
+  async function renderLiteSearch(root,q=''){
+    if(!root) return;
+    root.innerHTML='<div class="empty" style="display:block">正在載入搜尋索引…</div>';
+    const index=await loadSearchIndex();
+    const hits=searchIndexHits(index,q);
+    root.innerHTML=hits.length?hits.map(n=>`<a class="search-result" href="news/${encodeURIComponent(n.id)}.html"><span class="num">${String(n.rank||'').padStart(2,'0')}</span><div><b>${esc(n.title)}</b><span>${esc(n.category)} · ${fmt(n.date)}</span></div></a>`).join(''):'<div class="empty" style="display:block">搵唔到相關內容。</div>';
+  }
+
+  function cloneWithoutListeners(node){
+    if(!node) return null;
+    const clone=node.cloneNode(true);
+    node.replaceWith(clone);
+    return clone;
+  }
+
+  function installLiteSearch(){
+    const oldModal=document.getElementById('searchModal');
+    if(!oldModal||oldModal.dataset.aisonLiteSearch==='1') return;
+    const modal=cloneWithoutListeners(oldModal);
+    modal.dataset.aisonLiteSearch='1';
+    const searchTrigger=cloneWithoutListeners(document.getElementById('searchTrigger'));
+    const heroSearch=cloneWithoutListeners(document.getElementById('heroSearch'));
+    const input=modal.querySelector('#searchInput');
+    const results=modal.querySelector('#searchResults');
+    const closeButton=modal.querySelector('#closeSearch');
+    let timer;
+    const open=()=>{
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden','false');
+      renderLiteSearch(results,input?.value||'');
+      setTimeout(()=>input?.focus(),50);
+    };
+    const close=()=>{
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden','true');
+    };
+    searchTrigger?.addEventListener('click',open);
+    heroSearch?.addEventListener('click',open);
+    closeButton?.addEventListener('click',close);
+    modal.addEventListener('click',event=>{if(event.target===modal)close()});
+    input?.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>renderLiteSearch(results,input.value),70)});
+    document.addEventListener('keydown',event=>{
+      if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'){
+        event.preventDefault();event.stopImmediatePropagation();open();return;
+      }
+      if(event.key==='Escape'&&modal.classList.contains('open')){
+        event.stopImmediatePropagation();close();
+      }
+    },true);
+  }
 
   function addStyles(){
     if(document.getElementById('aison-update-styles')) return;
@@ -221,7 +290,7 @@
   window.copyLink=copyCanonicalLink;
   window.shareWhatsApp=shareWhatsApp;
 
-  function apply(){addStyles();normalizeNavigation();addNewsletterFallback();renderDailyThemes();rewriteArticleLinks();badgeCards();markArticle();fixJsonLd()}
+  function apply(){addStyles();normalizeNavigation();addNewsletterFallback();renderDailyThemes();rewriteArticleLinks();badgeCards();markArticle();fixJsonLd();installLiteSearch()}
   document.addEventListener('DOMContentLoaded',()=>{
     apply();
     const observer=new MutationObserver(()=>{addNewsletterFallback();rewriteArticleLinks();badgeCards();fixJsonLd()});
