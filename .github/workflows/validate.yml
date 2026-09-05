@@ -92,11 +92,16 @@ jobs:
           assert {int(x['rank']) for x in latest}==set(range(1,11))
           pages=list(pathlib.Path('news').glob('*.html'))
           assert pages
+          pattern=re.compile(r'<script>window\.AISON_NEWS=(\[.*?\]);</script>',re.S)
           for page in pages:
               s=page.read_text(encoding='utf-8')
               assert 'src="data/news.js' not in s, page
-              assert 'window.AISON_NEWS=' in s, page
-          print(f'split payloads ok: 10 latest / {len(pages)} article pages')
+              match=pattern.search(s)
+              assert match, f'{page}: missing inline payload'
+              embedded=json.loads(match.group(1))
+              assert 1 <= len(embedded) <= 14, (page,len(embedded))
+              assert len({row['id'] for row in embedded})==len(embedded), page
+          print(f'split payloads ok: 10 latest / {len(pages)} parseable article payloads')
           PY
       - name: Check latest verified source links
         run: python tools/check_sources.py
