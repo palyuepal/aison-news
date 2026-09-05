@@ -1,9 +1,9 @@
 {
-  "name": "nutrifact-lab-v08-prod",
-  "version": "0.8.0",
+  "name": "nutrifact-lab-v09-prod",
+  "version": "0.9.0",
   "private": true,
   "scripts": {
-    "prebuild": "cat source.part00 source.part01 source.part02 source.part03 | base64 -d | tar -xz",
+    "prebuild": "curl -fsSL https://raw.githubusercontent.com/palyuepal/aison-news/nutrifact-lab-v09-prod/source.tar.gz | tar -xz",
     "build": "next build",
     "start": "next start"
   },
