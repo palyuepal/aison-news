@@ -16,6 +16,8 @@ jobs:
           node --check archive.js
           node --check topics.js
           node --check lite-home.js
+          node --check live.js
+          node --check live-timeline.js
           python -m py_compile tools/patch_share_meta.py tools/build_light_payloads.py
       - name: Install social card renderer
         run: |
@@ -38,6 +40,19 @@ jobs:
           test -f data/live.js
           grep -q 'window.AISON_LIVE' data/live.js
           grep -q '2026-' data/news.js
+      - name: Verify AIson LIVE timeline
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f live.html
+          test -f live-timeline.js
+          grep -q 'AIson LIVE' live.html
+          grep -q 'id="liveTimeline"' live.html
+          grep -q 'data/live.js' live.html
+          grep -q 'live-timeline.js' live.html
+          grep -q "href='live.html'" live.js
+          grep -q "'live.html'" service-worker.js
+          grep -q "'live-timeline.js'" service-worker.js
       - name: Verify lightweight archive
         shell: bash
         run: |
