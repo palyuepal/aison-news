@@ -27,6 +27,8 @@ jobs:
         env:
           AISON_REQUIRE_SOCIAL_CARDS: '1'
         run: python tools/build.py
+      - name: Build lightweight page payloads
+        run: python tools/build_light_payloads.py
       - name: Build AIson LIVE
         run: python tools/build_live.py
       - name: Prepare public site artifact
