@@ -1,3 +1,4 @@
+// Native sharing, download and link-copy controls for the daily overview card.
 (() => {
   const CARD_PATH = 'assets/social/daily-latest.jpg';
   const PAGE_URL = 'https://aison.hk/daily.html';
