@@ -3,5 +3,6 @@ public/
 rss.xml
 sitemap.xml
 assets/social/
+data/live.js
 __pycache__/
 *.pyc
