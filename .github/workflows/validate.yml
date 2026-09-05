@@ -53,6 +53,41 @@ jobs:
           grep -q "href='live.html'" live.js
           grep -q "'live.html'" service-worker.js
           grep -q "'live-timeline.js'" service-worker.js
+      - name: Verify topic storylines
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'id="storylineHub"' topics.html
+          grep -q 'id="topicStoryline"' topics.html
+          grep -q 'id="topicTimeline"' topics.html
+          grep -q 'AIson STORYLINES' topics.html
+          grep -q 'storylineCandidates' topics.js
+          grep -q 'renderTimeline' topics.js
+          grep -q 'LATEST DEVELOPMENT' topics.js
+          grep -q 'phase5-storylines' service-worker.js
+          python - <<'PY'
+          import json
+          rows=json.load(open('data/search-index.json',encoding='utf-8'))
+          defs={
+            'OpenAI':['openai','chatgpt','gpt'],
+            'NVIDIA':['nvidia','blackwell','rubin','h100','h200'],
+            'Google':['google','gemini','deepmind'],
+            'Anthropic':['anthropic','claude'],
+            'Meta':['meta','llama'],
+            'SpaceX':['spacex','starlink','starship'],
+            'Apple':['apple','apple intelligence'],
+          }
+          counts={}
+          for name,aliases in defs.items():
+              count=0
+              for row in rows:
+                  hay=' '.join([str(row.get('title','')),str(row.get('excerpt','')),str(row.get('category','')),*map(str,row.get('tags',[]))]).lower()
+                  if row.get('category')==name or name in row.get('tags',[]) or any(a in hay for a in aliases):
+                      count+=1
+              counts[name]=count
+          assert any(v>=2 for v in counts.values()), counts
+          print('topic storylines available:',{k:v for k,v in counts.items() if v>=2})
+          PY
       - name: Verify lightweight archive
         shell: bash
         run: |
@@ -68,7 +103,7 @@ jobs:
           rows=json.load(open('data/search-index.json',encoding='utf-8'))
           news=load_news()
           assert len(rows)==len(news), (len(rows),len(news))
-          assert len({r['id'] for r in rows})==len(rows)
+          assert len({r['id'] for r in rows)==len(rows)
           assert all({'id','rank','title','excerpt','category','tags','date'} <= set(r) for r in rows)
           print(f'lightweight search index ok: {len(rows)} stories')
           PY
