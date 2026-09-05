@@ -19,6 +19,8 @@ jobs:
         env:
           AISON_REQUIRE_SOCIAL_CARDS: '1'
         run: python tools/build.py
+      - name: Build AIson LIVE
+        run: python tools/build_live.py
       - name: Verify generated current edition
         shell: bash
         run: |
@@ -26,6 +28,8 @@ jobs:
           test -f assets/social/daily-latest.jpg
           test -f data/news.js
           test -f data/search-index.json
+          test -f data/live.js
+          grep -q 'window.AISON_LIVE' data/live.js
           grep -q '2026-' data/news.js
       - run: git diff --exit-code -- . ':!data/status.js' ':!data/news.js' ':!data/search-index.json'
       - name: Check latest verified source links
