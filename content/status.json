@@ -1,7 +1,7 @@
 {
   "mode": "editorial",
-  "lastBuild": "2026-09-04T08:00:00+08:00",
-  "editionDate": "2026-09-04",
-  "workflow": "人工核實後一鍵發布",
-  "notes": "2026.09.04 編輯更新：今日版會獨立顯示，文章則保留原始發布日期。"
+  "lastBuild": "2026-09-05T14:51:00+08:00",
+  "editionDate": "2026-09-05",
+  "workflow": "每日獨立 edition JSON + build 自動合併",
+  "notes": "2026.09.05 起改用 content/daily/YYYY-MM-DD.json 發布；舊新聞庫保留、不再每日重寫。"
 }
