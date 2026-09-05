@@ -149,8 +149,9 @@
     if(!mobile){mobile=document.createElement('div');mobile.className='mobile-nav';mobile.id='mobileNav';topbar.appendChild(mobile)}
     mobile.innerHTML=navItems().map(([key,href,,label])=>`<a${key===active?' class="active"':''} href="${href}">${label}</a>`).join('');
     let btn=navWrap.querySelector('#menuBtn');
+    const createdButton=!btn;
     if(!btn){btn=document.createElement('button');btn.className='menuBtn';btn.id='menuBtn';btn.setAttribute('aria-label','開啟選單');btn.textContent='☰';navWrap.appendChild(btn)}
-    if(!btn.dataset.aisonBound){btn.dataset.aisonBound='1';btn.addEventListener('click',()=>{mobile.style.display=mobile.style.display==='block'?'none':'block'})}
+    if(createdButton){btn.addEventListener('click',()=>{mobile.style.display=mobile.style.display==='block'?'none':'block'})}
     if(location.hash==='#aison-live') setTimeout(()=>document.getElementById('aison-live')?.scrollIntoView({block:'start'}),0);
   }
 
