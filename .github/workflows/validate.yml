@@ -10,6 +10,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Validate phase one scripts
+        run: |
+          node --check story-updates.js
+          python -m py_compile tools/patch_share_meta.py
       - name: Install social card renderer
         run: |
           python -m pip install --disable-pip-version-check "Pillow>=11,<13"
