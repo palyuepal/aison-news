@@ -1,1 +1,0 @@
-NutriFact Lab v0.5 source package is available in the chat artifact NutriFact-Lab-v0.5-NextJS.zip. Branch nutrifact-lab-v05 contains the v0.5 workspace marker; production code focuses on 30 ingredient files, topic hubs, internal linking, canonical metadata, JSON-LD and sitemap expansion.

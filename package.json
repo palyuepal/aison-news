@@ -1,0 +1,15 @@
+{
+  "name": "nutrifact-lab-v07-prod",
+  "version": "0.7.0",
+  "private": true,
+  "scripts": {
+    "prebuild": "cat source.part00 source.part01 source.part02 source.part03 source.part04 source.part05 source.part06 source.part07 | base64 -d | tar -xz && sed -i 's|https://nutrifact-lab-v06.vercel.app|https://nutrifact-lab-v07.vercel.app|g' lib/site.js",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "16.3.3",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  }
+}
