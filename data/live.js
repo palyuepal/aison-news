@@ -1,1 +1,0 @@
-window.AISON_LIVE = [];
