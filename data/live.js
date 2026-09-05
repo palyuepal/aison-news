@@ -1,0 +1,1 @@
+window.AISON_LIVE = [];
