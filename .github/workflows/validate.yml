@@ -10,9 +10,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate phase one scripts
+      - name: Validate phase scripts
         run: |
           node --check story-updates.js
+          node --check archive.js
           python -m py_compile tools/patch_share_meta.py
       - name: Install social card renderer
         run: |
@@ -35,6 +36,24 @@ jobs:
           test -f data/live.js
           grep -q 'window.AISON_LIVE' data/live.js
           grep -q '2026-' data/news.js
+      - name: Verify lightweight archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'id="archiveLoadMore"' archive.html
+          grep -q 'archive.js' archive.html
+          if grep -q 'data/news.js' archive.html; then echo 'archive must not load full news payload' >&2; exit 1; fi
+          if grep -q 'app.js' archive.html; then echo 'archive must use dedicated lightweight renderer' >&2; exit 1; fi
+          python - <<'PY'
+          import json
+          from tools.build import load_news
+          rows=json.load(open('data/search-index.json',encoding='utf-8'))
+          news=load_news()
+          assert len(rows)==len(news), (len(rows),len(news))
+          assert len({r['id'] for r in rows})==len(rows)
+          assert all({'id','rank','title','excerpt','category','tags','date'} <= set(r) for r in rows)
+          print(f'lightweight search index ok: {len(rows)} stories')
+          PY
       - name: Verify dated social preview patch
         shell: bash
         run: |
