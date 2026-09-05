@@ -37,6 +37,8 @@ jobs:
           mkdir -p public
           cp -a assets data news public/
           cp -a *.html *.css *.js *.xml *.txt *.webmanifest CNAME public/
+      - name: Use dated social preview URLs
+        run: python tools/patch_share_meta.py public
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
