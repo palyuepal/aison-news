@@ -5,9 +5,11 @@ from datetime import datetime, timezone
 from email.utils import format_datetime
 from urllib.parse import urljoin
 from social_cards import build_social_cards
+from daily_overview import build_daily_overview
 
 ROOT=Path(__file__).resolve().parents[1]
 NEWS=ROOT/'content/news.json'
+DAILY_DIR=ROOT/'content/daily'
 SITE=ROOT/'content/site.json'
 STATUS=ROOT/'content/status.json'
 
@@ -21,22 +23,75 @@ def load_site():
     site['baseUrl']=base
     return site
 
-def load_news():
-    data=read_json(NEWS)
+def _validate_story(n, ids, ranks):
     required={'id','rank','title','excerpt','category','date','readTime','sourceUrl'}
+    miss=required-set(n)
+    if miss: raise SystemExit(f"{n.get('id','?')} missing {sorted(miss)}")
+    if n['id'] in ids: raise SystemExit(f"duplicate id {n['id']}")
+    if n['rank'] in ranks: raise SystemExit(f"duplicate rank {n['rank']}")
+    ids.add(n['id']); ranks.add(n['rank'])
+    datetime.strptime(n['date'],'%Y-%m-%d')
+    if n.get('verified') and not str(n.get('sourceUrl','')).startswith('https://'):
+        raise SystemExit(f"verified story {n['id']} needs https sourceUrl")
+    if not isinstance(n.get('hkImpact',[]),list):
+        raise SystemExit(f"{n['id']} hkImpact must be an array")
+
+def _daily_files():
+    if not DAILY_DIR.exists():
+        return []
+    files=[]
+    for path in DAILY_DIR.glob('*.json'):
+        try:
+            datetime.strptime(path.stem,'%Y-%m-%d')
+        except ValueError:
+            raise SystemExit(f"daily edition filename must be YYYY-MM-DD: {path.name}")
+        files.append(path)
+    return sorted(files,key=lambda p:p.stem,reverse=True)
+
+def load_news():
+    legacy=read_json(NEWS)
+    if not isinstance(legacy,list):
+        raise SystemExit('content/news.json must be an array')
+
+    daily_files=_daily_files()
+    merged=[]
+
+    # Daily files keep only local ranks 1..10. The build computes global ranks,
+    # so publishing a new edition never rewrites the entire historical archive.
+    for edition_index,path in enumerate(daily_files):
+        batch=read_json(path)
+        if not isinstance(batch,list) or len(batch)!=10:
+            raise SystemExit(f"{path}: daily edition must contain exactly 10 stories")
+        local_ranks=set()
+        for raw in batch:
+            n=dict(raw)
+            if str(n.get('date','')) != path.stem:
+                raise SystemExit(f"{path}: {n.get('id','?')} date must equal {path.stem}")
+            try:
+                local_rank=int(n.get('rank'))
+            except Exception:
+                raise SystemExit(f"{path}: {n.get('id','?')} rank must be an integer 1..10")
+            if local_rank not in range(1,11) or local_rank in local_ranks:
+                raise SystemExit(f"{path}: local ranks must be unique 1..10")
+            local_ranks.add(local_rank)
+            n['rank']=edition_index*10+local_rank
+            merged.append(n)
+        if local_ranks != set(range(1,11)):
+            raise SystemExit(f"{path}: daily ranks must be exactly 1..10")
+
+    legacy_offset=len(daily_files)*10
+    for raw in legacy:
+        n=dict(raw)
+        try:
+            n['rank']=int(n['rank'])+legacy_offset
+        except Exception:
+            raise SystemExit(f"legacy story {n.get('id','?')} rank must be an integer")
+        merged.append(n)
+
     ids=set(); ranks=set()
-    for n in data:
-        miss=required-set(n)
-        if miss: raise SystemExit(f"{n.get('id','?')} missing {sorted(miss)}")
-        if n['id'] in ids: raise SystemExit(f"duplicate id {n['id']}")
-        if n['rank'] in ranks: raise SystemExit(f"duplicate rank {n['rank']}")
-        ids.add(n['id']); ranks.add(n['rank'])
-        datetime.strptime(n['date'],'%Y-%m-%d')
-        if n.get('verified') and not str(n.get('sourceUrl','')).startswith('https://'):
-            raise SystemExit(f"verified story {n['id']} needs https sourceUrl")
-        if not isinstance(n.get('hkImpact',[]),list):
-            raise SystemExit(f"{n['id']} hkImpact must be an array")
-    return sorted(data,key=lambda n:(n.get('rank',999),n['date']))
+    for n in merged:
+        _validate_story(n,ids,ranks)
+    return sorted(merged,key=lambda n:(n.get('rank',999),n['date']))
 
 def write_js(path,var,obj):
     path.write_text(f'window.{var} = '+json.dumps(obj,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
@@ -134,6 +189,8 @@ def main():
     write_js(ROOT/'data/news.js','AISON_NEWS',data)
     write_js(ROOT/'data/site.js','AISON_SITE',site)
     build_search(data); build_article_pages(data,site,social_card_ids); build_rss(data,site); build_sitemap(data,site); build_status(data,status)
-    print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards')
+    overview=build_daily_overview(data,site,ROOT)
+    overview_count=overview.get('count',0) if overview else 0
+    print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards / daily overview {overview_count} stories')
 
 if __name__=='__main__': main()
