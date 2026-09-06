@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-05",
+  "dailyOneLiner": "AI 競爭今日唔再只睇模型有幾勁：前沿模型能否穩定交付、規則點樣跟上，以及算力與資本夠唔夠支撐，開始一齊決定邊個真正贏到下一輪。",
+  "top3Ids": [
+    "2026-09-05-openai-astra-messy-rollout",
+    "2026-09-05-us-china-ai-safety-talks",
+    "2026-09-05-moonshot-hong-kong-ipo"
+  ],
+  "threeThemes": [
+    {
+      "title": "由發布走向交付",
+      "summary": "Astra rollout 反映「模型已發布」同「用戶實際用得到」已經係兩件事。前沿 AI 開始要比拼容量、穩定性、風險分級同交付承諾。",
+      "watch": "留意 Astra 各付費方案及香港帳戶的實際開放速度、用量限制，以及 OpenAI 會否提供更清楚的 rollout 狀態與 SLA。"
+    },
+    {
+      "title": "AI 規則開始追上能力",
+      "summary": "美中 AI 安全對話同前沿模型的政治／安全風險，令監管由抽象原則走向事故通報、模型測試與跨境安全機制。",
+      "watch": "留意美中會議是否正式確認、事故披露機制有冇落地，以及主要模型公司會否提高 misalignment／安全事件透明度。"
+    },
+    {
+      "title": "算力與資本成第二戰場",
+      "summary": "Moonshot 香港 IPO、先進封裝與 HBM 供應等訊號都指向同一件事：模型競爭背後其實係資金、晶片、記憶體同基建的競爭。",
+      "watch": "留意 Moonshot 正式上市文件、先進封裝產能、HBM 新一代量產時間表，以及大型雲端與 AI 公司資本開支。"
+    }
+  ],
+  "biggestChange": "前沿 AI 的競爭指標已由 benchmark 擴大成「能力 × 交付 × 規則 × 算力」；單純模型分數愈來愈不足以判斷一間公司真正的競爭力。",
+  "watchTomorrow": "最值得追蹤的是 Astra rollout 是否改善、美中 AI 安全對話有冇正式議程、Moonshot IPO 是否出現可核實文件，以及晶片／HBM 供應鏈有冇新確認。"
+}
