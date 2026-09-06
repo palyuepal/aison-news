@@ -61,11 +61,16 @@
     return null;
   }
 
-  window.AISON_ANALYTICS={track};
-  document.addEventListener('DOMContentLoaded',()=>{
+  let initialized=false;
+  function init(){
+    if(initialized)return; initialized=true;
     track('pageview',{path:location.pathname});
     document.addEventListener('click',event=>{
       const hit=classifyClick(event.target); if(hit) track(hit[0],{content:hit[1]});
     },{capture:true,passive:true});
-  });
+  }
+
+  window.AISON_ANALYTICS={track};
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init,{once:true});
+  else init();
 })();
