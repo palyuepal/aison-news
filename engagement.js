@@ -6,6 +6,7 @@
   const NEWS=()=>Array.isArray(window.AISON_NEWS)?window.AISON_NEWS.slice().sort((a,b)=>(a.rank||99)-(b.rank||99)):[];
   const STATUS=()=>window.AISON_STATUS||{};
   const SITE=()=>window.AISON_SITE||{};
+  const EDITORIAL=()=>window.AISON_EDITORIAL||{};
   const LAST_SEEN_KEY='aison-last-seen-edition-v1';
   const DAILY_URL='https://aison.hk/daily.html';
 
@@ -23,7 +24,23 @@
     return [...stats.entries()].sort((a,b)=>b[1].count-a[1].count||a[1].first-b[1].first).slice(0,3).map(([name])=>name);
   }
 
-  function summaryText(items){
+  function validEditorial(date){
+    const e=EDITORIAL();
+    return e&&e.date===date?e:null;
+  }
+
+  function orderedTop(items,date){
+    const e=validEditorial(date),map=new Map(items.map(item=>[item.id,item]));
+    if(e&&Array.isArray(e.top3Ids)){
+      const picked=e.top3Ids.map(id=>map.get(id)).filter(Boolean);
+      if(picked.length===3)return picked;
+    }
+    return items.slice(0,3);
+  }
+
+  function summaryText(items,date){
+    const e=validEditorial(date);
+    if(e?.dailyOneLiner)return e.dailyOneLiner;
     const first=items[0],cats=dominantCategories(items);
     if(!first) return '今日版本正在整理。';
     const categoryText=cats.length?cats.join('、'):'AI 大事';
@@ -31,9 +48,11 @@
   }
 
   function shareBody(items,date){
-    const top=items.slice(0,3);
+    const top=orderedTop(items,date);
     const lines=top.map((item,index)=>`${index+1}. ${short(item.title,74)}`);
-    return [`AIson 今日 AI 10 件事｜${fmtDate(date)}`,'',...lines].join('\n');
+    const e=validEditorial(date);
+    const one=e?.dailyOneLiner?['',short(e.dailyOneLiner,130)]:[];
+    return [`AIson 今日 AI 10 件事｜${fmtDate(date)}`,...one,'',...lines].join('\n');
   }
 
   function shareText(items,date){
@@ -73,8 +92,11 @@
   function renderSnapshot(){
     const items=NEWS().slice(0,10),date=editionDate(items);
     const text=$('#dailySnapshotText'),meta=$('#dailySnapshotMeta');
-    if(text) text.textContent=summaryText(items);
-    if(meta) meta.textContent=date?`${fmtDate(date)} · 10 則已整理重點 · 香港視點`:'最新編輯版';
+    if(text) text.textContent=summaryText(items,date);
+    if(meta){
+      const e=validEditorial(date);
+      meta.textContent=date?`${fmtDate(date)} · 10 則已整理重點 · ${e?.source==='editorial'?'編輯主線':'香港視點'}`:'最新編輯版';
+    }
     renderReturnStatus(date);
     setupNewsletter();
 
