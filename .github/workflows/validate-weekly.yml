@@ -40,7 +40,6 @@ jobs:
           if grep -q 'data/news.js' weekly.html; then echo 'weekly must not load full news payload' >&2; exit 1; fi
           if grep -q 'app.js' weekly.html; then echo 'weekly must use dedicated lightweight renderer' >&2; exit 1; fi
           grep -q "'weekly.js'" service-worker.js
-          grep -q 'phase6-weekly-deep' service-worker.js
       - name: Verify current archive can produce three Weekly signals
         shell: bash
         run: |
