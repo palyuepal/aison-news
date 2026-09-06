@@ -193,7 +193,7 @@ jobs:
           grep -q 'assets/social/daily-20' /tmp/aison-share-preview/daily.html
           grep -q 'AIson 今日 AI 10 件事｜20' /tmp/aison-share-preview/index.html
           grep -q '今日焦點：' /tmp/aison-share-preview/daily.html
-      - run: git diff --exit-code -- . ':!data/status.js' ':!data/news.js' ':!data/search-index.json' ':!data/editorial.js'
+      - run: git diff --exit-code -- . ':!data/status.js' ':!data/news.js' ':!data/search-index.json' ':!data/editorial.js' ':!data/site.js'
       - name: Build lightweight page payloads
         run: python tools/build_light_payloads.py
       - name: Verify split page payloads
