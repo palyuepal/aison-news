@@ -7,6 +7,7 @@
   const STATUS=()=>window.AISON_STATUS||{};
   const SITE=()=>window.AISON_SITE||{};
   const LAST_SEEN_KEY='aison-last-seen-edition-v1';
+  const DAILY_URL='https://aison.hk/daily.html';
 
   function editionDate(items){return STATUS().editionDate||items.map(x=>x.date).filter(Boolean).sort().at(-1)||''}
 
@@ -29,10 +30,14 @@
     return `今日 10 件事最集中喺 ${categoryText}；第一焦點係「${short(first.title,58)}」。`;
   }
 
-  function shareText(items,date){
+  function shareBody(items,date){
     const top=items.slice(0,3);
     const lines=top.map((item,index)=>`${index+1}. ${short(item.title,74)}`);
-    return [`AIson 今日 AI 10 件事｜${fmtDate(date)}`,'',...lines,'','其餘 7 件＋香港影響：https://aison.hk/daily.html'].join('\n');
+    return [`AIson 今日 AI 10 件事｜${fmtDate(date)}`,'',...lines].join('\n');
+  }
+
+  function shareText(items,date){
+    return [shareBody(items,date),'','其餘 7 件＋香港影響：'+DAILY_URL].join('\n');
   }
 
   async function copyText(text){
@@ -73,11 +78,11 @@
     renderReturnStatus(date);
     setupNewsletter();
 
-    const payload=shareText(items,date);
+    const payload=shareText(items,date),nativeText=shareBody(items,date);
     $('#shareDailyBtn')?.addEventListener('click',async()=>{
       try{
         if(navigator.share){
-          await navigator.share({title:`AIson 今日 AI 10 件事｜${fmtDate(date)}`,text:payload,url:'https://aison.hk/daily.html'});
+          await navigator.share({title:`AIson 今日 AI 10 件事｜${fmtDate(date)}`,text:nativeText,url:DAILY_URL});
           return;
         }
         await copyText(payload);showToast('已複製今日分享文字');
