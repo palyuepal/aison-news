@@ -1,0 +1,90 @@
+name: AIson Daily Freshness Sentinel
+on:
+  schedule:
+    - cron: '15 1 * * *'
+    - cron: '15 2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: write
+  issues: write
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Resolve Hong Kong edition date
+        run: echo "AISON_DATE=$(TZ=Asia/Hong_Kong date +%F)" >> "$GITHUB_ENV"
+      - name: Check source-of-truth edition
+        id: source
+        continue-on-error: true
+        run: python tools/check_freshness.py --source-only --date "$AISON_DATE"
+      - name: Check public edition
+        id: live
+        continue-on-error: true
+        run: python tools/check_freshness.py --live-only --date "$AISON_DATE"
+      - name: Re-deploy when source is healthy but public site is stale
+        id: recovery
+        if: steps.source.outcome == 'success' && steps.live.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          before="$(gh run list --workflow=pages.yml --branch main --limit 1 --json databaseId --jq '.[0].databaseId // 0')"
+          echo "Public site is stale while source is valid; dispatching Pages once. Previous run: $before"
+          gh workflow run pages.yml --ref main
+          new_id=""
+          for _ in $(seq 1 12); do
+            sleep 15
+            candidate="$(gh run list --workflow=pages.yml --branch main --limit 1 --json databaseId --jq '.[0].databaseId // 0')"
+            if [ "$candidate" != "$before" ] && [ "$candidate" != "0" ]; then new_id="$candidate"; break; fi
+          done
+          if [ -z "$new_id" ]; then echo "Could not resolve dispatched Pages run" >&2; exit 1; fi
+          echo "Waiting for Pages run $new_id"
+          gh run watch "$new_id" --exit-status
+          sleep 20
+          python tools/check_freshness.py --live-only --date "$AISON_DATE"
+      - name: Open or refresh stale-edition issue
+        if: steps.source.outcome == 'failure' || (steps.live.outcome == 'failure' && steps.recovery.outcome != 'success')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="AIson stale edition $AISON_DATE"
+          existing="$(gh issue list --state open --search "$title in:title" --json number,title --jq '.[] | select(.title == "'"$title"'") | .number' | head -1)"
+          body=$(cat <<EOF
+          Automated freshness sentinel detected a publishing problem for **$AISON_DATE (Asia/Hong_Kong)**.
+
+          - Source check: `${{ steps.source.outcome }}`
+          - Public-site check: `${{ steps.live.outcome }}`
+          - Recovery deploy: `${{ steps.recovery.outcome }}`
+          - Workflow run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+
+          The sentinel never creates or rewrites editorial content. If the daily JSON is missing, the 08:00/09:00 publishing automation must create the single source-of-truth edition. If source is valid but the site is stale, this workflow attempts one Pages redeploy.
+          EOF
+          )
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body"
+          fi
+      - name: Close recovered stale-edition issue
+        if: steps.source.outcome == 'success' && (steps.live.outcome == 'success' || steps.recovery.outcome == 'success')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="AIson stale edition $AISON_DATE"
+          existing="$(gh issue list --state open --search "$title in:title" --json number,title --jq '.[] | select(.title == "'"$title"'") | .number' | head -1)"
+          if [ -n "$existing" ]; then gh issue close "$existing" --comment "Freshness checks recovered for $AISON_DATE."; fi
+      - name: Fail unresolved health check
+        if: steps.source.outcome == 'failure' || (steps.live.outcome == 'failure' && steps.recovery.outcome != 'success')
+        run: |
+          echo "AIson daily freshness remains unresolved for $AISON_DATE" >&2
+          exit 1
