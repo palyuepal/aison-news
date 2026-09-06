@@ -18,9 +18,10 @@ jobs:
           node --check weekly.js
           node --check lite-home.js
           node --check engagement.js
+          node --check analytics.js
           node --check live.js
           node --check live-timeline.js
-          python -m py_compile tools/patch_share_meta.py tools/build_light_payloads.py
+          python -m py_compile tools/patch_share_meta.py tools/build_light_payloads.py tools/editorial.py tools/check_freshness.py
       - name: Install social card renderer
         run: |
           python -m pip install --disable-pip-version-check "Pillow>=11,<13"
@@ -39,9 +40,49 @@ jobs:
           test -f assets/social/daily-latest.jpg
           test -f data/news.js
           test -f data/search-index.json
+          test -f data/editorial.js
           test -f data/live.js
+          grep -q 'window.AISON_EDITORIAL' data/editorial.js
           grep -q 'window.AISON_LIVE' data/live.js
           grep -q '2026-' data/news.js
+      - name: Verify editorial metadata and privacy analytics
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'data/editorial.js' engagement.js
+          grep -q 'analytics.js' engagement.js
+          grep -q "'data/editorial.js'" service-worker.js
+          grep -q "'analytics.js'" service-worker.js
+          grep -q 'respectDNT' analytics.js
+          grep -q 'credentials:' analytics.js
+          grep -q 'AIson Daily Freshness Sentinel' .github/workflows/healthcheck.yml
+          grep -q 'tools/check_freshness.py' .github/workflows/healthcheck.yml
+          python - <<'PY'
+          import json,pathlib,re
+          site=json.load(open('content/site.json',encoding='utf-8'))
+          analytics=site.get('analytics',{})
+          assert analytics.get('enabled') is False
+          assert analytics.get('respectDNT') is True
+          text=pathlib.Path('data/editorial.js').read_text(encoding='utf-8').strip()
+          m=re.match(r'window\.AISON_EDITORIAL\s*=\s*(\{.*\});?$',text,re.S)
+          assert m, 'invalid editorial payload'
+          meta=json.loads(m.group(1))
+          latest=sorted(pathlib.Path('content/daily').glob('*.json'),key=lambda p:p.stem)[-1]
+          items=json.load(open(latest,encoding='utf-8'))
+          assert meta['date']==latest.stem
+          assert len(meta['top3Ids'])==3 and len(set(meta['top3Ids']))==3
+          assert set(meta['top3Ids']) <= {x['id'] for x in items}
+          assert len(meta['threeThemes'])==3
+          assert all({'title','summary','watch'} <= set(t) for t in meta['threeThemes'])
+          print('editorial metadata ok:',meta['date'],meta.get('source'))
+          PY
+      - name: Verify source freshness checker against latest stored edition
+        shell: bash
+        run: |
+          set -euo pipefail
+          edition="$(find content/daily -maxdepth 1 -name '20??-??-??.json' -printf '%f\n' | sed 's/\.json$//' | sort | tail -1)"
+          test -n "$edition"
+          python tools/check_freshness.py --source-only --date "$edition"
       - name: Verify AIson LIVE timeline
         shell: bash
         run: |
@@ -152,7 +193,7 @@ jobs:
           grep -q 'assets/social/daily-20' /tmp/aison-share-preview/daily.html
           grep -q 'AIson 今日 AI 10 件事｜20' /tmp/aison-share-preview/index.html
           grep -q '今日焦點：' /tmp/aison-share-preview/daily.html
-      - run: git diff --exit-code -- . ':!data/status.js' ':!data/news.js' ':!data/search-index.json'
+      - run: git diff --exit-code -- . ':!data/status.js' ':!data/news.js' ':!data/search-index.json' ':!data/editorial.js'
       - name: Build lightweight page payloads
         run: python tools/build_light_payloads.py
       - name: Verify split page payloads
