@@ -10,6 +10,12 @@
     "provider": "Beehiiv",
     "subscribeUrl": "https://yues-newsletter-c6d023.beehiiv.com/subscribe"
   },
+  "analytics": {
+    "enabled": false,
+    "provider": "none",
+    "endpoint": "",
+    "respectDNT": true
+  },
   "social": {
     "threads": "",
     "instagram": "",
