@@ -10,6 +10,14 @@
   const LAST_SEEN_KEY='aison-last-seen-edition-v1';
   const DAILY_URL='https://aison.hk/daily.html';
 
+  function loadScript(src,id){
+    if(document.getElementById(id))return Promise.resolve();
+    return new Promise(resolve=>{
+      const script=document.createElement('script');script.id=id;script.src=src;script.async=true;
+      script.onload=()=>resolve();script.onerror=()=>resolve();document.head.appendChild(script);
+    });
+  }
+
   function editionDate(items){return STATUS().editionDate||items.map(x=>x.date).filter(Boolean).sort().at(-1)||''}
 
   function dominantCategories(items){
@@ -115,8 +123,15 @@
     });
   }
 
-  document.addEventListener('DOMContentLoaded',()=>{
-    if(document.body?.dataset.page!=='home') return;
+  async function init(){
+    if(document.body?.dataset.page!=='home')return;
+    await Promise.all([
+      loadScript('data/editorial.js?v=20260907-editorial','aison-editorial-data'),
+      loadScript('analytics.js?v=20260907-analytics','aison-analytics-script')
+    ]);
     renderSnapshot();
-  });
+  }
+
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});
+  else init();
 })();
