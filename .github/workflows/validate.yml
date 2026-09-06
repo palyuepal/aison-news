@@ -15,7 +15,9 @@ jobs:
           node --check story-updates.js
           node --check archive.js
           node --check topics.js
+          node --check weekly.js
           node --check lite-home.js
+          node --check engagement.js
           node --check live.js
           node --check live-timeline.js
           python -m py_compile tools/patch_share_meta.py tools/build_light_payloads.py
@@ -64,7 +66,7 @@ jobs:
           grep -q 'storylineCandidates' topics.js
           grep -q 'renderTimeline' topics.js
           grep -q 'LATEST DEVELOPMENT' topics.js
-          grep -q 'phase5-storylines' service-worker.js
+          grep -q "'topics.js'" service-worker.js
           python - <<'PY'
           import json
           rows=json.load(open('data/search-index.json',encoding='utf-8'))
@@ -87,6 +89,37 @@ jobs:
               counts[name]=count
           assert any(v>=2 for v in counts.values()), counts
           print('topic storylines available:',{k:v for k,v in counts.items() if v>=2})
+          PY
+      - name: Verify homepage engagement
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f engagement.js
+          test -f engagement.css
+          grep -q 'id="dailySnapshot"' index.html
+          grep -q 'id="shareDailyBtn"' index.html
+          grep -q 'id="copyDailyBtn"' index.html
+          grep -q 'id="returnCta"' index.html
+          grep -q 'engagement.css' index.html
+          grep -q 'engagement.js' index.html
+          grep -q 'navigator.share' engagement.js
+          grep -q 'navigator.clipboard' engagement.js
+          grep -q 'aison-last-seen-edition-v1' engagement.js
+          grep -q "'engagement.js'" service-worker.js
+          grep -q "'engagement.css'" service-worker.js
+          python - <<'PY'
+          import sys
+          sys.path.insert(0,'tools')
+          import patch_share_meta as p
+          edition=p.latest_edition()
+          items=p.load_items(edition)
+          title,description=p.share_copy(edition,items)
+          assert len(items)==10
+          assert title.startswith('AIson 今日 AI 10 件事｜')
+          assert '今日焦點：' in description
+          assert items[0]['title'][:10] in description
+          print(title)
+          print(description)
           PY
       - name: Verify lightweight archive
         shell: bash
@@ -117,6 +150,8 @@ jobs:
           python tools/patch_share_meta.py /tmp/aison-share-preview
           grep -q 'assets/social/daily-20' /tmp/aison-share-preview/index.html
           grep -q 'assets/social/daily-20' /tmp/aison-share-preview/daily.html
+          grep -q 'AIson 今日 AI 10 件事｜20' /tmp/aison-share-preview/index.html
+          grep -q '今日焦點：' /tmp/aison-share-preview/daily.html
       - run: git diff --exit-code -- . ':!data/status.js' ':!data/news.js' ':!data/search-index.json'
       - name: Build lightweight page payloads
         run: python tools/build_light_payloads.py
