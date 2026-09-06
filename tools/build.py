@@ -6,6 +6,7 @@ from email.utils import format_datetime
 from urllib.parse import urljoin
 from social_cards import build_social_cards
 from daily_overview import build_daily_overview
+from editorial import build_editorial_payload
 
 ROOT=Path(__file__).resolve().parents[1]
 NEWS=ROOT/'content/news.json'
@@ -185,12 +186,13 @@ def build_status(data,status):
 
 def main():
     site=load_site(); data=load_news(); status=read_json(STATUS)
+    editorial=build_editorial_payload()
     social_card_ids=build_social_cards(data,site,ROOT)
     write_js(ROOT/'data/news.js','AISON_NEWS',data)
     write_js(ROOT/'data/site.js','AISON_SITE',site)
     build_search(data); build_article_pages(data,site,social_card_ids); build_rss(data,site); build_sitemap(data,site); build_status(data,status)
     overview=build_daily_overview(data,site,ROOT)
     overview_count=overview.get('count',0) if overview else 0
-    print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards / daily overview {overview_count} stories')
+    print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards / daily overview {overview_count} stories / editorial {editorial.get("source","?")}')
 
 if __name__=='__main__': main()
