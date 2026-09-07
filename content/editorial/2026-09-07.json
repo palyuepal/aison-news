@@ -1,0 +1,28 @@
+{
+  "date":"2026-09-07",
+  "dailyOneLiner":"AI 今日最大訊號係 Physical AI 同 Agent governance 同時走入現場：由 robotaxi、貨車、工廠，到 Agent 身份與資料中心政治，AI 已由螢幕內工具變成基建、工業與制度問題。",
+  "top3Ids":[
+    "2026-09-07-atoms-kalanick-robotaxi",
+    "2026-09-07-itu-secure-agentic-ai-standards",
+    "2026-09-07-us-ai-datacenter-political-backlash"
+  ],
+  "threeThemes":[
+    {
+      "title":"Physical AI 進入商業化第二回合",
+      "summary":"Atoms 重返 robotaxi、RideFlux 將自動駕駛帶入大型貨車，Physical AI 開始由 demo 轉向車隊、物流與實際營運。",
+      "watch":"留意實際車隊數量、道路測試數據、監管批准與每公里營運成本，而唔係只睇融資或概念展示。"
+    },
+    {
+      "title":"Agent 安全開始走向國際標準",
+      "summary":"ITU 把 Agent 身份、工具權限、目標劫持與 runtime monitoring 帶入正式標準化討論，企業 Agent 可能逐步形成共同安全底層。",
+      "watch":"留意 ITU-T SG17 是否建立正式 work item，以及 agent identity、最小權限與可驗證操作紀錄會否形成通用規格。"
+    },
+    {
+      "title":"算力成本與基建政治成為 AI ceiling",
+      "summary":"美國 data center 地方反彈與 NVIDIA server 成本壓力同時浮面，AI scaling 的限制正由 GPU 延伸到電網、土地、記憶體與社區接受度。",
+      "watch":"留意 data center permitting、電網接入、HBM／server 價格與雲端供應商是否把成本轉嫁到 AI 服務。"
+    }
+  ],
+  "biggestChange":"AI 競爭正由模型本身延伸到實體系統、基建容量與治理規則；真正的瓶頸開始出現在『可部署、可監察、可負擔』。",
+  "watchTomorrow":"追蹤 ITU Agent 標準工作會否形成具體規格、Physical AI 項目有沒有實際部署數據，以及 GPU／資料中心成本是否進一步反映到雲端 AI 定價。"
+}
