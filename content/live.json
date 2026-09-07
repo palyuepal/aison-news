@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "2026-09-07-openai-automated-research-intern",
+    "title": "OpenAI 稱已達成「自動化研究實習生」里程碑",
+    "summary": "OpenAI 公布內部數據，指 AI coding agents 已可在人類指導下完成原需熟練研究員數日的明確研究任務；截至 8 月中，研究部門每個人類工作日合計使用約 3.1 個 agent 工作日。公司同時承認複雜任務仍需大量人手介入，並表示若安全風險不可接受會減速或暫停開發。",
+    "category": "AI 研究",
+    "publishedAt": "2026-09-07T02:33:35Z",
+    "sourceLabel": "OpenAI 官方",
+    "sourceUrl": "https://openai.com/index/research-acceleration-view-inside-openai/",
+    "verified": true,
+    "active": true
+  }
+]
