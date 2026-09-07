@@ -127,7 +127,8 @@
     if(document.body?.dataset.page!=='home')return;
     await Promise.all([
       loadScript('data/editorial.js?v=20260907-editorial','aison-editorial-data'),
-      loadScript('analytics.js?v=20260907-analytics','aison-analytics-script')
+      loadScript('analytics.js?v=20260907-analytics','aison-analytics-script'),
+      loadScript('for-you.js?v=20260907-for-you','aison-for-you-script')
     ]);
     renderSnapshot();
   }
