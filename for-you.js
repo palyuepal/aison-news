@@ -12,6 +12,23 @@
     investor:{label:'市場／投資',hint:'資本／產業',keywords:['投資','投資者','市場','估值','融資','ipo','資本','股價','收入','毛利','成本','nvidia','晶片','資料中心','供應鏈','基金','valuation']}
   };
 
+  function ensureShell(){
+    let root=$('#forYouPanel');
+    if(root)return root;
+    const anchor=$('#dailySnapshot');
+    if(!anchor)return null;
+    if(!document.getElementById('aison-for-you-style')){
+      const link=document.createElement('link');
+      link.id='aison-for-you-style';link.rel='stylesheet';link.href='for-you.css?v=20260907-for-you';
+      document.head.appendChild(link);
+    }
+    root=document.createElement('section');
+    root.className='for-you-panel';root.id='forYouPanel';root.setAttribute('aria-labelledby','forYouHeading');
+    root.innerHTML='<div class="for-you-head"><div class="for-you-title"><div class="mini-label">FOR YOU · LOCAL ONLY</div><h3 id="forYouHeading">今日邊 3 件同你最有關？</h3><p id="forYouSummary">揀一個身份，AIson 會先幫你抽出最相關影響。</p></div><span class="for-you-local">只儲存在此裝置</span></div><div class="for-you-roles" id="forYouRoles" aria-label="選擇閱讀身份"></div><div class="for-you-list" id="forYouList"></div>';
+    anchor.insertAdjacentElement('afterend',root);
+    return root;
+  }
+
   function readRole(){try{const role=localStorage.getItem(STORAGE_KEY)||'';return ROLES[role]?role:''}catch{return ''}}
   function writeRole(role){try{role?localStorage.setItem(STORAGE_KEY,role):localStorage.removeItem(STORAGE_KEY)}catch{}}
   function stories(){return (window.AISON_NEWS||[]).slice().sort((a,b)=>(a.rank||99)-(b.rank||99)).slice(0,10)}
@@ -38,8 +55,10 @@
   function track(role){try{window.AISON_ANALYTICS?.track?.('for_you_role',{content:role||'cleared'})}catch{}}
 
   function render(){
-    const root=$('#forYouPanel'),rolesRoot=$('#forYouRoles'),summary=$('#forYouSummary'),list=$('#forYouList');
-    if(!root||!rolesRoot||!summary||!list)return;
+    const root=ensureShell();
+    if(!root)return;
+    const rolesRoot=$('#forYouRoles'),summary=$('#forYouSummary'),list=$('#forYouList');
+    if(!rolesRoot||!summary||!list)return;
     const role=readRole();
     rolesRoot.innerHTML=Object.entries(ROLES).map(([key,def])=>`<button type="button" class="for-you-role${role===key?' active':''}" data-for-you-role="${key}" aria-pressed="${role===key}"><b>${esc(def.label)}</b><small>${esc(def.hint)}</small></button>`).join('');
     rolesRoot.querySelectorAll('[data-for-you-role]').forEach(button=>button.addEventListener('click',()=>{
