@@ -24,8 +24,8 @@ jobs:
           grep -q "'for-you.js'" service-worker.js
           grep -q "'for-you.css'" service-worker.js
           grep -q '只儲存在此裝置' for-you.js
-          if grep -Eq 'fetch\(|XMLHttpRequest|sendBeacon' for-you.js; then
-            echo 'For You must stay local-only and must not send network requests' >&2
+          if grep -Eq 'fetch\(|XMLHttpRequest|sendBeacon|AISON_ANALYTICS' for-you.js; then
+            echo 'Role Lens must stay fully local-only and must not send or forward role telemetry' >&2
             exit 1
           fi
       - name: Verify latest edition supports personalized impacts
@@ -37,5 +37,5 @@ jobs:
           assert len(rows)==10
           assert all(isinstance(x.get('hkImpact'),list) and len(x['hkImpact'])>=3 for x in rows)
           assert {int(x['rank']) for x in rows}==set(range(1,11))
-          print('For You input ok:',latest.stem,len(rows),'stories')
+          print('Role Lens input ok:',latest.stem,len(rows),'stories')
           PY
