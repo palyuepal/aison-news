@@ -31,6 +31,8 @@ jobs:
         run: python tools/build_light_payloads.py
       - name: Build AIson LIVE
         run: python tools/build_live.py
+      - name: Build trust and corrections log
+        run: python tools/build_corrections.py
       - name: Prepare public site artifact
         shell: bash
         run: |
