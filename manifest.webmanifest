@@ -1,1 +1,22 @@
-{"name":"AIson 每日 AI 新聞","short_name":"AIson","lang":"zh-Hant-HK","start_url":"./index.html","display":"standalone","background_color":"#061a3a","theme_color":"#061a3a","icons":[{"src":"assets/icon-192.png","sizes":"192x192","type":"image/png"},{"src":"assets/icon-512.png","sizes":"512x512","type":"image/png"}]}
+{
+  "id": "./",
+  "name": "AIson 每日 AI 新聞",
+  "short_name": "AIson",
+  "description": "香港人的每日 AI 新聞站：今日 AI 10 件事、LIVE、Storylines 與 Weekly 深度整理。",
+  "lang": "zh-Hant-HK",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#061a3a",
+  "theme_color": "#061a3a",
+  "categories": ["news", "productivity"],
+  "icons": [
+    {"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ],
+  "shortcuts": [
+    {"name": "今日 AI 10 件事", "short_name": "今日 10 件", "url": "./daily.html", "icons": [{"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png"}]},
+    {"name": "AIson LIVE", "short_name": "LIVE", "url": "./live.html", "icons": [{"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png"}]},
+    {"name": "本週深度整理", "short_name": "Weekly", "url": "./weekly.html", "icons": [{"src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png"}]}
+  ]
+}
