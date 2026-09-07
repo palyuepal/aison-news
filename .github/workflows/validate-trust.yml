@@ -1,0 +1,35 @@
+name: Validate AIson Trust Layer
+on:
+  push:
+  pull_request:
+jobs:
+  trust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax checks
+        run: |
+          node --check trust.js
+          node --check corrections.js
+          python -m py_compile tools/build_corrections.py
+      - name: Validate article trust schema
+        run: python tools/build_corrections.py --validate-only
+      - name: Verify trust surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f corrections.html
+          test -f trust.css
+          grep -q 'trust.css' article.html
+          grep -q 'trust.js' article.html
+          grep -q 'corrections.html' article.html
+          grep -q 'data/corrections.js' corrections.html
+          grep -q 'correctionNote' trust.js
+          grep -q 'followUpOf' trust.js
+          grep -q 'updatedAt' tools/build_corrections.py
+          grep -q 'build_corrections.py' .github/workflows/pages.yml
+          grep -q "'data/corrections.js'" service-worker.js
+          grep -q "'corrections.html'" service-worker.js
