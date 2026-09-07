@@ -34,7 +34,7 @@ jobs:
           grep -q 'correctionNote' trust.js
           grep -q 'followUpOf' trust.js
           grep -q 'updatedAt' tools/build_corrections.py
+          grep -q 'corrections.html' tools/build_corrections.py
           grep -q 'build_corrections.py' .github/workflows/pages.yml
           grep -q "'data/corrections.js'" service-worker.js
           grep -q "'corrections.html'" service-worker.js
-          grep -q 'https://aison.hk/corrections.html' sitemap.xml
