@@ -56,5 +56,7 @@
     list.innerHTML=items.map(({story,impact},index)=>`<a class="for-you-card" href="news/${encodeURIComponent(story.id)}.html"><div class="for-you-card-top"><span>0${index+1} · ${esc(story.category||'AI')}</span><b>#${String(story.rank||'').padStart(2,'0')}</b></div><h4>${esc(story.title)}</h4><p><strong>同你有咩關係：</strong>${esc(short(impact,108))}</p><small>睇完整報道 →</small></a>`).join('');
   }
 
-  document.addEventListener('DOMContentLoaded',()=>{if(document.body?.dataset.page==='home')render()});
+  function boot(){if(document.body?.dataset.page==='home')render()}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});
+  else boot();
 })();
