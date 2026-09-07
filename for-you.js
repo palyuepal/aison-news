@@ -52,7 +52,6 @@
     return stories().map(story=>({story,score:scoreStory(story,role),impact:bestImpact(story,role)}))
       .sort((a,b)=>b.score-a.score||(a.story.rank||99)-(b.story.rank||99)).slice(0,3);
   }
-  function track(role){try{window.AISON_ANALYTICS?.track?.('for_you_role',{content:role||'cleared'})}catch{}}
 
   function render(){
     const root=ensureShell();
@@ -63,7 +62,7 @@
     rolesRoot.innerHTML=Object.entries(ROLES).map(([key,def])=>`<button type="button" class="for-you-role${role===key?' active':''}" data-for-you-role="${key}" aria-pressed="${role===key}"><b>${esc(def.label)}</b><small>${esc(def.hint)}</small></button>`).join('');
     rolesRoot.querySelectorAll('[data-for-you-role]').forEach(button=>button.addEventListener('click',()=>{
       const next=role===button.dataset.forYouRole?'':button.dataset.forYouRole;
-      writeRole(next);track(next);render();
+      writeRole(next);render();
     }));
     if(!role){
       summary.textContent='揀一個角色，AIson 會由今日 10 件事中先抽出同你最有關嘅 3 則影響。';
