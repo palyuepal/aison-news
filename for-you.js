@@ -19,12 +19,12 @@
     if(!anchor)return null;
     if(!document.getElementById('aison-for-you-style')){
       const link=document.createElement('link');
-      link.id='aison-for-you-style';link.rel='stylesheet';link.href='for-you.css?v=20260907-for-you';
+      link.id='aison-for-you-style';link.rel='stylesheet';link.href='for-you.css?v=20260907-role-lens';
       document.head.appendChild(link);
     }
     root=document.createElement('section');
     root.className='for-you-panel';root.id='forYouPanel';root.setAttribute('aria-labelledby','forYouHeading');
-    root.innerHTML='<div class="for-you-head"><div class="for-you-title"><div class="mini-label">FOR YOU · LOCAL ONLY</div><h3 id="forYouHeading">今日邊 3 件同你最有關？</h3><p id="forYouSummary">揀一個身份，AIson 會先幫你抽出最相關影響。</p></div><span class="for-you-local">只儲存在此裝置</span></div><div class="for-you-roles" id="forYouRoles" aria-label="選擇閱讀身份"></div><div class="for-you-list" id="forYouList"></div>';
+    root.innerHTML='<div class="for-you-head"><div class="for-you-title"><div class="mini-label">ROLE LENS · LOCAL ONLY</div><h3 id="forYouHeading">你係邊類讀者？先睇最相關 3 件</h3><p id="forYouSummary">揀一個角色，AIson 會用今日新聞嘅香港影響幫你做本機排序。</p></div><span class="for-you-local">只儲存在此裝置</span></div><div class="for-you-roles" id="forYouRoles" aria-label="選擇閱讀角色"></div><div class="for-you-list" id="forYouList"></div>';
     anchor.insertAdjacentElement('afterend',root);
     return root;
   }
@@ -66,13 +66,13 @@
       writeRole(next);track(next);render();
     }));
     if(!role){
-      summary.textContent='揀一個身份，AIson 會由今日 10 件事中先抽出同你最有關嘅 3 則影響。';
-      list.innerHTML='<div class="for-you-empty"><b>唔使登入，亦唔會改寫新聞。</b><span>選擇只儲存在目前瀏覽器；你仍然可以照原本次序睇晒今日 10 件事。</span></div>';
+      summary.textContent='揀一個角色，AIson 會由今日 10 件事中先抽出同你最有關嘅 3 則影響。';
+      list.innerHTML='<div class="for-you-empty"><b>呢個係角色視角，不係另一份新聞榜。</b><span>唔使登入、唔改寫新聞；你仍然可以照原本編輯次序睇晒今日 10 件事。</span></div>';
       return;
     }
     const def=ROLES[role],items=recommendations(role);
-    summary.textContent=`已按「${def.label}」整理今日最相關 3 則；只改推薦次序，不改新聞內容。`;
-    list.innerHTML=items.map(({story,impact},index)=>`<a class="for-you-card" href="news/${encodeURIComponent(story.id)}.html"><div class="for-you-card-top"><span>0${index+1} · ${esc(story.category||'AI')}</span><b>#${String(story.rank||'').padStart(2,'0')}</b></div><h4>${esc(story.title)}</h4><p><strong>同你有咩關係：</strong>${esc(short(impact,108))}</p><small>睇完整報道 →</small></a>`).join('');
+    summary.textContent=`「${def.label}」視角：根據今日香港影響文字先排最相關 3 則；新聞原本排名與內容保持不變。`;
+    list.innerHTML=items.map(({story,impact},index)=>`<a class="for-you-card" href="news/${encodeURIComponent(story.id)}.html"><div class="for-you-card-top"><span>0${index+1} · ${esc(story.category||'AI')}</span><b>原榜 #${String(story.rank||'').padStart(2,'0')}</b></div><h4>${esc(story.title)}</h4><p><strong>同你有咩關係：</strong>${esc(short(impact,108))}</p><small>睇完整報道 →</small></a>`).join('');
   }
 
   function boot(){if(document.body?.dataset.page==='home')render()}
