@@ -190,7 +190,7 @@
     return [
       ['home','index.html','⌂','首頁'],
       ['daily','daily.html','☀','今日 AI 10 件事'],
-      ['live','index.html#aison-live','●','AIson LIVE'],
+      ['live','live.html','●','AIson LIVE'],
       ['weekly','weekly.html','◷','本週回顧'],
       ['topics','topics.html','◎','主題'],
       ['archive','archive.html','▤','新聞庫']
@@ -200,7 +200,7 @@
   function currentNavKey(){
     const page=document.body?.dataset.page||'';
     if(location.hash==='#aison-live') return 'live';
-    if(['home','daily','weekly','topics','archive'].includes(page)) return page;
+    if(['home','daily','live','weekly','topics','archive'].includes(page)) return page;
     const name=location.pathname.split('/').pop()||'index.html';
     if(name==='index.html'||name==='') return 'home';
     return '';
