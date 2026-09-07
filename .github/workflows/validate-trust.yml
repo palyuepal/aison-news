@@ -17,12 +17,16 @@ jobs:
           python -m py_compile tools/build_corrections.py
       - name: Validate article trust schema
         run: python tools/build_corrections.py --validate-only
+      - name: Exercise corrections build
+        run: python tools/build_corrections.py
       - name: Verify trust surfaces
         shell: bash
         run: |
           set -euo pipefail
           test -f corrections.html
           test -f trust.css
+          test -f data/corrections.js
+          grep -q 'window.AISON_CORRECTIONS' data/corrections.js
           grep -q 'trust.css' article.html
           grep -q 'trust.js' article.html
           grep -q 'corrections.html' article.html
@@ -33,3 +37,4 @@ jobs:
           grep -q 'build_corrections.py' .github/workflows/pages.yml
           grep -q "'data/corrections.js'" service-worker.js
           grep -q "'corrections.html'" service-worker.js
+          grep -q 'https://aison.hk/corrections.html' sitemap.xml
