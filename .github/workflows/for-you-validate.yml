@@ -1,0 +1,41 @@
+name: Validate AIson For You
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check For You scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check for-you.js
+          node --check engagement.js
+          test -f for-you.css
+          grep -q 'aison-for-you-role-v1' for-you.js
+          grep -q "worker:" for-you.js
+          grep -q "sme:" for-you.js
+          grep -q "creator:" for-you.js
+          grep -q "developer:" for-you.js
+          grep -q "investor:" for-you.js
+          grep -q 'for-you.js?v=20260907-for-you' engagement.js
+          grep -q "'for-you.js'" service-worker.js
+          grep -q "'for-you.css'" service-worker.js
+          grep -q '只儲存在此裝置' for-you.js
+          if grep -Eq 'fetch\(|XMLHttpRequest|sendBeacon|AISON_ANALYTICS' for-you.js; then
+            echo 'Role Lens must stay fully local-only and must not send or forward role telemetry' >&2
+            exit 1
+          fi
+      - name: Verify latest edition supports personalized impacts
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          latest=sorted(pathlib.Path('content/daily').glob('20??-??-??.json'))[-1]
+          rows=json.load(open(latest,encoding='utf-8'))
+          assert len(rows)==10
+          assert all(isinstance(x.get('hkImpact'),list) and len(x['hkImpact'])>=3 for x in rows)
+          assert {int(x['rank']) for x in rows}==set(range(1,11))
+          print('Role Lens input ok:',latest.stem,len(rows),'stories')
+          PY
