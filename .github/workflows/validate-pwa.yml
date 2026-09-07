@@ -1,0 +1,45 @@
+name: Validate AIson PWA Return Experience
+on:
+  push:
+  pull_request:
+jobs:
+  pwa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JavaScript syntax
+        run: |
+          node --check pwa-return.js
+          node --check engagement.js
+          node --check service-worker.js
+      - name: Verify returning-reader install rules
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q "MIN_VISIT_DAYS=3" pwa-return.js
+          grep -q "beforeinstallprompt" pwa-return.js
+          grep -q "display-mode: standalone" pwa-return.js
+          grep -q "navigator.standalone" pwa-return.js
+          grep -q "Asia/Hong_Kong" pwa-return.js
+          grep -q "pwa-return.js" engagement.js
+          grep -q "pwa-return.js" service-worker.js
+          grep -q "manifest.webmanifest" service-worker.js
+          grep -q "request.mode==='navigate'" service-worker.js
+          grep -q "LIVE_DATA" service-worker.js
+          grep -q "SKIP_WAITING" service-worker.js
+      - name: Validate manifest
+        run: |
+          python - <<'PY'
+          import json
+          m=json.load(open('manifest.webmanifest',encoding='utf-8'))
+          assert m['id']=='./'
+          assert m['scope']=='./'
+          assert m['display']=='standalone'
+          assert m['lang']=='zh-Hant-HK'
+          assert len(m.get('shortcuts',[]))>=3
+          urls={x['url'] for x in m['shortcuts']}
+          assert {'./daily.html','./live.html','./weekly.html'} <= urls
+          icons=m.get('icons',[])
+          assert any('maskable' in x.get('purpose','') for x in icons)
+          print('manifest ok:',m['name'],len(m['shortcuts']),'shortcuts')
+          PY
