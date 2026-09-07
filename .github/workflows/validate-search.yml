@@ -1,0 +1,46 @@
+name: Validate AIson Search Quality
+on:
+  push:
+  pull_request:
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax checks
+        run: |
+          node --check search-quality.js
+          python -m py_compile tools/patch_search_quality.py
+      - name: Verify bilingual aliases and typo tolerance
+        run: |
+          node <<'NODE'
+          require('./search-quality.js');
+          const q=globalThis.AISON_SEARCH_QUALITY;
+          const rows=[
+            {id:'nv',rank:1,title:'NVIDIA 推出下一代 AI 工廠平台',excerpt:'GPU 與 AI 基建',category:'NVIDIA',tags:['晶片']},
+            {id:'oa',rank:2,title:'OpenAI 更新 ChatGPT Agent',excerpt:'GPT 工具更新',category:'OpenAI',tags:['ChatGPT']},
+            {id:'sx',rank:3,title:'SpaceX 擴大 Starlink AI 基建',excerpt:'Elon Musk 新計劃',category:'SpaceX',tags:['Starlink']},
+            {id:'gg',rank:4,title:'Google Gemini 擴展至更多平台',excerpt:'DeepMind 模型',category:'Google',tags:['Gemini']}
+          ];
+          const top=x=>q.searchRows(rows,x,5)[0]?.id;
+          if(top('輝達')!=='nv') throw new Error('輝達 alias failed');
+          if(top('nvdia')!=='nv') throw new Error('NVIDIA typo failed');
+          if(top('Chat GPT')!=='oa') throw new Error('Chat GPT normalization failed');
+          if(top('馬斯克')!=='sx') throw new Error('Musk bilingual alias failed');
+          if(top('谷歌')!=='gg') throw new Error('Google bilingual alias failed');
+          console.log('search quality aliases and typo tolerance ok');
+          NODE
+      - name: Verify deploy-time injection
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/aison-search-patch && mkdir -p /tmp/aison-search-patch
+          cp index.html archive.html /tmp/aison-search-patch/
+          python tools/patch_search_quality.py /tmp/aison-search-patch
+          grep -q 'search-quality.js' /tmp/aison-search-patch/index.html
+          grep -q 'search-quality.js' /tmp/aison-search-patch/archive.html
+          grep -q 'patch_search_quality.py public' .github/workflows/pages.yml
+          grep -q "'search-quality.js'" service-worker.js
