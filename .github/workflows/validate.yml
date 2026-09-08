@@ -61,7 +61,10 @@ jobs:
           import json,pathlib,re
           site=json.load(open('content/site.json',encoding='utf-8'))
           analytics=site.get('analytics',{})
-          assert analytics.get('enabled') is False
+          assert analytics.get('enabled') is True
+          assert analytics.get('provider') == 'posthog'
+          assert analytics.get('projectKey','').startswith('phc_')
+          assert analytics.get('apiHost') == 'https://us.i.posthog.com'
           assert analytics.get('respectDNT') is True
           text=pathlib.Path('data/editorial.js').read_text(encoding='utf-8').strip()
           m=re.match(r'window\.AISON_EDITORIAL\s*=\s*(\{.*\});?$',text,re.S)
