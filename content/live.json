@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-09-us-china-ai-distillation-accusation",
+    "title": "美國三大安全機構點名中國 AI 公司：指控以『工業級』蒸餾複製美國模型能力",
+    "summary": "美國 NSA、CISA 與 FBI 9 月 8 日公開指控多間中國 AI 公司進行大規模、針對性的模型蒸餾，點名包括 DeepSeek、Moonshot AI、Alibaba、MiniMax 與 StepFun，並稱相關活動可能獲中國政府知情。美方指這些公司利用 Anthropic、OpenAI、Google 及 SpaceX 等美國模型的輸出加速訓練自家系統。這項指控在美中預計 9 月中舉行 AI 安全對話、以及月底峰會前出現，令模型蒸餾由企業條款與技術爭議升級成國家安全與外交議題；目前這仍屬美方公開指控，並非司法裁決。",
+    "category": "AI 治理",
+    "publishedAt": "2026-09-08T21:00:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/us-accuses-chinese-ai-firms-industrial-scale-theft-ai-technology-2026-09-08/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-09-meta-muse-ai-agent-launch",
     "title": "Meta 推出 Muse AI Agent：可跨 App 寄電郵、付款及代辦任務",
     "summary": "Meta 正式推出 Muse AI assistant，能連接電郵、日曆及付款等服務，自主執行寄電郵、出售物品、預訂旅程與付款等多步驟任務，並可在使用者離開 App 後繼續背景執行。Muse 初期在美國透過獨立 App 與 WhatsApp 推出，採用 Meta 自家 Muse Spark 模型。這是大型消費平台把 agentic AI 從聊天推向可直接操作真實帳戶與交易的重要一步；同時 Reuters 報道內部測試曾出現可靠性與私隱／安全問題，令權限隔離、支付風控與敏感資料保護成為後續關鍵觀察點。",
