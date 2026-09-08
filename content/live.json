@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-09-samsung-mistral-ai-partnership",
+    "title": "Samsung × Mistral AI 建立晶片戰略合作，AI 直接進入半導體設計與製造流程",
+    "summary": "Samsung Electronics 與 Mistral AI 正式宣布戰略合作，Samsung 將把 Mistral 的 AI 服務與 Mistral Large 導入半導體工程及製造流程，開發針對晶片業務的 on-premises AI。Samsung 同時確認成為 Mistral 最新融資輪的 lead investor。這項合作把生成式 AI 由一般企業軟件進一步推入晶片設計與製造基建。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-09-08T15:00:00Z",
+    "sourceLabel": "Samsung Global Newsroom",
+    "sourceUrl": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-08-qualcomm-amazon-ai-chips",
     "title": "Amazon × Qualcomm 多代合作開發 AI 數據中心晶片，戰線直指推理與高速互連",
     "summary": "Qualcomm 與 Amazon 今日宣布多代產品合作，為 AWS 大型 AI 數據中心共同開發定制晶片，重點放在 AI inference；雙方亦會開發最高延伸至 1.6Tbps 的高速光互連。Reuters 報道交易安排包括 Amazon 獲得可按每股 161.26 美元購入最多 2,500 萬股 Qualcomm 的認股權，相關商業里程碑可對應最高約 600 億美元業務。這標誌 Qualcomm 正由手機晶片進一步切入 hyperscaler AI 基建，亦加劇 NVIDIA、Broadcom、AMD 與雲端自研晶片之間的競爭。",
