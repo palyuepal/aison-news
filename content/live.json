@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-08-google-agentic-ai-cyber-campaign",
+    "title": "Google：攻擊者已用 Agentic AI 在 6 小時內建立大規模憑證竊取行動",
+    "summary": "Google Threat Intelligence Group 今日披露，威脅行動者正由單純提示 AI 升級到多代理與自動化工作流。Google 在 2026 年第二季觀察到一宗個案：攻擊者先入侵雲端資源，再於不足 6 小時內規劃、建立並執行由 agent 驅動的大規模 credential-harvesting campaign；同時亦見到攻擊者針對 AI coding assistants、LLM security scanners、模型、原始碼與 API credentials。這顯示 AI 網絡攻擊的主要風險正由『幫人寫惡意程式』轉向大幅壓縮攻擊準備與執行時間。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-08T13:30:00Z",
+    "sourceLabel": "Google Threat Intelligence Group",
+    "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-08-openai-gpt-6-astra-launch",
     "title": "OpenAI 正式發布 GPT-6 Astra：電腦操作與專業工作能力大幅升級",
     "summary": "OpenAI 今日正式發布 GPT-6 Astra，主打電腦操作、瀏覽、軟件工程、網絡安全、科學及專業工作。官方表示 Astra 將由今日起先向部分機構推出，未來數日擴展至 ChatGPT Plus、Pro、Business、Enterprise，以及 OpenAI API、Microsoft Azure 和 AWS Bedrock。OpenAI 公布的 OSWorld 2.0、Terminal-Bench 4.0、FrontierMath Tier 4、ExploitBench 等基準亦顯示相較 GPT-5.6 Sol 有明顯提升。",
