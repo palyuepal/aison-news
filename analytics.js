@@ -50,11 +50,13 @@
 
   function classifyClick(target){
     const el=target.closest?.('a,button'); if(!el)return null;
-    if(el.id==='shareDailyBtn')return ['share_daily','today-10'];
-    if(el.id==='copyDailyBtn')return ['copy_daily','today-10'];
-    if(el.id==='returnNewsletter')return ['newsletter_click','return-cta'];
-    if(el.id==='searchTrigger'||el.id==='heroSearch')return ['search_open',''];
     const href=el.getAttribute?.('href')||'';
+    if(el.id==='shareDailyBtn'||el.id==='shareDailyCard')return ['share_daily','today-10'];
+    if(el.id==='copyDailyBtn'||el.id==='copyThreads'||el.id==='copyHeadlines')return ['copy_daily','today-10'];
+    if(el.id==='downloadDailyCard')return ['daily_card_download','today-10'];
+    if(el.id==='searchTrigger'||el.id==='heroSearch')return ['search_open',''];
+    if(el.matches?.('[data-newsletter-link]')||href.includes('beehiiv.com/subscribe'))return ['newsletter_click',el.dataset.analyticsSlot||'newsletter'];
+    if(href.includes('live.html'))return ['live_open','live'];
     if(href.includes('weekly.html'))return ['weekly_open','weekly'];
     if(href.includes('topics.html?topic='))return ['storyline_open',contentFromLink(el)];
     if(href.includes('news/'))return ['story_open',contentFromLink(el)];
