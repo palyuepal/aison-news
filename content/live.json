@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-08-openai-gpt-6-astra-launch",
+    "title": "OpenAI 正式發布 GPT-6 Astra：電腦操作與專業工作能力大幅升級",
+    "summary": "OpenAI 今日正式發布 GPT-6 Astra，主打電腦操作、瀏覽、軟件工程、網絡安全、科學及專業工作。官方表示 Astra 將由今日起先向部分機構推出，未來數日擴展至 ChatGPT Plus、Pro、Business、Enterprise，以及 OpenAI API、Microsoft Azure 和 AWS Bedrock。OpenAI 公布的 OSWorld 2.0、Terminal-Bench 4.0、FrontierMath Tier 4、ExploitBench 等基準亦顯示相較 GPT-5.6 Sol 有明顯提升。",
+    "category": "AI 模型",
+    "publishedAt": "2026-09-08T10:48:26Z",
+    "sourceLabel": "OpenAI 官方",
+    "sourceUrl": "https://openai.com/index/gpt-6-astra/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-08-openai-firmus-malaysia-compute",
     "title": "OpenAI 鎖定馬來西亞兩座 AI 數據中心算力",
     "summary": "NVIDIA 有份支持的 Firmus 宣布與 OpenAI 簽署多年協議，由兩座馬來西亞數據中心供應算力，令其整體已簽約容量增至逾 900MW；設施將大規模部署 NVIDIA Vera Rubin，顯示前沿模型算力版圖正加速移向東南亞。",
