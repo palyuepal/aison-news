@@ -38,14 +38,24 @@ function renderFollowing(){const picker=$('#followTopicPicker'),feed=$('#followF
 function newsCard(n){const hay=(n.title+' '+n.excerpt+' '+n.category+' '+(n.tags||[]).join(' ')).toLowerCase(),v=categoryVisual(n.category),tags=(n.tags||[]).slice(0,3).map(t=>'<span class="tag">'+esc(t)+'</span>').join('');return '<a class="news-card" href="article.html?id='+encodeURIComponent(n.id)+'" data-hay="'+esc(hay)+'" data-cat="'+esc(n.category)+'"><div class="card-leading"><span class="rank">'+String(n.rank).padStart(2,'0')+'</span><span class="card-symbol '+v.tone+'" aria-hidden="true">'+v.icon+'</span></div><div><div class="card-overline"><span>'+esc(n.category)+'</span>'+(n.verified?'<b>✓ 已核實</b>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(n.excerpt)+'</p><div class="meta">'+tags+(n.freshness?'<span class="freshness">'+esc(n.freshness)+'</span>':'')+'</div><div class="card-footer"><span>◷ '+fmt(n.date)+' · '+esc(n.readTime)+'</span><span class="card-arrow">→</span></div></div></a>'}
 function editionDate(){const latest=NEWS.map(n=>n.date).filter(Boolean).sort().at(-1);return STATUS.editionDate||latest||''}
 function setEdition(){const edition=editionDate();if($('#editionDate')&&edition)$('#editionDate').textContent=`${fmt(edition)} · 今日編輯版 · 過去 24 小時優先 + 本週重要更新`;}
+function textLength(value=''){return String(value||'').replace(/\s+/g,'').length}
+function isDeepDiveReady(n={}){
+  const total=['summary','whatHappened','reportingContext','deepDive','whyImportant','whatToWatch','take'].reduce((sum,key)=>sum+textLength(n[key]),0)+(n.hkImpact||[]).reduce((sum,item)=>sum+textLength(item),0);
+  return Boolean(n.verified&&n.sourceUrl)&&Array.isArray(n.hkImpact)&&n.hkImpact.length>=3&&textLength(n.whatHappened)>=300&&textLength(n.reportingContext)>=400&&textLength(n.deepDive)>=900&&textLength(n.whyImportant)>=250&&textLength(n.whatToWatch)>=180&&total>=2800;
+}
 function renderEditorialFeature(){
   const root=$('#editorialFeature');
   if(!root||!NEWS.length)return;
-  const n=NEWS.find(item=>Number(item.rank)===1)||NEWS[0];
+  const n=NEWS.find(item=>Number(item.rank)===1)||NEWS[0],deep=isDeepDiveReady(n);
   const v=categoryVisual(n.category);
   const context=briefText(n.deepDive||n.whyImportant||n.summary||n.excerpt,180);
   const hk=briefText((n.hkImpact||[])[0]||'由 AIson 按香港使用者、工作與商業環境拆解實際影響。',92);
-  root.innerHTML='<article class="editorial-feature-card"><div class="editorial-feature-main"><div class="mini-label">TODAY\'S DEEP DIVE</div><div class="editorial-feature-meta"><span class="editorial-feature-symbol '+v.tone+'" aria-hidden="true">'+v.icon+'</span><span>'+esc(n.category)+' · 今日焦點 · '+esc(articleReadTime(n))+'</span></div><h2 id="editorialFeatureTitle">'+esc(n.title)+'</h2><p>'+esc(context)+'</p><div class="editorial-feature-hk"><b>🇭🇰 香港角度</b><span>'+esc(hk)+'</span></div><a class="editorial-feature-link" href="article.html?id='+encodeURIComponent(n.id)+'">睇完整深度解讀 →</a></div><aside class="editorial-feature-side"><span>01</span><b>唔只知發生咩事</b><p>一次睇清事件脈絡、已知事實、真正影響與下一步。</p><small>資料來源：'+esc(n.sourceLabel||'已核實來源')+'</small></aside></article>';
+  const label=deep?"TODAY'S DEEP DIVE":"TODAY'S FOCUS";
+  const meta=deep?'今日深度解讀':'今日焦點';
+  const cta=deep?'睇完整深度解讀 →':'睇完整焦點報導 →';
+  const sideTitle=deep?'唔只知發生咩事':'今日最值得先理解';
+  const sideCopy=deep?'一次睇清事件脈絡、已知事實、真正影響與下一步。':'資料未達深度文門檻前，先清楚整理已知事實、香港影響與後續觀察。';
+  root.innerHTML='<article class="editorial-feature-card"><div class="editorial-feature-main"><div class="mini-label">'+label+'</div><div class="editorial-feature-meta"><span class="editorial-feature-symbol '+v.tone+'" aria-hidden="true">'+v.icon+'</span><span>'+esc(n.category)+' · '+meta+' · '+esc(articleReadTime(n))+'</span></div><h2 id="editorialFeatureTitle">'+esc(n.title)+'</h2><p>'+esc(context)+'</p><div class="editorial-feature-hk"><b>🇭🇰 香港角度</b><span>'+esc(hk)+'</span></div><a class="editorial-feature-link" href="article.html?id='+encodeURIComponent(n.id)+'">'+cta+'</a></div><aside class="editorial-feature-side"><span>01</span><b>'+sideTitle+'</b><p>'+sideCopy+'</p><small>資料來源：'+esc(n.sourceLabel||'已核實來源')+'</small></aside></article>';
 }
 function renderHome(){const g=$('#newsGrid');if(!g)return;setEdition();renderEditorialFeature();const today=NEWS.slice(0,10);g.innerHTML=today.map(newsCard).join('');$('#topList').innerHTML=today.slice(0,3).map(topBrief).join('');const cats=[...new Set(today.map(n=>n.category))];$('#categoryList').innerHTML=['全部',...cats].map(c=>{const v=categoryVisual(c),count=c==='全部'?today.length:today.filter(n=>n.category===c).length;return '<button class="category-pill '+v.tone+'" data-cat="'+esc(c)+'"><i>'+(c==='全部'?'✦':v.icon)+'</i><span>'+esc(c)+'</span><b>'+count+'</b></button>'}).join('');bindFilters();bindSearch();renderSavedNews();renderFollowing();$('#clearSaved')?.addEventListener('click',clearSavedNews);}
 function filterCards(cat='全部'){let shown=0;$$('.news-card').forEach(c=>{const ok=cat==='全部'||c.dataset.cat===cat;c.style.display=ok?'grid':'none';if(ok)shown++});if($('#empty'))$('#empty').style.display=shown?'none':'block';$$('.filter-btn,.category-pill').forEach(b=>b.classList.toggle('active',b.dataset.cat===cat));}
