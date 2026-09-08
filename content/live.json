@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-09-08-openai-firmus-malaysia-compute",
+    "title": "OpenAI 鎖定馬來西亞兩座 AI 數據中心算力",
+    "summary": "NVIDIA 有份支持的 Firmus 宣布與 OpenAI 簽署多年協議，由兩座馬來西亞數據中心供應算力，令其整體已簽約容量增至逾 900MW；設施將大規模部署 NVIDIA Vera Rubin，顯示前沿模型算力版圖正加速移向東南亞。",
+    "category": "AI 基建",
+    "publishedAt": "2026-09-08T01:40:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/nvidia-backed-firmus-signs-deal-with-openai-malaysia-data-centre-capacity-2026-09-08/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-08-mistral-eur3b-funding",
+    "title": "Mistral AI 融資 30 億歐元，估值升至 210 億歐元",
+    "summary": "Mistral AI 據 Financial Times 報道完成 30 億歐元融資，創歐洲私人科技公司最大一輪集資，估值升至 210 億歐元；由 Samsung 領投，資金將加碼算力與前沿模型，強化歐洲主權 AI 路線。",
+    "category": "AI 融資",
+    "publishedAt": "2026-09-08T00:00:00Z",
+    "sourceLabel": "Financial Times",
+    "sourceUrl": "https://www.ft.com/content/adbf5262-c4d5-4312-a9b8-4d3cf30c9e00",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-07-openai-automated-research-intern",
     "title": "OpenAI 稱已達成「自動化研究實習生」里程碑",
     "summary": "OpenAI 公布內部數據，指 AI coding agents 已可在人類指導下完成原需熟練研究員數日的明確研究任務；截至 8 月中，研究部門每個人類工作日合計使用約 3.1 個 agent 工作日。公司同時承認複雜任務仍需大量人手介入，並表示若安全風險不可接受會減速或暫停開發。",
