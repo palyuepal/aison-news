@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-09-meta-muse-ai-agent-launch",
+    "title": "Meta 推出 Muse AI Agent：可跨 App 寄電郵、付款及代辦任務",
+    "summary": "Meta 正式推出 Muse AI assistant，能連接電郵、日曆及付款等服務，自主執行寄電郵、出售物品、預訂旅程與付款等多步驟任務，並可在使用者離開 App 後繼續背景執行。Muse 初期在美國透過獨立 App 與 WhatsApp 推出，採用 Meta 自家 Muse Spark 模型。這是大型消費平台把 agentic AI 從聊天推向可直接操作真實帳戶與交易的重要一步；同時 Reuters 報道內部測試曾出現可靠性與私隱／安全問題，令權限隔離、支付風控與敏感資料保護成為後續關鍵觀察點。",
+    "category": "AI Agent",
+    "publishedAt": "2026-09-08T17:47:00Z",
+    "sourceLabel": "Reuters / The Verge",
+    "sourceUrl": "https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-09-samsung-mistral-ai-partnership",
     "title": "Samsung × Mistral AI 建立晶片戰略合作，AI 直接進入半導體設計與製造流程",
     "summary": "Samsung Electronics 與 Mistral AI 正式宣布戰略合作，Samsung 將把 Mistral 的 AI 服務與 Mistral Large 導入半導體工程及製造流程，開發針對晶片業務的 on-premises AI。Samsung 同時確認成為 Mistral 最新融資輪的 lead investor。這項合作把生成式 AI 由一般企業軟件進一步推入晶片設計與製造基建。",
