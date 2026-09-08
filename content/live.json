@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-08-qualcomm-amazon-ai-chips",
+    "title": "Amazon × Qualcomm 多代合作開發 AI 數據中心晶片，戰線直指推理與高速互連",
+    "summary": "Qualcomm 與 Amazon 今日宣布多代產品合作，為 AWS 大型 AI 數據中心共同開發定制晶片，重點放在 AI inference；雙方亦會開發最高延伸至 1.6Tbps 的高速光互連。Reuters 報道交易安排包括 Amazon 獲得可按每股 161.26 美元購入最多 2,500 萬股 Qualcomm 的認股權，相關商業里程碑可對應最高約 600 億美元業務。這標誌 Qualcomm 正由手機晶片進一步切入 hyperscaler AI 基建，亦加劇 NVIDIA、Broadcom、AMD 與雲端自研晶片之間的競爭。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-09-08T13:00:00Z",
+    "sourceLabel": "Reuters / Qualcomm",
+    "sourceUrl": "https://www.reuters.com/technology/qualcomm-amazon-develop-custom-chips-ai-data-centers-2026-09-08/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-08-google-agentic-ai-cyber-campaign",
     "title": "Google：攻擊者已用 Agentic AI 在 6 小時內建立大規模憑證竊取行動",
     "summary": "Google Threat Intelligence Group 今日披露，威脅行動者正由單純提示 AI 升級到多代理與自動化工作流。Google 在 2026 年第二季觀察到一宗個案：攻擊者先入侵雲端資源，再於不足 6 小時內規劃、建立並執行由 agent 驅動的大規模 credential-harvesting campaign；同時亦見到攻擊者針對 AI coding assistants、LLM security scanners、模型、原始碼與 API credentials。這顯示 AI 網絡攻擊的主要風險正由『幫人寫惡意程式』轉向大幅壓縮攻擊準備與執行時間。",
