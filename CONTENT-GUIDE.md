@@ -86,7 +86,7 @@ Deep Read 目標約 2,500–4,500 個實質中文字、約 8–15 分鐘閱讀�
 Build 會驗證 visual schema、檔案位置與官方圖片來源 URL；資料不合規會直接令發布失敗，而不是靜默上線。
 
 ## Topic Hub / 故事線
-主題頁不是普通 tag archive。當同一公司、產品或事件累積至少 2 篇報道時，應提供：
+主題頁不是普通 tag archive。當同一公司、產品或事件累積報道時，應提供：
 - 最新進展
 - 故事起點與時間線
 - 30 秒主題 briefing
@@ -96,6 +96,32 @@ Build 會驗證 visual schema、檔案位置與官方圖片來源 URL；資料�
 
 Topic Hub 的 Deep Read 標記必須使用與文章頁相同的材料門檻，不可另設較寬鬆標準。
 
+### `topicId` 與 `storylineId`
+AIson 由 `data/storylines.json` 管理穩定主題與故事線 ID。兩者用途不同：
+
+- `topicId`：較闊、長期存在的主題，例如 `agentic-ai`、`ai-infrastructure`。它回答「這篇屬哪個長期領域？」
+- `storylineId`：較窄、針對同一事件／產品／合作／爭議的長期追蹤線，例如 `meta-muse-agent`。它回答「這篇是不是同一件事的後續？」
+
+新文章如屬已存在故事線，應直接在 story 加：
+```json
+{
+  "topicId": "agentic-ai",
+  "storylineId": "meta-muse-agent"
+}
+```
+
+規則：
+- ID 必須是小寫 kebab-case，並且已存在於 `data/storylines.json`
+- 有 `storylineId` 時，`topicId` 必須與 registry 內該故事線的 `topicId` 一致
+- 同一篇新聞只可屬一條主要 `storylineId`；不要因文章同時提及多家公司就塞入多條故事線
+- `storylineId` 只用於真正同一事件的 follow-up，不可因為「同一公司」或「同一產品類別」就強行串線
+- 舊文章可由 registry 的 `storyIds` 回填，不必重寫歷史 daily JSON
+- 新 follow-up 優先直接寫 `storylineId`；`storyIds` 主要用於舊文回填或人工修正
+- 如沒有合適的既有故事線，不要硬套；先用普通 tags / category，確定值得長期追蹤後再建立新的 registry entry
+- `status=watching` 可預先建立監察中的故事線，但沒有已發布文章時不應在前台冒充已有報道
+
+Build 會驗證 topic/storyline ID、registry 關係、舊文 seed 是否存在，以及一篇舊文是否被錯誤 seed 到多條故事線。任何衝突都會阻止發布。
+
 ## 發布標準
 - 官方公告、監管文件、研究論文、公司正式文件優先；其次 Reuters / AP / FT / Bloomberg / WSJ / The Verge 等可靠媒體
 - 涉及重大數字、監管、併購、融資、安全事故或爭議性主張，盡量交叉核實
@@ -104,4 +130,5 @@ Topic Hub 的 Deep Read 標記必須使用與文章頁相同的材料門檻，�
 - 每日 10 件事以過去 24 小時的新進展為優先，可把搜尋窗口擴至 72 小時補充真正重要而未收錄的內容；必須避免把舊聞包裝成今日新聞
 - 同一事件不同媒體報道只算一件；只有真正新增的實質進展才寫 follow-up
 - followUpOf、updatedAt、correctionNote 必須符合 Trust Layer/schema，不得猜 ID 或用重複 story 代替更正
+- 如果新報道是既有故事線的真正 follow-up，發布時同時沿用正確 `storylineId` / `topicId`；不要只靠 tag 讓前端猜
 - 來源不足、資料互相矛盾或關鍵細節未確認時，直接標示限制，不要補寫成完整但虛假的故事
