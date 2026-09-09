@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-08-openai-navier-stokes-agents",
+    "title": "OpenAI 稱 1 萬個 AI Agents 已解出 Navier–Stokes 千禧年難題，並完成 Lean 形式化驗證",
+    "summary": "OpenAI 9 月 8 日發布研究結果，稱一個仍在訓練、能力顯著高於 GPT-6 Astra 的內部模型，透過約 1 萬個協作 AI agents，在約 88 小時內產生 Navier–Stokes 存在性與光滑性問題的解析證明，之後再由 GPT-6 Astra 花約 17 小時完成 Lean 形式化驗證。OpenAI 公開論文與 Lean proof，並稱結果證明特定三維不可壓縮流體可在有限時間形成奇點。呢個里程碑如果經數學界獨立審查後成立，代表 AI 首次觸及最高難度長期未解數學問題之一；但目前仍屬 OpenAI 公布並已形式化驗證的結果，尚未等同 Clay Mathematics Institute 正式承認或完成外部同行審查。OpenAI 同時承認項目與 Tristan Buckmaster、Levent Alpöge 的相關研究存在同期工作與資料來源爭議，並表示未直接存取對方特定用戶資料，但不能完全排除去識別化產品使用資料曾間接改善模型。",
+    "category": "AI 研究",
+    "publishedAt": "2026-09-08T00:00:00Z",
+    "sourceLabel": "OpenAI 官方",
+    "sourceUrl": "https://openai.com/index/navier-stokes-solution/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-09-enflame-star-market-ipo",
     "title": "騰訊有份投資的 Enflame 完成 9.12 億美元 IPO，9 月 11 日登陸上海科創板",
     "summary": "Reuters 9 月 9 日根據上海交易所文件報道，中國 AI 晶片公司上海 Enflame Technology 已完成 IPO，集資 61.2 億元人民幣（約 9.12 億美元），發行價每股 142.18 元，對應上市估值約 611.9 億元人民幣（約 91.2 億美元），並將於 9 月 11 日在上海科創板掛牌。Enflame 預計 2026 年首九個月收入按年增長 326% 至 455%，但仍錄得 7 億至 8.6 億元人民幣淨虧損；騰訊上市後持股 17.95%，並曾佔 Enflame 2025 年收入 83.79%。這宗交易提供一個新的中國 AI GPU 公開市場估值基準，同時亦暴露出高度客戶集中與仍未盈利的風險。",
