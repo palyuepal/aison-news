@@ -225,7 +225,7 @@
   }
 
   function addNewsletterFallback(){
-    const url=window.AISON_SITE?.newsletter?.subscribeUrl||'https://yues-newsletter-c6d023.beehiiv.com/subscribe';
+    const url=window.AISON_SITE?.newsletter?.subscribeUrl||'https://aison.hk/#newsletter';
     document.querySelectorAll('.newsletter').forEach(panel=>{
       if(panel.querySelector('.newsletter-fallback')) return;
       const link=document.createElement('a');
