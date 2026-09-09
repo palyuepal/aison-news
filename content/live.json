@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-09-google-finland-ai-infrastructure",
+    "title": "Google 豪擲 130 億歐元擴建芬蘭 AI 基建，創公司歐洲最大單筆投資",
+    "summary": "Google 9 月 9 日正式宣布，未來兩年將在芬蘭投資 130 億歐元，擴建數據中心、電網、潔淨能源與電池項目，以支撐 Gemini、Search、Maps、YouTube 等服務的 AI 算力需求。Google 官方稱這是公司歷來在歐洲最大單筆投資，並包括延長 Loviisa 核電廠壽命的 22 年協議、新增陸上風電及 94MW 電池儲能。這顯示 AI 基建競爭正由 GPU 採購進一步延伸到電力、核能、電網與國家級數據中心選址。",
+    "category": "AI 基建",
+    "publishedAt": "2026-09-09T06:30:00Z",
+    "sourceLabel": "Google 官方 / Reuters",
+    "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-09-anthropic-mythos-uk-aisi-access",
     "title": "Anthropic 未向英國 AI Security Institute 提供 Mythos 5.1 預發布測試，frontier AI 存取裂痕升溫",
     "summary": "Financial Times 9 月 9 日報道，Anthropic 未有像過往一樣向英國 AI Security Institute 提供 Claude Mythos 5.1 的預發布測試存取；Anthropic 官方亦確認 Mythos 5.1 目前只向一小批經審核的美國機構提供，並表示正與美國政府合作擴大存取。英國政府內部因此擔心，美國對前沿 AI 的保護主義與出口限制可能開始削弱盟友之間既有的模型安全測試合作。這並不代表 Anthropic 已宣布永久排除英國，而是顯示前沿模型的跨境存取正由一般產品政策升級成國安與外交議題。",
