@@ -12,12 +12,12 @@
   },
   {
     "id": "2026-09-09-openai-samsung-next-gen-chips",
-    "title": "OpenAI × Samsung 深化下一代 AI 晶片合作，自研晶片版圖再擴大",
-    "summary": "OpenAI 9 月 9 日在首爾公開確認，與 Samsung Electronics 在下一代自研 AI 晶片的共同生產與研究方面已取得明顯進展，合作同時延伸至企業 AI 服務。OpenAI 早前已與 Broadcom 共同設計首款自研 AI 晶片 Jalapeño，並由 TSMC 製造；Samsung 與 SK Hynix 亦已簽署意向書，為 OpenAI 的 Stargate 數據中心供應記憶體。今次確認顯示 OpenAI 正進一步把晶片設計、記憶體供應與製造合作納入自己的長期 AI 基建策略，降低單一供應鏈依賴。",
+    "title": "OpenAI 自研 Jalapeño 已完成 tape-out，並深化 Samsung 下一代 AI 晶片合作",
+    "summary": "OpenAI CFO Sarah Friar 9 月 9 日披露，OpenAI 在開發首款自研 AI 晶片 Jalapeño 時大量使用自家 AI 模型，並在約 9 個月內完成 tape-out，即晶片設計已定稿並送交晶圓廠進入生產流程。這項進展比單純公布自研晶片計劃更具實質意義，顯示 OpenAI 的 custom silicon 已跨過關鍵設計里程碑。OpenAI 同日亦確認與 Samsung Electronics 在下一代 AI 晶片的共同研究與生產合作取得進展，而 Samsung 與 SK Hynix 早前已簽署意向書，為 Stargate 數據中心供應記憶體。整體顯示 OpenAI 正把模型、晶片設計、記憶體與製造合作逐步串成自家 AI 基建體系。",
     "category": "AI 晶片",
     "publishedAt": "2026-09-09T01:57:00Z",
     "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/openai-says-working-with-samsung-next-generation-chips-deepening-cooperation-2026-09-09/",
+    "sourceUrl": "https://www.reuters.com/world/china/openai-offers-ai-chip-design-touts-cost-advantage-over-open-source-cfo-says-2026-09-09/",
     "verified": true,
     "active": true
   },
