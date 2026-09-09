@@ -126,7 +126,7 @@
     if(href.includes('live.html'))return ['live_open','live'];
     if(href.includes('weekly.html'))return ['weekly_open','weekly'];
     if(href.includes('topics.html?topic='))return ['storyline_open',contentFromLink(el)];
-    if(href.includes('article.html?id=')||href.includes('news/'))return ['story_open',contentFromLink(el)];
+    // Article reads are recorded on the destination page after it actually loads.
     return null;
   }
 
@@ -134,6 +134,10 @@
   function init(){
     if(initialized)return; initialized=true;
     track('pageview',{path:location.pathname});
+    const articleId=currentContent();
+    if(articleId && (location.pathname.includes('/news/') || location.pathname.endsWith('/article.html'))){
+      track('story_open',{content:articleId,path:location.pathname});
+    }
     document.addEventListener('click',event=>{
       const hit=classifyClick(event.target); if(hit) track(hit[0],{content:hit[1]});
     },{capture:true,passive:true});
