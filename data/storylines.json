@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "topics": [
+    {
+      "id": "agentic-ai",
+      "name": "Agentic AI",
+      "description": "追蹤可執行真實操作的 AI Agent，包括帳戶權限、工具使用、付款、審批、安全與審計。"
+    },
+    {
+      "id": "ai-infrastructure",
+      "name": "AI 基建",
+      "description": "追蹤 AI 晶片、雲端客製加速器、資料中心、互連、製造與算力供應鏈。"
+    },
+    {
+      "id": "ai-governance-geopolitics",
+      "name": "AI 治理與地緣政治",
+      "description": "追蹤模型能力、技術取得、監管、國際競爭、出口限制與可信度爭議。"
+    },
+    {
+      "id": "frontier-models",
+      "name": "前沿模型",
+      "description": "追蹤 GPT、Claude、Gemini 等前沿模型的重要版本、能力、安全與商業化進展。"
+    },
+    {
+      "id": "spacex-ai-infrastructure",
+      "name": "SpaceX × AI 基建",
+      "description": "追蹤 SpaceX、Starlink 與太空算力、AI 資料中心、能源和通訊基建的交叉發展。"
+    }
+  ],
+  "storylines": [
+    {
+      "id": "meta-muse-agent",
+      "topicId": "agentic-ai",
+      "name": "Meta Muse 個人 Agent",
+      "summary": "由 Muse 首次推出開始，追蹤它的帳戶權限、付款能力、Secure VM、安全測試、地區 rollout 與實際事故紀錄。",
+      "status": "active",
+      "storyIds": [
+        "2026-09-09-meta-muse-personal-agent"
+      ]
+    },
+    {
+      "id": "qualcomm-amazon-ai-chip",
+      "topicId": "ai-infrastructure",
+      "name": "Qualcomm × Amazon AI 晶片合作",
+      "summary": "追蹤 Qualcomm 與 Amazon 的客製 AI 資料中心晶片合作，由協議、認股權與產品設計一路跟到出貨、採購與收入。",
+      "status": "active",
+      "storyIds": [
+        "2026-09-09-qualcomm-amazon-ai-chip-deal"
+      ]
+    },
+    {
+      "id": "us-china-model-distillation",
+      "topicId": "ai-governance-geopolitics",
+      "name": "美中 AI 模型蒸餾爭議",
+      "summary": "追蹤美方對中國 AI 公司模型蒸餾與技術取得的指控、證據、企業回應以及其後可能出現的政策或法律行動。",
+      "status": "active",
+      "storyIds": [
+        "2026-09-09-us-china-ai-distillation-accusation"
+      ]
+    },
+    {
+      "id": "gpt-6-astra",
+      "topicId": "frontier-models",
+      "name": "GPT-6 Astra",
+      "summary": "預留作 GPT-6 Astra 的獨立長期故事線；只有出現可核實的正式進展時才加入報道。",
+      "status": "watching",
+      "storyIds": []
+    },
+    {
+      "id": "spacex-ai-datacenter",
+      "topicId": "spacex-ai-infrastructure",
+      "name": "SpaceX 太空 AI 資料中心",
+      "summary": "預留作 SpaceX 太空 AI 資料中心相關發射、硬件、能源、監管、合作與商業化進展的獨立故事線。",
+      "status": "watching",
+      "storyIds": []
+    }
+  ]
+}
