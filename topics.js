@@ -2,9 +2,10 @@
   const PAGE_SIZE=20;
   const $=(s,r=document)=>r.querySelector(s);
   const esc=(s='')=>String(s).replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]));
-  const fmt=s=>{try{return new Intl.DateTimeFormat('zh-HK',{year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(s+'T00:00:00'))}catch{return s}};
+  const fmt=s=>{try{return new Intl.DateTimeFormat('zh-HK',{year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(String(s).slice(0,10)+'T00:00:00'))}catch{return String(s||'')}};
   const visuals={OpenAI:['◉','openai'],Google:['G','google'],Anthropic:['AI','anthropic'],NVIDIA:['N','nvidia'],Meta:['∞','meta'],SpaceX:['X','nvidia'],Apple:['A','tools'],'AI 安全':['⌁','safety'],'AI 晶片':['▦','chip'],'AI 政策':['⚖','policy'],'教育 AI':['✎','education'],'AI 工具':['✣','tools'],產業:['◆','nvidia'],開源:['⌘','anthropic'],科學:['◎','google'],網絡安全:['⌁','safety'],產品:['✣','tools'],醫療:['＋','education'],'醫療 AI':['＋','education'],研究:['∑','google'],創作:['✦','tools'],'AI 基建':['▦','chip'],基建:['▦','chip'],治理:['⚖','policy'],政策:['⚖','policy']};
   const visual=category=>{const v=visuals[category]||['✦','default'];return {icon:v[0],tone:v[1]}};
+  const GENERIC=new Set(['AI','人工智能','AI Agent','Agent','產業','產品','研究','政策','治理','基建','AI 工具','AI 安全','AI 晶片','創作者','開發者','模型安全','資料中心']);
   const CURATED=[
     {name:'OpenAI',aliases:['openai','chatgpt','gpt']},
     {name:'NVIDIA',aliases:['nvidia','blackwell','rubin','h100','h200']},
@@ -16,11 +17,10 @@
   ];
 
   function loadIndex(){
-    if(window.AISON_SEARCH_INDEX_PROMISE) return window.AISON_SEARCH_INDEX_PROMISE;
+    if(window.AISON_SEARCH_INDEX_PROMISE)return window.AISON_SEARCH_INDEX_PROMISE;
     window.AISON_SEARCH_INDEX_PROMISE=fetch('data/search-index.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(`search index ${r.status}`);return r.json()}).then(rows=>Array.isArray(rows)?rows:[]);
     return window.AISON_SEARCH_INDEX_PROMISE;
   }
-
   function storyHay(story){return [story.title,story.excerpt,story.category,...(story.tags||[])].filter(Boolean).join(' ').toLowerCase()}
   function definitionFor(name){return CURATED.find(item=>item.name===name)||{name,aliases:[String(name||'').toLowerCase()]}}
   function matchesDefinition(story,definition){
@@ -34,8 +34,13 @@
     const def=definitionFor(topic);
     return rows.filter(story=>matchesDefinition(story,def));
   }
+  function newest(rows){return rows.slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||((Number(a.rank)||999999)-(Number(b.rank)||999999)))}
 
-  function card(story){const v=visual(story.category),tags=(story.tags||[]).slice(0,3).map(tag=>`<span class="tag">${esc(tag)}</span>`).join('');return `<a class="news-card" href="news/${encodeURIComponent(story.id)}.html"><div class="card-leading"><span class="rank">${String(story.rank||'').padStart(2,'0')}</span><span class="card-symbol ${v.tone}" aria-hidden="true">${v.icon}</span></div><div><div class="card-overline"><span>${esc(story.category)}</span></div><h3>${esc(story.title)}</h3><p>${esc(story.excerpt)}</p><div class="meta">${tags}</div><div class="card-footer"><span>◷ ${fmt(story.date)}</span><span class="card-arrow">→</span></div></div></a>`}
+  function card(story){
+    const v=visual(story.category),tags=(story.tags||[]).slice(0,3).map(tag=>`<span class="tag">${esc(tag)}</span>`).join('');
+    const depth=story.deepRead?'<span class="topic-depth-badge">DEEP READ</span>':'';
+    return `<a class="news-card" href="news/${encodeURIComponent(story.id)}.html"><div class="card-leading"><span class="rank">${String(story.rank||'').padStart(2,'0')}</span><span class="card-symbol ${v.tone}" aria-hidden="true">${v.icon}</span></div><div><div class="card-overline"><span>${esc(story.category)}</span>${depth}</div><h3>${esc(story.title)}</h3><p>${esc(story.excerpt)}</p><div class="meta">${tags}</div><div class="card-footer"><span>◷ ${fmt(story.date)}${story.readTime?` · ${esc(story.readTime)}`:''}</span><span class="card-arrow">→</span></div></div></a>`;
+  }
 
   function topicChoices(rows){
     const available=new Set(rows.flatMap(n=>[n.category,...(n.tags||[])]).filter(Boolean));
@@ -43,24 +48,23 @@
     const first=['OpenAI','ChatGPT','Google','Gemini','Anthropic','Claude','NVIDIA','Meta','SpaceX','Apple','AI Agent','AI 安全','AI 晶片','AI 政策','教育 AI','AI 工具'];
     const ordered=[...curated,...first.filter(topic=>available.has(topic))];
     const rest=[...available].filter(topic=>!ordered.includes(topic)).sort((a,b)=>a.localeCompare(b,'zh-Hant'));
-    return [...new Set([...ordered,...rest])].slice(0,28);
+    return [...new Set([...ordered,...rest])].slice(0,32);
   }
 
   function storylineCandidates(rows){
     const result=[];
     CURATED.forEach(def=>{const hits=hitsForTopic(rows,def.name);if(hits.length>=2)result.push({name:def.name,hits})});
-    if(result.length<3){
-      const genericBlocked=new Set(['產業','產品','研究','政策','治理','基建','科學']);
+    if(result.length<6){
+      const blocked=new Set(['產業','產品','研究','政策','治理','基建','科學']);
       topicChoices(rows).forEach(name=>{
-        if(result.some(x=>x.name===name)||genericBlocked.has(name))return;
+        if(result.some(x=>x.name===name)||blocked.has(name))return;
         const hits=hitsForTopic(rows,name);
         if(hits.length>=2)result.push({name,hits});
       });
     }
     return result.sort((a,b)=>{
-      const ar=Math.min(...a.hits.map(x=>Number(x.rank)||999999));
-      const br=Math.min(...b.hits.map(x=>Number(x.rank)||999999));
-      return ar-br;
+      const ad=newest(a.hits)[0]?.date||'',bd=newest(b.hits)[0]?.date||'';
+      return bd.localeCompare(ad)||b.hits.length-a.hits.length;
     }).slice(0,6);
   }
 
@@ -69,25 +73,47 @@
     const lines=storylineCandidates(rows);
     if(!lines.length){root.innerHTML='<div style="color:#b8c8df;font-size:12px">累積到至少兩篇同一主題報道後，AIson 會自動建立故事線。</div>';return}
     root.innerHTML=lines.map(line=>{
-      const sorted=line.hits.slice().sort((a,b)=>(a.rank||999999)-(b.rank||999999));
-      const latest=sorted[0],dates=line.hits.map(x=>x.date).filter(Boolean).sort();
-      return `<a class="storyline-card" href="topics.html?topic=${encodeURIComponent(line.name)}"><div class="storyline-card-top"><span class="storyline-card-name">${esc(line.name)}</span><span class="storyline-count">${line.hits.length} 篇脈絡</span></div><p>${esc(latest?.excerpt||latest?.title||'')}</p><div class="storyline-range">${fmt(dates[0])} → ${fmt(dates[dates.length-1])} · 睇完整故事線 →</div></a>`;
+      const sorted=newest(line.hits),latest=sorted[0],dates=line.hits.map(x=>x.date).filter(Boolean).sort();
+      const deep=line.hits.filter(x=>x.deepRead).length;
+      return `<a class="storyline-card" href="topics.html?topic=${encodeURIComponent(line.name)}"><div class="storyline-card-top"><span class="storyline-card-name">${esc(line.name)}</span><span class="storyline-count">${line.hits.length} 篇${deep?` · ${deep} Deep Read`:''}</span></div><p>${esc(latest?.excerpt||latest?.title||'')}</p><div class="storyline-range">${fmt(dates[0])} → ${fmt(dates[dates.length-1])} · 睇完整故事線 →</div></a>`;
     }).join('');
+  }
+
+  function dominantTags(topic,hits){
+    const counts=new Map();
+    hits.forEach(story=>(story.tags||[]).forEach(tag=>{
+      if(!tag||tag===topic||GENERIC.has(tag))return;
+      counts.set(tag,(counts.get(tag)||0)+1);
+    }));
+    return [...counts.entries()].sort((a,b)=>b[1]-a[1]||String(a[0]).localeCompare(String(b[0]),'zh-Hant')).slice(0,6);
+  }
+
+  function renderTopicBriefing(topic,hits,latest){
+    const root=$('#topicBriefing'),deepRoot=$('#topicDeepReads');if(!root||!deepRoot)return;
+    const deep=newest(hits.filter(x=>x.deepRead));
+    const signals=dominantTags(topic,hits);
+    root.innerHTML=`<div class="mini-label">30-SECOND TOPIC BRIEF</div><h3>${esc(topic)} 而家去到邊？</h3><p>${esc(latest?.excerpt||'AIson 會持續整理這個主題的最新進展、背景與香港影響。')}</p><div class="topic-signal-row"><span class="topic-signal">${hits.length} 篇相關報道</span><span class="topic-signal">${deep.length} 篇 Deep Read</span>${signals.map(([tag,count])=>`<span class="topic-signal">${esc(tag)} · ${count}</span>`).join('')}</div>`;
+    if(deep.length){
+      deepRoot.innerHTML=deep.slice(0,3).map(story=>`<a class="topic-deep-card" href="news/${encodeURIComponent(story.id)}.html"><small><span class="deep-read-pill">DEEP READ</span><span>${esc(fmt(story.date))}${story.readTime?` · ${esc(story.readTime)}`:''}</span></small><b>${esc(story.title)}</b><span>深入閱讀 →</span></a>`).join('');
+    }else{
+      deepRoot.innerHTML='<p style="margin:0;color:#61728d;font-size:12px;line-height:1.65">目前未有足夠可靠材料達到 Deep Read 門檻；AIson 不會為湊篇幅而硬寫長文。</p>';
+    }
   }
 
   function renderTimeline(topic,hits){
     const section=$('#topicStoryline'),latestRoot=$('#storylineLatest'),facts=$('#storylineFacts'),timeline=$('#topicTimeline');
     if(!section||!latestRoot||!facts||!timeline)return false;
     if(topic==='全部'||hits.length<2){section.classList.remove('show');section.setAttribute('aria-hidden','true');return false}
-    const newest=hits.slice().sort((a,b)=>(a.rank||999999)-(b.rank||999999));
-    const chronological=hits.slice().sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||((b.rank||0)-(a.rank||0)));
-    const latest=newest[0],first=chronological[0],dates=chronological.map(x=>x.date).filter(Boolean);
+    const sortedNewest=newest(hits);
+    const chronological=hits.slice().sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||((Number(b.rank)||0)-(Number(a.rank)||0)));
+    const latest=sortedNewest[0],first=chronological[0],dates=chronological.map(x=>x.date).filter(Boolean),deepCount=hits.filter(x=>x.deepRead).length;
     const uniqueDays=new Set(dates).size;
     latestRoot.innerHTML=`<div class="storyline-eyebrow">LATEST DEVELOPMENT · ${esc(topic)}</div><h3>${esc(latest.title)}</h3><p>${esc(latest.excerpt||'')}</p><a href="news/${encodeURIComponent(latest.id)}.html">閱讀最新進展 →</a>`;
-    facts.innerHTML=`<div class="storyline-fact"><b>${hits.length}</b><span>相關報道</span></div><div class="storyline-fact"><b>${uniqueDays}</b><span>更新日</span></div><div class="storyline-fact"><b>${fmt(first.date)}</b><span>故事起點</span></div><div class="storyline-fact"><b>${fmt(latest.date)}</b><span>最新進展</span></div>`;
+    facts.innerHTML=`<div class="storyline-fact"><b>${hits.length}</b><span>相關報道</span></div><div class="storyline-fact"><b>${deepCount}</b><span>Deep Read</span></div><div class="storyline-fact"><b>${fmt(first.date)}</b><span>故事起點</span></div><div class="storyline-fact"><b>${fmt(latest.date)}</b><span>最新進展</span></div>`;
+    renderTopicBriefing(topic,hits,latest);
     timeline.innerHTML=chronological.map((story,index)=>{
       const isFirst=index===0,isLatest=story.id===latest.id;
-      const badge=isLatest?'最新進展':isFirst?'故事起點':'後續發展';
+      const badge=isLatest?'最新進展':isFirst?'故事起點':story.deepRead?'Deep Read':'後續發展';
       const cls=`timeline-entry${isFirst?' first':''}${isLatest?' latest':''}`;
       return `<article class="${cls}"><div class="timeline-meta"><span>${fmt(story.date)}</span><span>·</span><span>${esc(story.category||'AI')}</span><span class="timeline-badge">${badge}</span></div><h4>${esc(story.title)}</h4><p>${esc(story.excerpt||'')}</p><a href="news/${encodeURIComponent(story.id)}.html">閱讀這一節 →</a></article>`;
     }).join('');
@@ -100,12 +126,12 @@
   async function init(){
     if(document.body?.dataset.page!=='topics')return;
     bindMobile();
-    const chips=$('#topicChips'),grid=$('#topicGrid'),heading=$('#topicHeading'),lead=$('#topicLead'),stats=$('#topicStats'),empty=$('#topicEmpty'),more=$('#topicLoadMore');
+    const chips=$('#topicChips'),grid=$('#topicGrid'),heading=$('#topicHeading'),lead=$('#topicLead'),stats=$('#topicStats'),empty=$('#topicEmpty'),more=$('#topicLoadMore'),relatedHead=$('#topicRelatedHead'),relatedTitle=$('#topicRelatedTitle');
     if(!chips||!grid||!heading||!lead||!stats||!empty||!more)return;
     stats.textContent='正在載入主題索引…';
     let rows=[];
     try{rows=await loadIndex()}catch(error){console.error(error);stats.textContent='主題索引暫時載入失敗，請稍後再試。';empty.textContent='暫時未能載入主題。';empty.style.display='block';return}
-    rows=rows.slice().sort((a,b)=>(a.rank||999999)-(b.rank||999999));
+    rows=newest(rows);
     renderStorylineHub(rows);
     const topics=['全部',...topicChoices(rows)];
     let selected=new URLSearchParams(location.search).get('topic')||'全部';
@@ -113,13 +139,14 @@
     let visible=PAGE_SIZE;
 
     const render=()=>{
-      const hits=hitsForTopic(rows,selected),storyline=renderTimeline(selected,hits);
-      const shown=hits.slice(0,visible),remaining=Math.max(0,hits.length-shown.length);
+      const hits=newest(hitsForTopic(rows,selected)),storyline=renderTimeline(selected,hits);
+      const shown=hits.slice(0,visible),remaining=Math.max(0,hits.length-shown.length),deepCount=hits.filter(n=>n.deepRead).length;
       heading.textContent=selected==='全部'?'所有主題':selected+(storyline?' 故事線':' 追蹤');
-      lead.textContent=selected==='全部'?'先由上面故事線睇脈絡，或者選擇公司、產品與分類查看全部相關報道。':storyline?`由第一篇到最新進展，串起 ${selected} 在 AIson 的完整報道脈絡。`:`由最新到最早，整理 ${selected} 的公告、產品更新與香港影響。`;
-      stats.textContent=`${hits.length} 篇報導 · ${new Set(hits.map(n=>n.date)).size} 個更新日 · ${selected==='全部'?'所有分類':selected}${storyline?' · 故事線模式':''}`;
+      lead.textContent=selected==='全部'?'先由上面故事線睇脈絡，或者選擇公司、產品與分類查看全部相關報道。':storyline?`先睇最新進展與 Deep Read，再沿時間線理解 ${selected} 的完整脈絡。`:`由最新到最早，整理 ${selected} 的公告、產品更新與香港影響。`;
+      stats.textContent=`${hits.length} 篇報導 · ${new Set(hits.map(n=>n.date)).size} 個更新日${deepCount?` · ${deepCount} 篇 Deep Read`:''} · ${selected==='全部'?'所有分類':selected}`;
       chips.innerHTML=topics.map(topic=>`<button type="button" class="topic-chip${topic===selected?' active':''}" data-topic="${esc(topic)}" aria-pressed="${topic===selected}">${esc(topic)}</button>`).join('');
-      if(storyline){grid.innerHTML='';grid.style.display='none';empty.style.display='none';more.hidden=true}else{grid.style.display='';grid.innerHTML=shown.map(card).join('');empty.style.display=hits.length?'none':'block';more.hidden=!remaining;more.textContent=remaining?`載入更多（尚餘 ${remaining} 篇）`:'已顯示全部'}
+      grid.style.display='';grid.innerHTML=shown.map(card).join('');empty.style.display=hits.length?'none':'block';more.hidden=!remaining;more.textContent=remaining?`載入更多（尚餘 ${remaining} 篇）`:'已顯示全部';
+      if(relatedHead){relatedHead.classList.toggle('show',storyline);if(relatedTitle&&storyline)relatedTitle.textContent=`${selected} 更多相關報道`}
       chips.querySelectorAll('[data-topic]').forEach(button=>button.addEventListener('click',()=>{selected=button.dataset.topic||'全部';visible=PAGE_SIZE;const url=new URL(location.href);selected==='全部'?url.searchParams.delete('topic'):url.searchParams.set('topic',selected);history.replaceState({},'',url);render();if(selected!=='全部')$('#topicHeading')?.scrollIntoView({behavior:'smooth',block:'start'})}));
     };
     more.addEventListener('click',()=>{visible+=PAGE_SIZE;render()});
