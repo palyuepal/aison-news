@@ -29,19 +29,19 @@
       "id": "ai-agent",
       "name": "AI Agent",
       "description": "追蹤會使用工具、讀取資料、執行工作與需要審批的 AI Agent，以及權限和安全問題。",
-      "matchTerms": ["AI Agent", "Agent", "Agents", "MCP", "Computer Use", "智能體"]
+      "matchTerms": ["AI Agent", "AI Agents", "agentic", "MCP", "Computer Use", "智能體", "工具調用", "multi-agent"]
     },
     {
       "id": "ai-video",
       "name": "AI Video",
       "description": "追蹤生成影片、剪輯工作流、聲音處理、商用權利與創作者的 AI 影片工具。",
-      "matchTerms": ["AI Video", "影片生成", "生成影片", "Video", "Veo", "Sora", "Runway", "Kling", "Premiere"]
+      "matchTerms": ["AI Video", "AI 影片", "影片生成", "生成影片", "Video generation", "Veo", "Sora", "Runway", "Kling", "Premiere"]
     },
     {
       "id": "ai-coding",
       "name": "AI Coding",
       "description": "追蹤 Coding Agent、Codex、Copilot、Cursor 與 AI 對程式開發、軟件工程和團隊流程的影響。",
-      "matchTerms": ["AI Coding", "Coding", "Codex", "Copilot", "Cursor", "程式", "開發", "Developer"]
+      "matchTerms": ["AI Coding", "AI 寫碼", "Coding Agent", "Codex", "Copilot", "Cursor", "程式碼", "軟件工程", "developer tools"]
     }
   ],
   "topics": [

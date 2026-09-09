@@ -455,9 +455,29 @@ def build_core_page_seo(site):
         target.write_text(page,encoding='utf-8')
 
 
+def enrich_hubs(data,registry):
+    """Validate optional editorial hub assignments before building public hub pages."""
+    known={str(hub['id']) for hub in registry.get('hubs',[]) if isinstance(hub,dict) and hub.get('id')}
+    for story in data:
+        values=story.get('hubIds')
+        if values is None:
+            continue
+        if not isinstance(values,list) or not values or len(values)!=len(set(values)):
+            raise SystemExit(f"{story['id']} hubIds must be a non-empty array without duplicates")
+        if any(not isinstance(value,str) or value not in known for value in values):
+            raise SystemExit(f"{story['id']} hubIds references an unknown hub")
+
+
 def _hub_matches(story,hub):
-    hay=' '.join([str(story.get('title','')),str(story.get('excerpt','')),str(story.get('category','')),*(str(tag) for tag in story.get('tags',[]))]).lower()
-    return any(term.lower() in hay for term in hub.get('matchTerms',[]))
+    explicit=story.get('hubIds')
+    if explicit is not None:
+        return hub.get('id') in explicit
+    primary=' '.join([str(story.get('title','')),str(story.get('category','')),*(str(tag) for tag in story.get('tags',[]))]).lower()
+    context=' '.join([str(story.get('excerpt','')),str(story.get('summary',''))]).lower()
+    terms=[str(term).strip().lower() for term in hub.get('matchTerms',[]) if str(term).strip()]
+    direct=sum(term in primary for term in terms)
+    contextual=sum(term in context for term in terms)
+    return direct >= 1 or contextual >= 2
 
 
 def _hub_card(story):
@@ -595,6 +615,7 @@ def build_status(data,status):
 def main():
     site=load_site(); registry=load_storyline_registry(); data=load_news(registry); status=read_json(STATUS)
     enrich_storylines(data,registry)
+    enrich_hubs(data,registry)
     enrich_reader_aids(data)
     editorial=build_editorial_payload()
     social_card_ids=build_social_cards(data,site,ROOT)

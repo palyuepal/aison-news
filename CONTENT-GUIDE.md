@@ -22,6 +22,7 @@
 - `actionVerdict`：只可用 `try-now`、`watch`、`wait` 或 `skip`；配對 `actionReason`，說明讀者是否需要即時行動。
 - `aisonScore`：0–10 的編輯重要性分數，不代表投資、產品質素或事實機率。
 - `audienceImpact`：`worker`、`sme`、`creator`、`developer` 各 1–5；必須按香港讀者的實際相關度評估。
+- `hubIds`（可選）：只有文章明確屬於指定 Topic Hub 才填；不確定時留空，build 會用較保守的標題／分類／標籤配對。
 
 舊文章會保留原文與永久連結；build 會為未有 `quickTake`／`actionVerdict` 的歷史文章提供保守的閱讀提示，但不會虛構 AIson Score 或 audienceImpact。
 

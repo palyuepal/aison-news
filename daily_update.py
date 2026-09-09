@@ -77,6 +77,11 @@ SCHEMA = {
                         "required": ["worker", "sme", "creator", "developer"],
                         "additionalProperties": False,
                     },
+                    "hubIds": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+                    },
                     "sourceLabel": {"type": "string", "minLength": 2},
                     "sourceUrl": {"type": "string", "pattern": "^https://"},
                     "sourceType": {
@@ -186,9 +191,10 @@ def build_prompt(today: str, existing) -> str:
 10. 每篇要寫 quickTake，讓讀者約 30 秒知道核心事實與最重要限制；不可只改寫標題。
 11. 每篇要作出 actionVerdict：try-now（可小範圍試）、watch（值得留意）、wait（未夠資料／未必香港可用）或 skip（一般讀者暫可略過），並用 actionReason 說明原因。這是新聞閱讀指引，不可作投資承諾。
 12. aisonScore 為 0–10 的編輯重要性分數；audienceImpact 必須為 worker、sme、creator、developer 各 1–5 分，按香港讀者的實際相關度判斷。
-13. 不要抄原文長句；全部用香港繁體中文 / 廣東話自然改寫。
-14. 10 件之間不可係同一件事拆成多篇。
-15. slug 用短英文小寫連字號，避免日期，因為系統會自動加日期確保唯一。
+13. 如文章明確屬於 Topic Hub，可填 hubIds（只用 openai、google-gemini、anthropic-claude、nvidia、ai-agent、ai-video、ai-coding）；不確定時留空，系統會用保守 fallback 配對。
+14. 不要抄原文長句；全部用香港繁體中文 / 廣東話自然改寫。
+15. 10 件之間不可係同一件事拆成多篇。
+16. slug 用短英文小寫連字號，避免日期，因為系統會自動加日期確保唯一。
 
 以下係網站最近已有內容。除非今日有明確重大新進展，否則避免重複：
 {recent_story_context(existing, today)}
@@ -296,6 +302,7 @@ def main():
             "actionReason": story["actionReason"].strip(),
             "aisonScore": story["aisonScore"],
             "audienceImpact": story["audienceImpact"],
+            **({"hubIds": [hub.strip() for hub in story["hubIds"] if hub.strip()]} if story.get("hubIds") else {}),
             "sourceLabel": story["sourceLabel"].strip(),
             "sourceUrl": source_url,
             "sourceType": story["sourceType"].strip(),

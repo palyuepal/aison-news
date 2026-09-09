@@ -62,6 +62,7 @@ SCHEMA = {
                     "actionReason": {"type": "string", "minLength": 30},
                     "aisonScore": {"type": "number", "minimum": 0, "maximum": 10},
                     "audienceImpact": {"type": "object", "properties": {"worker": {"type": "integer", "minimum": 1, "maximum": 5}, "sme": {"type": "integer", "minimum": 1, "maximum": 5}, "creator": {"type": "integer", "minimum": 1, "maximum": 5}, "developer": {"type": "integer", "minimum": 1, "maximum": 5}}, "required": ["worker", "sme", "creator", "developer"], "additionalProperties": False},
+                    "hubIds": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"}},
                     "sourceLabel": {"type": "string", "minLength": 2},
                     "sourceUrl": {"type": "string", "pattern": "^https://"},
                     "sourceType": {
@@ -165,8 +166,9 @@ def build_prompt(today: str, existing) -> str:
 8. 內容要客觀，AIson Take 可以有判斷，但唔好作投資承諾。
 9. 每篇要有 quickTake、actionVerdict（try-now／watch／wait／skip）與 actionReason，說清楚讀者是否需要採取行動。
 10. aisonScore 為 0–10 編輯重要性；audienceImpact 要評估 worker、sme、creator、developer 各 1–5 的香港相關度。
-11. 10 件之間不可係同一件事拆成多篇。
-12. slug 用短英文小寫連字號，避免日期，因為系統會自動加日期確保唯一。
+11. 如文章明確屬於 Topic Hub，可填 hubIds（只用 openai、google-gemini、anthropic-claude、nvidia、ai-agent、ai-video、ai-coding）；不確定時留空，系統會用保守 fallback 配對。
+12. 10 件之間不可係同一件事拆成多篇。
+13. slug 用短英文小寫連字號，避免日期，因為系統會自動加日期確保唯一。
 
 以下係網站最近已有內容。除非今日有明確重大新進展，否則避免重複：
 {recent_story_context(existing, today)}
@@ -272,6 +274,7 @@ def main():
             "actionReason": story["actionReason"].strip(),
             "aisonScore": story["aisonScore"],
             "audienceImpact": story["audienceImpact"],
+            **({"hubIds": [hub.strip() for hub in story["hubIds"] if hub.strip()]} if story.get("hubIds") else {}),
             "sourceLabel": story["sourceLabel"].strip(),
             "sourceUrl": source_url,
             "sourceType": story["sourceType"].strip(),
