@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json, html, shutil
+import json, html, shutil, re
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from urllib.parse import urljoin
@@ -13,6 +13,8 @@ NEWS=ROOT/'content/news.json'
 DAILY_DIR=ROOT/'content/daily'
 SITE=ROOT/'content/site.json'
 STATUS=ROOT/'content/status.json'
+STORYLINES=ROOT/'data/storylines.json'
+SLUG_RE=re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 
 
 def read_json(path):
@@ -87,6 +89,10 @@ def _validate_story(n, ids, ranks):
         raise SystemExit(f"verified story {n['id']} needs https sourceUrl")
     if not isinstance(n.get('hkImpact',[]),list):
         raise SystemExit(f"{n['id']} hkImpact must be an array")
+    for key in ('storylineId','topicId'):
+        value=n.get(key)
+        if value is not None and (not isinstance(value,str) or not SLUG_RE.fullmatch(value.strip())):
+            raise SystemExit(f"{n['id']} {key} must be a lowercase kebab-case id")
     _validate_visual(n)
 
 
@@ -149,6 +155,87 @@ def load_news():
     return sorted(merged,key=lambda n:(n.get('rank',999),n['date']))
 
 
+def load_storyline_registry():
+    if not STORYLINES.is_file():
+        return {'version':1,'topics':[],'storylines':[]}
+    registry=read_json(STORYLINES)
+    if not isinstance(registry,dict):
+        raise SystemExit('data/storylines.json must be an object')
+    topics=registry.get('topics',[])
+    storylines=registry.get('storylines',[])
+    if not isinstance(topics,list) or not isinstance(storylines,list):
+        raise SystemExit('storyline registry topics/storylines must be arrays')
+    topic_ids=set()
+    for topic in topics:
+        if not isinstance(topic,dict):
+            raise SystemExit('storyline topic must be an object')
+        topic_id=str(topic.get('id','')).strip()
+        if not SLUG_RE.fullmatch(topic_id):
+            raise SystemExit(f'invalid topic id: {topic_id or "?"}')
+        if topic_id in topic_ids:
+            raise SystemExit(f'duplicate topic id: {topic_id}')
+        if not str(topic.get('name','')).strip():
+            raise SystemExit(f'topic {topic_id} needs name')
+        topic_ids.add(topic_id)
+    storyline_ids=set()
+    seeded_story_ids={}
+    for line in storylines:
+        if not isinstance(line,dict):
+            raise SystemExit('storyline must be an object')
+        line_id=str(line.get('id','')).strip()
+        topic_id=str(line.get('topicId','')).strip()
+        if not SLUG_RE.fullmatch(line_id):
+            raise SystemExit(f'invalid storyline id: {line_id or "?"}')
+        if line_id in storyline_ids:
+            raise SystemExit(f'duplicate storyline id: {line_id}')
+        if topic_id not in topic_ids:
+            raise SystemExit(f'storyline {line_id} references unknown topicId {topic_id}')
+        if not str(line.get('name','')).strip():
+            raise SystemExit(f'storyline {line_id} needs name')
+        if line.get('status','active') not in {'active','watching','closed'}:
+            raise SystemExit(f'storyline {line_id} has invalid status')
+        story_ids=line.get('storyIds',[])
+        if not isinstance(story_ids,list) or any(not isinstance(x,str) or not x.strip() for x in story_ids):
+            raise SystemExit(f'storyline {line_id} storyIds must be an array of ids')
+        for story_id in story_ids:
+            previous=seeded_story_ids.get(story_id)
+            if previous and previous!=line_id:
+                raise SystemExit(f'story {story_id} is seeded into multiple storylines')
+            seeded_story_ids[story_id]=line_id
+        storyline_ids.add(line_id)
+    return registry
+
+
+def enrich_storylines(data,registry):
+    topics={item['id']:item for item in registry.get('topics',[])}
+    lines={item['id']:item for item in registry.get('storylines',[])}
+    seeded={story_id:line['id'] for line in lines.values() for story_id in line.get('storyIds',[])}
+    known_story_ids={n['id'] for n in data}
+    missing=sorted(set(seeded)-known_story_ids)
+    if missing:
+        raise SystemExit(f'storyline registry references missing story ids: {missing}')
+    for n in data:
+        explicit_line=str(n.get('storylineId','')).strip() or None
+        explicit_topic=str(n.get('topicId','')).strip() or None
+        seeded_line=seeded.get(n['id'])
+        if explicit_line and explicit_line not in lines:
+            raise SystemExit(f"{n['id']} references unknown storylineId {explicit_line}")
+        if explicit_topic and explicit_topic not in topics:
+            raise SystemExit(f"{n['id']} references unknown topicId {explicit_topic}")
+        if explicit_line and seeded_line and explicit_line!=seeded_line:
+            raise SystemExit(f"{n['id']} storylineId conflicts with registry seed")
+        resolved_line=explicit_line or seeded_line
+        if resolved_line:
+            expected_topic=lines[resolved_line]['topicId']
+            if explicit_topic and explicit_topic!=expected_topic:
+                raise SystemExit(f"{n['id']} topicId must match storyline {resolved_line}: {expected_topic}")
+            n['storylineId']=resolved_line
+            n['topicId']=expected_topic
+        elif explicit_topic:
+            n['topicId']=explicit_topic
+    return data
+
+
 def write_js(path,var,obj):
     path.write_text(f'window.{var} = '+json.dumps(obj,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
 
@@ -191,8 +278,9 @@ def build_article_pages(data,site,social_card_ids=None):
         page=page.replace('<meta property="og:type" content="article">',og,1)
         structured={
             '@context':'https://schema.org','@type':'NewsArticle','headline':n['title'],'description':n['excerpt'],
-            'datePublished':n['date'],'dateModified':n['date'],'mainEntityOfPage':url,'image':[image],
+            'datePublished':n['date'],'dateModified':n.get('updatedAt',n['date']),'mainEntityOfPage':url,'image':[image],
             'articleSection':n['category'],'inLanguage':'zh-Hant-HK',
+            'keywords':[*(n.get('tags') or []),*([n['topicId']] if n.get('topicId') else []),*([n['storylineId']] if n.get('storylineId') else [])],
             'publisher':{'@type':'Organization','name':'AIson','logo':{'@type':'ImageObject','url':publisher_logo}},
             'author':{'@type':'Organization','name':'AIson'}
         }
@@ -236,7 +324,8 @@ def build_search(data):
     slim=[{
         'id':n['id'],'rank':n['rank'],'title':n['title'],'excerpt':n['excerpt'],'category':n['category'],
         'tags':n.get('tags',[]),'date':n['date'],'readTime':n.get('readTime',''),
-        'verified':bool(n.get('verified')),'featured':bool(n.get('featured')),'deepRead':_deep_read_ready(n)
+        'verified':bool(n.get('verified')),'featured':bool(n.get('featured')),'deepRead':_deep_read_ready(n),
+        'storylineId':n.get('storylineId'),'topicId':n.get('topicId')
     } for n in data]
     (ROOT/'data/search-index.json').write_text(json.dumps(slim,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
 
@@ -251,7 +340,8 @@ def build_status(data,status):
 
 
 def main():
-    site=load_site(); data=load_news(); status=read_json(STATUS)
+    site=load_site(); data=load_news(); status=read_json(STATUS); registry=load_storyline_registry()
+    enrich_storylines(data,registry)
     editorial=build_editorial_payload()
     social_card_ids=build_social_cards(data,site,ROOT)
     write_js(ROOT/'data/news.js','AISON_NEWS',data)
@@ -259,7 +349,8 @@ def main():
     build_search(data); build_article_pages(data,site,social_card_ids); build_rss(data,site); build_sitemap(data,site); build_status(data,status)
     overview=build_daily_overview(data,site,ROOT)
     overview_count=overview.get('count',0) if overview else 0
-    print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards / daily overview {overview_count} stories / editorial {editorial.get("source","?")}')
+    linked=sum(1 for n in data if n.get('storylineId'))
+    print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards / {linked} storyline-linked / daily overview {overview_count} stories / editorial {editorial.get("source","?")}')
 
 
 if __name__=='__main__': main()
