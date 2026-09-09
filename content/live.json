@@ -8,7 +8,7 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/technology/us-accuses-chinese-ai-firms-industrial-scale-theft-ai-technology-2026-09-08/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-09-meta-muse-ai-agent-launch",
@@ -19,7 +19,7 @@
     "sourceLabel": "Reuters / The Verge",
     "sourceUrl": "https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-09-samsung-mistral-ai-partnership",
@@ -41,7 +41,7 @@
     "sourceLabel": "Reuters / Qualcomm",
     "sourceUrl": "https://www.reuters.com/technology/qualcomm-amazon-develop-custom-chips-ai-data-centers-2026-09-08/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-08-google-agentic-ai-cyber-campaign",
@@ -85,7 +85,7 @@
     "sourceLabel": "Financial Times",
     "sourceUrl": "https://www.ft.com/content/adbf5262-c4d5-4312-a9b8-4d3cf30c9e00",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-07-openai-automated-research-intern",
