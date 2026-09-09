@@ -224,18 +224,6 @@
     if(location.hash==='#aison-live') setTimeout(()=>document.getElementById('aison-live')?.scrollIntoView({block:'start'}),0);
   }
 
-  function addNewsletterFallback(){
-    const url=window.AISON_SITE?.newsletter?.subscribeUrl||'https://aison.hk/#newsletter';
-    document.querySelectorAll('.newsletter').forEach(panel=>{
-      if(panel.querySelector('.newsletter-fallback')) return;
-      const link=document.createElement('a');
-      link.className='newsletter-fallback';
-      link.href=url;link.target='_blank';link.rel='noopener noreferrer';
-      link.textContent='收唔到訂閱表格？直接訂閱 AIson Newsletter →';
-      panel.appendChild(link);
-    });
-  }
-
   function themeDefinitions(){
     return [
       {label:'產品與模型',title:'由「發布」走向真正可用',keywords:['openai','chatgpt','gpt','google','gemini','anthropic','claude','模型','產品','agent','工具','發布','rollout','平台']},
@@ -290,10 +278,10 @@
   window.copyLink=copyCanonicalLink;
   window.shareWhatsApp=shareWhatsApp;
 
-  function apply(){addStyles();normalizeNavigation();addNewsletterFallback();renderDailyThemes();rewriteArticleLinks();badgeCards();markArticle();fixJsonLd();installLiteSearch()}
+  function apply(){addStyles();normalizeNavigation();renderDailyThemes();rewriteArticleLinks();badgeCards();markArticle();fixJsonLd();installLiteSearch()}
   document.addEventListener('DOMContentLoaded',()=>{
     apply();
-    const observer=new MutationObserver(()=>{addNewsletterFallback();rewriteArticleLinks();badgeCards();fixJsonLd()});
+    const observer=new MutationObserver(()=>{rewriteArticleLinks();badgeCards();fixJsonLd()});
     observer.observe(document.body,{childList:true,subtree:true});
   });
 })();
