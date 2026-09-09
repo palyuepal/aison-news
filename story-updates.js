@@ -220,7 +220,7 @@
     let btn=navWrap.querySelector('#menuBtn');
     const createdButton=!btn;
     if(!btn){btn=document.createElement('button');btn.className='menuBtn';btn.id='menuBtn';btn.setAttribute('aria-label','開啟選單');btn.textContent='☰';navWrap.appendChild(btn)}
-    if(createdButton){btn.addEventListener('click',()=>{mobile.style.display=mobile.style.display==='block'?'none':'block'})}
+    if(createdButton){const setOpen=open=>{mobile.style.display=open?'block':'none';btn.setAttribute('aria-expanded',String(open));btn.setAttribute('aria-label',open?'關閉選單':'開啟選單');btn.textContent=open?'×':'☰'};setOpen(false);btn.addEventListener('click',()=>setOpen(mobile.style.display!=='block'));mobile.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setOpen(false)));topbar.addEventListener('keydown',event=>{if(event.key==='Escape')setOpen(false)})}
     if(location.hash==='#aison-live') setTimeout(()=>document.getElementById('aison-live')?.scrollIntoView({block:'start'}),0);
   }
 
