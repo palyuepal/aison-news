@@ -61,24 +61,40 @@
     window.AISON_SEARCH_INDEX_PROMISE=fetch('data/search-index.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(`search index ${r.status}`);return r.json()}).then(rows=>Array.isArray(rows)?rows:[]);
     return window.AISON_SEARCH_INDEX_PROMISE;
   }
+  function loadRegistry(){
+    if(window.AISON_STORYLINE_REGISTRY_PROMISE)return window.AISON_STORYLINE_REGISTRY_PROMISE;
+    window.AISON_STORYLINE_REGISTRY_PROMISE=fetch('data/storylines.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(`storyline registry ${r.status}`);return r.json()}).then(data=>data&&typeof data==='object'?data:{topics:[],storylines:[]});
+    return window.AISON_STORYLINE_REGISTRY_PROMISE;
+  }
   function exactHits(rows,tag,n){return rows.filter(item=>item.id===n.id||item.category===tag||(item.tags||[]).includes(tag))}
-  function chooseTopic(rows,n){
+  function chooseTopic(rows,n,registry){
+    if(n.storylineId){
+      const line=(registry.storylines||[]).find(item=>item.id===n.storylineId);
+      const hits=rows.filter(item=>item.storylineId===n.storylineId);
+      if(hits.length)return {tag:line?.name||'同一故事線',hits,count:hits.length,href:`topics.html?storyline=${encodeURIComponent(n.storylineId)}`,kind:'storyline'};
+    }
+    if(n.topicId){
+      const topic=(registry.topics||[]).find(item=>item.id===n.topicId);
+      const hits=rows.filter(item=>item.topicId===n.topicId);
+      if(hits.length>=2)return {tag:topic?.name||'同一主題',hits,count:hits.length,href:`topics.html?topicId=${encodeURIComponent(n.topicId)}`,kind:'topicId'};
+    }
     const candidates=[...(n.tags||[]),n.category].filter(Boolean).filter((value,index,all)=>all.indexOf(value)===index&&!GENERIC.has(value));
-    const scored=candidates.map(tag=>{const hits=exactHits(rows,tag,n);return {tag,hits,count:hits.length}}).filter(x=>x.count>=2).sort((a,b)=>{
+    const scored=candidates.map(tag=>{const hits=exactHits(rows,tag,n);return {tag,hits,count:hits.length,href:`topics.html?topic=${encodeURIComponent(tag)}`,kind:'tag'}}).filter(x=>x.count>=2).sort((a,b)=>{
       const aIdeal=a.count<=8?0:1,bIdeal=b.count<=8?0:1;
       return aIdeal-bIdeal||a.count-b.count||String(b.tag).length-String(a.tag).length;
     });
     if(scored[0])return scored[0];
-    const fallback=[...(n.tags||[]),n.category].filter(Boolean).map(tag=>({tag,hits:exactHits(rows,tag,n)})).filter(x=>x.hits.length>=2).sort((a,b)=>a.hits.length-b.hits.length);
+    const fallback=[...(n.tags||[]),n.category].filter(Boolean).map(tag=>({tag,hits:exactHits(rows,tag,n),href:`topics.html?topic=${encodeURIComponent(tag)}`,kind:'tag'})).filter(x=>x.hits.length>=2).sort((a,b)=>a.hits.length-b.hits.length);
     return fallback[0]?{...fallback[0],count:fallback[0].hits.length}:null;
   }
-  function renderTimeline(n,rows){
+  function renderTimeline(n,rows,registry){
     const body=$('#articleBody');if(!body||body.querySelector('.event-timeline'))return;
-    const topic=chooseTopic(rows,n);if(!topic)return;
+    const topic=chooseTopic(rows,n,registry);if(!topic)return;
     let hits=topic.hits.slice().sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))||((Number(b.rank)||0)-(Number(a.rank)||0)));
     if(hits.length>5){const currentIndex=hits.findIndex(x=>x.id===n.id);const start=Math.max(0,Math.min(currentIndex-2,hits.length-5));hits=hits.slice(start,start+5)}
     const section=document.createElement('section');section.className='event-timeline';
-    section.innerHTML=`<div class="event-timeline-head"><div><small>STORY TIMELINE</small><h2>事件時間線｜${esc(topic.tag)}</h2><p>由 AIson 新聞庫自動串起同一主題的已發布報道，睇清事件點樣演變。</p></div><a class="event-timeline-link" href="topics.html?topic=${encodeURIComponent(topic.tag)}">睇完整主題 →</a></div><div class="event-timeline-list">${hits.map(item=>`<article class="event-timeline-item${item.id===n.id?' current':''}"><div class="event-timeline-meta"><span>${esc(fmt(item.date))}</span><span>·</span><span>${esc(item.category||'AI')}</span>${item.id===n.id?'<span class="event-timeline-now">你正在閱讀</span>':''}</div><h3>${esc(item.title)}</h3><p>${esc(item.excerpt||'')}</p>${item.id!==n.id?`<a href="news/${encodeURIComponent(item.id)}.html">閱讀這一節 →</a>`:''}</article>`).join('')}</div>`;
+    const intro=topic.kind==='storyline'?'由穩定 storylineId 串起同一事件的已發布報道，避免只因公司或關鍵字相同而錯誤合併。':'由 AIson 新聞庫串起相關已發布報道，睇清事件點樣演變。';
+    section.innerHTML=`<div class="event-timeline-head"><div><small>STORY TIMELINE${topic.kind==='storyline'?' · VERIFIED THREAD':''}</small><h2>事件時間線｜${esc(topic.tag)}</h2><p>${esc(intro)}</p></div><a class="event-timeline-link" href="${topic.href}">睇完整主題 →</a></div><div class="event-timeline-list">${hits.map(item=>`<article class="event-timeline-item${item.id===n.id?' current':''}"><div class="event-timeline-meta"><span>${esc(fmt(item.date))}</span><span>·</span><span>${esc(item.category||'AI')}</span>${item.id===n.id?'<span class="event-timeline-now">你正在閱讀</span>':''}</div><h3>${esc(item.title)}</h3><p>${esc(item.excerpt||'')}</p>${item.id!==n.id?`<a href="news/${encodeURIComponent(item.id)}.html">閱讀這一節 →</a>`:''}</article>`).join('')}</div>`;
     const source=body.querySelector('.source-transparency,.source');
     if(source)source.insertAdjacentElement('beforebegin',section);else body.appendChild(section);
   }
@@ -87,19 +103,32 @@
     const shared=(item.tags||[]).filter(tag=>(n.tags||[]).includes(tag));
     const genericPenalty=shared.filter(tag=>GENERIC.has(tag)).length;
     const specific=shared.length-genericPenalty;
-    return specific*6+genericPenalty*2+(item.category===n.category?2:0)+(item.date===n.date?1:0);
+    const storylineBoost=n.storylineId&&item.storylineId===n.storylineId?30:0;
+    const topicBoost=n.topicId&&item.topicId===n.topicId?8:0;
+    return storylineBoost+topicBoost+specific*6+genericPenalty*2+(item.category===n.category?2:0)+(item.date===n.date?1:0);
   }
-  function renderRelated(n,rows){
+  function renderRelated(n,rows,registry){
     const root=$('#articleRelated');if(!root)return;
     const ranked=rows.filter(item=>item.id!==n.id).map(item=>({...item,_score:relatedScore(item,n),_shared:(item.tags||[]).filter(tag=>(n.tags||[]).includes(tag))})).filter(item=>item._score>0).sort((a,b)=>b._score-a._score||String(b.date||'').localeCompare(String(a.date||''))).slice(0,3);
     if(!ranked.length)return;
-    root.innerHTML=ranked.map(item=>{const reason=item._shared.filter(tag=>!GENERIC.has(tag)).slice(0,2);const label=reason.length?`共同脈絡：${reason.join('、')}`:`同一分類：${item.category}`;return `<a class="article-related-card" href="news/${encodeURIComponent(item.id)}.html"><small>${esc(label)}</small><b>${esc(item.title)}</b><span>${esc(fmt(item.date))} · 繼續閱讀 →</span></a>`}).join('');
+    const lineName=id=>(registry.storylines||[]).find(line=>line.id===id)?.name||'同一故事線';
+    const topicName=id=>(registry.topics||[]).find(topic=>topic.id===id)?.name||'同一主題';
+    root.innerHTML=ranked.map(item=>{
+      const reason=item._shared.filter(tag=>!GENERIC.has(tag)).slice(0,2);
+      let label=reason.length?`共同脈絡：${reason.join('、')}`:`同一分類：${item.category}`;
+      if(n.storylineId&&item.storylineId===n.storylineId)label=`同一故事線：${lineName(n.storylineId)}`;
+      else if(n.topicId&&item.topicId===n.topicId)label=`同一主題：${topicName(n.topicId)}`;
+      return `<a class="article-related-card" href="news/${encodeURIComponent(item.id)}.html"><small>${esc(label)}</small><b>${esc(item.title)}</b><span>${esc(fmt(item.date))} · 繼續閱讀 →</span></a>`;
+    }).join('');
   }
   async function render(){
     if(document.body?.dataset.page!=='article')return;
     const n=currentStory();if(!n)return;
     addStyles();renderHeroVisual(n);renderSourceCard(n);
-    try{const rows=await loadIndex();renderTimeline(n,rows);renderRelated(n,rows)}catch(error){console.warn('AIson article context enhancement unavailable',error)}
+    try{
+      const [rows,registry]=await Promise.all([loadIndex(),loadRegistry().catch(()=>({topics:[],storylines:[]}))]);
+      renderTimeline(n,rows,registry);renderRelated(n,rows,registry);
+    }catch(error){console.warn('AIson article context enhancement unavailable',error)}
   }
   const start=()=>requestAnimationFrame(()=>requestAnimationFrame(render));
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
