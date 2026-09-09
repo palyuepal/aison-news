@@ -91,7 +91,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[t
 .panel.dark .panel-kicker,.panel.dark .top-item .num,.cta-card span,.return-cta-copy small{color:var(--yellow2)}
 .panel.dark p,.muted-light{color:#C8D6E9}
 .newsletter{background:linear-gradient(145deg,var(--surface) 0%,#F0F5FB 100%)}
+.newsletter{color:var(--ink)}
 .newsletter .morning-brief-kicker{color:var(--royal-blue)}
+.newsletter .morning-brief-title{color:var(--ink)}
+.newsletter .morning-brief-note,.newsletter p{color:var(--muted)}
+.newsletter .panel-kicker{color:var(--royal-blue)}
 .subscribe input{background:var(--surface);border-color:var(--line-strong);color:var(--ink)}
 .cta{background:var(--surface-alt)}
 .footer{background:var(--navy);color:#C9D7E9}
