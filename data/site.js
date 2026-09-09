@@ -8,7 +8,7 @@ window.AISON_SITE = {
   "editionSize": 10,
   "newsletter": {
     "provider": "Beehiiv",
-    "subscribeUrl": "https://yues-newsletter-c6d023.beehiiv.com/subscribe"
+    "subscribeUrl": "https://aison.hk/#newsletter"
   },
   "analytics": {
     "enabled": true,
