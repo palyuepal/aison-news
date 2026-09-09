@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-09-enflame-star-market-ipo",
+    "title": "騰訊有份投資的 Enflame 完成 9.12 億美元 IPO，9 月 11 日登陸上海科創板",
+    "summary": "Reuters 9 月 9 日根據上海交易所文件報道，中國 AI 晶片公司上海 Enflame Technology 已完成 IPO，集資 61.2 億元人民幣（約 9.12 億美元），發行價每股 142.18 元，對應上市估值約 611.9 億元人民幣（約 91.2 億美元），並將於 9 月 11 日在上海科創板掛牌。Enflame 預計 2026 年首九個月收入按年增長 326% 至 455%，但仍錄得 7 億至 8.6 億元人民幣淨虧損；騰訊上市後持股 17.95%，並曾佔 Enflame 2025 年收入 83.79%。這宗交易提供一個新的中國 AI GPU 公開市場估值基準，同時亦暴露出高度客戶集中與仍未盈利的風險。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-09-09T12:23:08Z",
+    "sourceLabel": "Reuters / 上海證券交易所",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/tencent-backed-enflame-debut-shanghai-friday-912-million-ipo-2026-09-09/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-09-deepseek-citic-star-market-ipo",
     "title": "DeepSeek 據報委任中信證券推進上海科創板 IPO，上市計劃進入實質準備階段",
     "summary": "Reuters 9 月 9 日引述兩名知情人士報道，DeepSeek 已委任中信證券為上海科創板上市作準備，目標在 2026 年內啟動 IPO 流程。上市時間、集資額與目標估值仍未確定，DeepSeek 與中信證券亦未有公開確認；但在中國內地上市慣例下，委任券商進行上市前輔導通常代表 IPO 已由早期構想進入較實質的準備階段。Financial Times 同日亦報道 DeepSeek 正在新一輪融資中加強投資者篩選，並提到公司正為計劃中的 IPO 改善治理與資本安排。若進展落實，DeepSeek 可能成為中國最受關注的前沿 AI 公司上市案例之一，直接影響中國 AI 模型公司的融資、估值與算力競賽。",
