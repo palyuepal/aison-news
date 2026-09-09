@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-09-anthropic-mythos-uk-aisi-access",
+    "title": "Anthropic 未向英國 AI Security Institute 提供 Mythos 5.1 預發布測試，frontier AI 存取裂痕升溫",
+    "summary": "Financial Times 9 月 9 日報道，Anthropic 未有像過往一樣向英國 AI Security Institute 提供 Claude Mythos 5.1 的預發布測試存取；Anthropic 官方亦確認 Mythos 5.1 目前只向一小批經審核的美國機構提供，並表示正與美國政府合作擴大存取。英國政府內部因此擔心，美國對前沿 AI 的保護主義與出口限制可能開始削弱盟友之間既有的模型安全測試合作。這並不代表 Anthropic 已宣布永久排除英國，而是顯示前沿模型的跨境存取正由一般產品政策升級成國安與外交議題。",
+    "category": "AI 治理",
+    "publishedAt": "2026-09-09T04:00:25Z",
+    "sourceLabel": "Financial Times / Anthropic",
+    "sourceUrl": "https://www.ft.com/content/560e1c8b-f163-4fd6-b604-e905550ac870",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-09-us-china-ai-distillation-accusation",
     "title": "美國三大安全機構點名中國 AI 公司：指控以『工業級』蒸餾複製美國模型能力",
     "summary": "美國 NSA、CISA 與 FBI 9 月 8 日公開指控多間中國 AI 公司進行大規模、針對性的模型蒸餾，點名包括 DeepSeek、Moonshot AI、Alibaba、MiniMax 與 StepFun，並稱相關活動可能獲中國政府知情。美方指這些公司利用 Anthropic、OpenAI、Google 及 SpaceX 等美國模型的輸出加速訓練自家系統。這項指控在美中預計 9 月中舉行 AI 安全對話、以及月底峰會前出現，令模型蒸餾由企業條款與技術爭議升級成國家安全與外交議題；目前這仍屬美方公開指控，並非司法裁決。",
