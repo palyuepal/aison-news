@@ -109,10 +109,11 @@ def _daily_files():
     return sorted(files,key=lambda p:p.stem,reverse=True)
 
 
-def load_news():
+def load_news(registry=None):
     legacy=read_json(NEWS)
     if not isinstance(legacy,list):
         raise SystemExit('content/news.json must be an array')
+    registry=registry or load_storyline_registry()
 
     daily_files=_daily_files()
     merged=[]
@@ -123,6 +124,10 @@ def load_news():
         batch=read_json(path)
         if not isinstance(batch,list) or len(batch)!=10:
             raise SystemExit(f"{path}: daily edition must contain exactly 10 stories")
+        # This is the publication gate for an explicit Daily 10 classification.
+        # It never assigns an ID by heuristic: an absent confident match stays a
+        # new event and continues through the normal tags/category experience.
+        validate_daily_storyline_classifications(path,batch,registry)
         local_ranks=set()
         for raw in batch:
             n=dict(raw)
@@ -204,6 +209,51 @@ def load_storyline_registry():
             seeded_story_ids[story_id]=line_id
         storyline_ids.add(line_id)
     return registry
+
+
+def classify_storyline_assignment(story, registry):
+    """Validate an editorial decision without trying to infer a relationship."""
+    topics={item['id']:item for item in registry.get('topics',[])}
+    lines={item['id']:item for item in registry.get('storylines',[])}
+    story_id=story.get('id','?')
+    raw_line=story.get('storylineId')
+    raw_topic=story.get('topicId')
+
+    for key,value in (('storylineId',raw_line),('topicId',raw_topic)):
+        if value is not None and (not isinstance(value,str) or not SLUG_RE.fullmatch(value.strip())):
+            raise SystemExit(f"{story_id} {key} must be a lowercase kebab-case id")
+
+    line_id=raw_line.strip() if isinstance(raw_line,str) else None
+    topic_id=raw_topic.strip() if isinstance(raw_topic,str) else None
+    if not line_id and not topic_id:
+        return 'new-event'
+    if line_id:
+        if line_id not in lines:
+            raise SystemExit(f"{story_id} references unknown storylineId {line_id}")
+        # A reserved watchlist entry needs an explicit editorial promotion
+        # before it can become a published storyline.
+        if lines[line_id].get('status','active') != 'active':
+            raise SystemExit(f"{story_id} storylineId {line_id} is not active; update the registry before publishing a follow-up")
+        if not topic_id:
+            raise SystemExit(f"{story_id} storyline follow-up must include its matching topicId")
+        if topic_id not in topics:
+            raise SystemExit(f"{story_id} references unknown topicId {topic_id}")
+        expected=lines[line_id]['topicId']
+        if topic_id != expected:
+            raise SystemExit(f"{story_id} topicId must match storyline {line_id}: {expected}")
+        return 'storyline-follow-up'
+    if topic_id not in topics:
+        raise SystemExit(f"{story_id} references unknown topicId {topic_id}")
+    return 'topic-related-event'
+
+
+def validate_daily_storyline_classifications(path, batch, registry):
+    """Reject invalid explicit links while allowing deliberate no-match rows."""
+    counts={'new-event':0,'topic-related-event':0,'storyline-follow-up':0}
+    for story in batch:
+        decision=classify_storyline_assignment(story,registry)
+        counts[decision]+=1
+    return counts
 
 
 def enrich_storylines(data,registry):
@@ -340,7 +390,7 @@ def build_status(data,status):
 
 
 def main():
-    site=load_site(); data=load_news(); status=read_json(STATUS); registry=load_storyline_registry()
+    site=load_site(); registry=load_storyline_registry(); data=load_news(registry); status=read_json(STATUS)
     enrich_storylines(data,registry)
     editorial=build_editorial_payload()
     social_card_ids=build_social_cards(data,site,ROOT)

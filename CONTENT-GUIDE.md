@@ -112,15 +112,15 @@ AIson 由 `data/storylines.json` 管理穩定主題與故事線 ID。兩者用�
 
 規則：
 - ID 必須是小寫 kebab-case，並且已存在於 `data/storylines.json`
-- 有 `storylineId` 時，`topicId` 必須與 registry 內該故事線的 `topicId` 一致
+- 有 `storylineId` 時，必須同時寫 `topicId`，而且要與 registry 內該故事線的 `topicId` 一致
 - 同一篇新聞只可屬一條主要 `storylineId`；不要因文章同時提及多家公司就塞入多條故事線
 - `storylineId` 只用於真正同一事件的 follow-up，不可因為「同一公司」或「同一產品類別」就強行串線
 - 舊文章可由 registry 的 `storyIds` 回填，不必重寫歷史 daily JSON
 - 新 follow-up 優先直接寫 `storylineId`；`storyIds` 主要用於舊文回填或人工修正
 - 如沒有合適的既有故事線，不要硬套；先用普通 tags / category，確定值得長期追蹤後再建立新的 registry entry
-- `status=watching` 可預先建立監察中的故事線，但沒有已發布文章時不應在前台冒充已有報道
+- `status=watching` 可預先建立監察中的故事線，但沒有已發布文章時不應在前台冒充已有報道；每日自動發布不可直接連結 `watching`，首篇可核實報道須先由編輯把 registry 升為 `active`
 
-Build 會驗證 topic/storyline ID、registry 關係、舊文 seed 是否存在，以及一篇舊文是否被錯誤 seed 到多條故事線。任何衝突都會阻止發布。
+Build 會驗證 topic/storyline ID、registry 關係、舊文 seed 是否存在，以及一篇舊文是否被錯誤 seed 到多條故事線。Daily 10 如沒有高信心配對，可完全省略兩個 ID 並作為新事件；但一旦聲稱是既有 follow-up，未知 ID、錯配 topic 或未啟用故事線都會阻止發布。
 
 ## 發布標準
 - 官方公告、監管文件、研究論文、公司正式文件優先；其次 Reuters / AP / FT / Bloomberg / WSJ / The Verge 等可靠媒體

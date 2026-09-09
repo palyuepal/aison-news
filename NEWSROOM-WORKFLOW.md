@@ -22,6 +22,19 @@
 
 一般 Daily 10 以約 800–1,500 個實質中文字為目標；資料不足時寧可短，不可灌水、重複或把推論寫成事實。
 
+## 08:18 — 故事線判斷（先判斷，後發布）
+逐篇讀取 `data/storylines.json` 後，只可作以下其中一種判斷：
+
+- **既有故事線 follow-up**：有原始來源明確證明是 registry 中同一事件、產品、合作或爭議的實質新進展，才同時寫入正確的 `storylineId` 和其對應 `topicId`。
+- **既有長期主題、但不是同一故事線**：可只寫入正確的 `topicId`；不可因為同一公司、相同 tag 或相近產品就強行加 `storylineId`。
+- **新事件／未有高信心配對**：不要寫 `storylineId` 或 `topicId`。保留 category 和 tags，待有足夠可核實的後續才由編輯建立新的 registry entry。
+
+安全規則：
+- `storylineId` 必須是 registry 中 `status: active` 的 ID，且必須同時帶上完全相符的 `topicId`。
+- `status: watching` 只可監察，不能直接拿來發布；若有首個可核實進展，先在 registry 以人工編採判斷升格為 `active`，再連結文章。
+- 不可憑公司名、tag、關鍵字或模型猜測做自動配對。
+- `python tools/build.py` 是發布閘門：未知 ID、ID 配對不符、或將 follow-up 接到未啟用故事線，都會失敗；沒有高信心配對則安全地作為新事件通過。
+
 ## 08:20 — 排名與 Featured 3
 只留最值得知道的 10 件。`content/editorial/YYYY-MM-DD.json` 的 `top3Ids` 為首頁 Featured 3，必須按當日重要性排序，而不只是公司名氣。
 
