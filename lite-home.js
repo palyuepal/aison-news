@@ -93,9 +93,42 @@
     }));
   }
 
+  function textLength(value=''){return String(value||'').replace(/\s+/g,'').length}
+  function deepReadReady(n){
+    if(!n?.verified||!n.sourceUrl)return false;
+    const impacts=Array.isArray(n.hkImpact)?n.hkImpact:[];
+    const total=['summary','whatHappened','reportingContext','deepDive','whyImportant','whatToWatch','take'].reduce((sum,key)=>sum+textLength(n[key]),0)+impacts.reduce((sum,item)=>sum+textLength(item),0);
+    return impacts.length>=3&&textLength(n.whatHappened)>=300&&textLength(n.reportingContext)>=400&&textLength(n.deepDive)>=900&&textLength(n.whyImportant)>=250&&textLength(n.whatToWatch)>=180&&total>=2800;
+  }
+  function compact(value='',limit=150){const text=String(value||'').replace(/\s+/g,' ').trim();return text.length>limit?text.slice(0,limit).replace(/[，。；：、\s]+$/,'')+'…':text}
+  function featuredStories(){
+    const rows=(window.AISON_NEWS||[]).slice().sort((a,b)=>(Number(a.rank)||999)-(Number(b.rank)||999));
+    const byId=new Map(rows.map(item=>[item.id,item]));
+    const ids=window.AISON_EDITORIAL?.top3Ids||[];
+    const selected=ids.map(id=>byId.get(id)).filter(Boolean);
+    return (selected.length?selected:rows.slice(0,3)).slice(0,3);
+  }
+  function addFeaturedStyles(){
+    if(document.getElementById('aison-featured3-style'))return;
+    const style=document.createElement('style');style.id='aison-featured3-style';style.textContent=`
+      .editorial-feature{padding:30px 0 38px;background:linear-gradient(180deg,#f7fbff 0%,#eef5ff 100%)}
+      .featured3-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}.featured3-head h2{margin:5px 0 6px;font-size:clamp(27px,3.3vw,42px);letter-spacing:-.035em;color:#061a3a}.featured3-head p{margin:0;max-width:720px;color:#526780;line-height:1.65}.featured3-note{flex:0 0 auto;padding:8px 11px;border:1px solid #cedcf0;border-radius:999px;background:#fff;color:#526780;font-size:11px;font-weight:900}
+      .featured3-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);grid-template-rows:1fr 1fr;gap:14px}.featured3-card{position:relative;display:flex;flex-direction:column;min-width:0;padding:22px;border:1px solid #d5e3f4;border-radius:20px;background:#fff;color:#071b3d;text-decoration:none;box-shadow:0 12px 34px rgba(6,26,58,.07);overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}.featured3-card:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(6,26,58,.11)}.featured3-card.lead{grid-row:1/3;padding:28px;background:linear-gradient(145deg,#061a3a 0%,#0d3568 100%);color:#fff;border-color:#173e70}.featured3-card:after{content:'';position:absolute;right:-54px;top:-54px;width:150px;height:150px;border-radius:50%;background:rgba(33,111,214,.07)}.featured3-card.lead:after{background:rgba(255,201,40,.09);width:220px;height:220px}
+      .featured3-top{position:relative;z-index:1;display:flex;align-items:center;gap:8px;flex-wrap:wrap}.featured3-rank{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:9px;background:#eef5ff;color:#123b78;font-size:11px;font-weight:950}.featured3-card.lead .featured3-rank{background:#ffc928;color:#071b3d}.featured3-cat{font-size:11px;font-weight:950;letter-spacing:.04em}.featured3-verified{font-size:10px;font-weight:900;color:#168553}.featured3-card.lead .featured3-verified{color:#8ff0bb}.featured3-depth{margin-left:auto;padding:5px 8px;border-radius:999px;background:#e8f2ff;color:#174c92;font-size:9px;font-weight:950;letter-spacing:.06em}.featured3-card.lead .featured3-depth{background:rgba(255,255,255,.13);color:#ffe187}
+      .featured3-card h3{position:relative;z-index:1;margin:15px 0 9px;font-size:18px;line-height:1.45;letter-spacing:-.015em}.featured3-card.lead h3{font-size:clamp(25px,3vw,37px);line-height:1.28;margin-top:22px}.featured3-summary{position:relative;z-index:1;margin:0;color:#5b6f8c;font-size:13px;line-height:1.7}.featured3-card.lead .featured3-summary{color:#cad8ec;font-size:15px;line-height:1.75;max-width:92%}.featured3-insight{position:relative;z-index:1;margin-top:15px;padding-top:13px;border-top:1px solid #e4edf8;color:#314b70;font-size:12px;line-height:1.6}.featured3-card.lead .featured3-insight{margin-top:auto;padding-top:18px;border-top-color:rgba(255,255,255,.14);color:#d7e4f5}.featured3-insight b{display:block;margin-bottom:4px;color:#123b78;font-size:10px;letter-spacing:.04em}.featured3-card.lead .featured3-insight b{color:#ffe187}.featured3-foot{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;font-size:11px;font-weight:900;color:#61728d}.featured3-card.lead .featured3-foot{color:#b9cbe6}.featured3-read{color:#174c92}.featured3-card.lead .featured3-read{color:#ffe187}
+      @media(max-width:820px){.editorial-feature{padding:22px 0 30px}.featured3-head{align-items:flex-start;flex-direction:column}.featured3-grid{grid-template-columns:1fr;grid-template-rows:auto}.featured3-card.lead{grid-row:auto;padding:22px}.featured3-card.lead h3{font-size:26px}.featured3-card.lead .featured3-summary{max-width:none}.featured3-note{display:none}}
+    `;document.head.appendChild(style);
+  }
+  function renderFeatured3(){
+    const root=$('#editorialFeature');if(!root)return;
+    const items=featuredStories();if(!items.length)return;
+    addFeaturedStyles();
+    root.innerHTML=`<div class="featured3-head"><div><div class="mini-label">TODAY'S MUST READ</div><h2 id="editorialFeatureTitle">今日必讀 3 篇</h2><p>先睇編輯排序最高的三則；值得深挖的報道會標示 Deep Read，其餘保留完整背景、香港影響與後續觀察。</p></div><span class="featured3-note">編輯排序 · 不是點擊榜</span></div><div class="featured3-grid">${items.map((n,index)=>{const v=visual(n.category),deep=deepReadReady(n),summary=compact(n.summary||n.excerpt,index===0?230:125),insight=compact((n.hkImpact||[])[0]||n.whyImportant||'',index===0?180:105);return `<a class="featured3-card${index===0?' lead':''}" href="news/${encodeURIComponent(n.id)}.html"><div class="featured3-top"><span class="featured3-rank">0${index+1}</span><span class="featured3-cat">${esc(v.icon)} ${esc(n.category||'AI NEWS')}</span>${n.verified?'<span class="featured3-verified">✓ 已核實</span>':''}<span class="featured3-depth">${deep?'DEEP READ':'FULL REPORT'}</span></div><h3>${esc(n.title)}</h3><p class="featured3-summary">${esc(summary)}</p><div class="featured3-insight"><b>🇭🇰 香港角度</b>${esc(insight||'完整文章會整理香港讀者最值得注意的實際影響。')}</div><div class="featured3-foot"><span>${esc(n.readTime||'完整報道')}</span><span class="featured3-read">${deep?'深入閱讀':'閱讀全文'} →</span></div></a>`}).join('')}</div>`;
+  }
+
   document.addEventListener('DOMContentLoaded',()=>{
     if(document.body?.dataset.page!=='home') return;
-    renderSaved();renderFollowing();
+    renderFeatured3();renderSaved();renderFollowing();
     $('#clearSaved')?.addEventListener('click',()=>setTimeout(()=>{writeList(SAVED_KEY,[]);renderSaved();renderFollowing()},0));
   });
 })();
