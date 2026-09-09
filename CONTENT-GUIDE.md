@@ -57,6 +57,45 @@ Deep Read 目標約 2,500–4,500 個實質中文字、約 8–15 分鐘閱讀�
 - 🟡 背景／尚待確認：有脈絡價值，但仍存在條件、限制、未公開細節或需後續驗證
 - 🧠 AIson 分析：推論、判斷、情境分析或香港角度，不得寫成已發生事實
 
+## 文章視覺與圖片版權
+文章預設使用 AIson 自己生成的 1200×630 報道摘要圖，因此不需要為了「有圖」而搬運新聞社或網上圖片。
+
+如有真正值得使用的專題圖片，可在 story 加可選 `visual`：
+```json
+{
+  "visual": {
+    "kind": "aison-original",
+    "src": "assets/editorial/example.webp",
+    "alt": "圖片替代文字",
+    "credit": "AIson",
+    "sourceUrl": "https://..."
+  }
+}
+```
+
+規則：
+- `kind` 只可為 `aison-original` 或 `official-press`
+- `src` 必須是 repo 內 `assets/editorial/` 的本地 JPG / PNG / WEBP；禁止直接 hotlink 外站圖片
+- 必須有 `alt` 與 `credit`
+- `official-press` 必須同時提供官方 `https` 來源／授權頁 `sourceUrl`
+- AIson 原創圖如由內部生成，可不設 sourceUrl；若有參考或官方素材頁，應保留 sourceUrl
+- Reuters、AP、Bloomberg、Getty 等新聞社／圖庫圖片，不因文章有引用權就自動取得圖片使用權；沒有明確授權不要下載、重製或 hotlink
+- 視覺只負責幫助理解，不可加入來源沒有支持的數字、產品外觀、人物行為或「想像成事實」的場景
+- 如果視覺內容屬示意圖，要在圖說明確標示「AIson 原創示意圖」或相近字樣
+
+Build 會驗證 visual schema、檔案位置與官方圖片來源 URL；資料不合規會直接令發布失敗，而不是靜默上線。
+
+## Topic Hub / 故事線
+主題頁不是普通 tag archive。當同一公司、產品或事件累積至少 2 篇報道時，應提供：
+- 最新進展
+- 故事起點與時間線
+- 30 秒主題 briefing
+- 已達門檻的 Deep Read
+- 常見相關公司／產品／標籤
+- 完整相關新聞列表，而不是有時間線後把其他新聞隱藏
+
+Topic Hub 的 Deep Read 標記必須使用與文章頁相同的材料門檻，不可另設較寬鬆標準。
+
 ## 發布標準
 - 官方公告、監管文件、研究論文、公司正式文件優先；其次 Reuters / AP / FT / Bloomberg / WSJ / The Verge 等可靠媒體
 - 涉及重大數字、監管、併購、融資、安全事故或爭議性主張，盡量交叉核實
