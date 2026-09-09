@@ -41,7 +41,7 @@ jobs:
           set -euo pipefail
           rm -rf public
           mkdir -p public
-          cp -a assets data news public/
+          cp -a assets data news topics public/
           cp -a *.html *.css *.js *.xml *.txt *.webmanifest CNAME public/
       - name: Inject enhanced search
         run: python tools/patch_search_quality.py public
