@@ -1,0 +1,28 @@
+{
+  "biggestChange": "今天最重要的結構性轉變，是 AI 的價值開始由模型回答得多好，轉向它是否能安全地執行真實操作，以及整個供應鏈能否提供、保護並負擔這些操作。",
+  "dailyOneLiner": "今日 AI 的共同變化，是「能代辦事情」與「支撐代辦事情的算力、規則和安全」同時加速。個人 Agent 開始碰到帳戶與付款，晶片與模型供應鏈則被投資、地緣政治和漏洞修補壓力重新定價。",
+  "date": "2026-09-09",
+  "threeThemes": [
+    {
+      "summary": "Meta Muse 把電郵、日曆、付款等連接帶進消費級 Agent；這使安全問題由回答是否準確，變成授權、確認、撤回和補救是否可靠。",
+      "title": "Agent 由對話框走向帳戶權限",
+      "watch": "留意 Muse 的具體確認門檻、活動紀錄、第三方連接和地區推出節奏。"
+    },
+    {
+      "summary": "Qualcomm × Amazon、ASML × 台積電以及 Mistral 融資，分別反映雲端客製晶片、先進製程路線和模型算力資本三條鏈正在同步加碼。",
+      "title": "AI 基建由 GPU 採購走向共同設計與長期製造",
+      "watch": "留意產品出貨、試產良率與收入，而不是只看合作、估值和遠期目標。"
+    },
+    {
+      "summary": "Microsoft 修補壓力、模型蒸餾指控、Premiere 的工作流 AI 及中小企培訓都指向同一問題：部署速度提高後，治理、權限和可驗證成效能否跟上。",
+      "title": "AI 令安全與商業流程的速度差更明顯",
+      "watch": "留意是否出現可重現的安全事故、正式監管行動或具體採用與修補數據。"
+    }
+  ],
+  "top3Ids": [
+    "2026-09-09-meta-muse-personal-agent",
+    "2026-09-09-qualcomm-amazon-ai-chip-deal",
+    "2026-09-09-us-china-ai-distillation-accusation"
+  ],
+  "watchTomorrow": "最值得追蹤 Meta Muse 的早期安全與權限細節、美方是否就模型蒸餾指控發布證據或措施，以及 Qualcomm × Amazon 合作的產品與採購條款。"
+}
