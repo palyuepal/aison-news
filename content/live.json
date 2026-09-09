@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-09-deepseek-citic-star-market-ipo",
+    "title": "DeepSeek 據報委任中信證券推進上海科創板 IPO，上市計劃進入實質準備階段",
+    "summary": "Reuters 9 月 9 日引述兩名知情人士報道，DeepSeek 已委任中信證券為上海科創板上市作準備，目標在 2026 年內啟動 IPO 流程。上市時間、集資額與目標估值仍未確定，DeepSeek 與中信證券亦未有公開確認；但在中國內地上市慣例下，委任券商進行上市前輔導通常代表 IPO 已由早期構想進入較實質的準備階段。Financial Times 同日亦報道 DeepSeek 正在新一輪融資中加強投資者篩選，並提到公司正為計劃中的 IPO 改善治理與資本安排。若進展落實，DeepSeek 可能成為中國最受關注的前沿 AI 公司上市案例之一，直接影響中國 AI 模型公司的融資、估值與算力競賽。",
+    "category": "AI 融資",
+    "publishedAt": "2026-09-09T06:11:00Z",
+    "sourceLabel": "Reuters / Financial Times",
+    "sourceUrl": "https://www.reuters.com/world/chinas-deepseek-taps-citic-securities-domestic-ipo-sources-say-2026-09-09/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-09-openai-samsung-next-gen-chips",
     "title": "OpenAI × Samsung 深化下一代 AI 晶片合作，自研晶片版圖再擴大",
     "summary": "OpenAI 9 月 9 日在首爾公開確認，與 Samsung Electronics 在下一代自研 AI 晶片的共同生產與研究方面已取得明顯進展，合作同時延伸至企業 AI 服務。OpenAI 早前已與 Broadcom 共同設計首款自研 AI 晶片 Jalapeño，並由 TSMC 製造；Samsung 與 SK Hynix 亦已簽署意向書，為 OpenAI 的 Stargate 數據中心供應記憶體。今次確認顯示 OpenAI 正進一步把晶片設計、記憶體供應與製造合作納入自己的長期 AI 基建策略，降低單一供應鏈依賴。",
