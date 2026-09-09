@@ -15,6 +15,39 @@ SITE=ROOT/'content/site.json'
 STATUS=ROOT/'content/status.json'
 STORYLINES=ROOT/'data/storylines.json'
 SLUG_RE=re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
+ACTION_VERDICTS={
+    'try-now':{
+        'label':'值得即刻試',
+        'detail':'可以先用不含敏感資料的小範圍工作流程測試；正式導入前仍要核對條款、成本與輸出。'
+    },
+    'watch':{
+        'label':'值得留意',
+        'detail':'這個發展值得持續跟進，但目前未必需要立刻改變你的工具、採購或工作流程。'
+    },
+    'wait':{
+        'label':'等下先',
+        'detail':'公告、測試或路線圖未必已經等於香港可用；等清楚功能、價格、地區與條款再決定。'
+    },
+    'skip':{
+        'label':'可以 Skip',
+        'detail':'這次更新對大部分香港讀者的即時工作影響有限；知道背景即可，毋須急於行動。'
+    }
+}
+CORE_PAGE_META={
+    'index.html':('AIson｜香港 AI 新聞・每日 10 件事','AIson 每日幫香港人篩選全球 AI 大事：每日 AI 10 件事、香港影響、AIson Take、分類、搜尋與長期保存。','每日 10 件最值得香港人知道的 AI 大事，連香港影響與 AIson Take。'),
+    'daily.html':('今日 AI 10 件事｜香港 AI 新聞｜AIson','一頁睇晒 AIson 今日最重要的 10 件 AI 新聞、香港影響、行動判斷與 AIson Take。','一頁睇晒今日最值得知道的 10 件 AI 大事、香港影響與 AIson Take。'),
+    'live.html':('AIson LIVE｜今日 AI 即時更新','AIson LIVE 只收錄真正值得打斷你的重大 AI 即時消息，按香港時間整理成完整時間線。','重大、已核實、值得即時知道的 AI 新消息，按香港時間排列。'),
+    'weekly.html':('本週 AI 深度整理｜香港 AI 新聞｜AIson','AIson Weekly 從最近 7 日報道整理 AI 世界的結構性改變、香港影響與延續中的故事線。','不只重排新聞，而是睇清本週 AI 世界真正改變了甚麼。'),
+    'topics.html':('AI 主題追蹤與故事線｜AIson','追蹤 OpenAI、Google Gemini、Claude、NVIDIA、AI Agent、AI Video、AI Coding 等 AI 主題，沿時間線閱讀完整脈絡。','由第一次事件到最新進展，沿時間線追蹤 AI 主題和故事線。'),
+    'archive.html':('AI 新聞庫｜香港 AI 新聞搜尋｜AIson','搜尋 AIson 已核實的 AI 新聞、來源、香港影響與過往報道，隨時回看 AI 事件脈絡。','搜尋和回看 AIson 已核實的 AI 新聞與來源。'),
+    'guides.html':('香港 AI 實用指南｜AIson','給香港打工仔、學生及中小企的 AI 實用指南：由揀工具、試行工作流程，到保護資料。','由一件重複工作開始，安全地把 AI 用進日常。'),
+    'about.html':('關於 AIson｜香港人的每日 AI 新聞站','AIson 是為香港讀者而設的每日 AI 新聞站，幫你篩選、核實與解讀全球 AI 大事。','了解 AIson 如何為香港讀者整理每日 AI 新聞。'),
+    'methodology.html':('編採方法與更正政策｜AIson','了解 AIson 的選題、來源核實、香港脈絡、更新與公開更正原則。','AIson 如何分開事實、脈絡與編輯分析。'),
+    'corrections.html':('更新與更正紀錄｜AIson','AIson 公開列出新聞內容的實質更正紀錄，方便讀者追蹤何時、為何及哪篇內容曾被修正。','公開保留實質更正，讓讀者知道改了甚麼。'),
+    'privacy.html':('私隱政策｜AIson','AIson 網站、Newsletter、匿名網站分析與本機閱讀功能的私隱說明。','了解 AIson 如何處理網站、訂閱與匿名分析資料。')
+}
+SEO_START='<!-- AISON SEO START -->'
+SEO_END='<!-- AISON SEO END -->'
 
 
 def read_json(path):
@@ -89,6 +122,23 @@ def _validate_story(n, ids, ranks):
         raise SystemExit(f"verified story {n['id']} needs https sourceUrl")
     if not isinstance(n.get('hkImpact',[]),list):
         raise SystemExit(f"{n['id']} hkImpact must be an array")
+    verdict=n.get('actionVerdict')
+    if verdict is not None and verdict not in ACTION_VERDICTS:
+        raise SystemExit(f"{n['id']} actionVerdict must be one of {sorted(ACTION_VERDICTS)}")
+    if n.get('actionReason') is not None and not str(n.get('actionReason','')).strip():
+        raise SystemExit(f"{n['id']} actionReason cannot be empty")
+    score=n.get('aisonScore')
+    if score is not None:
+        try: score=float(score)
+        except (TypeError,ValueError): raise SystemExit(f"{n['id']} aisonScore must be a number")
+        if not 0<=score<=10: raise SystemExit(f"{n['id']} aisonScore must be between 0 and 10")
+    audience=n.get('audienceImpact')
+    if audience is not None:
+        if not isinstance(audience,dict) or set(audience)-{'worker','sme','creator','developer'}:
+            raise SystemExit(f"{n['id']} audienceImpact must use worker/sme/creator/developer")
+        for audience_key,value in audience.items():
+            if not isinstance(value,int) or not 1<=value<=5:
+                raise SystemExit(f"{n['id']} audienceImpact.{audience_key} must be an integer 1..5")
     for key in ('storylineId','topicId'):
         value=n.get(key)
         if value is not None and (not isinstance(value,str) or not SLUG_RE.fullmatch(value.strip())):
@@ -167,9 +217,25 @@ def load_storyline_registry():
     if not isinstance(registry,dict):
         raise SystemExit('data/storylines.json must be an object')
     topics=registry.get('topics',[])
+    hubs=registry.get('hubs',[])
     storylines=registry.get('storylines',[])
-    if not isinstance(topics,list) or not isinstance(storylines,list):
-        raise SystemExit('storyline registry topics/storylines must be arrays')
+    if not isinstance(topics,list) or not isinstance(hubs,list) or not isinstance(storylines,list):
+        raise SystemExit('storyline registry hubs/topics/storylines must be arrays')
+    hub_ids=set()
+    for hub in hubs:
+        if not isinstance(hub,dict):
+            raise SystemExit('topic hub must be an object')
+        hub_id=str(hub.get('id','')).strip()
+        if not SLUG_RE.fullmatch(hub_id):
+            raise SystemExit(f'invalid topic hub id: {hub_id or "?"}')
+        if hub_id in hub_ids:
+            raise SystemExit(f'duplicate topic hub id: {hub_id}')
+        if not str(hub.get('name','')).strip() or not str(hub.get('description','')).strip():
+            raise SystemExit(f'topic hub {hub_id} needs name and description')
+        terms=hub.get('matchTerms',[])
+        if not isinstance(terms,list) or not terms or any(not isinstance(term,str) or not term.strip() for term in terms):
+            raise SystemExit(f'topic hub {hub_id} needs non-empty matchTerms')
+        hub_ids.add(hub_id)
     topic_ids=set()
     for topic in topics:
         if not isinstance(topic,dict):
@@ -286,6 +352,37 @@ def enrich_storylines(data,registry):
     return data
 
 
+def _quick_take(story):
+    source=' '.join(str(story.get(key,'')).strip() for key in ('quickTake','summary','excerpt') if story.get(key)).strip()
+    if not source:
+        return '先看清官方已公布的範圍與限制，再判斷是否影響你的工作或工具選擇。'
+    sentence=re.split(r'(?<=[。！？])',source,1)[0].strip()
+    return sentence[:140].rstrip('，、； ') + ('…' if len(sentence)>140 else '')
+
+
+def _suggest_action_verdict(story):
+    hay=' '.join([str(story.get('category','')),str(story.get('title','')),*(str(tag) for tag in story.get('tags',[]))]).lower()
+    if any(term in hay for term in ('roadmap','路線圖','預告','目標','計劃','beta','試產','203', '暫未')):
+        return 'wait'
+    if any(term in hay for term in ('漏洞','安全','監管','治理','晶片','基建','融資','估值','市場','政策','security','chip')):
+        return 'watch'
+    if any(term in hay for term in ('推出','發布','功能','工具','agent','生成','coding','copilot','premiere','workspace')):
+        return 'try-now'
+    return 'watch'
+
+
+def enrich_reader_aids(data):
+    """Keep older reports useful while forcing an explicit editorial verdict for new work."""
+    for story in data:
+        explicit_verdict=story.get('actionVerdict')
+        story['quickTake']=str(story.get('quickTake') or _quick_take(story)).strip()
+        verdict=explicit_verdict or _suggest_action_verdict(story)
+        story['actionVerdict']=verdict
+        story['actionReason']=str(story.get('actionReason') or ACTION_VERDICTS[verdict]['detail']).strip()
+        story['actionVerdictSource']='editorial' if explicit_verdict else 'legacy-default'
+    return data
+
+
 def write_js(path,var,obj):
     path.write_text(f'window.{var} = '+json.dumps(obj,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
 
@@ -294,10 +391,113 @@ def article_url(base, story_id):
     return urljoin(base,f"news/{story_id}.html")
 
 
+def _social_image(site, page=''):
+    if page in {'index.html','daily.html'} and (ROOT/'assets/social/daily-latest.jpg').is_file():
+        return urljoin(site['baseUrl'],'assets/social/daily-latest.jpg')
+    return urljoin(site['baseUrl'],'assets/icon-512.png')
+
+
+def _seo_block(site, path, title, description, social_description):
+    url=urljoin(site['baseUrl'],'' if path=='index.html' else path)
+    image=_social_image(site,path)
+    image_type='image/jpeg' if image.endswith('.jpg') else 'image/png'
+    image_dimensions=('1200','1500') if image.endswith('.jpg') else ('512','512')
+    structured=[]
+    if path=='index.html':
+        organization={
+            '@context':'https://schema.org','@type':'Organization','name':site.get('name','AIson'),
+            'url':site['baseUrl'],'logo':urljoin(site['baseUrl'],'assets/icon-512.png'),
+            'description':site.get('description',description),'inLanguage':'zh-Hant-HK'
+        }
+        same_as=[value for value in (site.get('social') or {}).values() if isinstance(value,str) and value.startswith('https://')]
+        if same_as: organization['sameAs']=same_as
+        structured=[
+            {'@context':'https://schema.org','@type':'WebSite','name':site.get('name','AIson'),'url':site['baseUrl'],'inLanguage':'zh-Hant-HK'},
+            organization
+        ]
+    jsonld=''.join(f'<script type="application/ld+json">{json.dumps(item,ensure_ascii=False,separators=(",",":"))}</script>' for item in structured)
+    return (f'{SEO_START}\n'
+        f'<meta name="description" content="{html.escape(description,quote=True)}">\n'
+        f'<meta name="robots" content="index,follow,max-image-preview:large">\n'
+        f'<meta name="keywords" content="AI 新聞,香港 AI,人工智能,AIson,{html.escape(title,quote=True)}">\n'
+        f'<meta property="og:type" content="website"><meta property="og:site_name" content="AIson"><meta property="og:locale" content="zh_HK">\n'
+        f'<meta property="og:title" content="{html.escape(title,quote=True)}"><meta property="og:description" content="{html.escape(social_description,quote=True)}"><meta property="og:url" content="{html.escape(url,quote=True)}">\n'
+        f'<meta property="og:image" content="{html.escape(image,quote=True)}"><meta property="og:image:type" content="{image_type}"><meta property="og:image:width" content="{image_dimensions[0]}"><meta property="og:image:height" content="{image_dimensions[1]}"><meta property="og:image:alt" content="{html.escape(title,quote=True)}">\n'
+        f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title,quote=True)}"><meta name="twitter:description" content="{html.escape(social_description,quote=True)}"><meta name="twitter:image" content="{html.escape(image,quote=True)}"><meta name="twitter:image:alt" content="{html.escape(title,quote=True)}">\n'
+        f'<link rel="canonical" href="{html.escape(url,quote=True)}">{jsonld}\n{SEO_END}')
+
+
+def _strip_static_seo(text):
+    if SEO_START in text and SEO_END in text:
+        text=re.sub(re.escape(SEO_START)+r'.*?'+re.escape(SEO_END),'',text,flags=re.S)
+    else:
+        patterns=(
+            r'<meta\s+name=["\'](?:description|robots|keywords)["\'][^>]*>',
+            r'<meta\s+(?:property|name)=["\'](?:og|twitter):[^"\']+["\'][^>]*>',
+            r'<link\s+rel=["\']canonical["\'][^>]*>'
+        )
+        for pattern in patterns:
+            text=re.sub(pattern,'',text,flags=re.I)
+    text=re.sub(r'(?m)^[ \t]+$','',text)
+    return re.sub(r'\n{3,}','\n\n',text)
+
+
+def build_core_page_seo(site):
+    for path,(title,description,social_description) in CORE_PAGE_META.items():
+        target=ROOT/path
+        if not target.is_file():
+            raise SystemExit(f'core SEO page is missing: {path}')
+        page=_strip_static_seo(target.read_text(encoding='utf-8'))
+        page=re.sub(r'<title>.*?</title>',f'<title>{html.escape(title)}</title>',page,count=1,flags=re.I|re.S)
+        if '<title>' not in page.lower():
+            raise SystemExit(f'core SEO page is missing a title: {path}')
+        page=page.replace('</title>','</title>\n'+_seo_block(site,path,title,description,social_description),1)
+        target.write_text(page,encoding='utf-8')
+
+
+def _hub_matches(story,hub):
+    hay=' '.join([str(story.get('title','')),str(story.get('excerpt','')),str(story.get('category','')),*(str(tag) for tag in story.get('tags',[]))]).lower()
+    return any(term.lower() in hay for term in hub.get('matchTerms',[]))
+
+
+def _hub_card(story):
+    href='../news/'+html.escape(str(story['id']),quote=True)+'.html'
+    tags=''.join(f'<span>{html.escape(str(tag))}</span>' for tag in (story.get('tags') or [])[:3])
+    return (f'<a class="hub-story-card" href="{href}"><small>{html.escape(str(story.get("category","AI 新聞")))} · {html.escape(str(story.get("date","")))}</small>'
+        f'<h2>{html.escape(str(story.get("title","")))}</h2><p>{html.escape(str(story.get("excerpt","") or story.get("summary","")))}</p>'
+        f'<div class="hub-story-meta">{tags}<b>閱讀完整報導 →</b></div></a>')
+
+
+def build_topic_hub_pages(data,site,registry):
+    out_dir=ROOT/'topics'
+    out_dir.mkdir(exist_ok=True)
+    newsletter_url=html.escape(str((site.get('newsletter') or {}).get('subscribeUrl') or site['baseUrl']),quote=True)
+    generated=0
+    for hub in registry.get('hubs',[]):
+        matches=sorted((story for story in data if _hub_matches(story,hub)),key=lambda story:(str(story.get('date','')), -int(story.get('rank',999999))),reverse=True)
+        url=urljoin(site['baseUrl'],f'topics/{hub["id"]}.html')
+        title=f'{hub["name"]} AI 新聞與追蹤｜AIson'
+        description=f'{hub["description"]} AIson 為香港讀者持續整理相關已核實 AI 新聞、香港影響與後續脈絡。'
+        item_list=[{'@type':'ListItem','position':index,'url':article_url(site['baseUrl'],story['id']),'name':story['title']} for index,story in enumerate(matches,1)]
+        structured={'@context':'https://schema.org','@type':'CollectionPage','name':title,'description':description,'url':url,'inLanguage':'zh-Hant-HK','mainEntity':{'@type':'ItemList','numberOfItems':len(item_list),'itemListElement':item_list}}
+        structured_json=json.dumps(structured,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
+        cards=''.join(_hub_card(story) for story in matches) or '<p class="hub-empty">目前未有可核實的相關報道；AIson 會在有實質進展時補上。</p>'
+        page=f'''<!doctype html>
+<html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{html.escape(title)}</title><meta name="description" content="{html.escape(description,quote=True)}"><meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website"><meta property="og:site_name" content="AIson"><meta property="og:locale" content="zh_HK"><meta property="og:title" content="{html.escape(title,quote=True)}"><meta property="og:description" content="{html.escape(description,quote=True)}"><meta property="og:url" content="{html.escape(url,quote=True)}"><meta property="og:image" content="{html.escape(_social_image(site),quote=True)}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title,quote=True)}"><meta name="twitter:description" content="{html.escape(description,quote=True)}"><meta name="twitter:image" content="{html.escape(_social_image(site),quote=True)}"><link rel="canonical" href="{html.escape(url,quote=True)}"><link rel="icon" href="../assets/favicon.png"><link rel="stylesheet" href="../styles.css?v=20260909-seo-hubs"><link rel="stylesheet" href="../visual-system-v2.css?v=20260909-v2"><script type="application/ld+json">{structured_json}</script>
+<style>.hub-hero{{background:radial-gradient(circle at 82% 14%,rgba(255,201,40,.21),transparent 28%),linear-gradient(135deg,#061a3a,#0d3973);color:#fff}}.hub-hero .container{{padding:58px 0 46px}}.hub-hero h1{{max-width:800px;margin:8px 0 12px;font-size:clamp(38px,5vw,66px);line-height:1.08}}.hub-hero p{{max-width:730px;margin:0;color:#cbdaef;line-height:1.75}}.hub-hero .hub-count{{display:inline-flex;margin-top:20px;padding:7px 10px;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:#ffe187;font-size:12px;font-weight:900}}.hub-layout{{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:24px;align-items:start}}.hub-story-list{{display:grid;gap:13px}}.hub-story-card{{display:block;padding:20px;border:1px solid #dbe5f1;border-radius:18px;background:#fff;color:#071b3b;text-decoration:none;box-shadow:0 8px 24px rgba(6,26,58,.04)}}.hub-story-card:hover{{transform:translateY(-2px);box-shadow:0 14px 32px rgba(6,26,58,.09)}}.hub-story-card small{{display:block;color:#1b579d;font-size:11px;font-weight:900}}.hub-story-card h2{{margin:8px 0 7px;font-size:20px;line-height:1.4}}.hub-story-card p{{margin:0;color:#596b84;font-size:13px;line-height:1.65}}.hub-story-meta{{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:13px}}.hub-story-meta span{{border-radius:999px;background:#f0f4fa;padding:4px 7px;color:#50627c;font-size:10px}}.hub-story-meta b{{margin-left:auto;color:#124c91;font-size:11px}}.hub-note{{padding:18px;border:1px solid #dbe5f1;border-radius:16px;background:#f4f8ff}}.hub-note h2{{margin:4px 0 8px;font-size:20px}}.hub-note p{{margin:0;color:#5d6e85;font-size:13px;line-height:1.65}}.hub-note a{{display:inline-flex;margin-top:13px;font-size:12px;font-weight:900;color:#0e4f9a;text-decoration:none}}.hub-empty{{padding:24px;border:1px dashed #ccd8e6;border-radius:16px;text-align:center;color:#61728d}}@media(max-width:820px){{.hub-layout{{grid-template-columns:1fr}}.hub-hero .container{{padding:42px 0 34px}}}}@media(max-width:560px){{.hub-story-card{{padding:16px}}.hub-story-card h2{{font-size:18px}}}}</style></head>
+<body><header class="topbar"><div class="container nav"><a class="brand" href="../index.html" aria-label="AIson 首頁"><img src="../assets/mascot.webp" alt="AIson"><div><strong><span>AI</span>son</strong><small>每日 AI 新聞站</small></div></a><nav class="navlinks"><a href="../index.html">首頁</a><a href="../daily.html">今日 AI 10 件事</a><a class="active" href="../topics.html">主題追蹤</a><a href="../archive.html">新聞庫</a></nav></div></header><main><section class="hub-hero"><div class="container"><div class="mini-label">AIson TOPIC HUB</div><h1>{html.escape(hub['name'])}：追蹤完整 AI 脈絡</h1><p>{html.escape(hub['description'])}</p><span class="hub-count">{len(matches)} 篇相關已核實報道 · 由最新到最早</span></div></section><section class="section"><div class="container hub-layout"><div><div class="section-head"><div><div class="mini-label">LATEST COVERAGE</div><h2>{html.escape(hub['name'])} 最新與過往報道</h2><p>同一件事的後續會在文章內連到故事時間線；這裡保留完整相關報導。</p></div></div><div class="hub-story-list">{cards}</div></div><aside class="sidebar"><div class="hub-note"><div class="mini-label">KEEP UP</div><h2>每日 3–5 分鐘睇晒 AI</h2><p>免費收到 AIson 今日最重要新聞、香港影響與編輯判斷。</p><a href="{newsletter_url}" data-newsletter-link data-analytics-slot="topic-hub">免費訂閱 Morning Brief →</a></div><div class="hub-note"><div class="mini-label">EXPLORE MORE</div><h2>想睇其他主題？</h2><p>OpenAI、Gemini、Claude、NVIDIA、AI Agent、AI Video 和 AI Coding 都有獨立入口。</p><a href="../topics.html">瀏覽所有主題 →</a></div></aside></div></section></main><footer class="footer"><div class="container copyright"><span>© 2026 AIson · 香港人的每日 AI 新聞站</span><span><a href="../rss.xml">RSS</a> · <a href="../methodology.html">編採方法</a></span></div></footer></body></html>'''
+        (out_dir/f'{hub["id"]}.html').write_text(page,encoding='utf-8')
+        generated+=1
+    return generated
+
+
 def build_article_pages(data,site,social_card_ids=None):
     social_card_ids=set(social_card_ids or [])
     template=(ROOT/'article.html').read_text(encoding='utf-8')
-    markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<meta property="og:type" content="article">','<script type="application/ld+json" id="jsonld"></script>','<script src="data/news.js']
+    markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<meta name="robots" content="noindex,follow"><!-- ARTICLE SEO -->','<script type="application/ld+json" id="jsonld"></script>','<script src="data/news.js']
     missing=[marker for marker in markers if marker not in template]
     if missing: raise SystemExit(f'article template missing expected markers: {missing}')
     out_dir=ROOT/'news'
@@ -325,7 +525,7 @@ def build_article_pages(data,site,social_card_ids=None):
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{desc}">'
             f'<meta name="twitter:image" content="{html.escape(image,quote=True)}"><meta name="twitter:image:alt" content="{html.escape(image_alt,quote=True)}">'
             f'<meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="{html.escape(url,quote=True)}">')
-        page=page.replace('<meta property="og:type" content="article">',og,1)
+        page=page.replace('<meta name="robots" content="noindex,follow"><!-- ARTICLE SEO -->',og,1)
         structured={
             '@context':'https://schema.org','@type':'NewsArticle','headline':n['title'],'description':n['excerpt'],
             'datePublished':n['date'],'dateModified':n.get('updatedAt',n['date']),'mainEntityOfPage':url,'image':[image],
@@ -360,9 +560,12 @@ def build_rss(data,site):
     (ROOT/'rss.xml').write_text(rss+'\n',encoding='utf-8')
 
 
-def build_sitemap(data,site):
+def build_sitemap(data,site,registry):
     base=site['baseUrl']; pages=['','daily.html','live.html','weekly.html','guides.html','topics.html','archive.html','about.html','methodology.html','corrections.html','privacy.html']
     urls=[f'<url><loc>{html.escape(urljoin(base,p))}</loc></url>' for p in pages]
+    for hub in registry.get('hubs',[]):
+        hub_path=f"topics/{hub['id']}.html"
+        urls.append(f'<url><loc>{html.escape(urljoin(base,hub_path))}</loc></url>')
     for n in data:
         u=article_url(base,n['id'])
         urls.append(f'<url><loc>{html.escape(u)}</loc><lastmod>{n["date"]}</lastmod></url>')
@@ -392,15 +595,18 @@ def build_status(data,status):
 def main():
     site=load_site(); registry=load_storyline_registry(); data=load_news(registry); status=read_json(STATUS)
     enrich_storylines(data,registry)
+    enrich_reader_aids(data)
     editorial=build_editorial_payload()
     social_card_ids=build_social_cards(data,site,ROOT)
     write_js(ROOT/'data/news.js','AISON_NEWS',data)
     write_js(ROOT/'data/site.js','AISON_SITE',site)
-    build_search(data); build_article_pages(data,site,social_card_ids); build_rss(data,site); build_sitemap(data,site); build_status(data,status)
+    build_core_page_seo(site)
+    hubs=build_topic_hub_pages(data,site,registry)
+    build_search(data); build_article_pages(data,site,social_card_ids); build_rss(data,site); build_sitemap(data,site,registry); build_status(data,status)
     overview=build_daily_overview(data,site,ROOT)
     overview_count=overview.get('count',0) if overview else 0
     linked=sum(1 for n in data if n.get('storylineId'))
-    print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards / {linked} storyline-linked / daily overview {overview_count} stories / editorial {editorial.get("source","?")}')
+    print(f'Built AIson: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards / {linked} storyline-linked / {hubs} topic hubs / daily overview {overview_count} stories / editorial {editorial.get("source","?")}')
 
 
 if __name__=='__main__': main()

@@ -14,6 +14,17 @@
 10. 🐶 AIson Take：一句至數句可記住的編輯判斷，必須清楚屬分析
 11. 來源：sourceLabel / sourceUrl / sourceType；有可靠補充來源才加 references
 
+### V5 reader-aid fields
+
+每篇新 Daily 10 也必須提供：
+
+- `quickTake`：一段約 30 秒讀完的核心事實與限制，不可只改寫標題。
+- `actionVerdict`：只可用 `try-now`、`watch`、`wait` 或 `skip`；配對 `actionReason`，說明讀者是否需要即時行動。
+- `aisonScore`：0–10 的編輯重要性分數，不代表投資、產品質素或事實機率。
+- `audienceImpact`：`worker`、`sme`、`creator`、`developer` 各 1–5；必須按香港讀者的實際相關度評估。
+
+舊文章會保留原文與永久連結；build 會為未有 `quickTake`／`actionVerdict` 的歷史文章提供保守的閱讀提示，但不會虛構 AIson Score 或 audienceImpact。
+
 一般 Daily 10 以約 800–1,500 個實質中文字為目標。這是內容深度目標，不是字數 KPI；如果可靠資料不足，寧可較短，不可用重複、常識背景或推測灌水。
 
 ## Featured 3

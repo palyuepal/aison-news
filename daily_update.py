@@ -39,6 +39,7 @@ SCHEMA = {
                     "title": {"type": "string", "minLength": 8},
                     "excerpt": {"type": "string", "minLength": 20},
                     "summary": {"type": "string", "minLength": 90},
+                    "quickTake": {"type": "string", "minLength": 30},
                     "category": {"type": "string", "minLength": 2},
                     "tags": {
                         "type": "array",
@@ -59,6 +60,23 @@ SCHEMA = {
                         "items": {"type": "string", "minLength": 35},
                     },
                     "take": {"type": "string", "minLength": 70},
+                    "actionVerdict": {
+                        "type": "string",
+                        "enum": ["try-now", "watch", "wait", "skip"],
+                    },
+                    "actionReason": {"type": "string", "minLength": 30},
+                    "aisonScore": {"type": "number", "minimum": 0, "maximum": 10},
+                    "audienceImpact": {
+                        "type": "object",
+                        "properties": {
+                            "worker": {"type": "integer", "minimum": 1, "maximum": 5},
+                            "sme": {"type": "integer", "minimum": 1, "maximum": 5},
+                            "creator": {"type": "integer", "minimum": 1, "maximum": 5},
+                            "developer": {"type": "integer", "minimum": 1, "maximum": 5},
+                        },
+                        "required": ["worker", "sme", "creator", "developer"],
+                        "additionalProperties": False,
+                    },
                     "sourceLabel": {"type": "string", "minLength": 2},
                     "sourceUrl": {"type": "string", "pattern": "^https://"},
                     "sourceType": {
@@ -67,10 +85,10 @@ SCHEMA = {
                     },
                 },
                 "required": [
-                    "slug", "title", "excerpt", "summary", "category", "tags",
+                    "slug", "title", "excerpt", "summary", "quickTake", "category", "tags",
                     "readTime", "freshness", "whatHappened", "reportingContext",
                     "whyImportant", "whatToWatch", "hkImpact", "take", "sourceLabel",
-                    "sourceUrl", "sourceType",
+                    "sourceUrl", "sourceType", "actionVerdict", "actionReason", "aisonScore", "audienceImpact",
                 ],
                 "additionalProperties": False,
             },
@@ -165,9 +183,12 @@ def build_prompt(today: str, existing) -> str:
 8. 每篇合計最少約 650 字香港繁體中文；要具體、可讀，唔好用空泛形容詞或湊字。
 9. 每篇必須包括最少 3 點「同香港人／香港生意／創作者有咩關係」及 AIson Take。
    hkImpact 每點要講清楚會受甚麼實際影響；AIson Take 需有理據，但唔好作投資承諾。
-10. 不要抄原文長句；全部用香港繁體中文 / 廣東話自然改寫。
-11. 10 件之間不可係同一件事拆成多篇。
-12. slug 用短英文小寫連字號，避免日期，因為系統會自動加日期確保唯一。
+10. 每篇要寫 quickTake，讓讀者約 30 秒知道核心事實與最重要限制；不可只改寫標題。
+11. 每篇要作出 actionVerdict：try-now（可小範圍試）、watch（值得留意）、wait（未夠資料／未必香港可用）或 skip（一般讀者暫可略過），並用 actionReason 說明原因。這是新聞閱讀指引，不可作投資承諾。
+12. aisonScore 為 0–10 的編輯重要性分數；audienceImpact 必須為 worker、sme、creator、developer 各 1–5 分，按香港讀者的實際相關度判斷。
+13. 不要抄原文長句；全部用香港繁體中文 / 廣東話自然改寫。
+14. 10 件之間不可係同一件事拆成多篇。
+15. slug 用短英文小寫連字號，避免日期，因為系統會自動加日期確保唯一。
 
 以下係網站最近已有內容。除非今日有明確重大新進展，否則避免重複：
 {recent_story_context(existing, today)}
@@ -257,6 +278,7 @@ def main():
             "title": story["title"].strip(),
             "excerpt": story["excerpt"].strip(),
             "summary": story["summary"].strip(),
+            "quickTake": story["quickTake"].strip(),
             "category": story["category"].strip(),
             "tags": [tag.strip() for tag in story["tags"] if tag.strip()],
             "date": today,
@@ -270,6 +292,10 @@ def main():
             "whatToWatch": story["whatToWatch"].strip(),
             "hkImpact": [item.strip() for item in story["hkImpact"] if item.strip()],
             "take": story["take"].strip(),
+            "actionVerdict": story["actionVerdict"],
+            "actionReason": story["actionReason"].strip(),
+            "aisonScore": story["aisonScore"],
+            "audienceImpact": story["audienceImpact"],
             "sourceLabel": story["sourceLabel"].strip(),
             "sourceUrl": source_url,
             "sourceType": story["sourceType"].strip(),

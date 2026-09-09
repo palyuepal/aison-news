@@ -39,6 +39,7 @@ SCHEMA = {
                     "title": {"type": "string", "minLength": 8},
                     "excerpt": {"type": "string", "minLength": 20},
                     "summary": {"type": "string", "minLength": 20},
+                    "quickTake": {"type": "string", "minLength": 30},
                     "category": {"type": "string", "minLength": 2},
                     "tags": {
                         "type": "array",
@@ -57,6 +58,10 @@ SCHEMA = {
                         "items": {"type": "string", "minLength": 10},
                     },
                     "take": {"type": "string", "minLength": 20},
+                    "actionVerdict": {"type": "string", "enum": ["try-now", "watch", "wait", "skip"]},
+                    "actionReason": {"type": "string", "minLength": 30},
+                    "aisonScore": {"type": "number", "minimum": 0, "maximum": 10},
+                    "audienceImpact": {"type": "object", "properties": {"worker": {"type": "integer", "minimum": 1, "maximum": 5}, "sme": {"type": "integer", "minimum": 1, "maximum": 5}, "creator": {"type": "integer", "minimum": 1, "maximum": 5}, "developer": {"type": "integer", "minimum": 1, "maximum": 5}}, "required": ["worker", "sme", "creator", "developer"], "additionalProperties": False},
                     "sourceLabel": {"type": "string", "minLength": 2},
                     "sourceUrl": {"type": "string", "pattern": "^https://"},
                     "sourceType": {
@@ -65,9 +70,9 @@ SCHEMA = {
                     },
                 },
                 "required": [
-                    "slug", "title", "excerpt", "summary", "category", "tags",
+                    "slug", "title", "excerpt", "summary", "quickTake", "category", "tags",
                     "readTime", "freshness", "whatHappened", "whyImportant",
-                    "hkImpact", "take", "sourceLabel", "sourceUrl", "sourceType",
+                    "hkImpact", "take", "actionVerdict", "actionReason", "aisonScore", "audienceImpact", "sourceLabel", "sourceUrl", "sourceType",
                 ],
                 "additionalProperties": False,
             },
@@ -158,8 +163,10 @@ def build_prompt(today: str, existing) -> str:
 6. 不要抄原文長句；全部用香港繁體中文 / 廣東話自然改寫。
 7. 每篇必須包括「同香港人／香港生意／創作者有咩關係」及 AIson Take。
 8. 內容要客觀，AIson Take 可以有判斷，但唔好作投資承諾。
-9. 10 件之間不可係同一件事拆成多篇。
-10. slug 用短英文小寫連字號，避免日期，因為系統會自動加日期確保唯一。
+9. 每篇要有 quickTake、actionVerdict（try-now／watch／wait／skip）與 actionReason，說清楚讀者是否需要採取行動。
+10. aisonScore 為 0–10 編輯重要性；audienceImpact 要評估 worker、sme、creator、developer 各 1–5 的香港相關度。
+11. 10 件之間不可係同一件事拆成多篇。
+12. slug 用短英文小寫連字號，避免日期，因為系統會自動加日期確保唯一。
 
 以下係網站最近已有內容。除非今日有明確重大新進展，否則避免重複：
 {recent_story_context(existing, today)}
@@ -249,6 +256,7 @@ def main():
             "title": story["title"].strip(),
             "excerpt": story["excerpt"].strip(),
             "summary": story["summary"].strip(),
+            "quickTake": story["quickTake"].strip(),
             "category": story["category"].strip(),
             "tags": [tag.strip() for tag in story["tags"] if tag.strip()],
             "date": today,
@@ -260,6 +268,10 @@ def main():
             "whyImportant": story["whyImportant"].strip(),
             "hkImpact": [item.strip() for item in story["hkImpact"] if item.strip()],
             "take": story["take"].strip(),
+            "actionVerdict": story["actionVerdict"],
+            "actionReason": story["actionReason"].strip(),
+            "aisonScore": story["aisonScore"],
+            "audienceImpact": story["audienceImpact"],
             "sourceLabel": story["sourceLabel"].strip(),
             "sourceUrl": source_url,
             "sourceType": story["sourceType"].strip(),

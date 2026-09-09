@@ -1,5 +1,49 @@
 {
-  "version": 1,
+  "version": 2,
+  "hubs": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "description": "追蹤 ChatGPT、GPT、Sora、Codex 與 OpenAI 的模型、產品、企業服務、安全與商業化進展。",
+      "matchTerms": ["OpenAI", "ChatGPT", "GPT", "Sora", "Codex"]
+    },
+    {
+      "id": "google-gemini",
+      "name": "Google Gemini",
+      "description": "追蹤 Google、Gemini、DeepMind、Veo 與 Google AI 產品由研究、模型到工作工具的更新。",
+      "matchTerms": ["Google", "Gemini", "DeepMind", "Veo", "NotebookLM"]
+    },
+    {
+      "id": "anthropic-claude",
+      "name": "Claude／Anthropic",
+      "description": "追蹤 Anthropic 與 Claude 的模型能力、安全、企業採用、開發者工具與政策動向。",
+      "matchTerms": ["Anthropic", "Claude"]
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "description": "追蹤 NVIDIA 的 GPU、Blackwell、Rubin、CUDA、資料中心與全球 AI 算力供應鏈。",
+      "matchTerms": ["NVIDIA", "Blackwell", "Rubin", "CUDA", "DGX"]
+    },
+    {
+      "id": "ai-agent",
+      "name": "AI Agent",
+      "description": "追蹤會使用工具、讀取資料、執行工作與需要審批的 AI Agent，以及權限和安全問題。",
+      "matchTerms": ["AI Agent", "Agent", "Agents", "MCP", "Computer Use", "智能體"]
+    },
+    {
+      "id": "ai-video",
+      "name": "AI Video",
+      "description": "追蹤生成影片、剪輯工作流、聲音處理、商用權利與創作者的 AI 影片工具。",
+      "matchTerms": ["AI Video", "影片生成", "生成影片", "Video", "Veo", "Sora", "Runway", "Kling", "Premiere"]
+    },
+    {
+      "id": "ai-coding",
+      "name": "AI Coding",
+      "description": "追蹤 Coding Agent、Codex、Copilot、Cursor 與 AI 對程式開發、軟件工程和團隊流程的影響。",
+      "matchTerms": ["AI Coding", "Coding", "Codex", "Copilot", "Cursor", "程式", "開發", "Developer"]
+    }
+  ],
   "topics": [
     {
       "id": "agentic-ai",

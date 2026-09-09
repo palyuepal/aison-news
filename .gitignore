@@ -4,5 +4,9 @@ rss.xml
 sitemap.xml
 assets/social/
 data/live.js
+data/editorial.js
+data/latest.js
+data/corrections.js
+newsletter.xml
 __pycache__/
 *.pyc
