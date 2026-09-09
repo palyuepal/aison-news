@@ -21,6 +21,8 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="alternate" type="application/rss+xml" title="AIson RSS" href="rss.xml">
+  <link rel="preload" as="image" href="assets/mascot.webp" type="image/webp" fetchpriority="high">
+  <link rel="preconnect" href="https://subscribe-forms.beehiiv.com" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20260908-deepdive">
   <link rel="stylesheet" href="engagement.css?v=20260906-engagement">
   <style>
@@ -33,7 +35,7 @@
 <body data-page="home">
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="index.html" aria-label="AIson 首頁"><img src="assets/mascot.webp" alt="AIson 狗狗 IP"><div><strong><span>AI</span>son</strong><small>每日 AI 新聞站</small></div></a>
+    <a class="brand" href="index.html" aria-label="AIson 首頁"><img src="assets/mascot.webp" width="54" height="54" decoding="async" alt="AIson 狗狗 IP"><div><strong><span>AI</span>son</strong><small>每日 AI 新聞站</small></div></a>
     <nav class="navlinks" aria-label="主要導覽"><a class="active" href="index.html"><i>⌂</i>首頁</a><a href="daily.html"><i>☀</i>今日 AI 10 件事</a><a href="weekly.html"><i>◷</i>本週回顧</a><a href="topics.html"><i>◎</i>主題追蹤</a><a href="archive.html"><i>▤</i>新聞庫</a><a href="about.html"><i>✦</i>關於 AIson</a></nav>
     <button class="search-trigger" id="searchTrigger" aria-label="開啟搜尋"><b>⌕</b><span>搜尋新聞、主題、工具…</span><kbd>⌘K</kbd></button>
     <button class="menuBtn" id="menuBtn" aria-label="開啟選單">☰</button>
@@ -50,7 +52,7 @@
       <div class="hero-actions"><a class="primary-btn" href="daily.html">睇今日 10 件事 →</a><a class="ghost-btn" data-newsletter-link data-analytics-slot="hero" href="#newsletter">每日 Email 收到 →</a></div>
       <div class="proof-row"><span><i>⚡</i><b>每日更新</b><small>10 件 AI 大事</small></span><span><i>◎</i><b>幫你整理</b><small>重點唔沉底</small></span><span><i>🇭🇰</i><b>香港視點</b><small>同你有咩關係</small></span><span><i>🔖</i><b>長期保存</b><small>隨時搵得返</small></span></div>
     </div>
-    <div class="hero-mascot"><div class="glow"></div><div class="hero-orbit one"></div><div class="hero-orbit two"></div><img src="assets/mascot.webp" alt="AIson 狗狗拿著 AIson 標誌"><div class="speech"><small>AIson 今日幫你篩咗</small><b><em>20+</em> 則新聞</b><span>最後只保留最值得知道嘅 <strong>10 件！</strong></span></div><div class="scan-chip">✦ AIson Daily Brief</div></div>
+      <div class="hero-mascot"><div class="glow"></div><div class="hero-orbit one"></div><div class="hero-orbit two"></div><img src="assets/mascot.webp" width="425" height="425" fetchpriority="high" decoding="async" alt="AIson 狗狗拿著 AIson 標誌"><div class="speech"><small>AIson 今日幫你篩咗</small><b><em>20+</em> 則新聞</b><span>最後只保留最值得知道嘅 <strong>10 件！</strong></span></div><div class="scan-chip">✦ AIson Daily Brief</div></div>
   </div>
 </section>
 <section class="section home-signals" aria-labelledby="homeSignalsTitle"><div class="container"><div class="section-head"><div><div class="mini-label">TODAY'S 3 SIGNALS</div><h2 id="homeSignalsTitle">今日最重要 3 條主線</h2><p>先用 60 秒掌握今日最值得跟進嘅方向，再深入睇完整報道。</p></div><a class="text-button" href="daily.html">睇晒今日 10 件事 →</a></div><div class="home-signals-grid" id="homeSignals"><div class="home-signal"><small>正在整理今日主線</small><b>AIson 正在載入最新編輯排序…</b></div></div></div></section>
