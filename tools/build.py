@@ -14,8 +14,10 @@ DAILY_DIR=ROOT/'content/daily'
 SITE=ROOT/'content/site.json'
 STATUS=ROOT/'content/status.json'
 
+
 def read_json(path):
     return json.loads(path.read_text(encoding='utf-8'))
+
 
 def load_site():
     site=read_json(SITE)
@@ -23,6 +25,55 @@ def load_site():
     if not base.endswith('/'): base+='/'
     site['baseUrl']=base
     return site
+
+
+def _text_len(value=''):
+    return len(''.join(str(value or '').split()))
+
+
+def _deep_read_ready(n):
+    if not n.get('verified') or not n.get('sourceUrl'):
+        return False
+    impacts=n.get('hkImpact') if isinstance(n.get('hkImpact'),list) else []
+    total=sum(_text_len(n.get(key,'')) for key in ('summary','whatHappened','reportingContext','deepDive','whyImportant','whatToWatch','take'))
+    total+=sum(_text_len(item) for item in impacts)
+    return (
+        len(impacts)>=3 and
+        _text_len(n.get('whatHappened'))>=300 and
+        _text_len(n.get('reportingContext'))>=400 and
+        _text_len(n.get('deepDive'))>=900 and
+        _text_len(n.get('whyImportant'))>=250 and
+        _text_len(n.get('whatToWatch'))>=180 and
+        total>=2800
+    )
+
+
+def _validate_visual(n):
+    visual=n.get('visual')
+    if visual is None:
+        return
+    if not isinstance(visual,dict):
+        raise SystemExit(f"{n.get('id','?')} visual must be an object")
+    kind=str(visual.get('kind','')).strip()
+    if kind not in {'aison-original','official-press'}:
+        raise SystemExit(f"{n.get('id','?')} visual.kind must be aison-original or official-press")
+    src=str(visual.get('src','')).strip()
+    if not src.startswith('assets/editorial/') or '..' in Path(src).parts:
+        raise SystemExit(f"{n.get('id','?')} visual.src must be a local assets/editorial/ path")
+    if Path(src).suffix.lower() not in {'.jpg','.jpeg','.png','.webp'}:
+        raise SystemExit(f"{n.get('id','?')} visual.src must be jpg/png/webp")
+    if not (ROOT/src).is_file():
+        raise SystemExit(f"{n.get('id','?')} visual asset not found: {src}")
+    if not str(visual.get('alt','')).strip():
+        raise SystemExit(f"{n.get('id','?')} visual.alt is required")
+    if not str(visual.get('credit','')).strip():
+        raise SystemExit(f"{n.get('id','?')} visual.credit is required")
+    source_url=str(visual.get('sourceUrl','')).strip()
+    if kind=='official-press' and not source_url.startswith('https://'):
+        raise SystemExit(f"{n.get('id','?')} official-press visual needs https sourceUrl")
+    if source_url and not source_url.startswith('https://'):
+        raise SystemExit(f"{n.get('id','?')} visual.sourceUrl must use https")
+
 
 def _validate_story(n, ids, ranks):
     required={'id','rank','title','excerpt','category','date','readTime','sourceUrl'}
@@ -36,6 +87,8 @@ def _validate_story(n, ids, ranks):
         raise SystemExit(f"verified story {n['id']} needs https sourceUrl")
     if not isinstance(n.get('hkImpact',[]),list):
         raise SystemExit(f"{n['id']} hkImpact must be an array")
+    _validate_visual(n)
+
 
 def _daily_files():
     if not DAILY_DIR.exists():
@@ -48,6 +101,7 @@ def _daily_files():
             raise SystemExit(f"daily edition filename must be YYYY-MM-DD: {path.name}")
         files.append(path)
     return sorted(files,key=lambda p:p.stem,reverse=True)
+
 
 def load_news():
     legacy=read_json(NEWS)
@@ -94,11 +148,14 @@ def load_news():
         _validate_story(n,ids,ranks)
     return sorted(merged,key=lambda n:(n.get('rank',999),n['date']))
 
+
 def write_js(path,var,obj):
     path.write_text(f'window.{var} = '+json.dumps(obj,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
 
+
 def article_url(base, story_id):
     return urljoin(base,f"news/{story_id}.html")
+
 
 def build_article_pages(data,site,social_card_ids=None):
     social_card_ids=set(social_card_ids or [])
@@ -154,6 +211,7 @@ def build_article_pages(data,site,social_card_ids=None):
     if len(list(out_dir.glob('*.html'))) != len(data):
         raise SystemExit('generated article page count does not match news data')
 
+
 def build_rss(data,site):
     base=site['baseUrl']; items=[]
     for n in sorted(data,key=lambda x:(x['date'],-x.get('rank',99)),reverse=True)[:50]:
@@ -162,6 +220,7 @@ def build_rss(data,site):
         items.append(f'''<item><title>{html.escape(n['title'])}</title><link>{html.escape(url)}</link><guid>{html.escape(url)}</guid><pubDate>{format_datetime(dt)}</pubDate><description>{html.escape(n['excerpt'])}</description></item>''')
     rss=f'''<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{html.escape(site['name'])}｜每日 AI 新聞・香港</title><link>{html.escape(base)}</link><description>{html.escape(site['description'])}</description><language>zh-HK</language>{''.join(items)}</channel></rss>'''
     (ROOT/'rss.xml').write_text(rss+'\n',encoding='utf-8')
+
 
 def build_sitemap(data,site):
     base=site['baseUrl']; pages=['','daily.html','live.html','weekly.html','guides.html','topics.html','archive.html','about.html','methodology.html','corrections.html','privacy.html']
@@ -172,9 +231,15 @@ def build_sitemap(data,site):
     xml='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(urls)+'</urlset>'
     (ROOT/'sitemap.xml').write_text(xml+'\n',encoding='utf-8')
 
+
 def build_search(data):
-    slim=[{'id':n['id'],'rank':n['rank'],'title':n['title'],'excerpt':n['excerpt'],'category':n['category'],'tags':n.get('tags',[]),'date':n['date']} for n in data]
+    slim=[{
+        'id':n['id'],'rank':n['rank'],'title':n['title'],'excerpt':n['excerpt'],'category':n['category'],
+        'tags':n.get('tags',[]),'date':n['date'],'readTime':n.get('readTime',''),
+        'verified':bool(n.get('verified')),'featured':bool(n.get('featured')),'deepRead':_deep_read_ready(n)
+    } for n in data]
     (ROOT/'data/search-index.json').write_text(json.dumps(slim,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+
 
 def build_status(data,status):
     dates=sorted([n['date'] for n in data if n.get('date')])
@@ -183,6 +248,7 @@ def build_status(data,status):
     out=dict(status)
     out.update({'articleCount':len(data),'verifiedCount':sum(1 for n in data if n.get('verified')),'editionDate':latest,'latestEdition':latest,'lastBuild':generated_at,'generatedAt':generated_at})
     write_js(ROOT/'data/status.js','AISON_STATUS',out)
+
 
 def main():
     site=load_site(); data=load_news(); status=read_json(STATUS)
@@ -194,5 +260,6 @@ def main():
     overview=build_daily_overview(data,site,ROOT)
     overview_count=overview.get('count',0) if overview else 0
     print(f'Built AIson V3: {len(data)} articles / {sum(1 for n in data if n.get("verified"))} verified / {len(social_card_ids)} social cards / daily overview {overview_count} stories / editorial {editorial.get("source","?")}')
+
 
 if __name__=='__main__': main()
