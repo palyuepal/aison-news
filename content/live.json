@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-09-openai-samsung-next-gen-chips",
+    "title": "OpenAI × Samsung 深化下一代 AI 晶片合作，自研晶片版圖再擴大",
+    "summary": "OpenAI 9 月 9 日在首爾公開確認，與 Samsung Electronics 在下一代自研 AI 晶片的共同生產與研究方面已取得明顯進展，合作同時延伸至企業 AI 服務。OpenAI 早前已與 Broadcom 共同設計首款自研 AI 晶片 Jalapeño，並由 TSMC 製造；Samsung 與 SK Hynix 亦已簽署意向書，為 OpenAI 的 Stargate 數據中心供應記憶體。今次確認顯示 OpenAI 正進一步把晶片設計、記憶體供應與製造合作納入自己的長期 AI 基建策略，降低單一供應鏈依賴。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-09-09T01:57:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/openai-says-working-with-samsung-next-generation-chips-deepening-cooperation-2026-09-09/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-09-google-finland-ai-infrastructure",
     "title": "Google 豪擲 130 億歐元擴建芬蘭 AI 基建，創公司歐洲最大單筆投資",
     "summary": "Google 9 月 9 日正式宣布，未來兩年將在芬蘭投資 130 億歐元，擴建數據中心、電網、潔淨能源與電池項目，以支撐 Gemini、Search、Maps、YouTube 等服務的 AI 算力需求。Google 官方稱這是公司歷來在歐洲最大單筆投資，並包括延長 Loviisa 核電廠壽命的 22 年協議、新增陸上風電及 94MW 電池儲能。這顯示 AI 基建競爭正由 GPU 採購進一步延伸到電力、核能、電網與國家級數據中心選址。",
