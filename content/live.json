@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-10-china-ai-chip-hbm-price-hikes",
+    "title": "HBM 荒推高中國 AI 晶片價格：華為 Ascend 950DT 報價兩個月急升 20% 至 50%",
+    "summary": "Reuters 9 月 10 日報道，中國 AI 晶片供應商正因高頻寬記憶體（HBM）短缺大幅加價。華為先進 Ascend 950DT 加速卡最新報價已升至 25 萬元人民幣以上，較兩個月前高 20% 至 50%；寒武紀即將推出的 690 晶片亦被指加價 20% 至 30%，部分較舊華為型號升幅約 30%。HBM 主要由 SK Hynix、Samsung 與 Micron 供應，而美國自 2024 年底加強先進 HBM 對華出口限制後，中國廠商需要依賴供應更緊張、價格更高的渠道。今次價格上升顯示中國 AI 算力自給並非單靠 GPU／NPU 設計即可完成，記憶體供應正成為更直接的成本與擴產瓶頸。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-09-10T07:30:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-high-bandwidth-memory-shortage-bites-2026-09-10/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-10-nvidia-groq-doj-antitrust-probe",
     "title": "美國司法部調查 NVIDIA × Groq 170 億美元交易：重點查是否刻意避開反壟斷審查",
     "summary": "Reuters 9 月 10 日引述《紐約時報》報道，美國司法部正調查 NVIDIA 去年以 170 億美元取得 AI 晶片新創 Groq 技術的非獨家授權，並同時聘用包括創辦人 Jonathan Ross 在內的多名高層，是否以交易結構避開正式反壟斷審查。司法部在交易於去年 12 月公布後不久已展開調查，並向 NVIDIA 發出正式資料要求。NVIDIA 回應指該交易屬美國創新制度正常運作；Groq 與司法部暫未公開回應。報道指若最終認定處理不當，NVIDIA 可能面臨罰款，但交易本身被撤銷的機會較低。這宗調查把 AI 晶片龍頭透過授權、人才吸納與投資鞏固生態位的做法正式推上美國反壟斷監管焦點。",
