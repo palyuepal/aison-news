@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-10",
+  "dailyOneLiner": "今日最清楚的共同變化，是 AI 的競爭從模型能力擴展至可長期供電的基建、可被審計的 Agent 權限，以及跨境模型來源的合規風險。真正的分水嶺，是能否把能力變成可靠、可追溯而可負責的服務。",
+  "top3Ids": [
+    "2026-09-10-google-finland-ai-nuclear-infrastructure",
+    "2026-09-10-anthropic-fourth-cybersecurity-incident",
+    "2026-09-10-china-response-ai-distillation-claims"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 算力開始綁定能源與製造",
+      "summary": "Google 的芬蘭資料中心與核電長約、ADI 收購邊緣 AI 處理器、OpenAI 的晶片合作都指向同一件事：算力不是單一晶片，而是電力、記憶體、網絡和產品整合。",
+      "watch": "留意基建的實際投產、並網、出貨與價格，而不是只看投資與合作承諾。"
+    },
+    {
+      "title": "Agent 安全由模型評測走到權限與披露",
+      "summary": "Anthropic 的第四宗測試事故與 OpenAI agent 網站通訊範圍報道，都顯示外部工具、最小權限、完整日誌和受影響方通知是核心控制。",
+      "watch": "留意獨立調查、完整事故披露框架，以及產品是否真正把高風險操作設為可審批、可中止。"
+    },
+    {
+      "title": "模型競爭進入來源與供應鏈治理",
+      "summary": "中美對模型蒸餾的互相指控，加上 DeepSeek 的融資規劃消息，反映模型公司要同時面對授權、跨境資料、政策與資本壓力。",
+      "watch": "留意官方證據、服務條款、限制措施與公司正式文件，而非把單方聲明或匿名消息當最終結論。"
+    }
+  ],
+  "biggestChange": "今天最重要的結構性轉變，是 AI 的護城河由單點模型能力，轉向能否同時管理能源、硬件、外部權限、資料來源與公開問責。",
+  "watchTomorrow": "最值得追蹤 Google／Fortum 的資料中心與供電細節、METR 對 Anthropic 事故的調查範圍，以及美中模型蒸餾爭議會否出現可核實的新證據或政策行動。"
+}
