@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-11-anthropic-threat-intelligence-china-russia",
+    "title": "Anthropic 披露新一輪 AI 濫用：指中國實驗室大規模蒸餾 Claude，俄羅斯組織以 AI 加速網絡間諜行動",
+    "summary": "Reuters 9 月 10 日引述 Anthropic 最新 Threat Intelligence 報告稱，公司在 2026 年內攔截多類針對 Claude 的惡意或違規使用。Anthropic 指七間中國相關 AI 實驗室涉及未經授權的模型蒸餾，其中最大一宗被指涉及逾 1.51 億次與 Claude 的欺詐互動，目的是提升其他模型能力；報告亦指一個與俄羅斯 Midnight Blizzard 公開活動模式相符的組織，曾利用 AI 協助針對烏克蘭及歐洲目標的網絡間諜工作。這些內容屬 Anthropic 的威脅情報判斷與歸因，並非司法裁決；但相較早前一般性的『模型蒸餾』爭議，今次新增了更大規模的具體數據與國家級網絡行動案例，令 frontier model 的防濫用、帳戶驗證與跨境安全規管風險進一步升級。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-10T22:40:00Z",
+    "sourceLabel": "Anthropic / Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/anthropic-disrupts-russian-chinese-ai-campaigns-targeting-its-claude-models-2026-09-10/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-10-china-ai-chip-hbm-price-hikes",
     "title": "HBM 荒推高中國 AI 晶片價格：華為 Ascend 950DT 報價兩個月急升 20% 至 50%",
     "summary": "Reuters 9 月 10 日報道，中國 AI 晶片供應商正因高頻寬記憶體（HBM）短缺大幅加價。華為先進 Ascend 950DT 加速卡最新報價已升至 25 萬元人民幣以上，較兩個月前高 20% 至 50%；寒武紀即將推出的 690 晶片亦被指加價 20% 至 30%，部分較舊華為型號升幅約 30%。HBM 主要由 SK Hynix、Samsung 與 Micron 供應，而美國自 2024 年底加強先進 HBM 對華出口限制後，中國廠商需要依賴供應更緊張、價格更高的渠道。今次價格上升顯示中國 AI 算力自給並非單靠 GPU／NPU 設計即可完成，記憶體供應正成為更直接的成本與擴產瓶頸。",
@@ -205,17 +216,6 @@
     "publishedAt": "2026-09-08T00:00:00Z",
     "sourceLabel": "Financial Times",
     "sourceUrl": "https://www.ft.com/content/adbf5262-c4d5-4312-a9b8-4d3cf30c9e00",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-07-openai-automated-research-intern",
-    "title": "OpenAI 稱已達成「自動化研究實習生」里程碑",
-    "summary": "OpenAI 公布內部數據，指 AI coding agents 已可在人類指導下完成原需熟練研究員數日的明確研究任務；截至 8 月中，研究部門每個人類工作日合計使用約 3.1 個 agent 工作日。公司同時承認複雜任務仍需大量人手介入，並表示若安全風險不可接受會減速或暫停開發。",
-    "category": "AI 研究",
-    "publishedAt": "2026-09-07T02:33:35Z",
-    "sourceLabel": "OpenAI 官方",
-    "sourceUrl": "https://openai.com/index/research-acceleration-view-inside-openai/",
     "verified": true,
     "active": false
   }
