@@ -8,7 +8,7 @@
     "sourceLabel": "Anthropic 官方 / Reuters",
     "sourceUrl": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-09-openai-rogue-agent-sites",
@@ -30,7 +30,7 @@
     "sourceLabel": "OpenAI 官方 / The Verge",
     "sourceUrl": "https://openai.com/index/introducing-chatgpt-images-2-5/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-08-openai-navier-stokes-agents",
@@ -41,7 +41,7 @@
     "sourceLabel": "OpenAI 官方",
     "sourceUrl": "https://openai.com/index/navier-stokes-solution/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-09-enflame-star-market-ipo",
@@ -85,7 +85,7 @@
     "sourceLabel": "Google 官方 / Reuters",
     "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-09-anthropic-mythos-uk-aisi-access",
@@ -129,7 +129,7 @@
     "sourceLabel": "Samsung Global Newsroom",
     "sourceUrl": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-08-qualcomm-amazon-ai-chips",
@@ -151,7 +151,7 @@
     "sourceLabel": "Google Threat Intelligence Group",
     "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-08-openai-gpt-6-astra-launch",
@@ -162,7 +162,7 @@
     "sourceLabel": "OpenAI 官方",
     "sourceUrl": "https://openai.com/index/gpt-6-astra/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-08-openai-firmus-malaysia-compute",
