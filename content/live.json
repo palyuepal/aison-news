@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-11-openai-altman-slow-ai-development",
+    "title": "Altman 對員工稱 OpenAI 願意在安全需要時放慢 AI 開發步伐",
+    "summary": "Reuters 9 月 11 日引述 Bloomberg News 報道，OpenAI CEO Sam Altman 在本周一次全公司會議向員工表示，公司對放慢 AI 系統開發持開放態度，並提到可考慮與其他 AI 實驗室協調開發節奏，但並非所有公司都一定同意。這不是已宣布的正式減速政策，亦不代表 GPT-6 Astra 或現有產品已被暫停；較準確的理解是，在近期模型越界事故與安全警告升溫後，OpenAI 管理層首次把『實際放慢開發速度』公開帶入內部決策選項。OpenAI 9 月 1 日亦在官方安全文章中表示，若保護措施不足，公司願意放慢進度。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-11T02:33:00Z",
+    "sourceLabel": "Reuters / Bloomberg News",
+    "sourceUrl": "https://www.reuters.com/business/altman-tells-staff-openai-is-open-slowing-ai-development-bloomberg-news-reports-2026-09-11/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-11-zai-5b-hong-kong-fundraising",
     "title": "Z.AI 啟動約 50 億美元香港融資：20 億美元配股＋30 億美元可換股債",
     "summary": "Reuters 9 月 11 日根據交易條款文件報道，北京 AI 公司 Z.AI（前稱智譜 AI，2513.HK）已啟動約 50 億美元的香港資本市場融資，包括約 20 億美元新股配售及約 30 億美元零息可換股債。配售涉及 2,197 萬股、每股 HK$714，較 9 月 11 日收市價 HK$793 折讓 10%；可換股債本金為 201.4 億元人民幣，2027 年 9 月到期，初始換股價 HK$892.50。公司計劃把資金用於研發、算力與相關基建、全球擴張、策略投資及潛在收購。Z.AI 今年 1 月才在香港上市，7 月亦曾完成約 40 億美元後續配股；今次再融資顯示中國前沿模型競爭正快速轉化為一場以算力、人才及資本開支為核心的資本競賽，亦直接加深香港作為中國 AI 公司融資中心的角色。",
@@ -88,17 +99,6 @@
     "active": false
   },
   {
-    "id": "2026-09-08-openai-navier-stokes-agents",
-    "title": "OpenAI 稱 1 萬個 AI Agents 已解出 Navier–Stokes 千禧年難題，並完成 Lean 形式化驗證",
-    "summary": "OpenAI 9 月 8 日發布研究結果，稱一個仍在訓練、能力顯著高於 GPT-6 Astra 的內部模型，透過約 1 萬個協作 AI agents，在約 88 小時內產生 Navier–Stokes 存在性與光滑性問題的解析證明，之後再由 GPT-6 Astra 花約 17 小時完成 Lean 形式化驗證。OpenAI 公開論文與 Lean proof，並稱結果證明特定三維不可壓縮流體可在有限時間形成奇點。呢個里程碑如果經數學界獨立審查後成立，代表 AI 首次觸及最高難度長期未解數學問題之一；但目前仍屬 OpenAI 公布並已形式化驗證的結果，尚未等同 Clay Mathematics Institute 正式承認或完成外部同行審查。OpenAI 同時承認項目與 Tristan Buckmaster、Levent Alpöge 的相關研究存在同期工作與資料來源爭議，並表示未直接存取對方特定用戶資料，但不能完全排除去識別化產品使用資料曾間接改善模型。",
-    "category": "AI 研究",
-    "publishedAt": "2026-09-08T00:00:00Z",
-    "sourceLabel": "OpenAI 官方",
-    "sourceUrl": "https://openai.com/index/navier-stokes-solution/",
-    "verified": true,
-    "active": false
-  },
-  {
     "id": "2026-09-09-enflame-star-market-ipo",
     "title": "騰訊有份投資的 Enflame 完成 9.12 億美元 IPO，9 月 11 日登陸上海科創板",
     "summary": "Reuters 9 月 9 日根據上海交易所文件報道，中國 AI 晶片公司上海 Enflame Technology 已完成 IPO，集資 61.2 億元人民幣（約 9.12 億美元），發行價每股 142.18 元，對應上市估值約 611.9 億元人民幣（約 91.2 億美元），並將於 9 月 11 日在上海科創板掛牌。Enflame 預計 2026 年首九個月收入按年增長 326% 至 455%，但仍錄得 7 億至 8.6 億元人民幣淨虧損；騰訊上市後持股 17.95%，並曾佔 Enflame 2025 年收入 83.79%。這宗交易提供一個新的中國 AI GPU 公開市場估值基準，同時亦暴露出高度客戶集中與仍未盈利的風險。",
@@ -106,127 +106,6 @@
     "publishedAt": "2026-09-09T12:23:08Z",
     "sourceLabel": "Reuters / 上海證券交易所",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/tencent-backed-enflame-debut-shanghai-friday-912-million-ipo-2026-09-09/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-09-deepseek-citic-star-market-ipo",
-    "title": "DeepSeek 據報委任中信證券推進上海科創板 IPO，上市計劃進入實質準備階段",
-    "summary": "Reuters 9 月 9 日引述兩名知情人士報道，DeepSeek 已委任中信證券為上海科創板上市作準備，目標在 2026 年內啟動 IPO 流程。上市時間、集資額與目標估值仍未確定，DeepSeek 與中信證券亦未有公開確認；但在中國內地上市慣例下，委任券商進行上市前輔導通常代表 IPO 已由早期構想進入較實質的準備階段。Financial Times 同日亦報道 DeepSeek 正在新一輪融資中加強投資者篩選，並提到公司正為計劃中的 IPO 改善治理與資本安排。若進展落實，DeepSeek 可能成為中國最受關注的前沿 AI 公司上市案例之一，直接影響中國 AI 模型公司的融資、估值與算力競賽。",
-    "category": "AI 融資",
-    "publishedAt": "2026-09-09T06:11:00Z",
-    "sourceLabel": "Reuters / Financial Times",
-    "sourceUrl": "https://www.reuters.com/world/chinas-deepseek-taps-citic-securities-domestic-ipo-sources-say-2026-09-09/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-09-openai-samsung-next-gen-chips",
-    "title": "OpenAI 自研 Jalapeño 已完成 tape-out，並深化 Samsung 下一代 AI 晶片合作",
-    "summary": "OpenAI CFO Sarah Friar 9 月 9 日披露，OpenAI 在開發首款自研 AI 晶片 Jalapeño 時大量使用自家 AI 模型，並在約 9 個月內完成 tape-out，即晶片設計已定稿並送交晶圓廠進入生產流程。這項進展比單純公布自研晶片計劃更具實質意義，顯示 OpenAI 的 custom silicon 已跨過關鍵設計里程碑。OpenAI 同日亦確認與 Samsung Electronics 在下一代 AI 晶片的共同研究與生產合作取得進展，而 Samsung 與 SK Hynix 早前已簽署意向書，為 Stargate 數據中心供應記憶體。整體顯示 OpenAI 正把模型、晶片設計、記憶體與製造合作逐步串成自家 AI 基建體系。",
-    "category": "AI 晶片",
-    "publishedAt": "2026-09-09T01:57:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/china/openai-offers-ai-chip-design-touts-cost-advantage-over-open-source-cfo-says-2026-09-09/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-09-google-finland-ai-infrastructure",
-    "title": "Google 豪擲 130 億歐元擴建芬蘭 AI 基建，創公司歐洲最大單筆投資",
-    "summary": "Google 9 月 9 日正式宣布，未來兩年將在芬蘭投資 130 億歐元，擴建數據中心、電網、潔淨能源與電池項目，以支撐 Gemini、Search、Maps、YouTube 等服務的 AI 算力需求。Google 官方稱這是公司歷來在歐洲最大單筆投資，並包括延長 Loviisa 核電廠壽命的 22 年協議、新增陸上風電及 94MW 電池儲能。這顯示 AI 基建競爭正由 GPU 採購進一步延伸到電力、核能、電網與國家級數據中心選址。",
-    "category": "AI 基建",
-    "publishedAt": "2026-09-09T06:30:00Z",
-    "sourceLabel": "Google 官方 / Reuters",
-    "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-09-anthropic-mythos-uk-aisi-access",
-    "title": "Anthropic 未向英國 AI Security Institute 提供 Mythos 5.1 預發布測試，frontier AI 存取裂痕升溫",
-    "summary": "Financial Times 9 月 9 日報道，Anthropic 未有像過往一樣向英國 AI Security Institute 提供 Claude Mythos 5.1 的預發布測試存取；Anthropic 官方亦確認 Mythos 5.1 目前只向一小批經審核的美國機構提供，並表示正與美國政府合作擴大存取。英國政府內部因此擔心，美國對前沿 AI 的保護主義與出口限制可能開始削弱盟友之間既有的模型安全測試合作。這並不代表 Anthropic 已宣布永久排除英國，而是顯示前沿模型的跨境存取正由一般產品政策升級成國安與外交議題。",
-    "category": "AI 治理",
-    "publishedAt": "2026-09-09T04:00:25Z",
-    "sourceLabel": "Financial Times / Anthropic",
-    "sourceUrl": "https://www.ft.com/content/560e1c8b-f163-4fd6-b604-e905550ac870",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-09-us-china-ai-distillation-accusation",
-    "title": "美國三大安全機構點名中國 AI 公司：指控以『工業級』蒸餾複製美國模型能力",
-    "summary": "美國 NSA、CISA 與 FBI 9 月 8 日公開指控多間中國 AI 公司進行大規模、針對性的模型蒸餾，點名包括 DeepSeek、Moonshot AI、Alibaba、MiniMax 與 StepFun，並稱相關活動可能獲中國政府知情。美方指這些公司利用 Anthropic、OpenAI、Google 及 SpaceX 等美國模型的輸出加速訓練自家系統。這項指控在美中預計 9 月中舉行 AI 安全對話、以及月底峰會前出現，令模型蒸餾由企業條款與技術爭議升級成國家安全與外交議題；目前這仍屬美方公開指控，並非司法裁決。",
-    "category": "AI 治理",
-    "publishedAt": "2026-09-08T21:00:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/technology/us-accuses-chinese-ai-firms-industrial-scale-theft-ai-technology-2026-09-08/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-09-meta-muse-ai-agent-launch",
-    "title": "Meta 推出 Muse AI Agent：可跨 App 寄電郵、付款及代辦任務",
-    "summary": "Meta 正式推出 Muse AI assistant，能連接電郵、日曆及付款等服務，自主執行寄電郵、出售物品、預訂旅程與付款等多步驟任務，並可在使用者離開 App 後繼續背景執行。Muse 初期在美國透過獨立 App 與 WhatsApp 推出，採用 Meta 自家 Muse Spark 模型。這是大型消費平台把 agentic AI 從聊天推向可直接操作真實帳戶與交易的重要一步；同時 Reuters 報道內部測試曾出現可靠性與私隱／安全問題，令權限隔離、支付風控與敏感資料保護成為後續關鍵觀察點。",
-    "category": "AI Agent",
-    "publishedAt": "2026-09-08T17:47:00Z",
-    "sourceLabel": "Reuters / The Verge",
-    "sourceUrl": "https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-09-samsung-mistral-ai-partnership",
-    "title": "Samsung × Mistral AI 建立晶片戰略合作，AI 直接進入半導體設計與製造流程",
-    "summary": "Samsung Electronics 與 Mistral AI 正式宣布戰略合作，Samsung 將把 Mistral 的 AI 服務與 Mistral Large 導入半導體工程及製造流程，開發針對晶片業務的 on-premises AI。Samsung 同時確認成為 Mistral 最新融資輪的 lead investor。這項合作把生成式 AI 由一般企業軟件進一步推入晶片設計與製造基建。",
-    "category": "AI 晶片",
-    "publishedAt": "2026-09-08T15:00:00Z",
-    "sourceLabel": "Samsung Global Newsroom",
-    "sourceUrl": "https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-08-qualcomm-amazon-ai-chips",
-    "title": "Amazon × Qualcomm 多代合作開發 AI 數據中心晶片，戰線直指推理與高速互連",
-    "summary": "Qualcomm 與 Amazon 今日宣布多代產品合作，為 AWS 大型 AI 數據中心共同開發定制晶片，重點放在 AI inference；雙方亦會開發最高延伸至 1.6Tbps 的高速光互連。Reuters 報道交易安排包括 Amazon 獲得可按每股 161.26 美元購入最多 2,500 萬股 Qualcomm 的認股權，相關商業里程碑可對應最高約 600 億美元業務。這標誌 Qualcomm 正由手機晶片進一步切入 hyperscaler AI 基建，亦加劇 NVIDIA、Broadcom、AMD 與雲端自研晶片之間的競爭。",
-    "category": "AI 晶片",
-    "publishedAt": "2026-09-08T13:00:00Z",
-    "sourceLabel": "Reuters / Qualcomm",
-    "sourceUrl": "https://www.reuters.com/technology/qualcomm-amazon-develop-custom-chips-ai-data-centers-2026-09-08/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-08-google-agentic-ai-cyber-campaign",
-    "title": "Google：攻擊者已用 Agentic AI 在 6 小時內建立大規模憑證竊取行動",
-    "summary": "Google Threat Intelligence Group 今日披露，威脅行動者正由單純提示 AI 升級到多代理與自動化工作流。Google 在 2026 年第二季觀察到一宗個案：攻擊者先入侵雲端資源，再於不足 6 小時內規劃、建立並執行由 agent 驅動的大規模 credential-harvesting campaign；同時亦見到攻擊者針對 AI coding assistants、LLM security scanners、模型、原始碼與 API credentials。這顯示 AI 網絡攻擊的主要風險正由『幫人寫惡意程式』轉向大幅壓縮攻擊準備與執行時間。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-08T13:30:00Z",
-    "sourceLabel": "Google Threat Intelligence Group",
-    "sourceUrl": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-08-openai-gpt-6-astra-launch",
-    "title": "OpenAI 正式發布 GPT-6 Astra：電腦操作與專業工作能力大幅升級",
-    "summary": "OpenAI 今日正式發布 GPT-6 Astra，主打電腦操作、瀏覽、軟件工程、網絡安全、科學及專業工作。官方表示 Astra 將由今日起先向部分機構推出，未來數日擴展至 ChatGPT Plus、Pro、Business、Enterprise，以及 OpenAI API、Microsoft Azure 和 AWS Bedrock。OpenAI 公布的 OSWorld 2.0、Terminal-Bench 4.0、FrontierMath Tier 4、ExploitBench 等基準亦顯示相較 GPT-5.6 Sol 有明顯提升。",
-    "category": "AI 模型",
-    "publishedAt": "2026-09-08T10:48:26Z",
-    "sourceLabel": "OpenAI 官方",
-    "sourceUrl": "https://openai.com/index/gpt-6-astra/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-08-openai-firmus-malaysia-compute",
-    "title": "OpenAI 鎖定馬來西亞兩座 AI 數據中心算力",
-    "summary": "NVIDIA 有份支持的 Firmus 宣布與 OpenAI 簽署多年協議，由兩座馬來西亞數據中心供應算力，令其整體已簽約容量增至逾 900MW；設施將大規模部署 NVIDIA Vera Rubin，顯示前沿模型算力版圖正加速移向東南亞。",
-    "category": "AI 基建",
-    "publishedAt": "2026-09-08T01:40:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/nvidia-backed-firmus-signs-deal-with-openai-malaysia-data-centre-capacity-2026-09-08/",
     "verified": true,
     "active": false
   }
