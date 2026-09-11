@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-11-zai-5b-hong-kong-fundraising",
+    "title": "Z.AI 啟動約 50 億美元香港融資：20 億美元配股＋30 億美元可換股債",
+    "summary": "Reuters 9 月 11 日根據交易條款文件報道，北京 AI 公司 Z.AI（前稱智譜 AI，2513.HK）已啟動約 50 億美元的香港資本市場融資，包括約 20 億美元新股配售及約 30 億美元零息可換股債。配售涉及 2,197 萬股、每股 HK$714，較 9 月 11 日收市價 HK$793 折讓 10%；可換股債本金為 201.4 億元人民幣，2027 年 9 月到期，初始換股價 HK$892.50。公司計劃把資金用於研發、算力與相關基建、全球擴張、策略投資及潛在收購。Z.AI 今年 1 月才在香港上市，7 月亦曾完成約 40 億美元後續配股；今次再融資顯示中國前沿模型競爭正快速轉化為一場以算力、人才及資本開支為核心的資本競賽，亦直接加深香港作為中國 AI 公司融資中心的角色。",
+    "category": "AI 融資",
+    "publishedAt": "2026-09-11T10:47:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/china-ai-developer-zai-launches-5-billion-hong-kong-share-convertible-bond-sales-2026-09-11/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-11-california-youth-ai-social-media-laws",
     "title": "加州一次過收緊兒童社交媒體與 AI Chatbot：禁 16 歲以下接觸成癮設計，AI companion 玩具四年禁售",
     "summary": "Reuters 9 月 11 日報道，加州州長 Gavin Newsom 已簽署一批 13 項保護未成年人的科技法案，其中 Assembly Bill 1709 禁止社交平台向 16 歲以下兒童提供無限捲動、演算法自動播放等被界定為具心理剝削性的成癮設計；另一項措施未來四年禁止製造及銷售內置 AI companion chatbot 的玩具，相關法案亦要求 chatbot 加入家長控制、安全及風險評估。另有法例把涉及未成年人的 AI 生成或數碼修改兒童性虐待內容納入更廣泛刑事制裁。這是一組已正式簽署成法的州級規管，會直接影響 Meta、Google、Snap、社交平台及面向兒童的 AI chatbot／玩具產品設計與合規。",
