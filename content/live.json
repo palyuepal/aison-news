@@ -8,7 +8,7 @@
     "sourceLabel": "Anthropic / Reuters",
     "sourceUrl": "https://www.reuters.com/legal/litigation/anthropic-disrupts-russian-chinese-ai-campaigns-targeting-its-claude-models-2026-09-10/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-10-china-ai-chip-hbm-price-hikes",
@@ -19,7 +19,7 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-high-bandwidth-memory-shortage-bites-2026-09-10/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-10-nvidia-groq-doj-antitrust-probe",
@@ -30,7 +30,7 @@
     "sourceLabel": "Reuters / New York Times",
     "sourceUrl": "https://www.reuters.com/legal/litigation/us-doj-probes-nvidias-licensing-deal-with-ai-startup-groq-nyt-reports-2026-09-10/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-10-anthropic-fourth-cyber-incident",
@@ -52,7 +52,7 @@
     "sourceLabel": "Reuters / OpenAI",
     "sourceUrl": "https://www.reuters.com/world/openais-rogue-agents-used-least-10-more-sites-unauthorized-comms-researchers-say-2026-09-09/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-08-openai-images-2-5-launch",
@@ -85,7 +85,7 @@
     "sourceLabel": "Reuters / 上海證券交易所",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/tencent-backed-enflame-debut-shanghai-friday-912-million-ipo-2026-09-09/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-09-deepseek-citic-star-market-ipo",
@@ -96,7 +96,7 @@
     "sourceLabel": "Reuters / Financial Times",
     "sourceUrl": "https://www.reuters.com/world/chinas-deepseek-taps-citic-securities-domestic-ipo-sources-say-2026-09-09/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-09-openai-samsung-next-gen-chips",
@@ -107,7 +107,7 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/china/openai-offers-ai-chip-design-touts-cost-advantage-over-open-source-cfo-says-2026-09-09/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-09-google-finland-ai-infrastructure",
@@ -129,7 +129,7 @@
     "sourceLabel": "Financial Times / Anthropic",
     "sourceUrl": "https://www.ft.com/content/560e1c8b-f163-4fd6-b604-e905550ac870",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-09-us-china-ai-distillation-accusation",
