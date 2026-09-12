@@ -140,14 +140,17 @@ jobs:
         run: |
           set -euo pipefail
           test -f home-newsroom-v4.css
+          test -f home-signature-v5.css
           test -f engagement.js
           test -f engagement.css
           grep -q 'home-newsroom-v4.css' index.html
+          grep -q 'home-signature-v5.css' index.html
           grep -q 'id="editorialFeature"' index.html
           grep -q 'id="newsGrid"' index.html
           grep -q 'id="aison-live"' index.html
           grep -q 'id="newsletter"' index.html
           grep -q 'frontpage-grid' lite-home.js
+          grep -q 'lead-story-art' lite-home.js
           grep -q 'today.slice(3)' app-editorial.js
           grep -q 'engagement.css' index.html
           grep -q 'engagement.js' index.html
