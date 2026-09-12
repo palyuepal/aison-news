@@ -104,7 +104,8 @@
   function featuredStories(){
     const rows=(window.AISON_NEWS||[]).slice().sort((a,b)=>(Number(a.rank)||999)-(Number(b.rank)||999));
     const byId=new Map(rows.map(item=>[item.id,item]));
-    const ids=window.AISON_EDITORIAL?.top3Ids||[];
+    const editorial=window.AISON_EDITORIAL||{};
+    const ids=editorial.date===rows[0]?.date?(editorial.top3Ids||[]):[];
     const selected=ids.map(id=>byId.get(id)).filter(Boolean);
     return (selected.length?selected:rows.slice(0,3)).slice(0,3);
   }
@@ -122,8 +123,10 @@
   function renderFeatured3(){
     const root=$('#editorialFeature');if(!root)return;
     const items=featuredStories();if(!items.length)return;
-    addFeaturedStyles();
-    root.innerHTML=`<div class="featured3-head"><div><div class="mini-label">TODAY'S MUST READ</div><h2 id="editorialFeatureTitle">今日必讀 3 篇</h2><p>先睇編輯排序最高的三則；值得深挖的報道會標示 Deep Read，其餘保留完整背景、香港影響與後續觀察。</p></div><span class="featured3-note">編輯排序 · 不是點擊榜</span></div><div class="featured3-grid">${items.map((n,index)=>{const v=visual(n.category),deep=deepReadReady(n),summary=compact(n.summary||n.excerpt,index===0?230:125),insight=compact((n.hkImpact||[])[0]||n.whyImportant||'',index===0?180:105);return `<a class="featured3-card${index===0?' lead':''}" href="news/${encodeURIComponent(n.id)}.html"><div class="featured3-top"><span class="featured3-rank">0${index+1}</span><span class="featured3-cat">${esc(v.icon)} ${esc(n.category||'AI NEWS')}</span>${n.verified?'<span class="featured3-verified">✓ 已核實</span>':''}<span class="featured3-depth">${deep?'DEEP READ':'FULL REPORT'}</span></div><h3>${esc(n.title)}</h3><p class="featured3-summary">${esc(summary)}</p><div class="featured3-insight"><b>🇭🇰 香港角度</b>${esc(insight||'完整文章會整理香港讀者最值得注意的實際影響。')}</div><div class="featured3-foot"><span>${esc(n.readTime||'完整報道')}</span><span class="featured3-read">${deep?'深入閱讀':'閱讀全文'} →</span></div></a>`}).join('')}</div>`;
+    const editorial=window.AISON_EDITORIAL||{},lead=items[0],leadVisual=visual(lead.category),editorialIsCurrent=editorial.date===lead.date;
+    const oneLine=(editorialIsCurrent&&editorial.dailyOneLiner)||lead.quickTake||lead.summary||lead.excerpt;
+    const readTime=n=>n.readTime||'完整報道';
+    root.innerHTML=`<header class="newsroom-header"><div class="newsroom-edition"><span>AIson DAILY</span><time>${fmt(lead.date)}</time></div><h1 id="editorialFeatureTitle">今日 AI 新聞</h1><p>${esc(oneLine)}</p></header><div class="frontpage-grid"><a class="front-story lead" href="news/${encodeURIComponent(lead.id)}.html"><div class="front-story-meta"><span class="front-story-number">01</span><span>${esc(leadVisual.icon)} ${esc(lead.category)}</span>${lead.verified?'<b>✓ 已核實</b>':''}</div><h2>${esc(lead.title)}</h2><p>${esc(compact(lead.summary||lead.excerpt,240))}</p><div class="lead-story-foot"><span>${fmt(lead.date)} · ${esc(readTime(lead))}</span><strong>閱讀完整報道 →</strong></div></a><div class="frontpage-secondary">${items.slice(1).map((n,index)=>{const v=visual(n.category);return `<a class="front-story secondary" href="news/${encodeURIComponent(n.id)}.html"><div class="front-story-meta"><span class="front-story-number">0${index+2}</span><span>${esc(v.icon)} ${esc(n.category)}</span></div><h2>${esc(n.title)}</h2><p>${esc(compact(n.excerpt||n.summary,120))}</p><small>${fmt(n.date)} · ${esc(readTime(n))}</small></a>`}).join('')}</div></div>`;
   }
 
   document.addEventListener('DOMContentLoaded',()=>{
