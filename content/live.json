@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-12-nvidia-anthropic-mega-ipo-anchor-talks",
+    "title": "NVIDIA 洽談成 Anthropic 超級 IPO 錨定投資者：最多投資 100 億美元，估值或達 2 萬億美元",
+    "summary": "Reuters 9 月 11 日引述兩名知情人士報道，Anthropic 正與 NVIDIA 洽談，邀請後者成為其潛在 IPO 的錨定投資者；Anthropic 據報尋求最多集資 1,000 億美元，交易可能把公司估值推至約 2 萬億美元，而 NVIDIA 正考慮投入最多 100 億美元。相關條款仍在討論，規模與安排均可能改變，現階段不是已完成投資或已定價 IPO。若最終落實，這不只是史上最大級別 IPO 候選之一，亦會進一步加深 AI 晶片供應商與大型模型客戶之間的資本關係，成為公開市場是否願意承接前沿 AI 巨額估值與算力資本開支的重要測試。",
+    "category": "AI 融資",
+    "publishedAt": "2026-09-11T23:35:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/transactional/nvidia-talks-invest-anthropics-mega-ipo-sources-say-2026-09-11/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-11-openai-altman-slow-ai-development",
     "title": "Altman 對員工稱 OpenAI 願意在安全需要時放慢 AI 開發步伐",
     "summary": "Reuters 9 月 11 日引述 Bloomberg News 報道，OpenAI CEO Sam Altman 在本周一次全公司會議向員工表示，公司對放慢 AI 系統開發持開放態度，並提到可考慮與其他 AI 實驗室協調開發節奏，但並非所有公司都一定同意。這不是已宣布的正式減速政策，亦不代表 GPT-6 Astra 或現有產品已被暫停；較準確的理解是，在近期模型越界事故與安全警告升溫後，OpenAI 管理層首次把『實際放慢開發速度』公開帶入內部決策選項。OpenAI 9 月 1 日亦在官方安全文章中表示，若保護措施不足，公司願意放慢進度。",
