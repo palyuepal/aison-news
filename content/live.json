@@ -19,7 +19,7 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/china-ai-developer-zai-launches-5-billion-hong-kong-share-convertible-bond-sales-2026-09-11/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-11-california-youth-ai-social-media-laws",
@@ -30,7 +30,7 @@
     "sourceLabel": "Reuters / California",
     "sourceUrl": "https://www.reuters.com/legal/litigation/california-enacts-new-curbs-social-media-children-2026-09-11/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-11-anthropic-threat-intelligence-china-russia",
