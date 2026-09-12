@@ -1,0 +1,127 @@
+/* AIson homepage layout V3 — clearer editorial hierarchy and calmer reading rhythm. */
+body[data-page="home"] .skip-link{
+  position:fixed!important;
+  top:8px!important;
+  left:8px!important;
+  z-index:300!important;
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  margin:0!important;
+  padding:10px 14px!important;
+  overflow:visible!important;
+  border-radius:10px;
+  background:var(--gold,var(--yellow));
+  color:var(--ink);
+  font-weight:900;
+  opacity:0!important;
+  pointer-events:none!important;
+  transform:translateY(-160%)!important;
+}
+body[data-page="home"] .skip-link:focus-visible{
+  opacity:1!important;
+  pointer-events:auto!important;
+  transform:translateY(0)!important;
+}
+
+/* One clear homepage story: hero → must-read → full edition. */
+body[data-page="home"] .home-signals{display:none}
+body[data-page="home"] .hero-grid{min-height:470px;padding:38px 0 28px}
+body[data-page="home"] .hero h1{font-size:clamp(44px,5.15vw,68px);line-height:1.04}
+body[data-page="home"] .editorial-feature{padding:42px 0 48px}
+body[data-page="home"] #today{padding:52px 0 46px}
+
+body[data-page="home"] .section-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:20px;
+  margin-bottom:22px;
+}
+body[data-page="home"] .section-head h2{margin:4px 0 5px;font-size:clamp(28px,3vw,40px);line-height:1.15}
+body[data-page="home"] .section-head p{margin:0;color:var(--muted)}
+
+/* Main edition with a stable editorial rail on desktop. */
+body[data-page="home"] .content-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 340px;
+  gap:24px;
+  align-items:start;
+}
+body[data-page="home"] .content-layout>.sidebar{
+  position:sticky;
+  top:104px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+body[data-page="home"] .news-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+body[data-page="home"] .news-card{min-height:228px;padding:16px}
+body[data-page="home"] .news-card h3{font-size:17px}
+body[data-page="home"] .news-card p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+
+body[data-page="home"] .live-panel{padding:20px}
+body[data-page="home"] .live-list{gap:10px}
+body[data-page="home"] .live-item{padding:13px}
+body[data-page="home"] .live-item h4{font-size:13px;line-height:1.48}
+body[data-page="home"] .live-item p{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:4;
+  overflow:hidden;
+  font-size:11px;
+  line-height:1.55;
+}
+body[data-page="home"] .newsletter{min-height:0}
+body[data-page="home"] .beehiiv-embed,
+body[data-page="home"] .beehiiv-embed iframe{max-height:200px}
+
+/* One horizontal topic filter instead of two competing filter rows. */
+body[data-page="home"] .filter-row{display:none}
+body[data-page="home"] .category-list{
+  display:flex;
+  gap:8px;
+  margin-top:24px;
+  padding:4px 0 8px;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+body[data-page="home"] .category-list::-webkit-scrollbar{display:none}
+body[data-page="home"] .category-pill{
+  flex:0 0 auto;
+  display:inline-flex;
+  width:auto;
+  gap:7px;
+  padding:8px 11px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#fff;
+}
+body[data-page="home"] .category-pill i{width:22px;height:22px}
+body[data-page="home"] .category-pill b{font-size:10px}
+body[data-page="home"] .return-cta{margin-top:28px}
+
+@media(max-width:980px){
+  body[data-page="home"] .content-layout{grid-template-columns:1fr}
+  body[data-page="home"] .content-layout>.sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}
+  body[data-page="home"] .content-layout>.sidebar .live-panel{grid-column:1/-1}
+}
+
+@media(max-width:760px){
+  body[data-page="home"] .hero-grid{min-height:auto;padding:28px 0 24px}
+  body[data-page="home"] .hero h1{font-size:40px;letter-spacing:-1.5px}
+  body[data-page="home"] .hero p{font-size:15px;line-height:1.7}
+  body[data-page="home"] .proof-row{margin-top:20px}
+  body[data-page="home"] .editorial-feature{padding:26px 0 32px}
+  body[data-page="home"] #today{padding:34px 0}
+  body[data-page="home"] .section-head{align-items:flex-start;flex-direction:column;margin-bottom:17px}
+  body[data-page="home"] .section-head h2{font-size:29px}
+  body[data-page="home"] .news-grid{grid-template-columns:1fr;gap:12px}
+  body[data-page="home"] .news-card{min-height:0}
+  body[data-page="home"] .content-layout>.sidebar{display:flex}
+  body[data-page="home"] .category-list{margin-top:18px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  body[data-page="home"] .skip-link{transition:none!important}
+}
