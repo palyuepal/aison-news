@@ -22,7 +22,6 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="alternate" type="application/rss+xml" title="AIson RSS" href="rss.xml">
   <link rel="preload" as="image" href="assets/mascot.webp" type="image/webp" fetchpriority="high">
-  <link rel="preconnect" href="https://subscribe-forms.beehiiv.com" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20260910-a11y2">
   <link rel="stylesheet" href="engagement.css?v=20260906-engagement">
   <style>
@@ -33,7 +32,7 @@
 <link rel="stylesheet" href="visual-system-v2.css?v=20260909-v3">
 <link rel="stylesheet" href="home-layout-v3.css?v=20260912-layout1">
 <link rel="stylesheet" href="home-newsroom-v4.css?v=20260912-color1">
-<link rel="stylesheet" href="home-signature-v5.css?v=20260913-signature1">
+<link rel="stylesheet" href="home-signature-v5.css?v=20260913-signature2">
 </head>
 <body data-page="home"><a class="skip-link" href="#main-content">跳至主要內容</a>
 <header class="topbar">
@@ -52,7 +51,7 @@
 <section class="section" id="today"><div class="container"><div class="section-head"><div><div class="mini-label">THE LATEST</div><h2>更多今日新聞</h2><p id="editionDate">最新編輯版</p></div><a class="edition-link" href="daily.html">完整今日 10 件事 →</a></div>
 <div class="category-list" id="categoryList"></div><div class="filter-row"><button class="filter-btn active" data-cat="全部">全部</button></div>
 <div class="content-layout"><div><div class="news-grid" id="newsGrid"></div><div class="empty" id="empty">暫時未有呢個分類嘅新聞。</div></div><aside class="sidebar"><div class="panel dark live-panel" id="aison-live"><div class="panel-kicker">AIson LIVE</div><h3 class="live-title"><span class="live-dot"></span>即時焦點</h3><p class="live-intro">未收錄入今日版、但值得留意嘅最新消息。</p><div class="live-list" id="liveList"></div><div class="live-rule">正式整理後會加入每日新聞。</div><div id="topList" hidden></div></div></aside></div>
-<div class="panel newsletter newsroom-newsletter" id="newsletter"><div><span class="morning-brief-kicker">AIson MORNING BRIEF</span><h3 class="morning-brief-title">重要 AI 新聞，朝早直接送到。</h3><p class="morning-brief-note">每日 3–5 分鐘，讀完今日重點、香港影響及 AIson 分析。</p></div><div class="beehiiv-embed" aria-label="訂閱 AIson 每日 AI 新聞"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="418139e2-4ed2-45c5-8d7e-d01b96fcfed3"></script></div></div>
+<div class="panel newsletter newsroom-newsletter" id="newsletter"><div><span class="morning-brief-kicker">AIson MORNING BRIEF</span><h3 class="morning-brief-title">重要 AI 新聞，朝早直接送到。</h3><p class="morning-brief-note">每日 3–5 分鐘，讀完今日重點、香港影響及 AIson 分析。</p></div><div class="newsletter-action"><span>免費訂閱 · 隨時取消</span><a href="https://subscribe-forms.beehiiv.com/v3/forms/418139e2-4ed2-45c5-8d7e-d01b96fcfed3" target="_blank" rel="noopener noreferrer">前往訂閱 <b>→</b></a><small>開啟 AIson 安全訂閱表格</small></div></div>
 </div></section>
 </main>
 <footer class="footer"><div class="container copyright"><span>© 2026 AIson · 香港人的每日 AI 新聞站</span><span><a href="guides.html">實用指南</a> · <a href="methodology.html">編採方法</a> · <a href="privacy.html">私隱</a> · <a href="rss.xml">RSS</a></span></div></footer>
@@ -69,5 +68,5 @@
   if(!items.length)return;
   root.innerHTML=items.map((n,i)=>`<a class="home-signal" href="news/${encodeURIComponent(n.id)}.html"><small>0${i+1} · ${esc(n.category||'AI NEWS')}</small><b>${esc(n.title)}</b><span>睇 30 秒重點 →</span></a>`).join('');
 })();
-</script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js?v=20260913-signature1").catch(()=>{})}</script>
+</script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js?v=20260913-signature2").catch(()=>{})}</script>
 </body></html>

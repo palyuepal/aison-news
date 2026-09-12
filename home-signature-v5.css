@@ -424,14 +424,50 @@ body[data-page="home"] .newsroom-newsletter .morning-brief-title{
   font-size:27px;
 }
 body[data-page="home"] .newsroom-newsletter .morning-brief-note{color:#3a4c5e}
-body[data-page="home"] .newsroom-newsletter .beehiiv-embed{
-  max-height:none;
-  overflow:visible;
-  border:1px solid rgba(7,26,51,.13);
+body[data-page="home"] .newsletter-action{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  min-height:150px;
+  padding:22px 24px;
+  border-radius:14px;
+  background:linear-gradient(145deg,#071a33,#0d3c70);
+  color:#fff;
+  box-shadow:0 14px 30px rgba(7,26,51,.18);
+}
+body[data-page="home"] .newsletter-action>span{
+  color:#a9c6e4;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.06em;
+}
+body[data-page="home"] .newsletter-action a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+  width:100%;
+  margin-top:11px;
+  padding:14px 17px;
   border-radius:10px;
   background:#fff;
+  color:var(--signature-ink);
+  font-size:17px;
+  font-weight:950;
+  text-decoration:none;
+  transition:transform .18s ease,background .18s ease;
 }
-body[data-page="home"] .newsroom-newsletter iframe{max-height:none}
+body[data-page="home"] .newsletter-action a:hover{
+  transform:translateY(-2px);
+  background:#f1f8ff;
+}
+body[data-page="home"] .newsletter-action a b{color:var(--signature-cobalt);font-size:22px}
+body[data-page="home"] .newsletter-action small{
+  margin-top:10px;
+  color:#9eb4cc;
+  font-size:10px;
+}
 
 @media(max-width:1050px){
   body[data-page="home"] .newsroom-header{grid-template-columns:minmax(300px,.8fr) minmax(0,1.2fr);column-gap:34px}
@@ -498,6 +534,7 @@ body[data-page="home"] .newsroom-newsletter iframe{max-height:none}
   body[data-page="home"] .panel.dark.live-panel{border-radius:15px}
   body[data-page="home"] .newsroom-newsletter{padding:23px 18px;border-radius:15px}
   body[data-page="home"] .newsroom-newsletter .morning-brief-title{font-size:23px}
+  body[data-page="home"] .newsletter-action{min-height:0;padding:18px}
 }
 
 @media(prefers-reduced-motion:reduce){
