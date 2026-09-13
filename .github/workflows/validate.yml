@@ -92,8 +92,13 @@ jobs:
           set -euo pipefail
           test -f live.html
           test -f live-timeline.js
+          test -f live-stream-v2.css
           grep -q 'AIson LIVE' live.html
           grep -q 'id="liveTimeline"' live.html
+          grep -q 'id="liveFilters"' live.html
+          grep -q 'live-stream-v2.css' live.html
+          grep -q '重大快訊' live-timeline.js
+          grep -q '持續跟進' live-timeline.js
           grep -q 'data/live.js' live.html
           grep -q 'live-timeline.js' live.html
           grep -q "href='live.html'" live.js

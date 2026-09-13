@@ -36,7 +36,7 @@ ACTION_VERDICTS={
 CORE_PAGE_META={
     'index.html':('AIson｜香港 AI 新聞・每日 10 件事','AIson 每日幫香港人篩選全球 AI 大事：每日 AI 10 件事、香港影響、AIson Take、分類、搜尋與長期保存。','每日 10 件最值得香港人知道的 AI 大事，連香港影響與 AIson Take。'),
     'daily.html':('今日 AI 10 件事｜香港 AI 新聞｜AIson','一頁睇晒 AIson 今日最重要的 10 件 AI 新聞、香港影響、行動判斷與 AIson Take。','一頁睇晒今日最值得知道的 10 件 AI 大事、香港影響與 AIson Take。'),
-    'live.html':('AIson LIVE｜今日 AI 即時更新','AIson LIVE 只收錄真正值得打斷你的重大 AI 即時消息，按香港時間整理成完整時間線。','重大、已核實、值得即時知道的 AI 新消息，按香港時間排列。'),
+    'live.html':('AIson LIVE｜今日 AI 即時更新','AIson LIVE 按香港時間整理已核實 AI 新聞流：重大快訊、即時更新與持續跟進，一條時間線睇清標題、內文及來源。','由重大快訊到日常 AI 動態，按香港時間閱讀標題、內文、分類及核實來源。'),
     'weekly.html':('本週 AI 深度整理｜香港 AI 新聞｜AIson','AIson Weekly 從最近 7 日報道整理 AI 世界的結構性改變、香港影響與延續中的故事線。','不只重排新聞，而是睇清本週 AI 世界真正改變了甚麼。'),
     'topics.html':('AI 主題追蹤與故事線｜AIson','追蹤 OpenAI、Google Gemini、Claude、NVIDIA、AI Agent、AI Video、AI Coding 等 AI 主題，沿時間線閱讀完整脈絡。','由第一次事件到最新進展，沿時間線追蹤 AI 主題和故事線。'),
     'archive.html':('AI 新聞庫｜香港 AI 新聞搜尋｜AIson','搜尋 AIson 已核實的 AI 新聞、來源、香港影響與過往報道，隨時回看 AI 事件脈絡。','搜尋和回看 AIson 已核實的 AI 新聞與來源。'),

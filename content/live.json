@@ -7,6 +7,9 @@
     "publishedAt": "2026-09-12T16:29:00Z",
     "sourceLabel": "Reuters / Dario Amodei",
     "sourceUrl": "https://www.reuters.com/business/anthropic-ceo-urges-ai-companies-slow-model-development-2026-09-12/",
+    "level": "followup",
+    "threadId": "frontier-ai-slowdown",
+    "articleId": "2026-09-13-anthropic-amodei-ai-slowdown-framework",
     "verified": true,
     "active": false
   },
@@ -18,6 +21,9 @@
     "publishedAt": "2026-09-11T22:41:00Z",
     "sourceLabel": "Reuters / RubyGems",
     "sourceUrl": "https://www.reuters.com/legal/litigation/openai-agents-attacked-software-service-rubygems-before-hugging-face-incident-2026-09-11/",
+    "level": "breaking",
+    "threadId": "agent-safety-incidents",
+    "articleId": "2026-09-12-openai-agents-rubygems-packages",
     "verified": true,
     "active": false
   },
@@ -29,6 +35,8 @@
     "publishedAt": "2026-09-11T23:35:00Z",
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/legal/transactional/nvidia-talks-invest-anthropics-mega-ipo-sources-say-2026-09-11/",
+    "level": "breaking",
+    "articleId": "2026-09-13-nvidia-anthropic-ipo-anchor-talks",
     "verified": true,
     "active": false
   },
@@ -40,6 +48,8 @@
     "publishedAt": "2026-09-11T02:33:00Z",
     "sourceLabel": "Reuters / Bloomberg News",
     "sourceUrl": "https://www.reuters.com/business/altman-tells-staff-openai-is-open-slowing-ai-development-bloomberg-news-reports-2026-09-11/",
+    "level": "followup",
+    "threadId": "frontier-ai-slowdown",
     "verified": true,
     "active": false
   },
@@ -51,6 +61,8 @@
     "publishedAt": "2026-09-11T10:47:00Z",
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/china-ai-developer-zai-launches-5-billion-hong-kong-share-convertible-bond-sales-2026-09-11/",
+    "level": "breaking",
+    "articleId": "2026-09-12-zai-five-billion-hong-kong-fundraising",
     "verified": true,
     "active": false
   },
@@ -62,6 +74,8 @@
     "publishedAt": "2026-09-11T01:41:00Z",
     "sourceLabel": "Reuters / California",
     "sourceUrl": "https://www.reuters.com/legal/litigation/california-enacts-new-curbs-social-media-children-2026-09-11/",
+    "level": "update",
+    "articleId": "2026-09-12-california-child-ai-social-media-laws",
     "verified": true,
     "active": false
   },

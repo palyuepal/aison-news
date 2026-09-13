@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>AIson LIVE｜今日 AI 即時更新</title>
 <!-- AISON SEO START -->
-<meta name="description" content="AIson LIVE 只收錄真正值得打斷你的重大 AI 即時消息，按香港時間整理成完整時間線。">
+<meta name="description" content="AIson LIVE 按香港時間整理已核實 AI 新聞流：重大快訊、即時更新與持續跟進，一條時間線睇清標題、內文及來源。">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="keywords" content="AI 新聞,香港 AI,人工智能,AIson,AIson LIVE｜今日 AI 即時更新">
 <meta property="og:type" content="website"><meta property="og:site_name" content="AIson"><meta property="og:locale" content="zh_HK">
-<meta property="og:title" content="AIson LIVE｜今日 AI 即時更新"><meta property="og:description" content="重大、已核實、值得即時知道的 AI 新消息，按香港時間排列。"><meta property="og:url" content="https://aison.hk/live.html">
+<meta property="og:title" content="AIson LIVE｜今日 AI 即時更新"><meta property="og:description" content="由重大快訊到日常 AI 動態，按香港時間閱讀標題、內文、分類及核實來源。"><meta property="og:url" content="https://aison.hk/live.html">
 <meta property="og:image" content="https://aison.hk/assets/icon-512.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="512"><meta property="og:image:height" content="512"><meta property="og:image:alt" content="AIson LIVE｜今日 AI 即時更新">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AIson LIVE｜今日 AI 即時更新"><meta name="twitter:description" content="重大、已核實、值得即時知道的 AI 新消息，按香港時間排列。"><meta name="twitter:image" content="https://aison.hk/assets/icon-512.png"><meta name="twitter:image:alt" content="AIson LIVE｜今日 AI 即時更新">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AIson LIVE｜今日 AI 即時更新"><meta name="twitter:description" content="由重大快訊到日常 AI 動態，按香港時間閱讀標題、內文、分類及核實來源。"><meta name="twitter:image" content="https://aison.hk/assets/icon-512.png"><meta name="twitter:image:alt" content="AIson LIVE｜今日 AI 即時更新">
 <link rel="canonical" href="https://aison.hk/live.html">
 <!-- AISON SEO END -->
 
@@ -25,6 +25,7 @@
     @media(max-width:560px){.live-hero-stats{gap:7px}.live-stat{padding:12px 10px}.live-stat b{font-size:22px}.live-stat span{font-size:9px}.timeline:before{left:17px}.timeline-item{grid-template-columns:36px minmax(0,1fr);gap:9px}.timeline-card{padding:15px}.timeline-card h3{font-size:17px}.archive-row{grid-template-columns:1fr;gap:4px}}
   </style>
 <link rel="stylesheet" href="visual-system-v2.css?v=20260909-v3">
+<link rel="stylesheet" href="live-stream-v2.css?v=20260913-stream1">
 </head>
 <body data-page="live">
 <header class="topbar">
@@ -39,26 +40,27 @@
 <main>
   <section class="page-hero live-page-hero">
     <div class="container live-hero-inner">
-      <div><div class="live-kicker"><span class="live-kicker-dot"></span> AIson LIVE · HONG KONG TIME</div><h1>重大 AI 消息，<br><em>即時睇清。</em></h1><p>唔係另一份新聞列表。只有真正值得打斷你、而且已經核實嘅重大 AI 新消息，先會進入 AIson LIVE。</p></div>
-      <div class="live-hero-stats" aria-label="AIson LIVE 統計"><div class="live-stat"><b id="liveTodayCount">0</b><span>今日重大更新</span></div><div class="live-stat"><b id="liveActiveCount">0</b><span>目前仍在 LIVE</span></div><div class="live-stat"><b id="liveStoredCount">0</b><span>最近保留紀錄</span></div></div>
+      <div><div class="live-kicker"><span class="live-kicker-dot"></span> AIson LIVE · HONG KONG TIME</div><h1>AI 新聞不斷更新，<br><em>沿時間線睇清。</em></h1><p>由重大快訊、產品動態到政策與行業跟進；每則先核實，再用標題、精簡內文及原始來源交代清楚。</p></div>
+      <div class="live-hero-stats" aria-label="AIson LIVE 統計"><div class="live-stat"><b id="liveTodayCount">0</b><span>今日更新</span></div><div class="live-stat"><b id="liveActiveCount">0</b><span>持續跟進</span></div><div class="live-stat"><b id="liveStoredCount">0</b><span>新聞流紀錄</span></div></div>
     </div>
   </section>
   <section class="section">
     <div class="container live-page-grid">
       <div>
-        <div class="live-day-head"><div><div class="mini-label">TODAY'S TIMELINE</div><h2 id="liveDateHeading">今日即時更新時間線</h2></div><div><div class="live-now-status" id="liveNowStatus">暫無重大快訊</div><p class="live-refresh" id="liveRefreshText">按香港時間排列</p></div></div>
+        <div class="live-day-head"><div><div class="mini-label">LIVE NEWS STREAM</div><h2 id="liveDateHeading">AI 即時新聞時間線</h2></div><div><div class="live-now-status" id="liveNowStatus">時間線持續更新</div><p class="live-refresh" id="liveRefreshText">按香港時間排列</p></div></div>
+        <div class="live-filters" id="liveFilters" aria-label="篩選即時新聞"></div>
         <div class="timeline" id="liveTimeline"></div>
         <section class="archive-block" id="liveArchiveBlock" hidden><div class="mini-label">RECENT ARCHIVE</div><h3>最近已歸檔更新</h3><div class="archive-list" id="liveArchiveList"></div></section>
       </div>
       <aside class="sidebar">
-        <div class="panel dark"><div class="panel-kicker">WHAT COUNTS AS LIVE</div><h3>咩先值得即時打斷你？</h3><div class="live-rule-list"><div><b>重大發布</b>主流模型、產品或平台出現實質能力／定價改變。</div><div><b>政策與安全</b>監管決定、重大安全事故或會影響大量使用者的政策。</div><div><b>資本與基建</b>大型收購、融資、晶片、算力或資料中心級別變化。</div></div></div>
-        <div class="panel"><div class="panel-kicker">HOW TO READ AISON</div><h3>08:00 整理 + 日內 LIVE</h3><p class="live-page-note"><strong>今日 AI 10 件事</strong>係每日早上整理好嘅完整版本；<strong>AIson LIVE</strong>就負責日內突然發生、唔應該等到聽日先知嘅重大更新。</p><a class="text-button" href="daily.html">睇今日 AI 10 件事 →</a></div>
+        <div class="panel dark"><div class="panel-kicker">HOW LIVE IS SORTED</div><h3>三層即時新聞</h3><div class="live-rule-list"><div><b>● 重大快訊</b>需要即刻知道、影響範圍較大嘅新消息。</div><div><b>◆ 即時更新</b>已核實、有資訊價值嘅產品、政策與行業動態。</div><div><b>↻ 持續跟進</b>同一事件有新資料，沿原有故事線繼續更新。</div></div></div>
+        <div class="panel"><div class="panel-kicker">HOW TO READ AISON</div><h3>新聞流 + 每日精選</h3><p class="live-page-note"><strong>AIson LIVE</strong>負責持續更新；<strong>今日 AI 10 件事</strong>就喺每日早上幫你重新篩選最重要內容。</p><a class="text-button" href="daily.html">睇今日 AI 10 件事 →</a></div>
       </aside>
     </div>
   </section>
 </main>
 <footer class="footer"><div class="container copyright"><span>© 2026 AIson · AIson LIVE</span><span><a href="daily.html">今日 AI 10 件事</a> · <a href="archive.html">新聞庫</a> · <a href="rss.xml">RSS</a></span></div></footer>
 <div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-card"><button class="close" id="closeSearch" aria-label="關閉">×</button><div class="mini-label">SEARCH AISON</div><h2>搜尋 AI 新聞</h2><label class="big-search">⌕<input id="searchInput" placeholder="例如：OpenAI、Gemini、NVIDIA…"></label><div class="search-results" id="searchResults"></div></div></div>
-<script src="data/live.js?v=20260905-live-timeline"></script><script src="live-timeline.js?v=20260905-live-timeline"></script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js").catch(()=>{})}</script>
+<script src="data/live.js?v=20260913-stream1"></script><script src="live-timeline.js?v=20260913-stream1"></script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js?v=20260913-stream1").catch(()=>{})}</script>
 </body>
 </html>
