@@ -11,6 +11,17 @@
     "active": true
   },
   {
+    "id": "2026-09-14-hyundai-nvidia-adas-2028",
+    "title": "Hyundai 自研自駕延至 2029：先用 NVIDIA Hyperion 10 推 Level 2+／2++",
+    "summary": "Hyundai Motor Group 9 月 13 日正式公布新的雙軌自駕策略，並獲 Reuters 報道：原定 2027 年推出的自家 Atria AI 駕駛輔助系統延至 2029 年下半年，期間將與 NVIDIA 合作，把以 DRIVE Hyperion 10 為基礎的 Level 2+ 系統於 2028 年上半年投入量產，Level 2++ 則目標 2028 年下半年。Hyundai 表示會利用 NVIDIA 方案累積的真實駕駛數據反過來訓練自家 Atria AI，而 Hyundai、Kia、42dot 與 Motional 的感測器架構亦會逐步圍繞 Hyperion 10 標準化。這不是完全外判自駕研發，但反映大型車廠在軟件進度落後時，正更深依賴 NVIDIA 的車載 AI 平台；對 NVIDIA 而言，價值亦由單賣晶片進一步延伸至車端運算平台、數據閉環與自駕開發基建。",
+    "category": "AI 汽車",
+    "publishedAt": "2026-09-13T00:02:00Z",
+    "sourceLabel": "Hyundai Motor Group / Reuters",
+    "sourceUrl": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001273",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-14-anthropic-selects-nasdaq-ipo",
     "title": "Anthropic 據報已選定 Nasdaq 作潛在 IPO 上市地點",
     "summary": "Reuters 9 月 13 日引述 Business Insider 報道，Anthropic 已選擇 Nasdaq 作為其潛在首次公開招股的上市交易所，消息來自熟悉公司上市計劃的人士。這代表 Anthropic 的 IPO 籌備由早前討論估值、集資規模與潛在錨定投資者，進一步推進至選定上市場地；但目前仍未見公司正式公布招股文件、上市日期、最終估值或定價，因此應視為上市準備中的實質一步，而不是 IPO 已確定完成。",
