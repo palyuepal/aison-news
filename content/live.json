@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-14-anthropic-selects-nasdaq-ipo",
+    "title": "Anthropic 據報已選定 Nasdaq 作潛在 IPO 上市地點",
+    "summary": "Reuters 9 月 13 日引述 Business Insider 報道，Anthropic 已選擇 Nasdaq 作為其潛在首次公開招股的上市交易所，消息來自熟悉公司上市計劃的人士。這代表 Anthropic 的 IPO 籌備由早前討論估值、集資規模與潛在錨定投資者，進一步推進至選定上市場地；但目前仍未見公司正式公布招股文件、上市日期、最終估值或定價，因此應視為上市準備中的實質一步，而不是 IPO 已確定完成。",
+    "category": "AI 融資",
+    "publishedAt": "2026-09-13T19:20:00Z",
+    "sourceLabel": "Reuters / Business Insider",
+    "sourceUrl": "https://www.reuters.com/business/anthropic-selects-nasdaq-ipo-business-insider-reports-2026-09-13/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-13-anthropic-amodei-slow-ai-development",
     "title": "Anthropic CEO Amodei 公開促前沿 AI 減速：提出第三方常駐評估與業界協調框架",
     "summary": "Reuters 9 月 12 日報道，Anthropic CEO Dario Amodei 在新文章《We Must Pace the Frontier》中呼籲前沿 AI 公司實際放慢模型能力提升速度，認為近期 Agent 越界、網絡攻擊與模型濫用案例顯示安全治理正追不上能力增長。Amodei 提出三步框架，包括讓獨立第三方評估者長期獲得接近內部員工級別的系統與風險資料存取、建立跨公司自願標準，並推動更廣泛的公共政策與國際協調。這不是 Anthropic 已宣布停止訓練或延後某個 Claude 型號，也不是整個行業已同意減速；較準確的理解是，在 OpenAI 管理層同樣公開把『必要時減速』列為選項後，另一間最主要前沿模型公司正式把『減慢能力提升本身』寫成公司領導層公開主張，令 AI 安全討論由抽象原則進一步走向開發節奏與外部監察機制。",
