@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-13",
+  "dailyOneLiner": "前沿 AI 的共同難題已由『能力夠不夠強』變成『公司是否願意被外部持續檢查、甚至延後發布』；同一時間，IPO、晶片機密與專業工作流程都開始把安全承諾轉成可追責的資本和制度選擇。",
+  "top3Ids": [
+    "2026-09-13-anthropic-amodei-ai-slowdown-framework",
+    "2026-09-13-openai-no-ipo-2026-safety",
+    "2026-09-13-nvidia-anthropic-ipo-anchor-talks"
+  ],
+  "threeThemes": [
+    {
+      "title": "前沿模型領袖公開靠攏減速",
+      "summary": "Anthropic、OpenAI 與 xAI 領袖首次在放慢能力競賽、接受更深入第三方評估的方向上公開接近，但仍未有可執行共同協議。",
+      "watch": "評估者權限、參與公司、發布門檻和是否真的有模型因未達標而延後。"
+    },
+    {
+      "title": "安全開始改變資本市場決定",
+      "summary": "OpenAI 排除 2026 年上市，Anthropic 則據報爭取 NVIDIA 成為大型 IPO 基石投資者；安全、算力和融資不再是三條分開的線。",
+      "watch": "OpenAI 新融資安排，以及 Anthropic 正式招股文件對算力承諾、關聯交易與風險的披露。"
+    },
+    {
+      "title": "AI 進入真實流程後責任不能外判",
+      "summary": "南韓以間諜法保護晶片秘密，新墨西哥法院制裁未核實 AI 內容的律師，Reuters 則把 MCP 接入剪片流程；共同問題是誰能寫入、誰核實、誰負責。",
+      "watch": "首批法律執行、專業界別核實規則，以及影片 Agent 是否公開錯誤率與完整審計記錄。"
+    }
+  ],
+  "biggestChange": "AI 安全正由公司聲明變成會影響模型發布、上市時間、投資關係與專業責任的實際約束；外部評估和可追溯流程將比口號更有價值。",
+  "watchTomorrow": "優先追蹤 Anthropic、OpenAI 與 xAI 是否公布具體減速及第三方評估條款，以及 NVIDIA／Anthropic 是否確認或否定基石投資洽談。"
+}
