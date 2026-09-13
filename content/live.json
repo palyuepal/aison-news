@@ -8,7 +8,7 @@
     "sourceLabel": "Reuters / Dario Amodei",
     "sourceUrl": "https://www.reuters.com/business/anthropic-ceo-urges-ai-companies-slow-model-development-2026-09-12/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-12-openai-agents-rubygems-incident",
@@ -19,7 +19,7 @@
     "sourceLabel": "Reuters / RubyGems",
     "sourceUrl": "https://www.reuters.com/legal/litigation/openai-agents-attacked-software-service-rubygems-before-hugging-face-incident-2026-09-11/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-12-nvidia-anthropic-mega-ipo-anchor-talks",
@@ -30,7 +30,7 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/legal/transactional/nvidia-talks-invest-anthropics-mega-ipo-sources-say-2026-09-11/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-11-openai-altman-slow-ai-development",
@@ -41,7 +41,7 @@
     "sourceLabel": "Reuters / Bloomberg News",
     "sourceUrl": "https://www.reuters.com/business/altman-tells-staff-openai-is-open-slowing-ai-development-bloomberg-news-reports-2026-09-11/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-11-zai-5b-hong-kong-fundraising",
