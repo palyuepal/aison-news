@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-14-trump-opposes-ai-slowdown",
+    "title": "Trump 明確反對前沿 AI 減速：美國政府優先守住對華領先",
+    "summary": "Reuters 9 月 13 日報道，美國總統 Donald Trump 被問到 AI 行業是否應放慢或加強監管時，明確表示不希望美國因安全憂慮而失去對中國的領先位置，並形容部分極端 AI 風險情境被誇大。他同時表示可以設置一定 guardrails，但未提出新的具體監管方案。這番表態直接回應 Anthropic CEO Dario Amodei、OpenAI CEO Sam Altman 與 Elon Musk 近期支持放慢前沿模型能力提升的呼籲，顯示美國行政部門目前更傾向把 AI 競爭力與國家安全放在減速倡議之前。這不是新的行政命令或正式法規，但屬於重要政策訊號：如果白宮維持這個方向，業界自願減速、跨公司安全協議與未來聯邦 AI 規管都可能面對更高政治阻力。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-13T14:28:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/europe/trump-says-very-negative-forces-raising-exaggerated-concerns-over-ai-2026-09-13/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-14-anthropic-selects-nasdaq-ipo",
     "title": "Anthropic 據報已選定 Nasdaq 作潛在 IPO 上市地點",
     "summary": "Reuters 9 月 13 日引述 Business Insider 報道，Anthropic 已選擇 Nasdaq 作為其潛在首次公開招股的上市交易所，消息來自熟悉公司上市計劃的人士。這代表 Anthropic 的 IPO 籌備由早前討論估值、集資規模與潛在錨定投資者，進一步推進至選定上市場地；但目前仍未見公司正式公布招股文件、上市日期、最終估值或定價，因此應視為上市準備中的實質一步，而不是 IPO 已確定完成。",
