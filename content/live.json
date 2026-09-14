@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-14-microsoft-ai-human-control-code",
+    "title": "Microsoft 公布 AI 行為守則草案：未來模型不得抗拒修正或關閉",
+    "summary": "Reuters 9 月 14 日報道，Microsoft 發布一份為自家未來 AI 模型制定的行為守則草案，核心要求包括模型不得抗拒人類修正或關閉、必須以人類可理解方式溝通，任何違反守則的行為都視為失敗。Microsoft AI CEO Mustafa Suleyman 表示，這份文件會像未來模型的『憲章』，公司會先進行六周公眾諮詢，之後用於訓練其自研模型。這不是 Microsoft 宣布停止 AI 開發，也不是新的法規；真正重要之處是，繼 Anthropic 與 OpenAI 提出放慢前沿 AI 發展後，另一間大型 AI 公司首次把『始終可被人類糾正與關閉』寫成具體訓練規範，顯示業界安全討論正由抽象風險轉向模型設計與可執行控制。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-14T13:02:00Z",
+    "sourceLabel": "Microsoft / Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/microsoft-drafts-code-conduct-keep-its-ai-under-human-control-2026-09-14/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-14-anthropic-second-profitable-quarter",
     "title": "Anthropic 據報連續第二季錄得正調整後營業收入：IPO 前盈利能力再獲驗證",
     "summary": "Reuters 9 月 14 日引述 Financial Times 報道，Anthropic 已向投資者表示，公司預計連續第二個季度錄得正調整後營業收入；報道亦指其毛利率在扣除與 Amazon 等分銷夥伴的收入分成及模型訓練成本前超過 80%。Reuters 尚未獨立核實相關財務數字，Anthropic 亦未即時公開回應，因此這應視為具可靠媒體來源、但仍待公司正式披露確認的財務更新。若數據最終獲確認，意義在於 Anthropic 的 IPO 敘事不再只依靠收入增長與估值，而開始出現可持續營運盈利的證據；在公司據報已選定 Nasdaq、並洽談大型錨定投資者之際，連續兩季正調整後營業收入會直接影響市場對其上市估值、資本效率與前沿模型高算力成本是否可被商業化覆蓋的判斷。",
