@@ -19,7 +19,7 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/europe/trump-says-very-negative-forces-raising-exaggerated-concerns-over-ai-2026-09-13/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-14-hyundai-nvidia-adas-2028",
@@ -30,7 +30,7 @@
     "sourceLabel": "Hyundai Motor Group / Reuters",
     "sourceUrl": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001273",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-13-anthropic-amodei-slow-ai-development",
