@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-14-anthropic-second-profitable-quarter",
+    "title": "Anthropic 據報連續第二季錄得正調整後營業收入：IPO 前盈利能力再獲驗證",
+    "summary": "Reuters 9 月 14 日引述 Financial Times 報道，Anthropic 已向投資者表示，公司預計連續第二個季度錄得正調整後營業收入；報道亦指其毛利率在扣除與 Amazon 等分銷夥伴的收入分成及模型訓練成本前超過 80%。Reuters 尚未獨立核實相關財務數字，Anthropic 亦未即時公開回應，因此這應視為具可靠媒體來源、但仍待公司正式披露確認的財務更新。若數據最終獲確認，意義在於 Anthropic 的 IPO 敘事不再只依靠收入增長與估值，而開始出現可持續營運盈利的證據；在公司據報已選定 Nasdaq、並洽談大型錨定投資者之際，連續兩季正調整後營業收入會直接影響市場對其上市估值、資本效率與前沿模型高算力成本是否可被商業化覆蓋的判斷。",
+    "category": "AI 融資",
+    "publishedAt": "2026-09-14T09:53:00Z",
+    "sourceLabel": "Reuters / Financial Times",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/anthropic-tells-investors-it-will-be-profitable-second-straight-quarter-ft-2026-09-13/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-14-anthropic-selects-nasdaq-ipo",
     "title": "Anthropic 據報已選定 Nasdaq 作潛在 IPO 上市地點",
     "summary": "Reuters 9 月 13 日引述 Business Insider 報道，Anthropic 已選擇 Nasdaq 作為其潛在首次公開招股的上市交易所，消息來自熟悉公司上市計劃的人士。這代表 Anthropic 的 IPO 籌備由早前討論估值、集資規模與潛在錨定投資者，進一步推進至選定上市場地；但目前仍未見公司正式公布招股文件、上市日期、最終估值或定價，因此應視為上市準備中的實質一步，而不是 IPO 已確定完成。",
