@@ -23,6 +23,8 @@ jobs:
           python -m pip install --disable-pip-version-check "Pillow>=11,<13"
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+      - name: Resolve official news images
+        run: python tools/enrich_official_visuals.py --limit 20
       - name: Build AIson with social cards and daily overview
         env:
           AISON_REQUIRE_SOCIAL_CARDS: '1'
