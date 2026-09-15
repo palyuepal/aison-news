@@ -6,6 +6,13 @@
 ## 08:05 — 核實
 每單新聞保留：原始 URL、來源名稱、發布日期。官方公告、監管文件、研究論文及公司文件優先；Reuters / AP / FT / Bloomberg / WSJ / The Verge 等可靠媒體作補充。重大數字與爭議性主張盡量交叉核實。
 
+### 圖片來源規則（B：半自動）
+- 有第一方官方來源頁時，將官方 URL 放入 `sourceUrl` 或 `references[]`。部署時會由官方頁的 Open Graph / Twitter metadata 嘗試取得主圖，下載並轉成網站本地 WebP。
+- 自動配圖只接受第一方官方公司／產品域名，例如 OpenAI、Anthropic、Google、Microsoft、NVIDIA、Meta、xAI、Tesla、SpaceX 等；Reuters、The Verge 等第三方媒體圖片不會自動搬用。
+- 官方頁沒有合適圖片、圖片太細、格式無法處理或下載失敗時，文章必須照常發布，網站自動退回 AIson 1200×630 品牌新聞圖。
+- 如編輯已提供 `visual`，自動配圖不得覆蓋。手動圖應使用本地 `assets/editorial/` 路徑，並保留 `alt`、`credit`、`sourceUrl`。
+- 圖片只作報道視覺輔助，不可用生成圖冒充現場照片、產品實機截圖或官方證據。
+
 ## 08:10 — AIson 標準報道格式
 每日 10 篇都必須是可獨立閱讀的完整報道，不把幾個欄位寫成同一句說話的改寫。固定內容層次：
 - 標題：直接交代最重要的新事實
