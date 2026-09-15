@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-16-meta-one-ai-subscriptions",
+    "title": "Meta 推出 Meta One：把 Instagram、Facebook、WhatsApp 的 AI 創作與商業工具綁入訂閱",
+    "summary": "Meta 9 月 15 日正式推出 Meta One 訂閱服務，整合 Instagram、Facebook、WhatsApp 與 Meta AI 的進階功能。個人方案把更高的 Meta AI 圖像／影片生成與 Instagram Restyle 等創作額度放入 Core（每月 7.99 美元）及 Premium（19.99 美元）；創作者與企業方案則加入驗證、進階分析、排程、團隊帳戶及 Meta Business Agent 回覆等工具。Meta 表示基本 app 功能與日常 Meta AI 使用仍然免費；Meta One 已逐步推出逾 50 項功能、累計 1,500 萬訂閱及試用，實際價格、功能與供應情況會因地區、app 與帳戶而異。這代表 Meta 正把高算力 AI 創作與社交媒體營運工具正式產品化收費，對依賴 IG／WhatsApp 接客與做內容的創作者和小生意尤其直接。",
+    "category": "AI 社交",
+    "publishedAt": "2026-09-15T17:51:00Z",
+    "sourceLabel": "Meta",
+    "sourceUrl": "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-15-us-senate-ai-kill-switch-guardrails",
     "title": "美國國會重啟前沿 AI 監管討論：參院擬推「關閉開關」及災難風險守則",
     "summary": "Associated Press 9 月 15 日報道，在 Anthropic、OpenAI 與 xAI 領袖要求加強監管後，參議院多數黨領袖 John Thune 與民主黨參議員 Amy Klobuchar 正討論跨黨派法案路徑，計劃要求前沿模型公司處理災難性風險並接受聯邦監督；參議員 John Kennedy 亦計劃在周三提出所謂「kill switch」措施，要求開發者確保系統可在必要時關閉。\n\n這仍是籌備中的立法動向，未有法案通過；特朗普反對減速，眾議院議長 Mike Johnson 亦對短期立法持保留。真正的新進展是國會由一般討論轉向具體監管工具與跨黨派協商，但選舉前時間表緊迫，能否表決仍高度不確定。",
