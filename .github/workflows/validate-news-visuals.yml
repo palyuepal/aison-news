@@ -1,0 +1,43 @@
+name: Validate AIson visual news
+on:
+  push:
+    paths:
+      - 'news-visuals-v1.js'
+      - 'news-visuals-v1.css'
+      - 'tools/patch_news_visuals.py'
+      - '.github/workflows/pages.yml'
+      - '.github/workflows/validate-news-visuals.yml'
+  pull_request:
+    paths:
+      - 'news-visuals-v1.js'
+      - 'news-visuals-v1.css'
+      - 'tools/patch_news_visuals.py'
+      - '.github/workflows/pages.yml'
+      - '.github/workflows/validate-news-visuals.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax checks
+        run: |
+          node --check news-visuals-v1.js
+          python -m py_compile tools/patch_news_visuals.py
+      - name: Verify build-time injection
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/aison-visual-fixture
+          mkdir -p /tmp/aison-visual-fixture/news
+          cp news-visuals-v1.js news-visuals-v1.css /tmp/aison-visual-fixture/
+          printf '<!doctype html><html><head></head><body data-page="home"></body></html>' > /tmp/aison-visual-fixture/index.html
+          printf '<!doctype html><html><head><base href="../"></head><body data-page="article"></body></html>' > /tmp/aison-visual-fixture/news/test.html
+          python tools/patch_news_visuals.py /tmp/aison-visual-fixture
+          grep -q 'news-visuals-v1.css' /tmp/aison-visual-fixture/index.html
+          grep -q 'news-visuals-v1.js' /tmp/aison-visual-fixture/index.html
+          grep -q 'news-visuals-v1.css' /tmp/aison-visual-fixture/news/test.html
+          grep -q 'news-visuals-v1.js' /tmp/aison-visual-fixture/news/test.html
