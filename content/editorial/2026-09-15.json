@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-15",
+  "dailyOneLiner": "今日 AI 的共同變化，是『人類控制』由口號走進模型守則、兒童帳戶與企業採購條款；同時，算力依賴、資本成本和詐騙速度都迫使制度追上技術。",
+  "top3Ids": [
+    "2026-09-15-microsoft-human-control-code",
+    "2026-09-15-eu-kids-act-ai-chatbot-age-limit",
+    "2026-09-15-enterprise-zero-data-retention-ai"
+  ],
+  "threeThemes": [
+    {
+      "title": "人類控制開始變成可寫入產品的規則",
+      "summary": "Microsoft 把可修正、可關閉寫入模型守則，歐盟則擬把 AI chatbot 納入兒童分級帳戶與年齡驗證。",
+      "watch": "企業承諾能否轉成獨立測試，以及 EU Kids Act 正式文本會否保留年齡門檻、教育豁免與私隱保障。"
+    },
+    {
+      "title": "企業採購由模型能力轉向資料生命週期",
+      "summary": "Palantir、NVIDIA 等據報收緊前沿模型使用，Claude 同時深入財富管理工具；資料保留、權限和審計成為採用關口。",
+      "watch": "供應商會否提供不可撤回、可審計的零資料保留，以及金融機構能否證明每個數字與操作可追溯。"
+    },
+    {
+      "title": "AI 擴張要面對算力集中、資本與跨境風險",
+      "summary": "Lagarde 警告歐洲依賴外來 AI，ASML High NA 鞏固設備瓶頸，AI 股回落則顯示安全與融資疑慮已進入市場價格。",
+      "watch": "數據中心與 High NA 計劃能否轉成實際容量、良率和現金流，G7 又會否提出可執行的共同安全安排。"
+    }
+  ],
+  "biggestChange": "大型 AI 供應商、監管者與企業客戶正同時把抽象的『安全』拆成具體控制：可關閉、按年齡限制、零資料保留、最小權限和跨境備援。",
+  "watchTomorrow": "優先追蹤 Microsoft 守則諮詢細節、EU Kids Act 正式公布文本，以及 Palantir、NVIDIA、Booz Allen 或模型公司是否公開確認資料保留政策。"
+}
