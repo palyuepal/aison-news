@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-09-15-us-senate-ai-kill-switch-guardrails",
+    "title": "美國國會重啟前沿 AI 監管討論：參院擬推「關閉開關」及災難風險守則",
+    "summary": "Associated Press 9 月 15 日報道，在 Anthropic、OpenAI 與 xAI 領袖要求加強監管後，參議院多數黨領袖 John Thune 與民主黨參議員 Amy Klobuchar 正討論跨黨派法案路徑，計劃要求前沿模型公司處理災難性風險並接受聯邦監督；參議員 John Kennedy 亦計劃在周三提出所謂「kill switch」措施，要求開發者確保系統可在必要時關閉。\n\n這仍是籌備中的立法動向，未有法案通過；特朗普反對減速，眾議院議長 Mike Johnson 亦對短期立法持保留。真正的新進展是國會由一般討論轉向具體監管工具與跨黨派協商，但選舉前時間表緊迫，能否表決仍高度不確定。",
+    "category": "AI 監管",
+    "publishedAt": "2026-09-15T04:01:39Z",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/ai-regulation-trump-congress-tech-politics-d2d1bac8e8666c681937665596a4f603",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-15-eu-kids-act-under15-ai-chatbots",
     "title": "歐盟擬禁 15 歲以下直接使用 AI Chatbot：EU Kids Act 把 ChatGPT 納入兒童網絡限制",
     "summary": "Reuters 9 月 14 日取得的歐盟委員會文件顯示，歐盟準備提出 EU Kids Act，計劃限制 15 歲以下兒童直接使用社交媒體、影片平台、AI chatbots 與網上遊戲，屬目前歐洲最全面的兒童網絡保護方案之一。草案設分級存取：15 歲起可自行開戶；13 至 14 歲只可在家長控制下使用受限帳戶；3 至 12 歲僅可使用由家長全面控制、符合兒童安全標準的服務；3 歲以下不得使用。平台亦可能須驗證年齡、避免成癮式設計、提供家長控制與有害內容舉報工具，並繳交監管費。細節仍可能在正式公布前修改，而且方案須經歐盟成員國及歐洲議會協商後才可能成法；但若方向維持，ChatGPT 等 AI 助手將首次與社交平台及遊戲一樣，被納入歐盟按年齡限制存取的核心監管框架。",
