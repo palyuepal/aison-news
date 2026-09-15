@@ -5,6 +5,7 @@ on:
       - 'news-visuals-v1.js'
       - 'news-visuals-v1.css'
       - 'tools/patch_news_visuals.py'
+      - 'tools/enrich_official_visuals.py'
       - '.github/workflows/pages.yml'
       - '.github/workflows/validate-news-visuals.yml'
   pull_request:
@@ -12,6 +13,7 @@ on:
       - 'news-visuals-v1.js'
       - 'news-visuals-v1.css'
       - 'tools/patch_news_visuals.py'
+      - 'tools/enrich_official_visuals.py'
       - '.github/workflows/pages.yml'
       - '.github/workflows/validate-news-visuals.yml'
 
@@ -26,7 +28,8 @@ jobs:
       - name: Syntax checks
         run: |
           node --check news-visuals-v1.js
-          python -m py_compile tools/patch_news_visuals.py
+          python -m py_compile tools/patch_news_visuals.py tools/enrich_official_visuals.py
+          python tools/enrich_official_visuals.py --self-test
       - name: Verify build-time injection
         shell: bash
         run: |
