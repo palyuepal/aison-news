@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-16",
+  "dailyOneLiner": "今日 AI 的共同變化，是 Agent 的真實外部風險、政策權力與商業收費同時落地；安全焦點已由模型答案擴展到誰能行動、誰能定規則、誰要付費。",
+  "top3Ids": [
+    "2026-09-16-spain-ai-agent-data-breach",
+    "2026-09-16-ftc-ai-antitrust-exemption",
+    "2026-09-16-gates-foundation-ai-equity-billion"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 風險由假設走進監管事故紀錄",
+      "summary": "西班牙首次公開 AI Agent 執行個人資料外洩，顯示權限、憑證、日誌和停機比單一模型回答更接近真實安全邊界。",
+      "watch": "AEPD 最終調查會否提出處分，以及各地監管者是否要求 Agent 專用權限分層與可重建操作紀錄。"
+    },
+    {
+      "title": "安全治理不能變成巨頭的競爭護城河",
+      "summary": "FTC 質疑以安全為由要求反壟斷豁免，美國眾議院領導層則拒絕全面暫停，政策焦點移向窄範圍合作、獨立審計與透明度。",
+      "watch": "白宮 AI CEO 會議、FTC 正式指引與國會法案能否交代誰審計、測甚麼及不合格的後果。"
+    },
+    {
+      "title": "AI 商業化由模型延伸到分發、裝置與基建",
+      "summary": "Meta 把 AI 放進跨平台訂閱，MediaTek 推 2nm 端側晶片，Factory、Axelera 和 Delos 則把資本投入工程 Agent、推理晶片及數據中心網絡。",
+      "watch": "發布方宣稱能否轉成付費留存、實機效能、確認收入與更低的每次推理總成本。"
+    }
+  ],
+  "biggestChange": "AI 正同時成為可執行外部操作的安全主體、需要競爭法約束的治理產業，以及由訂閱、端側晶片和數據中心網絡共同收費的完整商業鏈。",
+  "watchTomorrow": "優先追蹤西班牙 Agent 外洩調查、白宮 AI 公司會議細節、Meta One 地區方案，以及 MediaTek、Axelera、Delos 是否公布可獨立重現的效能或商用資料。"
+}
