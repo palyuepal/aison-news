@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-16-anthropic-australia-2gw-inference-campus",
+    "title": "Anthropic 首次落地澳洲：租用 2.16GW AI 推理園區，2027 年啟用",
+    "summary": "Reuters 9 月 16 日報道，Anthropic 已簽署其首份澳洲數據中心租賃協議，租用位於布里斯本以西約 250 公里的 2.16GW AI 數據中心園區，預計 2027 年開始運作，主要用於 AI 推理而非訓練。園區由新加坡 Zerra DC 開發，計劃採用可再生能源、封閉式風冷系統以降低用水；交易仍須通過澳洲外資審查。這是前沿模型公司把算力重心由訓練延伸至長期推理供應的實質部署：Chatbot、Agent 與企業 API 使用量增加後，服務速度、可用性與每 token 成本更取決於大規模推理基建。項目規模龐大，但尚未披露租期、實際上線容量、服務區域或對用戶價格的直接影響。",
+    "category": "AI 基建",
+    "publishedAt": "2026-09-16T05:00:00Z",
+    "sourceLabel": "Anthropic / Reuters",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/anthropic-signs-first-australia-data-centre-agreement-2026-09-16/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-16-meta-one-ai-subscriptions",
     "title": "Meta 推出 Meta One：把 Instagram、Facebook、WhatsApp 的 AI 創作與商業工具綁入訂閱",
     "summary": "Meta 9 月 15 日正式推出 Meta One 訂閱服務，整合 Instagram、Facebook、WhatsApp 與 Meta AI 的進階功能。個人方案把更高的 Meta AI 圖像／影片生成與 Instagram Restyle 等創作額度放入 Core（每月 7.99 美元）及 Premium（19.99 美元）；創作者與企業方案則加入驗證、進階分析、排程、團隊帳戶及 Meta Business Agent 回覆等工具。Meta 表示基本 app 功能與日常 Meta AI 使用仍然免費；Meta One 已逐步推出逾 50 項功能、累計 1,500 萬訂閱及試用，實際價格、功能與供應情況會因地區、app 與帳戶而異。這代表 Meta 正把高算力 AI 創作與社交媒體營運工具正式產品化收費，對依賴 IG／WhatsApp 接客與做內容的創作者和小生意尤其直接。",
