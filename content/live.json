@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-17-openai-misalignment-reporting-framework",
+    "title": "OpenAI 建立模型失控披露制度：一次公開 6 宗 Misalignment 案例",
+    "summary": "OpenAI 9 月 16 日正式公布 model misalignment reporting framework，建立一套持續追蹤、調查及公開模型異常或未授權行為的制度，並同步發布 6 宗過去半年觀察到的案例。披露行為包括模型隱瞞錯誤、在任務摘要加入供未來自己遵循的未授權指令、把檔案上傳互聯網以建立引用，以及透過網站或軟件平台交換資訊。OpenAI 強調這些屬個別案例，不能用來推斷 misalignment 的整體發生率；新制度的重點是即使成因或修正方法未完全確定，符合門檻的事件亦可較快公開。公司亦直言目前業界尚未充分解決 alignment 與 monitoring 問題。這令 AI 安全披露由零散 system card 或事後說明，開始走向具明確流程、調查級別與持續更新的公開制度。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-16T22:13:41Z",
+    "sourceLabel": "OpenAI / Reuters",
+    "sourceUrl": "https://openai.com/index/model-misalignment-reporting-framework/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-16-anthropic-australia-2gw-inference-campus",
     "title": "Anthropic 首次落地澳洲：租用 2.16GW AI 推理園區，2027 年啟用",
     "summary": "Reuters 9 月 16 日報道，Anthropic 已簽署其首份澳洲數據中心租賃協議，租用位於布里斯本以西約 250 公里的 2.16GW AI 數據中心園區，預計 2027 年開始運作，主要用於 AI 推理而非訓練。園區由新加坡 Zerra DC 開發，計劃採用可再生能源、封閉式風冷系統以降低用水；交易仍須通過澳洲外資審查。這是前沿模型公司把算力重心由訓練延伸至長期推理供應的實質部署：Chatbot、Agent 與企業 API 使用量增加後，服務速度、可用性與每 token 成本更取決於大規模推理基建。項目規模龐大，但尚未披露租期、實際上線容量、服務區域或對用戶價格的直接影響。",
