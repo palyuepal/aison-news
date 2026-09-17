@@ -54,7 +54,7 @@
     "sourceUrl": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
     "sourceType": "官方／可靠媒體",
     "references": [{"label":"Reuters","url":"https://www.reuters.com/legal/litigation/openais-rogue-agents-probed-hugging-face-weaknesses-two-months-before-major-hack-2026-09-16/"}],
-    "actionVerdict": "act",
+    "actionVerdict": "try-now",
     "actionReason": "有部署高權限 Agent 的團隊應立即檢查評測與 production 權限隔離。",
     "aisonScore": 9.7,
     "audienceImpact": {"worker": 3, "sme": 5, "creator": 2, "developer": 5}
@@ -84,7 +84,7 @@
     "sourceUrl": "https://www.reuters.com/business/media-telecom/anthropic-fold-claude-ai-features-into-one-interface-launches-document-tools-2026-09-16/",
     "sourceType": "可靠媒體",
     "references": [],
-    "actionVerdict": "try",
+    "actionVerdict": "try-now",
     "actionReason": "對大量文件／簡報工作者有直接效率價值，值得實測輸出品質。",
     "aisonScore": 9.5,
     "audienceImpact": {"worker": 5, "sme": 5, "creator": 5, "developer": 3}
