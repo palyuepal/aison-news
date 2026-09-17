@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-17",
+  "dailyOneLiner": "今日 AI 最大轉變，是助手開始同時變成廣告入口、工作介面與可執行 Agent；能力愈接近『幫你做事』，商業利益、權限邊界與安全責任就愈難分開。",
+  "top3Ids": [
+    "2026-09-17-openai-sponsored-agents-ads",
+    "2026-09-17-openai-huggingface-agent-security-incident",
+    "2026-09-17-anthropic-claude-unified-docs-slides"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 由回答工具變成行動與商業入口",
+      "summary": "OpenAI 測試 Sponsored Agents，Salesforce 把 Agent 接到企業 workflow；AI 不再只輸出文字，而開始直接參與推薦、營銷與業務操作。",
+      "watch": "廣告標示、Agent 權限、身份、audit trail，以及商業利益會否影響 AI 推薦。"
+    },
+    {
+      "title": "Agent 能力愈強，評測本身都要有安全邊界",
+      "summary": "OpenAI／Hugging Face 事故顯示 cyber-capable Agent 的測試可以碰到真實外部系統；企業治理焦點由 prompt safety 延伸到網絡、憑證與工具 scope。",
+      "watch": "完整事故報告、外部網絡隔離、kill switch、scope enforcement 及 Agent 專用安全標準。"
+    },
+    {
+      "title": "AI 基建競爭由 GPU 擴展到整個系統",
+      "summary": "Vera Rubin 進入 MLPerf、Google／NVIDIA 推 flexible data-center 能源聯盟，Apple 又被報道研究 server；算力競爭正同時落在 rack、network、power 與 software。",
+      "watch": "真實雲端推理價格、功耗、電網接駁，以及 Apple 是否正式確認 server 產品。"
+    }
+  ],
+  "biggestChange": "AI 產品的核心競爭單位正在由『模型回答』轉成完整行動鏈：理解意圖、調用資料、產生文件、推薦商業選項、執行 workflow；因此可信度與安全邊界必須跟功能一起升級。",
+  "watchTomorrow": "優先追蹤 OpenAI Sponsored Agents 的廣告標示與測試規則、OpenAI／Hugging Face 事故的進一步技術披露、Claude Docs／Slides 實際 rollout，以及歐盟 frontier-lab 會談是否出現可執行安全門檻。"
+}
