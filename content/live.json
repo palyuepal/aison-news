@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-20-ai-slowdown-antitrust-lawsuit",
+    "title": "AI 安全「減速」首遇反壟斷訴訟：Anthropic、OpenAI、xAI、Google 被指協調放慢開發",
+    "summary": "AP 9 月 19 日報道，一宗在美國加州北區聯邦法院提出的新訴訟，指控 Anthropic、OpenAI、xAI 與 Google 曾協調放慢 AI 能力開發，違反反壟斷法。原告把矛頭指向 Anthropic CEO Dario Amodei 9 月 12 日呼籲業界共同優先安全、以及其他公司領袖公開表示支持相關安全框架。案件尚未裁決，訴狀中的「非法協議」亦只是原告指控，不能視作已證實事實；公司尚未就案件向 AP 作出完整公開回應。這宗案件的即時意義是：前沿 AI 公司若要跨公司協調能力門檻、評測或減速機制，未來不只要面對監管與安全問題，亦可能被質疑是否限制競爭，令自願安全合作的法律界線更受關注。",
+    "category": "AI 法律",
+    "publishedAt": "2026-09-19T17:25:00Z",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/960af4308161eaf4ed13c383b0ce1c1b",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-20-openai-microsoft-publisher-doom-loop",
     "title": "OpenAI、Microsoft 內部曾警告 AI 或令出版業陷入「死亡循環」",
     "summary": "《金融時報》、《華爾街日報》及 The Verge 9 月 19 日報道，紐約時報在針對 OpenAI 與 Microsoft 的版權訴訟中公開新一批內部文件。材料顯示，兩家公司部分員工曾討論生成式 AI 減少新聞網站流量、削弱出版商收入，長遠亦可能令訓練模型所需的優質內容供應萎縮；另有 OpenAI 員工內部討論早期使用盜版書籍資料集的法律與披露風險。這些內容來自原告提交的訴訟材料及個別員工言論，不等於法院已裁定侵權，也不必然代表公司正式立場。OpenAI 主張相關訓練屬合理使用，並表示現行模型不再使用涉事 LibGen 資料；案件仍在審理。新文件的重要性在於，它把 AI 對出版商流量、授權與內容生態的風險，由外界推測推進至公司內部曾經明確討論的議題。",
@@ -206,17 +217,6 @@
     "publishedAt": "2026-09-13T14:28:00Z",
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/europe/trump-says-very-negative-forces-raising-exaggerated-concerns-over-ai-2026-09-13/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-14-hyundai-nvidia-adas-2028",
-    "title": "Hyundai 自研自駕延至 2029：先用 NVIDIA Hyperion 10 推 Level 2+／2++",
-    "summary": "Hyundai Motor Group 9 月 13 日正式公布新的雙軌自駕策略，並獲 Reuters 報道：原定 2027 年推出的自家 Atria AI 駕駛輔助系統延至 2029 年下半年，期間將與 NVIDIA 合作，把以 DRIVE Hyperion 10 為基礎的 Level 2+ 系統於 2028 年上半年投入量產，Level 2++ 則目標 2028 年下半年。Hyundai 表示會利用 NVIDIA 方案累積的真實駕駛數據反過來訓練自家 Atria AI，而 Hyundai、Kia、42dot 與 Motional 的感測器架構亦會逐步圍繞 Hyperion 10 標準化。這不是完全外判自駕研發，但反映大型車廠在軟件進度落後時，正更深依賴 NVIDIA 的車載 AI 平台；對 NVIDIA 而言，價值亦由單賣晶片進一步延伸至車端運算平台、數據閉環與自駕開發基建。",
-    "category": "AI 汽車",
-    "publishedAt": "2026-09-13T00:02:00Z",
-    "sourceLabel": "Hyundai Motor Group / Reuters",
-    "sourceUrl": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001273",
     "verified": true,
     "active": false
   }
