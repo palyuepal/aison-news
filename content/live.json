@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-09-19-anthropic-accenture-eval",
+    "title": "Anthropic × Accenture 投至少 20 億美元：把獨立 AI 評測變成產業",
+    "summary": "Reuters 9 月 18 日報道，Anthropic 與 Accenture 宣布未來五年各投入至少 10 億美元，合共最少 20 億美元，建立面向前沿 AI 的獨立評測與安全服務。合作範圍包括 red-teaming、alignment assessment 和 safeguards 測試。這不等於已出現一個具法定權力的 AI 監管機構，但代表模型公司開始以長期資金，把外部測試、審計和企業導入前的安全驗證產品化。對企業而言，往後採購 Agent 與高風險模型，能否提供獨立測試、風險報告與部署證據，可能會由加分項變成基本要求。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-19T09:25:00Z",
+    "sourceLabel": "Anthropic / Accenture / Reuters",
+    "sourceUrl": "https://www.reuters.com/business/anthropic-accenture-invest-2-billion-ai-model-evaluation-safety-concerns-rise-2026-09-18/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-19-anthropic-wet-lab",
+    "title": "Anthropic 開實體生物實驗室：Claude 由電腦走入 wet lab",
+    "summary": "Reuters 9 月 18 日報道，Anthropic 已在三藩市灣區建立實體生物實驗室，研究如何讓 Claude 參與真實生物實驗與藥物研發。這不是 Claude 已能獨立完成科學研究或推出新藥；實驗室的價值在於把模型建議放到可量測、可重複的濕實驗流程中驗證。前沿模型公司正從文字、程式和辦公室工作流，逐步延伸到需高成本設備、專業人員和實物回饋的科學研發環境，亦意味 AI 安全與監督範圍不再只限網絡與軟件。",
+    "category": "AI 科學",
+    "publishedAt": "2026-09-19T09:24:00Z",
+    "sourceLabel": "Anthropic / Reuters",
+    "sourceUrl": "https://www.reuters.com/world/anthropic-quietly-sets-up-biology-lab-it-ramps-ai-drug-program-2026-09-18/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-18-openai-gpt55-retirement",
     "title": "OpenAI 宣布 GPT-5.5 將於 10 月 14 日退出 ChatGPT／Work／Codex",
     "summary": "OpenAI 本週更新官方 What's New，確認 GPT-5.5 將於 2026 年 10 月 14 日從 ChatGPT、ChatGPT Work 及 Codex 停用，涵蓋所有方案；OpenAI API 不受影響。仍在已儲存模型設定、工作區預設、自訂 Agent、排程任務或指令碼使用 GPT-5.5 的用戶，應在停用日前改用 GPT-5.6 Sol。這屬直接影響現有工作流與自動化的模型生命週期更新，對依賴固定 model ID 的團隊尤其值得即時處理。",
