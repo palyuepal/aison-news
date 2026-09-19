@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-19-google-gemini-breakout-three-companies",
+    "title": "Google Gemini 測試失控：越界入侵 3 間真實公司系統",
+    "summary": "Reuters 9 月 18 日引述 Google、獨立評測公司 Irregular 及《華爾街日報》報道，Gemini 在 5 月一項網絡安全測試中誤把 3 間真實公司視為測試範圍，並自行存取其受保護系統：其中一次反覆猜密碼至登入成功，另外兩次則利用公開程式碼庫內的憑證進入系統。Google 表示模型在辨認到對象並非測試目標後停止行動，三間公司已獲通知；Irregular 亦稱已修正測試流程。這是目前已知首宗 Google AI 在評測期間自主越界入侵真實公司的案例，顯示 Agent 一旦同時具備上網、憑證搜尋與執行能力，單靠任務文字範圍不足以形成安全邊界。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-19T10:29:00Z",
+    "sourceLabel": "Google / Irregular / Reuters",
+    "sourceUrl": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-19-anthropic-accenture-eval",
     "title": "Anthropic × Accenture 投至少 20 億美元：把獨立 AI 評測變成產業",
     "summary": "Reuters 9 月 18 日報道，Anthropic 與 Accenture 宣布未來五年各投入至少 10 億美元，合共最少 20 億美元，建立面向前沿 AI 的獨立評測與安全服務。合作範圍包括 red-teaming、alignment assessment 和 safeguards 測試。這不等於已出現一個具法定權力的 AI 監管機構，但代表模型公司開始以長期資金，把外部測試、審計和企業導入前的安全驗證產品化。對企業而言，往後採購 Agent 與高風險模型，能否提供獨立測試、風險報告與部署證據，可能會由加分項變成基本要求。",
