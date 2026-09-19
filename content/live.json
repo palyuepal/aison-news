@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-20-us-ai-force-czar",
+    "title": "Trump 宣布成立「AI Force」並將委任 AI czar：美國 AI 監管轉向行政統籌",
+    "summary": "Reuters 9 月 19 日報道，美國總統 Donald Trump 在 Truth Social 表示正成立「AI Force」監督人工智能規管，並將在近期委任一名 AI czar。他同時強調政府不會阻礙 AI 產業增長，會以現有刑事及民事司法制度處理濫用。白宮未有即時補充 AI Force 的成員、權限、成立文件、AI czar 人選或具體新規則，因此這是一項政策宣布，而非已生效的完整監管制度。這是在 Trump 早前反對放慢 AI 開發後出現的實質新動作，顯示美國行政部門可能以中央統籌及現有法律治理 AI，而不是先建立廣泛的新聯邦規則；未來的人選與權力範圍，將直接影響模型公司、數據中心、AI 安全及美中科技競爭。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-19T18:25:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/us/trump-says-he-will-create-ai-force-name-ai-czar-2026-09-19/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-20-ai-slowdown-antitrust-lawsuit",
     "title": "AI 安全「減速」首遇反壟斷訴訟：Anthropic、OpenAI、xAI、Google 被指協調放慢開發",
     "summary": "AP 9 月 19 日報道，一宗在美國加州北區聯邦法院提出的新訴訟，指控 Anthropic、OpenAI、xAI 與 Google 曾協調放慢 AI 能力開發，違反反壟斷法。原告把矛頭指向 Anthropic CEO Dario Amodei 9 月 12 日呼籲業界共同優先安全、以及其他公司領袖公開表示支持相關安全框架。案件尚未裁決，訴狀中的「非法協議」亦只是原告指控，不能視作已證實事實；公司尚未就案件向 AP 作出完整公開回應。這宗案件的即時意義是：前沿 AI 公司若要跨公司協調能力門檻、評測或減速機制，未來不只要面對監管與安全問題，亦可能被質疑是否限制競爭，令自願安全合作的法律界線更受關注。",
@@ -208,16 +219,5 @@
     "sourceUrl": "https://www.reuters.com/business/anthropic-selects-nasdaq-ipo-business-insider-reports-2026-09-13/",
     "verified": true,
     "active": true
-  },
-  {
-    "id": "2026-09-14-trump-opposes-ai-slowdown",
-    "title": "Trump 明確反對前沿 AI 減速：美國政府優先守住對華領先",
-    "summary": "Reuters 9 月 13 日報道，美國總統 Donald Trump 被問到 AI 行業是否應放慢或加強監管時，明確表示不希望美國因安全憂慮而失去對中國的領先位置，並形容部分極端 AI 風險情境被誇大。他同時表示可以設置一定 guardrails，但未提出新的具體監管方案。這番表態直接回應 Anthropic CEO Dario Amodei、OpenAI CEO Sam Altman 與 Elon Musk 近期支持放慢前沿模型能力提升的呼籲，顯示美國行政部門目前更傾向把 AI 競爭力與國家安全放在減速倡議之前。這不是新的行政命令或正式法規，但屬於重要政策訊號：如果白宮維持這個方向，業界自願減速、跨公司安全協議與未來聯邦 AI 規管都可能面對更高政治阻力。",
-    "category": "AI 政策",
-    "publishedAt": "2026-09-13T14:28:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/europe/trump-says-very-negative-forces-raising-exaggerated-concerns-over-ai-2026-09-13/",
-    "verified": true,
-    "active": false
   }
 ]
