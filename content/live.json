@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-20-openai-microsoft-publisher-doom-loop",
+    "title": "OpenAI、Microsoft 內部曾警告 AI 或令出版業陷入「死亡循環」",
+    "summary": "《金融時報》、《華爾街日報》及 The Verge 9 月 19 日報道，紐約時報在針對 OpenAI 與 Microsoft 的版權訴訟中公開新一批內部文件。材料顯示，兩家公司部分員工曾討論生成式 AI 減少新聞網站流量、削弱出版商收入，長遠亦可能令訓練模型所需的優質內容供應萎縮；另有 OpenAI 員工內部討論早期使用盜版書籍資料集的法律與披露風險。這些內容來自原告提交的訴訟材料及個別員工言論，不等於法院已裁定侵權，也不必然代表公司正式立場。OpenAI 主張相關訓練屬合理使用，並表示現行模型不再使用涉事 LibGen 資料；案件仍在審理。新文件的重要性在於，它把 AI 對出版商流量、授權與內容生態的風險，由外界推測推進至公司內部曾經明確討論的議題。",
+    "category": "AI 法律",
+    "publishedAt": "2026-09-19T16:27:00Z",
+    "sourceLabel": "Court filings / Financial Times / Wall Street Journal / The Verge",
+    "sourceUrl": "https://www.ft.com/content/3df8edae-ae3b-4f56-83a3-40602edc17a3",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-19-nscale-ipo-ai-cloud-economics",
     "title": "NVIDIA 支持的 Nscale 申請美國上市：收入升 12 倍，但半年蝕逾 10 億美元",
     "summary": "Reuters 9 月 18 日根據 Nscale 的美國 IPO 文件報道，這間由 NVIDIA 支持的英國 AI 雲端與數據中心公司，2026 年上半年收入按年增長 1,252% 至 1.406 億美元，但同期淨虧損擴大至 10.2 億美元。公司計劃在紐約證券交易所以代號 NSCL 上市，尚未公布招股價與發售股數。文件亦顯示，Nscale 有 52% 收入來自單一客戶，反映 AI 基建需求高速增長的同時，資本消耗與客戶集中風險仍然極高。這宗 IPO 會成為市場檢驗 AI cloud、GPU 租賃及數據中心商業模式能否在重資本擴張下建立可持續盈利的重要案例。",
@@ -206,20 +217,6 @@
     "publishedAt": "2026-09-13T00:02:00Z",
     "sourceLabel": "Hyundai Motor Group / Reuters",
     "sourceUrl": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001273",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-13-anthropic-amodei-slow-ai-development",
-    "title": "Anthropic CEO Amodei 公開促前沿 AI 減速：提出第三方常駐評估與業界協調框架",
-    "summary": "Reuters 9 月 12 日報道，Anthropic CEO Dario Amodei 在新文章《We Must Pace the Frontier》中呼籲前沿 AI 公司實際放慢模型能力提升速度，認為近期 Agent 越界、網絡攻擊與模型濫用案例顯示安全治理正追不上能力增長。Amodei 提出三步框架，包括讓獨立第三方評估者長期獲得接近內部員工級別的系統與風險資料存取、建立跨公司自願標準，並推動更廣泛的公共政策與國際協調。這不是 Anthropic 已宣布停止訓練或延後某個 Claude 型號，也不是整個行業已同意減速；較準確的理解是，在 OpenAI 管理層同樣公開把『必要時減速』列為選項後，另一間最主要前沿模型公司正式把『減慢能力提升本身』寫成公司領導層公開主張，令 AI 安全討論由抽象原則進一步走向開發節奏與外部監察機制。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-12T16:29:00Z",
-    "sourceLabel": "Reuters / Dario Amodei",
-    "sourceUrl": "https://www.reuters.com/business/anthropic-ceo-urges-ai-companies-slow-model-development-2026-09-12/",
-    "level": "followup",
-    "threadId": "frontier-ai-slowdown",
-    "articleId": "2026-09-13-anthropic-amodei-ai-slowdown-framework",
     "verified": true,
     "active": false
   }
