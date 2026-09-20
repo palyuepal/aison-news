@@ -107,7 +107,7 @@
     "sourceLabel": "OpenAI",
     "sourceUrl": "https://developers.openai.com/zh-Hant/docs/whats-new",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-18-anthropic-claude-rd-26pct",
@@ -118,7 +118,7 @@
     "sourceLabel": "Anthropic / Reuters",
     "sourceUrl": "https://www.reuters.com/business/anthropic-says-claude-now-leads-quarter-work-building-its-next-ai-models-2026-09-17/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-17-openai-misalignment-reporting-framework",
@@ -129,7 +129,7 @@
     "sourceLabel": "OpenAI / Reuters",
     "sourceUrl": "https://openai.com/index/model-misalignment-reporting-framework/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-16-anthropic-australia-2gw-inference-campus",
@@ -140,7 +140,7 @@
     "sourceLabel": "Anthropic / Reuters",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/anthropic-signs-first-australia-data-centre-agreement-2026-09-16/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-16-meta-one-ai-subscriptions",
@@ -151,7 +151,7 @@
     "sourceLabel": "Meta",
     "sourceUrl": "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-15-us-senate-ai-kill-switch-guardrails",
@@ -163,7 +163,7 @@
     "sourceUrl": "https://apnews.com/article/ai-regulation-trump-congress-tech-politics-d2d1bac8e8666c681937665596a4f603",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-15-eu-kids-act-under15-ai-chatbots",
@@ -174,7 +174,7 @@
     "sourceLabel": "Reuters / European Commission draft",
     "sourceUrl": "https://www.reuters.com/legal/litigation/eu-is-set-propose-ban-social-media-ai-chatbots-under-15s-2026-09-14/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-15-anthropic-claude-financial-advisors",
@@ -185,7 +185,7 @@
     "sourceLabel": "Anthropic / Reuters",
     "sourceUrl": "https://www.reuters.com/business/anthropic-targets-financial-advisers-with-new-claude-tool-2026-09-14/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-15-enterprise-ai-zero-data-retention",
@@ -196,7 +196,7 @@
     "sourceLabel": "Reuters / The Information",
     "sourceUrl": "https://www.reuters.com/business/palantir-nvidia-curb-ai-model-use-over-data-fears-information-reports-2026-09-14/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-14-microsoft-ai-human-control-code",
@@ -207,7 +207,7 @@
     "sourceLabel": "Microsoft / Reuters",
     "sourceUrl": "https://www.reuters.com/legal/litigation/microsoft-drafts-code-conduct-keep-its-ai-under-human-control-2026-09-14/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-14-anthropic-second-profitable-quarter",
@@ -218,6 +218,6 @@
     "sourceLabel": "Reuters / Financial Times",
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/anthropic-tells-investors-it-will-be-profitable-second-straight-quarter-ft-2026-09-13/",
     "verified": true,
-    "active": true
+    "active": false
   }
 ]
