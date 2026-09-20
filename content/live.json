@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-09-20-california-ai-safety-executive-order",
+    "title": "加州啟動 AI「關閉開關」與獨立監察研究：11 月中前交可行性報告",
+    "summary": "加州州長 Gavin Newsom 9 月 18 日簽署行政命令，要求州政府加快檢視前沿 AI 安全規則，包括研究是否可要求最先進模型設置可中止系統的「kill switch」、讓獨立機構代表進駐主要 AI 實驗室驗證安全，以及要求公司申報失控或越界事件。命令本身未立即強制模型公司安裝關閉開關，而是要求相關部門諮詢專家，並在 11 月 16 日前就可行性提交報告。由於 OpenAI、Google、Anthropic 等主要模型公司均在加州設有重要業務，若研究最終變成州級規則，可能直接影響前沿模型的發布、事故披露與外部審核要求。",
+    "category": "AI 監管",
+    "publishedAt": "2026-09-20T04:12:00Z",
+    "sourceLabel": "California Governor / New York Times / AFP",
+    "sourceUrl": "https://indianexpress.com/article/technology/artificial-intelligence/california-governor-issues-executive-order-on-ai-safety-10885791/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-20-cxmt-fifth-gen-dram-mass-production",
+    "title": "中國 CXMT 第五代 DRAM 平台量產：單片晶圓可產多至少 50% 晶粒",
+    "summary": "Reuters 9 月 20 日報道，中國主要記憶體晶片商長鑫存儲（CXMT）宣布第五代 DRAM 技術平台已進入量產，並推出兩款 24Gb LPDDR5X 手機記憶體晶片。CXMT 表示，新晶片容量較上一代同類產品高 50%，新平台以 8Gb 晶片作基準，每片晶圓可生產的總晶粒數至少增加 50%，同時降低成本與耗電；公司利用 quadruple patterning 把關鍵儲存結構間距縮至 11.95nm。這些屬公司公布的量產與製程數據，仍要觀察實際良率、客戶採用與大規模出貨，但若表現獲市場驗證，將增加 Samsung、SK Hynix、Micron 以外的 DRAM 供應，亦顯示中國在受出口限制下持續推進本土記憶體製造能力。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-09-20T03:54:00Z",
+    "sourceLabel": "CXMT / Reuters",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/chinas-cxmt-says-new-memory-chip-platform-enters-mass-production-2026-09-20/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-20-china-ai-demand-imbalance",
     "title": "人行貨幣政策委員：AI 或令中國「供強需弱」失衡更深",
     "summary": "Reuters 9 月 19 日報道，中國人民銀行貨幣政策委員會委員黃益平表示，AI 更廣泛應用及創新加速，可能令中國「供給強、需求弱」的結構性失衡進一步惡化並延續。AI 熱潮今年支持中國出口，但內需仍受房地產低迷、地方政府債務及家庭審慎消費拖累。黃益平建議進一步推動市場化改革、提高居民收入佔比，並由中央增加借貸，協助地方政府、金融機構及企業修復資產負債表。這不是人民銀行正式政策決定，但反映中國政策圈開始把 AI 的宏觀影響由「提高生產力」擴展至產能、就業、消費與出口失衡；對與內地經濟高度連動的香港市場，AI 投資能否轉化為需求而非只增加供應，將成為更重要的觀察點。",
@@ -195,28 +217,6 @@
     "publishedAt": "2026-09-14T15:11:00Z",
     "sourceLabel": "Reuters / The Information",
     "sourceUrl": "https://www.reuters.com/business/palantir-nvidia-curb-ai-model-use-over-data-fears-information-reports-2026-09-14/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-14-microsoft-ai-human-control-code",
-    "title": "Microsoft 公布 AI 行為守則草案：未來模型不得抗拒修正或關閉",
-    "summary": "Reuters 9 月 14 日報道，Microsoft 發布一份為自家未來 AI 模型制定的行為守則草案，核心要求包括模型不得抗拒人類修正或關閉、必須以人類可理解方式溝通，任何違反守則的行為都視為失敗。Microsoft AI CEO Mustafa Suleyman 表示，這份文件會像未來模型的『憲章』，公司會先進行六周公眾諮詢，之後用於訓練其自研模型。這不是 Microsoft 宣布停止 AI 開發，也不是新的法規；真正重要之處是，繼 Anthropic 與 OpenAI 提出放慢前沿 AI 發展後，另一間大型 AI 公司首次把『始終可被人類糾正與關閉』寫成具體訓練規範，顯示業界安全討論正由抽象風險轉向模型設計與可執行控制。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-14T13:02:00Z",
-    "sourceLabel": "Microsoft / Reuters",
-    "sourceUrl": "https://www.reuters.com/legal/litigation/microsoft-drafts-code-conduct-keep-its-ai-under-human-control-2026-09-14/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-14-anthropic-second-profitable-quarter",
-    "title": "Anthropic 據報連續第二季錄得正調整後營業收入：IPO 前盈利能力再獲驗證",
-    "summary": "Reuters 9 月 14 日引述 Financial Times 報道，Anthropic 已向投資者表示，公司預計連續第二個季度錄得正調整後營業收入；報道亦指其毛利率在扣除與 Amazon 等分銷夥伴的收入分成及模型訓練成本前超過 80%。Reuters 尚未獨立核實相關財務數字，Anthropic 亦未即時公開回應，因此這應視為具可靠媒體來源、但仍待公司正式披露確認的財務更新。若數據最終獲確認，意義在於 Anthropic 的 IPO 敘事不再只依靠收入增長與估值，而開始出現可持續營運盈利的證據；在公司據報已選定 Nasdaq、並洽談大型錨定投資者之際，連續兩季正調整後營業收入會直接影響市場對其上市估值、資本效率與前沿模型高算力成本是否可被商業化覆蓋的判斷。",
-    "category": "AI 融資",
-    "publishedAt": "2026-09-14T09:53:00Z",
-    "sourceLabel": "Reuters / Financial Times",
-    "sourceUrl": "https://www.reuters.com/business/retail-consumer/anthropic-tells-investors-it-will-be-profitable-second-straight-quarter-ft-2026-09-13/",
     "verified": true,
     "active": false
   }
