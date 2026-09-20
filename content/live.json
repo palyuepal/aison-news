@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-20-us-china-ai-security-talks-new-york",
+    "title": "美中在紐約展開 AI 安全談判：關鍵礦產與關稅同枱",
+    "summary": "美國財長 Scott Bessent 與中國國務院副總理何立峰 9 月 20 日在紐約摩根大通總部展開會談，議程包括人工智能安全、關稅、貿易及關鍵礦產供應，並為 Trump 與習近平即將舉行的峰會做準備。談判亦涉及延長 11 月到期的貿易休戰，以及中國關鍵礦產出口流動等問題。這是高層對話已正式開始的新進展，但目前尚未公布共同聲明、AI 安全機制或任何協議；Reuters 引述分析指外界對重大突破預期有限，較可能先出現局部安排。AI 治理由企業自律與國內監管，進一步進入美中經貿與供應鏈談判層面，未來若形成模型防濫用、晶片或關鍵礦產安排，可能直接影響全球 AI 基建與出口限制。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-20T15:24:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/finance/us-treasurys-bessent-chinas-he-launch-talks-ai-trade-critical-minerals-2026-09-20/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-20-ai-infrastructure-off-balance-sheet-guarantees",
     "title": "Big Tech 以擔保支持最高 3,000 億美元 AI 基建：大量風險未直接列入資產負債表",
     "summary": "《金融時報》9 月 20 日分析顯示，Meta、Broadcom、NVIDIA 等科技公司在過去 12 個月利用資產剩餘價值擔保（residual value guarantees），支持最高約 3,000 億美元的 AI 數據中心與晶片融資，而相關最高風險承擔大多沒有以同等金額直接列入公司資產負債表。做法通常由特殊目的實體持有基建並發債，科技公司則保證晶片或數據中心未來至少值某個金額，令項目更容易以較低成本融資。案例包括 Meta 為 Hyperion 數據中心提供 280 億美元擔保、Broadcom 涉及 Anthropic 的 290 億美元安排，以及 NVIDIA 向 SB Energy 延伸約 1,050 億美元支持。這些數字是最高承擔，不代表公司必然支付全額；但若 AI 資產快速貶值、客戶違約或需求低於預期，表外擔保可能轉化為實際損失，評級機構亦已在槓桿分析中計入部分風險。",
@@ -206,17 +217,6 @@
     "publishedAt": "2026-09-14T18:17:00Z",
     "sourceLabel": "Reuters / European Commission draft",
     "sourceUrl": "https://www.reuters.com/legal/litigation/eu-is-set-propose-ban-social-media-ai-chatbots-under-15s-2026-09-14/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-15-anthropic-claude-financial-advisors",
-    "title": "Anthropic 推出 Claude for Financial Advisors：接駁 BlackRock、Schwab 等財富管理工具",
-    "summary": "Reuters 9 月 14 日報道，Anthropic 正式推出 Claude for Financial Advisors，面向理財顧問與財富管理機構，主打會前準備、投資組合檢視及會後跟進。新產品可接駁 BlackRock、Charles Schwab、Addepar，以及 Envestnet、iCapital、Orion、Wealthbox、Wealth.com 和 Zocks 等投資分析與財富管理軟件。這不是一般聊天介面換皮，而是把 Claude 更深入嵌入受監管金融工作流程；亦是在 OpenAI 近日推出面向投資銀行家與股票研究員的金融版本後，前沿模型公司在專業金融 vertical 的直接競爭升級。",
-    "category": "AI 金融",
-    "publishedAt": "2026-09-14T17:10:00Z",
-    "sourceLabel": "Anthropic / Reuters",
-    "sourceUrl": "https://www.reuters.com/business/anthropic-targets-financial-advisers-with-new-claude-tool-2026-09-14/",
     "verified": true,
     "active": false
   }
