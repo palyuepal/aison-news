@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-21-xai-x-search-result-based-pricing",
+    "title": "xAI 改 X Search 計費：由每次 API 調用改為按返回貼文與用戶逐項收費",
+    "summary": "xAI 官方定價頁確認，X Search 將於 9 月 21 日美西時間中午改用按搜尋結果數量計費：每取得 1,000 則貼文收 5 美元，每取得 1,000 個用戶資料收 10 美元，取代目前每 1,000 次工具調用收 5 美元的方式。搜尋或 thread fetch 返回的每一則貼文均會計費，包括 parent 與 quoted posts；user search 返回的每一個 profile 亦會計入。這不是模型 token 價格調整，而是 xAI server-side X Search 工具的收費單位改變，令同一次 Agent 任務的成本由固定 call 數轉為隨結果量變動。使用 Grok Responses API 抓取大量 X 貼文、討論串或用戶資料的團隊，應立即限制返回數量、重新估算每次工作流成本並加上用量警報。",
+    "category": "AI API",
+    "publishedAt": "2026-09-20T23:30:00Z",
+    "sourceLabel": "xAI",
+    "sourceUrl": "https://docs.x.ai/developers/pricing",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-jensen-huang-ai-doomsday-regulation",
     "title": "黃仁勳稱 2030 年 AI 滅世機會是「0%」：反對另立廣泛 AI 新法",
     "summary": "NVIDIA CEO 黃仁勳在 9 月 20 日播出的 CBS Sunday Morning 專訪中，明確否定 AI 會在 2030 年前摧毀人類的說法，形容這類短期末日敘事缺乏科學根據並過度戲劇化。他主張 AI 應在安全前提下盡快發展，同時認為現有產品責任、網絡安全及其他法律已可處理企業造成的傷害，毋須另設廣泛的新 AI 規管。這是黃仁勳的政策判斷，不是可驗證的風險保證；但在 Anthropic、OpenAI 等領袖呼籲放慢前沿能力發展之際，全球最大 AI 晶片供應商公開站到反對減速的一方，令業界對風險、監管與美中競爭的分歧更清晰。",
@@ -205,17 +216,6 @@
     "publishedAt": "2026-09-16T05:00:00Z",
     "sourceLabel": "Anthropic / Reuters",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/anthropic-signs-first-australia-data-centre-agreement-2026-09-16/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-16-meta-one-ai-subscriptions",
-    "title": "Meta 推出 Meta One：把 Instagram、Facebook、WhatsApp 的 AI 創作與商業工具綁入訂閱",
-    "summary": "Meta 9 月 15 日正式推出 Meta One 訂閱服務，整合 Instagram、Facebook、WhatsApp 與 Meta AI 的進階功能。個人方案把更高的 Meta AI 圖像／影片生成與 Instagram Restyle 等創作額度放入 Core（每月 7.99 美元）及 Premium（19.99 美元）；創作者與企業方案則加入驗證、進階分析、排程、團隊帳戶及 Meta Business Agent 回覆等工具。Meta 表示基本 app 功能與日常 Meta AI 使用仍然免費；Meta One 已逐步推出逾 50 項功能、累計 1,500 萬訂閱及試用，實際價格、功能與供應情況會因地區、app 與帳戶而異。這代表 Meta 正把高算力 AI 創作與社交媒體營運工具正式產品化收費，對依賴 IG／WhatsApp 接客與做內容的創作者和小生意尤其直接。",
-    "category": "AI 社交",
-    "publishedAt": "2026-09-15T17:51:00Z",
-    "sourceLabel": "Meta",
-    "sourceUrl": "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
     "verified": true,
     "active": false
   }
