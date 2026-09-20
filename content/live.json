@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-21-jensen-huang-ai-doomsday-regulation",
+    "title": "黃仁勳稱 2030 年 AI 滅世機會是「0%」：反對另立廣泛 AI 新法",
+    "summary": "NVIDIA CEO 黃仁勳在 9 月 20 日播出的 CBS Sunday Morning 專訪中，明確否定 AI 會在 2030 年前摧毀人類的說法，形容這類短期末日敘事缺乏科學根據並過度戲劇化。他主張 AI 應在安全前提下盡快發展，同時認為現有產品責任、網絡安全及其他法律已可處理企業造成的傷害，毋須另設廣泛的新 AI 規管。這是黃仁勳的政策判斷，不是可驗證的風險保證；但在 Anthropic、OpenAI 等領袖呼籲放慢前沿能力發展之際，全球最大 AI 晶片供應商公開站到反對減速的一方，令業界對風險、監管與美中競爭的分歧更清晰。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-20T20:29:00Z",
+    "sourceLabel": "CBS News / The Verge",
+    "sourceUrl": "https://www.cbsnews.com/video/nvidia-ceo-jensen-huang-says-he-agrees-with-trump-on-ai-doesnt-believe-it-will-end-the-world/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-meta-muse-permission-explanation",
     "title": "Meta Muse 被問資料來源時答錯：AI Agent 連自己用過甚麼權限也解釋不清",
     "summary": "The Verge 9 月 19 日報道，一名 Meta Muse 用戶表示，在未有印象授權讀取 Messages 的情況下，Muse 主動提及其對話內容；Muse 其後聲稱資料來自 Mac 通知預覽。Meta Superintelligence Labs 的 David Singleton 回應指，Muse 不會監察 Mac 通知，Messages 資料只會在用戶明確啟用權限後同步，並承認 Muse 對自身運作方式作出了錯誤解釋，Meta 已就此致歉及改善。現有資料不足以證明 Muse 未經授權讀取私訊，但事件揭示一個更實際的 Agent 風險：當助手連自己的資料來源、權限與系統流程也可能「作答案」，用戶不能把它的自我解釋當成審計證據，必須回到作業系統權限、連接設定及完整操作紀錄核實。",
@@ -205,18 +216,6 @@
     "publishedAt": "2026-09-15T17:51:00Z",
     "sourceLabel": "Meta",
     "sourceUrl": "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-15-us-senate-ai-kill-switch-guardrails",
-    "title": "美國國會重啟前沿 AI 監管討論：參院擬推「關閉開關」及災難風險守則",
-    "summary": "Associated Press 9 月 15 日報道，在 Anthropic、OpenAI 與 xAI 領袖要求加強監管後，參議院多數黨領袖 John Thune 與民主黨參議員 Amy Klobuchar 正討論跨黨派法案路徑，計劃要求前沿模型公司處理災難性風險並接受聯邦監督；參議員 John Kennedy 亦計劃在周三提出所謂「kill switch」措施，要求開發者確保系統可在必要時關閉。\n\n這仍是籌備中的立法動向，未有法案通過；特朗普反對減速，眾議院議長 Mike Johnson 亦對短期立法持保留。真正的新進展是國會由一般討論轉向具體監管工具與跨黨派協商，但選舉前時間表緊迫，能否表決仍高度不確定。",
-    "category": "AI 監管",
-    "publishedAt": "2026-09-15T04:01:39Z",
-    "sourceLabel": "Associated Press",
-    "sourceUrl": "https://apnews.com/article/ai-regulation-trump-congress-tech-politics-d2d1bac8e8666c681937665596a4f603",
-    "level": "followup",
     "verified": true,
     "active": false
   }
