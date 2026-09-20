@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-20-ai-infrastructure-off-balance-sheet-guarantees",
+    "title": "Big Tech 以擔保支持最高 3,000 億美元 AI 基建：大量風險未直接列入資產負債表",
+    "summary": "《金融時報》9 月 20 日分析顯示，Meta、Broadcom、NVIDIA 等科技公司在過去 12 個月利用資產剩餘價值擔保（residual value guarantees），支持最高約 3,000 億美元的 AI 數據中心與晶片融資，而相關最高風險承擔大多沒有以同等金額直接列入公司資產負債表。做法通常由特殊目的實體持有基建並發債，科技公司則保證晶片或數據中心未來至少值某個金額，令項目更容易以較低成本融資。案例包括 Meta 為 Hyperion 數據中心提供 280 億美元擔保、Broadcom 涉及 Anthropic 的 290 億美元安排，以及 NVIDIA 向 SB Energy 延伸約 1,050 億美元支持。這些數字是最高承擔，不代表公司必然支付全額；但若 AI 資產快速貶值、客戶違約或需求低於預期，表外擔保可能轉化為實際損失，評級機構亦已在槓桿分析中計入部分風險。",
+    "category": "AI 基建",
+    "publishedAt": "2026-09-20T07:00:00Z",
+    "sourceLabel": "Financial Times",
+    "sourceUrl": "https://www.ft.com/content/7f11afae-c4e3-4054-a65b-873f3647f563",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-20-california-ai-safety-executive-order",
     "title": "加州啟動 AI「關閉開關」與獨立監察研究：11 月中前交可行性報告",
     "summary": "加州州長 Gavin Newsom 9 月 18 日簽署行政命令，要求州政府加快檢視前沿 AI 安全規則，包括研究是否可要求最先進模型設置可中止系統的「kill switch」、讓獨立機構代表進駐主要 AI 實驗室驗證安全，以及要求公司申報失控或越界事件。命令本身未立即強制模型公司安裝關閉開關，而是要求相關部門諮詢專家，並在 11 月 16 日前就可行性提交報告。由於 OpenAI、Google、Anthropic 等主要模型公司均在加州設有重要業務，若研究最終變成州級規則，可能直接影響前沿模型的發布、事故披露與外部審核要求。",
@@ -206,17 +217,6 @@
     "publishedAt": "2026-09-14T17:10:00Z",
     "sourceLabel": "Anthropic / Reuters",
     "sourceUrl": "https://www.reuters.com/business/anthropic-targets-financial-advisers-with-new-claude-tool-2026-09-14/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-15-enterprise-ai-zero-data-retention",
-    "title": "Palantir、NVIDIA 等收緊前沿 AI 使用：企業開始把零資料保留變成採購門檻",
-    "summary": "Reuters 9 月 14 日引述 The Information 報道，Palantir、NVIDIA 與 Booz Allen Hamilton 等大型企業正因資料安全與知識產權風險限制或考慮限制 Anthropic、OpenAI 等前沿模型的使用。Palantir 據報要求 Anthropic 提供不可撤回的 zero-data-retention 保證，才會透過其軟件提供相關模型；NVIDIA 把 Anthropic 模型限制於較低敏感度工作，內部任務更多依賴自家 Nemotron；Booz Allen 則禁止員工把 Anthropic 商業模型用於專有網絡安全工作。相關公司尚未即時向 Reuters 回應，因此細節仍屬可靠媒體轉述，而非各公司正式政策公告；但趨勢清楚顯示，企業採用 AI 的競爭焦點正由純模型能力轉向資料保留、隔離環境與可驗證的企業安全承諾。",
-    "category": "AI 企業",
-    "publishedAt": "2026-09-14T15:11:00Z",
-    "sourceLabel": "Reuters / The Information",
-    "sourceUrl": "https://www.reuters.com/business/palantir-nvidia-curb-ai-model-use-over-data-fears-information-reports-2026-09-14/",
     "verified": true,
     "active": false
   }
