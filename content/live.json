@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-09-21-jane-street-ai-fund-loss-regulatory-scrutiny",
+    "title": "美英監管機構因 AI 基金爆倉加強審查：Jane Street 據報損失 150 億美元",
+    "summary": "《金融時報》9 月 21 日報道，美國聯儲局與英倫銀行正加強審查大型銀行對 Jane Street、Citadel Securities 等交易公司的風險承擔，導火線是 Jane Street 今年 7 月據報錄得 150 億美元損失。損失與前 OpenAI 研究員 Leopold Aschenbrenner 管理的 AI 主題對沖基金 Situational Awareness 幾乎崩潰有關：AI 與晶片股急跌迫使基金大規模平倉，槓桿風險再經銀行與做市商放大。監管機構正向銀行收集即日風險承擔、風控及抵押安排資料；美國證交會亦據報向多間銀行發出傳票，調查該基金的槓桿及與貸款方的通訊。聯儲局、英倫銀行、SEC 及 Jane Street 均未回應報道，因此 150 億美元等數字仍屬《金融時報》披露；但事件已把 AI 投資熱潮由估值波動推進至非銀行金融與系統性風險層面。",
+    "category": "AI 金融",
+    "publishedAt": "2026-09-21T09:29:00Z",
+    "sourceLabel": "Financial Times / Reuters",
+    "sourceUrl": "https://www.reuters.com/business/finance/us-fed-boe-step-up-scrutiny-bank-exposure-trading-firms-after-jane-street-loss-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-21-spain-ai-12-month-roadmap",
+    "title": "西班牙公布 12 個月 AI 路線圖：強化前沿模型防禦與數據主權",
+    "summary": "西班牙首相 Pedro Sánchez 9 月 21 日表示，掌握技術的企業不能自行監管人工智能，政府將在未來 12 個月推進一套兼顧負責任部署與經濟增長的 AI 路線圖。方向包括強化防禦性網絡安全，以應對他所稱具攻擊性的前沿 AI 模型；推動 AI gigafactory；以及與 Barcelona Supercomputing Centre 開發用於氣候、醫療及能源的新模型。他亦要求數據中心符合較高環境與能源標準、保障數據自主，並令所在地社區受惠。要講清楚：Sánchez 公布的是政策方向與擬議項目，尚未交代完整法例、預算與執行時間表；真正重要的是，西班牙正把 AI 安全、主權算力、能源負擔與公共利益放入同一個國家級框架。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-21T09:28:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/spanish-pm-sanchez-says-ai-industry-cannot-be-self-regulated-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-ecb-panetta-ai-inflation-distribution",
     "title": "ECB 管委：AI 收益流向將決定通脹方向，未必即時帶來物價下降",
     "summary": "歐洲央行管委、意大利央行行長 Fabio Panetta 9 月 21 日表示，央行不能只把人工智能視為提升生產力、壓低成本的工具，AI 所創造的收益最終流向僱員、企業還是少數資本持有人，會直接影響總需求與通脹。如果 AI 主要創造新工作並推高預期勞動收入，消費需求可能在生產力效益完全出現前先上升，令通脹壓力維持更久；相反，若自動化主導並削弱家庭收入與消費，AI 的通縮效應可能更早浮現。Panetta 是在烏克蘭國家銀行主辦的活動上提出這套分析；這不是歐洲央行已作出的利率決定或正式通脹預測，但顯示央行正把 AI 收益分配、就業與消費納入貨幣政策框架，而不再只看整體生產力數字。",
@@ -194,28 +216,6 @@
     "publishedAt": "2026-09-19T18:25:00Z",
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/us/trump-says-he-will-create-ai-force-name-ai-czar-2026-09-19/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-20-ai-slowdown-antitrust-lawsuit",
-    "title": "AI 安全「減速」首遇反壟斷訴訟：Anthropic、OpenAI、xAI、Google 被指協調放慢開發",
-    "summary": "AP 9 月 19 日報道，一宗在美國加州北區聯邦法院提出的新訴訟，指控 Anthropic、OpenAI、xAI 與 Google 曾協調放慢 AI 能力開發，違反反壟斷法。原告把矛頭指向 Anthropic CEO Dario Amodei 9 月 12 日呼籲業界共同優先安全、以及其他公司領袖公開表示支持相關安全框架。案件尚未裁決，訴狀中的「非法協議」亦只是原告指控，不能視作已證實事實；公司尚未就案件向 AP 作出完整公開回應。這宗案件的即時意義是：前沿 AI 公司若要跨公司協調能力門檻、評測或減速機制，未來不只要面對監管與安全問題，亦可能被質疑是否限制競爭，令自願安全合作的法律界線更受關注。",
-    "category": "AI 法律",
-    "publishedAt": "2026-09-19T17:25:00Z",
-    "sourceLabel": "Associated Press",
-    "sourceUrl": "https://apnews.com/article/960af4308161eaf4ed13c383b0ce1c1b",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-20-openai-microsoft-publisher-doom-loop",
-    "title": "OpenAI、Microsoft 內部曾警告 AI 或令出版業陷入「死亡循環」",
-    "summary": "《金融時報》、《華爾街日報》及 The Verge 9 月 19 日報道，紐約時報在針對 OpenAI 與 Microsoft 的版權訴訟中公開新一批內部文件。材料顯示，兩家公司部分員工曾討論生成式 AI 減少新聞網站流量、削弱出版商收入，長遠亦可能令訓練模型所需的優質內容供應萎縮；另有 OpenAI 員工內部討論早期使用盜版書籍資料集的法律與披露風險。這些內容來自原告提交的訴訟材料及個別員工言論，不等於法院已裁定侵權，也不必然代表公司正式立場。OpenAI 主張相關訓練屬合理使用，並表示現行模型不再使用涉事 LibGen 資料；案件仍在審理。新文件的重要性在於，它把 AI 對出版商流量、授權與內容生態的風險，由外界推測推進至公司內部曾經明確討論的議題。",
-    "category": "AI 法律",
-    "publishedAt": "2026-09-19T16:27:00Z",
-    "sourceLabel": "Court filings / Financial Times / Wall Street Journal / The Verge",
-    "sourceUrl": "https://www.ft.com/content/3df8edae-ae3b-4f56-83a3-40602edc17a3",
     "verified": true,
     "active": false
   }
