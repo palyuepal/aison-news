@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-22-openai-global-frontier-ai-standards",
+    "title": "OpenAI 倡全球前沿 AI 技術標準：自我改進、共同量度與事故通報納入規則",
+    "summary": "OpenAI 9 月 21 日提出，由美國牽頭建立一套可銜接各國制度的前沿 AI 國際技術標準，範圍包括模型遞歸式自我改進、共同風險量度，以及事故通報協議。公司把「放慢步伐」重新界定為：安全與 alignment 研究及部署必須走在能力增長之前，而非替產業設定固定速度。OpenAI CEO Sam Altman 預計本周三向聯合國安理會簡報 AI 與國際安全。要講清楚，這仍是企業政策提案，並非美國政府已採納的制度，亦不是已簽署的國際協議；但它把近期抽象的 AI 減速爭議，推進至可量度、可通報、可跨國協調的具體規則。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-21T17:24:00Z",
+    "sourceLabel": "OpenAI / Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/government/openai-calls-us-take-lead-global-efforts-develop-technical-standards-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-22-gates-ai-language-data-coalition",
     "title": "蓋茨基金會聯同 OpenAI、Google、Anthropic：60 方共建低資源語言 AI 數據",
     "summary": "Associated Press 9 月 21 日報道，蓋茨基金會召集 60 個機構成立新聯盟，成員包括 Anthropic、Google、OpenAI Foundation、Mozilla Data Collective，以及企業、慈善組織與其他已在擴展 AI 語言覆蓋的團體。聯盟目標是在五年內讓超過 30 億人受惠，重點不是再訓練一個單一模型，而是協調低資源語言的語音、文化及在地數據收集，減少模型由不具代表性的網絡內容學習所造成的翻譯與文化偏差。Google 現有 Project Vaani 已計劃在印度各地收集逾 15 萬小時語音；Anthropic 亦承認其產品在不少非洲語言仍然落後。要講清楚，聯盟的治理細節仍在制定，現階段未公布統一數據庫、授權條款或完成日期；秘書處將追蹤各成員承諾。真正的重要性，是幾間主要 AI labs 首次在語言數據代表性上加入同一個大規模協作框架。",
@@ -205,17 +216,6 @@
     "publishedAt": "2026-09-21T00:25:00Z",
     "sourceLabel": "Wall Street Journal / Israel Open University / Times of Israel",
     "sourceUrl": "https://www.wsj.com/world/middle-east/how-ai-is-reshaping-election-campaigns-in-israel-f5a2e79a",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-21-xai-x-search-result-based-pricing",
-    "title": "xAI 改 X Search 計費：由每次 API 調用改為按返回貼文與用戶逐項收費",
-    "summary": "xAI 官方定價頁確認，X Search 將於 9 月 21 日美西時間中午改用按搜尋結果數量計費：每取得 1,000 則貼文收 5 美元，每取得 1,000 個用戶資料收 10 美元，取代目前每 1,000 次工具調用收 5 美元的方式。搜尋或 thread fetch 返回的每一則貼文均會計費，包括 parent 與 quoted posts；user search 返回的每一個 profile 亦會計入。這不是模型 token 價格調整，而是 xAI server-side X Search 工具的收費單位改變，令同一次 Agent 任務的成本由固定 call 數轉為隨結果量變動。使用 Grok Responses API 抓取大量 X 貼文、討論串或用戶資料的團隊，應立即限制返回數量、重新估算每次工作流成本並加上用量警報。",
-    "category": "AI API",
-    "publishedAt": "2026-09-20T23:30:00Z",
-    "sourceLabel": "xAI",
-    "sourceUrl": "https://docs.x.ai/developers/pricing",
     "verified": true,
     "active": true
   }
