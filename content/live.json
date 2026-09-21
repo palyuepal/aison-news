@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-09-22-gates-ai-language-data-coalition",
+    "title": "蓋茨基金會聯同 OpenAI、Google、Anthropic：60 方共建低資源語言 AI 數據",
+    "summary": "Associated Press 9 月 21 日報道，蓋茨基金會召集 60 個機構成立新聯盟，成員包括 Anthropic、Google、OpenAI Foundation、Mozilla Data Collective，以及企業、慈善組織與其他已在擴展 AI 語言覆蓋的團體。聯盟目標是在五年內讓超過 30 億人受惠，重點不是再訓練一個單一模型，而是協調低資源語言的語音、文化及在地數據收集，減少模型由不具代表性的網絡內容學習所造成的翻譯與文化偏差。Google 現有 Project Vaani 已計劃在印度各地收集逾 15 萬小時語音；Anthropic 亦承認其產品在不少非洲語言仍然落後。要講清楚，聯盟的治理細節仍在制定，現階段未公布統一數據庫、授權條款或完成日期；秘書處將追蹤各成員承諾。真正的重要性，是幾間主要 AI labs 首次在語言數據代表性上加入同一個大規模協作框架。",
+    "category": "AI 數據",
+    "publishedAt": "2026-09-21T16:30:00Z",
+    "sourceLabel": "Gates Foundation / Associated Press",
+    "sourceUrl": "https://apnews.com/article/artificial-intelligence-anthropic-openai-gates-aefb021bede3b02c83890f65cd540fd0",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-22-aikido-altar-local-cybersecurity-model",
+    "title": "Aikido 推出本地 AI 網絡安全模型 Altar：敏感程式碼毋須交雲端",
+    "summary": "比利時網絡安全公司 Aikido 9 月 21 日發布開放權重模型 Altar，專門用於程式碼及網絡安全工作，主打企業可在自己的基建上本地部署，毋須把敏感程式碼交給外部 AI 供應商。Altar 是中國 Z.AI 開放模型 GLM-5.3 的壓縮及客製版本，Aikido 表示會公開供本地部署，並將用於包括比利時銀行 Belfius 在內的客戶方案。這項更新有實際用途：金融、醫療及受監管企業可在較嚴格的資料邊界內使用 AI 找漏洞；但公司尚未公開完整獨立測試、硬件需求與安全防濫用細節，因此不能只憑開放權重便假設模型一定更安全。真正要比較的是本地部署能否同時提供足夠偵測能力、審計紀錄與存取控制。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-21T16:29:00Z",
+    "sourceLabel": "Aikido / Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/belgiums-aikido-launches-cybersecurity-ai-model-demand-local-tools-grows-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-googlebook-gemini-preorders",
     "title": "Googlebook 開放預購：$899 起，把 Gemini 與 Android 帶進高階手提電腦",
     "summary": "Google 9 月 21 日正式開放首批 Googlebook 預購，這個全新高階手提電腦類別由 Acer、Asus、Dell、HP 及 Lenovo 製造，起價 899 美元，10 月 4 日開售。裝置採用 Android 技術棧與 ChromeOS 的桌面基礎，內置 Gemini，可協助撰寫及整理文字、理解螢幕內容，亦可接續 Android 手機上的工作；首批型號使用 Intel 或 Qualcomm 處理器。The Verge 報道，售價介乎 899 至 1,299 美元，Google 承諾最長 10 年更新，並附一年 Google AI Pro。要講清楚，Googlebook 不是 Google 自製單一型號，也不是單純為 Chromebook 改名，而是 Google 與多間廠商共同建立的新高階產品規格。真正考驗是，899 美元以上的硬件能否吸引足夠桌面級應用加入；目前部分專業創作軟件仍只有手機版或功能有限。",
@@ -194,28 +216,6 @@
     "publishedAt": "2026-09-20T23:30:00Z",
     "sourceLabel": "xAI",
     "sourceUrl": "https://docs.x.ai/developers/pricing",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-21-jensen-huang-ai-doomsday-regulation",
-    "title": "黃仁勳稱 2030 年 AI 滅世機會是「0%」：反對另立廣泛 AI 新法",
-    "summary": "NVIDIA CEO 黃仁勳在 9 月 20 日播出的 CBS Sunday Morning 專訪中，明確否定 AI 會在 2030 年前摧毀人類的說法，形容這類短期末日敘事缺乏科學根據並過度戲劇化。他主張 AI 應在安全前提下盡快發展，同時認為現有產品責任、網絡安全及其他法律已可處理企業造成的傷害，毋須另設廣泛的新 AI 規管。這是黃仁勳的政策判斷，不是可驗證的風險保證；但在 Anthropic、OpenAI 等領袖呼籲放慢前沿能力發展之際，全球最大 AI 晶片供應商公開站到反對減速的一方，令業界對風險、監管與美中競爭的分歧更清晰。",
-    "category": "AI 政策",
-    "publishedAt": "2026-09-20T20:29:00Z",
-    "sourceLabel": "CBS News / The Verge",
-    "sourceUrl": "https://www.cbsnews.com/video/nvidia-ceo-jensen-huang-says-he-agrees-with-trump-on-ai-doesnt-believe-it-will-end-the-world/",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-21-meta-muse-permission-explanation",
-    "title": "Meta Muse 被問資料來源時答錯：AI Agent 連自己用過甚麼權限也解釋不清",
-    "summary": "The Verge 9 月 19 日報道，一名 Meta Muse 用戶表示，在未有印象授權讀取 Messages 的情況下，Muse 主動提及其對話內容；Muse 其後聲稱資料來自 Mac 通知預覽。Meta Superintelligence Labs 的 David Singleton 回應指，Muse 不會監察 Mac 通知，Messages 資料只會在用戶明確啟用權限後同步，並承認 Muse 對自身運作方式作出了錯誤解釋，Meta 已就此致歉及改善。現有資料不足以證明 Muse 未經授權讀取私訊，但事件揭示一個更實際的 Agent 風險：當助手連自己的資料來源、權限與系統流程也可能「作答案」，用戶不能把它的自我解釋當成審計證據，必須回到作業系統權限、連接設定及完整操作紀錄核實。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-20T17:27:00Z",
-    "sourceLabel": "Meta / The Verge",
-    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
     "verified": true,
     "active": true
   }
