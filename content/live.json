@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-21-softbank-bonds-openai-third-tranche",
+    "title": "SoftBank 發債逾 100 億美元押注 OpenAI：為第三批投資籌集資金",
+    "summary": "Reuters 9 月 21 日引述發債條款文件報道，SoftBank 已啟動 100 億美元及 10 億歐元的高級無抵押債券發行。美元債分為 3.5 年、5.5 年及 7.5 年期，歐元債分為 4 年及 6 年期；債券預計 9 月 24 日定價、9 月 29 日交收，所得資金主要用於支付 10 月 1 日完成的 OpenAI 第三批 100 億美元追加投資，另有部分作一般企業用途。SoftBank 官方早前公布，這輪追加投資總額為 300 億美元，分三批各 100 億美元支付；完成後累計投資預計達 646 億美元、持股約 13%。今次不是 OpenAI 新一輪融資，亦不代表債券已完成定價，但顯示 SoftBank 正以大規模債務市場融資兌現對單一 AI 公司的集中押注，利息成本、OpenAI 估值及未來流動性將更直接影響其財務風險。",
+    "category": "AI 融資",
+    "publishedAt": "2026-09-21T03:27:00Z",
+    "sourceLabel": "Reuters / SoftBank Group",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/softbank-group-launches-over-10-billion-bonds-openai-investment-term-sheet-shows-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-us-china-ai-incident-notification-proposal",
     "title": "美國向中國提出 AI 事故通報機制：涉及國家安全事件或需互相通知",
     "summary": "美國財長 Scott Bessent 在 9 月 20 日紐約會談後表示，美方已向中國提出新的 AI 事故「notification mechanism」，當人工智能事件可能影響國家安全時，由雙方建立通報安排。他稱目標是讓全球兩大 AI 強國由不透明走向更高透明度，並建立對共同目標與威脅的理解。要講清楚：這目前是美國提出的方案，中方尚未公開同意，參與機構、事故門檻、資料內容、時限與保密安排亦未公布，不等於熱線或條約已經成立。若最終落地，這可能成為類似軍事危機熱線的 AI 風險基建，涵蓋模型越界、網絡攻擊、生化或核武濫用等跨境高風險事件；下一個關鍵是 Trump 與習近平本周四會面會否確認機制及執行細節。",
@@ -205,17 +216,6 @@
     "publishedAt": "2026-09-19T09:24:00Z",
     "sourceLabel": "Anthropic / Reuters",
     "sourceUrl": "https://www.reuters.com/world/anthropic-quietly-sets-up-biology-lab-it-ramps-ai-drug-program-2026-09-18/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-18-openai-gpt55-retirement",
-    "title": "OpenAI 宣布 GPT-5.5 將於 10 月 14 日退出 ChatGPT／Work／Codex",
-    "summary": "OpenAI 本週更新官方 What's New，確認 GPT-5.5 將於 2026 年 10 月 14 日從 ChatGPT、ChatGPT Work 及 Codex 停用，涵蓋所有方案；OpenAI API 不受影響。仍在已儲存模型設定、工作區預設、自訂 Agent、排程任務或指令碼使用 GPT-5.5 的用戶，應在停用日前改用 GPT-5.6 Sol。這屬直接影響現有工作流與自動化的模型生命週期更新，對依賴固定 model ID 的團隊尤其值得即時處理。",
-    "category": "AI 產品",
-    "publishedAt": "2026-09-18T09:20:00Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://developers.openai.com/zh-Hant/docs/whats-new",
     "verified": true,
     "active": false
   }
