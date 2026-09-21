@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-21-us-china-ai-incident-notification-proposal",
+    "title": "美國向中國提出 AI 事故通報機制：涉及國家安全事件或需互相通知",
+    "summary": "美國財長 Scott Bessent 在 9 月 20 日紐約會談後表示，美方已向中國提出新的 AI 事故「notification mechanism」，當人工智能事件可能影響國家安全時，由雙方建立通報安排。他稱目標是讓全球兩大 AI 強國由不透明走向更高透明度，並建立對共同目標與威脅的理解。要講清楚：這目前是美國提出的方案，中方尚未公開同意，參與機構、事故門檻、資料內容、時限與保密安排亦未公布，不等於熱線或條約已經成立。若最終落地，這可能成為類似軍事危機熱線的 AI 風險基建，涵蓋模型越界、網絡攻擊、生化或核武濫用等跨境高風險事件；下一個關鍵是 Trump 與習近平本周四會面會否確認機制及執行細節。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-21T02:29:00Z",
+    "sourceLabel": "Associated Press / Financial Times",
+    "sourceUrl": "https://apnews.com/article/2c7f54f07e755f506d9db9b91df282bd",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-us-china-formal-ai-dialogue",
     "title": "美中同意建立正式 AI 對話：由單次會談推進至持續機制",
     "summary": "《金融時報》9 月 21 日報道，美國財長 Scott Bessent 與中國副總理何立峰在紐約會談後，雙方同意啟動正式人工智能對話，目標包括提高透明度，以及建立共同目標與威脅評估；雙方亦把早前商定的 Board of Trade 機制正式投入運作。這是由「把 AI 安全列入會談議程」推進至同意建立持續對話的新進展，但目前仍未公布參與官員、會議時間表、模型範圍或具約束力的安全規則，亦不等於已達成 AI 安全協議。隨 Trump 與習近平峰會臨近，下一步要看雙方會否就開源與封閉模型、阻止生化或核武濫用、事故通報及晶片限制提出可執行安排。",
@@ -8,7 +19,7 @@
     "sourceLabel": "Financial Times / Reuters",
     "sourceUrl": "https://www.ft.com/content/d29d769e-039c-4d11-9152-e63ccd397b32",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-21-israel-ai-election-campaigns",
@@ -205,17 +216,6 @@
     "publishedAt": "2026-09-18T09:20:00Z",
     "sourceLabel": "OpenAI",
     "sourceUrl": "https://developers.openai.com/zh-Hant/docs/whats-new",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-18-anthropic-claude-rd-26pct",
-    "title": "Anthropic：Claude 已帶頭處理 26% 內部 AI 研發工作",
-    "summary": "Anthropic 表示，截至 8 月，其內部 AI 研發工作中有 26% 被評為由 Claude lead，較 3 月約 1% 大幅上升；超過 90% 研究工作涉及人機協作。公司強調這不代表 Claude 完全自主研發，所有工作仍在人類監督與安全機制下進行。這是少見把『AI 參與打造下一代 AI』量化公開的數據，對研發速度、人機分工及 frontier safety 都有直接參考價值。",
-    "category": "AI 研發",
-    "publishedAt": "2026-09-18T09:19:00Z",
-    "sourceLabel": "Anthropic / Reuters",
-    "sourceUrl": "https://www.reuters.com/business/anthropic-says-claude-now-leads-quarter-work-building-its-next-ai-models-2026-09-17/",
     "verified": true,
     "active": false
   }
