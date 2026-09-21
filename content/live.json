@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-21-googlebook-gemini-preorders",
+    "title": "Googlebook 開放預購：$899 起，把 Gemini 與 Android 帶進高階手提電腦",
+    "summary": "Google 9 月 21 日正式開放首批 Googlebook 預購，這個全新高階手提電腦類別由 Acer、Asus、Dell、HP 及 Lenovo 製造，起價 899 美元，10 月 4 日開售。裝置採用 Android 技術棧與 ChromeOS 的桌面基礎，內置 Gemini，可協助撰寫及整理文字、理解螢幕內容，亦可接續 Android 手機上的工作；首批型號使用 Intel 或 Qualcomm 處理器。The Verge 報道，售價介乎 899 至 1,299 美元，Google 承諾最長 10 年更新，並附一年 Google AI Pro。要講清楚，Googlebook 不是 Google 自製單一型號，也不是單純為 Chromebook 改名，而是 Google 與多間廠商共同建立的新高階產品規格。真正考驗是，899 美元以上的硬件能否吸引足夠桌面級應用加入；目前部分專業創作軟件仍只有手機版或功能有限。",
+    "category": "AI 產品",
+    "publishedAt": "2026-09-21T15:30:00Z",
+    "sourceLabel": "Google / Reuters / The Verge",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/google-opens-pre-orders-899-googlebook-laptops-built-around-gemini-ai-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-us-china-ai-safety-shenzhen-incident-line",
     "title": "美中 AI 安全對話定下深圳續會：事故線由提案走向正式議程",
     "summary": "Reuters 9 月 21 日引述美國財長 Scott Bessent 表示，美中高級官員將在約兩個月後於深圳再會，討論人工智能風險及 AI 安全事故發生時的通訊協議。他稱，雙方在紐約會談中已同意建立正式 AI 對話，並把一條用於 AI 安全事故的「incident line」納入機制；後續議程將嘗試界定雙方共同認定的主要風險，包括失控 Agent、非國家行為者及網絡攻擊。要講清楚，現階段這些細節由美方公開，中方尚未公布續會安排或事故線規格；事故門檻、通報時限、資料內容、保密與核實方式仍未談定，亦不等於熱線已投入使用。真正的新進展，是早前由美方提出的通報構想，現在已有下一輪會談的時間範圍、地點與協議方向。",
@@ -207,16 +218,5 @@
     "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
     "verified": true,
     "active": true
-  },
-  {
-    "id": "2026-09-20-us-china-ai-security-talks-new-york",
-    "title": "美中在紐約展開 AI 安全談判：關鍵礦產與關稅同枱",
-    "summary": "美國財長 Scott Bessent 與中國國務院副總理何立峰 9 月 20 日在紐約摩根大通總部展開會談，議程包括人工智能安全、關稅、貿易及關鍵礦產供應，並為 Trump 與習近平即將舉行的峰會做準備。談判亦涉及延長 11 月到期的貿易休戰，以及中國關鍵礦產出口流動等問題。這是高層對話已正式開始的新進展，但目前尚未公布共同聲明、AI 安全機制或任何協議；Reuters 引述分析指外界對重大突破預期有限，較可能先出現局部安排。AI 治理由企業自律與國內監管，進一步進入美中經貿與供應鏈談判層面，未來若形成模型防濫用、晶片或關鍵礦產安排，可能直接影響全球 AI 基建與出口限制。",
-    "category": "AI 政策",
-    "publishedAt": "2026-09-20T15:24:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/finance/us-treasurys-bessent-chinas-he-launch-talks-ai-trade-critical-minerals-2026-09-20/",
-    "verified": true,
-    "active": false
   }
 ]
