@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-09-22-faa-ai-flight-management-rollout",
+    "title": "美國 FAA 正式啟用 AI 航班管理工具：8.75 億美元合約由華盛頓空域起步",
+    "summary": "美國聯邦航空管理局（FAA）9 月 21 日表示，已開始使用一套以預測分析改善航班管理的新軟件系統，首階段應用於華盛頓特區周邊空域，之後會逐步擴展至全國其他地區。FAA 今年 6 月向 Air Space Intelligence 批出為期 12 年、價值 8.75 億美元的合約。要講清楚，官方現時只公布系統已投入使用、合約規模及擴展方向，未公開延誤改善幅度、完整安全測試或全國時間表；這亦是輔助航班管理的預測系統，不等於用全自主 AI 取代空中交通管制員。真正的重要性，是 AI 正由一般辦公工具進入航空這類安全關鍵公共基建，成效、人工覆核、故障應變與可審計性都需要更高證據標準。",
+    "category": "AI 應用",
+    "publishedAt": "2026-09-21T20:25:00Z",
+    "sourceLabel": "FAA / Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/faa-begins-use-ai-tool-bid-reduce-flight-delays-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-22-amd-trillion-dollar-valuation",
+    "title": "AMD 市值首次突破 1 萬億美元：AI 系統押注推動晶片股再升溫",
+    "summary": "AMD 股價 9 月 21 日一度升 9.6% 至 613.31 美元，市值首次突破 1 萬億美元，成為繼 NVIDIA、Broadcom 及 Micron 後第四間跨越這個門檻的美國晶片公司。AMD 今年股價累升約 185%，市場押注不只來自 GPU：公司正由出售單一晶片擴展至把處理器、網絡與相關硬件整合成完整 AI 系統，伺服器推理所需 CPU 亦協助它搶走 Intel 市佔。要講清楚，1 萬億美元是隨股價變動的市值里程碑，不是收入、盈利或已簽訂訂單；AMD 估值約為未來 12 個月盈利 41 倍，投資者仍要面對高預期與波動。真正的新訊號，是資金重新流入 AI 交易時，市場開始把 NVIDIA 以外、能提供完整系統的晶片公司推上更高估值層級。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-09-21T20:24:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/amd-becomes-latest-chipmaker-reach-1-trillion-valuation-ai-demand-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-22-california-data-center-oversight-seven-bills",
     "title": "加州簽署七項數據中心監管法：電力、水與地方成本全面披露",
     "summary": "加州州長 Gavin Newsom 9 月 21 日簽署七項針對快速擴張數據中心產業的法案，要求業者披露用電、用水、土地使用及人力需求，讓地方社區在審批新項目前取得更多資訊。法例亦要求數據中心遵守州內能源採購要求、協助增加潔淨電力供應，並防止新發電與電網升級成本轉嫁給一般用戶。這不是限制 AI 算力或禁止興建數據中心，但把 AI 基建的電力、水與社區成本由企業內部規劃，推進至法定披露與地方監察；業界則警告，針對單一產業的規則可能令項目轉移到其他州。",
@@ -196,27 +218,5 @@
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/taiwan-breaks-ground-advanced-packaging-park-anchored-by-tsmc-2026-09-21/",
     "verified": true,
     "active": true
-  },
-  {
-    "id": "2026-09-21-softbank-bonds-openai-third-tranche",
-    "title": "SoftBank 發債逾 100 億美元押注 OpenAI：為第三批投資籌集資金",
-    "summary": "Reuters 9 月 21 日引述發債條款文件報道，SoftBank 已啟動 100 億美元及 10 億歐元的高級無抵押債券發行。美元債分為 3.5 年、5.5 年及 7.5 年期，歐元債分為 4 年及 6 年期；債券預計 9 月 24 日定價、9 月 29 日交收，所得資金主要用於支付 10 月 1 日完成的 OpenAI 第三批 100 億美元追加投資，另有部分作一般企業用途。SoftBank 官方早前公布，這輪追加投資總額為 300 億美元，分三批各 100 億美元支付；完成後累計投資預計達 646 億美元、持股約 13%。今次不是 OpenAI 新一輪融資，亦不代表債券已完成定價，但顯示 SoftBank 正以大規模債務市場融資兌現對單一 AI 公司的集中押注，利息成本、OpenAI 估值及未來流動性將更直接影響其財務風險。",
-    "category": "AI 融資",
-    "publishedAt": "2026-09-21T03:27:00Z",
-    "sourceLabel": "Reuters / SoftBank Group",
-    "sourceUrl": "https://www.reuters.com/business/media-telecom/softbank-group-launches-over-10-billion-bonds-openai-investment-term-sheet-shows-2026-09-21/",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-21-us-china-ai-incident-notification-proposal",
-    "title": "美國向中國提出 AI 事故通報機制：涉及國家安全事件或需互相通知",
-    "summary": "美國財長 Scott Bessent 在 9 月 20 日紐約會談後表示，美方已向中國提出新的 AI 事故「notification mechanism」，當人工智能事件可能影響國家安全時，由雙方建立通報安排。他稱目標是讓全球兩大 AI 強國由不透明走向更高透明度，並建立對共同目標與威脅的理解。要講清楚：這目前是美國提出的方案，中方尚未公開同意，參與機構、事故門檻、資料內容、時限與保密安排亦未公布，不等於熱線或條約已經成立。若最終落地，這可能成為類似軍事危機熱線的 AI 風險基建，涵蓋模型越界、網絡攻擊、生化或核武濫用等跨境高風險事件；下一個關鍵是 Trump 與習近平本周四會面會否確認機制及執行細節。",
-    "category": "AI 政策",
-    "publishedAt": "2026-09-21T02:29:00Z",
-    "sourceLabel": "Associated Press / Financial Times",
-    "sourceUrl": "https://apnews.com/article/2c7f54f07e755f506d9db9b91df282bd",
-    "verified": true,
-    "active": false
   }
 ]
