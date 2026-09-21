@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-21-australia-ai-intergenerational-report",
+    "title": "澳洲料四年 AI 基建投資達 A$1,500 億：政府首次把 AI 列為四十年大轉型",
+    "summary": "澳洲政府 9 月 21 日發布《2026 跨代報告》，首次全面分析人工智能對未來四十年經濟、就業、公共財政與國家安全的影響，並把 AI 革命列為國家面對的主要長期轉型之一。報告預測，未來四年 AI 數據中心等基建投資可達 A$1,500 億，相當於澳洲現時名義 GDP 約 5%；但這是經濟投資預測，不是政府已批出的公共開支或已落實項目。報告亦指出，約三分之二澳洲企業已以某種形式採用 AI，但認為採用程度顯著的不足 10%，現階段整體生產力增幅仍有限。政府同時警告，AI 擴張會加重電力與用水需求，並帶來網絡攻擊、詐騙、深偽、私隱及依賴外國模型的國安風險。這份報告的重要性，是把 AI 由科技產業議題正式升格為澳洲人口、能源、財政與國家韌性的長期政策核心。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-21T07:28:00Z",
+    "sourceLabel": "Australian Treasury / The Australian",
+    "sourceUrl": "https://treasury.gov.au/sites/default/files/2026-09/p2026-797917.pdf",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-firmus-ai-data-centre-ipo",
     "title": "澳洲 Firmus 擬籌 A$70 億上市：AI 數據中心迎來超大型 IPO",
     "summary": "Reuters 9 月 21 日引述向投資者發出的條款書報道，澳洲數據中心營運商 Firmus 擬於 10 月 6 日啟動首次公開招股，基礎集資額 A$70 億（約 50 億美元），連同超額配售選擇權最高可達約 55 億美元。機構投資者簿記預計 10 月 6 至 7 日進行、招股章程 10 月 8 日提交，股份按計劃 10 月 22 日在澳洲證券交易所買賣；若成事，將是澳洲歷來第二大、2026 年迄今全球第四大 IPO。Firmus 尚未正式評論，估值及最終發售條款亦未公布，因此這是按投資者文件披露的上市計劃，不是已完成集資。公司現有兩座數據中心營運、另有五座在亞太區開發；今次招股將直接測試資本市場是否願意繼續以超大型股權融資支持 AI 算力擴張，同時承受電力、用水、建設進度及社區反對等風險。",
@@ -205,17 +216,6 @@
     "publishedAt": "2026-09-19T15:26:00Z",
     "sourceLabel": "Nscale IPO filing / Reuters",
     "sourceUrl": "https://www.reuters.com/technology/ai-cloud-firm-nscale-files-us-ipo-2026-09-18/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-19-imf-europe-ai-productivity-power-grid",
-    "title": "IMF 警告歐洲 AI 紅利不會平均分：六成職位受影響，電網壓力同步上升",
-    "summary": "Reuters 9 月 19 日報道，IMF 向歐盟財長提交的背景文件估計，AI 可在五年內令歐洲生產力提高約 1%，但收益會在國家、地區和勞工之間嚴重不平均；先進歐洲經濟體約 60% 勞工從事高度受 AI 影響的職位，部分人會被工具提升效率，部分例行工作則面臨被取代。文件亦指出歐洲數據中心現已消耗約 3% 電力，AI 擴張會進一步壓迫 Frankfurt、London、Amsterdam、Paris 與 Dublin 等樞紐的電網。IMF 建議歐盟加快單一市場、跨境電網及本土 AI 投資，避免生產力增長同時加劇不平等、能源瓶頸與對美中技術的依賴。",
-    "category": "AI 經濟",
-    "publishedAt": "2026-09-19T12:24:00Z",
-    "sourceLabel": "IMF / Reuters",
-    "sourceUrl": "https://www.reuters.com/business/imf-tells-eu-ministers-ai-could-boost-growth-increase-economic-strains-2026-09-19/",
     "verified": true,
     "active": false
   }
