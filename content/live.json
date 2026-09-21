@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-21-ecb-panetta-ai-inflation-distribution",
+    "title": "ECB 管委：AI 收益流向將決定通脹方向，未必即時帶來物價下降",
+    "summary": "歐洲央行管委、意大利央行行長 Fabio Panetta 9 月 21 日表示，央行不能只把人工智能視為提升生產力、壓低成本的工具，AI 所創造的收益最終流向僱員、企業還是少數資本持有人，會直接影響總需求與通脹。如果 AI 主要創造新工作並推高預期勞動收入，消費需求可能在生產力效益完全出現前先上升，令通脹壓力維持更久；相反，若自動化主導並削弱家庭收入與消費，AI 的通縮效應可能更早浮現。Panetta 是在烏克蘭國家銀行主辦的活動上提出這套分析；這不是歐洲央行已作出的利率決定或正式通脹預測，但顯示央行正把 AI 收益分配、就業與消費納入貨幣政策框架，而不再只看整體生產力數字。",
+    "category": "AI 經濟",
+    "publishedAt": "2026-09-21T08:26:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/finance/ai-gains-distribution-will-shape-inflation-ecbs-panetta-says-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-australia-ai-intergenerational-report",
     "title": "澳洲料四年 AI 基建投資達 A$1,500 億：政府首次把 AI 列為四十年大轉型",
     "summary": "澳洲政府 9 月 21 日發布《2026 跨代報告》，首次全面分析人工智能對未來四十年經濟、就業、公共財政與國家安全的影響，並把 AI 革命列為國家面對的主要長期轉型之一。報告預測，未來四年 AI 數據中心等基建投資可達 A$1,500 億，相當於澳洲現時名義 GDP 約 5%；但這是經濟投資預測，不是政府已批出的公共開支或已落實項目。報告亦指出，約三分之二澳洲企業已以某種形式採用 AI，但認為採用程度顯著的不足 10%，現階段整體生產力增幅仍有限。政府同時警告，AI 擴張會加重電力與用水需求，並帶來網絡攻擊、詐騙、深偽、私隱及依賴外國模型的國安風險。這份報告的重要性，是把 AI 由科技產業議題正式升格為澳洲人口、能源、財政與國家韌性的長期政策核心。",
@@ -205,17 +216,6 @@
     "publishedAt": "2026-09-19T16:27:00Z",
     "sourceLabel": "Court filings / Financial Times / Wall Street Journal / The Verge",
     "sourceUrl": "https://www.ft.com/content/3df8edae-ae3b-4f56-83a3-40602edc17a3",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-19-nscale-ipo-ai-cloud-economics",
-    "title": "NVIDIA 支持的 Nscale 申請美國上市：收入升 12 倍，但半年蝕逾 10 億美元",
-    "summary": "Reuters 9 月 18 日根據 Nscale 的美國 IPO 文件報道，這間由 NVIDIA 支持的英國 AI 雲端與數據中心公司，2026 年上半年收入按年增長 1,252% 至 1.406 億美元，但同期淨虧損擴大至 10.2 億美元。公司計劃在紐約證券交易所以代號 NSCL 上市，尚未公布招股價與發售股數。文件亦顯示，Nscale 有 52% 收入來自單一客戶，反映 AI 基建需求高速增長的同時，資本消耗與客戶集中風險仍然極高。這宗 IPO 會成為市場檢驗 AI cloud、GPU 租賃及數據中心商業模式能否在重資本擴張下建立可持續盈利的重要案例。",
-    "category": "AI 基建",
-    "publishedAt": "2026-09-19T15:26:00Z",
-    "sourceLabel": "Nscale IPO filing / Reuters",
-    "sourceUrl": "https://www.reuters.com/technology/ai-cloud-firm-nscale-files-us-ipo-2026-09-18/",
     "verified": true,
     "active": false
   }
