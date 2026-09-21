@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-21-israel-ai-election-campaigns",
+    "title": "以色列大選進入 AI 宣傳戰：約八分之一政治貼文使用 AI",
+    "summary": "《華爾街日報》9 月 20 日報道，以色列 10 月 27 日大選前，政黨與政治人物正大量使用 AI 生成影片、圖片與社交內容攻擊對手，監管機構亦警告 AI 可放大假帳戶、機械人網絡、假電話及外國影響行動。以色列 Open University 的監察項目早前統計，自 7 月 28 日起約 12.7% 政治社交貼文曾使用 AI，相當於約八分之一。中央選舉委員會已要求可能被誤認為真實紀錄的 AI 生成或大幅修改內容加上清晰標示，但規則主要依賴發布者申報，偵測與執法仍追不上內容產量。這場選舉成為一個重要實戰案例：AI 不只降低政治廣告製作成本，更把競爭由單一假片變成大量、快速、跨平台的資訊洪水；單靠在角落加一個 AI 標籤，未必足以阻止誤導內容先被看見和轉發。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-21T00:25:00Z",
+    "sourceLabel": "Wall Street Journal / Israel Open University / Times of Israel",
+    "sourceUrl": "https://www.wsj.com/world/middle-east/how-ai-is-reshaping-election-campaigns-in-israel-f5a2e79a",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-xai-x-search-result-based-pricing",
     "title": "xAI 改 X Search 計費：由每次 API 調用改為按返回貼文與用戶逐項收費",
     "summary": "xAI 官方定價頁確認，X Search 將於 9 月 21 日美西時間中午改用按搜尋結果數量計費：每取得 1,000 則貼文收 5 美元，每取得 1,000 個用戶資料收 10 美元，取代目前每 1,000 次工具調用收 5 美元的方式。搜尋或 thread fetch 返回的每一則貼文均會計費，包括 parent 與 quoted posts；user search 返回的每一個 profile 亦會計入。這不是模型 token 價格調整，而是 xAI server-side X Search 工具的收費單位改變，令同一次 Agent 任務的成本由固定 call 數轉為隨結果量變動。使用 Grok Responses API 抓取大量 X 貼文、討論串或用戶資料的團隊，應立即限制返回數量、重新估算每次工作流成本並加上用量警報。",
@@ -205,17 +216,6 @@
     "publishedAt": "2026-09-16T22:13:41Z",
     "sourceLabel": "OpenAI / Reuters",
     "sourceUrl": "https://openai.com/index/model-misalignment-reporting-framework/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-16-anthropic-australia-2gw-inference-campus",
-    "title": "Anthropic 首次落地澳洲：租用 2.16GW AI 推理園區，2027 年啟用",
-    "summary": "Reuters 9 月 16 日報道，Anthropic 已簽署其首份澳洲數據中心租賃協議，租用位於布里斯本以西約 250 公里的 2.16GW AI 數據中心園區，預計 2027 年開始運作，主要用於 AI 推理而非訓練。園區由新加坡 Zerra DC 開發，計劃採用可再生能源、封閉式風冷系統以降低用水；交易仍須通過澳洲外資審查。這是前沿模型公司把算力重心由訓練延伸至長期推理供應的實質部署：Chatbot、Agent 與企業 API 使用量增加後，服務速度、可用性與每 token 成本更取決於大規模推理基建。項目規模龐大，但尚未披露租期、實際上線容量、服務區域或對用戶價格的直接影響。",
-    "category": "AI 基建",
-    "publishedAt": "2026-09-16T05:00:00Z",
-    "sourceLabel": "Anthropic / Reuters",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/anthropic-signs-first-australia-data-centre-agreement-2026-09-16/",
     "verified": true,
     "active": false
   }
