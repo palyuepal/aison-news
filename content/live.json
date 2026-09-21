@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-09-21-eu-data-centre-energy-water-label",
+    "title": "歐盟擬要求大型數據中心披露能源與用水效率：500 kW 起納入統一標籤",
+    "summary": "歐盟委員會 9 月 21 日提出數據中心效率標籤規則，容量達 500 kW 的設施須按歐盟統一制度披露能源及用水效率，並交代用水與所在地水資源壓力的關係，以及能否透過廢熱回收等方式支援當地能源系統。要講清楚，方案不會直接限制用電或用水量，亦不要求公開總耗電量；歐盟成員國及議會可在兩個月內提出反對，否則規則將生效。歐盟數據中心目前約佔區內 2.5% 用電，容量預計由去年的 12 GW 增至 2030 年 28 GW。這套標籤的重要性，是 AI 算力擴張開始由「建幾多」轉向「每單位算力消耗多少能源與水」，亦可能為日後強制最低效率標準鋪路。",
+    "category": "AI 基建",
+    "publishedAt": "2026-09-21T12:27:00Z",
+    "sourceLabel": "European Commission / Reuters",
+    "sourceUrl": "https://www.reuters.com/business/environment/eu-require-data-centres-disclose-energy-water-efficiency-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-21-amazon-blocks-meta-muse-shopping",
+    "title": "Amazon 封鎖 Meta Muse 代客購物：AI Agent 身份與平台規則正面衝突",
+    "summary": "Amazon 已封鎖 Meta 的 Muse AI Agent 代用戶在 Amazon.com 購物，並向用戶顯示未獲授權 Agent 持續存取會違反使用條款。Amazon 表示 Meta 事前沒有通知 Muse 會進入其平台，Agent 瀏覽時亦沒有識別自己，並可能處理客戶憑證，帶來私隱與安全風險；Amazon 正與 Meta 直接交涉。Meta 尚未回應今次封鎖，但此前表示 Muse 看不到密碼或付款資料，登入憑證會進入安全儲存，由系統代用而不向模型展示。現階段未有證據證明密碼外洩；真正的新進展，是 Agent 即使獲用戶授權，也未必獲商戶平台同意。未來代購 Agent 要大規模運作，可能需要機器身份識別、正式 API、平台選擇退出及責任分配標準。",
+    "category": "AI Agent",
+    "publishedAt": "2026-09-21T12:26:00Z",
+    "sourceLabel": "Amazon / Meta / GeekWire / The Verge",
+    "sourceUrl": "https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-socgen-anthropic-ai-savings",
     "title": "SocGen 與 Anthropic 簽策略協議：為銀行 AI 定出 €5–6 億潛在節省",
     "summary": "法國銀行 Société Générale 9 月 21 日公布 2029 策略，正式與 Anthropic 簽署策略協議，加快企業級 AI 在集團內採用。銀行估計，多項 AI 計劃可帶來約 5 億至 6 億歐元節省，其中約 3.5 億歐元已識別至 2029；這些都是前瞻估算，不是已實現盈利，也不代表全部金額已寫入預算。要分清楚，SocGen 同期整體約 19 億歐元總節省還包括非 IT 採購、IT 系統精簡及員工自然流失等措施，不能全部歸因於 AI。這宗合作的重要性，是大型銀行少有地把 AI 生產力轉化成可追蹤的歐元目標；下一步要看實際節省、服務質素與風險控制能否同時達標。",
@@ -194,28 +216,6 @@
     "publishedAt": "2026-09-20T07:00:00Z",
     "sourceLabel": "Financial Times",
     "sourceUrl": "https://www.ft.com/content/7f11afae-c4e3-4054-a65b-873f3647f563",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-20-california-ai-safety-executive-order",
-    "title": "加州啟動 AI「關閉開關」與獨立監察研究：11 月中前交可行性報告",
-    "summary": "加州州長 Gavin Newsom 9 月 18 日簽署行政命令，要求州政府加快檢視前沿 AI 安全規則，包括研究是否可要求最先進模型設置可中止系統的「kill switch」、讓獨立機構代表進駐主要 AI 實驗室驗證安全，以及要求公司申報失控或越界事件。命令本身未立即強制模型公司安裝關閉開關，而是要求相關部門諮詢專家，並在 11 月 16 日前就可行性提交報告。由於 OpenAI、Google、Anthropic 等主要模型公司均在加州設有重要業務，若研究最終變成州級規則，可能直接影響前沿模型的發布、事故披露與外部審核要求。",
-    "category": "AI 監管",
-    "publishedAt": "2026-09-20T04:12:00Z",
-    "sourceLabel": "California Governor / New York Times / AFP",
-    "sourceUrl": "https://indianexpress.com/article/technology/artificial-intelligence/california-governor-issues-executive-order-on-ai-safety-10885791/",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-20-cxmt-fifth-gen-dram-mass-production",
-    "title": "中國 CXMT 第五代 DRAM 平台量產：單片晶圓可產多至少 50% 晶粒",
-    "summary": "Reuters 9 月 20 日報道，中國主要記憶體晶片商長鑫存儲（CXMT）宣布第五代 DRAM 技術平台已進入量產，並推出兩款 24Gb LPDDR5X 手機記憶體晶片。CXMT 表示，新晶片容量較上一代同類產品高 50%，新平台以 8Gb 晶片作基準，每片晶圓可生產的總晶粒數至少增加 50%，同時降低成本與耗電；公司利用 quadruple patterning 把關鍵儲存結構間距縮至 11.95nm。這些屬公司公布的量產與製程數據，仍要觀察實際良率、客戶採用與大規模出貨，但若表現獲市場驗證，將增加 Samsung、SK Hynix、Micron 以外的 DRAM 供應，亦顯示中國在受出口限制下持續推進本土記憶體製造能力。",
-    "category": "AI 晶片",
-    "publishedAt": "2026-09-20T03:54:00Z",
-    "sourceLabel": "CXMT / Reuters",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/chinas-cxmt-says-new-memory-chip-platform-enters-mass-production-2026-09-20/",
     "verified": true,
     "active": true
   }
