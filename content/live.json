@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-21-us-china-ai-safety-shenzhen-incident-line",
+    "title": "美中 AI 安全對話定下深圳續會：事故線由提案走向正式議程",
+    "summary": "Reuters 9 月 21 日引述美國財長 Scott Bessent 表示，美中高級官員將在約兩個月後於深圳再會，討論人工智能風險及 AI 安全事故發生時的通訊協議。他稱，雙方在紐約會談中已同意建立正式 AI 對話，並把一條用於 AI 安全事故的「incident line」納入機制；後續議程將嘗試界定雙方共同認定的主要風險，包括失控 Agent、非國家行為者及網絡攻擊。要講清楚，現階段這些細節由美方公開，中方尚未公布續會安排或事故線規格；事故門檻、通報時限、資料內容、保密與核實方式仍未談定，亦不等於熱線已投入使用。真正的新進展，是早前由美方提出的通報構想，現在已有下一輪會談的時間範圍、地點與協議方向。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-21T14:25:00Z",
+    "sourceLabel": "Reuters / CNBC",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/us-china-meet-again-ai-safety-two-months-shenzhen-bessent-says-2026-09-21/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-21-eu-data-centre-energy-water-label",
     "title": "歐盟擬要求大型數據中心披露能源與用水效率：500 kW 起納入統一標籤",
     "summary": "歐盟委員會 9 月 21 日提出數據中心效率標籤規則，容量達 500 kW 的設施須按歐盟統一制度披露能源及用水效率，並交代用水與所在地水資源壓力的關係，以及能否透過廢熱回收等方式支援當地能源系統。要講清楚，方案不會直接限制用電或用水量，亦不要求公開總耗電量；歐盟成員國及議會可在兩個月內提出反對，否則規則將生效。歐盟數據中心目前約佔區內 2.5% 用電，容量預計由去年的 12 GW 增至 2030 年 28 GW。這套標籤的重要性，是 AI 算力擴張開始由「建幾多」轉向「每單位算力消耗多少能源與水」，亦可能為日後強制最低效率標準鋪路。",
@@ -140,7 +151,7 @@
     "sourceLabel": "Associated Press / Financial Times",
     "sourceUrl": "https://apnews.com/article/2c7f54f07e755f506d9db9b91df282bd",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-21-us-china-formal-ai-dialogue",
@@ -207,16 +218,5 @@
     "sourceUrl": "https://www.reuters.com/business/finance/us-treasurys-bessent-chinas-he-launch-talks-ai-trade-critical-minerals-2026-09-20/",
     "verified": true,
     "active": false
-  },
-  {
-    "id": "2026-09-20-ai-infrastructure-off-balance-sheet-guarantees",
-    "title": "Big Tech 以擔保支持最高 3,000 億美元 AI 基建：大量風險未直接列入資產負債表",
-    "summary": "《金融時報》9 月 20 日分析顯示，Meta、Broadcom、NVIDIA 等科技公司在過去 12 個月利用資產剩餘價值擔保（residual value guarantees），支持最高約 3,000 億美元的 AI 數據中心與晶片融資，而相關最高風險承擔大多沒有以同等金額直接列入公司資產負債表。做法通常由特殊目的實體持有基建並發債，科技公司則保證晶片或數據中心未來至少值某個金額，令項目更容易以較低成本融資。案例包括 Meta 為 Hyperion 數據中心提供 280 億美元擔保、Broadcom 涉及 Anthropic 的 290 億美元安排，以及 NVIDIA 向 SB Energy 延伸約 1,050 億美元支持。這些數字是最高承擔，不代表公司必然支付全額；但若 AI 資產快速貶值、客戶違約或需求低於預期，表外擔保可能轉化為實際損失，評級機構亦已在槓桿分析中計入部分風險。",
-    "category": "AI 基建",
-    "publishedAt": "2026-09-20T07:00:00Z",
-    "sourceLabel": "Financial Times",
-    "sourceUrl": "https://www.ft.com/content/7f11afae-c4e3-4054-a65b-873f3647f563",
-    "verified": true,
-    "active": true
   }
 ]
