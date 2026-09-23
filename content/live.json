@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-09-23-microsoft-foundry-gpt-6-sol-luna-ga",
+    "title": "Microsoft Foundry 上架 GPT-6 Sol、Luna：三款模型按任務成本分工",
+    "summary": "Microsoft 宣布 GPT-6 Sol 與 GPT-6 Luna 已在 Microsoft Foundry 全面可用，與 Astra 組成三層產品線：Astra 主打高難度推理、軟件工程及電腦操作，Sol 面向一般生產級 Agent 與多步工作流，Luna 則處理抽取、摘要、路由等高流量任務。\n\n三款模型現可透過全球 28 個 Azure 區域及美國、歐盟 Data Zone 的標準部署使用；供應商亦公布按短、長 context 分開的價格。這是 Azure 官方產品公告，實際成本效益仍需企業用自己的工作流、準確度和延遲要求測試。",
+    "category": "AI 開發",
+    "publishedAt": "2026-09-23T12:04:00Z",
+    "sourceLabel": "Microsoft Azure",
+    "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-23-nvidia-isaac-ros-5-agent-skills",
+    "title": "NVIDIA 推出 Isaac ROS 5.0：AI Agent 開始協助開發實體機械人",
+    "summary": "NVIDIA 正式推出免費開源的 Isaac ROS 5.0，加入可供 AI coding assistant 使用的 Agent Skills、ROS Lyrical 與 Ubuntu 24.04 支援，並以 CUDA buffer backend 減少機械人節點之間不必要的 CPU 複製。\n\n新版本可由 Jetson Orin Nano 延伸至 Jetson Thor，NVIDIA 並列出 Universal Robots、ROBOTIS、FieldAI 等整合案例。這是開發平台更新，不代表相關機械人已可在所有實際環境自主運作；部署仍須獨立驗證安全、延遲及失效處理。",
+    "category": "AI 機械人",
+    "publishedAt": "2026-09-23T12:03:00Z",
+    "sourceLabel": "NVIDIA",
+    "sourceUrl": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-23-anthropic-claude-opus-5-5",
     "title": "Anthropic 推出 Claude Opus 5.5：成本降四成，安全測試同步升級",
     "summary": "Anthropic 9 月 22 日推出 Claude Opus 5.5，表示新模型以較低運行成本提供接近旗艦級能力，API 定價為每百萬輸入 tokens 4 美元、輸出 20 美元，並已在 AWS、Google Cloud 及 Microsoft Azure 提供。公司亦首次把部分只用於最高能力系統的安全措施下放，並交由 Frontier Design、METR 等外部團隊測試。要講清楚，軟件開發表現與「85% 較少突破隔離」等數字主要來自公司及指定評測，仍要等待更廣泛獨立實測；但性能、價格與安全三者同時調整，會直接加劇企業模型採購競爭。",
