@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-24-anthropic-openevidence-medical-ai-100-countries",
+    "title": "Anthropic、OpenEvidence 將醫療 AI 推向約 100 國：免費臨床決策支援走出歐美",
+    "summary": "Anthropic 與醫療知識平台 OpenEvidence 合作，向約 100 個低收入及中等收入國家的醫護人員免費提供專門版 AI 臨床決策支援。OpenEvidence 會從同行評審醫學研究與治療指引回答醫生問題；Anthropic 提供後端模型能力，OpenEvidence 按各地疾病、可用藥物、診斷設備及醫療基建調整系統。\\n\\n合作未披露財務條款，亦不代表 AI 可以取代醫生或直接作診斷。真正重要的是，醫療 AI 開始由高收入市場的付費產品走向跨地區部署；但訓練資料能否代表本地人口、建議是否符合當地條件，以及錯誤結果如何追責，仍是核心考試。",
+    "category": "AI 醫療",
+    "publishedAt": "2026-09-23T18:27:00Z",
+    "sourceLabel": "Anthropic / OpenEvidence / Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/anthropic-openevidence-partner-bring-medical-ai-worldwide-2026-09-22/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-24-microsoft-gulf-10b-ai-cloud-resilience",
     "title": "Microsoft 擬投逾 100 億美元落戶海灣：AI 數據中心加入戰時韌性考驗",
     "summary": "Microsoft 計劃由現在至 2030 年，在阿聯酋、沙特阿拉伯、卡塔爾及科威特投資超過 100 億美元，涵蓋雲端與 AI 基建及區內營運擴張；公司另計劃投入逾 4 億美元建設中東海底與陸地網絡連接。\n\nMicrosoft 未披露各國投資分配或具體項目，並以安全因素作解釋。這不是全部已簽約或建成的數據中心；真正的新訊號是，區內戰事及雲端設施受襲後，AI 基建競爭開始同時比較算力、跨境連接、關鍵數據保護，以及遇襲後能否持續運作。",
@@ -207,17 +218,6 @@
     "publishedAt": "2026-09-21T16:30:00Z",
     "sourceLabel": "Gates Foundation / Associated Press",
     "sourceUrl": "https://apnews.com/article/artificial-intelligence-anthropic-openai-gates-aefb021bede3b02c83890f65cd540fd0",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-22-aikido-altar-local-cybersecurity-model",
-    "title": "Aikido 推出本地 AI 網絡安全模型 Altar：敏感程式碼毋須交雲端",
-    "summary": "比利時網絡安全公司 Aikido 9 月 21 日發布開放權重模型 Altar，專門用於程式碼及網絡安全工作，主打企業可在自己的基建上本地部署，毋須把敏感程式碼交給外部 AI 供應商。Altar 是中國 Z.AI 開放模型 GLM-5.3 的壓縮及客製版本，Aikido 表示會公開供本地部署，並將用於包括比利時銀行 Belfius 在內的客戶方案。這項更新有實際用途：金融、醫療及受監管企業可在較嚴格的資料邊界內使用 AI 找漏洞；但公司尚未公開完整獨立測試、硬件需求與安全防濫用細節，因此不能只憑開放權重便假設模型一定更安全。真正要比較的是本地部署能否同時提供足夠偵測能力、審計紀錄與存取控制。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-21T16:29:00Z",
-    "sourceLabel": "Aikido / Reuters",
-    "sourceUrl": "https://www.reuters.com/legal/litigation/belgiums-aikido-launches-cybersecurity-ai-model-demand-local-tools-grows-2026-09-21/",
     "verified": true,
     "active": true
   }
