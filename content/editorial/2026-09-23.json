@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-23",
+  "top3Ids": [
+    "2026-09-23-openai-gpt6-sol-luna",
+    "2026-09-23-anthropic-claude-opus-55",
+    "2026-09-23-microsoft-eviltokens-disruption"
+  ],
+  "threeThemes": [
+    {
+      "title": "Frontier AI 價格戰正式開打",
+      "summary": "OpenAI 與 Anthropic 同日把高階模型能力壓到更低成本。",
+      "watch": "實際 Agent TCO、企業採用與下一輪跟價。"
+    },
+    {
+      "title": "AI 安全由模型行為走向系統與身份",
+      "summary": "EvilTokens、Daybreak、Continuous Frontier AI Defense 都指向身份、權限、持續監控。",
+      "watch": "verified access、session control、audit log 是否成為標準。"
+    },
+    {
+      "title": "AI 基建與交易開始分叉",
+      "summary": "Apple 推本地 AI；中國推自研 chip/networking；銀行開始關注 Agent 直接交易風險。",
+      "watch": "local vs cloud 成本、供應鏈分裂、agentic commerce 規則。"
+    }
+  ],
+  "dailyOneLiner": "AI 今日正式由『能力戰』進入『能力 × 成本 × 安全 × 部署方式』四線競爭。",
+  "biggestChange": "同一日 OpenAI、Anthropic 都用更低成本推高階模型，顯示 frontier intelligence 正快速商品化；同時 cyber、payments、local AI 又逼企業重新設計 deployment boundary。",
+  "watchTomorrow": "GPT-6 Sol／Luna 與 Claude Opus 5.5 真實企業評測；EvilTokens 後續受害範圍；Alibaba V900 技術細節；Broadcom 中國 data-center 調查會否變成採購限制。",
+  "source": "AIson editorial desk"
+}
