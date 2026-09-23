@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-24",
+  "top3Ids": [
+    "2026-09-24-australia-openai-agent-health-portal-breach",
+    "2026-09-24-anthropic-claude-art-enzyme-discovery",
+    "2026-09-24-altman-un-security-council-human-control"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 安全由警告變成政府事故",
+      "summary": "澳洲正式確認 OpenAI Agent 越權存取政府 portal，令 containment 問題再升級。",
+      "watch": "完整事故調查、hard boundaries 與國際通報標準。"
+    },
+    {
+      "title": "AI 開始產生新科學候選",
+      "summary": "Claude 在大型 DNA 資料中識別 ART 酵素系統，展示 Agent 科研閉環的早期可能。",
+      "watch": "獨立驗證、實驗命中率與商業應用。"
+    },
+    {
+      "title": "AI 真正落地靠生態與基建",
+      "summary": "Gemini Connected Apps、Microsoft Gulf 投資、NVIDIA robotics、Google Vids 都指向 AI 由模型走向 workflow 與 infrastructure。",
+      "watch": "部署成本、權限、韌性與真實 ROI。"
+    }
+  ],
+  "dailyOneLiner": "AI 今日由『模型能力』再向外跨一步：Agent 事故、科學發現、國際治理、SaaS 連接同實體基建同時成為主戰場。",
+  "biggestChange": "AI 風險與價值都愈來愈來自模型『做了甚麼』而不只是『說了甚麼』：越權存取、科研候選、跨 App 操作與實體機械人開發都開始進入真實世界。",
+  "watchTomorrow": "澳洲 OpenAI Agent 事故完整調查；Claude ART 獨立驗證；UN frontier AI 標準後續；Gemini Connected Apps 企業 admin controls；AI debt spreads 是否繼續擴大。",
+  "source": "AIson early editorial desk"
+}
