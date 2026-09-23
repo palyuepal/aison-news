@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-24-basecamp-research-140m-ai-drug-funding",
+    "title": "Basecamp Research 融資 1.4 億美元：AI 設計藥物由模型走向臨床前管線",
+    "summary": "AI 藥物開發公司 Basecamp Research 完成 1.4 億美元 C 輪融資，估值達 8 億美元，由 S32 領投，NVIDIA、Anthropic Anthology Fund、NATO Innovation Fund 及 Rockefeller Foundation 等參與。資金將用於訓練新一代 EDEN 生物基礎模型，並把 AI 設計的療法推進至臨床開發前階段，首批重點是直接在患者體內重新編程細胞的療法。\n\n要講清楚，公司目前披露的是臨床前成果，未公布展開人體試驗的時間；融資與估值亦不等於療法已證實安全有效。真正重要的是，資本開始同時押注專有生物數據、基礎模型與自家藥物管線，而不只把 AI 當成製藥公司的分析工具。",
+    "category": "AI 醫療",
+    "publishedAt": "2026-09-23T16:24:00Z",
+    "sourceLabel": "Basecamp Research / Reuters",
+    "sourceUrl": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-23-trump-ai-super-intelligence-doj-oversight",
     "title": "特朗普稱美國不設新 AI 規例：司法部保留介入「超級智能」權力",
     "summary": "美國總統特朗普在聯合國大會表示，政府文件將把人工智能稱為「超級智能」，並反對以新規例拖慢技術發展；但他同時表示，司法部會監察產業，如有需要可介入約束 AI 公司。\n\n這不是已公布的新法例、行政命令或執法行動，亦未交代司法部會以反壟斷、消費者保障還是其他權力介入。真正的新訊號是，美國政策可能同時採取「不預先設限」與「出事後執法」兩條路線，企業面對的規則未必更少，只是由事前審批轉向事後責任。",
@@ -207,17 +218,6 @@
     "publishedAt": "2026-09-21T15:30:00Z",
     "sourceLabel": "Google / Reuters / The Verge",
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/google-opens-pre-orders-899-googlebook-laptops-built-around-gemini-ai-2026-09-21/",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-21-us-china-ai-safety-shenzhen-incident-line",
-    "title": "美中 AI 安全對話定下深圳續會：事故線由提案走向正式議程",
-    "summary": "Reuters 9 月 21 日引述美國財長 Scott Bessent 表示，美中高級官員將在約兩個月後於深圳再會，討論人工智能風險及 AI 安全事故發生時的通訊協議。他稱，雙方在紐約會談中已同意建立正式 AI 對話，並把一條用於 AI 安全事故的「incident line」納入機制；後續議程將嘗試界定雙方共同認定的主要風險，包括失控 Agent、非國家行為者及網絡攻擊。要講清楚，現階段這些細節由美方公開，中方尚未公布續會安排或事故線規格；事故門檻、通報時限、資料內容、保密與核實方式仍未談定，亦不等於熱線已投入使用。真正的新進展，是早前由美方提出的通報構想，現在已有下一輪會談的時間範圍、地點與協議方向。",
-    "category": "AI 政策",
-    "publishedAt": "2026-09-21T14:25:00Z",
-    "sourceLabel": "Reuters / CNBC",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/us-china-meet-again-ai-safety-two-months-shenzhen-bessent-says-2026-09-21/",
     "verified": true,
     "active": true
   }
