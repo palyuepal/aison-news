@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-09-24-nhtsa-comma-ai-openpilot-crash-probe",
+    "title": "美國調查 Comma.ai 外加駕駛輔助裝置：五宗事故涉三死、11 人重傷",
+    "summary": "美國國家公路交通安全管理局（NHTSA）已調查 Comma.ai 的外加駕駛輔助裝置。監管機構收到五宗事故報告，相關車輛據報撞向前方停下或慢駛的車輛，涉及三宗死亡通報及 11 人重傷；調查將核實每宗事故當時系統是否啟用，並評估性能與安全保障。\n\n這是缺陷調查的開始，並非監管機構已認定 Comma.ai 或其官方 openpilot 軟件須為事故負責。部分事故、包括至少一宗致命事故，可能使用第三方修改版軟件；這亦揭示開源駕駛系統的新難題：硬件、官方程式、社群分支與司機監察之間，安全責任如何劃分。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-23T22:27:00Z",
+    "sourceLabel": "NHTSA / Reuters / TechCrunch",
+    "sourceUrl": "https://www.reuters.com/technology/us-probes-commaai-over-crashes-tied-aftermarket-driver-assistance-devices-2026-09-23/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-24-amazon-seller-assistant-agentic-workflows",
     "title": "Amazon 推出賣家 AI 工作流程：Agent 開始長駐監察價格、評分與庫存",
     "summary": "Amazon 為第三方賣家推出新的 Agentic AI 工作流程，Seller Assistant 可按賣家設定持續運作，例如評分突然下跌時發出警報、監察指定產品價格，並根據賣家資料就定價、推廣與庫存管理提供個人化建議。服務免費及可選用，賣家亦可控制分享多少個人資料。\\n\\n新 Agent 可透過外掛接駁賣家現有 AI 工具，首批包括 Amazon Quick 與 Anthropic Claude。這不是完全無人監管的自動營運：Reuters 目前未披露哪些動作可直接執行、哪些仍需賣家批准；但它標誌電商 AI 由一次過回答問題，走向全年持續監察與處理營運工作。",
@@ -207,17 +218,6 @@
     "publishedAt": "2026-09-21T19:25:00Z",
     "sourceLabel": "Z.ai / Reuters",
     "sourceUrl": "https://www.reuters.com/legal/litigation/chinas-zai-disables-ai-coding-assistant-features-after-security-issue-2026-09-21/",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-22-openai-global-frontier-ai-standards",
-    "title": "OpenAI 倡全球前沿 AI 技術標準：自我改進、共同量度與事故通報納入規則",
-    "summary": "OpenAI 9 月 21 日提出，由美國牽頭建立一套可銜接各國制度的前沿 AI 國際技術標準，範圍包括模型遞歸式自我改進、共同風險量度，以及事故通報協議。公司把「放慢步伐」重新界定為：安全與 alignment 研究及部署必須走在能力增長之前，而非替產業設定固定速度。OpenAI CEO Sam Altman 預計本周三向聯合國安理會簡報 AI 與國際安全。要講清楚，這仍是企業政策提案，並非美國政府已採納的制度，亦不是已簽署的國際協議；但它把近期抽象的 AI 減速爭議，推進至可量度、可通報、可跨國協調的具體規則。",
-    "category": "AI 政策",
-    "publishedAt": "2026-09-21T17:24:00Z",
-    "sourceLabel": "OpenAI / Reuters",
-    "sourceUrl": "https://www.reuters.com/legal/government/openai-calls-us-take-lead-global-efforts-develop-technical-standards-2026-09-21/",
     "verified": true,
     "active": true
   }
