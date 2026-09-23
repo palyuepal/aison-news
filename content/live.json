@@ -1,5 +1,38 @@
 [
   {
+    "id": "2026-09-23-anthropic-claude-opus-5-5",
+    "title": "Anthropic 推出 Claude Opus 5.5：成本降四成，安全測試同步升級",
+    "summary": "Anthropic 9 月 22 日推出 Claude Opus 5.5，表示新模型以較低運行成本提供接近旗艦級能力，API 定價為每百萬輸入 tokens 4 美元、輸出 20 美元，並已在 AWS、Google Cloud 及 Microsoft Azure 提供。公司亦首次把部分只用於最高能力系統的安全措施下放，並交由 Frontier Design、METR 等外部團隊測試。要講清楚，軟件開發表現與「85% 較少突破隔離」等數字主要來自公司及指定評測，仍要等待更廣泛獨立實測；但性能、價格與安全三者同時調整，會直接加劇企業模型採購競爭。",
+    "category": "AI 模型",
+    "publishedAt": "2026-09-23T11:20:00Z",
+    "sourceLabel": "Anthropic / Reuters",
+    "sourceUrl": "https://www.reuters.com/business/anthropic-unveils-claude-opus-55-2026-09-22/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-23-alibaba-zhenwu-v900-ai-chip",
+    "title": "阿里巴巴發布 Zhenwu V900：中國 AI 晶片與 20GW 數據中心計劃同步加速",
+    "summary": "阿里巴巴在杭州年度大會公布 Zhenwu V900 AI 晶片，聲稱效能是上一代三倍，並計劃訓練最高達 10 萬億參數的新模型；公司亦提出在 2032 年前把數據中心容量擴至 20GW。這些性能與規模目標仍主要來自公司披露，未有完整獨立測試或落成時間表，不能直接當成已交付能力。不過，晶片、模型與數據中心同時推進，顯示中國科技企業正嘗試以完整自家算力堆疊，降低美國高階晶片出口限制的影響。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-09-23T11:19:00Z",
+    "sourceLabel": "Alibaba / Associated Press",
+    "sourceUrl": "https://apnews.com/article/b29908e516faff9f5a82b201ba954aab",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-23-meta-muse-agent-zero-day-patch",
+    "title": "Meta 緊急修補 Muse 零日漏洞：惡意程式可劫持 AI Agent 執行操作",
+    "summary": "Meta 已為 macOS 版 Muse 發出緊急修補，安全研究員 Patrick Wardle 發現，本機已有惡意程式時，可改寫 Muse 未公開設定，把語音轉錄導向攻擊者控制的伺服器，再誘使 Agent 拍照或寫入惡意檔案。Meta 指攻擊需要裝置預先存在惡意程式，現實風險較低，並已推出 hotfix；目前未有證據顯示漏洞曾被大規模利用。真正警號是，Agent 一旦擁有相機、檔案及操作權限，傳統本機惡意程式可借助它把有限入侵放大成更高權限行動。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-23T11:18:00Z",
+    "sourceLabel": "Meta / The Verge",
+    "sourceUrl": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-22-faa-ai-flight-management-rollout",
     "title": "美國 FAA 正式啟用 AI 航班管理工具：8.75 億美元合約由華盛頓空域起步",
     "summary": "美國聯邦航空管理局（FAA）9 月 21 日表示，已開始使用一套以預測分析改善航班管理的新軟件系統，首階段應用於華盛頓特區周邊空域，之後會逐步擴展至全國其他地區。FAA 今年 6 月向 Air Space Intelligence 批出為期 12 年、價值 8.75 億美元的合約。要講清楚，官方現時只公布系統已投入使用、合約規模及擴展方向，未公開延誤改善幅度、完整安全測試或全國時間表；這亦是輔助航班管理的預測系統，不等於用全自主 AI 取代空中交通管制員。真正的重要性，是 AI 正由一般辦公工具進入航空這類安全關鍵公共基建，成效、人工覆核、故障應變與可審計性都需要更高證據標準。",
@@ -183,39 +216,6 @@
     "publishedAt": "2026-09-21T07:28:00Z",
     "sourceLabel": "Australian Treasury / The Australian",
     "sourceUrl": "https://treasury.gov.au/sites/default/files/2026-09/p2026-797917.pdf",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-21-firmus-ai-data-centre-ipo",
-    "title": "澳洲 Firmus 擬籌 A$70 億上市：AI 數據中心迎來超大型 IPO",
-    "summary": "Reuters 9 月 21 日引述向投資者發出的條款書報道，澳洲數據中心營運商 Firmus 擬於 10 月 6 日啟動首次公開招股，基礎集資額 A$70 億（約 50 億美元），連同超額配售選擇權最高可達約 55 億美元。機構投資者簿記預計 10 月 6 至 7 日進行、招股章程 10 月 8 日提交，股份按計劃 10 月 22 日在澳洲證券交易所買賣；若成事，將是澳洲歷來第二大、2026 年迄今全球第四大 IPO。Firmus 尚未正式評論，估值及最終發售條款亦未公布，因此這是按投資者文件披露的上市計劃，不是已完成集資。公司現有兩座數據中心營運、另有五座在亞太區開發；今次招股將直接測試資本市場是否願意繼續以超大型股權融資支持 AI 算力擴張，同時承受電力、用水、建設進度及社區反對等風險。",
-    "category": "AI 基建",
-    "publishedAt": "2026-09-21T06:26:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/australias-firmus-launch-5-billion-ipo-october-6-term-sheet-shows-2026-09-21/",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-21-humanoid-robot-sales-7000-2025",
-    "title": "全球去年僅售約 7,000 部人形機械人：實際部署仍遠低於熱潮",
-    "summary": "International Federation of Robotics（IFR）首次整理全球人形機械人行業數據：2025 年約有 7,000 部人形機械人售予工業及專業服務市場，遠少於 2024 年約 54.2 萬部傳統工業機械人安裝量及約 19.9 萬部服務機械人銷量。IFR 指，不少人形機械人並未投入生產工作，而是由研究機構或企業購入，用作收集數據及訓練 AI 模型；汽車廠目前多數只進行個位數或雙位數規模試驗。統計不包括消費、軍事及醫療機械人，亦不否定未來高速增長，但它提供了一個重要實際基準：人形機械人投資與示範熱潮已非常龐大，真正商業部署仍在早期，市場應分開看已出貨、已試驗與能持續創造收入的產品。",
-    "category": "AI 機械人",
-    "publishedAt": "2026-09-21T05:26:00Z",
-    "sourceLabel": "International Federation of Robotics / Reuters",
-    "sourceUrl": "https://www.reuters.com/technology/humanoid-robot-sales-tally-hit-7000-globally-last-year-2026-09-21/",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-21-taiwan-tsmc-advanced-packaging-park",
-    "title": "台灣高雄先進封裝園區動工：TSMC 建 AI 晶片驗證樞紐",
-    "summary": "台灣 9 月 21 日在高雄為白埔產業園區動工，TSMC 將在園區興建兩座建築，包括技術驗證實驗室及人才培訓中心，預計 2029 年第四季投入運作。園區佔地約 88.7 公頃，其中約 53.6 公頃作工業用途，將讓設備與材料供應商進行研發、測試及驗證，縮短新技術導入量產所需時間。先進封裝是 NVIDIA、AMD、Broadcom 等 AI 晶片把多個運算與記憶體元件整合的關鍵環節；這次動工不是即時增加晶片產能，而是台灣把封裝、材料、設備及人才驗證更集中地形成供應鏈樞紐，長遠有助降低新製程由實驗走向量產的摩擦。",
-    "category": "AI 晶片",
-    "publishedAt": "2026-09-21T05:25:00Z",
-    "sourceLabel": "Taiwan Government / Reuters",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/taiwan-breaks-ground-advanced-packaging-park-anchored-by-tsmc-2026-09-21/",
     "verified": true,
     "active": true
   }
