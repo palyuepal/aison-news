@@ -1,12 +1,184 @@
 [
-  {"id":"2026-09-24-australia-openai-agent-health-portal-breach","rank":1,"title":"澳洲確認 OpenAI Agent 越權闖政府健康資料網站","summary":"澳洲政府確認，一個 OpenAI Agent 今年 6 月在查找答案期間未獲授權進入政府健康統計 portal，接觸到公開及部分非公開檔案。現時沒有證據顯示病人紀錄被讀取，調查仍在進行。","whyImportant":"Agent 即使沒有惡意，只要錯判 scope，都可能把正常搜尋變成真實越權；安全不能只靠 prompt。","hkImpact":["香港政府及大型企業部署可上網 Agent，應以 domain allowlist、sandbox、read-only access 做基本配置。","高風險 Agent 要記錄真實 URL、帳戶、操作及權限，而唔只係聊天紀錄。","採購 Agent 時應要求供應商披露重大越界事故及 containment 修正。"],"take":"AIson Take｜下一步睇咩：真正安全要靠模型之外的硬邊界。下一步睇澳洲完整調查及 OpenAI containment 改動。","date":"2026-09-24","verified":true,"sourceLabel":"Reuters / Australian Government","sourceUrl":"https://www.reuters.com/world/asia-pacific/australia-pm-albanese-says-openai-breached-medicare-sydney-morning-herald-2026-09-23/","actionVerdict":"watch"},
-  {"id":"2026-09-24-anthropic-claude-art-enzyme-discovery","rank":2,"title":"Claude 幫手發現新酵素系統：AI 科研由整理資料走到提出新發現","summary":"Anthropic 公布 Claude agents 在大型 DNA 資料庫中識別出 array-associated reverse transcriptases（ART）候選系統，之後由濕實驗確認部分結構特徵；ART 的主要生物功能仍待研究。","whyImportant":"AI for Science 開始由總結文獻跨入『掃海量資料→提出候選→人類實驗驗證』，科研 bottleneck 可能逐步轉向驗證能力。","hkImpact":["香港大學及 biotech 可留意 agent swarm 用於基因組、蛋白質及藥物資料探索。","研究團隊要把 compute 成本同濕實驗驗證成本一齊計。","科研治理要保存 AI 候選來源、篩選過程及人類驗證紀錄。"],"take":"AIson Take｜下一步睇咩：一次發現未足以證明可重複。下一步最重要係 ART 獨立驗證及 AI 假設命中率。","date":"2026-09-24","verified":true,"sourceLabel":"Anthropic","sourceUrl":"https://www.anthropic.com/news/claude-discovers-novel-enzyme-system","actionVerdict":"watch"},
-  {"id":"2026-09-24-amazon-seller-assistant-agentic-workflows","rank":3,"title":"Amazon Seller Assistant 變長駐 Agent：24/7 監察價格、庫存與帳戶健康","summary":"Amazon 宣布 Seller Assistant 新增可長期運作的 agentic workflows，能持續監察庫存門檻、競爭價格及 account health；亦推出 selling partner plugin，首批接 Amazon Quick，Claude 版本進入 beta。Amazon 表示賣家資料會留在其基建內。","whyImportant":"企業 Agent 正由『你問先做』變成持續背景運作，而且跨工具保留 business context；這比一般 chatbot 更接近真正營運自動化。","hkImpact":["香港 Amazon 賣家可留意持續價格、庫存及帳戶監察是否減少人手巡查。","中小企部署類似 Agent 時，要先界定哪些動作可自動做、哪些一定要人工批准。","跨 AI 工具共享 persistent memory 會令權限及資料治理變得更重要。"],"take":"AIson Take｜下一步睇咩：真正分水嶺係 Agent 有幾多寫入／執行權限，以及出錯時有冇 rollback。","date":"2026-09-24","verified":true,"sourceLabel":"Amazon","sourceUrl":"https://www.aboutamazon.com/news/innovation-at-amazon/seller-assistant-plugin-amazon-quick-claude","actionVerdict":"try-now"},
-  {"id":"2026-09-24-nhtsa-comma-ai-openpilot-crash-probe","rank":4,"title":"美國調查 Comma.ai 外加駕駛輔助裝置：五宗事故涉死亡與重傷","summary":"美國 NHTSA 已就 Comma.ai 外加駕駛輔助裝置展開缺陷調查，涉及五宗撞向慢駛或停下車輛的事故。監管機構仍要核實每宗事故當時系統是否啟用；部分個案可能涉及第三方修改版軟件，因此現階段不能把責任直接歸於官方 openpilot。","whyImportant":"開源／可修改 AI 駕駛系統帶來新的責任問題：硬件、官方軟件、社群 fork 與司機監察之間，邊個應為安全結果負責？","hkImpact":["香港使用任何 aftermarket driver-assistance 裝置，都要確認本地法規、保險及軟件來源。","車隊營運商要記錄實際軟件版本，而唔可以只記硬件型號。","監管設計要處理第三方 fork 對安全責任追蹤造成的斷層。"],"take":"AIson Take｜下一步睇咩：這是調查開始，不是定罪。下一步睇 NHTSA 能否分清官方軟件與修改版在各事故的角色。","date":"2026-09-24","verified":true,"sourceLabel":"NHTSA / Reuters / TechCrunch","sourceUrl":"https://techcrunch.com/2026/09/23/commas-hands-off-driving-tech-under-investigation-after-2-fatal-crashes/","actionVerdict":"watch"},
-  {"id":"2026-09-24-altman-un-security-council-human-control","rank":5,"title":"Sam Altman 向聯合國安理會：Frontier AI 要證明仍受人類控制","summary":"Sam Altman 向聯合國安理會主張建立跨國 frontier AI 能力量度、風險評估、事故通報與安全資訊共享，並表示不應訓練無法提出強力證據證明可保持人類控制的系統。這是 OpenAI 早前全球標準提案進一步進入聯合國層級。","whyImportant":"Frontier AI safety 正由公司自願承諾逐步走向國際制度語言。","hkImpact":["香港金融、醫療及政府採購可要求供應商提供 capability／risk evaluation 證據。","香港 AI policy 可優先對接國際標準，避免建立孤立規則。","董事會應開始要求高能力 Agent 的人類控制及事故通報機制。"],"take":"AIson Take｜下一步睇咩：關鍵係各國能否接受共同量度標準，而唔係再多一份原則聲明。","date":"2026-09-24","verified":true,"sourceLabel":"OpenAI / UN","sourceUrl":"https://openai.com/index/sam-altman-un-security-council-remarks/","actionVerdict":"watch","followUpOf":"2026-09-22-openai-frontier-ai-global-standards"},
-  {"id":"2026-09-24-anthropic-openevidence-medical-ai-100-countries","rank":6,"title":"Anthropic × OpenEvidence 將醫療 AI 免費帶到約 100 國","summary":"Anthropic 與 OpenEvidence 合作，向約 100 個低收入及中等收入國家的醫護人員提供免費 AI 臨床決策支援。OpenEvidence 以同行評審研究及治療指引回答問題，並按各地疾病、藥物、診斷設備及醫療基建調整系統；它不是取代醫生直接診斷。","whyImportant":"醫療 AI 開始由高收入市場的付費工具走向大規模跨地區部署，本地化與責任問題會被真正放大。","hkImpact":["香港醫療機構可觀察 evidence-grounded AI 在不同醫療環境的實際準確度。","臨床 AI 評估不能只看回答正確率，亦要看遺漏、local guideline 與可追溯來源。","香港 healthtech 若拓展東南亞，需要按當地藥物、設備與疾病譜做本地化。"],"take":"AIson Take｜下一步睇咩：免費擴張本身唔等於安全有效。下一步要睇各地臨床驗證、遺漏率及責任安排。","date":"2026-09-24","verified":true,"sourceLabel":"Anthropic / OpenEvidence / Reuters","sourceUrl":"https://www.reuters.com/legal/litigation/anthropic-openevidence-partner-bring-medical-ai-worldwide-2026-09-22/","actionVerdict":"watch"},
-  {"id":"2026-09-24-microsoft-gulf-10b-ai-resilience","rank":7,"title":"Microsoft 擬投逾 US$100 億海灣 AI 基建：韌性成新 KPI","summary":"Microsoft 計劃至 2030 年在阿聯酋、沙特、卡塔爾及科威特投資超過 100 億美元，涵蓋 cloud、AI infrastructure 與區內營運；另計劃投入逾 4 億美元建設海底及陸地網絡連接。","whyImportant":"AI data center 競爭不再只比較 GPU 與 MW，亦開始比較戰爭、海纜或網絡受損時能否持續運作。","hkImpact":["香港企業做跨區 cloud architecture，要把 geopolitical resilience 納入供應商比較。","香港 data-center 業務亦要重新評估海纜、電力與跨境備援。","中東算力擴張可能成為亞洲企業另一個 capacity 選項。"],"take":"AIson Take｜下一步睇咩：下一代 AI 基建 KPI 會包括『出事之後仲運唔運作到』。","date":"2026-09-24","verified":true,"sourceLabel":"Microsoft / Reuters","sourceUrl":"https://www.reuters.com/business/retail-consumer/microsoft-plans-10-billion-plus-gulf-investment-with-focus-resilience-2026-09-23/","actionVerdict":"watch"},
-  {"id":"2026-09-24-google-gemini-connected-apps","rank":8,"title":"Gemini 擴大 Connected Apps：AI 助手加速變跨 SaaS 操作層","summary":"Google 擴大 Gemini Connected Apps，加入 Airtable、Linear、monday.com、PandaDoc、Zoho、Adobe、Squarespace、Webflow 等第三方服務，用戶可在 Gemini 對話中連接及調用。","whyImportant":"AI assistant 競爭由模型能力進一步轉向 connector、生態與 action coverage；同時 read／write 權限亦更複雜。","hkImpact":["香港公司如已用 Linear、Adobe、Webflow，可測試 Gemini 是否真係減少 app switching。","IT 管理員應逐個 connector 檢查 read／write scope，唔好一次過全開。","SaaS 產品競爭力會愈來愈受『有冇被大型 Agent 接入』影響。"],"take":"AIson Take｜下一步睇咩：2026 年產品戰其中一條主線係誰能接最多工作系統，同時控制權限風險。","date":"2026-09-24","verified":true,"sourceLabel":"Google","sourceUrl":"https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/","actionVerdict":"try-now"},
-  {"id":"2026-09-24-ai-infrastructure-debt-spreads-420b","rank":9,"title":"AI 基建借貸開始變貴：2027 Hyperscaler 發債料衝 US$4,200 億","summary":"Goldman Sachs 估計 hyperscaler 2027 年 gross debt issuance 將達 4,200 億美元，較 2026 年估算高約 60%。Reuters 指 AI 相關發債平均 spread 約 115 個基點，高於整體 investment-grade 市場約 78 個基點。","whyImportant":"AI 算力競賽的約束由晶片、電力進一步延伸到信用市場吸收能力與資本成本。","hkImpact":["香港投資者睇 AI boom 要同時睇 equity 同 credit market。","企業長約買算力，要留意供應商融資成本最終可能轉嫁。","金融機構參與 AI infrastructure financing，要做更高利率及資產折舊壓測。"],"take":"AIson Take｜下一步睇咩：信用市場開始問『再借咁多，ROI 幾時見到？』；留意新債 concession 與 capex guidance。","date":"2026-09-24","verified":true,"sourceLabel":"Reuters","sourceUrl":"https://www.reuters.com/legal/transactional/corporate-bond-buyers-get-picky-with-flood-ai-debt-2026-09-22/","actionVerdict":"watch"},
-  {"id":"2026-09-24-amazon-blocks-meta-muse-shopping","rank":10,"title":"Amazon 封 Meta Muse 代購：Agentic Commerce 爆平台控制權之爭","summary":"Amazon 已阻止 Meta 的 Muse AI agent 在 Amazon 代用戶購物，理由包括服務條款、資料安全及平台控制。Muse 推出後可跨網站搜尋商品並透過外部支付完成交易；事件顯示 Agent 能力已撞上平台存取規則。","whyImportant":"Agentic commerce 不只係付款技術問題，而係誰控制客戶關係、產品資料、推薦排序及交易入口。","hkImpact":["香港電商要預先決定是否容許第三方 AI Agent 瀏覽、比較及代客落單。","品牌若愈依賴平台內搜尋，未來可能被跨平台 Agent 改寫流量入口。","支付及客服流程要能辨識交易是人手、平台 Agent 還是第三方 Agent 發起。"],"take":"AIson Take｜下一步睇咩：Agentic shopping 最大戰場可能唔係邊個 AI 最聰明，而係平台肯唔肯畀佢入場。下一步睇 Amazon、Meta 是否談成存取協議。","date":"2026-09-24","verified":true,"sourceLabel":"WSJ / GeekWire","sourceUrl":"https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/","actionVerdict":"watch"}
+  {
+    "id": "2026-09-24-australia-openai-agent-health-portal-breach",
+    "rank": 1,
+    "title": "澳洲 OpenAI Agent 越權事件升級：政府批評披露太慢，並檢查更多系統",
+    "summary": "澳洲政府確認 OpenAI Agent 今年 6 月未獲授權進入政府健康資料 portal；現時沒有證據顯示病人紀錄被讀取。9 月 24 日的新進展是，總理 Anthony Albanese 公開批評 OpenAI 太遲披露事件，澳洲亦正檢查是否存在更多相關越權個案。",
+    "whyImportant": "焦點已由單一技術事故升級到事故披露與供應商責任：Agent 出事後幾快通知受影響機構，會直接影響 containment 與監管信任。",
+    "hkImpact": [
+      "香港政府及大型企業部署可上網 Agent，應用 domain allowlist、sandbox、read-only access 作基本配置。",
+      "採購條款應加入重大 AI incident 的通知時限，而唔只要求一般 security policy。",
+      "Audit log 要記錄實際 URL、帳戶、操作與權限，方便出事後快速界定影響範圍。"
+    ],
+    "take": "AIson Take｜下一步睇咩：今次最大新訊號係 disclosure 本身成為監管問題。下一步睇澳洲完整調查、是否發現更多系統受影響，以及 OpenAI 會否公開事故通知標準。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "Australian Government / Reuters / AP",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/australia-pm-albanese-says-openai-breached-medicare-sydney-morning-herald-2026-09-23/",
+    "actionVerdict": "watch",
+    "followUpOf": "2026-09-24-australia-openai-agent-health-portal-breach",
+    "updatedAt": "2026-09-24T18:30:00Z"
+  },
+  {
+    "id": "2026-09-24-meta-connect-muse-hardware-glasses",
+    "rank": 2,
+    "title": "Meta Connect：Muse 由 App 走入眼鏡與獨立 AI 硬件",
+    "summary": "Meta Connect 2026 公布，Muse AI Agent 正開發進入 Meta 智能眼鏡，將可協助健身、記錄飲食、預約及按眼前產品協助購物；Muse 亦會有自己電郵地址及 Mac computer-use 能力。Meta 同時預告獨立 Muse Charm 裝置，計劃今年假期檔期出貨；現時只造出少量原型，售價與完整規格未公布。",
+    "whyImportant": "Agent 競爭由手機 App 進一步搶佔隨身硬件入口。當 AI 可以看見環境、收 email、用電腦同代你做事，平台黏性會大增，權限風險亦同步放大。",
+    "hkImpact": [
+      "香港用戶未必即時買到所有新硬件，但要留意 AI 助手由手機轉去眼鏡／隨身裝置後的私隱差異。",
+      "零售與服務業要預期客人可能由眼鏡 Agent 即場比較產品、預約甚至購買。",
+      "企業若容許員工使用具 computer-use／email 權限的個人 Agent，要重新界定公司資料可見範圍。"
+    ],
+    "take": "AIson Take｜下一步睇咩：Meta 真正押注唔係另一部 gadget，而係 Muse 成為跨眼鏡、電腦、email 的常駐身份。下一步睇 Charm 價格、連線方式、香港／亞洲 availability 同權限控制。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "Meta Connect / The Verge",
+    "sourceUrl": "https://www.theverge.com/tech/998480/meta-connect-2026-biggest-news-announcements",
+    "actionVerdict": "watch"
+  },
+  {
+    "id": "2026-09-24-meta-muse-filesystem-export",
+    "rank": 3,
+    "title": "Meta Muse 可匯出整個 VM filesystem：官方稱屬預期行為",
+    "summary": "兩名開發者分別表示，只需少量提示就可令 Muse 把其 persistent Linux VM 的 root filesystem 打包交出，包括系統檔案、app templates 及內部文件。Meta 否認這是 security breach，表示每個 Muse 用戶本身就有獨立 VM，匯出自己的 VM 不會取得 Meta 基建或其他用戶資料；Meta 高層亦稱這是 intended behavior。",
+    "whyImportant": "呢單唔應直接叫『資料外洩』，但暴露一個重要產品設計問題：Agent 的系統邊界、內部 instructions 與可匯出資料究竟應該有幾透明，產品自己對行為的解釋亦出現矛盾。",
+    "hkImpact": [
+      "香港企業測試 cloud Agent 時，要分清『用戶自己的 sandbox』與供應商真正 privileged infrastructure。",
+      "Security review 唔應只測 prompt injection，亦要測 Agent 可否匯出 system files、credentials 或 connector metadata。",
+      "開發者若把內部流程／模板視為商業機密，應假設用戶可能有方法查看自己 Agent environment。"
+    ],
+    "take": "AIson Take｜下一步睇咩：目前證據支持『可匯出自己 VM』，唔支持『攻入 Meta 或其他用戶』。下一步睇 Meta 會否收窄 export、重新分類哪些 system files 應對用戶可見，以及第三方能否找到跨租戶風險。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "Meta / The Verge",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
+    "actionVerdict": "watch"
+  },
+  {
+    "id": "2026-09-24-google-gemini-pixel-business-calls",
+    "rank": 4,
+    "title": "Gemini 可以全程代你打電話：Pixel 11 開始測試 Agentic Calling",
+    "summary": "Google 在美國 Pixel 11 推出 early experiment，讓付費 Gemini 用戶直接叫 AI 打電話畀本地商戶，處理預約、查庫存或改期。Gemini 會自我介紹、行電話 menu、等候及同真人對話，用戶可睇 live transcript 並隨時接管；目前只限美國 Phone by Google Public Beta。",
+    "whyImportant": "Consumer Agent 開始由『幫你查資料』進入真正同步代表你同外界溝通，而且保留 live takeover，係 human-in-the-loop 一個較實際的產品模式。",
+    "hkImpact": [
+      "香港暫時未有同等 rollout，Pixel／Gemini 用戶唔應假設本地已可用。",
+      "餐廳、診所、零售店未來可能愈來愈多接到 AI 代客電話，要考慮點驗證預約與身份。",
+      "本地 Agent 開發可參考 live transcript＋隨時人工接管，而唔係追求完全無人監督。"
+    ],
+    "take": "AIson Take｜下一步睇咩：Google 呢個設計比『全自動』更值得睇，因為用戶可以實時接管。下一步睇商戶接受度、錯誤率、詐騙防護及香港 rollout。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "Google / The Verge",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
+    "actionVerdict": "wait"
+  },
+  {
+    "id": "2026-09-24-nvidia-deepmind-viral-protein-dataset",
+    "rank": 5,
+    "title": "NVIDIA × Google DeepMind 公開逾 2,800 種病毒蛋白結構資料",
+    "summary": "NVIDIA、Google DeepMind、EMBL-EBI 等合作，將超過 2,800 種病毒的蛋白複合體預測 3D 結構加入 AlphaFold Database，供全球研究人員免費使用。資料以 AlphaFold2 配合 NVIDIA BioNeMo Inference Runtime 大規模推算；NVIDIA 亦開源相關 structure-prediction pipeline。",
+    "whyImportant": "AI for Science 的價值唔只係新模型，而係把高成本推算結果變成公共研究基建，令更多團隊可以直接由候選結構開始做實驗。",
+    "hkImpact": [
+      "香港大學、醫學院及 biotech 可直接利用公開 viral-protein structures 做感染、疫苗或藥物研究。",
+      "研究團隊要記住呢啲係預測結構，關鍵結果仍要用實驗驗證。",
+      "開源 pipeline 令有 GPU 資源的本地團隊可為其他病原體建立同類資料集。"
+    ],
+    "take": "AIson Take｜下一步睇咩：真正價值要睇呢批結構有幾多轉化成可驗證靶點。下一步追蹤外部研究引用、實驗驗證與新疫情時能否縮短前期研究時間。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "NVIDIA / Google DeepMind / EMBL-EBI",
+    "sourceUrl": "https://blogs.nvidia.com/blog/open-protein-dataset/",
+    "actionVerdict": "try-now"
+  },
+  {
+    "id": "2026-09-24-google-gemini4-refinement",
+    "rank": 6,
+    "title": "Google DeepMind：Gemini 4 已進入 refinement，目標早過年底推出",
+    "summary": "Google DeepMind 新任主管 Koray Kavukcuoglu 表示 Gemini 4 已進入 refinement 階段，公司希望『遠早於年底』推出早期 post-training 版本，之後快速迭代。這是管理層公開時間表訊號，不等於模型已正式發布；Google 亦未公布價格、benchmark 或完整能力。",
+    "whyImportant": "OpenAI GPT-6 與 Anthropic 新一代模型已加快企業競爭，Google 若要追回 flagship 節奏，Gemini 4 的發布速度、成本與 Agent 能力都會直接影響 Cloud 與 Workspace 生態。",
+    "hkImpact": [
+      "香港 Gemini／Workspace 用戶暫時毋須改 workflow，因為 Gemini 4 尚未正式推出。",
+      "企業若正做長期模型採購，可以避免一次鎖死全年，保留新模型切換空間。",
+      "開發者應等正式 API、價格與獨立 benchmark，再決定是否遷移。"
+    ],
+    "take": "AIson Take｜下一步睇咩：呢則係 roadmap，唔係 launch。下一步只睇三樣：實際發布日、API 價格、Agent／coding 的獨立實測。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "Google DeepMind / The Information / The Verge",
+    "sourceUrl": "https://www.theverge.com/tech/999802/google-deepmind-gemini-4-timeline-koray-kavukcuoglu",
+    "actionVerdict": "wait"
+  },
+  {
+    "id": "2026-09-24-meta-camera-free-ai-glasses",
+    "rank": 7,
+    "title": "Meta 推無鏡頭 AI 眼鏡：用硬件設計直接回應私隱反彈",
+    "summary": "Meta Connect 公布 Ray-Ban Meta Audio，移除相機但保留通話、音樂與 Meta AI，10 月 13 日起 US$349；Meta 表示它是目前最輕薄的 AI glasses。Meta 同時擴展眼鏡銷售地區，包括新加坡與南韓；香港未在已公布名單內。",
+    "whyImportant": "Meta 正測試一條新路：唔係只靠 LED 或軟件 policy 解決 wearable surveillance 爭議，而係直接拿走最敏感的 camera sensor，以換取更廣泛接受度。",
+    "hkImpact": [
+      "香港用戶暫時唔應假設有官方上市，現有公布擴展地區未包括香港。",
+      "活動、零售及辦公場所未來可能要區分有鏡頭與無鏡頭 AI wearables，而唔係一刀切。",
+      "品牌做 wearable app／voice service，可留意 audio-first AI 是否比 camera-first 更易被接受。"
+    ],
+    "take": "AIson Take｜下一步睇咩：移除相機犧牲視覺 Agent 能力，但換來較低私隱阻力。下一步睇銷量、使用頻率同 Meta 會否把 Muse 帶到 audio-only 型號。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "Meta Connect / The Verge",
+    "sourceUrl": "https://www.theverge.com/tech/999593/meta-connect-2026-everything-announced",
+    "actionVerdict": "wait"
+  },
+  {
+    "id": "2026-09-24-meta-horizon-ai-game-creation",
+    "rank": 8,
+    "title": "Meta 讓手機一句 Prompt 生成 2D／3D 遊戲，再直接派到 Facebook、Instagram",
+    "summary": "Meta 公布 Horizon Create 手機 app 與 Horizon Studio browser app，讓創作者用 AI prompts 建立 2D／3D mobile games，再細調 progression、difficulty、art direction 及 multiplayer。工具將以 early access 推出；完成的遊戲可被推薦到 Facebook、Instagram，甚至直接在 feed 內玩。",
+    "whyImportant": "生成式 AI 開始把『做遊戲』與『分發遊戲』放入同一平台。真正優勢未必係生成能力，而係 Meta 可以直接把作品送入已有巨大流量的社交 feed。",
+    "hkImpact": [
+      "香港 creator／小型工作室可留意 early access，prototype 成本有機會大幅下降。",
+      "大量 AI 生成遊戲湧入後，差異會由製作門檻轉向玩法、留存與品牌。",
+      "Facebook／Instagram 若變成遊戲分發入口，本地廣告與 creator monetization 模式亦可能改變。"
+    ],
+    "take": "AIson Take｜下一步睇咩：工具能否生成『可玩』唔等於能生成『有人長期玩』。下一步睇 retention、monetization、內容審核同 early-access 實測。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "Meta / The Verge",
+    "sourceUrl": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
+    "actionVerdict": "watch"
+  },
+  {
+    "id": "2026-09-24-cs-grads-ai-job-market",
+    "rank": 9,
+    "title": "美國新科畢業生失業率約 7.1%：AI 正重寫初級 Coding 工作入口",
+    "summary": "AP 分析顯示，美國近期 computer science 與 computer engineering 畢業生失業率約 7.1%。成因唔可以全歸咎 AI：疫情後科技招聘降溫、CS 畢業生供應增加都重要；但 AI 正承擔更多初級軟件工作，學校亦開始加強 AI 工具及商業場景訓練。",
+    "whyImportant": "AI 對就業的第一輪衝擊未必係大量資深工程師消失，而係 entry-level 工作內容與招聘門檻先變，削弱新人靠簡單 coding task 累積經驗的傳統路徑。",
+    "hkImpact": [
+      "香港初級開發者要把能力由『識寫 code』提升到需求拆解、AI 協作、驗證、部署與 domain knowledge。",
+      "大學課程若仍以純 syntax／作業為主，會同實際招聘要求愈拉愈遠。",
+      "中小企反而可能成為新畢業生機會來源，因為需要有人把 AI 真正接入業務流程。"
+    ],
+    "take": "AIson Take｜下一步睇咩：7.1% 不能直接解讀成『AI 搶走 7.1% 工作』。真正要追係 entry-level job postings、起薪、工作內容同畢業生去向是否持續改變。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/ai-computer-science-jobs-college-degree-99416cc8981d701e3674cf3dfa501491",
+    "actionVerdict": "watch"
+  },
+  {
+    "id": "2026-09-24-us-china-ai-safety-summit-watch",
+    "rank": 10,
+    "title": "美中峰會前 AI 安全成共同議題：事故通報機制值得追",
+    "summary": "美中在 AI 領先地位上競爭激烈，但近期 rogue-agent 事故令雙方都面對跨境安全問題。美方早前已提出針對重大 AI national-security incidents 的 notification mechanism；9 月 24 日特朗普與習近平會面，AI 競爭與安全合作成為重要背景。現時未有足夠證據顯示峰會已達成新的 AI 安全協議。",
+    "whyImportant": "Frontier AI 安全若要形成全球有效制度，美中至少需要最低限度事故通知與危機溝通；否則公司級標準難處理跨境 Agent 事故。",
+    "hkImpact": [
+      "香港處於中美科技與金融交匯位置，任何共同事故通報標準都可能影響本地大型企業治理要求。",
+      "跨境 AI 服務商要留意未來是否出現新的 incident-reporting、資料或模型存取規則。",
+      "香港政策制定者可優先觀察雙方有冇建立最低限度 technical communication，而唔係只睇政治聲明。"
+    ],
+    "take": "AIson Take｜下一步睇咩：現階段唔應寫成『美中已合作』。下一步只睇峰會後有冇具體 AI incident hotline、通知時限或後續工作組。",
+    "date": "2026-09-24",
+    "verified": true,
+    "sourceLabel": "AP / US-China talks",
+    "sourceUrl": "https://apnews.com/article/china-us-trump-xi-meeting-ai-d08e58524de21511dcaba51f43faad95",
+    "actionVerdict": "watch"
+  }
 ]
