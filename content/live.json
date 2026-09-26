@@ -63,7 +63,7 @@
     "sourceLabel": "NHTSA / Reuters / TechCrunch",
     "sourceUrl": "https://www.reuters.com/technology/us-probes-commaai-over-crashes-tied-aftermarket-driver-assistance-devices-2026-09-23/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-24-amazon-seller-assistant-agentic-workflows",
@@ -74,7 +74,7 @@
     "sourceLabel": "Amazon / Reuters",
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-rolls-out-new-agentic-ai-third-party-sellers-2026-09-23/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-24-anthropic-openevidence-medical-ai-100-countries",
@@ -85,7 +85,7 @@
     "sourceLabel": "Anthropic / OpenEvidence / Reuters",
     "sourceUrl": "https://www.reuters.com/legal/litigation/anthropic-openevidence-partner-bring-medical-ai-worldwide-2026-09-22/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-24-microsoft-gulf-10b-ai-cloud-resilience",
@@ -96,7 +96,7 @@
     "sourceLabel": "Microsoft / Reuters",
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/microsoft-plans-10-billion-plus-gulf-investment-with-focus-resilience-2026-09-23/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-24-basecamp-research-140m-ai-drug-funding",
@@ -107,7 +107,7 @@
     "sourceLabel": "Basecamp Research / Reuters",
     "sourceUrl": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-trump-ai-super-intelligence-doj-oversight",
@@ -118,7 +118,7 @@
     "sourceLabel": "Reuters / The Verge",
     "sourceUrl": "https://www.reuters.com/legal/government/trump-says-us-will-henceforth-call-ai-super-intelligence-2026-09-22/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-ai-infrastructure-debt-spreads-420-billion",
@@ -129,7 +129,7 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/legal/transactional/corporate-bond-buyers-get-picky-with-flood-ai-debt-2026-09-22/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-microsoft-eviltokens-ai-cybercrime-disruption",
@@ -140,7 +140,7 @@
     "sourceLabel": "Microsoft / Axios",
     "sourceUrl": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-openai-daybreak-ukraine-civilian-defense",
@@ -151,7 +151,7 @@
     "sourceLabel": "OpenAI",
     "sourceUrl": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-meta-muse-human-concierge-test",
@@ -162,7 +162,7 @@
     "sourceLabel": "Meta / Reuters",
     "sourceUrl": "https://www.reuters.com/business/meta-testing-human-concierge-its-new-personal-ai-agent-muse-2026-09-22/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-palo-alto-continuous-frontier-ai-defense",
@@ -173,7 +173,7 @@
     "sourceLabel": "Palo Alto Networks / Reuters",
     "sourceUrl": "https://www.reuters.com/technology/palo-alto-networks-unveils-ai-powered-cybersecurity-service-using-claude-gpt-2026-09-22/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-microsoft-foundry-gpt-6-sol-luna-ga",
@@ -185,7 +185,7 @@
     "sourceUrl": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-nvidia-isaac-ros-5-agent-skills",
@@ -197,7 +197,7 @@
     "sourceUrl": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-anthropic-claude-opus-5-5",
@@ -208,7 +208,7 @@
     "sourceLabel": "Anthropic / Reuters",
     "sourceUrl": "https://www.reuters.com/business/anthropic-unveils-claude-opus-55-2026-09-22/",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-23-alibaba-zhenwu-v900-ai-chip",
@@ -219,6 +219,6 @@
     "sourceLabel": "Alibaba / Associated Press",
     "sourceUrl": "https://apnews.com/article/b29908e516faff9f5a82b201ba954aab",
     "verified": true,
-    "active": true
+    "active": false
   }
 ]
