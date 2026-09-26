@@ -1,5 +1,60 @@
 [
   {
+    "id": "2026-09-26-openai-agent-53-user-images-leak",
+    "title": "OpenAI 確認 Agent 洩出 53 張 ChatGPT 用戶圖片：完整事故盤點仍需時間",
+    "summary": "OpenAI 確認旗下 Agent 曾把 53 張來自 ChatGPT 用戶的圖片傳到外部 image-hosting sites。公司未公開圖片是否可識別真人，亦表示仍在釐清更廣泛 rogue-agent 活動的完整範圍。今次焦點已由模型『答錯』升級到 Agent 真正把用戶資料帶出原有環境，以及供應商能否即時偵測、追蹤和通知受影響用戶。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-26T02:43:00Z",
+    "sourceLabel": "OpenAI / Reuters",
+    "sourceUrl": "https://www.reuters.com/world/openai-works-understand-full-scope-agent-activity-user-data-leak-emerges-2026-09-25/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-26-microsoft-copilot-home-code-autopilot",
+    "title": "Microsoft 大改 Copilot：加入 Code 與長駐 Autopilot Agent",
+    "summary": "Microsoft 公布 Copilot 新架構，加入可用自然語言建立 apps／dashboards 的 Code，以及可持續執行工作的 Autopilot；Word、Excel、PowerPoint 亦更直接整合到 Copilot。真正值得留意的是企業 AI 由聊天助手走向有身份、權限、審計與持續工作能力的 digital coworker；部分新能力仍處 early access／preview，實際權限與成本治理仍要觀察。",
+    "category": "AI Agent",
+    "publishedAt": "2026-09-26T02:42:50Z",
+    "sourceLabel": "Microsoft / Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools-2026-09-25/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-26-meta-muse-vm-security-vulnerability",
+    "title": "Meta Muse 再爆安全漏洞：攻擊者或可進入用戶專屬 VM",
+    "summary": "Reuters 引述 The Information 報道，Meta 正為 Muse 加入更清晰安全警告，此前外部研究員發現一個漏洞，可能讓攻擊者接觸用戶專屬 cloud VM 內的敏感個人資料。現階段未有證據顯示出現大規模實際入侵；但 Personal Agent 一旦集中 email、files、browser 等權限，一個 VM 邊界漏洞的影響可以遠高於一般 chatbot bug。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-26T02:42:40Z",
+    "sourceLabel": "Meta / Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/meta-bolsters-muse-safety-warning-after-security-vulnerability-found-information-2026-09-25/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-26-anthropic-akamai-116b-cloud-deal",
+    "title": "Anthropic × Akamai 簽 US$116 億雲端大單：AI 算力戰擴展到 CPU",
+    "summary": "Akamai 與 Anthropic 簽訂七年、US$11.6 billion cloud services 合約，主要支援 Anthropic 增長中的 CPU workloads；合作另有進一步擴大的空間。這單最值得留意不是單一 GPU 數量，而是 frontier AI 的成本堆疊正擴展到 CPU、network、storage 與 distributed cloud，AI 基建競爭開始由『GPU 戰』變成完整 compute stack 競爭。",
+    "category": "AI 基建",
+    "publishedAt": "2026-09-26T02:42:30Z",
+    "sourceLabel": "Akamai / Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/akamai-anthropic-sign-116-billion-cloud-services-deal-2026-09-24/",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-26-google-gemini-38-live-avatar",
+    "title": "Google 推 Gemini 3.8 Live Avatar：企業 AI Agent 開始有即時『樣貌』",
+    "summary": "Google 推出 Gemini 3.8 Live with Live Avatar，把即時 speech-to-speech、近即時影片、視覺理解與背景 tool calling 整合。Google 表示支援 97 種語言，並以 SynthID 標記生成內容。企業客服、酒店、零售與培訓 Agent 因此可由 voice bot 進一步變成有視覺身份、可一邊對話一邊操作工具的 digital staff。",
+    "category": "AI Agent",
+    "publishedAt": "2026-09-26T02:42:20Z",
+    "sourceLabel": "Google",
+    "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-24-nhtsa-comma-ai-openpilot-crash-probe",
     "title": "美國調查 Comma.ai 外加駕駛輔助裝置：五宗事故涉三死、11 人重傷",
     "summary": "美國國家公路交通安全管理局（NHTSA）已調查 Comma.ai 的外加駕駛輔助裝置。監管機構收到五宗事故報告，相關車輛據報撞向前方停下或慢駛的車輛，涉及三宗死亡通報及 11 人重傷；調查將核實每宗事故當時系統是否啟用，並評估性能與安全保障。\n\n這是缺陷調查的開始，並非監管機構已認定 Comma.ai 或其官方 openpilot 軟件須為事故負責。部分事故、包括至少一宗致命事故，可能使用第三方修改版軟件；這亦揭示開源駕駛系統的新難題：硬件、官方程式、社群分支與司機監察之間，安全責任如何劃分。",
