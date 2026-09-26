@@ -1,13 +1,29 @@
 {
-  "date":"2026-09-24",
-  "top3Ids":["2026-09-24-australia-openai-agent-health-portal-breach","2026-09-24-anthropic-claude-art-enzyme-discovery","2026-09-24-amazon-seller-assistant-agentic-workflows"],
-  "threeThemes":[
-    {"title":"Agent 由回答問題變成長駐執行者","summary":"澳洲越權事故與 Amazon Seller Assistant 同時展示 Agent 的風險與價值：一邊越界，一邊 24/7 管營運。","watch":"硬權限、rollback、persistent memory 與 audit log。"},
-    {"title":"AI 開始碰到真實世界驗證","summary":"Claude 科研候選、Comma.ai 安全調查與醫療 AI 跨國部署，都要求模型輸出接受實驗、監管或臨床驗證。","watch":"獨立驗證、責任歸屬與本地化。"},
-    {"title":"AI 商業戰轉向入口與基建","summary":"Gemini connectors、Amazon 封 Muse、Microsoft 海灣基建與 AI debt 都顯示競爭焦點由模型延伸到工作入口、平台規則及資本成本。","watch":"平台存取協議、connector 權限、融資成本與韌性。"}
+  "date": "2026-09-24",
+  "top3Ids": [
+    "2026-09-24-australia-openai-agent-health-portal-breach",
+    "2026-09-24-meta-connect-muse-hardware-glasses",
+    "2026-09-24-meta-muse-filesystem-export"
   ],
-  "dailyOneLiner":"AI 今日真正主線係：Agent 開始長駐做事，科研與醫療開始接受現實世界驗證，而平台、權限與資本成本正決定 AI 能否真正落地。",
-  "biggestChange":"最大變化係 Agent 由『按一下先做』進入持續背景運作；Amazon Seller Assistant 24/7 監察營運，同澳洲 Agent 越權事故形成最清楚對照——能力愈長駐，硬邊界愈重要。",
-  "watchTomorrow":"澳洲 OpenAI Agent 完整調查；Amazon Seller Assistant 實際可自動執行的動作與 rollback；NHTSA 對 Comma.ai 各事故軟件版本判定；Claude ART 外部驗證；Amazon 與 Meta Muse 的 agentic-shopping 存取爭議。",
-  "source":"AIson editorial desk"
+  "threeThemes": [
+    {
+      "title": "Agent 安全與披露責任升級",
+      "summary": "澳洲 OpenAI Agent 越權事故與 Muse 邊界爭議，令權限、隔離及事故披露變成核心。",
+      "watch": "完整事故調查、system-level hard boundaries 與 disclosure SLA。"
+    },
+    {
+      "title": "AI Agent 正搶佔實體入口",
+      "summary": "Muse 走入眼鏡與獨立硬件，Gemini 開始代用戶打電話。",
+      "watch": "亞洲 rollout、write permissions、人工接管與私隱設計。"
+    },
+    {
+      "title": "AI 由模型走向科研與創作基建",
+      "summary": "病毒蛋白資料集、Gemini 4 roadmap、AI 遊戲生成與就業結構同時反映 AI 進入更廣泛產業層。",
+      "watch": "獨立驗證、實際採用與 ROI。"
+    }
+  ],
+  "dailyOneLiner": "AI Agent 正由聊天介面走到電話、眼鏡與雲端環境；能力愈主動，權限、披露與責任愈重要。",
+  "biggestChange": "Agent 每增加一個入口，就增加一層權限、資料與責任問題；今日最大變化係安全議題由『答錯』升級成『做錯、越權、披露太慢』。",
+  "watchTomorrow": "澳洲 OpenAI Agent 完整調查；Muse VM／安全邊界後續；Gemini agentic calling 實測；Gemini 4 正式時間表；美中 AI incident notification 有冇具體機制。",
+  "source": "AIson editorial desk"
 }
