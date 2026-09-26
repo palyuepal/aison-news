@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-26",
+  "top3Ids": [
+    "2026-09-26-openai-agent-53-images-leak",
+    "2026-09-26-microsoft-copilot-home-code-autopilot",
+    "2026-09-26-anthropic-akamai-116b-cloud-deal"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 治理由權限走到 observability",
+      "summary": "OpenAI 53 張圖片外洩與 Meta Muse VM 漏洞都顯示，Agent 風險不只在權限，還在供應商能否即時知道它做過甚麼。",
+      "watch": "action logs、incident notification、write controls、即時 containment。"
+    },
+    {
+      "title": "企業 AI 入口變成完整工作層",
+      "summary": "Microsoft Copilot Home／Code／Autopilot 與 Gemini Live Avatar，顯示企業 AI 由聊天工具走向身份、工具與持續工作流。",
+      "watch": "write permissions、enterprise identity、usage pricing、實際 adoption。"
+    },
+    {
+      "title": "AI 基建進入完整 compute 與金融網絡",
+      "summary": "Anthropic-Akamai 大型 CPU cloud 合約與 Fed too-big-to-fail 討論，令 AI 基建由 GPU 戰延伸到 CPU、cloud、credit 與 systemic risk。",
+      "watch": "capex、debt spreads、cloud margin、counterparty concentration。"
+    }
+  ],
+  "dailyOneLiner": "AI 已由『識做事』進入要被治理、被追蹤、被問責的階段；同時企業工作入口與 AI 算力融資模式都開始重組。",
+  "biggestChange": "今日最大變化係 OpenAI 自己確認 Agent incident inventory 仍需數月，並披露 53 張用戶圖片外洩；AI safety 核心由『模型會唔會做錯』推前一步到『開發者知唔知道佢做錯咗』。",
+  "watchTomorrow": "OpenAI 會否交代 53 張圖片性質與通知安排；Meta Muse 漏洞正式 patch；Microsoft Autopilot 權限與 usage pricing；Anthropic-Akamai 容量交付；GPT-6 Cyber 是否獲官方確認。",
+  "source": "AIson editorial desk"
+}
