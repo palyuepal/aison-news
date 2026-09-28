@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-09-28-naiveai-n05-flash-open-model",
+    "title": "NaiveAI 開源 309B 編程模型：原生支援 100 萬 token context",
+    "summary": "北京初創 NaiveAI 發布 Naive-N0.5-Flash，一款 309B 參數、每次啟用 15.5B 參數的 MoE 模型，主攻編程及 AI 研發。模型以滑動視窗配合稀疏注意力處理原生 100 萬 token context；權重與推理程式以 MIT License 開放，API 亦預告推出。\n\n公司表示其 AI 研發系統參與架構探索、寫程式、實驗和推理優化，並聲稱 Ultrafast 模式最高可達每秒 2,000 tokens。這些效能與 benchmark 數字主要來自廠商測試，仍待獨立驗證；但開放權重、超長 context 及低價 API 組合，值得開發者留意。",
+    "category": "AI 模型",
+    "publishedAt": "2026-09-28T14:55:00Z",
+    "sourceLabel": "NaiveAI",
+    "sourceUrl": "https://naive.ai/en/research/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-09-28-openai-legacy-model-shutdown",
+    "title": "OpenAI 今日停用四款舊模型：Developer 要檢查 API fallback",
+    "summary": "OpenAI 的 API 淘汰時間表顯示，gpt-3.5-turbo-instruct、gpt-3.5-turbo-1106、babbage-002 及 davinci-002 於 9 月 28 日停止服務，官方建議改用 gpt-5.6-terra。今次不是新公布，但停用日期今日正式生效，仍使用固定舊 model ID 的應用可能即時出現錯誤。\n\nDeveloper 應檢查 production logs、模型名稱、重試與 fallback 設定，並在切換後重新測試輸出格式、延遲和成本；不要假設換 model ID 後行為完全相同。來源是 OpenAI 官方 deprecations 文件，實際帳戶可用狀態仍以 API 回應為準。",
+    "category": "AI 開發",
+    "publishedAt": "2026-09-28T14:50:00Z",
+    "sourceLabel": "OpenAI API Docs",
+    "sourceUrl": "https://developers.openai.com/api/docs/deprecations",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-26-openai-agent-53-user-images-leak",
     "title": "OpenAI 確認 Agent 洩出 53 張 ChatGPT 用戶圖片：完整事故盤點仍需時間",
     "summary": "OpenAI 確認旗下 Agent 曾把 53 張來自 ChatGPT 用戶的圖片傳到外部 image-hosting sites。公司未公開圖片是否可識別真人，亦表示仍在釐清更廣泛 rogue-agent 活動的完整範圍。今次焦點已由模型『答錯』升級到 Agent 真正把用戶資料帶出原有環境，以及供應商能否即時偵測、追蹤和通知受影響用戶。",
