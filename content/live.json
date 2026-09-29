@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-09-30-openai-devday-dots-agent",
+    "title": "OpenAI 推長駐 Agent「Dots」：AI 開始跨 App 持續代辦工作",
+    "summary": "OpenAI 在 DevDay 推出長駐 AI Agent「Dots」，可按用戶目標跨應用持續工作，透過 Slack、Teams、Codex 及 ChatGPT Work 研究資料、更新文件、分析數據和建立軟件。公司同場推出協作空間 ChatGPT Space、較低成本的 GPT‑6.1 Sol，以及讓企業把有限選項交由 AI 判斷的 Decisions API。\n\nDots 在獨立雲端電腦運作，用戶可設定行動規則及何時需要批准；改密碼、永久刪除資料等敏感操作必須明確同意。不過，OpenAI 仍在調查近期 Agent 越權及用戶圖片外洩事件，因此真正考驗不只在能力，而是權限、記錄、資料保留與出錯後能否停止及追責。",
+    "category": "AI Agent",
+    "publishedAt": "2026-09-29T18:56:00Z",
+    "sourceLabel": "OpenAI / Reuters / Associated Press",
+    "sourceUrl": "https://www.reuters.com/business/openai-takes-meta-with-always-on-dots-agent-enterprise-ai-push-2026-09-29/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-29-america-gov-ai-government-concierge",
     "title": "美國推出 America.gov：政府服務正式加入 AI 對話入口",
     "summary": "美國政府推出 America.gov，讓民眾以自然語言查詢聯邦政府資料與服務，並簽署行政命令要求合資格部門逐步接入。現階段主要提供問答；官方計劃今年稍後支援護照續期、Medicare 登記等交易，並以 Login.gov 處理身份驗證。\n\n平台推出後數分鐘內，AP 發現部分政治問題的回答由直接作答改為拒答，反映政府 AI 的準確性、內容控制與政治中立會受到即時檢驗。行政命令要求資料最小化、可審計授權及保留電話、郵寄和實體渠道；稅務申報、國防及情報服務暫不納入。",
@@ -209,17 +221,6 @@
     "publishedAt": "2026-09-23T18:27:00Z",
     "sourceLabel": "Anthropic / OpenEvidence / Reuters",
     "sourceUrl": "https://www.reuters.com/legal/litigation/anthropic-openevidence-partner-bring-medical-ai-worldwide-2026-09-22/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-24-microsoft-gulf-10b-ai-cloud-resilience",
-    "title": "Microsoft 擬投逾 100 億美元落戶海灣：AI 數據中心加入戰時韌性考驗",
-    "summary": "Microsoft 計劃由現在至 2030 年，在阿聯酋、沙特阿拉伯、卡塔爾及科威特投資超過 100 億美元，涵蓋雲端與 AI 基建及區內營運擴張；公司另計劃投入逾 4 億美元建設中東海底與陸地網絡連接。\n\nMicrosoft 未披露各國投資分配或具體項目，並以安全因素作解釋。這不是全部已簽約或建成的數據中心；真正的新訊號是，區內戰事及雲端設施受襲後，AI 基建競爭開始同時比較算力、跨境連接、關鍵數據保護，以及遇襲後能否持續運作。",
-    "category": "AI 基建",
-    "publishedAt": "2026-09-23T17:24:00Z",
-    "sourceLabel": "Microsoft / Reuters",
-    "sourceUrl": "https://www.reuters.com/business/retail-consumer/microsoft-plans-10-billion-plus-gulf-investment-with-focus-resilience-2026-09-23/",
     "verified": true,
     "active": false
   }
