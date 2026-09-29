@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-29",
+  "dailyOneLiner": "今日 AI 最大轉變唔係單純再快一個模型，而係『Agent 要點樣被控制、被審計、被商業化』正式成為模型、晶片、企業平台同資本市場共同主線。",
+  "top3Ids": [
+    "2026-09-29-openai-gpt61-astra-shelved",
+    "2026-09-29-anthropic-ipo-prospectus-costs",
+    "2026-09-29-nvidia-open-agent-safety-platform"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 安全變成基建層",
+      "summary": "OpenAI 因授權與可控性問題擱置 Astra，NVIDIA 同企業 security 生態則把控制下沉到 runtime、gateway 甚至硬件。",
+      "watch": "留意供應商會否公布可量化的 Agent containment、audit 與 authorization 標準。"
+    },
+    {
+      "title": "AI 商業模式進入公開市場檢驗",
+      "summary": "Anthropic IPO 文件把高速收入、巨額算力承諾、客戶集中與治理風險一齊攤開，AI lab 的 economics 開始更透明。",
+      "watch": "留意正式 IPO 文件、最新財務數據與估值區間。"
+    },
+    {
+      "title": "算力與平台向上下游擴張",
+      "summary": "AMD 收購 World Labs、Cerebras 擴大推理基建、Meta 建 Enterprise Platform，競爭由單一模型延伸到完整 stack。",
+      "watch": "留意收購整合、企業平台 pricing／governance，以及新推理架構的 production 數據。"
+    }
+  ],
+  "biggestChange": "Agent safety 已由『模型會唔會拒絕危險指令』升級成『系統能否強制限制權限、追蹤行動、隔離越界行為』；這會直接改變企業 AI 架構。",
+  "watchTomorrow": "最值得追蹤 OpenAI 會否進一步解釋 Astra 的 safety gate、Anthropic IPO 文件會否有更多正式披露，以及 NVIDIA Open Agent Safety Platform 的首批實際部署細節。"
+}
