@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-09-30-white-house-ai-self-regulation-accord",
+    "title": "美國 AI 巨頭簽自律協議：安全監督主要交回企業自己",
+    "summary": "美國總統特朗普宣布，多間大型 AI 公司的領袖在白宮簽署自願安全協議，承諾加強內部控制、外部審查及董事會層面的獨立監督。OpenAI、Anthropic、Meta、Google、NVIDIA、Amazon、xAI 等公司高層出席會議；但協議全文、實際簽署名單及負責監察的委員會人選尚未完整公開。\n\n協議目前沒有法律約束力，特朗普亦表明不希望政府限制 AI 發展，主要依賴企業互相監督。當 OpenAI 等公司近期因 Agent 越權及安全測試而延後模型，這項安排的關鍵不只是企業有沒有承諾，而是審查結果會否公開、違反承諾有甚麼後果，以及外部監督是否真正獨立。",
+    "category": "AI 政策",
+    "publishedAt": "2026-09-29T22:03:00Z",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/595796511f110fc006cca0d01329733e",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-30-openai-devday-dots-agent",
     "title": "OpenAI 推長駐 Agent「Dots」：AI 開始跨 App 持續代辦工作",
     "summary": "OpenAI 在 DevDay 推出長駐 AI Agent「Dots」，可按用戶目標跨應用持續工作，透過 Slack、Teams、Codex 及 ChatGPT Work 研究資料、更新文件、分析數據和建立軟件。公司同場推出協作空間 ChatGPT Space、較低成本的 GPT‑6.1 Sol，以及讓企業把有限選項交由 AI 判斷的 Decisions API。\n\nDots 在獨立雲端電腦運作，用戶可設定行動規則及何時需要批准；改密碼、永久刪除資料等敏感操作必須明確同意。不過，OpenAI 仍在調查近期 Agent 越權及用戶圖片外洩事件，因此真正考驗不只在能力，而是權限、記錄、資料保留與出錯後能否停止及追責。",
@@ -210,17 +222,6 @@
     "publishedAt": "2026-09-23T21:28:00Z",
     "sourceLabel": "Amazon / Reuters",
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-rolls-out-new-agentic-ai-third-party-sellers-2026-09-23/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-24-anthropic-openevidence-medical-ai-100-countries",
-    "title": "Anthropic、OpenEvidence 將醫療 AI 推向約 100 國：免費臨床決策支援走出歐美",
-    "summary": "Anthropic 與醫療知識平台 OpenEvidence 合作，向約 100 個低收入及中等收入國家的醫護人員免費提供專門版 AI 臨床決策支援。OpenEvidence 會從同行評審醫學研究與治療指引回答醫生問題；Anthropic 提供後端模型能力，OpenEvidence 按各地疾病、可用藥物、診斷設備及醫療基建調整系統。\\n\\n合作未披露財務條款，亦不代表 AI 可以取代醫生或直接作診斷。真正重要的是，醫療 AI 開始由高收入市場的付費產品走向跨地區部署；但訓練資料能否代表本地人口、建議是否符合當地條件，以及錯誤結果如何追責，仍是核心考試。",
-    "category": "AI 醫療",
-    "publishedAt": "2026-09-23T18:27:00Z",
-    "sourceLabel": "Anthropic / OpenEvidence / Reuters",
-    "sourceUrl": "https://www.reuters.com/legal/litigation/anthropic-openevidence-partner-bring-medical-ai-worldwide-2026-09-22/",
     "verified": true,
     "active": false
   }
