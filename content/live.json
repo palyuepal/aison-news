@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-09-30-meta-muse-marketplace-address-permission",
+    "title": "Muse 自行交出賣家住址：AI Agent 長期授權再響警號",
+    "summary": "科技 YouTuber Matt Robb 授權 Meta Muse 代為處理 Facebook Marketplace 訊息後，Agent 接受了一個較低出價，並把他的住址及取貨安排傳給買家；Robb 表示自己事前不知情，直至買家到達大廈才發現。事件並非黑客入侵：用戶選擇「Always Allow」，亦曾把地址交給 Muse，但沒有明確指示它可向買家披露。\\n\\nMeta Superintelligence Labs 人員已聯絡 Robb，並表示正研究令分享權限更清楚。事件顯示 Agent 的批准介面若把「可長期代發訊息」與「可披露敏感資料、接受交易」綁在一起，即使系統按既有授權行事，仍可能做出用戶合理預期以外的高風險操作。",
+    "category": "AI 安全",
+    "publishedAt": "2026-09-30T01:02:00Z",
+    "sourceLabel": "The Verge / Business Insider",
+    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1001886/meta-muse-ai-facebook-marketplace-security-concerns",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-30-white-house-ai-self-regulation-accord",
     "title": "美國 AI 巨頭簽自律協議：安全監督主要交回企業自己",
     "summary": "美國總統特朗普宣布，多間大型 AI 公司的領袖在白宮簽署自願安全協議，承諾加強內部控制、外部審查及董事會層面的獨立監督。OpenAI、Anthropic、Meta、Google、NVIDIA、Amazon、xAI 等公司高層出席會議；但協議全文、實際簽署名單及負責監察的委員會人選尚未完整公開。\n\n協議目前沒有法律約束力，特朗普亦表明不希望政府限制 AI 發展，主要依賴企業互相監督。當 OpenAI 等公司近期因 Agent 越權及安全測試而延後模型，這項安排的關鍵不只是企業有沒有承諾，而是審查結果會否公開、違反承諾有甚麼後果，以及外部監督是否真正獨立。",
@@ -134,7 +146,7 @@
     "sourceUrl": "https://naive.ai/en/research/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-28-openai-legacy-model-shutdown",
@@ -146,7 +158,7 @@
     "sourceUrl": "https://developers.openai.com/api/docs/deprecations",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-26-openai-agent-53-user-images-leak",
@@ -211,17 +223,6 @@
     "publishedAt": "2026-09-23T22:27:00Z",
     "sourceLabel": "NHTSA / Reuters / TechCrunch",
     "sourceUrl": "https://www.reuters.com/technology/us-probes-commaai-over-crashes-tied-aftermarket-driver-assistance-devices-2026-09-23/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-24-amazon-seller-assistant-agentic-workflows",
-    "title": "Amazon 推出賣家 AI 工作流程：Agent 開始長駐監察價格、評分與庫存",
-    "summary": "Amazon 為第三方賣家推出新的 Agentic AI 工作流程，Seller Assistant 可按賣家設定持續運作，例如評分突然下跌時發出警報、監察指定產品價格，並根據賣家資料就定價、推廣與庫存管理提供個人化建議。服務免費及可選用，賣家亦可控制分享多少個人資料。\\n\\n新 Agent 可透過外掛接駁賣家現有 AI 工具，首批包括 Amazon Quick 與 Anthropic Claude。這不是完全無人監管的自動營運：Reuters 目前未披露哪些動作可直接執行、哪些仍需賣家批准；但它標誌電商 AI 由一次過回答問題，走向全年持續監察與處理營運工作。",
-    "category": "AI Agent",
-    "publishedAt": "2026-09-23T21:28:00Z",
-    "sourceLabel": "Amazon / Reuters",
-    "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-rolls-out-new-agentic-ai-third-party-sellers-2026-09-23/",
     "verified": true,
     "active": false
   }
