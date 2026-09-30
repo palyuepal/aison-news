@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-01-google-gemini-4-argon",
+    "title": "Google 發布 Gemini 4 Argon：最強模型先交可信網絡防守方",
+    "summary": "Google 公布 Gemini 4 系列首款旗艦模型 Argon，主打軟件工程、法律及金融等企業知識工作，以及網絡防禦。Google 表示模型可自主找出、驗證及修補關鍵軟件漏洞，並公布多項 coding、長 context、科學、數學及 cyber 評測；這些數字主要來自公司測試，仍需獨立驗證。\n\nArgon 暫未向一般用戶或全部開發者開放。Google 先向少量可信網絡防守夥伴提供，並參與美國政府的發布前模型存取安排，同時加強防濫用、prompt injection、失準監察及 sandbox 隔離；公司未公布全面推出日期。這反映前沿模型能力愈高，發布方式亦由即時全面開放，轉向先由受限夥伴測試。",
+    "category": "AI 模型",
+    "publishedAt": "2026-09-30T21:59:35Z",
+    "sourceLabel": "Google DeepMind / Reuters",
+    "sourceUrl": "https://deepmind.google/models/gemini/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-01-instagram-edits-ai-creative-assistant",
     "title": "Instagram Edits 加入 AI 創作助手：直接用帳戶數據教你點出帖",
     "summary": "Instagram 在獨立影片編輯 App Edits 加入 AI「creative assistant」，會讀取創作者帳戶的觀看次數、讚好、分享及影片留存等數據，分析哪些內容有效。用戶可詢問近期趨勢、兩條影片表現不同的原因，亦可要求開場、腳本、caption 及熱門音訊建議。\n\n功能提供有限免費用量，Meta 表示重度使用者可訂閱 Meta One 取得更多使用額，但暫未公布各地推出時間、價格及具體上限。工具可把散落的數據變成行動建議，同時亦代表平台開始直接教創作者如何迎合自己的推薦系統，可能令內容更加同質化。",
@@ -219,17 +231,5 @@
     "sourceUrl": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
     "verified": true,
     "active": true
-  },
-  {
-    "id": "2026-09-28-naiveai-n05-flash-open-model",
-    "title": "NaiveAI 開源 309B 編程模型：原生支援 100 萬 token context",
-    "summary": "北京初創 NaiveAI 發布 Naive-N0.5-Flash，一款 309B 參數、每次啟用 15.5B 參數的 MoE 模型，主攻編程及 AI 研發。模型以滑動視窗配合稀疏注意力處理原生 100 萬 token context；權重與推理程式以 MIT License 開放，API 亦預告推出。\n\n公司表示其 AI 研發系統參與架構探索、寫程式、實驗和推理優化，並聲稱 Ultrafast 模式最高可達每秒 2,000 tokens。這些效能與 benchmark 數字主要來自廠商測試，仍待獨立驗證；但開放權重、超長 context 及低價 API 組合，值得開發者留意。",
-    "category": "AI 模型",
-    "publishedAt": "2026-09-28T14:55:00Z",
-    "sourceLabel": "NaiveAI",
-    "sourceUrl": "https://naive.ai/en/research/",
-    "level": "update",
-    "verified": true,
-    "active": false
   }
 ]
