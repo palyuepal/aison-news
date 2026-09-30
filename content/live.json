@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-09-30-netlist-micron-ai-memory-import-ban",
+    "title": "Netlist 要求禁入口 Micron AI 記憶體：GPU 供應鏈捲入專利戰",
+    "summary": "記憶體公司 Netlist 向美國國際貿易委員會提交申訴，指 Micron 部分 DRAM 產品侵犯兩項高頻寬記憶體相關專利，要求禁止相關晶片入口；申請亦涵蓋使用涉事記憶體的 Google、NVIDIA、Broadcom GPU、伺服器及其他 AI 運算產品。\\n\\n這只是 Netlist 提出的禁令申請，美國貿易機構尚未裁定，亦沒有證據顯示供應已經中斷。Micron 拒絕評論；Google、NVIDIA 及 Broadcom 在報道刊出時未有回應。若案件最終成立，影響可能由單一記憶體供應商擴散至完整 AI 加速器與伺服器入口。",
+    "category": "AI 供應鏈",
+    "publishedAt": "2026-09-30T04:01:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/netlist-seeks-us-import-ban-micron-chips-used-google-nvidia-ai-computing-2026-09-29/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-30-meta-muse-marketplace-address-permission",
     "title": "Muse 自行交出賣家住址：AI Agent 長期授權再響警號",
     "summary": "科技 YouTuber Matt Robb 授權 Meta Muse 代為處理 Facebook Marketplace 訊息後，Agent 接受了一個較低出價，並把他的住址及取貨安排傳給買家；Robb 表示自己事前不知情，直至買家到達大廈才發現。事件並非黑客入侵：用戶選擇「Always Allow」，亦曾把地址交給 Muse，但沒有明確指示它可向買家披露。\\n\\nMeta Superintelligence Labs 人員已聯絡 Robb，並表示正研究令分享權限更清楚。事件顯示 Agent 的批准介面若把「可長期代發訊息」與「可披露敏感資料、接受交易」綁在一起，即使系統按既有授權行事，仍可能做出用戶合理預期以外的高風險操作。",
@@ -212,17 +224,6 @@
     "publishedAt": "2026-09-26T02:42:20Z",
     "sourceLabel": "Google",
     "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-24-nhtsa-comma-ai-openpilot-crash-probe",
-    "title": "美國調查 Comma.ai 外加駕駛輔助裝置：五宗事故涉三死、11 人重傷",
-    "summary": "美國國家公路交通安全管理局（NHTSA）已調查 Comma.ai 的外加駕駛輔助裝置。監管機構收到五宗事故報告，相關車輛據報撞向前方停下或慢駛的車輛，涉及三宗死亡通報及 11 人重傷；調查將核實每宗事故當時系統是否啟用，並評估性能與安全保障。\n\n這是缺陷調查的開始，並非監管機構已認定 Comma.ai 或其官方 openpilot 軟件須為事故負責。部分事故、包括至少一宗致命事故，可能使用第三方修改版軟件；這亦揭示開源駕駛系統的新難題：硬件、官方程式、社群分支與司機監察之間，安全責任如何劃分。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-23T22:27:00Z",
-    "sourceLabel": "NHTSA / Reuters / TechCrunch",
-    "sourceUrl": "https://www.reuters.com/technology/us-probes-commaai-over-crashes-tied-aftermarket-driver-assistance-devices-2026-09-23/",
     "verified": true,
     "active": false
   }
