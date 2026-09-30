@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-09-30-timnit-gebru-right-livelihood-award",
+    "title": "Timnit Gebru 獲 Right Livelihood Award：AI 權力集中與歧視問題受肯定",
+    "summary": "Right Livelihood Foundation 宣布，AI 研究員 Timnit Gebru 成為 2026 年得獎者之一，表揚她挑戰人工智能權力集中，並推動以公義、真實生活經驗及人為本的數碼科技。Gebru 出生於埃塞俄比亞，是 Distributed AI Research Institute 創辦人。\n\n基金會指，她的工作揭示少數大型企業控制 AI 所帶來的風險，以及系統對受歧視和被排斥社群造成的現實傷害。這項國際獎項並非模型或產品發布，但反映 AI 討論正由能力競賽延伸至誰掌握技術、誰承受偏差，以及受影響群體能否參與決策。",
+    "category": "AI 倫理",
+    "publishedAt": "2026-09-30T05:00:00Z",
+    "sourceLabel": "Associated Press / Right Livelihood",
+    "sourceUrl": "https://apnews.com/article/sweden-right-livelihood-award-women-patriarchy-ai-1b50acb5a6a9ccb7c5f3a05758f5179b",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-30-netlist-micron-ai-memory-import-ban",
     "title": "Netlist 要求禁入口 Micron AI 記憶體：GPU 供應鏈捲入專利戰",
     "summary": "記憶體公司 Netlist 向美國國際貿易委員會提交申訴，指 Micron 部分 DRAM 產品侵犯兩項高頻寬記憶體相關專利，要求禁止相關晶片入口；申請亦涵蓋使用涉事記憶體的 Google、NVIDIA、Broadcom GPU、伺服器及其他 AI 運算產品。\\n\\n這只是 Netlist 提出的禁令申請，美國貿易機構尚未裁定，亦沒有證據顯示供應已經中斷。Micron 拒絕評論；Google、NVIDIA 及 Broadcom 在報道刊出時未有回應。若案件最終成立，影響可能由單一記憶體供應商擴散至完整 AI 加速器與伺服器入口。",
