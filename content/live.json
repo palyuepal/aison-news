@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-09-30-openai-ipo-safety-condition",
+    "title": "Altman：安全承諾未站穩前，OpenAI 不會上市",
+    "summary": "OpenAI 行政總裁 Sam Altman 在 DevDay 後表示，公司要先能對模型安全作出更有把握的承諾，才會推進上市；目前沒有確實時間表。他擔心在模型能力快速提升、安全要求亦隨之改變之際上市，華爾街壓力可能令公司更難把安全放在短期回報之前。\\n\\nOpenAI 尚未正式提交 IPO 文件，因此這不是取消已排期的上市，而是管理層為未來 IPO 設下條件。Altman 同時承認拖得太久亦可能不理想；真正需要觀察的是，公司會用哪些可驗證標準證明模型足夠安全，以及投資者能否接受安全測試延後產品與收入。",
+    "category": "AI 財經",
+    "publishedAt": "2026-09-30T13:03:53Z",
+    "sourceLabel": "Financial Times / The Verge",
+    "sourceUrl": "https://www.ft.com/content/211d10ae-cf9e-481d-99ed-0321d2eb0676",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-30-ai-infrastructure-coalition-community-principles",
     "title": "AI 巨頭推數據中心社區原則：電費、用水與地方反彈成擴建門檻",
     "summary": "由 Google、Meta、Microsoft 等支持的 AI Infrastructure Coalition 推出一套「社區原則」，承諾新數據中心項目應承擔新增能源成本、減少用水、優先聘用本地員工，並支援學校、醫院等公共設施。倡議直接回應美國多地對電價、供水及土地使用的反彈。\\n\\n這些原則屬業界自願承諾，並非法律，亦未公布統一執行、審計或違規後果。Financial Times 指，逾 1,000 個美國社區正推動暫停或限制數據中心發展，牽涉逾 100 個、總值約 2,000 億美元的項目；AI 基建能否繼續擴張，開始取決於企業是否願意把成本與利益更透明地留在當地。",
@@ -215,17 +227,6 @@
     "publishedAt": "2026-09-26T02:42:50Z",
     "sourceLabel": "Microsoft / Reuters",
     "sourceUrl": "https://www.reuters.com/technology/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools-2026-09-25/",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-26-meta-muse-vm-security-vulnerability",
-    "title": "Meta Muse 再爆安全漏洞：攻擊者或可進入用戶專屬 VM",
-    "summary": "Reuters 引述 The Information 報道，Meta 正為 Muse 加入更清晰安全警告，此前外部研究員發現一個漏洞，可能讓攻擊者接觸用戶專屬 cloud VM 內的敏感個人資料。現階段未有證據顯示出現大規模實際入侵；但 Personal Agent 一旦集中 email、files、browser 等權限，一個 VM 邊界漏洞的影響可以遠高於一般 chatbot bug。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-26T02:42:40Z",
-    "sourceLabel": "Meta / Reuters",
-    "sourceUrl": "https://www.reuters.com/technology/meta-bolsters-muse-safety-warning-after-security-vulnerability-found-information-2026-09-25/",
     "verified": true,
     "active": false
   }
