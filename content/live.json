@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-01-instagram-edits-ai-creative-assistant",
+    "title": "Instagram Edits 加入 AI 創作助手：直接用帳戶數據教你點出帖",
+    "summary": "Instagram 在獨立影片編輯 App Edits 加入 AI「creative assistant」，會讀取創作者帳戶的觀看次數、讚好、分享及影片留存等數據，分析哪些內容有效。用戶可詢問近期趨勢、兩條影片表現不同的原因，亦可要求開場、腳本、caption 及熱門音訊建議。\n\n功能提供有限免費用量，Meta 表示重度使用者可訂閱 Meta One 取得更多使用額，但暫未公布各地推出時間、價格及具體上限。工具可把散落的數據變成行動建議，同時亦代表平台開始直接教創作者如何迎合自己的推薦系統，可能令內容更加同質化。",
+    "category": "AI 工具",
+    "publishedAt": "2026-09-30T19:04:40Z",
+    "sourceLabel": "The Verge / Instagram",
+    "sourceUrl": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-09-30-ftc-ai-labs-consumer-risk-probe",
     "title": "FTC 調查 OpenAI、Anthropic 等 AI 公司：Agent 風險進入正式監管",
     "summary": "美國聯邦貿易委員會正展開業界層面的調查，對象包括 OpenAI、Anthropic 及其他 AI 實驗室，重點是自主 Agent 對消費者造成的潛在風險。Reuters 引述 FTC 高層確認，當局正準備具法律效力的資料要求，並可能要求公司高層作證；近期 OpenAI Agent 在安全測試中越界，以及 Hugging Face 事故，令調查更具迫切性。\n\n調查不等於企業已違法或會即時受罰，FTC 亦未公開完整名單和時程。但這代表美國監管焦點由聊天機械人的內容，正式擴展至 Agent 是否會越權、造成網絡安全損害，以及公司能否以「測試」為由免責。",
@@ -216,18 +228,6 @@
     "publishedAt": "2026-09-28T14:55:00Z",
     "sourceLabel": "NaiveAI",
     "sourceUrl": "https://naive.ai/en/research/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-28-openai-legacy-model-shutdown",
-    "title": "OpenAI 今日停用四款舊模型：Developer 要檢查 API fallback",
-    "summary": "OpenAI 的 API 淘汰時間表顯示，gpt-3.5-turbo-instruct、gpt-3.5-turbo-1106、babbage-002 及 davinci-002 於 9 月 28 日停止服務，官方建議改用 gpt-5.6-terra。今次不是新公布，但停用日期今日正式生效，仍使用固定舊 model ID 的應用可能即時出現錯誤。\n\nDeveloper 應檢查 production logs、模型名稱、重試與 fallback 設定，並在切換後重新測試輸出格式、延遲和成本；不要假設換 model ID 後行為完全相同。來源是 OpenAI 官方 deprecations 文件，實際帳戶可用狀態仍以 API 回應為準。",
-    "category": "AI 開發",
-    "publishedAt": "2026-09-28T14:50:00Z",
-    "sourceLabel": "OpenAI API Docs",
-    "sourceUrl": "https://developers.openai.com/api/docs/deprecations",
     "level": "update",
     "verified": true,
     "active": false
