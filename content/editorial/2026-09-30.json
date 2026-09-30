@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-30",
+  "dailyOneLiner": "今日 AI 最明顯的變化，是 Agent 由『會做事』全面走入治理、企業採購、支付防線與基建融資；真正競爭已不只模型能力，而是誰能控制權限、承擔事故與提供可驗證的信任。",
+  "top3Ids": [
+    "2026-09-30-white-house-ai-accord-released",
+    "2026-09-30-openai-devday-sol-agents-enterprise",
+    "2026-09-30-anthropic-cloud-partner-dependence"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 治理由承諾走向可驗證制度",
+      "summary": "美國公開六大 AI 公司自律協議，研究員同時質疑實驗室安全準備；市場下一步會追問審核、披露與責任是否真正可執行。",
+      "watch": "看監督委員會權限、第三方審核是否公開，以及事故通知和罰則會否寫入法律。"
+    },
+    {
+      "title": "OpenAI 把企業工作層接成一套",
+      "summary": "GPT-6.1 Sol、Agents API 電腦操作、Spaces、共享連接與 Marketplace 同時推出，模型、工具、協作與採購開始綁在同一平台。",
+      "watch": "看香港推出範圍、Sol 真實成本、multi-agent trace、data residency 與 Marketplace 合作夥伴。"
+    },
+    {
+      "title": "AI 基建與安全開始金融化",
+      "summary": "Anthropic 對雲端巨頭的分銷與算力依賴、NVIDIA 引入保險分散晶片融資風險，都顯示 AI 擴張已由技術競賽延伸到信用與資本結構。",
+      "watch": "留意 Anthropic 公開 S-1、neocloud 保險條款、GPU 殘值假設與渠道收入確認方式。"
+    }
+  ],
+  "biggestChange": "最大改變是 AI Agent 生態開始形成完整制度層：政府定框架、平台包辦模型與工作入口、企業購買安全控制、金融市場替算力分散風險。",
+  "watchTomorrow": "最值得追蹤的是美國自律協議的實際文本落地、OpenAI DevDay 產品在不同地區與企業方案的可用性，以及 Anthropic 是否再披露公開招股文件與雲端承諾細節。"
+}
