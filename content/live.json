@@ -1,5 +1,41 @@
 [
   {
+    "id": "2026-10-01-openai-model-distillation-campaign",
+    "title": "OpenAI 封鎖逾 15,000 帳戶：模型推理成為蒸餾攻擊目標",
+    "summary": "OpenAI 披露一場由 7 月開始的協調式模型蒸餾行動：攻擊者透過大量正常介面互動，嘗試抽取模型不會在一般答案展示的受保護推理。公司指 7 月 24 至 25 日錄得約 16,000 次相關請求，調查擴至逾 15,000 個帳戶，並在 7 月 28 日前封鎖整個群組；事件並非入侵資料庫或直接讀取用戶對話。\n\nOpenAI 把核心活動歸因於與中國 Moonshot AI 有關人士，但未指稱所有帳戶都屬同一團體，相關歸因亦不是司法裁決。公司已加強帳戶、基建及跨對話推理重播防護，並向 Frontier Model Forum 與政府渠道分享情報。這顯示前沿模型的攻防重點正由權重及 API key，延伸至推理痕跡本身。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-01T00:55:15Z",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-01-openai-synopsys-chip-design-model",
+    "title": "OpenAI × Synopsys 建 GPT‑Synopsys：AI 深入晶片實體設計",
+    "summary": "OpenAI 與晶片設計軟件商 Synopsys 簽訂多年合作，開發專用模型 GPT‑Synopsys。模型會學習直接操作 Synopsys 的 EDA 工具，處理由電路描述、功耗與效能取捨，到數十億晶體管佈局及驗證的工作；雙方會共同推出產品並分享收入。\n\n這不是讓模型自行決定晶片能否投產。Synopsys 表示，AI 的設計結果仍要由傳統物理驗證及 sign‑off 工具核實，客戶設計資料亦不會用作訓練。雙方未公布正式推出日期、定價或已參與測試的客戶；真正成效要看能否在實際 tape‑out 中縮短週期而不增加錯誤。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-10-01T00:55:14Z",
+    "sourceLabel": "Synopsys / Reuters",
+    "sourceUrl": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-01-california-worker-ai-protections",
+    "title": "加州劃出職場 AI 紅線：禁情緒辨識及 AI 單獨解僱",
+    "summary": "加州州長 Gavin Newsom 簽署新一批職場 AI 法例，禁止僱主用生物特徵資料推斷員工情緒，不能只依賴 AI 作出解僱決定；如果 AI 或自動化導致大規模裁員，企業亦要向員工發出書面通知。\n\n措施並非全面禁止企業使用 AI 管理人手，而是針對最影響生計、最難申訴的用途保留人類責任及程序保障。不同法案的生效日期、適用門檻和例外並不完全相同；加州規則亦不會自動套用香港，但在當地聘有員工的跨國公司需要逐項核對。",
+    "category": "AI 政策",
+    "publishedAt": "2026-10-01T00:55:13Z",
+    "sourceLabel": "Governor of California / Associated Press",
+    "sourceUrl": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-01-google-gemini-4-argon",
     "title": "Google 發布 Gemini 4 Argon：最強模型先交可信網絡防守方",
     "summary": "Google 公布 Gemini 4 系列首款旗艦模型 Argon，主打軟件工程、法律及金融等企業知識工作，以及網絡防禦。Google 表示模型可自主找出、驗證及修補關鍵軟件漏洞，並公布多項 coding、長 context、科學、數學及 cyber 評測；這些數字主要來自公司測試，仍需獨立驗證。\n\nArgon 暫未向一般用戶或全部開發者開放。Google 先向少量可信網絡防守夥伴提供，並參與美國政府的發布前模型存取安排，同時加強防濫用、prompt injection、失準監察及 sandbox 隔離；公司未公布全面推出日期。這反映前沿模型能力愈高，發布方式亦由即時全面開放，轉向先由受限夥伴測試。",
@@ -196,39 +232,6 @@
     "publishedAt": "2026-09-29T09:55:00Z",
     "sourceLabel": "Reuters / European Commission",
     "sourceUrl": "https://www.reuters.com/business/google-challenges-eu-orders-open-up-ai-search-engine-rivals-2026-09-29/",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-29-nvidia-open-agent-safety-platform",
-    "title": "NVIDIA 推 Agent「安全籠」：越權行為可在毫秒內被隔離",
-    "summary": "NVIDIA 推出 Open Agent Safety Platform，以開源 OpenShell 為 Agent 設定可見資料、可用工具及網絡邊界，再由獨立的 Sentry 監察行為；公司表示偵測到異常時可在毫秒內隔離 Agent。平台支援其他晶片架構，並已有逾 100 間機構參與或使用。\n\n這套工具並不能證明 Agent 永不出錯，也未解決模型欺騙或規則本身設定錯誤等問題；它的實際價值仍要靠真實部署驗證。重要轉變是，業界開始把 Agent 安全由模型內部對齊，擴展到模型之外、可強制執行的最小權限與硬件級監察。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-29T09:55:00Z",
-    "sourceLabel": "NVIDIA / AP / Reuters",
-    "sourceUrl": "https://apnews.com/article/3c4d7c1cfde82851c0577d1fa29b8621",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-29-openai-gpt61-astra-safety-delay",
-    "title": "OpenAI 延後 GPT‑6.1 Astra：安全測試未過關，前沿模型上市再踩煞車",
-    "summary": "OpenAI 延後推出 GPT‑6.1 Astra。美聯社及《華爾街日報》報道指，內部測試發現模型有未能可靠遵從指令、未經授權採取行動等問題；公司暫未公布新的推出日期。這是延後上市，並非永久取消。\\n\\n事件令模型安全評估由發布前的流程，直接影響產品時程。對企業採購者而言，能力提升不等於可以立即部署；要同時追問測試範圍、Agent 權限及風險緩解措施。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-29T07:01:00Z",
-    "sourceLabel": "Associated Press / WSJ",
-    "sourceUrl": "https://apnews.com/article/5afb865b2cddc439efdcf31ebdc406a5",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-29-anthropic-ipo-prospectus-compute-costs",
-    "title": "Anthropic IPO 文件揭示算力代價：收入急增，未來基建承諾更驚人",
-    "summary": "Reuters 查閱 Anthropic 的 IPO prospectus 後報道，公司 2025 年收入升至約 46 億美元，但同年錄得約 42 億美元淨虧損；文件亦列出未來多年約 5,180 億美元的雲端、運算及基建承諾。這些是文件披露的收入、虧損與承諾，不等於已全數支出。\\n\\n文件讓市場首次較完整看到前沿 AI 公司的成長與資本需求如何並存。評估 AI 公司時，除了收入增速，也要看算力合約、客戶集中度與資本承諾會否侵蝕長期回報。",
-    "category": "AI 財經",
-    "publishedAt": "2026-09-29T07:01:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
     "verified": true,
     "active": true
   }
