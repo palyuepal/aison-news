@@ -13,8 +13,7 @@ body[data-page="home"]{
 
 body[data-page="home"] .v6-home-shell,
 body[data-page="home"] .v6-themes,
-body[data-page="home"] .v6-for-you,
-body[data-page="home"] 
+body[data-page="home"] .v6-for-you{display:none}
 
 /* V6 final composition layer for legacy newsroom sections kept as stable fallbacks. */
 body[data-page="home"].v6-ready #today{
