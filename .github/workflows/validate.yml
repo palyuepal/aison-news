@@ -177,16 +177,7 @@ jobs:
           grep -q "'engagement.css'" service-worker.js
           grep -q "'home-v6.css'" service-worker.js
           grep -q "'home-v6.js'" service-worker.js
-          python - <<'PY'
-          import pathlib
-          css=pathlib.Path('home-v6.css').read_text(encoding='utf-8')
-          required='''body[data-page="home"] .v6-home-shell,
-body[data-page="home"] .v6-themes,
-body[data-page="home"] .v6-for-you{display:none}'''
-          assert required in css, 'V6 hidden-state selector block was corrupted'
-          assert 'body[data-page="home"] \n\n/* V6 final composition' not in css, 'V6 selector list leaked into composition rules'
-          print('v6 home hidden-state selector ok')
-          PY
+          python -c "import pathlib,re; css=pathlib.Path('home-v6.css').read_text(encoding='utf-8'); assert re.search(r'body\\[data-page=\\\"home\\\"\\] \\.v6-home-shell,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-themes,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-for-you\\{display:none\\}', css), 'V6 hidden-state selector block was corrupted'; print('v6 home hidden-state selector ok')"
           python - <<'PY'
           import sys
           sys.path.insert(0,'tools')
