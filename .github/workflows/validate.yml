@@ -17,6 +17,7 @@ jobs:
           node --check topics.js
           node --check weekly.js
           node --check lite-home.js
+          node --check home-v6.js
           node --check engagement.js
           node --check analytics.js
           node --check live.js
@@ -146,10 +147,18 @@ jobs:
           set -euo pipefail
           test -f home-newsroom-v4.css
           test -f home-signature-v5.css
+          test -f home-v6.css
+          test -f home-v6.js
           test -f engagement.js
           test -f engagement.css
           grep -q 'home-newsroom-v4.css' index.html
           grep -q 'home-signature-v5.css' index.html
+          grep -q 'home-v6.css' index.html
+          grep -q 'home-v6.js' index.html
+          grep -q 'id="v6SignalHero"' index.html
+          grep -q 'id="v6Themes"' index.html
+          grep -q 'id="v6ForYou"' index.html
+          grep -q 'id="v6EditorialBridge"' index.html
           grep -q 'id="editorialFeature"' index.html
           grep -q 'id="newsGrid"' index.html
           grep -q 'id="aison-live"' index.html
@@ -166,6 +175,8 @@ jobs:
           grep -q 'aison-last-seen-edition-v1' engagement.js
           grep -q "'engagement.js'" service-worker.js
           grep -q "'engagement.css'" service-worker.js
+          grep -q "'home-v6.css'" service-worker.js
+          grep -q "'home-v6.js'" service-worker.js
           python - <<'PY'
           import sys
           sys.path.insert(0,'tools')
