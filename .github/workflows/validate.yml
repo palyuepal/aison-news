@@ -145,9 +145,6 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test -f home-layout-v3.css
-          test -f home-newsroom-v4.css
-          test -f home-signature-v5.css
           test -f home-foundation-v6.css
           test -f home-v6.css
           test -f home-v6.js
@@ -181,20 +178,10 @@ jobs:
           grep -q "'home-v6.css'" service-worker.js
           grep -q "'home-v6.js'" service-worker.js
           python -c "import pathlib,re; css=pathlib.Path('home-v6.css').read_text(encoding='utf-8'); assert re.search(r'body\\[data-page=\\\"home\\\"\\] \\.v6-home-shell,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-themes,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-for-you\\{display:none\\}', css), 'V6 hidden-state selector block was corrupted'; print('v6 home hidden-state selector ok')"
-          python - <<'PY'
-          import pathlib
-          def norm(text):
-              return text.replace('\r\n','\n').replace('\r','\n').strip()
-          paths=['home-layout-v3.css','home-newsroom-v4.css','home-signature-v5.css']
-          parts=[]
-          for path in paths:
-              body=norm(pathlib.Path(path).read_text(encoding='utf-8'))
-              parts.append(f'/* ===== Consolidated from {path}; preserve source order ===== */\n{body}')
-          expected='/* AIson legacy homepage foundation consolidated for V6.\n * Source order intentionally preserved: V3 -> V4 -> V5.\n * Do not reorder sections without visual-regression verification.\n */\n\n'+'\n\n'.join(parts)
-          actual=norm(pathlib.Path('home-foundation-v6.css').read_text(encoding='utf-8'))
-          assert actual==norm(expected), 'consolidated homepage CSS differs from V3 -> V4 -> V5 normalized source order'
-          print('homepage foundation consolidation preserves normalized source order')
-          PY
+          test ! -f home-layout-v3.css
+          test ! -f home-newsroom-v4.css
+          test ! -f home-signature-v5.css
+          if grep -R -n --exclude-dir=.git -E 'home-(layout-v3|newsroom-v4|signature-v5)\\.css' -- *.html *.js .github/workflows 2>/dev/null; then echo 'legacy homepage CSS reference remains' >&2; exit 1; fi
           python - <<'PY'
           import sys
           sys.path.insert(0,'tools')
@@ -278,23 +265,3 @@ jobs:
           PY
       - name: Check latest verified source links
         run: python tools/check_sources.py
-
-      - name: Prepare CSS consolidation preview artifact
-        if: github.event_name == 'pull_request' && github.head_ref == 'feature/aison-v6-css-consolidation'
-        shell: bash
-        run: |
-          set -euo pipefail
-          rm -rf public
-          mkdir -p public
-          cp -a assets data news topics public/
-          cp -a *.html *.css *.js *.xml *.txt *.webmanifest CNAME public/
-          python tools/patch_news_visuals.py public
-          python tools/patch_search_quality.py public
-          python tools/patch_share_meta.py public
-      - name: Upload CSS consolidation preview artifact
-        if: github.event_name == 'pull_request' && github.head_ref == 'feature/aison-v6-css-consolidation'
-        uses: actions/upload-artifact@v4
-        with:
-          name: aison-v6-css-consolidation-preview
-          path: public
-          retention-days: 1
