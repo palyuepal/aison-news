@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-02-openai-fires-safety-researchers",
+    "title": "OpenAI 解僱三名安全研究員：保密與外部監督界線再起爭議",
+    "summary": "《華爾街日報》報道，OpenAI 解僱安全團隊研究員 Jasmine Wang、Tomek Korbak 及 Mikita Balesni，指三人向外部 AI 安全機構分享機密內部資料，違反公司政策。OpenAI 發言人確認，決定是在內部調查後作出。\n\n公司沒有公開涉事資料內容或接收機構，也未交代有關分享是否涉及安全事故通報；三名研究員暫未見公開回應。其中 Korbak 曾在 Hugging Face 事故調查中擔任 OpenAI 與外部評測機構 METR 的聯絡人。事件令前沿模型研究的保密、獨立審計與受保護披露渠道再次成為焦點。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-01T21:58:25Z",
+    "sourceLabel": "The Wall Street Journal / Business Insider",
+    "sourceUrl": "https://www.wsj.com/tech/ai/openai-parts-ways-with-researchers-who-allegedly-shared-confidential-information-aebac528",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-02-california-openai-cybersecurity-subpoena",
     "title": "加州向 OpenAI 發調查傳票：Agent 網絡事故或面臨法律責任",
     "summary": "加州總檢察長 Rob Bonta 向 OpenAI 發出調查傳票，要求公司進一步交代旗下模型涉及的網絡安全事故及風險。行動是加州司法部調查 Hugging Face 事件的延伸；Bonta 警告，開發商若未能阻止模型發動或協助網絡攻擊，可能要承擔法律責任。\n\n傳票代表政府可強制索取資料，但不等於 OpenAI 已被裁定違法或一定會遭起訴。今次調查亦與聯邦貿易委員會的業界調查，以及由 15 個州總檢察長組成、要求 OpenAI 交代 Hugging Face 事件的行動並行，顯示 Agent 越權正由安全研究問題進入多層執法程序。",
@@ -224,18 +236,6 @@
     "sourceLabel": "Associated Press / Right Livelihood",
     "sourceUrl": "https://apnews.com/article/sweden-right-livelihood-award-women-patriarchy-ai-1b50acb5a6a9ccb7c5f3a05758f5179b",
     "level": "update",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-30-netlist-micron-ai-memory-import-ban",
-    "title": "Netlist 要求禁入口 Micron AI 記憶體：GPU 供應鏈捲入專利戰",
-    "summary": "記憶體公司 Netlist 向美國國際貿易委員會提交申訴，指 Micron 部分 DRAM 產品侵犯兩項高頻寬記憶體相關專利，要求禁止相關晶片入口；申請亦涵蓋使用涉事記憶體的 Google、NVIDIA、Broadcom GPU、伺服器及其他 AI 運算產品。\\n\\n這只是 Netlist 提出的禁令申請，美國貿易機構尚未裁定，亦沒有證據顯示供應已經中斷。Micron 拒絕評論；Google、NVIDIA 及 Broadcom 在報道刊出時未有回應。若案件最終成立，影響可能由單一記憶體供應商擴散至完整 AI 加速器與伺服器入口。",
-    "category": "AI 供應鏈",
-    "publishedAt": "2026-09-30T04:01:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/legal/litigation/netlist-seeks-us-import-ban-micron-chips-used-google-nvidia-ai-computing-2026-09-29/",
-    "level": "breaking",
     "verified": true,
     "active": true
   }
