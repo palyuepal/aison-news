@@ -294,24 +294,39 @@ body[data-page="home"].v6-ready > main > .editorial-feature{display:none}
 }
 .v6-story-lead{
   min-height:460px;
+  border:1px solid rgba(255,255,255,.13);
   border-radius:24px;
-  background:#0a1f39;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(89,215,220,.12),transparent 25%),
+    linear-gradient(145deg,#071a33,#0a2f56);
   box-shadow:0 28px 74px rgba(0,0,0,.28);
 }
-.v6-story-media{position:absolute;inset:0}
-.v6-story-media img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.v6-story-media{
+  position:absolute;
+  inset:0 0 0 auto;
+  width:46%;
+  overflow:hidden;
+}
+.v6-story-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:78% center;
+  transition:transform .45s ease;
+}
 .v6-story-media::after{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(180deg,rgba(2,12,25,.08) 8%,rgba(2,12,25,.25) 43%,rgba(2,12,25,.94) 100%);
+  background:linear-gradient(90deg,#0a2a4d 0%,rgba(10,42,77,.34) 31%,rgba(2,12,25,.04) 72%);
 }
 .v6-story-copy{
   position:absolute;
   z-index:2;
   left:0;
-  right:0;
+  right:auto;
   bottom:0;
+  width:61%;
   padding:34px;
 }
 .v6-story-meta{
@@ -326,7 +341,7 @@ body[data-page="home"].v6-ready > main > .editorial-feature{display:none}
 }
 .v6-story-rank{color:var(--v6-yellow);font-family:Georgia,"Times New Roman",serif;font-size:19px}
 .v6-story-copy h2{
-  max-width:790px;
+  max-width:720px;
   margin:0;
   color:#fff;
   font-family:Georgia,"Times New Roman","Noto Serif TC",serif;
@@ -595,8 +610,11 @@ body[data-page="home"].v6-motion .v6-signal-node:nth-of-type(5){animation:none}
   .v6-signal-node:nth-of-type(5){top:1%}
   .v6-signal-summary{font-size:9px}
   .v6-top-stories{padding-bottom:40px}
-  .v6-story-lead{min-height:430px;border-radius:18px}
-  .v6-story-copy{padding:22px}
+  .v6-story-lead{min-height:520px;border-radius:18px}
+  .v6-story-media{inset:0 0 auto 0;width:100%;height:190px}
+  .v6-story-media img{object-position:78% center}
+  .v6-story-media::after{background:linear-gradient(180deg,rgba(2,12,25,.05),rgba(7,26,51,.92))}
+  .v6-story-copy{position:absolute;left:0;right:0;bottom:0;width:auto;padding:22px}
   .v6-story-copy h2{font-size:30px}
   .v6-story-hk{font-size:11px}
   .v6-story-side{
