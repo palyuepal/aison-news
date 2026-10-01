@@ -1,5 +1,5 @@
-const CACHE='aison-v6-20261001-css-foundation';
-const CORE=['./','index.html','daily.html','live.html','weekly.html','guides.html','topics.html','archive.html','article.html','about.html','methodology.html','corrections.html','privacy.html','offline.html','manifest.webmanifest','styles.css','visual-system-v2.css','home-foundation-v6.css','home-v6.css','live-stream-v2.css','engagement.css','trust.css','app.js','app-editorial.js','home-v6.js','archive.js','topics.js','weekly.js','lite-home.js','engagement.js','analytics.js','story-updates.js','article-enhancements.js','search-quality.js','daily-share.js','live.js','live-timeline.js','trust.js','corrections.js','pwa-return.js','data/live.js','data/latest.js','data/search-index.json','data/storylines.json','data/editorial.js','data/corrections.js','data/site.js','data/status.js','assets/mascot.webp','assets/favicon.png','assets/icon-192.png','assets/icon-512.png','assets/apple-touch-icon.png'];
+const CACHE='aison-v6-20261001-lean-shell';
+const CORE=['offline.html','manifest.webmanifest','styles.css','visual-system-v2.css','pwa-return.js','assets/mascot-ui.webp','assets/favicon.png'];
 const LIVE_DATA=new Set(['/app-editorial.js','/lite-home.js','/home-foundation-v6.css','/home-v6.css','/home-v6.js','/live-stream-v2.css','/live.js','/live-timeline.js','/data/live.js','/data/latest.js','/data/editorial.js','/data/status.js','/data/site.js','/data/corrections.js','/data/search-index.json','/data/storylines.json']);
 
 async function put(request,response){
