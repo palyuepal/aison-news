@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-01-us-senate-thune-ai-safeguards-law",
+    "title": "美國參院領袖倡把 AI 安全承諾寫入法律：自律框架或走向立法",
+    "summary": "美國參議院多數黨領袖 John Thune 表示，支持大型 AI 公司在白宮峰會作出的自願安全承諾，但希望國會把部分保障「寫入法律」。這是峰會後首次由共和黨參院領袖明確推動立法跟進，反映黨內對完全依賴業界自律仍有保留。\n\n目前未有法案文本、涵蓋範圍或表決時間表，亦不代表承諾已具法律效力。真正影響要看國會會否要求外部審查、事故披露及違規後果，以及最終規則會否與特朗普政府偏向低干預的路線出現衝突。",
+    "category": "AI 政策",
+    "publishedAt": "2026-10-01T10:00:12Z",
+    "sourceLabel": "Axios",
+    "sourceUrl": "https://www.axios.com/2026/10/01/senate-ai-artificial-intelligence-trump",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-01-japan-chiba-ai-datacenter-framework",
     "title": "日本推 150 億美元 AI 數據中心：千葉項目規劃 400MW 算力",
     "summary": "日本最大發電商 JERA、Dell Technologies 及英國 AI 基建開發商 RHAELM 簽署合作備忘錄，計劃建立可在日本全國複製的 AI 基建開發框架，首個項目是在千葉興建價值 150 億美元、400MW 級超大型 AI 數據中心。JERA 會提供發電站旁土地及長期供電，RHAELM 負責開發、融資與營運，Dell 提供機架級 AI 基建；Apollo 擬作策略投資及融資夥伴。\n\n這仍是 MoU 及發展計劃，不是已落成的數據中心。項目目標在 2028 年分階段投入運作，2029 年才達到全部 400MW 容量。它反映 AI 基建競爭開始把電力、土地、融資與整套運算系統綁成同一個長期項目，而非單純採購 GPU。",
@@ -222,18 +234,6 @@
     "publishedAt": "2026-09-29T13:58:00Z",
     "sourceLabel": "UK AI Security Institute",
     "sourceUrl": "https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations",
-    "level": "update",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-29-elevenlabs-v4-turbo-voice-models",
-    "title": "ElevenLabs 推 v4 與 v4 Turbo：語音 Agent 主打情感表達與低延遲",
-    "summary": "ElevenLabs 推出 Eleven v4 及低延遲版本 v4 Turbo，兩者支援逾 90 種語言，已可在 ElevenAgents、ElevenCreative 及 API 使用。新模型加強語氣、節奏、情緒、多角色對話及長篇內容的聲線一致性，亦支援 Professional Voice Clones。\n\n公司表示 v4 Turbo 的首段語音中位延遲約 150 毫秒，而即時聲音複製可用約 10 秒錄音；這些品質與速度數字主要來自廠商測試，仍需按廣東話自然度、網絡延遲及成本獨立實測。對客服、配音和即時語音 Agent 而言，今次更新的重點是嘗試同時兼顧反應速度與情緒表達。",
-    "category": "AI 工具",
-    "publishedAt": "2026-09-29T13:57:00Z",
-    "sourceLabel": "ElevenLabs",
-    "sourceUrl": "https://elevenlabs.io/blog/eleven-v4",
     "level": "update",
     "verified": true,
     "active": true
