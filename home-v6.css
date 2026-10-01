@@ -778,6 +778,8 @@ body[data-page="home"].v6-motion .v6-signal-node:nth-of-type(5){animation:none}
   .v6-signal-node{min-width:56px;min-height:56px;padding:6px}
   .v6-signal-node.size-l{min-width:68px;min-height:68px}
   .v6-signal-node.size-m{min-width:62px;min-height:62px}
+  .v6-signal-node{backdrop-filter:none}
+  .v6-story-small{backdrop-filter:none}
   .v6-signal-node b{font-size:8px}
   .v6-signal-node small{display:none}
   .v6-signal-node:nth-of-type(1){left:0;top:17%}
