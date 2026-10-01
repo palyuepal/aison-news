@@ -39,6 +39,24 @@ jobs:
         run: |
           set -euo pipefail
           test -f assets/social/daily-latest.jpg
+          test -f assets/mascot-ui.webp
+          test -d assets/social/home
+          test "$(find assets/social/home -maxdepth 1 -type f -name '*.webp' | wc -l)" -eq 10
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          mascot=Path('assets/mascot-ui.webp')
+          assert mascot.stat().st_size < 30000, mascot.stat().st_size
+          with Image.open(mascot) as im:
+              assert im.width <= 256 and im.height <= 256, im.size
+          cards=sorted(Path('assets/social/home').glob('*.webp'))
+          assert len(cards)==10
+          for card in cards:
+              assert card.stat().st_size < 90000, (card,card.stat().st_size)
+              with Image.open(card) as im:
+                  assert im.width==720 and im.height==378, (card,im.size)
+          print('homepage delivery media ok:',mascot.stat().st_size,'bytes mascot /',max(c.stat().st_size for c in cards),'bytes largest card')
+          PY
           test -f data/news.js
           test -f data/search-index.json
           test -f data/editorial.js
@@ -154,6 +172,9 @@ jobs:
           grep -q 'home-v6.css' index.html
           if grep -q 'home-layout-v3.css' index.html || grep -q 'home-newsroom-v4.css' index.html || grep -q 'home-signature-v5.css' index.html; then echo 'home must load consolidated foundation only' >&2; exit 1; fi
           grep -q 'home-v6.js' index.html
+          grep -q 'assets/mascot-ui.webp' index.html
+          grep -q 'assets/social/home/' home-v6.js
+          grep -q 'data-fallback="assets/social/' home-v6.js
           grep -q 'id="v6SignalHero"' index.html
           grep -q 'id="v6Themes"' index.html
           grep -q 'id="v6ForYou"' index.html
