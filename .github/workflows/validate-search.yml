@@ -43,4 +43,5 @@ jobs:
           grep -q 'search-quality.js' /tmp/aison-search-patch/index.html
           grep -q 'search-quality.js' /tmp/aison-search-patch/archive.html
           grep -q 'patch_search_quality.py public' .github/workflows/pages.yml
-          grep -q "'search-quality.js'" service-worker.js
+          grep -q 'staleWhileRevalidate(request)' service-worker.js
+          if grep -q "'search-quality.js'" service-worker.js; then echo 'search enhancer should use default runtime caching, not eager precache' >&2; exit 1; fi
