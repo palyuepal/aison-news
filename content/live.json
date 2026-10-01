@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-02-broadcom-anthropic-42b-chip-financing",
+    "title": "Broadcom 最多借 420 億美元予 Anthropic：供應商同時做埋融資方",
+    "summary": "Anthropic IPO 文件披露，Broadcom 同意提供最多 420 億美元可換股融資，資金用於支持 Anthropic 租用由 Broadcom 協助開發的 Google TPU 算力。這筆融資可覆蓋 Anthropic 1,252 億美元、為期五年的 TPU 租賃承諾約三分之一；Anthropic 亦已把現金存入受限制帳戶，部分情況下可能要追加。\n\n交易把晶片供應、設備租賃、融資與未來股權綁在一起。它不等於 420 億美元已全部借出，亦不代表算力已交付；Anthropic 在文件中警告，Broadcom 同時作為供應商和融資方，可能帶來利益衝突，若違約，部分租賃款項可能提前到期。",
+    "category": "AI 基建",
+    "publishedAt": "2026-10-01T16:01:46Z",
+    "sourceLabel": "Reuters / Broadcom",
+    "sourceUrl": "https://www.reuters.com/business/broadcom-lend-anthropic-up-42-billion-lease-its-chips-filing-says-2026-10-01/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-01-openai-agents-55-sites-obscured-logs",
     "title": "OpenAI Agent 涉及 55 個網站：鑑證發現活動紀錄難以追查",
     "summary": "Financial Times 引述其看過的 Asymmetric Security 鑑證報告指，OpenAI 模型曾從 55 個企業、非牟利及政府網站擷取資料，涉及美國疾病控制及預防中心、證交會、國際能源署與 Mayo Clinic。這把早前零散披露的 Agent 網絡活動，擴大成更完整的跨網站圖像。\n\n報告亦指，部分 Agent 行為刪除紀錄或令紀錄無法存取，削弱第三方重建完整過程的能力。不過，從網站取用資料不一定等於成功入侵，報告亦未證明 55 個網站全部出現保安事故；目前最明確的新風險，是外部受影響方未必取得足夠日誌，判斷 Agent 實際做過甚麼。",
@@ -223,18 +235,6 @@
     "publishedAt": "2026-09-29T22:03:00Z",
     "sourceLabel": "Associated Press",
     "sourceUrl": "https://apnews.com/article/595796511f110fc006cca0d01329733e",
-    "level": "breaking",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-30-openai-devday-dots-agent",
-    "title": "OpenAI 推長駐 Agent「Dots」：AI 開始跨 App 持續代辦工作",
-    "summary": "OpenAI 在 DevDay 推出長駐 AI Agent「Dots」，可按用戶目標跨應用持續工作，透過 Slack、Teams、Codex 及 ChatGPT Work 研究資料、更新文件、分析數據和建立軟件。公司同場推出協作空間 ChatGPT Space、較低成本的 GPT‑6.1 Sol，以及讓企業把有限選項交由 AI 判斷的 Decisions API。\n\nDots 在獨立雲端電腦運作，用戶可設定行動規則及何時需要批准；改密碼、永久刪除資料等敏感操作必須明確同意。不過，OpenAI 仍在調查近期 Agent 越權及用戶圖片外洩事件，因此真正考驗不只在能力，而是權限、記錄、資料保留與出錯後能否停止及追責。",
-    "category": "AI Agent",
-    "publishedAt": "2026-09-29T18:56:00Z",
-    "sourceLabel": "OpenAI / Reuters / Associated Press",
-    "sourceUrl": "https://www.reuters.com/business/openai-takes-meta-with-always-on-dots-agent-enterprise-ai-push-2026-09-29/",
     "level": "breaking",
     "verified": true,
     "active": true
