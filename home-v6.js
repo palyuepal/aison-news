@@ -163,6 +163,13 @@
     root.hidden=false;
   }
 
+  function renderEditorialBridge(){
+    const root=document.getElementById('v6EditorialBridge');
+    if(!root||!currentEditorial()||!EDITORIAL.biggestChange||!EDITORIAL.watchTomorrow)return;
+    root.innerHTML='<div class="v6-editorial-bridge-grid"><article class="v6-shift-card" data-v6-reveal><small>TODAY\'S SHIFT</small><h2>今日真正改變咗咩？</h2><p>'+esc(EDITORIAL.biggestChange)+'</p></article><article class="v6-watch-card" data-v6-reveal><small>WATCH TOMORROW</small><h2>聽日值得追住睇</h2><p>'+esc(EDITORIAL.watchTomorrow)+'</p></article></div>';
+    root.hidden=false;
+  }
+
   function initMotion(){
     const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
     if(!reduce)document.body.classList.add('v6-motion');
@@ -178,6 +185,7 @@
       if(!renderHero())return;
       renderThemes();
       renderForYou();
+      renderEditorialBridge();
       document.body.classList.add('v6-ready');
       initMotion();
     }catch(error){
