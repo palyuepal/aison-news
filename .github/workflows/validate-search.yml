@@ -44,4 +44,4 @@ jobs:
           grep -q 'search-quality.js' /tmp/aison-search-patch/archive.html
           grep -q 'patch_search_quality.py public' .github/workflows/pages.yml
           grep -q 'staleWhileRevalidate(request)' service-worker.js
-          if grep -q "'search-quality.js'" service-worker.js; then echo 'search enhancer should use default runtime caching, not eager precache' >&2; exit 1; fi
+          python -c "import pathlib,re; t=pathlib.Path('service-worker.js').read_text(); m=re.search(r'const CORE=\\[(.*?)\\];',t,re.S); items=re.findall(r\"'([^']+)'\",m.group(1)); assert 'search-quality.js' not in items; print('search enhancer uses default runtime cache')"
