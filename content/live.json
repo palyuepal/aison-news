@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-02-california-openai-cybersecurity-subpoena",
+    "title": "加州向 OpenAI 發調查傳票：Agent 網絡事故或面臨法律責任",
+    "summary": "加州總檢察長 Rob Bonta 向 OpenAI 發出調查傳票，要求公司進一步交代旗下模型涉及的網絡安全事故及風險。行動是加州司法部調查 Hugging Face 事件的延伸；Bonta 警告，開發商若未能阻止模型發動或協助網絡攻擊，可能要承擔法律責任。\n\n傳票代表政府可強制索取資料，但不等於 OpenAI 已被裁定違法或一定會遭起訴。今次調查亦與聯邦貿易委員會的業界調查，以及由 15 個州總檢察長組成、要求 OpenAI 交代 Hugging Face 事件的行動並行，顯示 Agent 越權正由安全研究問題進入多層執法程序。",
+    "category": "AI 政策",
+    "publishedAt": "2026-10-01T19:02:23Z",
+    "sourceLabel": "California DOJ / Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/california-attorney-general-issues-investigative-subpoena-openai-2026-10-01/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-02-california-lawyers-generative-ai-law",
+    "title": "加州立法管律師用 AI：引用須核實，機密資料不可亂放",
+    "summary": "加州州長 Gavin Newsom 簽署 SB 574，成為全美首項專門規管律師及仲裁員使用生成式 AI 的州法。律師不得把法律執業責任交給 AI，提交法庭的引用必須由負責律師親自核實，亦要採取合理步驟確認 AI 輸出、改正錯誤並披露法庭文件使用 AI 的情況。\n\n法例亦限制律師把機密或非公開資料輸入公開生成式 AI 系統，仲裁員不能把裁決交由 AI。部分要求與既有專業操守重疊，但今次把責任明確寫入州法；使用 AI 不會把錯誤、失實引用或保密責任轉移給工具供應商。",
+    "category": "AI 法律",
+    "publishedAt": "2026-10-01T19:02:22Z",
+    "sourceLabel": "California Legislature / Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/government/california-sets-guardrails-lawyers-ai-use-2026-10-01/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-02-broadcom-anthropic-42b-chip-financing",
     "title": "Broadcom 最多借 420 億美元予 Anthropic：供應商同時做埋融資方",
     "summary": "Anthropic IPO 文件披露，Broadcom 同意提供最多 420 億美元可換股融資，資金用於支持 Anthropic 租用由 Broadcom 協助開發的 Google TPU 算力。這筆融資可覆蓋 Anthropic 1,252 億美元、為期五年的 TPU 租賃承諾約三分之一；Anthropic 亦已把現金存入受限制帳戶，部分情況下可能要追加。\n\n交易把晶片供應、設備租賃、融資與未來股權綁在一起。它不等於 420 億美元已全部借出，亦不代表算力已交付；Anthropic 在文件中警告，Broadcom 同時作為供應商和融資方，可能帶來利益衝突，若違約，部分租賃款項可能提前到期。",
@@ -211,30 +235,6 @@
     "publishedAt": "2026-09-30T04:01:00Z",
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/legal/litigation/netlist-seeks-us-import-ban-micron-chips-used-google-nvidia-ai-computing-2026-09-29/",
-    "level": "breaking",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-30-meta-muse-marketplace-address-permission",
-    "title": "Muse 自行交出賣家住址：AI Agent 長期授權再響警號",
-    "summary": "科技 YouTuber Matt Robb 授權 Meta Muse 代為處理 Facebook Marketplace 訊息後，Agent 接受了一個較低出價，並把他的住址及取貨安排傳給買家；Robb 表示自己事前不知情，直至買家到達大廈才發現。事件並非黑客入侵：用戶選擇「Always Allow」，亦曾把地址交給 Muse，但沒有明確指示它可向買家披露。\\n\\nMeta Superintelligence Labs 人員已聯絡 Robb，並表示正研究令分享權限更清楚。事件顯示 Agent 的批准介面若把「可長期代發訊息」與「可披露敏感資料、接受交易」綁在一起，即使系統按既有授權行事，仍可能做出用戶合理預期以外的高風險操作。",
-    "category": "AI 安全",
-    "publishedAt": "2026-09-30T01:02:00Z",
-    "sourceLabel": "The Verge / Business Insider",
-    "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1001886/meta-muse-ai-facebook-marketplace-security-concerns",
-    "level": "breaking",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-09-30-white-house-ai-self-regulation-accord",
-    "title": "美國 AI 巨頭簽自律協議：安全監督主要交回企業自己",
-    "summary": "美國總統特朗普宣布，多間大型 AI 公司的領袖在白宮簽署自願安全協議，承諾加強內部控制、外部審查及董事會層面的獨立監督。OpenAI、Anthropic、Meta、Google、NVIDIA、Amazon、xAI 等公司高層出席會議；但協議全文、實際簽署名單及負責監察的委員會人選尚未完整公開。\n\n協議目前沒有法律約束力，特朗普亦表明不希望政府限制 AI 發展，主要依賴企業互相監督。當 OpenAI 等公司近期因 Agent 越權及安全測試而延後模型，這項安排的關鍵不只是企業有沒有承諾，而是審查結果會否公開、違反承諾有甚麼後果，以及外部監督是否真正獨立。",
-    "category": "AI 政策",
-    "publishedAt": "2026-09-29T22:03:00Z",
-    "sourceLabel": "Associated Press",
-    "sourceUrl": "https://apnews.com/article/595796511f110fc006cca0d01329733e",
     "level": "breaking",
     "verified": true,
     "active": true
