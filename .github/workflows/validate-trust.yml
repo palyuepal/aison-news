@@ -37,4 +37,6 @@ jobs:
           grep -q 'corrections.html' tools/build_corrections.py
           grep -q 'build_corrections.py' .github/workflows/pages.yml
           grep -q "'data/corrections.js'" service-worker.js
-          grep -q "'corrections.html'" service-worker.js
+          grep -q "request.mode==='navigate'" service-worker.js
+          grep -q 'networkFirst(request,{navigation:true})' service-worker.js
+          if grep -q "'corrections.html'" service-worker.js; then echo 'corrections page should be runtime-cached on navigation, not eager precache' >&2; exit 1; fi
