@@ -187,6 +187,8 @@
       renderForYou();
       renderEditorialBridge();
       document.body.classList.add('v6-ready');
+      const legacyHero=document.querySelector('main > .editorial-feature');
+      if(legacyHero)legacyHero.setAttribute('aria-hidden','true');
       initMotion();
     }catch(error){
       console.warn('AIson V6 homepage fallback active',error);
