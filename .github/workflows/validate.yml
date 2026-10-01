@@ -183,15 +183,17 @@ jobs:
           python -c "import pathlib,re; css=pathlib.Path('home-v6.css').read_text(encoding='utf-8'); assert re.search(r'body\\[data-page=\\\"home\\\"\\] \\.v6-home-shell,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-themes,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-for-you\\{display:none\\}', css), 'V6 hidden-state selector block was corrupted'; print('v6 home hidden-state selector ok')"
           python - <<'PY'
           import pathlib
+          def norm(text):
+              return text.replace('\r\n','\n').replace('\r','\n').strip()
           paths=['home-layout-v3.css','home-newsroom-v4.css','home-signature-v5.css']
           parts=[]
           for path in paths:
-              body=pathlib.Path(path).read_text(encoding='utf-8').strip()
-              parts.append(f'/* ===== Consolidated from {path}; preserve source order ===== */\\n{body}\\n')
-          expected='/* AIson legacy homepage foundation consolidated for V6.\\n * Source order intentionally preserved: V3 -> V4 -> V5.\\n * Do not reorder sections without visual-regression verification.\\n */\\n\\n'+'\\n'.join(parts)
-          actual=pathlib.Path('home-foundation-v6.css').read_text(encoding='utf-8')
-          assert actual==expected, 'consolidated homepage CSS differs from V3 -> V4 -> V5 source order'
-          print('homepage foundation consolidation is source-order identical')
+              body=norm(pathlib.Path(path).read_text(encoding='utf-8'))
+              parts.append(f'/* ===== Consolidated from {path}; preserve source order ===== */\n{body}')
+          expected='/* AIson legacy homepage foundation consolidated for V6.\n * Source order intentionally preserved: V3 -> V4 -> V5.\n * Do not reorder sections without visual-regression verification.\n */\n\n'+'\n\n'.join(parts)
+          actual=norm(pathlib.Path('home-foundation-v6.css').read_text(encoding='utf-8'))
+          assert actual==norm(expected), 'consolidated homepage CSS differs from V3 -> V4 -> V5 normalized source order'
+          print('homepage foundation consolidation preserves normalized source order')
           PY
           python - <<'PY'
           import sys
