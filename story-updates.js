@@ -52,8 +52,9 @@
     const input=modal.querySelector('#searchInput');
     const results=modal.querySelector('#searchResults');
     const closeButton=modal.querySelector('#closeSearch');
-    let timer;
+    let timer,lastFocus=null;
     const open=()=>{
+      lastFocus=document.activeElement instanceof HTMLElement?document.activeElement:null;
       modal.classList.add('open');
       modal.setAttribute('aria-hidden','false');
       renderLiteSearch(results,input?.value||'');
@@ -62,6 +63,9 @@
     const close=()=>{
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden','true');
+      const target=lastFocus;
+      lastFocus=null;
+      setTimeout(()=>target?.focus?.(),0);
     };
     searchTrigger?.addEventListener('click',open);
     heroSearch?.addEventListener('click',open);
@@ -213,10 +217,10 @@
     const active=currentNavKey();
     let nav=navWrap.querySelector('.navlinks');
     if(!nav){nav=document.createElement('nav');nav.className='navlinks';nav.setAttribute('aria-label','主要導覽');navWrap.querySelector('.brand')?.after(nav)}
-    nav.innerHTML=navItems().map(([key,href,icon,label])=>`<a${key===active?' class="active"':''} href="${href}"><i>${icon}</i>${label}</a>`).join('');
+    nav.innerHTML=navItems().map(([key,href,icon,label])=>`<a${key===active?' class="active" aria-current="page"':''} href="${href}"><i>${icon}</i>${label}</a>`).join('');
     let mobile=topbar.querySelector('#mobileNav');
     if(!mobile){mobile=document.createElement('div');mobile.className='mobile-nav';mobile.id='mobileNav';topbar.appendChild(mobile)}
-    mobile.innerHTML=navItems().map(([key,href,,label])=>`<a${key===active?' class="active"':''} href="${href}">${label}</a>`).join('');
+    mobile.innerHTML=navItems().map(([key,href,,label])=>`<a${key===active?' class="active" aria-current="page"':''} href="${href}">${label}</a>`).join('');
     let btn=navWrap.querySelector('#menuBtn');
     const createdButton=!btn;
     if(!btn){btn=document.createElement('button');btn.className='menuBtn';btn.id='menuBtn';btn.setAttribute('aria-label','開啟選單');btn.textContent='☰';navWrap.appendChild(btn)}
