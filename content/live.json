@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-02-perplexity-pplx-decider-open-model",
+    "title": "Perplexity 開源 270 億參數決策模型：輸出選項連機率",
+    "summary": "Perplexity 在 Hugging Face 以 Apache 2.0 授權發布 pplx-decider-v1-27b。它由 Qwen3.8-27B 微調而成，不以長篇聊天為主，而是按指定準則替文字或圖片作選擇、分類及是非判斷，同時輸出校準機率，適合工單分流、內容審核及規則化決策流程。\\n\\n模型權重約需 49 GiB 顯示記憶體以外的運行空間，目前亦未由 Hugging Face Inference Provider 直接託管。Perplexity 公布的 11 項評測平均準確率為 85.71%，但結果經其自家 API 測量，不能取代用企業真實資料、偏差及錯誤成本作獨立測試。",
+    "category": "AI 模型",
+    "publishedAt": "2026-10-02T07:55:16Z",
+    "sourceLabel": "Perplexity / Hugging Face",
+    "sourceUrl": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-02-claude-code-typescript-mods",
+    "title": "Claude Code 開放 TypeScript Mods：可攔截工具、改權限與重畫介面",
+    "summary": "Anthropic 為 Claude Code 推出 Mods，讓開發者用小型 TypeScript 函數改寫 prompt、攔截或重試工具呼叫、批准或拒絕權限要求、遮蔽 secrets，以及加入或取代終端機與桌面版介面。Mods 會包在既有 plugins 內，可自行編寫，亦可叫 Claude Code 生成並即時載入。\\n\\n這項擴充能力亦提高供應鏈風險：Mods 不在 sandbox 內運行，擁有與 Claude Code 相同的電腦存取權，Anthropic 明確建議只安裝可信來源。Team／Enterprise 及受管理裝置會先載入 sec-default 防護，但管理員若改動載入次序，仍要保留相關限制。",
+    "category": "AI Agent",
+    "publishedAt": "2026-10-02T07:55:15Z",
+    "sourceLabel": "Anthropic",
+    "sourceUrl": "https://claude.com/blog/claude-code-mods",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-02-microsoft-mai-streaming-voice-models",
     "title": "Microsoft 推出即時語音模型：60 種語言轉錄每小時 US$0.54",
     "summary": "Microsoft 推出 MAI-Transcribe-2-Streaming，可在說話期間持續輸出文字，支援 60 種語言及自動連續語言偵測；同時發布 MAI-Voice-2.1 與低延遲的 Voice-2.1-Flash，供開發者建立多語言語音 Agent、即時字幕及語音介面。三款模型已可透過 Microsoft Foundry、Azure Speech 及直接 API 使用。\\n\\nMicrosoft 指串流轉錄的最終文字錯誤率在第三方榜單為 2.5%，但實際準確度仍會受口音、噪音、專有名詞及語言切換影響。Transcribe-2-Streaming 的推廣價為每小時音訊 0.54 美元，至 2026 年底有效；企業採用前仍要測試廣東話情境、延遲、資料保存及地區可用性。",
