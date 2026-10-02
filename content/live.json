@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-02-aws-1b-datacenter-community-fund",
+    "title": "AWS 投資 10 億美元支援數據中心社區：AI 基建先回應電力與水資源反彈",
+    "summary": "Amazon Web Services 宣布未來五年投資 10 億美元，支援美國數據中心所在社區的教育、職業培訓、能源負擔能力及資源保育項目，首批涵蓋印第安納、路易斯安那、北卡羅來納、維珍尼亞及密西西比州。AWS 亦表示會停止在數據中心規劃中使用保密協議，並發布年度能源效率報告。\\n\\n這筆資金不等於新建數據中心本身已獲社區接受，也未交代各項目分配及成效指標。美國已有逾 100 項數據中心暫停建設倡議正在考慮，爭議集中在電費、用水及本地回報；今次真正的新訊號，是 AI 基建競爭開始把社區補償、透明度與算力擴張綁在一起。",
+    "category": "AI 基建",
+    "publishedAt": "2026-10-02T10:03:23Z",
+    "sourceLabel": "AWS / Reuters / The Wall Street Journal",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-invest-1-billion-over-five-years-us-data-center-communities-2026-10-02/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-02-perplexity-pplx-decider-open-model",
     "title": "Perplexity 開源 270 億參數決策模型：輸出選項連機率",
     "summary": "Perplexity 在 Hugging Face 以 Apache 2.0 授權發布 pplx-decider-v1-27b。它由 Qwen3.8-27B 微調而成，不以長篇聊天為主，而是按指定準則替文字或圖片作選擇、分類及是非判斷，同時輸出校準機率，適合工單分流、內容審核及規則化決策流程。\\n\\n模型權重約需 49 GiB 顯示記憶體以外的運行空間，目前亦未由 Hugging Face Inference Provider 直接託管。Perplexity 公布的 11 項評測平均準確率為 85.71%，但結果經其自家 API 測量，不能取代用企業真實資料、偏差及錯誤成本作獨立測試。",
