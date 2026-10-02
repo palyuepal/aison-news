@@ -12,6 +12,15 @@
 
   function loadScript(src,id){
     if(document.getElementById(id))return Promise.resolve();
+    const requested=String(src||'').split('?')[0];
+    const existing=[...document.scripts].find(script=>{
+      const raw=script.getAttribute('src')||'';
+      return raw&&raw.split('?')[0]===requested;
+    });
+    if(existing){
+      if(id&&!existing.id)existing.id=id;
+      return Promise.resolve();
+    }
     return new Promise(resolve=>{
       const script=document.createElement('script');script.id=id;script.src=src;script.async=true;
       script.onload=()=>resolve();script.onerror=()=>resolve();document.head.appendChild(script);
