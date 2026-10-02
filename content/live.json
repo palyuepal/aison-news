@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-02-us-300m-ai-server-smuggling-arrest",
+    "title": "美國拘捕加州科技公司負責人：涉走私逾 3 億美元 AI 伺服器到中國",
+    "summary": "美國司法部拘捕加州科技公司 Earthmade Computer 負責人 Greg Lui，指他在 2023 至 2024 年間，涉嫌以虛假最終用戶及目的地文件購買受出口管制的高階 GPU 伺服器，先運往馬來西亞及新加坡，再轉運到中國；涉案貨值超過 3 億美元。Reuters 報道與司法部公布一致。\\n\\nLui 被控違反出口管制、走私及串謀洗錢；起訴書屬指控，案件尚未定罪。事件顯示美國對 AI 晶片的管制正由限制原廠直接銷售，進一步追查第三國轉運、貨運代理、付款來源及最終用戶申報。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-10-02T12:59:12Z",
+    "sourceLabel": "U.S. Department of Justice / Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/us-alleges-california-man-smuggled-export-controlled-servers-china-2026-10-01/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-02-gemini-25-flash-image-shutdown",
     "title": "Gemini 2.5 Flash Image 今日停用：舊 API 要立即遷移",
     "summary": "Google 官方模型生命週期文件顯示，`gemini-2.5-flash-image`（Nano Banana）在 2026 年 10 月 2 日停止服務。仍把該模型名稱寫死在圖片生成或編輯程式的開發者，可能遇到請求失敗；Google 建議遷移至 Gemini 3.1 Flash Image 或 Gemini 3.1 Flash Lite Image。\\n\\n這不是整個 Gemini 2.5 Flash 文字模型停用，受影響的是 Flash Image 圖像模型端點。遷移前應在測試環境重新檢查輸入格式、輸出畫質、延遲、價格、安全設定與錯誤處理，亦不要假設更換模型名稱後所有提示詞結果完全相同。",
