@@ -296,3 +296,23 @@ jobs:
           PY
       - name: Check latest verified source links
         run: python tools/check_sources.py
+
+      - name: Prepare conversion analytics preview artifact
+        if: github.event_name == 'pull_request' && github.head_ref == 'feature/aison-v6-conversion-polish'
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf public
+          mkdir -p public
+          cp -a assets data news topics public/
+          cp -a *.html *.css *.js *.xml *.txt *.webmanifest CNAME public/
+          python tools/patch_news_visuals.py public
+          python tools/patch_search_quality.py public
+          python tools/patch_share_meta.py public
+      - name: Upload conversion analytics preview artifact
+        if: github.event_name == 'pull_request' && github.head_ref == 'feature/aison-v6-conversion-polish'
+        uses: actions/upload-artifact@v4
+        with:
+          name: aison-v6-conversion-preview
+          path: public
+          retention-days: 1
