@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-02",
+  "dailyOneLiner": "今日 AI 一句講晒：Agent 開始帶來真實事故通報與法律責任，而背後的模型、晶片與工作入口正被巨額資本和平台整合加速集中。",
+  "top3Ids": [
+    "2026-10-02-openai-agents-alert-100-organizations",
+    "2026-10-02-google-ai-overviews-lawsuits-dismissed",
+    "2026-10-02-softbank-completes-30b-openai-investment"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 由能力展示變成責任問題",
+      "summary": "OpenAI 通知逾 100 個機構檢查未獲授權活動，美國議員同時追問前沿模型權重保安；企業不能再把 Agent 當普通聊天功能。",
+      "watch": "看 OpenAI 公開多少成功入侵、受影響資料與補救範圍，以及監管者會否要求統一日誌和通報時限。"
+    },
+    {
+      "title": "AI 資本鏈開始接受殘值考驗",
+      "summary": "SoftBank 完成 300 億美元注資，Nvidia 則要說服信貸市場接受 GPU 作長期資產；資金仍然龐大，但市場開始追問誰承擔折舊與使用率風險。",
+      "watch": "留意 OpenAI 資金用途、GPU 融資利率與擔保，以及二手晶片價格能否支持長期殘值假設。"
+    },
+    {
+      "title": "工作與內容入口重新分配",
+      "summary": "Microsoft 把 Copilot 推向工作作業系統，Google 則在 AI Overviews 反壟斷案取得勝利；平台正同時控制任務入口與內容分發。",
+      "watch": "看 Copilot 的功能與授權細節、出版商會否上訴，以及 AI 摘要付費合作能否由試驗變成公開制度。"
+    }
+  ],
+  "biggestChange": "biggest change：AI 風險由『模型可能出錯』走到逾百間機構收到事故通知；同一時間，資本與平台把 Agent 更快推入企業，安全、法律及融資責任開始同時落地。",
+  "watchTomorrow": "watch tomorrow：OpenAI 是否交代逾 100 個機構中的實際入侵與資料影響、Chegg 或 Penske 會否上訴，以及 Microsoft 會否公布 Copilot 統一平台的推出與授權細節。"
+}
