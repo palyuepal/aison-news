@@ -26,8 +26,7 @@
   <link rel="stylesheet" href="engagement.css?v=20260906-engagement">
   <style>
     .live-panel{position:relative;overflow:hidden;scroll-margin-top:92px}.live-title{display:flex;align-items:center;gap:8px}.live-dot{width:9px;height:9px;border-radius:50%;background:#ff4d57;box-shadow:0 0 0 5px rgba(255,77,87,.13)}.live-intro{margin:-7px 0 14px;color:#b9cbe6;font-size:12px}.live-list{display:grid;gap:12px}.live-empty{display:flex;gap:11px;align-items:flex-start;padding:13px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(255,255,255,.05)}.live-empty b{display:block;font-size:13px;color:#fff}.live-empty small{display:block;margin-top:3px;color:#a9bddb;font-size:11px;line-height:1.5}.live-pulse{flex:0 0 9px;width:9px;height:9px;margin-top:5px;border-radius:50%;background:#ffc928;box-shadow:0 0 0 4px rgba(255,201,40,.12)}.live-item{padding:13px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}.live-item-top,.live-item-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}.live-time{color:#ffc928;font-size:11px;font-weight:900}.live-verified{font-size:10px;color:#7fe0ad;font-weight:900}.live-item h4{margin:7px 0 6px;font-size:14px;line-height:1.45;color:#fff}.live-item p{margin:0 0 8px;color:#c6d5ea;font-size:11px;line-height:1.55}.live-item-foot{font-size:10px;color:#8fa8ca}.live-source{color:#ffe187;font-weight:900}.live-rule{margin-top:12px;color:#8199bb;font-size:10px;line-height:1.45}
-    .home-signals{padding-top:28px;padding-bottom:10px}.home-signals-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.home-signal{display:block;padding:18px;border:1px solid #d8e6f8;border-radius:18px;background:#fff;color:#071b3d;text-decoration:none;box-shadow:0 8px 26px rgba(6,26,58,.06)}.home-signal small{display:block;color:#6b7f9d;font-size:11px;font-weight:900;letter-spacing:.04em}.home-signal b{display:block;margin-top:8px;font-size:16px;line-height:1.45}.home-signal span{display:block;margin-top:10px;color:#123b78;font-size:12px;font-weight:900}.morning-brief-note{margin:0 0 12px;color:#61728d;font-size:12px;line-height:1.55}.newsletter{scroll-margin-top:92px}.newsletter .morning-brief-title{margin:0 0 5px}.newsletter .morning-brief-kicker{display:block;margin-bottom:6px;color:#123b78;font-size:10px;font-weight:950;letter-spacing:.08em}.hero-actions .ghost-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
-    @media(max-width:760px){.home-signals-grid{grid-template-columns:1fr}.home-signals{padding-top:18px}.home-signal{padding:15px}.hero-actions{flex-wrap:wrap}}
+    .morning-brief-note{margin:0 0 12px;color:#61728d;font-size:12px;line-height:1.55}.newsletter{scroll-margin-top:92px}.newsletter .morning-brief-title{margin:0 0 5px}.newsletter .morning-brief-kicker{display:block;margin-bottom:6px;color:#123b78;font-size:10px;font-weight:950;letter-spacing:.08em}
   </style>
 <link rel="stylesheet" href="visual-system-v2.css?v=20260909-v3">
 <link rel="stylesheet" href="home-foundation-v6.css?v=20261001-consolidated">
@@ -37,9 +36,9 @@
 <header class="topbar">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="AIson 首頁"><img src="assets/mascot.webp" width="54" height="54" decoding="async" alt="AIson 狗狗 IP"><div><strong><span>AI</span>son</strong><small>每日 AI 新聞站</small></div></a>
-    <nav class="navlinks" aria-label="主要導覽"><a class="active" href="index.html"><i>⌂</i>首頁</a><a href="daily.html"><i>☀</i>今日 AI 10 件事</a><a href="weekly.html"><i>◷</i>本週回顧</a><a href="topics.html"><i>◎</i>主題追蹤</a><a href="archive.html"><i>▤</i>新聞庫</a><a href="about.html"><i>✦</i>關於 AIson</a></nav>
+    <nav class="navlinks" aria-label="主要導覽"><a class="active" aria-current="page" href="index.html"><i>⌂</i>首頁</a><a href="daily.html"><i>☀</i>今日 AI 10 件事</a><a href="weekly.html"><i>◷</i>本週回顧</a><a href="topics.html"><i>◎</i>主題追蹤</a><a href="archive.html"><i>▤</i>新聞庫</a><a href="about.html"><i>✦</i>關於 AIson</a></nav>
     <button class="search-trigger" id="searchTrigger" aria-label="開啟搜尋"><b>⌕</b><span>搜尋新聞、主題、工具…</span><kbd>⌘K</kbd></button>
-    <button class="menuBtn" id="menuBtn" aria-label="開啟選單">☰</button>
+    <button class="menuBtn" id="menuBtn" aria-label="開啟選單" aria-controls="mobileNav" aria-expanded="false">☰</button>
   </div>
   <div class="mobile-nav" id="mobileNav"><a href="index.html">首頁</a><a href="daily.html">今日 AI 10 件事</a><a href="weekly.html">本週 AI 回顧</a><a href="topics.html">主題追蹤</a><a href="guides.html">香港 AI 實用指南</a><a href="archive.html">新聞庫</a><a href="about.html">關於 AIson</a></div>
 </header>
@@ -58,18 +57,6 @@
 </div></section>
 </main>
 <footer class="footer"><div class="container copyright"><span>© 2026 AIson · 香港人的每日 AI 新聞站</span><span><a href="guides.html">實用指南</a> · <a href="methodology.html">編採方法</a> · <a href="privacy.html">私隱</a> · <a href="rss.xml">RSS</a></span></div></footer>
-<div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-card"><button class="close" id="closeSearch">×</button><div class="mini-label">SEARCH AISON</div><h2>搜尋 AI 新聞</h2><label class="big-search">⌕<input id="searchInput" placeholder="例如：Gemini、OpenAI、AI 影片…"></label><div class="search-results" id="searchResults"></div></div></div>
-<div class="toast" id="toast"></div><script src="data/latest.js?v=20260905-phase3"></script><script src="data/site.js?v=20260902-newsletter"></script><script src="data/status.js?v=20260902-newsletter"></script><script src="data/editorial.js?v=20260907-editorial"></script><script src="data/live.js?v=20260905-live"></script><script src="analytics.js?v=20260909-growth1"></script><script src="app-editorial.js?v=20260910-mobile-nav"></script><script src="story-updates.js?v=20260905-phase2"></script><script src="lite-home.js?v=20260907-foryou"></script><script src="engagement.js?v=20260907-editorial"></script><script src="live.js?v=20260905-live"></script><script src="home-v6.js?v=20261001-phase1"></script><script>
-(()=>{
-  const root=document.getElementById('homeSignals');if(!root)return;
-  const esc=s=>String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-  const news=(window.AISON_NEWS||[]).slice().sort((a,b)=>(Number(a.rank)||999)-(Number(b.rank)||999));
-  const byId=new Map(news.map(item=>[item.id,item]));
-  const ids=window.AISON_EDITORIAL?.top3Ids||[];
-  const picks=ids.map(id=>byId.get(id)).filter(Boolean);
-  const items=(picks.length?picks:news.slice(0,3)).slice(0,3);
-  if(!items.length)return;
-  root.innerHTML=items.map((n,i)=>`<a class="home-signal" href="news/${encodeURIComponent(n.id)}.html"><small>0${i+1} · ${esc(n.category||'AI NEWS')}</small><b>${esc(n.title)}</b><span>睇 30 秒重點 →</span></a>`).join('');
-})();
-</script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js?v=20260913-live-stream").catch(()=>{})}</script>
+<div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle" aria-hidden="true"><div class="search-card"><button class="close" id="closeSearch" aria-label="關閉搜尋">×</button><div class="mini-label">SEARCH AISON</div><h2 id="searchModalTitle">搜尋 AI 新聞</h2><label class="big-search">⌕<input id="searchInput" aria-label="搜尋 AI 新聞" placeholder="例如：Gemini、OpenAI、AI 影片…"></label><div class="search-results" id="searchResults" aria-live="polite"></div></div></div>
+<div class="toast" id="toast"></div><script src="data/latest.js?v=20260905-phase3"></script><script src="data/site.js?v=20260902-newsletter"></script><script src="data/status.js?v=20260902-newsletter"></script><script id="aison-editorial-data" src="data/editorial.js?v=20260907-editorial"></script><script src="data/live.js?v=20260905-live"></script><script id="aison-analytics-script" src="analytics.js?v=20260909-growth1"></script><script src="app-editorial.js?v=20260910-mobile-nav"></script><script src="story-updates.js?v=20260905-phase2"></script><script src="lite-home.js?v=20260907-foryou"></script><script src="engagement.js?v=20260907-editorial"></script><script src="live.js?v=20260905-live"></script><script src="home-v6.js?v=20261001-phase1"></script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js?v=20260913-live-stream").catch(()=>{})}</script>
 </body></html>
