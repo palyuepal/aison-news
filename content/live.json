@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-02-volantis-88m-photonic-memory",
+    "title": "Volantis 融資 8,800 萬美元：用光連接 GPU 與 220 顆記憶體",
+    "summary": "AI 晶片初創 Volantis 完成 8,800 萬美元 A 輪融資，開發以 VCSEL 雷射光連接運算晶片與記憶體的光學互連架構。公司表示，傳統 GPU 周邊通常只能放置有限數目的高頻寬記憶體，而其設計目標是在單一 GPU 周圍接駁最多 220 顆記憶體，以同時擴大容量與頻寬。\n\nVolantis 計劃明年推出首款晶片，但目前未有量產產品或獨立性能測試。公司聲稱 A-1 系統可支援超過 20 萬億參數模型及每名用戶最高每秒 10,000 tokens；這些仍是設計目標，不代表已在商用環境實現。真正價值要看功耗、散熱、良率及與現有 GPU 平台的整合成本。",
+    "category": "AI 晶片",
+    "publishedAt": "2026-10-02T03:56:40Z",
+    "sourceLabel": "Volantis / Reuters",
+    "sourceUrl": "https://www.reuters.com/business/volantis-raises-88-million-tech-connect-ai-memory-chips-2026-10-01/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-02-us-lawmaker-ai-model-weight-security-letters",
     "title": "美國議員追問五大 AI 公司：模型權重有冇被敵對勢力接觸",
     "summary": "美國眾議員 Ro Khanna 向 OpenAI、Anthropic、Google、Meta 及 SpaceXAI 發信，要求交代中國或其他敵對勢力曾否嘗試或成功未獲授權接觸其模型權重，並說明現有網絡保安措施。模型權重承載模型核心能力，一旦被竊取，可讓攻擊者毋須由零開始重建高階系統。\n\n這是國會監督要求，不是已證實任何公司的權重被竊，也不是正式執法結論。OpenAI 與 Anthropic 曾披露模型蒸餾活動，但蒸餾輸出與直接取得權重並不相同；真正的新訊號是，美國國會正把前沿模型檔案視為涉及國家安全的高價值資產。",
