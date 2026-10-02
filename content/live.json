@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-02-microsoft-mai-streaming-voice-models",
+    "title": "Microsoft 推出即時語音模型：60 種語言轉錄每小時 US$0.54",
+    "summary": "Microsoft 推出 MAI-Transcribe-2-Streaming，可在說話期間持續輸出文字，支援 60 種語言及自動連續語言偵測；同時發布 MAI-Voice-2.1 與低延遲的 Voice-2.1-Flash，供開發者建立多語言語音 Agent、即時字幕及語音介面。三款模型已可透過 Microsoft Foundry、Azure Speech 及直接 API 使用。\\n\\nMicrosoft 指串流轉錄的最終文字錯誤率在第三方榜單為 2.5%，但實際準確度仍會受口音、噪音、專有名詞及語言切換影響。Transcribe-2-Streaming 的推廣價為每小時音訊 0.54 美元，至 2026 年底有效；企業採用前仍要測試廣東話情境、延遲、資料保存及地區可用性。",
+    "category": "AI API",
+    "publishedAt": "2026-10-02T06:58:33Z",
+    "sourceLabel": "Microsoft AI / Microsoft Foundry",
+    "sourceUrl": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-02-bull-europe-supercomputer-factory-expansion",
+    "title": "歐洲唯一超級電腦工廠擴產：Bull 月產量倍增至 12 個機架",
+    "summary": "法國國營超級電腦製造商 Bull 重開完成擴建的昂熱工廠，投入 8,000 萬歐元後，月產能由 6 個機架增至 12 個；公司表示如需求持續，明年可再提升至 24 個。該廠是歐洲唯一專門製造超級電腦的工廠，正承接歐盟 AI 與高效能運算項目。\\n\\nBull 已取得 18 宗 EuroHPC 招標中的 15 宗，並會為 NVIDIA NVL 系統進行最終組裝。不過，擴產不等於歐洲已能完全自給：系統仍需依賴部分美國晶片與全球供應鏈。今次真正的新訊號，是歐洲正把主權 AI 算力由政策與採購，推進到本地實際製造能力。",
+    "category": "AI 基建",
+    "publishedAt": "2026-10-02T06:58:32Z",
+    "sourceLabel": "Bull / Reuters",
+    "sourceUrl": "https://www.reuters.com/world/europe/french-supercomputer-maker-bull-doubles-output-boost-europes-ai-ambitions-2026-10-01/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-02-arizona-ai-victim-video-resentencing",
     "title": "AI 死者影片令判刑失效：亞利桑那法院下令重新量刑",
     "summary": "亞利桑那州上訴法院撤銷一宗誤殺案的 10 年半刑期，並下令重新量刑。原審法官曾觀看由死者家人製作、讓死者形象與聲音「親自發言」的 AI 影片，並形容影片真實、像由死者內心說出；上訴法院認為，影片中的說話其實來自家屬想像，並非死者留下的真實陳述，可靠性不足。\n\n裁決沒有推翻 Gabriel Horcasitas 的誤殺定罪，也沒有全面禁止法庭使用 AI。法院針對的是原審法官依賴合成影片作量刑，令程序受到偏見並達到根本不公平的程度。案件將返回下級法院，由另一輪程序重新決定刑期。",
