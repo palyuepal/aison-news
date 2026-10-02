@@ -154,6 +154,14 @@ jobs:
           grep -q 'home-v6.css' index.html
           if grep -q 'home-layout-v3.css' index.html || grep -q 'home-newsroom-v4.css' index.html || grep -q 'home-signature-v5.css' index.html; then echo 'home must load consolidated foundation only' >&2; exit 1; fi
           grep -q 'home-v6.js' index.html
+          grep -q 'id="aison-editorial-data"' index.html
+          grep -q 'id="aison-analytics-script"' index.html
+          grep -q 'role="dialog"' index.html
+          grep -q 'aria-modal="true"' index.html
+          grep -q 'aria-live="polite"' index.html
+          grep -q 'aria-current="page"' index.html
+          grep -q 'aria-controls="mobileNav"' index.html
+          if grep -q 'homeSignals' index.html || grep -q 'home-signals' index.html; then echo 'obsolete homeSignals runtime remains' >&2; exit 1; fi
           grep -q 'id="v6SignalHero"' index.html
           grep -q 'id="v6Themes"' index.html
           grep -q 'id="v6ForYou"' index.html
@@ -177,6 +185,13 @@ jobs:
           grep -q "'home-foundation-v6.css'" service-worker.js
           grep -q "'home-v6.css'" service-worker.js
           grep -q "'home-v6.js'" service-worker.js
+          grep -q "'/engagement.js'" service-worker.js
+          grep -q "'/story-updates.js'" service-worker.js
+          if grep -q 'function addFeaturedStyles' lite-home.js || grep -q 'function deepReadReady' lite-home.js; then echo 'dead lite-home helpers remain' >&2; exit 1; fi
+          grep -q 'script\[src\*="lite-home.js"\]' app-editorial.js
+          grep -q 'existing=\[...document.scripts\]' engagement.js
+          grep -q 'aria-current="page"' story-updates.js
+          grep -q 'lastFocus' story-updates.js
           python -c "import pathlib,re; css=pathlib.Path('home-v6.css').read_text(encoding='utf-8'); assert re.search(r'body\\[data-page=\\\"home\\\"\\] \\.v6-home-shell,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-themes,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-for-you\\{display:none\\}', css), 'V6 hidden-state selector block was corrupted'; print('v6 home hidden-state selector ok')"
           test ! -f home-layout-v3.css
           test ! -f home-newsroom-v4.css
@@ -265,3 +280,23 @@ jobs:
           PY
       - name: Check latest verified source links
         run: python tools/check_sources.py
+
+      - name: Prepare runtime polish preview artifact
+        if: github.event_name == 'pull_request' && github.head_ref == 'feature/aison-v6-runtime-polish'
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf public
+          mkdir -p public
+          cp -a assets data news topics public/
+          cp -a *.html *.css *.js *.xml *.txt *.webmanifest CNAME public/
+          python tools/patch_news_visuals.py public
+          python tools/patch_search_quality.py public
+          python tools/patch_share_meta.py public
+      - name: Upload runtime polish preview artifact
+        if: github.event_name == 'pull_request' && github.head_ref == 'feature/aison-v6-runtime-polish'
+        uses: actions/upload-artifact@v4
+        with:
+          name: aison-v6-runtime-polish-preview
+          path: public
+          retention-days: 1
