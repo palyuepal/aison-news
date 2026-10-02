@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-02-arizona-ai-victim-video-resentencing",
+    "title": "AI 死者影片令判刑失效：亞利桑那法院下令重新量刑",
+    "summary": "亞利桑那州上訴法院撤銷一宗誤殺案的 10 年半刑期，並下令重新量刑。原審法官曾觀看由死者家人製作、讓死者形象與聲音「親自發言」的 AI 影片，並形容影片真實、像由死者內心說出；上訴法院認為，影片中的說話其實來自家屬想像，並非死者留下的真實陳述，可靠性不足。\n\n裁決沒有推翻 Gabriel Horcasitas 的誤殺定罪，也沒有全面禁止法庭使用 AI。法院針對的是原審法官依賴合成影片作量刑，令程序受到偏見並達到根本不公平的程度。案件將返回下級法院，由另一輪程序重新決定刑期。",
+    "category": "AI 法律",
+    "publishedAt": "2026-10-02T05:01:32Z",
+    "sourceLabel": "Arizona Court of Appeals / Associated Press",
+    "sourceUrl": "https://apnews.com/article/cd1ca553c7fa80c6698d7f97b51b1edd",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-02-volantis-88m-photonic-memory",
     "title": "Volantis 融資 8,800 萬美元：用光連接 GPU 與 220 顆記憶體",
     "summary": "AI 晶片初創 Volantis 完成 8,800 萬美元 A 輪融資，開發以 VCSEL 雷射光連接運算晶片與記憶體的光學互連架構。公司表示，傳統 GPU 周邊通常只能放置有限數目的高頻寬記憶體，而其設計目標是在單一 GPU 周圍接駁最多 220 顆記憶體，以同時擴大容量與頻寬。\n\nVolantis 計劃明年推出首款晶片，但目前未有量產產品或獨立性能測試。公司聲稱 A-1 系統可支援超過 20 萬億參數模型及每名用戶最高每秒 10,000 tokens；這些仍是設計目標，不代表已在商用環境實現。真正價值要看功耗、散熱、良率及與現有 GPU 平台的整合成本。",
