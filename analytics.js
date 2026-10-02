@@ -144,6 +144,15 @@
   function classifyClick(target){
     const el=target.closest?.('a,button'); if(!el)return null;
     const href=el.getAttribute?.('href')||'';
+    const explicitEvent=String(el.dataset?.analyticsEvent||'').trim();
+    if(explicitEvent){
+      const explicitContent=String(el.dataset?.analyticsContent||'').trim()||contentFromLink(el);
+      const rank=boundedNumber(el.dataset?.analyticsRank,100);
+      return [explicitEvent,explicitContent,placementFromElement(el),{
+        result_rank:rank,
+        result_type:String(el.dataset?.analyticsType||'').slice(0,40)||undefined
+      }];
+    }
     if(el.matches?.('.search-result')){
       const list=el.closest('#searchResults');
       const items=list?[...list.querySelectorAll('.search-result')]:[];
@@ -203,6 +212,30 @@
     });
   }
 
+  function installViewTracking(){
+    const nodes=[...document.querySelectorAll('[data-analytics-view]')];
+    if(!nodes.length)return;
+    const seen=new WeakSet();
+    const fire=node=>{
+      if(seen.has(node))return;
+      seen.add(node);
+      track(String(node.dataset.analyticsView||'home_section_view'),{
+        content:String(node.dataset.analyticsContent||'').slice(0,120),
+        placement:placementFromElement(node)
+      });
+    };
+    if(!('IntersectionObserver' in window)){nodes.forEach(fire);return}
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting&&entry.intersectionRatio>=0.35){
+          fire(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },{threshold:[0.35]});
+    nodes.forEach(node=>observer.observe(node));
+  }
+
   let initialized=false;
   function init(){
     if(initialized)return; initialized=true;
@@ -219,6 +252,7 @@
     // to attach privacy-preserving analytics to the final cloned nodes.
     setTimeout(installSearchTracking,50);
     setTimeout(installSearchTracking,500);
+    installViewTracking();
   }
 
   window.AISON_ANALYTICS={track};

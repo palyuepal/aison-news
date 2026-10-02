@@ -78,7 +78,7 @@
           '<div class="v6-edition"><b>AIson DAILY</b><span>'+esc(fmt(lead.date))+'</span><span>10 STORIES</span></div>'+
           '<h1>今日 AI，<em>真正值得你知道。</em></h1>'+
           '<p class="v6-one-line">'+esc(oneLine)+'</p>'+
-          '<div class="v6-hero-actions"><a class="v6-primary" href="daily.html">⚡ 快速掌握今日 AI <span>→</span></a><a class="v6-secondary" href="#today">完整今日 10 件事</a></div>'+
+          '<div class="v6-hero-actions"><a class="v6-primary" href="daily.html" data-analytics-event="home_cta_click" data-analytics-content="quick_daily" data-analytics-slot="signal_hero">⚡ 快速掌握今日 AI <span>→</span></a><a class="v6-secondary" href="#today" data-analytics-event="home_cta_click" data-analytics-content="full_today" data-analytics-slot="signal_hero">完整今日 10 件事</a></div>'+
           '<div class="v6-hero-proof"><span>每日人工編輯</span><span>來源核實</span><span>香港影響</span></div>'+
         '</div>'+
         '<div class="v6-signal-stage" aria-label="今日 AI 訊號集中於 '+esc(labels)+'">'+
@@ -104,11 +104,11 @@
     return '<div class="v6-top-stories" data-v6-reveal>'+
       '<div class="v6-section-kicker">TODAY\'S SIGNALS · EDITOR\'S TOP 3</div>'+
       '<div class="v6-top-grid">'+
-        '<a class="v6-story v6-story-lead" href="'+storyUrl(lead)+'">'+storyMedia(lead)+
+        '<a class="v6-story v6-story-lead" href="'+storyUrl(lead)+'" data-analytics-event="home_story_open" data-analytics-content="'+esc(lead.id)+'" data-analytics-slot="top_signal_01" data-analytics-rank="1">'+storyMedia(lead)+
           '<div class="v6-story-copy"><div class="v6-story-meta"><span class="v6-story-rank">01</span><span>'+esc(lead.category||'AI NEWS')+'</span>'+(lead.verified?'<span>✓ 已核實</span>':'')+'<span>'+esc(lead.readTime||'完整報道')+'</span></div>'+
           '<h2>'+esc(lead.title)+'</h2><span class="v6-story-hk">🇭🇰 '+esc(hk)+'</span></div>'+
         '</a>'+
-        '<div class="v6-story-side">'+rest.map((n,index)=>'<a class="v6-story v6-story-small" href="'+storyUrl(n)+'"><div class="v6-story-meta"><span class="v6-story-rank">0'+(index+2)+'</span><span>'+esc(n.category||'AI NEWS')+'</span>'+(n.verified?'<span>✓ 已核實</span>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(brief(n.quickTake||n.excerpt||n.summary,108))+'</p><span class="v6-read">閱讀重點 →</span></a>').join('')+'</div>'+
+        '<div class="v6-story-side">'+rest.map((n,index)=>'<a class="v6-story v6-story-small" href="'+storyUrl(n)+'" data-analytics-event="home_story_open" data-analytics-content="'+esc(n.id)+'" data-analytics-slot="top_signal_0'+(index+2)+'" data-analytics-rank="'+(index+2)+'"><div class="v6-story-meta"><span class="v6-story-rank">0'+(index+2)+'</span><span>'+esc(n.category||'AI NEWS')+'</span>'+(n.verified?'<span>✓ 已核實</span>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(brief(n.quickTake||n.excerpt||n.summary,108))+'</p><span class="v6-read">閱讀重點 →</span></a>').join('')+'</div>'+
       '</div>'+
     '</div>';
   }
@@ -148,7 +148,7 @@
     grid.innerHTML=items.map((n,index)=>{
       const impact=impactValue(n,config.key);
       const reason=brief(n.actionReason||n.quickTake||n.excerpt,92);
-      return '<a class="v6-audience-card" href="'+storyUrl(n)+'"><small>0'+(index+1)+' · '+esc(n.category||'AI NEWS')+'</small><h3>'+esc(n.title)+'</h3><p>'+esc(reason)+'</p><div class="v6-impact"><span>'+esc(config.label)+'影響</span><b aria-label="'+impact+' / 5">'+impactDots(impact)+'</b></div></a>';
+      return '<a class="v6-audience-card" href="'+storyUrl(n)+'" data-analytics-event="for_you_story_open" data-analytics-content="'+esc(n.id)+'" data-analytics-slot="for_you_'+esc(config.key)+'" data-analytics-rank="'+(index+1)+'"><small>0'+(index+1)+' · '+esc(n.category||'AI NEWS')+'</small><h3>'+esc(n.title)+'</h3><p>'+esc(reason)+'</p><div class="v6-impact"><span>'+esc(config.label)+'影響</span><b aria-label="'+impact+' / 5">'+impactDots(impact)+'</b></div></a>';
     }).join('');
     root.querySelectorAll('[data-v6-audience]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.v6Audience===key)));
   }
@@ -156,7 +156,7 @@
   function renderForYou(){
     const root=document.getElementById('v6ForYou');
     if(!root||!NEWS.some(n=>n.audienceImpact))return;
-    root.innerHTML='<div class="v6-for-you-head"><div><small>FOR YOU</small><h2>今日邊幾單同你最有關？</h2></div><div class="v6-audience-tabs" role="group" aria-label="選擇讀者身份">'+Object.entries(AUDIENCES).map(([key,value])=>'<button type="button" class="v6-audience-tab" data-v6-audience="'+key+'" aria-pressed="false">'+esc(value.label)+'</button>').join('')+'</div></div><div class="v6-audience-grid" data-v6-audience-grid></div><p class="v6-audience-note">排序只根據每日編輯資料內的受眾影響評級；選擇只儲存在此瀏覽器。</p>';
+    root.innerHTML='<div class="v6-for-you-head"><div><small>FOR YOU</small><h2>今日邊幾單同你最有關？</h2></div><div class="v6-audience-tabs" role="group" aria-label="選擇讀者身份">'+Object.entries(AUDIENCES).map(([key,value])=>'<button type="button" class="v6-audience-tab" data-v6-audience="'+key+'" data-analytics-event="audience_select" data-analytics-content="'+key+'" data-analytics-slot="for_you" aria-pressed="false">'+esc(value.label)+'</button>').join('')+'</div></div><div class="v6-audience-grid" data-v6-audience-grid></div><p class="v6-audience-note">排序只根據每日編輯資料內的受眾影響評級；選擇只儲存在此瀏覽器。</p>';
     const initial=savedAudience();
     renderAudienceCards(root,initial);
     root.querySelectorAll('[data-v6-audience]').forEach(button=>button.addEventListener('click',()=>{const key=button.dataset.v6Audience;setAudience(key);renderAudienceCards(root,key)}));

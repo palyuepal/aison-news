@@ -161,6 +161,12 @@ jobs:
           grep -q 'aria-live="polite"' index.html
           grep -q 'aria-current="page"' index.html
           grep -q 'aria-controls="mobileNav"' index.html
+          grep -q 'data-analytics-view="home_section_view"' index.html
+          grep -q 'data-analytics-content="signal_hero"' index.html
+          grep -q 'data-analytics-content="for_you"' index.html
+          grep -q 'data-analytics-content="live_stream"' index.html
+          grep -q 'data-analytics-content="morning_brief"' index.html
+          grep -q 'data-newsletter-link' index.html
           if grep -q 'homeSignals' index.html || grep -q 'home-signals' index.html; then echo 'obsolete homeSignals runtime remains' >&2; exit 1; fi
           grep -q 'id="v6SignalHero"' index.html
           grep -q 'id="v6Themes"' index.html
@@ -187,6 +193,16 @@ jobs:
           grep -q "'home-v6.js'" service-worker.js
           grep -q "'/engagement.js'" service-worker.js
           grep -q "'/story-updates.js'" service-worker.js
+          grep -q "'/analytics.js'" service-worker.js
+          grep -q 'explicitEvent' analytics.js
+          grep -q 'installViewTracking' analytics.js
+          grep -q 'intersectionRatio>=0.35' analytics.js
+          grep -q 'home_cta_click' home-v6.js
+          grep -q 'home_story_open' home-v6.js
+          grep -q 'audience_select' home-v6.js
+          grep -q 'for_you_story_open' home-v6.js
+          grep -q 'live_story_open' live.js
+          grep -q 'live_source_open' live.js
           if grep -q 'function addFeaturedStyles' lite-home.js || grep -q 'function deepReadReady' lite-home.js; then echo 'dead lite-home helpers remain' >&2; exit 1; fi
           grep -q 'script\[src\*="lite-home.js"\]' app-editorial.js
           grep -q 'existing=\[...document.scripts\]' engagement.js
