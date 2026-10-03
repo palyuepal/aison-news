@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-03",
+  "dailyOneLiner": "今日 AI 一句講晒：AI 由模型能力競賽進入權限、融資、法律與人才的落地考驗，真正的成本開始由用戶同企業看得見。",
+  "top3Ids": [
+    "2026-10-03-apple-macos-ai-agent-disk-access-controls",
+    "2026-10-03-amazon-nvidia-chips-spv-leaseback-talks",
+    "2026-10-03-xai-minnesota-nudification-law-injunction"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 權限與監察要重做",
+      "summary": "Apple 準備收緊 Mac 全磁碟授權，研究界亦提醒可見思考未必等於真實決策；Agent 安全要落到最小權限、行為日誌與即時撤銷。",
+      "watch": "看 Apple 的實際權限設計、企業管理支援，以及模型公司會否公布可重現的 Agent 監察評估。"
+    },
+    {
+      "title": "AI 資本由買設備走向金融工程",
+      "summary": "Amazon 據報研究把約 80 億美元 Nvidia 晶片放入 SPV 再租回，顯示晶片折舊、租約和信貸市場正共同決定算力擴建速度。",
+      "watch": "看交易是否落實、誰提供殘值或最低租金保證，以及其他雲端商會否跟隨。"
+    },
+    {
+      "title": "落地樽頸轉向人與制度",
+      "summary": "Anthropic 用 1 億美元訓練部署工程師，科學界與法律界則同時面對驗證及人才訓練成本；企業不能只計模型訂閱費。",
+      "watch": "看培訓能否產生可核實部署成果，以及企業會否把覆核、實驗與新人學習正式列入 AI 預算。"
+    }
+  ],
+  "biggestChange": "biggest change：Apple 把 AI Agent 風險正式推到 macOS 權限層，代表平台不再只要求應用程式寫私隱聲明，而是準備直接限制 Agent 可讀取甚麼。",
+  "watchTomorrow": "watch tomorrow：Apple 會否交代 Full Disk Access 新控制的推出版本與粒度、Amazon 晶片 SPV 是否出現正式條款，以及明尼蘇達州會否回應 xAI 的臨時禁制令。"
+}
