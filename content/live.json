@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-03-amazon-nvidia-chips-spv-leaseback-talks",
+    "title": "Amazon 擬把 80 億美元 Nvidia 晶片轉入 SPV：AI 算力融資走向售後租回",
+    "summary": "Reuters 引述《金融時報》報道，Amazon 正與投資者探討把約 80 億美元、已部署於美國數據中心的 Nvidia Grace Blackwell 晶片轉入特殊目的公司（SPV），再由 Amazon 租回。相關方案仍在洽談，Amazon 與 Nvidia 未有即時回應，未能視作已完成交易。\\n\\n若落實，Amazon 可把部分晶片資產及折舊風險移向外部投資者，同時以較輕資產負債表支撐算力擴張；投資者則要承擔晶片更新快、殘值難估及單一租戶風險。這顯示 AI 基建競賽正由搶 GPU，延伸到誰持有硬件、誰承擔過時成本。",
+    "category": "AI 基建",
+    "publishedAt": "2026-10-03T01:56:52Z",
+    "sourceLabel": "Reuters / Financial Times",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-03-apple-macos-ai-agent-disk-access-controls",
     "title": "Apple 收緊 Mac 全磁碟權限：AI Agent 讀私人資料要更明確授權",
     "summary": "Apple 表示將修改 macOS 的「Full Disk Access」機制，當應用程式或 AI Agent 要求讀取 Mac 上幾乎所有資料時，必須經更明確的用戶操作確認。現有權限原本主要方便備份工具，但亦可繞過多項私隱限制；Apple 承認部分開發者的使用方式可能令用戶面臨風險。\n\n措施是在 Meta 的 Muse Agent 被指讀取私人訊息後公布。Meta 否認未經同意存取，稱用戶必須同時開啟全磁碟權限及 Messages connector。Apple 未公布新控制的推出日期，因此目前仍要由用戶及企業自行審核 Agent 的磁碟、訊息與連接器權限。",
