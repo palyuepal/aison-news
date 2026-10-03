@@ -39,6 +39,24 @@ jobs:
         run: |
           set -euo pipefail
           test -f assets/social/daily-latest.jpg
+          test -f assets/mascot-ui.webp
+          test -d assets/social/home
+          test "$(find assets/social/home -maxdepth 1 -type f -name '*.webp' | wc -l)" -eq 10
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          mascot=Path('assets/mascot-ui.webp')
+          assert mascot.stat().st_size < 30000, mascot.stat().st_size
+          with Image.open(mascot) as im:
+              assert im.width <= 256 and im.height <= 256, im.size
+          cards=sorted(Path('assets/social/home').glob('*.webp'))
+          assert len(cards)==10
+          for card in cards:
+              assert card.stat().st_size < 90000, (card,card.stat().st_size)
+              with Image.open(card) as im:
+                  assert im.width==720 and im.height==378, (card,im.size)
+          print('homepage delivery media ok:',mascot.stat().st_size,'bytes mascot /',max(c.stat().st_size for c in cards),'bytes largest card')
+          PY
           test -f data/news.js
           test -f data/search-index.json
           test -f data/editorial.js
@@ -52,8 +70,8 @@ jobs:
           set -euo pipefail
           grep -q 'data/editorial.js' engagement.js
           grep -q 'analytics.js' engagement.js
-          grep -q "'data/editorial.js'" service-worker.js
-          grep -q "'analytics.js'" service-worker.js
+          grep -q "'/data/editorial.js'" service-worker.js
+          grep -q 'staleWhileRevalidate(request)' service-worker.js
           grep -q 'respectDNT' analytics.js
           grep -q 'credentials:' analytics.js
           grep -q 'AIson Daily Freshness Sentinel' .github/workflows/healthcheck.yml
@@ -103,8 +121,8 @@ jobs:
           grep -q 'data/live.js' live.html
           grep -q 'live-timeline.js' live.html
           grep -q "href='live.html'" live.js
-          grep -q "'live.html'" service-worker.js
-          grep -q "'live-timeline.js'" service-worker.js
+          grep -q "request.mode==='navigate'" service-worker.js
+          grep -q "'/live-timeline.js'" service-worker.js
       - name: Verify topic storylines
         shell: bash
         run: |
@@ -117,7 +135,7 @@ jobs:
           grep -q 'storylineCandidates' topics.js
           grep -q 'renderTimeline' topics.js
           grep -q 'LATEST DEVELOPMENT' topics.js
-          grep -q "'topics.js'" service-worker.js
+          grep -q 'staleWhileRevalidate(request)' service-worker.js
           python - <<'PY'
           import json
           rows=json.load(open('data/search-index.json',encoding='utf-8'))
@@ -154,6 +172,9 @@ jobs:
           grep -q 'home-v6.css' index.html
           if grep -q 'home-layout-v3.css' index.html || grep -q 'home-newsroom-v4.css' index.html || grep -q 'home-signature-v5.css' index.html; then echo 'home must load consolidated foundation only' >&2; exit 1; fi
           grep -q 'home-v6.js' index.html
+          grep -q 'assets/mascot-ui.webp' index.html
+          grep -q 'assets/social/home/' home-v6.js
+          grep -q 'data-fallback="assets/social/' home-v6.js
           grep -q 'id="v6SignalHero"' index.html
           grep -q 'id="v6Themes"' index.html
           grep -q 'id="v6ForYou"' index.html
@@ -172,11 +193,10 @@ jobs:
           grep -q 'navigator.share' engagement.js
           grep -q 'navigator.clipboard' engagement.js
           grep -q 'aison-last-seen-edition-v1' engagement.js
-          grep -q "'engagement.js'" service-worker.js
-          grep -q "'engagement.css'" service-worker.js
-          grep -q "'home-foundation-v6.css'" service-worker.js
-          grep -q "'home-v6.css'" service-worker.js
-          grep -q "'home-v6.js'" service-worker.js
+          grep -q 'staleWhileRevalidate(request)' service-worker.js
+          grep -q "'/home-foundation-v6.css'" service-worker.js
+          grep -q "'/home-v6.css'" service-worker.js
+          grep -q "'/home-v6.js'" service-worker.js
           python -c "import pathlib,re; css=pathlib.Path('home-v6.css').read_text(encoding='utf-8'); assert re.search(r'body\\[data-page=\\\"home\\\"\\] \\.v6-home-shell,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-themes,\\s*body\\[data-page=\\\"home\\\"\\] \\.v6-for-you\\{display:none\\}', css), 'V6 hidden-state selector block was corrupted'; print('v6 home hidden-state selector ok')"
           test ! -f home-layout-v3.css
           test ! -f home-newsroom-v4.css
@@ -265,3 +285,23 @@ jobs:
           PY
       - name: Check latest verified source links
         run: python tools/check_sources.py
+
+      - name: Prepare Phase 3 performance preview artifact
+        if: github.event_name == 'pull_request' && github.head_ref == 'feature/aison-v6-media-performance'
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf public
+          mkdir -p public
+          cp -a assets data news topics public/
+          cp -a *.html *.css *.js *.xml *.txt *.webmanifest CNAME public/
+          python tools/patch_news_visuals.py public
+          python tools/patch_search_quality.py public
+          python tools/patch_share_meta.py public
+      - name: Upload Phase 3 performance preview artifact
+        if: github.event_name == 'pull_request' && github.head_ref == 'feature/aison-v6-media-performance'
+        uses: actions/upload-artifact@v4
+        with:
+          name: aison-v6-media-performance-preview
+          path: public
+          retention-days: 1

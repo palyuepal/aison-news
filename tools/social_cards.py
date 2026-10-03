@@ -281,6 +281,27 @@ def _render_card(story, mascot_path, output_path, Image, ImageDraw, ImageFont, I
 
     image.save(output_path, 'JPEG', quality=86, optimize=True, progressive=True, subsampling='4:2:0')
 
+def _build_delivery_assets(selected, mascot_path, out_dir, root, Image):
+    """Generate lightweight UI-only derivatives without changing canonical social cards."""
+    ui_mascot = Path(root) / 'assets' / 'mascot-ui.webp'
+    with Image.open(mascot_path) as source:
+        thumb = source.convert('RGBA')
+        thumb.thumbnail((256, 256), Image.Resampling.LANCZOS)
+        thumb.save(ui_mascot, 'WEBP', quality=84, method=6)
+
+    home_dir = out_dir / 'home'
+    home_dir.mkdir(parents=True, exist_ok=True)
+    for story in list(selected)[:10]:
+        source_path = out_dir / f"{story['id']}.jpg"
+        with Image.open(source_path) as source:
+            width = 720
+            height = round(source.height * width / source.width)
+            delivery = source.convert('RGB').resize((width, height), Image.Resampling.LANCZOS)
+            delivery.save(home_dir / f"{story['id']}.webp", 'WEBP', quality=80, method=6)
+
+    return ui_mascot, home_dir
+
+
 def build_social_cards(data, site, root, limit=CARD_LIMIT):
     try:
         from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageFilter
@@ -312,5 +333,13 @@ def build_social_cards(data, site, root, limit=CARD_LIMIT):
     cards = list(out_dir.glob('*.jpg'))
     if len(cards) != len(selected):
         raise SystemExit(f'Social card count mismatch: expected {len(selected)}, got {len(cards)}')
-    print(f'Built {len(cards)} AIson premium social cards (1200x630).')
+
+    ui_mascot, home_dir = _build_delivery_assets(selected, mascot, out_dir, root, Image)
+    home_cards = list(home_dir.glob('*.webp'))
+    if len(home_cards) != min(10, len(selected)):
+        raise SystemExit(f'Homepage delivery card count mismatch: expected {min(10, len(selected))}, got {len(home_cards)}')
+    if not ui_mascot.is_file():
+        raise SystemExit('Homepage mascot delivery asset was not generated')
+
+    print(f'Built {len(cards)} AIson premium social cards (1200x630) + {len(home_cards)} homepage WebP derivatives + mascot UI asset.')
     return {story['id'] for story in selected}

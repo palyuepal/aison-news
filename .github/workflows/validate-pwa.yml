@@ -27,6 +27,20 @@ jobs:
           grep -q "request.mode==='navigate'" service-worker.js
           grep -q "LIVE_DATA" service-worker.js
           grep -q "SKIP_WAITING" service-worker.js
+          python - <<'PY'
+          import pathlib,re
+          text=pathlib.Path('service-worker.js').read_text(encoding='utf-8')
+          match=re.search(r"const CORE=\[(.*?)\];",text,re.S)
+          assert match,'CORE list missing'
+          items=re.findall(r"'([^']+)'",match.group(1))
+          required={'offline.html','manifest.webmanifest','styles.css','visual-system-v2.css','pwa-return.js','assets/mascot-ui.webp'}
+          assert required <= set(items), (required-set(items),items)
+          assert len(items) <= 8, items
+          forbidden={'assets/icon-512.png','assets/mascot.webp','data/search-index.json','data/latest.js','data/news.js','article.html','daily.html','live.html','weekly.html'}
+          assert not (forbidden & set(items)), forbidden & set(items)
+          assert 'lean-shell' in text
+          print('lean PWA core ok:',len(items),items)
+          PY
       - name: Validate manifest
         run: |
           python - <<'PY'
