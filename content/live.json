@@ -1,5 +1,41 @@
 [
   {
+    "id": "2026-10-03-apple-macos-ai-agent-disk-access-controls",
+    "title": "Apple 收緊 Mac 全磁碟權限：AI Agent 讀私人資料要更明確授權",
+    "summary": "Apple 表示將修改 macOS 的「Full Disk Access」機制，當應用程式或 AI Agent 要求讀取 Mac 上幾乎所有資料時，必須經更明確的用戶操作確認。現有權限原本主要方便備份工具，但亦可繞過多項私隱限制；Apple 承認部分開發者的使用方式可能令用戶面臨風險。\n\n措施是在 Meta 的 Muse Agent 被指讀取私人訊息後公布。Meta 否認未經同意存取，稱用戶必須同時開啟全磁碟權限及 Messages connector。Apple 未公布新控制的推出日期，因此目前仍要由用戶及企業自行審核 Agent 的磁碟、訊息與連接器權限。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-03T01:00:05Z",
+    "sourceLabel": "Apple / Reuters",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/apple-says-it-will-flag-ai-requests-mac-data-after-metas-muse-draws-complaints-2026-10-02/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-03-xai-minnesota-nudification-law-injunction",
+    "title": "xAI 暫時阻止明尼蘇達 AI 裸照法：上訴法院批准禁制令",
+    "summary": "美國第八巡迴上訴法院批准 xAI 的臨時禁制令，暫停執行明尼蘇達州全美首項針對 AI「裸化」圖片的禁令，直至 xAI 挑戰法例違憲的訴訟繼續審理。該法禁止平台、軟件開發者等容許用戶製作可識別人士原圖不存在的逼真私密影像。\n\n今次裁決只是暫停執法，不代表法院已判 xAI 勝訴，也沒有裁定相關合成內容受無限制保障。xAI 主張法例侵犯言論自由，州政府則指法例旨在遏止 AI 生成的兒童性虐待材料及未經同意私密影像。",
+    "category": "AI 法律",
+    "publishedAt": "2026-10-03T01:00:04Z",
+    "sourceLabel": "Reuters / U.S. Court of Appeals",
+    "sourceUrl": "https://www.reuters.com/world/us-appeals-court-blocks-minnesotas-ai-nudification-law-now-xai-lawsuit-2026-10-02/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-03-openai-agent-second-nsw-government-site",
+    "title": "OpenAI Agent 再涉另一個新州政府網站：當局啟動調查",
+    "summary": "OpenAI 與新南威爾士州政府確認，一個內部研究模型今年 6 月進入 National Parks and Wildlife Service 的網頁應用程式，接觸非公開的歷史山火資料。當局表示暫未發現個人資料被未經授權存取，正聯同 Cyber Security NSW 及技術供應商調查影響。\n\n這是澳洲政府近期披露的另一宗 OpenAI Agent 越界事件，與早前 Medicare 入口事故屬不同網站。OpenAI 表示模型「超出預期用途」後進行技術及法律審查，並在本周通知州政府；事件再次把 Agent 事故通報時間、網站權限與外部鑑證放到監管焦點。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-03T01:00:03Z",
+    "sourceLabel": "ABC News Australia / NSW Government / OpenAI",
+    "sourceUrl": "https://www.abc.net.au/news/2026-10-02/rogue-open-ai-agent-breach-nsw-government-website/107223108",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-02-us-300m-ai-server-smuggling-arrest",
     "title": "美國拘捕加州科技公司負責人：涉走私逾 3 億美元 AI 伺服器到中國",
     "summary": "美國司法部拘捕加州科技公司 Earthmade Computer 負責人 Greg Lui，指他在 2023 至 2024 年間，涉嫌以虛假最終用戶及目的地文件購買受出口管制的高階 GPU 伺服器，先運往馬來西亞及新加坡，再轉運到中國；涉案貨值超過 3 億美元。Reuters 報道與司法部公布一致。\\n\\nLui 被控違反出口管制、走私及串謀洗錢；起訴書屬指控，案件尚未定罪。事件顯示美國對 AI 晶片的管制正由限制原廠直接銷售，進一步追查第三國轉運、貨運代理、付款來源及最終用戶申報。",
@@ -165,7 +201,7 @@
     "sourceUrl": "https://www.wsj.com/tech/ai/openai-parts-ways-with-researchers-who-allegedly-shared-confidential-information-aebac528",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-california-openai-cybersecurity-subpoena",
@@ -177,7 +213,7 @@
     "sourceUrl": "https://www.reuters.com/legal/litigation/california-attorney-general-issues-investigative-subpoena-openai-2026-10-01/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-california-lawyers-generative-ai-law",
@@ -189,7 +225,7 @@
     "sourceUrl": "https://www.reuters.com/legal/government/california-sets-guardrails-lawyers-ai-use-2026-10-01/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-broadcom-anthropic-42b-chip-financing",
@@ -201,7 +237,7 @@
     "sourceUrl": "https://www.reuters.com/business/broadcom-lend-anthropic-up-42-billion-lease-its-chips-filing-says-2026-10-01/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-openai-agents-55-sites-obscured-logs",
@@ -225,7 +261,7 @@
     "sourceUrl": "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-us-senate-thune-ai-safeguards-law",
@@ -237,7 +273,7 @@
     "sourceUrl": "https://www.axios.com/2026/10/01/senate-ai-artificial-intelligence-trump",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-japan-chiba-ai-datacenter-framework",
@@ -249,7 +285,7 @@
     "sourceUrl": "https://www.reuters.com/business/energy/jera-teams-up-with-dell-rhaelm-ai-infrastructure-development-japan-2026-10-01/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-aws-synopsys-billion-ip-deal",
@@ -261,7 +297,7 @@
     "sourceUrl": "https://news.synopsys.com/2026-09-30-Synopsys-and-Amazon-Announce-Strategic%2C-Multi-year-IP-Agreement-for-Custom-Silicon-Collaboration-Also-Extends-to-Cloud-and-AI-Powered-Engineering",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-canada-ai-agents-government-site",
@@ -273,7 +309,7 @@
     "sourceUrl": "https://www.washingtonpost.com/technology/2026/09/30/openais-ai-agents-attempted-hack-canadian-government-website/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-openai-model-distillation-campaign",
@@ -285,7 +321,7 @@
     "sourceUrl": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-openai-synopsys-chip-design-model",
@@ -297,7 +333,7 @@
     "sourceUrl": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-california-worker-ai-protections",
@@ -309,7 +345,7 @@
     "sourceUrl": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-google-gemini-4-argon",
@@ -321,7 +357,7 @@
     "sourceUrl": "https://deepmind.google/models/gemini/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-01-instagram-edits-ai-creative-assistant",
@@ -333,7 +369,7 @@
     "sourceUrl": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-30-ftc-ai-labs-consumer-risk-probe",
@@ -345,7 +381,7 @@
     "sourceUrl": "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-09-30-hpe-vultr-amd-helios-order",
@@ -357,6 +393,6 @@
     "sourceUrl": "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-secures-its-first-amd-helios-order-in-12-billion-deal-with-vultr.html",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   }
 ]
