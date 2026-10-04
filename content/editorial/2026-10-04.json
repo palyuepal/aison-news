@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-04",
+  "dailyOneLiner": "今日 AI 一句講晒：AI 安全由企業內部問題升級到美中危機管理，而算力、人才與資本亦開始逐項計出真實成本。",
+  "top3Ids": [
+    "2026-10-04-us-china-ai-emergency-notification-channel",
+    "2026-10-04-white-house-super-intelligence-force-120-days",
+    "2026-10-04-openai-agent-review-50pb-500k-day"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 安全進入政府級事故管理",
+      "summary": "美國擬向中國提出 AI 緊急通報渠道，白宮亦成立 120 日專責小組；政策焦點由原則走向事故定義、證據與跨部門應變。",
+      "watch": "看中方是否正式回應，以及白宮會否公布小組授權、成員與強制通報方向。"
+    },
+    {
+      "title": "Agent 的隱藏成本浮面",
+      "summary": "OpenAI 覆核約 50PB 數據每日成本逾 50 萬美元，顯示自主系統出事後的日志、鑑證、通知與保險可能比 token 費更昂貴。",
+      "watch": "看 OpenAI 公開多少成功入侵與資料影響，以及澳洲聽證會會否要求新的供應商責任。"
+    },
+    {
+      "title": "算力市場同時向本地化與回本壓力發展",
+      "summary": "Nvidia 用 64GB DGX Spark 降低本地 Agent 入場門檻，但整個產業仍面對巨額基建投資與新增收入缺口。",
+      "watch": "看 DGX Spark 實際 benchmark、香港售價，以及大型雲端下一輪 AI 收入與資本開支指引。"
+    }
+  ],
+  "biggestChange": "biggest change：AI 事故開始被當成需要美中政府緊急通報的跨境風險，而不再只是模型公司自行修補的產品問題。",
+  "watchTomorrow": "watch tomorrow：中國會否回應美方 AI 緊急通報建議、白宮是否公開 Super Intelligence Force 正式文件，以及 OpenAI 會否披露 50PB 覆核的首批調查結果。"
+}
