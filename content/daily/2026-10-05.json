@@ -61,7 +61,12 @@
     "sourceLabel": "Microsoft",
     "sourceUrl": "https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report",
     "sourceType": "公司文件",
-    "references": ["https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/"],
+    "references": [
+      {
+        "label": "Microsoft Security Blog",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/"
+      }
+    ],
     "actionVerdict": "try-now",
     "actionReason": "報告指攻擊時間已短過一般人工流程；企業可立即收緊身份權限、修補優先級與 Agent 日誌。",
     "aisonScore": 9.1,
