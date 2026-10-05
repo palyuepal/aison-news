@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-05",
+  "dailyOneLiner": "今日 AI 一句講晒：AI 公司開始公開爭論社會應承受幾多風險，而企業真正要做的，是把 Agent 的速度、權限、成本與責任變成可量度規則。",
+  "top3Ids": [
+    "2026-10-05-altman-accepts-ai-risks-open-access",
+    "2026-10-05-microsoft-defense-report-ai-attack-seconds",
+    "2026-10-05-meta-muse-five-million-market-impact"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 風險由技術問題變成公共取捨",
+      "summary": "Altman 明確主張以廣泛使用換取接受部分風險；Microsoft 則用攻擊鏈與漏洞數據說明外部成本正在加速。",
+      "watch": "看模型公司會否公開部署門檻、事故率、賠償與第三方審查，而不是只談快慢。"
+    },
+    {
+      "title": "Agent 開始改寫服務業議價權",
+      "summary": "Meta Muse 突破 500 萬下載，市場已重估旅遊、訂閱、會計與金融中介；即時搜尋與企業檢索亦加快 Agent 落地。",
+      "watch": "看真實活躍率、交易完成率、退款與商戶是否限制或專門支援 Agent。"
+    },
+    {
+      "title": "AI 基建由地面擴散至支付與軌道",
+      "summary": "Google 把 TPU 送入軌道測試，Ethereum 分離 API 付款與身份，亞洲長期資金和製造訂單仍向 AI 傾斜。",
+      "watch": "看 Suncatcher 實測、zkAPI 採用，以及亞洲訂單能否抵消高息與能源成本。"
+    }
+  ],
+  "biggestChange": "biggest change：OpenAI 不再只說會平衡安全與創新，而是明確提出社會應接受部分壞結果來換取 AI 普及，令『可接受風險』成為可被監管者追問的公開政策立場。",
+  "watchTomorrow": "watch tomorrow：OpenAI 會否補充可接受風險的量化門檻、Microsoft 報告中的 AI 編排攻擊會否有更多實例，以及 GPT‑Rosalind 收費生效後公布哪些地區與機構可實際採用。"
+}
