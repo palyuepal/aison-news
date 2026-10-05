@@ -7,7 +7,12 @@
     "summary": "Reuters 10 月 4 日報道，OpenAI CEO Sam Altman 在 Politico 訪問中表示，AI 帶來的好處足以支持社會接受部分壞事發生，並主張技術應讓公眾廣泛使用。他承認 OpenAI 與 Anthropic 對監管存在明顯分歧：Anthropic 更強調放慢前沿發展，OpenAI 則反對以零風險為前提集中控制能力。這是管理理念的公開表態，不代表任何現行安全規則已改變。",
     "quickTake": "OpenAI 把爭論由『是否有風險』推進到『社會應接受多少風險換取普及』。模型愈能自主行動，這個取態會直接影響產品開放、事故責任與監管門檻。",
     "category": "AI 安全",
-    "tags": ["OpenAI", "Anthropic", "AI safety", "regulation"],
+    "tags": [
+      "OpenAI",
+      "Anthropic",
+      "AI safety",
+      "regulation"
+    ],
     "date": "2026-10-05",
     "readTime": "7 分鐘",
     "featured": true,
@@ -31,7 +36,12 @@
     "actionVerdict": "watch",
     "actionReason": "屬重大政策取態，尚未轉化為產品或合約改動；企業應先把風險門檻寫入採購與治理要求。",
     "aisonScore": 9.3,
-    "audienceImpact": {"worker": 3, "sme": 5, "creator": 3, "developer": 5}
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
   },
   {
     "id": "2026-10-05-microsoft-defense-report-ai-attack-seconds",
@@ -41,7 +51,12 @@
     "summary": "Microsoft 10 月 1 日發布年度 Digital Defense Report，指 AI 已用於偵察、社交工程、惡意程式、漏洞利用及入侵後活動，部分攻擊步驟由數日壓縮至秒級。報告稱，上半年公開 CVE 接近 4 萬個，全年或約為去年兩倍；漏洞在野外被發現至武器化的中位時間已低於 24 小時。這些數字來自 Microsoft 自身威脅情報與評估，並非整個互聯網的完整普查。",
     "quickTake": "企業的補丁與事故處理週期仍以日或星期計，但攻擊者開始以小時甚至秒行動。最直接的改變是身份、權限、網絡、應用及 AI 日誌要連成同一套機器速度防守。",
     "category": "AI 安全",
-    "tags": ["Microsoft", "cybersecurity", "agents", "vulnerability"],
+    "tags": [
+      "Microsoft",
+      "cybersecurity",
+      "agents",
+      "vulnerability"
+    ],
     "date": "2026-10-05",
     "readTime": "7 分鐘",
     "featured": true,
@@ -61,11 +76,21 @@
     "sourceLabel": "Microsoft",
     "sourceUrl": "https://www.microsoft.com/en-us/security/security-insider/threat-landscape/2026-digital-defense-report",
     "sourceType": "公司文件",
-    "references": ["https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/"],
+    "references": [
+      {
+        "label": "Microsoft Security Blog",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/"
+      }
+    ],
     "actionVerdict": "try-now",
     "actionReason": "報告指攻擊時間已短過一般人工流程；企業可立即收緊身份權限、修補優先級與 Agent 日誌。",
     "aisonScore": 9.1,
-    "audienceImpact": {"worker": 5, "sme": 5, "creator": 3, "developer": 5}
+    "audienceImpact": {
+      "worker": 5,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
   },
   {
     "id": "2026-10-05-meta-muse-five-million-market-impact",
@@ -75,7 +100,12 @@
     "summary": "Reuters Breakingviews 10 月 2 日引述 Sensor Tower 指，Meta 的 Muse Agent 在 9 月 30 日突破 500 萬下載。Muse 於 9 月 8 日推出，設免費版及每月 20、100 美元付費層；過去一個月旅遊、訂閱、報稅、汽車零售及金融中介股份受壓，Meta 及晶片公司則上升。股價變動同時受利率、能源價格等因素影響，不能把全部跌幅都歸因 Muse。",
     "quickTake": "Agent 的商業衝擊不只在取代工作，而在替消費者持續格價、取消閒置服務及搬移資金。第一輪市場反應或有誇張，但中介與訂閱模式開始被迫證明自身價值。",
     "category": "AI Agent",
-    "tags": ["Meta", "Muse", "AI agents", "subscriptions"],
+    "tags": [
+      "Meta",
+      "Muse",
+      "AI agents",
+      "subscriptions"
+    ],
     "date": "2026-10-05",
     "readTime": "7 分鐘",
     "featured": true,
@@ -99,7 +129,12 @@
     "actionVerdict": "watch",
     "actionReason": "下載增長已確認，但商業影響仍需活躍率與交易數驗證；服務業應先測試 Agent 可取代的客戶流程。",
     "aisonScore": 8.8,
-    "audienceImpact": {"worker": 4, "sme": 5, "creator": 3, "developer": 4}
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 3,
+      "developer": 4
+    }
   },
   {
     "id": "2026-10-05-google-suncatcher-tpu-orbit-test",
@@ -109,7 +144,12 @@
     "summary": "10 月 1 日，搭載 4 顆 Google TPU 的原型衛星隨 SpaceX 火箭升空，展開約一年在軌測試。Project Suncatcher 要驗證晶片能否在低地球軌道抵受輻射、極端溫度與發射震動，並以太陽能運行有限 AI 工作負載；Google 計劃 2027 年再測試衛星間高速激光連線。這不是已投入服務的太空數據中心。",
     "quickTake": "太空 AI 基建由構想進入硬件實測，但散熱、發射成本與大規模衛星協同仍未解決。",
     "category": "AI 基建",
-    "tags": ["Google", "TPU", "Project Suncatcher", "space"],
+    "tags": [
+      "Google",
+      "TPU",
+      "Project Suncatcher",
+      "space"
+    ],
     "date": "2026-10-05",
     "readTime": "4 分鐘",
     "featured": false,
@@ -129,11 +169,18 @@
     "sourceLabel": "Wall Street Journal",
     "sourceUrl": "https://www.wsj.com/tech/can-ai-run-in-space-google-is-about-to-find-out-59c4e062",
     "sourceType": "可靠媒體",
-    "references": ["https://www.reuters.com/business/media-telecom/google-plans-first-test-ai-chips-space-under-project-suncatcher-2026-09-24/"],
+    "references": [
+      "https://www.reuters.com/business/media-telecom/google-plans-first-test-ai-chips-space-under-project-suncatcher-2026-09-24/"
+    ],
     "actionVerdict": "watch",
     "actionReason": "仍屬研究測試，沒有可用產品或採購決定；值得跟進實測數據。",
     "aisonScore": 8.4,
-    "audienceImpact": {"worker": 2, "sme": 2, "creator": 2, "developer": 4}
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 2,
+      "creator": 2,
+      "developer": 4
+    }
   },
   {
     "id": "2026-10-05-openai-gpt-rosalind-pricing-effective",
@@ -143,7 +190,12 @@
     "summary": "OpenAI 的 GPT‑Rosalind 已於 9 月 11 日退出研究預覽，面向合資格生命科學機構；官方說明確認已公布價格由 10 月 5 日起生效。模型結合 agentic coding、工具使用與藥物化學、基因組學等能力，並可在 ChatGPT Enterprise 和 Codex 內使用。這是收費生效，不是今日發布新模型。",
     "quickTake": "生命科學 AI 由試用走向有預算、有權限與資料治理的正式採購。",
     "category": "AI 模型",
-    "tags": ["OpenAI", "GPT-Rosalind", "life sciences", "pricing"],
+    "tags": [
+      "OpenAI",
+      "GPT-Rosalind",
+      "life sciences",
+      "pricing"
+    ],
     "date": "2026-10-05",
     "readTime": "4 分鐘",
     "featured": false,
@@ -163,11 +215,18 @@
     "sourceLabel": "OpenAI",
     "sourceUrl": "https://help.openai.com/en/articles/20001193-gpt-rosalind-for-life-sciences-research",
     "sourceType": "官方公告",
-    "references": ["https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/"],
+    "references": [
+      "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/"
+    ],
     "actionVerdict": "watch",
     "actionReason": "只適合合資格生命科學機構；先核對存取資格、資料治理與總成本。",
     "aisonScore": 8.2,
-    "audienceImpact": {"worker": 3, "sme": 4, "creator": 1, "developer": 4}
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 1,
+      "developer": 4
+    }
   },
   {
     "id": "2026-10-05-cloudflare-web-search-api-ai-gateway",
@@ -177,7 +236,12 @@
     "summary": "Cloudflare 10 月 2 日宣布，AI Gateway 原生支援 Web Search API，合作搜尋供應商包括 Ceramic.ai、Exa 和 Linkup。開發者可在模型推理前加入即時網頁脈絡，並沿用 Gateway 的路由、觀察與控制能力。這是基建整合，不代表搜尋結果必然正確或已解決版權問題。",
     "quickTake": "即時搜尋正由 Agent 的外掛功能變成雲端推理基建的一部分。",
     "category": "AI 工具",
-    "tags": ["Cloudflare", "web search", "AI Gateway", "agents"],
+    "tags": [
+      "Cloudflare",
+      "web search",
+      "AI Gateway",
+      "agents"
+    ],
     "date": "2026-10-05",
     "readTime": "4 分鐘",
     "featured": false,
@@ -200,8 +264,13 @@
     "references": [],
     "actionVerdict": "try-now",
     "actionReason": "適合有即時資料需要的開發團隊小規模測試，同時加入來源白名單、引用與費用上限。",
-    "aisonScore": 8.0,
-    "audienceImpact": {"worker": 2, "sme": 4, "creator": 3, "developer": 5}
+    "aisonScore": 8,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 3,
+      "developer": 5
+    }
   },
   {
     "id": "2026-10-05-ethereum-zkapi-private-api-credits",
@@ -211,7 +280,12 @@
     "summary": "Ethereum Foundation 與 Open Anonymity Project 10 月 1 日推出 zkAPI，已在 Ethereum Mainnet 運作。用戶先把 credits 存入 vault，再用零知識證明授權有上限的 API 使用；供應商知道請求與有效付款，支付層知道花費，但兩邊都不掌握完整身份—查詢連結。它改善付款私隱，不會隱藏 API 供應商本身看到的提示內容。",
     "quickTake": "AI 私隱由『不拿資料訓練』進一步延伸到支付身份與使用紀錄可否被長期串連。",
     "category": "AI 私隱",
-    "tags": ["Ethereum", "zero knowledge", "API", "privacy"],
+    "tags": [
+      "Ethereum",
+      "zero knowledge",
+      "API",
+      "privacy"
+    ],
     "date": "2026-10-05",
     "readTime": "4 分鐘",
     "featured": false,
@@ -235,7 +309,12 @@
     "actionVerdict": "watch",
     "actionReason": "技術已上主網但採用與合規仍早期；敏感行業先做架構及法律評估。",
     "aisonScore": 7.8,
-    "audienceImpact": {"worker": 2, "sme": 3, "creator": 2, "developer": 5}
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 2,
+      "developer": 5
+    }
   },
   {
     "id": "2026-10-05-cloudflare-ai-search-general-availability",
@@ -245,7 +324,12 @@
     "summary": "Cloudflare 10 月 1 日宣布 AI Search 正式 GA，新增原生圖片 embeddings、掃描 PDF 的 OCR、較大檔案支援，並可配合不同聊天模型。官方 changelog 指，使用量收費將於 11 月 1 日開始，設每月包含額。這是檢索服務正式化，並非新基礎模型。",
     "quickTake": "企業建立文件問答的門檻下降，但資料清理、存取控制與答案評估仍是主要工作。",
     "category": "AI 工具",
-    "tags": ["Cloudflare", "RAG", "OCR", "multimodal"],
+    "tags": [
+      "Cloudflare",
+      "RAG",
+      "OCR",
+      "multimodal"
+    ],
     "date": "2026-10-05",
     "readTime": "4 分鐘",
     "featured": false,
@@ -265,11 +349,18 @@
     "sourceLabel": "Cloudflare",
     "sourceUrl": "https://blog.cloudflare.com/ai-search-ga/",
     "sourceType": "官方公告",
-    "references": ["https://developers.cloudflare.com/changelog/post/2026-10-01-ai-search-generally-available/"],
+    "references": [
+      "https://developers.cloudflare.com/changelog/post/2026-10-01-ai-search-generally-available/"
+    ],
     "actionVerdict": "try-now",
     "actionReason": "適合用有限文件集測試繁中、OCR、權限與成本，11 月前先建立評估基線。",
     "aisonScore": 7.7,
-    "audienceImpact": {"worker": 3, "sme": 5, "creator": 3, "developer": 5}
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
   },
   {
     "id": "2026-10-05-temasek-ai-allocation-six-to-fifteen-percent",
@@ -279,7 +370,12 @@
     "summary": "Temasek 北美主管 Jane Atherton 10 月 1 日表示，淡馬錫對目前大型雲端公司的 AI 開支水平感到放心，並計劃在五年內把 AI 相關投資由組合約 6% 提高至最多 15%。淡馬錫持有 OpenAI、Anthropic 及 Nvidia 等相關資產。這是投資意向與配置上限，不是已完成增持。",
     "quickTake": "利率與 AI 基建成本上升之際，亞洲主權資金仍選擇增加長期曝險，但更重視有資產負債表支撐的公司。",
     "category": "AI 投資",
-    "tags": ["Temasek", "AI investment", "Asia", "hyperscalers"],
+    "tags": [
+      "Temasek",
+      "AI investment",
+      "Asia",
+      "hyperscalers"
+    ],
     "date": "2026-10-05",
     "readTime": "4 分鐘",
     "featured": false,
@@ -303,7 +399,12 @@
     "actionVerdict": "watch",
     "actionReason": "屬長期配置意向而非已執行交易；投資者應等待實際資金流與估值紀律。",
     "aisonScore": 7.5,
-    "audienceImpact": {"worker": 2, "sme": 3, "creator": 1, "developer": 2}
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 1,
+      "developer": 2
+    }
   },
   {
     "id": "2026-10-05-ai-spending-global-factory-expansion",
@@ -313,7 +414,12 @@
     "summary": "Reuters 10 月 1 日綜合各地製造業調查指出，AI 資本開支帶動歐洲及亞洲部分工廠活動：南韓出口錄得逾 15 年最快增長，台灣 PMI 升至 56.7，歐元區製造業亦受 AI 資本品需求支持。各地表現不一，日本、馬來西亞及菲律賓仍偏弱，能源價格與高利率亦構成壓力。",
     "quickTake": "AI 需求已從模型公司收入擴散至記憶體、設備、零件與出口數據，但並非所有製造業都受惠。",
     "category": "AI 產業",
-    "tags": ["manufacturing", "semiconductors", "Asia", "capex"],
+    "tags": [
+      "manufacturing",
+      "semiconductors",
+      "Asia",
+      "capex"
+    ],
     "date": "2026-10-05",
     "readTime": "4 分鐘",
     "featured": false,
@@ -337,6 +443,11 @@
     "actionVerdict": "watch",
     "actionReason": "屬宏觀初步訊號；企業與投資者應用後續訂單、庫存及毛利確認持續性。",
     "aisonScore": 7.3,
-    "audienceImpact": {"worker": 2, "sme": 4, "creator": 1, "developer": 2}
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 1,
+      "developer": 2
+    }
   }
 ]
