@@ -69,6 +69,14 @@ OFFICIAL_DOMAINS = {
     "canva.com": "Canva",
     "runwayml.com": "Runway",
     "perplexity.ai": "Perplexity",
+    "reflection.ai": "Reflection AI",
+    "sec.gov": "U.S. SEC",
+    "ftc.gov": "U.S. FTC",
+    "justice.gov": "U.S. Department of Justice",
+    "whitehouse.gov": "The White House",
+    "europa.eu": "European Union",
+    "europarl.europa.eu": "European Parliament",
+    "gov.uk": "UK Government",
 }
 
 
@@ -190,6 +198,12 @@ def fetch_bytes(url: str, *, max_bytes: int, accept: str) -> tuple[bytes, str, s
         return payload, final_url, content_type
 
 
+GENERIC_IMAGE_TOKENS = ("logo", "favicon", "icon-", "/icon/", "avatar", "brandmark", "brand-mark")
+
+def _looks_generic_image(meta: MetaImage) -> bool:
+    hay = (meta.url + " " + meta.alt).lower()
+    return any(token in hay for token in GENERIC_IMAGE_TOKENS)
+
 def discover_social_image(page_url: str) -> MetaImage | None:
     payload, final_url, content_type = fetch_bytes(
         page_url,
@@ -201,7 +215,10 @@ def discover_social_image(page_url: str) -> MetaImage | None:
     text = payload.decode("utf-8", errors="replace")
     parser = SocialMetaParser()
     parser.feed(text)
-    return parser.best_image(final_url)
+    meta = parser.best_image(final_url)
+    if meta and _looks_generic_image(meta):
+        return None
+    return meta
 
 
 def _slug(value: str) -> str:
@@ -336,9 +353,13 @@ def self_test() -> None:
     best = parser.best_image("https://openai.com/index/example/")
     assert best and best.url == "https://openai.com/media/hero.jpg"
     assert best.alt == "Official product screenshot"
+    assert not _looks_generic_image(best)
+    assert _looks_generic_image(MetaImage("https://openai.com/assets/logo.png", "OpenAI logo"))
     assert official_credit("https://openai.com/index/x") == "OpenAI"
     assert official_credit("https://cdn.openai.com/assets/x") == "OpenAI"
     assert official_credit("https://www.reuters.com/world/x") is None
+    assert official_credit("https://reflection.ai/blog/introducing-beam") == "Reflection AI"
+    assert official_credit("https://www.sec.gov/Archives/example") == "U.S. SEC"
     candidates = official_page_candidates(
         {
             "sourceUrl": "https://www.reuters.com/world/x",
