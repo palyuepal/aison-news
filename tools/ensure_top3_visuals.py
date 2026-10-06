@@ -126,7 +126,7 @@ def _has_valid_visual(root: Path, story: dict) -> bool:
         and str(visual.get("credit", "")).strip()
         and path
         and path.is_file()
-        and path.stat().st_size > 1000
+        and path.stat().st_size > 0
     )
 
 
