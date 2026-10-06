@@ -494,7 +494,7 @@ body[data-page="home"].v6-ready > main > .editorial-feature{display:none}
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(90deg,#0a2a4d 0%,rgba(10,42,77,.34) 31%,rgba(2,12,25,.04) 72%);
+  background:linear-gradient(90deg,#071a33 0%,rgba(7,26,51,.92) 22%,rgba(7,26,51,.55) 52%,rgba(2,12,25,.08) 82%);
 }
 .v6-story-copy{
   position:absolute;
@@ -502,7 +502,7 @@ body[data-page="home"].v6-ready > main > .editorial-feature{display:none}
   left:0;
   right:auto;
   bottom:0;
-  width:61%;
+  width:58%;
   padding:34px;
 }
 .v6-story-meta{
@@ -705,6 +705,7 @@ body[data-page="home"].v6-ready > main > .editorial-feature{display:none}
 .v6-watch-card small{color:#6a5412}
 .v6-shift-card h2,
 .v6-watch-card h2{
+  color:#fff;
   max-width:720px;
   margin:8px 0 12px;
   font-family:Georgia,"Times New Roman","Noto Serif TC",serif;

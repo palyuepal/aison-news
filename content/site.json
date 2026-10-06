@@ -8,7 +8,7 @@
   "editionSize": 10,
   "newsletter": {
     "provider": "Beehiiv",
-    "subscribeUrl": "https://aison.hk/#newsletter"
+    "subscribeUrl": "https://subscribe-forms.beehiiv.com/v3/forms/418139e2-4ed2-45c5-8d7e-d01b96fcfed3"
   },
   "analytics": {
     "enabled": true,
