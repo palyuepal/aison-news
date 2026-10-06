@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-06",
+  "dailyOneLiner": "今日 AI 一句講晒：AI 競爭同時進入可審計監管、open-weight 成本戰與巨額信貸市場，透明度開始比發布速度更值錢。",
+  "top3Ids": [
+    "2026-10-06-nyc-ai-safety-hearing-disclosure-audits",
+    "2026-10-06-reflection-beam-501b-open-weight",
+    "2026-10-06-openai-textgrain-eu-text-watermark"
+  ],
+  "threeThemes": [
+    {
+      "title": "安全承諾開始接受公開質詢",
+      "summary": "紐約市議會把 AI 風險落到披露、外部審計與吹哨者保障；模型公司要逐步由自行聲明轉向交證據。",
+      "watch": "看地方提案會否成為具執行力的採購與披露規則。"
+    },
+    {
+      "title": "Open-weight 戰線重開",
+      "summary": "Reflection 以 501B Beam 挑戰中國低成本模型，但完整權重、模型卡與獨立測試仍未交付。",
+      "watch": "看 Beam 是否如期以 Apache 2.0 發布，以及第三方能否重現成本和能力聲稱。"
+    },
+    {
+      "title": "AI 商業化要同時回答來源與融資",
+      "summary": "OpenAI 用 textGrain 標記文字並擴大廣告，Anthropic 則以 600 億美元融資支持算力；產品來源與資本成本同步浮面。",
+      "watch": "看文字水印誤判、ChatGPT 廣告中立，以及 Anthropic 融資的最終利率。"
+    }
+  ],
+  "biggestChange": "biggest change：AI 公司正由『自行承諾安全』轉向被政府、客戶和內容平台要求提供可核實證據；審計紀錄、來源水印和模型卡開始成為產品本身的一部分。",
+  "watchTomorrow": "watch tomorrow：紐約市議會會否公開具體法案文本、Reflection Beam 何時交付完整權重與模型卡，以及 OpenAI textGrain 的技術報告與跨語言誤判數據會否接受獨立重現。"
+}
