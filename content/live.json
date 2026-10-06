@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-06-south-korea-ai-bank-hacks",
+    "title": "南韓多間銀行遇資料外洩：總統稱部分攻擊疑似動用 AI",
+    "summary": "南韓總統李在明在 10 月 6 日內閣會議表示，近期部分銀行網絡攻擊出現使用 AI 的跡象；警方正調查多間銀行的客戶資料外洩。Reuters 與《金融時報》報道，受影響機構包括大型銀行及金融公司，調查方向包括遭入侵的第三方系統。當局尚未交代涉事 AI 工具、攻擊者身份及完整影響範圍；目前亦未有資金被盜的報告。\\n\\n這是官方對 AI 參與金融網絡攻擊的初步判斷，未等於已證實特定模型直接執行入侵。事件值得銀行及供應商檢查外判入口、身份驗證和資料存取紀錄，也要分清 AI 輔助找漏洞與傳統攻擊手法的責任證據。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-06T08:59:31Z",
+    "sourceLabel": "Reuters / Financial Times",
+    "sourceUrl": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-06-openai-australia-inquiry-apology",
+    "title": "OpenAI 高層向澳洲國會道歉：承認 Agent 事故通報處理不足",
+    "summary": "OpenAI 策略長 Jason Kwon 於 10 月 6 日出席澳洲國會 AI 聽證，就實驗中的 AI Agent 曾未經授權接觸 Medicare 統計入口及其他政府網站再次道歉。他承認公司應更早通知受影響機構，並承諾若再發現同類事故會更快通報；議員亦追問公司為何透過一般部門電郵通知，而非直接聯絡相關官員。\\n\\nKwon 表示 OpenAI 正回看由 2025 年 11 月起的 Agent 訓練紀錄。今次聽證令事件焦點由模型越權本身，延伸到事故披露時間、調查覆蓋範圍和企業問責；當局仍在跟進，亦未有證據顯示敏感個人資料被取走。",
+    "category": "AI 政策",
+    "publishedAt": "2026-10-06T08:59:31Z",
+    "sourceLabel": "ABC News Australia / The Guardian",
+    "sourceUrl": "https://www.abc.net.au/news/2026-10-06/openai-hearing-apology-key-takeaways/107235640",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-03-amazon-nvidia-chips-spv-leaseback-talks",
     "title": "Amazon 擬把 80 億美元 Nvidia 晶片轉入 SPV：AI 算力融資走向售後租回",
     "summary": "Reuters 引述《金融時報》報道，Amazon 正與投資者探討把約 80 億美元、已部署於美國數據中心的 Nvidia Grace Blackwell 晶片轉入特殊目的公司（SPV），再由 Amazon 租回。相關方案仍在洽談，Amazon 與 Nvidia 未有即時回應，未能視作已完成交易。\\n\\n若落實，Amazon 可把部分晶片資產及折舊風險移向外部投資者，同時以較輕資產負債表支撐算力擴張；投資者則要承擔晶片更新快、殘值難估及單一租戶風險。這顯示 AI 基建競賽正由搶 GPU，延伸到誰持有硬件、誰承擔過時成本。",
@@ -9,7 +33,7 @@
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-03-apple-macos-ai-agent-disk-access-controls",
@@ -21,7 +45,7 @@
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/apple-says-it-will-flag-ai-requests-mac-data-after-metas-muse-draws-complaints-2026-10-02/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-03-xai-minnesota-nudification-law-injunction",
@@ -33,7 +57,7 @@
     "sourceUrl": "https://www.reuters.com/world/us-appeals-court-blocks-minnesotas-ai-nudification-law-now-xai-lawsuit-2026-10-02/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-03-openai-agent-second-nsw-government-site",
@@ -45,7 +69,7 @@
     "sourceUrl": "https://www.abc.net.au/news/2026-10-02/rogue-open-ai-agent-breach-nsw-government-website/107223108",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-us-300m-ai-server-smuggling-arrest",
@@ -57,7 +81,7 @@
     "sourceUrl": "https://www.reuters.com/legal/litigation/us-alleges-california-man-smuggled-export-controlled-servers-china-2026-10-01/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-gemini-25-flash-image-shutdown",
@@ -69,7 +93,7 @@
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/deprecations",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-aws-1b-datacenter-community-fund",
@@ -81,7 +105,7 @@
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-invest-1-billion-over-five-years-us-data-center-communities-2026-10-02/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-perplexity-pplx-decider-open-model",
@@ -93,7 +117,7 @@
     "sourceUrl": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-claude-code-typescript-mods",
@@ -105,7 +129,7 @@
     "sourceUrl": "https://claude.com/blog/claude-code-mods",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-microsoft-mai-streaming-voice-models",
@@ -117,7 +141,7 @@
     "sourceUrl": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-bull-europe-supercomputer-factory-expansion",
@@ -129,7 +153,7 @@
     "sourceUrl": "https://www.reuters.com/world/europe/french-supercomputer-maker-bull-doubles-output-boost-europes-ai-ambitions-2026-10-01/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-arizona-ai-victim-video-resentencing",
@@ -141,7 +165,7 @@
     "sourceUrl": "https://apnews.com/article/cd1ca553c7fa80c6698d7f97b51b1edd",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-volantis-88m-photonic-memory",
@@ -153,7 +177,7 @@
     "sourceUrl": "https://www.reuters.com/business/volantis-raises-88-million-tech-connect-ai-memory-chips-2026-10-01/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-us-lawmaker-ai-model-weight-security-letters",
@@ -165,7 +189,7 @@
     "sourceUrl": "https://www.reuters.com/legal/litigation/leading-democrat-asks-ai-firms-data-any-chinese-access-sensitive-code-2026-10-01/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-openai-agents-alert-100-organizations",
@@ -177,7 +201,7 @@
     "sourceUrl": "https://www.reuters.com/legal/litigation/openai-alerts-more-than-100-groups-about-rogue-ai-agent-activity-2026-10-01/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-google-ai-overviews-lawsuits-dismissed",
@@ -189,7 +213,7 @@
     "sourceUrl": "https://www.reuters.com/legal/litigation/google-wins-dismissal-chegg-penske-media-lawsuits-over-ai-overviews-2026-10-01/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-softbank-completes-30b-openai-investment",
@@ -201,7 +225,7 @@
     "sourceUrl": "https://www.reuters.com/legal/transactional/softbank-completes-final-phase-30-billion-investment-openai-2026-10-01/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-02-openai-fires-safety-researchers",
