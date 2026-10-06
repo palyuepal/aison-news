@@ -103,3 +103,26 @@ function renderDaily(){const list=$('#dailyList');if(!list)return;setEdition();c
 function weeklyStories(){const end=editionDate();if(!end)return[];const startDate=new Date(`${end}T12:00:00Z`);startDate.setUTCDate(startDate.getUTCDate()-6);const start=startDate.toISOString().slice(0,10);return NEWS.filter(n=>n.date>=start&&n.date<=end).sort((a,b)=>String(b.date).localeCompare(String(a.date))||(a.rank||99)-(b.rank||99));}
 function renderWeekly(){const list=$('#weeklyList');if(!list)return;const stories=weeklyStories(),end=editionDate();if(!stories.length)return;const startDate=new Date(`${end}T12:00:00Z`);startDate.setUTCDate(startDate.getUTCDate()-6);const start=startDate.toISOString().slice(0,10),cats=[...new Set(stories.map(n=>n.category))],verified=stories.filter(n=>n.verified).length,top=stories.slice().sort((a,b)=>(a.rank||99)-(b.rank||99)).slice(0,3);$('#weeklyEdition').textContent=`${fmt(start)} 至 ${fmt(end)} · ${stories.length} 則已核實新聞`;$('#weeklyStats').innerHTML=`<span><b>${stories.length}</b>則本週報導</span><span><b>${cats.length}</b>個主題分類</span><span><b>${verified}</b>則已核實來源</span>`;$('#weeklyFocus').innerHTML=top.map((n,i)=>{const v=categoryVisual(n.category);return `<a class="weekly-focus" href="news/${encodeURIComponent(n.id)}.html"><span class="weekly-number">0${i+1}</span><span class="top-symbol ${v.tone}">${v.icon}</span><div><small>${esc(n.category)}</small><h2>${esc(n.title)}</h2><p>${esc(briefText(n.whyImportant||n.summary||n.excerpt,110))}</p><span>睇完整分析 →</span></div></a>`}).join('');const groups=cats.map(category=>({category,items:stories.filter(n=>n.category===category)})).sort((a,b)=>b.items.length-a.items.length).slice(0,4);$('#weeklyThemes').innerHTML=groups.map(group=>`<article class="weekly-theme"><div><span>${esc(group.category)}</span><b>${group.items.length} 則</b></div><h3>${esc(group.items[0].title)}</h3><p>${esc(briefText(group.items[0].whyImportant||group.items[0].excerpt,100))}</p><a href="news/${encodeURIComponent(group.items[0].id)}.html">閱讀焦點 →</a></article>`).join('');list.innerHTML=stories.map(n=>`<a class="weekly-item" href="news/${encodeURIComponent(n.id)}.html"><span>${fmt(n.date)}</span><b>${esc(n.title)}</b><small>${esc(n.category)} · ${esc(n.readTime)}</small></a>`).join('');bindSearch();}
 document.addEventListener('DOMContentLoaded',()=>{mobileMenu();setupNewsletterLinks();const p=document.body.dataset.page;if(p==='home')renderHome();if(p==='article'){renderArticle();decorateArticle()}if(p==='archive')renderArchive();if(p==='topics')renderTopics();if(p==='daily'){renderDaily();decorateDaily()}if(p==='weekly')renderWeekly();if(p==='guides')bindSearch();});
+
+
+/* ===== Editorial B2 — Daily Story Flow labels ===== */
+(() => {
+  function initB2Daily(){
+    if(document.body?.dataset.page!=='daily')return;
+    document.body.classList.add('b2-ready');
+    const hero=document.querySelector('.daily-hero');
+    const label=hero?.querySelector('.mini-label');
+    const title=hero?.querySelector('h1');
+    if(label)label.textContent='DAILY STORY FLOW · EDITORIAL RANKING';
+    if(title)title.innerHTML='今日 AI <em>Story Flow</em>';
+    const list=document.getElementById('dailyList');
+    if(list&&!document.querySelector('.b2-flow-note')){
+      const note=document.createElement('div');
+      note.className='b2-flow-note';
+      note.innerHTML='<b>閱讀方式：</b>01–10 永遠代表 AIson 編輯重要性排名；日期／HKT 時間只作事件 metadata，唔會改變排名意思。';
+      list.before(note);
+    }
+    [...document.querySelectorAll('.daily-item')].forEach((item,index)=>item.dataset.b2Rank=String(index+1).padStart(2,'0'));
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(initB2Daily,0),{once:true});else setTimeout(initB2Daily,0);
+})();

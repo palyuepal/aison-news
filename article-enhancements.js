@@ -133,3 +133,48 @@
   const start=()=>requestAnimationFrame(()=>requestAnimationFrame(render));
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 })();
+
+
+/* ===== Editorial B2 — immersive article helpers ===== */
+(() => {
+  const esc=value=>String(value||'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+  const short=(value='',limit=150)=>{const s=String(value||'').replace(/\s+/g,' ').trim();return s.length>limit?s.slice(0,limit).replace(/[，。；、\s]+$/,'')+'…':s};
+  function currentStory(){
+    const id=window.AISON_ARTICLE_ID||new URLSearchParams(location.search).get('id')||'';
+    return (window.AISON_NEWS||[]).find(n=>n.id===id)||(window.AISON_NEWS||[])[0];
+  }
+  function initB2Article(){
+    if(document.body?.dataset.page!=='article')return;
+    document.body.classList.add('b2-ready');
+    const story=currentStory(), body=document.getElementById('articleBody');
+    if(!story||!body||document.getElementById('b2Keybox'))return;
+    const opening=body.querySelector('.report-opening');
+    if(opening){
+      const points=[
+        story.quickTake||story.summary||story.excerpt,
+        story.whyImportant,
+        Array.isArray(story.hkImpact)?story.hkImpact[0]:''
+      ].filter(Boolean).slice(0,3);
+      if(points.length){
+        const box=document.createElement('aside');
+        box.className='b2-keybox';box.id='b2Keybox';
+        box.innerHTML='<small>30 秒睇明 · KEY TAKEAWAYS</small><ul>'+points.map((p,i)=>'<li><b>0'+(i+1)+'</b>'+esc(short(p,175))+'</li>').join('')+'</ul>';
+        const first=opening.querySelector('p');
+        first?first.after(box):opening.append(box);
+        const jump=document.createElement('a');jump.className='b2-jump-keybox';jump.href='#b2Keybox';jump.textContent='30 秒睇明 ↓';document.body.append(jump);
+      }
+    }
+    const take=story.take||'';
+    if(take){
+      const target=body.querySelector('.info-block');
+      if(target){
+        const quote=document.createElement('blockquote');quote.className='b2-pullquote';quote.textContent=short(take,190);target.before(quote);
+      }
+    }
+    const relatedTitle=document.querySelector('.article-related-head h2');
+    if(relatedTitle)relatedTitle.textContent='跟住睇呢條主線';
+    const relatedLabel=document.querySelector('.article-related-head .mini-label');
+    if(relatedLabel)relatedLabel.textContent='FOLLOW THE SIGNAL';
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(initB2Article,0),{once:true});else setTimeout(initB2Article,0);
+})();
