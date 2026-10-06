@@ -49,7 +49,7 @@ def related_for(current, data, limit=8):
 
 
 def article_subset(current, data):
-    selected = [current, *data[:5], *related_for(current, data)]
+    selected = [current, *data[:10], *related_for(current, data)]
     out = []
     seen = set()
     for story in selected:
