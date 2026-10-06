@@ -29,13 +29,7 @@
         kind:String(visual.kind||'official-press')
       };
     }
-    return {
-      src:`assets/social/${encodeURIComponent(story.id)}.jpg`,
-      alt:`${story.title||'AIson 新聞'}｜AIson 編輯圖片`,
-      credit:'AIson 編輯圖片',
-      sourceUrl:'',
-      kind:'aison-social'
-    };
+    return null;
   }
 
   function makeFigure(story,{className='',eager=false,caption=false}={}){
@@ -139,7 +133,7 @@
       enhanceSecondary();
     }
     enhanceNewsCards();
-    if(page==='article')enhanceArticleHero();
+    if(page==='article'&&!document.querySelector('.article-visual.has-story-card'))enhanceArticleHero();
     enhanceRelated();
   }
 

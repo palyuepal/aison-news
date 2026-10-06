@@ -9,8 +9,8 @@ from __future__ import annotations
 from pathlib import Path
 import sys
 
-CSS_TAG = '<link rel="stylesheet" href="news-visuals-v1.css?v=20260916-v1">'
-JS_TAG = '<script src="news-visuals-v1.js?v=20260916-v1"></script>'
+CSS_TAG = '<link rel="stylesheet" href="news-visuals-v1.css?v=20261006-news-image-v1">'
+JS_TAG = '<script src="news-visuals-v1.js?v=20261006-news-image-v1"></script>'
 
 
 def patch_html(path: Path) -> bool:
