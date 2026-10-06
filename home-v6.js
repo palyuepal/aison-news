@@ -97,7 +97,8 @@
     return visual?.src?visual:null;
   }
   function mediaFallback(n){
-    return '<span class="story-media-fallback"><small>AIson NEWS</small><b>'+esc(n.category||'AI NEWS')+'</b></span>';
+    const tags=(n.tags||[]).filter(Boolean).slice(0,2).join(' · ');
+    return '<span class="story-media-fallback"><i aria-hidden="true"></i><small>AIson NEWS · EMERGENCY VISUAL</small><b>'+esc(n.category||'AI NEWS')+'</b><em>'+esc(tags||'TOP STORY')+'</em></span>';
   }
   function storyMedia(n){
     const visual=storyVisual(n);
@@ -217,7 +218,7 @@
   const brief=(value='',limit=155)=>{const s=String(value||'').replace(/\s+/g,' ').trim();return s.length>limit?s.slice(0,limit).replace(/[，。；、\s]+$/,'')+'…':s};
   const url=n=>'news/'+encodeURIComponent(n.id)+'.html';
   const visual=n=>n&&n.visual&&typeof n.visual==='object'&&n.visual.src?n.visual:null;
-  const mediaFallback=n=>'<span class="story-media-fallback"><small>AIson NEWS</small><b>'+esc(n.category||'AI NEWS')+'</b></span>';
+  const mediaFallback=n=>{const tags=(n.tags||[]).filter(Boolean).slice(0,2).join(' · ');return '<span class="story-media-fallback"><i aria-hidden="true"></i><small>AIson NEWS · EMERGENCY VISUAL</small><b>'+esc(n.category||'AI NEWS')+'</b><em>'+esc(tags||'TOP STORY')+'</em></span>'};
   function cardMedia(n,className='b2-card-media',eager=false){
     const v=visual(n);
     if(!v)return '<div class="'+className+' is-editorial-fallback">'+mediaFallback(n)+'</div>';
