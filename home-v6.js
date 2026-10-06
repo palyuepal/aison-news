@@ -198,3 +198,87 @@
 
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 })();
+
+
+/* ===== AIson Editorial B2 — publication front page ===== */
+(() => {
+  'use strict';
+  const esc=(value='')=>String(value).replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+  const fmt=value=>{try{return new Intl.DateTimeFormat('zh-HK',{year:'numeric',month:'long',day:'numeric',weekday:'short'}).format(new Date(String(value).slice(0,10)+'T00:00:00'))}catch{return String(value||'')}};
+  const brief=(value='',limit=155)=>{const s=String(value||'').replace(/\s+/g,' ').trim();return s.length>limit?s.slice(0,limit).replace(/[，。；、\s]+$/,'')+'…':s};
+  const url=n=>'news/'+encodeURIComponent(n.id)+'.html';
+
+  function pulseMarkup(news){
+    const live=[...document.querySelectorAll('#liveList .live-item')].slice(0,3).map(item=>({
+      time:item.querySelector('.live-time')?.textContent?.trim()||'LIVE',
+      title:item.querySelector('h4')?.textContent?.trim()||'AIson LIVE 更新'
+    })).filter(x=>x.title);
+    const rows=live.length?live:news.slice(1,4).map((n,index)=>({time:'0'+(index+1),title:n.title}));
+    return rows.map(row=>'<div class="b2-pulse-row"><time>'+esc(row.time)+'</time><p>'+esc(row.title)+'</p></div>').join('');
+  }
+
+  function topThree(news){
+    const [lead,second,third]=news;
+    const side=[second,third].filter(Boolean);
+    return '<section class="b2-top-three"><div class="container"><div class="b2-section-head"><div><small>TODAY\'S TEN · EDITOR\'S RANKING</small><h2>今日 AI，一頁睇晒</h2></div><a href="daily.html">完整每日 Story Flow →</a></div><div class="b2-top-grid">'+
+      '<a class="b2-lead-card" href="'+url(lead)+'"><div class="b2-card-media"><img src="assets/social/'+encodeURIComponent(lead.id)+'.jpg" alt="" loading="eager" decoding="async"></div><div class="b2-card-copy"><div class="b2-story-meta"><b>01</b><span>'+esc(lead.category||'AI NEWS')+'</span>'+(lead.verified?'<span>✓ 已核實</span>':'')+'</div><h2>'+esc(lead.title)+'</h2><p>'+esc(brief(lead.quickTake||lead.summary||lead.excerpt,190))+'</p><strong>閱讀完整報道 →</strong></div></a>'+
+      '<div class="b2-side-cards">'+side.map((n,index)=>'<a class="b2-side-card" href="'+url(n)+'"><div class="b2-story-meta"><b>0'+(index+2)+'</b><span>'+esc(n.category||'AI NEWS')+'</span>'+(n.verified?'<span>✓ 已核實</span>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(brief(n.quickTake||n.excerpt||n.summary,110))+'</p><strong>閱讀重點 →</strong></a>').join('')+'</div>'+
+    '</div></div></section>';
+  }
+
+  function init(){
+    if(document.body?.dataset.page!=='home')return;
+    const news=(window.AISON_NEWS||[]).slice().sort((a,b)=>(Number(a.rank)||999)-(Number(b.rank)||999)).slice(0,10);
+    if(news.length<3)return;
+    const lead=news[0], score=Number(lead.aisonScore)||0;
+    const major=Boolean(lead.verified&&score>=9.2);
+    const root=document.getElementById('v6SignalHero');
+    if(!root)return;
+
+    const ticker=major?'<div class="b2-ticker" aria-label="重大新聞快訊"><div class="b2-ticker-track">'+
+      news.slice(0,5).concat(news.slice(0,5)).map(n=>'<span>◆ '+esc(n.title)+'</span>').join('')+
+      '</div></div>':'';
+
+    root.innerHTML=
+      '<section class="b2-front b2-'+(major?'major':'normal')+'">'+
+        '<div class="b2-util"><div class="container"><span>'+esc(fmt(lead.date))+' · 香港</span><span class="b2-live-state"><i></i> AIson LIVE · 即時更新</span></div></div>'+
+        '<div class="container b2-front-grid">'+
+          '<div class="b2-front-copy">'+
+            '<div class="b2-editor-mark"><img src="assets/mascot.webp" alt="" width="42" height="42"><span><b>AIson 編輯台</b><small>01–10 依重要性排序</small></span></div>'+
+            '<div class="b2-kicker">AIson DAILY · STORY 01'+(major?' · MAJOR DAY':'')+'</div>'+
+            '<h1>'+esc(lead.title)+'</h1>'+
+            '<p class="b2-dek">'+esc(brief(lead.summary||lead.excerpt,235))+'</p>'+
+            '<div class="b2-actions"><a class="b2-primary" href="'+url(lead)+'">閱讀完整報道 →</a><a class="b2-secondary" href="daily.html">睇今日其餘 9 件事</a></div>'+
+            '<div class="b2-byline">'+(lead.verified?'<span>✓ 已核實</span>':'')+(score?'<span>AIson Score '+score.toFixed(1)+' / 10</span>':'')+'<span>'+esc(lead.category||'AI NEWS')+'</span><span>'+esc(lead.readTime||'完整報道')+'</span></div>'+
+          '</div>'+
+          '<aside class="b2-pulse"><div class="b2-pulse-head"><span>● AIson LIVE</span><a href="live.html">進入 LIVE →</a></div>'+pulseMarkup(news)+'</aside>'+
+        '</div>'+
+      '</section>'+ticker+topThree(news);
+
+    root.hidden=false;
+    document.body.classList.add('b2-ready',major?'b2-major-day':'b2-normal-day');
+
+    const sectionHead=document.querySelector('#today .section-head');
+    if(sectionHead){
+      const label=sectionHead.querySelector('.mini-label'), title=sectionHead.querySelector('h2');
+      if(label)label.textContent='STORIES 04–10 · EDITORIAL RANKING';
+      if(title)title.textContent='繼續今日版';
+    }
+    [...document.querySelectorAll('#newsGrid .news-card')].forEach((card,index)=>{
+      card.classList.add(index<2?'b2-mid-story':'b2-mini-story');
+    });
+
+    const themes=document.getElementById('v6Themes');
+    if(themes){
+      const small=themes.querySelector('.v6-themes-head small'), h2=themes.querySelector('.v6-themes-head h2'), p=themes.querySelector('.v6-themes-head p');
+      if(small)small.textContent='AIson SIGNALS · CONNECT THE DOTS';
+      if(h2)h2.textContent='今日三條主線';
+      if(p)p.textContent='唔只逐條睇新聞：將今日事件串成三條值得追落去嘅脈絡。';
+    }
+    const liveTitle=document.querySelector('#aison-live .live-title');
+    if(liveTitle)liveTitle.lastChild.textContent='完整即時脈搏';
+  }
+
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(init,0),{once:true});
+  else setTimeout(init,0);
+})();
