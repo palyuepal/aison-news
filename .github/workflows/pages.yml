@@ -25,6 +25,8 @@ jobs:
           sudo apt-get install -y --no-install-recommends fonts-noto-cjk
       - name: Resolve official news images
         run: python tools/enrich_official_visuals.py --limit 20
+      - name: Guarantee Top 3 story visuals
+        run: python tools/ensure_top3_visuals.py
       - name: Build AIson with social cards and daily overview
         env:
           AISON_REQUIRE_SOCIAL_CARDS: '1'
