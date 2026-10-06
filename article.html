@@ -15,7 +15,7 @@
 .reader-opinion-label{display:block;margin:0 0 .5rem;color:#526780;font-size:.875rem}
 .article-related{padding:8px 0 52px}.article-related-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:16px}.article-related-head h2{margin:4px 0 0}.article-related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.article-related-card{display:block;padding:17px;border:1px solid #d8e6f8;border-radius:16px;background:#fff;color:#071b3d;text-decoration:none}.article-related-card small{display:block;color:#61728d;font-size:11px;font-weight:900}.article-related-card b{display:block;margin-top:8px;font-size:15px;line-height:1.5}.article-related-card span{display:block;margin-top:10px;color:#123b78;font-size:12px;font-weight:900}
 @media(max-width:940px){.article-layout{grid-template-columns:minmax(0,1fr)}.article-layout>.sidebar{position:static}.article-layout>.sidebar>#articleToc{display:none}.article-header h1{line-height:1.22;letter-spacing:normal}.article-related-grid{grid-template-columns:1fr}}
-</style><script type="application/ld+json" id="jsonld"></script><link rel="stylesheet" href="visual-system-v2.css?v=20261006-b2-dark-header">
+</style><script type="application/ld+json" id="jsonld"></script><link rel="stylesheet" href="visual-system-v2.css?v=20261006-b2-warm-paper-v1">
 <style id="b2-header-contrast-critical">
 body[data-page="daily"] .topbar,body[data-page="article"] .topbar{background:rgba(7,26,51,.97)!important;border-bottom:1px solid rgba(255,255,255,.10)!important}
 body[data-page="daily"] .nav,body[data-page="article"] .nav{color:#fff!important}
@@ -66,4 +66,4 @@ document.addEventListener('DOMContentLoaded',()=>{
     related.innerHTML=picks.map(n=>`<a class="article-related-card" href="news/${encodeURIComponent(n.id)}.html"><small>${esc(n.category||'AI NEWS')}</small><b>${esc(n.title)}</b><span>繼續閱讀 →</span></a>`).join('');
   }
 });
-</script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js?v=20261006-b2-dark-header-v3").catch(()=>{})}</script></body></html>
+</script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js?v=20261006-b2-warm-paper-v1").catch(()=>{})}</script></body></html>
