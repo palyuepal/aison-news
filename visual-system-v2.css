@@ -253,3 +253,37 @@ body[data-page="article"] .article-related{background:#fff;border-top:1px solid 
 body[data-page="article"] .article-related-head h2{font-family:Georgia,"Noto Serif TC",serif}
 @media(max-width:940px){body[data-page="article"] .article-layout{grid-template-columns:minmax(0,700px)}body[data-page="article"] .b2-jump-keybox{position:static;display:inline-flex;margin:18px 20px 0}}
 @media(max-width:680px){body[data-page="daily"] .daily-head{padding-top:42px;padding-bottom:42px}body[data-page="daily"] .daily-list::before{left:20px}body[data-page="daily"] .daily-item{grid-template-columns:50px minmax(0,1fr);gap:10px}body[data-page="daily"] .daily-rank{width:36px;height:36px;margin-left:2px;font-size:12px}body[data-page="daily"] .daily-item>div:last-child{padding:20px}body[data-page="daily"] .daily-item h2{font-size:20px}body[data-page="article"] .article-body{padding:35px 20px 20px}body[data-page="article"] #articleBody p,body[data-page="article"] #articleBody li{font-size:17px!important}body[data-page="article"] .b2-pullquote{font-size:22px}}
+
+
+/* ===== B2 hotfix: high-contrast light header on Daily + Article ===== */
+body[data-page="daily"] .nav,
+body[data-page="article"] .nav{color:var(--b2-ink)}
+body[data-page="daily"] .brand strong,
+body[data-page="article"] .brand strong{color:var(--b2-ink)}
+body[data-page="daily"] .brand strong span,
+body[data-page="article"] .brand strong span{color:var(--b2-gold)}
+body[data-page="daily"] .brand small,
+body[data-page="article"] .brand small{color:#53627a;opacity:1}
+body[data-page="daily"] .brand img,
+body[data-page="article"] .brand img{border-color:var(--b2-gold);box-shadow:0 0 0 3px rgba(242,183,5,.12)}
+body[data-page="daily"] .navlinks a,
+body[data-page="article"] .navlinks a{color:#33435b;opacity:1}
+body[data-page="daily"] .navlinks a:hover,
+body[data-page="daily"] .navlinks a.active,
+body[data-page="article"] .navlinks a:hover,
+body[data-page="article"] .navlinks a.active{color:var(--b2-ink)}
+body[data-page="daily"] .search-trigger,
+body[data-page="article"] .search-trigger{
+  border-color:#d4ccba;
+  background:#fff;
+  color:#33435b;
+  box-shadow:0 2px 9px rgba(10,26,47,.05);
+}
+body[data-page="daily"] .search-trigger b,
+body[data-page="article"] .search-trigger b,
+body[data-page="daily"] .menuBtn,
+body[data-page="article"] .menuBtn{color:var(--b2-ink)}
+body[data-page="daily"] .mobile-nav,
+body[data-page="article"] .mobile-nav{background:var(--b2-navy);border-top-color:rgba(255,255,255,.10)}
+body[data-page="daily"] .mobile-nav a,
+body[data-page="article"] .mobile-nav a{color:#fff}
