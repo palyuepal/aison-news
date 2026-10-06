@@ -287,3 +287,32 @@ body[data-page="daily"] .mobile-nav,
 body[data-page="article"] .mobile-nav{background:var(--b2-navy);border-top-color:rgba(255,255,255,.10)}
 body[data-page="daily"] .mobile-nav a,
 body[data-page="article"] .mobile-nav a{color:#fff}
+
+/* ===== B2 dark header — Daily + Article ===== */
+body[data-page="daily"] .topbar,
+body[data-page="article"] .topbar{
+  background:rgba(7,26,51,.97)!important;
+  border-bottom:1px solid rgba(255,255,255,.10)!important;
+  box-shadow:0 8px 24px rgba(3,20,48,.16);
+  backdrop-filter:blur(14px);
+}
+body[data-page="daily"] .nav,
+body[data-page="article"] .nav{color:#fff!important}
+body[data-page="daily"] .brand strong,
+body[data-page="article"] .brand strong{color:#fff!important}
+body[data-page="daily"] .brand strong span,
+body[data-page="article"] .brand strong span{color:#F2B705!important}
+body[data-page="daily"] .brand small,
+body[data-page="article"] .brand small{color:#b8c8dc!important;opacity:1!important}
+body[data-page="daily"] .navlinks a,
+body[data-page="article"] .navlinks a{color:#dce6f3!important;opacity:1!important}
+body[data-page="daily"] .navlinks a:hover,
+body[data-page="daily"] .navlinks a.active,
+body[data-page="article"] .navlinks a:hover,
+body[data-page="article"] .navlinks a.active{color:#fff!important}
+body[data-page="daily"] .search-trigger,
+body[data-page="article"] .search-trigger{background:rgba(255,255,255,.08)!important;border-color:rgba(255,255,255,.20)!important;color:#fff!important;box-shadow:none!important}
+body[data-page="daily"] .search-trigger b,
+body[data-page="article"] .search-trigger b,
+body[data-page="daily"] .menuBtn,
+body[data-page="article"] .menuBtn{color:#fff!important}
