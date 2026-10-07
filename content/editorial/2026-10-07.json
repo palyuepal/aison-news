@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-07",
+  "dailyOneLiner": "今日 AI 一句講晒：AI 能力正由聊天走入新數學、網絡防守和企業流程，但每項突破都同時要求更嚴格的驗證、授權與責任紀錄。",
+  "top3Ids": [
+    "2026-10-07-openai-722-math-manuscripts",
+    "2026-10-07-mistral-large-4-public-preview",
+    "2026-10-07-anthropic-expanded-cyber-verification-program"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 開始大量產出新知識",
+      "summary": "OpenAI 公開 722 份數學稿件和部分 Lean 證明，科研瓶頸由生成答案轉向驗證、署名與吸收結果。",
+      "watch": "看多少結果獲獨立確認，以及錯誤、修訂和學術信用如何處理。"
+    },
+    {
+      "title": "Open-weight 競爭擴至歐洲",
+      "summary": "Mistral Large 4 以多模態、企業能力和數據主權挑戰中美模型，但完整權重與方法仍要等月底。",
+      "watch": "看第三方能否重現效能、授權是否實用及繁中能力是否穩定。"
+    },
+    {
+      "title": "高能力模型改用分級存取",
+      "summary": "Anthropic 把最強 cyber 能力按 Defense、Red Team 和 Specialized 三級交予獲審核團隊，嘗試平衡防守與濫用風險。",
+      "watch": "看審核、監察、跨境參與及撤權機制能否承受真實使用。"
+    }
+  ],
+  "biggestChange": "biggest change：AI 的競爭指標由『回答得幾好』轉向『可否產出新結果、完成長流程，以及在高風險能力上提供可驗證的分級管治』。",
+  "watchTomorrow": "watch tomorrow：OpenAI 數學稿件會否出現首批獨立驗證或更正、Mistral 是否補充 ML4 模型卡與權重授權，以及 Anthropic Cyber Verification Program 的申請範圍與事故監察細節。"
+}
