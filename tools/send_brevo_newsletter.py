@@ -42,10 +42,6 @@ def latest_edition(feed_path: Path) -> tuple[str, str, str]:
     content = item.findtext(CONTENT_NS + "encoded", default="")
     if len(re.findall(r"<h2\b", content, flags=re.IGNORECASE)) != 10:
         raise ValueError("latest newsletter must contain exactly 10 story headings")
-    if "{{ unsubscribe }}" not in content:
-        # The footer is added below; this check ensures the source item remains
-        # the expected generated digest and not an unrelated RSS entry.
-        pass
     return date, title, content
 
 
