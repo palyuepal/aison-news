@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: brevo-newsletter-${{ github.event.workflow_run.head_sha }}
+  group: brevo-newsletter
   cancel-in-progress: false
 
 jobs:
