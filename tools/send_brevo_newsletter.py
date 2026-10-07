@@ -122,6 +122,15 @@ def main() -> int:
         if not sender_email:
             raise RuntimeError("BREVO_SENDER_EMAIL must be set to a verified Brevo sender address")
 
+        campaign_payload = {
+            "name": campaign_name,
+            "subject": title,
+            "previewText": "每日幫香港人篩選全球最值得知道的 AI 大事。",
+            "sender": {"name": sender_name, "email": sender_email},
+            "recipients": {"listIds": [int(list_id)]},
+            "htmlContent": html_content,
+            "tag": "aison-daily-newsletter",
+        }
         existing = next((item for item in campaigns() if item.get("name") == campaign_name), None)
         if existing:
             campaign_id = int(existing["id"])
@@ -130,20 +139,10 @@ def main() -> int:
             if status != "draft":
                 print(f"SKIP: {campaign_name} already exists with status {status or 'unknown'}")
                 return 0
+            # Refresh an interrupted draft with the current edition before sending it.
+            request_brevo("PUT", f"/emailCampaigns/{campaign_id}", campaign_payload)
         else:
-            created = request_brevo(
-                "POST",
-                "/emailCampaigns",
-                {
-                    "name": campaign_name,
-                    "subject": title,
-                    "previewText": "每日幫香港人篩選全球最值得知道的 AI 大事。",
-                    "sender": {"name": sender_name, "email": sender_email},
-                    "recipients": {"listIds": [int(list_id)]},
-                    "htmlContent": html_content,
-                    "tag": "aison-daily-newsletter",
-                },
-            )
+            created = request_brevo("POST", "/emailCampaigns", campaign_payload)
             campaign_id = int(created["id"])
 
         send_campaign(campaign_id)
