@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-07-reflection-beam-open-weight-model",
+    "title": "Reflection 發布 Beam：501B 開放權重模型瞄準 Coding 與 AI Agent",
+    "summary": "美國 AI 公司 Reflection 公布首個開放權重模型 Beam，採用稀疏 Mixture-of-Experts 架構，總參數 5,010 億、每次推理啟用 230 億參數，定位為程式開發、推理及 Agent 工作負載。官方稱模型以 23.8 兆個精選 token 預訓練，並以逾 10,000 張 NVIDIA GB300 GPU 進行大規模強化學習；相關效能說法仍主要來自公司自身資料。\n\n目前 Beam 仍在最後 red-team 與評測階段，並非已可完整下載的正式權重發布。對香港團隊而言，值得留意的是開放權重陣營正為私有部署及資料主權提供更多選項，但採用前仍要自行驗證模型能力、授權條款、硬件成本及安全風險。",
+    "category": "AI 模型",
+    "publishedAt": "2026-10-07T11:47:08Z",
+    "sourceLabel": "Reflection",
+    "sourceUrl": "https://reflection.ai/blog/introducing-beam",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-06-south-korea-ai-bank-hacks",
     "title": "南韓多間銀行遇資料外洩：總統稱部分攻擊疑似動用 AI",
     "summary": "南韓總統李在明在 10 月 6 日內閣會議表示，近期部分銀行網絡攻擊出現使用 AI 的跡象；警方正調查多間銀行的客戶資料外洩。Reuters 與《金融時報》報道，受影響機構包括大型銀行及金融公司，調查方向包括遭入侵的第三方系統。當局尚未交代涉事 AI 工具、攻擊者身份及完整影響範圍；目前亦未有資金被盜的報告。\\n\\n這是官方對 AI 參與金融網絡攻擊的初步判斷，未等於已證實特定模型直接執行入侵。事件值得銀行及供應商檢查外判入口、身份驗證和資料存取紀錄，也要分清 AI 輔助找漏洞與傳統攻擊手法的責任證據。",
