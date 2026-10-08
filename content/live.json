@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-08-denmark-ai-deepfake-likeness-bill",
+    "title": "丹麥擬立法保障肖像與聲音：未經同意分享 AI 仿真人內容或違法",
+    "summary": "丹麥文化部長 Zenia Stampe 於 10 月 8 日提出法案，計劃禁止未經本人同意，數碼複製及分享足以以假亂真的人物外貌或聲音，包括 AI deepfake；條文亦擬保障藝術家的演出與作品，並為諷刺、戲仿及評論保留例外。\n\n法案仍須經國會批准，政府希望年底前後生效，現階段並非已生效法律。若通過，平台移除仿冒內容的速度與責任、以及創作者授權肖像聲音的界線，都會成為實際執行重點。",
+    "category": "AI 政策",
+    "publishedAt": "2026-10-08T06:36:08Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/denmark-plans-ban-sharing-ai-deepfakes-without-consent-2026-10-08/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-08-microsoft-nvidia-local-ai-windows-mxc",
     "title": "Microsoft 為 Windows Agent 加沙箱：本機操作開始有權限邊界",
     "summary": "Microsoft 公布 Windows hybrid intelligence 方向，並推出 Microsoft Execution Containers（MXC），讓 Agent 在本機執行時受檔案與網絡存取限制。Copilot 可在用戶授權下使用裝置本機脈絡，部分工作亦可按需要交由雲端處理；Microsoft 指多個開發工具及 Agent 生態已開始支援 MXC。\n\n這令 Agent 不再只是「有冇能力操作電腦」的問題，而是每次操作能接觸甚麼資料、能否出網，以及權限如何收回。Windows 新裝置和本機模型部署仍需視乎供應與相容性，但沙箱開始成為桌面 Agent 的實際安全基建。",
