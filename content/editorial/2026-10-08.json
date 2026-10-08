@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-08",
+  "dailyOneLiner": "今日 AI 一句講晒：AI 正由雲端聊天框走向即場生成介面、本機 Agent 和低成本大規模工作，但權限、數據與真實回報成為同等重要的競爭力。",
+  "top3Ids": [
+    "2026-10-08-openai-gpt-6-intelligent-ui",
+    "2026-10-08-microsoft-nvidia-local-ai-windows-mxc",
+    "2026-10-08-anthropic-claude-haiku-5-5"
+  ],
+  "threeThemes": [
+    {
+      "title": "答案開始變成即場軟件",
+      "summary": "GPT‑6 的 Intelligent UI 把回覆由文字延伸至圖表、比較和互動工具，直接挑戰低複雜度 App 與傳統 dashboard。",
+      "watch": "看香港 rollout、生成介面的錯誤率，以及企業是否得到審計、匯出與權限控制。"
+    },
+    {
+      "title": "Agent 由雲端落到本機",
+      "summary": "Microsoft 與 Nvidia 以 RTX Spark、hybrid intelligence 和 MXC 推動大型模型與 Agent 在 PC 運行。",
+      "watch": "看 MXC 的獨立安全測試、本機與雲端總成本，以及香港售價和供貨。"
+    },
+    {
+      "title": "模型競爭轉向單位經濟",
+      "summary": "Claude Haiku 5.5、cache 減價與開源框架更新，令延遲、吞吐量和每宗成功任務成本比單一 benchmark 更重要。",
+      "watch": "看真實 Agent 流程的重試率、廣東話表現與遷移後完整帳單。"
+    }
+  ],
+  "biggestChange": "biggest change：生成式 AI 的主要產品單位由『一次回答』變成『一個可操作介面或完整任務』，因此 UI、權限、執行環境和成本控制開始與模型智力並列。",
+  "watchTomorrow": "watch tomorrow：GPT‑6 與 Intelligent UI 在免費和香港帳戶的實際 rollout、MXC 的第三方安全細節、Haiku 5.5 獨立測試，以及 Samsung 完整 HBM 指引前的新供應鏈訊號。"
+}
