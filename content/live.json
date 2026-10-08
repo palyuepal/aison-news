@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-08-microsoft-nvidia-local-ai-windows-mxc",
+    "title": "Microsoft 為 Windows Agent 加沙箱：本機操作開始有權限邊界",
+    "summary": "Microsoft 公布 Windows hybrid intelligence 方向，並推出 Microsoft Execution Containers（MXC），讓 Agent 在本機執行時受檔案與網絡存取限制。Copilot 可在用戶授權下使用裝置本機脈絡，部分工作亦可按需要交由雲端處理；Microsoft 指多個開發工具及 Agent 生態已開始支援 MXC。\n\n這令 Agent 不再只是「有冇能力操作電腦」的問題，而是每次操作能接觸甚麼資料、能否出網，以及權限如何收回。Windows 新裝置和本機模型部署仍需視乎供應與相容性，但沙箱開始成為桌面 Agent 的實際安全基建。",
+    "category": "AI Agent",
+    "publishedAt": "2026-10-08T01:30:07Z",
+    "sourceLabel": "Microsoft",
+    "sourceUrl": "https://blogs.windows.com/windowsexperience/2026/10/07/building-windows-for-hybrid-intelligence/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-08-openai-gpt-6-intelligent-ui",
+    "title": "GPT‑6 登陸 ChatGPT：答案開始變成可互動介面",
+    "summary": "OpenAI 由 10 月 7 日起推出 GPT‑6 與 Intelligent UI。ChatGPT 可以按問題即場組合文字、圖表、比較介面、計算器和小工具，並在搜尋或使用工具期間先交付部分答案；Plus、Pro、Business、Enterprise 先行，Free 與 Go 由 10 月 8 日開始推出。\n\n今次改變的不只是模型版本，而是回答由一段文字延伸成可操作的結果。對需要比較資料、看趨勢或完成簡單計算的人，介面可能更直接；但實際可用功能仍會因帳戶級別、地區及逐步推出安排而異。",
+    "category": "AI 產品",
+    "publishedAt": "2026-10-08T01:30:07Z",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/gpt-6-for-everyone/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-07-reflection-beam-open-weight-model",
     "title": "Reflection 發布 Beam：501B 開放權重模型瞄準 Coding 與 AI Agent",
     "summary": "美國 AI 公司 Reflection 公布首個開放權重模型 Beam，採用稀疏 Mixture-of-Experts 架構，總參數 5,010 億、每次推理啟用 230 億參數，定位為程式開發、推理及 Agent 工作負載。官方稱模型以 23.8 兆個精選 token 預訓練，並以逾 10,000 張 NVIDIA GB300 GPU 進行大規模強化學習；相關效能說法仍主要來自公司自身資料。\n\n目前 Beam 仍在最後 red-team 與評測階段，並非已可完整下載的正式權重發布。對香港團隊而言，值得留意的是開放權重陣營正為私有部署及資料主權提供更多選項，但採用前仍要自行驗證模型能力、授權條款、硬件成本及安全風險。",
@@ -21,7 +45,7 @@
     "sourceUrl": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-06-openai-australia-inquiry-apology",
@@ -33,7 +57,7 @@
     "sourceUrl": "https://www.abc.net.au/news/2026-10-06/openai-hearing-apology-key-takeaways/107235640",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-03-amazon-nvidia-chips-spv-leaseback-talks",
