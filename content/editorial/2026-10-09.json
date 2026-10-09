@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-09",
+  "dailyOneLiner": "企業 AI 今日跨過一條線：Agent 開始有自己身份與權限，監管及市場就即刻追問——邊個負責、數據點用、收入又點計。",
+  "top3Ids": [
+    "2026-10-09-google-gemini-agent-for-work",
+    "2026-10-09-uk-ico-ai-developers-data-protection",
+    "2026-10-09-openai-annualised-revenue-accounting-gap"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 由助手變數碼同事",
+      "summary": "Gemini Agent for Work 可獲獨立企業帳戶並跨工具執行任務，AI 開始進入身份、權限與審計核心。",
+      "watch": "private preview 的實際動作範圍、人工審批、回滾及定價。"
+    },
+    {
+      "title": "監管由原則走到整改",
+      "summary": "英國 ICO 取得十間大模型開發者的資料保護改動或承諾，MAS 亦把第三方 AI 問責寫入金融指引。",
+      "watch": "具體整改清單、Agent 資料責任，以及亞洲金融機構如何把要求傳到供應商。"
+    },
+    {
+      "title": "AI 熱潮要交經濟與韌性成績表",
+      "summary": "OpenAI 收入口徑差異、異構晶片互連及 Yandex 數據中心受襲，都迫使市場由能力展示轉向可核對收入、供應選擇與基建復原。",
+      "watch": "正式財務口徑、生產級混合晶片 benchmark，以及跨區可替代算力。"
+    }
+  ],
+  "biggestChange": "最大轉變是企業 Agent 首次清楚被當成有獨立身份的工作者來管理：它可以有電郵、日曆、Drive 與通訊錄，同時也必須接受權限、稽核及資料保護責任。",
+  "watchTomorrow": "優先追蹤 Google 公布 Gemini Agent 的權限／回滾細節、ICO 披露十間公司的具體整改、OpenAI 回應 500 億與 700 億美元口徑，以及 MAS 指引是否引發區內銀行與供應商的新合規安排。"
+}
