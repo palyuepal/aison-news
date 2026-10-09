@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-09-anthropic-cyber-mission-oss-scanner",
+    "title": "Anthropic 推 Cyber Mission：免費用前沿模型為開源項目找漏洞",
+    "summary": "Anthropic 於 10 月 8 日啟動 Cyber Mission，先聚焦關鍵基建與開源軟件防禦：Critical Infrastructure Defense Program 會向保護電網、水務、交通等營運科技的合作方提供 Claude、工程師及威脅研究；同時推出可選擇加入的 OSS Scanner，為合資格開源項目定期以其最強模型掃描漏洞，免費提供報告與可行修補建議。\n\nOSS Scanner 的報告不經人工覆核，Anthropic 表示預期真陽性率超過九成，惟嚴重性評級或建議仍可能有誤，維護者不能直接把結果當成已確認漏洞。這次動作反映 AI 安全競爭正由「協助寫程式」延伸至漏洞發現、分流與修補，但關鍵基建部署仍需要專業人員驗證與最終決策。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-09T04:34:18Z",
+    "sourceLabel": "Anthropic",
+    "sourceUrl": "https://www.anthropic.com/news/anthropic-cyber-mission",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-08-denmark-ai-deepfake-likeness-bill",
     "title": "丹麥擬立法保障肖像與聲音：未經同意分享 AI 仿真人內容或違法",
     "summary": "丹麥文化部長 Zenia Stampe 於 10 月 8 日提出法案，計劃禁止未經本人同意，數碼複製及分享足以以假亂真的人物外貌或聲音，包括 AI deepfake；條文亦擬保障藝術家的演出與作品，並為諷刺、戲仿及評論保留例外。\n\n法案仍須經國會批准，政府希望年底前後生效，現階段並非已生效法律。若通過，平台移除仿冒內容的速度與責任、以及創作者授權肖像聲音的界線，都會成為實際執行重點。",
