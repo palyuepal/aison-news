@@ -7,9 +7,15 @@
     "summary": "Gemini Agent for Work 把企業 AI 由聊天介面推進到可跨系統執行任務的數碼同事。Google 表示，它可協調 Gemini 與 Claude 模型，並以獨立 Workspace 身份使用電郵、日曆、Drive 及公司通訊錄；金融服務及法律版先進入 private preview。",
     "quickTake": "企業 Agent 最大轉變唔係答得更好，而係開始有身份、權限同工作台；便利與管治風險會一齊上升。",
     "category": "AI Agent",
-    "tags": ["Google", "Gemini", "AI Agent", "Google Cloud", "企業 AI"],
+    "tags": [
+      "Google",
+      "Gemini",
+      "AI Agent",
+      "Google Cloud",
+      "企業 AI"
+    ],
     "date": "2026-10-09",
-    "readTime": 5,
+    "readTime": "4 分鐘",
     "featured": true,
     "verified": true,
     "freshness": "24h",
@@ -28,14 +34,28 @@
     "sourceUrl": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
     "sourceType": "官方公告",
     "references": [
-      {"label": "Google Cloud 官方公告", "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"},
-      {"label": "Google 官方概覽", "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/"},
-      {"label": "Reuters 報道", "url": "https://www.reuters.com/business/google-cloud-introduces-gemini-agent-work-ai-race-heats-up-2026-10-08/"}
+      {
+        "label": "Google Cloud 官方公告",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+      },
+      {
+        "label": "Google 官方概覽",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/"
+      },
+      {
+        "label": "Reuters 報道",
+        "url": "https://www.reuters.com/business/google-cloud-introduces-gemini-agent-work-ai-race-heats-up-2026-10-08/"
+      }
     ],
     "actionVerdict": "watch",
     "actionReason": "目前屬 private preview，企業宜先盤點高價值、低風險流程與權限界線，等候公開定價和管治細節。",
-    "aisonScore": 94,
-    "audienceImpact": {"worker": 5, "sme": 5, "creator": 3, "developer": 5}
+    "aisonScore": 9.4,
+    "audienceImpact": {
+      "worker": 5,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
   },
   {
     "id": "2026-10-09-uk-ico-ai-developers-data-protection",
@@ -45,9 +65,16 @@
     "summary": "英國 ICO 公布與十間基礎模型開發者接觸後取得一系列資料保護改動或承諾，範圍包括透明度、個人資料使用與兒童保障。ICO 同時向業界發出 Agentic AI call for evidence，顯示監管由訓練資料及聊天輸出，正式推進到可自主採取行動的系統。",
     "quickTake": "監管機構不再只談原則，而係要求主要開發者改產品做法；下一站就是 Agent 的權限、告知與責任。",
     "category": "AI 政策與安全",
-    "tags": ["ICO", "私隱", "AI Agent", "OpenAI", "Google", "Anthropic"],
+    "tags": [
+      "ICO",
+      "私隱",
+      "AI Agent",
+      "OpenAI",
+      "Google",
+      "Anthropic"
+    ],
     "date": "2026-10-09",
-    "readTime": 5,
+    "readTime": "4 分鐘",
     "featured": true,
     "verified": true,
     "freshness": "24h",
@@ -66,12 +93,20 @@
     "sourceUrl": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/",
     "sourceType": "監管文件",
     "references": [
-      {"label": "ICO 官方公告", "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/"}
+      {
+        "label": "ICO 官方公告",
+        "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/10/ico-secures-changes-from-leading-ai-developers-as-scrutiny-extends-to-ai-agents/"
+      }
     ],
     "actionVerdict": "watch",
     "actionReason": "整改方向已確認，但各公司細節及 Agent 規則仍在形成；企業應先補齊資料流、授權與審計清單。",
-    "aisonScore": 92,
-    "audienceImpact": {"worker": 4, "sme": 5, "creator": 3, "developer": 5}
+    "aisonScore": 9.2,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
   },
   {
     "id": "2026-10-09-openai-annualised-revenue-accounting-gap",
@@ -81,9 +116,15 @@
     "summary": "報道指 OpenAI 的年化收入約為 500 億美元，與公司先前向部分持份者傳達的約 700 億美元存在約 200 億美元差距；差別部分來自是否計入雲端合作夥伴銷售等口徑。這不代表收入下跌，但提醒市場：在 AI 巨額基建承諾下，增長數字必須連同確認收入、毛利與現金消耗一併閱讀。",
     "quickTake": "AI 需求仍然高速增長，但『收入』點樣計已變成估值核心；同一門生意，用總交易額與確認收入可以講出兩個故事。",
     "category": "AI 商業",
-    "tags": ["OpenAI", "收入", "AI 投資", "雲端", "估值"],
+    "tags": [
+      "OpenAI",
+      "收入",
+      "AI 投資",
+      "雲端",
+      "估值"
+    ],
     "date": "2026-10-09",
-    "readTime": 5,
+    "readTime": "4 分鐘",
     "featured": true,
     "verified": true,
     "freshness": "24h",
@@ -102,14 +143,28 @@
     "sourceUrl": "https://www.ft.com/content/b66a9858-f8fb-46cb-b506-44bfe26fca2a",
     "sourceType": "可靠媒體",
     "references": [
-      {"label": "Financial Times 報道", "url": "https://www.ft.com/content/b66a9858-f8fb-46cb-b506-44bfe26fca2a"},
-      {"label": "TechCrunch 摘要", "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/"},
-      {"label": "Reuters 市場報道", "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-10-08/"}
+      {
+        "label": "Financial Times 報道",
+        "url": "https://www.ft.com/content/b66a9858-f8fb-46cb-b506-44bfe26fca2a"
+      },
+      {
+        "label": "TechCrunch 摘要",
+        "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/"
+      },
+      {
+        "label": "Reuters 市場報道",
+        "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-10-08/"
+      }
     ],
     "actionVerdict": "watch",
     "actionReason": "數字來自可靠報道但公司尚未澄清口徑；投資或採購判斷應等待可比較的正式披露。",
-    "aisonScore": 90,
-    "audienceImpact": {"worker": 3, "sme": 4, "creator": 2, "developer": 4}
+    "aisonScore": 9,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    }
   },
   {
     "id": "2026-10-09-nvidia-one-billion-us-science",
@@ -119,7 +174,13 @@
     "summary": "NVIDIA 把科研合作由硬件供應擴展到長期資助與平台投入。公司指承諾總值 10 億美元，但這是五年期計劃與前瞻承諾，不等同已即時支付同額現金。",
     "quickTake": "NVIDIA 正用資金加平台把下一代科研工作流鎖入自家運算生態，量子與醫療會是重點。",
     "category": "晶片與科研",
-    "tags": ["NVIDIA", "科研", "量子運算", "醫療 AI", "能源"],
+    "tags": [
+      "NVIDIA",
+      "科研",
+      "量子運算",
+      "醫療 AI",
+      "能源"
+    ],
     "date": "2026-10-09",
     "readTime": 3,
     "featured": false,
@@ -140,13 +201,24 @@
     "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years",
     "sourceType": "官方公告",
     "references": [
-      {"label": "NVIDIA 官方公告", "url": "https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years"},
-      {"label": "NVIDIA 投資者關係公告", "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Commits-1-Billion-to-Advance-US-Science-Over-the-Next-Five-Years/default.aspx"}
+      {
+        "label": "NVIDIA 官方公告",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years"
+      },
+      {
+        "label": "NVIDIA 投資者關係公告",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Commits-1-Billion-to-Advance-US-Science-Over-the-Next-Five-Years/default.aspx"
+      }
     ],
     "actionVerdict": "watch",
     "actionReason": "計劃方向明確，但實際資金形式、合作對象與商業外溢仍待公布。",
-    "aisonScore": 84,
-    "audienceImpact": {"worker": 2, "sme": 3, "creator": 1, "developer": 4}
+    "aisonScore": 8.4,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 1,
+      "developer": 4
+    }
   },
   {
     "id": "2026-10-09-mas-ai-risk-management-guidelines",
@@ -156,7 +228,13 @@
     "summary": "新加坡金融管理局正式發布金融機構 AI 風險管理指引，強調董事會與高層問責、模型全生命週期控制及第三方 AI 風險。金融機構即使用外購模型或雲端服務，亦不能把責任外判。",
     "quickTake": "亞洲金融監管正把 AI 由創新項目變成正式風險類別；買現成模型唔等於買走責任。",
     "category": "AI 政策與安全",
-    "tags": ["MAS", "金融 AI", "風險管理", "第三方模型", "新加坡"],
+    "tags": [
+      "MAS",
+      "金融 AI",
+      "風險管理",
+      "第三方模型",
+      "新加坡"
+    ],
     "date": "2026-10-09",
     "readTime": 4,
     "featured": false,
@@ -177,14 +255,28 @@
     "sourceUrl": "https://www.mas.gov.sg/regulation/guidelines/guidelines-on-artificial-intelligence-risk-management-for-financial-institutions",
     "sourceType": "監管文件",
     "references": [
-      {"label": "MAS 指引", "url": "https://www.mas.gov.sg/regulation/guidelines/guidelines-on-artificial-intelligence-risk-management-for-financial-institutions"},
-      {"label": "MAS 新聞稿", "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions"},
-      {"label": "CNA 報道", "url": "https://www.channelnewsasia.com/singapore/financial-institutions-ai-guidelines-mas-third-party-tools-6438406"}
+      {
+        "label": "MAS 指引",
+        "url": "https://www.mas.gov.sg/regulation/guidelines/guidelines-on-artificial-intelligence-risk-management-for-financial-institutions"
+      },
+      {
+        "label": "MAS 新聞稿",
+        "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-sets-out-supervisory-expectations-on-responsible-ai-adoption-by-financial-institutions"
+      },
+      {
+        "label": "CNA 報道",
+        "url": "https://www.channelnewsasia.com/singapore/financial-institutions-ai-guidelines-mas-third-party-tools-6438406"
+      }
     ],
     "actionVerdict": "watch",
     "actionReason": "金融機構與供應商已有明確準備期，現在適合做差距分析與合約盤點。",
-    "aisonScore": 86,
-    "audienceImpact": {"worker": 3, "sme": 4, "creator": 1, "developer": 4}
+    "aisonScore": 8.6,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 1,
+      "developer": 4
+    }
   },
   {
     "id": "2026-10-09-upscale-ai-token-fabric-mixed-chips",
@@ -194,7 +286,13 @@
     "summary": "Token Fabric 希望讓數據中心毋須把整個 AI 叢集押注在單一晶片供應商。平台預計分階段推出至 2027 年，真正價值要看互操作效能、軟件成熟度與實際客戶部署。",
     "quickTake": "如果混合晶片可以少付效能代價，AI 基建採購會由單一平台綁定走向組合式供應。",
     "category": "晶片與供應鏈",
-    "tags": ["Upscale AI", "Token Fabric", "AI 晶片", "數據中心", "互連"],
+    "tags": [
+      "Upscale AI",
+      "Token Fabric",
+      "AI 晶片",
+      "數據中心",
+      "互連"
+    ],
     "date": "2026-10-09",
     "readTime": 3,
     "featured": false,
@@ -215,13 +313,24 @@
     "sourceUrl": "https://www.reuters.com/business/nvidia-backed-upscale-ai-launches-platform-connect-chips-rival-suppliers-2026-10-08/",
     "sourceType": "可靠媒體",
     "references": [
-      {"label": "Reuters 報道", "url": "https://www.reuters.com/business/nvidia-backed-upscale-ai-launches-platform-connect-chips-rival-suppliers-2026-10-08/"},
-      {"label": "公司新聞稿", "url": "https://finance.yahoo.com/technology/ai/articles/upscale-introduces-token-fabric-industrys-123000002.html"}
+      {
+        "label": "Reuters 報道",
+        "url": "https://www.reuters.com/business/nvidia-backed-upscale-ai-launches-platform-connect-chips-rival-suppliers-2026-10-08/"
+      },
+      {
+        "label": "公司新聞稿",
+        "url": "https://finance.yahoo.com/technology/ai/articles/upscale-introduces-token-fabric-industrys-123000002.html"
+      }
     ],
     "actionVerdict": "wait",
     "actionReason": "產品尚在分階段推出，未有足夠生產環境數據支持立即採用。",
-    "aisonScore": 81,
-    "audienceImpact": {"worker": 1, "sme": 3, "creator": 1, "developer": 4}
+    "aisonScore": 8.1,
+    "audienceImpact": {
+      "worker": 1,
+      "sme": 3,
+      "creator": 1,
+      "developer": 4
+    }
   },
   {
     "id": "2026-10-09-manus-butterfly-effect-funding-independent",
@@ -231,7 +340,13 @@
     "summary": "融資顯示資本市場仍願意為具用戶與 Agent 分發能力的公司下注，但交易條款、估值及長期商業模式未完全公開。這亦是 Meta 收購未成後的實質新進展。",
     "quickTake": "Manus 由被收購標的變回獨立融資公司，Agent 市場仍有資本，但要用收入與留存證明估值。",
     "category": "AI 商業",
-    "tags": ["Manus", "Butterfly Effect", "AI Agent", "融資", "Meta"],
+    "tags": [
+      "Manus",
+      "Butterfly Effect",
+      "AI Agent",
+      "融資",
+      "Meta"
+    ],
     "date": "2026-10-09",
     "readTime": 3,
     "featured": false,
@@ -252,13 +367,24 @@
     "sourceUrl": "https://www.reuters.com/world/china/manus-raises-more-than-500-million-after-meta-exit-2026-10-08/",
     "sourceType": "可靠媒體",
     "references": [
-      {"label": "Reuters 報道", "url": "https://www.reuters.com/world/china/manus-raises-more-than-500-million-after-meta-exit-2026-10-08/"},
-      {"label": "TechCrunch 報道", "url": "https://techcrunch.com/2026/10/08/manus-raises-over-500m-after-unwinding-meta-deal/"}
+      {
+        "label": "Reuters 報道",
+        "url": "https://www.reuters.com/world/china/manus-raises-more-than-500-million-after-meta-exit-2026-10-08/"
+      },
+      {
+        "label": "TechCrunch 報道",
+        "url": "https://techcrunch.com/2026/10/08/manus-raises-over-500m-after-unwinding-meta-deal/"
+      }
     ],
     "actionVerdict": "watch",
     "actionReason": "融資屬實質進展，但估值、財務與上市安排仍未有足夠正式披露。",
-    "aisonScore": 80,
-    "audienceImpact": {"worker": 2, "sme": 3, "creator": 3, "developer": 4}
+    "aisonScore": 8,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 3,
+      "developer": 4
+    }
   },
   {
     "id": "2026-10-09-us-super-intelligence-task-force-meeting",
@@ -268,7 +394,13 @@
     "summary": "任務小組把 AI 政策協調拉到司法、行政管理、競爭監管與國防層面。現階段仍是組織與議程成形，未有新法規落地。",
     "quickTake": "美國正為更高階 AI 建立跨部門決策架構，但真正影響要等 120 日報告的具體建議。",
     "category": "AI 政策與安全",
-    "tags": ["美國", "Super Intelligence", "AI 政策", "國家安全", "監管"],
+    "tags": [
+      "美國",
+      "Super Intelligence",
+      "AI 政策",
+      "國家安全",
+      "監管"
+    ],
     "date": "2026-10-09",
     "readTime": 3,
     "featured": false,
@@ -289,12 +421,20 @@
     "sourceUrl": "https://www.reuters.com/world/trump-ai-task-force-leaders-meet-thursday-vice-chair-says-2026-10-08/",
     "sourceType": "可靠媒體",
     "references": [
-      {"label": "Reuters 10 月 8 日報道", "url": "https://www.reuters.com/world/trump-ai-task-force-leaders-meet-thursday-vice-chair-says-2026-10-08/"}
+      {
+        "label": "Reuters 10 月 8 日報道",
+        "url": "https://www.reuters.com/world/trump-ai-task-force-leaders-meet-thursday-vice-chair-says-2026-10-08/"
+      }
     ],
     "actionVerdict": "watch",
     "actionReason": "政策仍在形成，對香港的直接影響取決於正式報告與後續行政措施。",
-    "aisonScore": 78,
-    "audienceImpact": {"worker": 2, "sme": 3, "creator": 1, "developer": 3}
+    "aisonScore": 7.8,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 1,
+      "developer": 3
+    }
   },
   {
     "id": "2026-10-09-elevenlabs-singapore-sea-hub",
@@ -304,7 +444,13 @@
     "summary": "新樞紐代表語音 AI 供應商把銷售、支援與資料基建更貼近亞洲客戶。公告未等同新增香港數據駐留或廣東話能力，採購時仍要逐項核實。",
     "quickTake": "語音 AI 競爭由模型質素走向區域支援、資料駐留及企業合規。",
     "category": "AI 語音",
-    "tags": ["ElevenLabs", "語音 AI", "新加坡", "東南亞", "數據駐留"],
+    "tags": [
+      "ElevenLabs",
+      "語音 AI",
+      "新加坡",
+      "東南亞",
+      "數據駐留"
+    ],
     "date": "2026-10-09",
     "readTime": 3,
     "featured": false,
@@ -325,13 +471,24 @@
     "sourceUrl": "https://elevenlabs.io/blog/elevenlabs-singapore",
     "sourceType": "官方公告",
     "references": [
-      {"label": "ElevenLabs 新加坡公告", "url": "https://elevenlabs.io/blog/elevenlabs-singapore"},
-      {"label": "新加坡數據駐留公告", "url": "https://elevenlabs.io/blog/introducing-singapore-data-residency"}
+      {
+        "label": "ElevenLabs 新加坡公告",
+        "url": "https://elevenlabs.io/blog/elevenlabs-singapore"
+      },
+      {
+        "label": "新加坡數據駐留公告",
+        "url": "https://elevenlabs.io/blog/introducing-singapore-data-residency"
+      }
     ],
     "actionVerdict": "watch",
     "actionReason": "區域支援增強，但香港資料位置、廣東話表現及企業 SLA 仍需逐項核實。",
-    "aisonScore": 76,
-    "audienceImpact": {"worker": 3, "sme": 4, "creator": 4, "developer": 3}
+    "aisonScore": 7.6,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 4,
+      "developer": 3
+    }
   },
   {
     "id": "2026-10-09-yandex-data-centre-drone-strike-resilience",
@@ -341,7 +498,13 @@
     "summary": "事件被 Reuters 形容為俄羅斯大型數據中心首次獲確認的重大無人機攻擊。報道指設施容納數以萬計伺服器，亦曾支援 Yandex 的超級電腦；暫未有證據顯示核心服務全面中斷。",
     "quickTake": "AI 基建唔只怕停電、網攻同晶片短缺，地緣衝突下實體站點本身亦是單點風險。",
     "category": "AI 基建",
-    "tags": ["Yandex", "數據中心", "基建韌性", "地緣政治", "災難復原"],
+    "tags": [
+      "Yandex",
+      "數據中心",
+      "基建韌性",
+      "地緣政治",
+      "災難復原"
+    ],
     "date": "2026-10-09",
     "readTime": 3,
     "featured": false,
@@ -362,12 +525,23 @@
     "sourceUrl": "https://www.reuters.com/world/drones-hit-yandex-data-centre-first-major-attack-russian-data-hub-2026-10-08/",
     "sourceType": "可靠媒體",
     "references": [
-      {"label": "Reuters 首篇報道", "url": "https://www.reuters.com/world/drones-hit-yandex-data-centre-first-major-attack-russian-data-hub-2026-10-08/"},
-      {"label": "Reuters 修復狀態更新", "url": "https://www.reuters.com/world/europe/russias-yandex-says-unclear-whether-data-centre-can-be-restored-after-drone-2026-10-08/"}
+      {
+        "label": "Reuters 首篇報道",
+        "url": "https://www.reuters.com/world/drones-hit-yandex-data-centre-first-major-attack-russian-data-hub-2026-10-08/"
+      },
+      {
+        "label": "Reuters 修復狀態更新",
+        "url": "https://www.reuters.com/world/europe/russias-yandex-says-unclear-whether-data-centre-can-be-restored-after-drone-2026-10-08/"
+      }
     ],
     "actionVerdict": "watch",
     "actionReason": "事件提供重要韌性訊號，但實際損毀與服務影響仍待確認。",
-    "aisonScore": 75,
-    "audienceImpact": {"worker": 2, "sme": 4, "creator": 1, "developer": 3}
+    "aisonScore": 7.5,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 1,
+      "developer": 3
+    }
   }
 ]
