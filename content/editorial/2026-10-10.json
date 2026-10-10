@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-10",
+  "dailyOneLiner": "AI 今日進入第二階段：政策開始清理投資泡沫，安全工具因真實攻擊收回開放能力，而前沿公司亦要證明內部異議與敏感資料可以同時被妥善管理。",
+  "top3Ids": [
+    "2026-10-10-china-ai-tech-investment-guidelines",
+    "2026-10-10-artex-closed-source-after-korean-bank-hacks",
+    "2026-10-10-openai-fires-three-researchers"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 投資由擴張轉向回報紀律",
+      "summary": "中國要求防止盲目及蜂擁式投資，Firmus 大型 IPO 亦因估值與執行疑慮擱置。",
+      "watch": "地方算力項目審批、Firmus 私募折讓，以及其他 AI 基建融資會否重新定價。"
+    },
+    {
+      "title": "Agent 安全由測試走進真實事故",
+      "summary": "ARTEX 涉南韓銀行攻擊後撤下開源項目，Rubrik 則用隔離式 Agent 紅隊回應 AI coding 風險。",
+      "watch": "南韓攻擊調查、高風險 Agent 發布規則，以及模型商會否限制網絡安全工具調用。"
+    },
+    {
+      "title": "透明度成為模型與公司治理底線",
+      "summary": "OpenAI 解僱爭議、歐盟向逾 30 間公司索取資料及中國模型安全披露研究，都指向同一個問題：風險聲明能否被外界核對。",
+      "watch": "OpenAI 是否出現正式申訴程序、歐盟會否立案，以及版本級安全評估會否變成採購標準。"
+    }
+  ],
+  "biggestChange": "最大轉變是『開放能力』不再被視為單向進步：ARTEX 在真實金融攻擊後轉閉源，提醒市場能力發布、濫用應變與責任分界必須在推出前一併設計。",
+  "watchTomorrow": "優先追蹤 ARTEX／南韓銀行攻擊的技術細節、OpenAI 解僱爭議有沒有正式法律或申訴程序、中國地方如何落實防泡沫指引，以及歐盟會否把逾 30 間公司的資料查詢升級為調查。"
+}
