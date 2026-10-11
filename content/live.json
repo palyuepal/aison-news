@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-11-yandex-third-data-centre-strike",
+    "title": "Yandex 第三個數據中心遇襲停運：部分服務再受影響",
+    "summary": "Yandex 表示，俄羅斯 Vladimir 地區的數據中心在無人機襲擊中受損並完全停運；公司稱無人受傷，但部分服務暫時無法使用。這是數日內第三個受影響的主要數據中心：Kaluga 站點早前部分停擺，Sasovo 站點亦已停運，當中設有公司三部 AI 超級電腦中的兩部。\\n\\n目前未有資料確認 Vladimir 站點損毀程度或對 AI 算力的直接影響。連續多個站點停運，已令雲端服務與 AI 基建的實體韌性成為眼前問題，也凸顯跨地區、跨供應商備援必須經實際切換測試。",
+    "category": "AI 基建與安全",
+    "publishedAt": "2026-10-11T07:38:57Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/europe/russias-yandex-says-data-centre-vladimir-area-shut-down-after-drone-attack-2026-10-11/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-10-ai-compute-shortage-talent-allocation-wsj",
     "title": "AI 算力愈來愈緊：資源分配開始左右人才與初創去向",
     "summary": "《華爾街日報》10 月 10 日報道，AI 算力供應緊張正令競爭對手尋求合作，也令企業高層親自介入資源分配。報道以 Google AI 研究員 Noam Shazeer 為例：他的團隊被削減算力配額後不久，他轉往 OpenAI；初創則要面對昂貴的前置合約和供應不穩等問題。\\n\\n這反映 AI 競爭的瓶頸不只在資金或模型人才，能否及時取得可靠 GPU 叢集也會影響研究排期、產品成本與人事流動。報道中的個案不代表整個市場，但企業規劃 AI 專案時，已不能只按模型能力估算交付時間。",
@@ -9,7 +21,7 @@
     "sourceUrl": "https://www.wsj.com/tech/ai/ai-computing-power-demand-a63da9b9",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-10-openai-three-safety-researchers-dismissed",
@@ -21,7 +33,7 @@
     "sourceUrl": "https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-10-china-ai-guidelines-curb-investment-bubbles",
@@ -33,7 +45,7 @@
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/china-issues-guidelines-new-productive-forces-including-ai-2026-10-09/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-09-anthropic-unintended-model-actions-report",
@@ -45,7 +57,7 @@
     "sourceUrl": "https://www.anthropic.com/research/investigating-unintended-model-actions",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-09-anthropic-cyber-mission-oss-scanner",
