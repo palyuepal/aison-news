@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-11",
+  "dailyOneLiner": "AI 今日由「能力競賽」轉入「事故治理」：白宮要求所有 AI 公司即時通報，Anthropic 先把評測全面斷網，而 Yandex 事件提醒算力本身亦要有真實可用的備援。",
+  "top3Ids": [
+    "2026-10-11-white-house-ai-incident-reporting-mandate",
+    "2026-10-11-anthropic-all-evaluations-offline",
+    "2026-10-11-yandex-second-data-centre-strike"
+  ],
+  "threeThemes": [
+    {
+      "title": "事故治理由自願走向硬要求",
+      "summary": "白宮把模型事故通報與補救定性為所有 AI 公司的義務，安全承諾開始進入可追責流程。",
+      "watch": "正式書面規則、事故門檻、通報時限與處罰機制。"
+    },
+    {
+      "title": "Agent 安全落到網絡與停止權",
+      "summary": "Anthropic 將全部內部評測斷網，新使用政策亦要求高風險 Agent 有合資格操作員可觀察及叫停。",
+      "watch": "Anthropic 的恢復聯網指標、kill switch 要求及企業合規安排。"
+    },
+    {
+      "title": "信任要靠可驗證證據鏈",
+      "summary": "由數據中心備援、新聞訓練版權到科學影像後製，市場正在要求可追溯來源、測試與復原證據。",
+      "watch": "Yandex 遷移成效、OpenAI 訴訟答辯及 Nikon 新 GenAI 規則。"
+    }
+  ],
+  "biggestChange": "最大轉變是美國把 AI 事故通報由公司自行決定的安全承諾，提升為適用所有 AI 公司的國家安全義務；前沿模型商今後要同時證明能發現、上報、隔離及修復事故。",
+  "watchTomorrow": "優先追蹤白宮是否公布正式通報框架與執法依據、Anthropic 何時及按甚麼指標恢復聯網評測、Yandex 兩個受襲站點與 AI 超級電腦的實際損失，以及 OpenAI 精神健康安全是否有可獨立審視的新數據。"
+}
