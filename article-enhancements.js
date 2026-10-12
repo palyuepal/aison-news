@@ -46,6 +46,7 @@
     img.alt=visual.alt||`${n.title}｜新聞相關圖片`;
     caption.textContent=visual.kind==='official-press'?`OFFICIAL PRESS VISUAL · ${visual.credit||'來源已標示'}`:`AIson ORIGINAL VISUAL · ${visual.credit||'AIson'}`;
     img.src=new URL(visual.src,document.baseURI).href;
+    const body=$('#articleBody');if(body){body.querySelectorAll('.news-visual img').forEach(image=>{if(new URL(image.currentSrc||image.src,document.baseURI).href===img.src)image.closest('.news-visual')?.remove()})}
     img.addEventListener('load',()=>{root.classList.remove('has-editorial-fallback');root.classList.add('has-story-card')},{once:true});
     img.addEventListener('error',()=>{img.remove();caption.remove();renderEditorialFallback(root,n)},{once:true});
     root.append(img,caption);
@@ -117,6 +118,16 @@
     const topicBoost=n.topicId&&item.topicId===n.topicId?8:0;
     return storylineBoost+topicBoost+specific*6+genericPenalty*2+(item.category===n.category?2:0)+(item.date===n.date?1:0);
   }
+  function wrapSecondary(element,label,className=''){
+    if(!element||element.closest('details.reader-collapsible'))return;
+    const details=document.createElement('details');details.className=`reader-collapsible ${className}`.trim();
+    const summary=document.createElement('summary');summary.textContent=label;
+    element.parentNode.insertBefore(details,element);details.append(summary,element);
+  }
+  function collapseSupplementary(body){
+    wrapSecondary(body.querySelector('.source-transparency'),'來源與核實方式','source-details');
+    wrapSecondary(body.querySelector('.event-timeline'),'事件時間線','timeline-details');
+  }
   function renderRelated(n,rows,registry){
     const root=$('#articleRelated');if(!root)return;
     const ranked=rows.filter(item=>item.id!==n.id).map(item=>({...item,_score:relatedScore(item,n),_shared:(item.tags||[]).filter(tag=>(n.tags||[]).includes(tag))})).filter(item=>item._score>0).sort((a,b)=>b._score-a._score||String(b.date||'').localeCompare(String(a.date||''))).slice(0,3);
@@ -130,14 +141,16 @@
       else if(n.topicId&&item.topicId===n.topicId)label=`同一主題：${topicName(n.topicId)}`;
       return `<a class="article-related-card" href="news/${encodeURIComponent(item.id)}.html"><small>${esc(label)}</small><b>${esc(item.title)}</b><span>${esc(fmt(item.date))} · 繼續閱讀 →</span></a>`;
     }).join('');
+    const relatedSection=root.closest('.article-related'),container=root.parentElement,head=container?.querySelector('.article-related-head');
+    if(relatedSection&&!container.querySelector('details.reader-collapsible')){const details=document.createElement('details');details.className='reader-collapsible related-details';const summary=document.createElement('summary');summary.textContent='相關報道與主線追蹤';container.insertBefore(details,head||root);details.append(summary,...[head,root].filter(Boolean));}
   }
   async function render(){
     if(document.body?.dataset.page!=='article')return;
     const n=currentStory();if(!n)return;
-    addStyles();renderHeroVisual(n);renderSourceCard(n);
+    addStyles();renderHeroVisual(n);renderSourceCard(n);collapseSupplementary(document.querySelector('#articleBody'));
     try{
       const [rows,registry]=await Promise.all([loadIndex(),loadRegistry().catch(()=>({topics:[],storylines:[]}))]);
-      renderTimeline(n,rows,registry);renderRelated(n,rows,registry);
+      renderTimeline(n,rows,registry);collapseSupplementary(document.querySelector('#articleBody'));renderRelated(n,rows,registry);
     }catch(error){console.warn('AIson article context enhancement unavailable',error)}
   }
   const start=()=>requestAnimationFrame(()=>requestAnimationFrame(render));
@@ -145,46 +158,15 @@
 })();
 
 
-/* ===== Editorial B2 — immersive article helpers ===== */
+/* Keep the article's single, structured 30-second quick read from trust.js. */
 (() => {
-  const esc=value=>String(value||'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
-  const short=(value='',limit=150)=>{const s=String(value||'').replace(/\s+/g,' ').trim();return s.length>limit?s.slice(0,limit).replace(/[，。；、\s]+$/,'')+'…':s};
-  function currentStory(){
-    const id=window.AISON_ARTICLE_ID||new URLSearchParams(location.search).get('id')||'';
-    return (window.AISON_NEWS||[]).find(n=>n.id===id)||(window.AISON_NEWS||[])[0];
-  }
-  function initB2Article(){
+  function initArticleLabels(){
     if(document.body?.dataset.page!=='article')return;
     document.body.classList.add('b2-ready');
-    const story=currentStory(), body=document.getElementById('articleBody');
-    if(!story||!body||document.getElementById('b2Keybox'))return;
-    const opening=body.querySelector('.report-opening');
-    if(opening){
-      const points=[
-        story.quickTake||story.summary||story.excerpt,
-        story.whyImportant,
-        Array.isArray(story.hkImpact)?story.hkImpact[0]:''
-      ].filter(Boolean).slice(0,3);
-      if(points.length){
-        const box=document.createElement('aside');
-        box.className='b2-keybox';box.id='b2Keybox';
-        box.innerHTML='<small>30 秒睇明 · KEY TAKEAWAYS</small><ul>'+points.map((p,i)=>'<li><b>0'+(i+1)+'</b>'+esc(short(p,175))+'</li>').join('')+'</ul>';
-        const first=opening.querySelector('p');
-        first?first.after(box):opening.append(box);
-        const jump=document.createElement('a');jump.className='b2-jump-keybox';jump.href='#b2Keybox';jump.textContent='30 秒睇明 ↓';document.body.append(jump);
-      }
-    }
-    const take=story.take||'';
-    if(take){
-      const target=body.querySelector('.info-block');
-      if(target){
-        const quote=document.createElement('blockquote');quote.className='b2-pullquote';quote.textContent=short(take,190);target.before(quote);
-      }
-    }
     const relatedTitle=document.querySelector('.article-related-head h2');
     if(relatedTitle)relatedTitle.textContent='跟住睇呢條主線';
     const relatedLabel=document.querySelector('.article-related-head .mini-label');
     if(relatedLabel)relatedLabel.textContent='FOLLOW THE SIGNAL';
   }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(initB2Article,0),{once:true});else setTimeout(initB2Article,0);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(initArticleLabels,0),{once:true});else setTimeout(initArticleLabels,0);
 })();
