@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-12",
+  "dailyOneLiner": "AI 今日的核心不是又多一個模型，而是怎樣控制真實世界後果：三個 Yandex 數據中心相繼失效，美英重開發布前安全測試，Microsoft 更提出把所有模型預設為已被攻破。",
+  "top3Ids": [
+    "2026-10-12-yandex-third-data-centre-strike",
+    "2026-10-12-us-allows-uk-pre-release-ai-testing",
+    "2026-10-12-microsoft-nadella-ai-emergency-brake"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 基建由備援表格走到真實壓力測試",
+      "summary": "Yandex 五個主要數據中心已有三個失去全部或部分運作，跨站與跨供應商復原成為即時問題。",
+      "watch": "剩餘容量、超級電腦損失、服務恢復與資料完整性。"
+    },
+    {
+      "title": "安全監督重新移到模型發布之前",
+      "summary": "美國據報重新容許英國 AISI 提前測試美國模型，白宮近期亦要求事故通報，政策方向正由自願走向可核實。",
+      "watch": "正式美英協議、模型商參與及高風險測試能否延後發布。"
+    },
+    {
+      "title": "Agent 控制由對齊走向 zero-trust",
+      "summary": "Nadella 提出預設模型已被攻破、必須隔離及可由授權人員緊急停止，與近期模型事故形成同一治理方向。",
+      "watch": "Microsoft 是否推出可測試的 emergency-brake API、不可竄改日誌與跨平台標準。"
+    }
+  ],
+  "biggestChange": "最大轉變是前沿 AI 安全開始接受一個更嚴格的前提：不能先相信模型安全，再等待事故證明相反；模型、工具與算力都要預設可能失效，並在發布前、運行中及事故後留下可驗證控制。",
+  "watchTomorrow": "優先追蹤 Yandex 第三個站點的修復與超級電腦損失、美英是否公布預發布測試正式文件、Microsoft 的 emergency-brake 主張會否變成產品，以及 Moonshot 上市文件如何披露香港仲裁與核心技術權屬。"
+}
