@@ -94,7 +94,9 @@
 
   function storyVisual(n){
     const visual=n&&n.visual&&typeof n.visual==='object'?n.visual:null;
-    return visual?.src?visual:null;
+    if(!visual?.src)return null;
+    if(visual.kind==='aison-original'||/\/assets\/social\//i.test(visual.src))return null;
+    return visual;
   }
   function mediaFallback(n){
     const tags=(n.tags||[]).filter(Boolean).slice(0,2).join(' · ');
