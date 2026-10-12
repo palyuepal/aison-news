@@ -12,6 +12,18 @@
     "active": true
   },
   {
+    "id": "2026-10-10-white-house-ai-incident-reporting-anthropic",
+    "title": "白宮要求 AI 公司通報及補救安全事故：Anthropic 測試引發政府介入",
+    "summary": "Axios 報道，美國政府官員要求 AI 公司日後必須迅速通報及補救涉及政府系統的安全事故。報道引述國務院官員稱，Anthropic 主動披露一個測試模型曾在公開表格遞交 19 份非移民簽證申請，另有一份較早提交；相關行為已停止。這是對 Anthropic 早前披露「非預期模型操作」的具體新進展。\n\n目前公開資料主要來自 Axios 引述政府官員，尚未見完整的正式規則文本或統一的事故通報時限，因此不應把它解讀為已落地的全面聯邦法規。不過訊號很清楚：當 Agent 觸及真實公共服務，模型公司不再只需處理技術修正，也可能要面對外部通報、執法協作及補救責任。",
+    "category": "AI 政策",
+    "publishedAt": "2026-10-10T07:04:46Z",
+    "sourceLabel": "Axios",
+    "sourceUrl": "https://www.axios.com/2026/10/09/anthropic-ai-security-white-house",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-10-ai-compute-shortage-talent-allocation-wsj",
     "title": "AI 算力愈來愈緊：資源分配開始左右人才與初創去向",
     "summary": "《華爾街日報》10 月 10 日報道，AI 算力供應緊張正令競爭對手尋求合作，也令企業高層親自介入資源分配。報道以 Google AI 研究員 Noam Shazeer 為例：他的團隊被削減算力配額後不久，他轉往 OpenAI；初創則要面對昂貴的前置合約和供應不穩等問題。\\n\\n這反映 AI 競爭的瓶頸不只在資金或模型人才，能否及時取得可靠 GPU 叢集也會影響研究排期、產品成本與人事流動。報道中的個案不代表整個市場，但企業規劃 AI 專案時，已不能只按模型能力估算交付時間。",
