@@ -237,7 +237,7 @@ body[data-page="article"] .reader-guide{border-color:var(--b2-line);background:v
 body[data-page="article"] #articleBody .report-opening,body[data-page="article"] #articleBody .info-block{margin:0;padding:0 0 8px;border:0;background:transparent;box-shadow:none}
 body[data-page="article"] #articleBody .report-opening h2,body[data-page="article"] #articleBody .info-block h2{margin:42px 0 16px;color:var(--b2-ink);font-family:Georgia,"Noto Serif TC",serif;font-size:28px}
 body[data-page="article"] #articleBody p,body[data-page="article"] #articleBody li{color:var(--b2-body);font-size:18px!important;line-height:1.9!important}
-body[data-page="article"] #articleBody .report-opening>p:first-of-type::first-letter{float:left;margin:7px 11px 0 0;color:var(--b2-navy);font-family:Georgia,"Noto Serif TC",serif;font-size:64px;font-weight:900;line-height:.82}
+body[data-page="article"] #articleBody .report-opening>p:first-of-type::first-letter{float:left;margin:.06em .12em 0 0;color:var(--b2-navy);font-family:Georgia,"Noto Serif TC",serif;font-size:2.6em;font-weight:900;line-height:.95}
 body[data-page="article"] .report-note{border:1px dashed var(--b2-gold-deep);border-radius:14px;background:var(--b2-card)}
 body[data-page="article"] .take{padding:22px 24px;border:1px dashed var(--b2-gold-deep);border-radius:16px;background:var(--b2-card)}
 body[data-page="article"] .take img{width:48px;height:48px}
