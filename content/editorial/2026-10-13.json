@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-13",
+  "dailyOneLiner": "Meta 與 Microsoft 同日把 AI 競賽推向兩端：一邊是有記憶、會做事的前沿 Agent，另一邊是百萬枚自研晶片；而監管、電力、內容授權與融資開始決定誰能真正把它們大規模落地。",
+  "top3Ids": [
+    "2026-10-13-meta-muse-wonder-agent-models",
+    "2026-10-13-microsoft-maia-300-million-chip-deployment",
+    "2026-10-13-uk-aisi-confirms-frontier-model-access"
+  ],
+  "threeThemes": [
+    {
+      "title": "前沿模型競爭重回四強",
+      "summary": "Meta 以 Muse Wonder 雙模型重返前沿 Agent 與 Coding 市場，競爭由聊天能力轉向記憶、長任務與產品分發。",
+      "watch": "第三方評測、API 價格、香港供應與個人記憶控制。"
+    },
+    {
+      "title": "AI 算力由買 GPU 走向自研整套系統",
+      "summary": "Microsoft Maia 300、AMD Helion 與 NVIDIA／Cisco 開放網絡同日亮相，晶片、機架、路由與光連接開始一體競爭。",
+      "watch": "量產、每瓦成本、Azure 對外價格、OCP 標準與實際互通。"
+    },
+    {
+      "title": "規模化之前先處理外部約束",
+      "summary": "英國確認發布前測試、FERC 先建用電登記冊、出版聯盟推內容遙測，安全、電力與版權由背景問題變成部署條件。",
+      "watch": "測試有否約束力、電網削減方案是否重提、模型平台是否採用 SPUR 標準。"
+    }
+  ],
+  "biggestChange": "今日最大轉變是 AI 的勝負不再只由模型分數或 GPU 數量決定，而是由模型記憶、整套自研算力、電網接入、外部測試、內容權利與資本成本共同決定。",
+  "watchTomorrow": "追蹤 Muse Wonder 的獨立評測與 API 定價、Microsoft 是否公布 Maia 300 的 Azure 客戶時間表、英國 AISI 是否披露 Gemini 4 Argon 測試範圍，以及 OCP 2026 後續會否帶來可量產的 Helion、USFP 與 Vera Rubin 部署。"
+}
