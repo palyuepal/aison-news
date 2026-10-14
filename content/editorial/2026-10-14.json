@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-14",
+  "dailyOneLiner": "今日 AI 的主戰場同時由模型能力走向價格、家居入口與安全邊界：Google 把 Argon 推向全球，Apple 把 Siri AI 放進屋企，而研究與監管都開始假設 Agent 會越權。",
+  "top3Ids": [
+    "2026-10-14-google-gemini-4-argon-global-launch",
+    "2026-10-14-apple-homeview-siri-ai-home-launch",
+    "2026-10-14-anthropic-self-replicating-ai-iot"
+  ],
+  "threeThemes": [
+    {
+      "title": "前沿模型進入價格戰",
+      "summary": "Gemini 4 Argon 由有限測試變成全球付費產品，限時 API 價格把競爭由 benchmark 拉到每個完成任務的成本。",
+      "watch": "看第三方長任務評測、香港實際供應，以及 12 月加價後的性價比。"
+    },
+    {
+      "title": "AI 由 app 走入屋企",
+      "summary": "Apple 用 HomeView、Siri AI 與家居配件搶佔共享家庭入口，同時把身份辨識、個人脈絡與私隱風險放在同一部裝置。",
+      "watch": "看香港與廣東話支援、第二批市場，以及多用戶辨識會否洩露錯人的資料。"
+    },
+    {
+      "title": "安全與資本開始追究責任",
+      "summary": "AI 自我複製研究、銀行監管、獨立評測發布權及 IMF 警告都指向同一問題：能力和投資擴張後，誰能中止、復原及承擔損失。",
+      "watch": "看監管者會否把 Agent 權限、事故披露、評測獨立與復原要求寫成硬規則。"
+    }
+  ],
+  "biggestChange": "Gemini 4 Argon 正式全球推出，令 Google 由『預告回歸前沿』變成可即時比較的模型供應商；限時低價亦逼市場用真實任務成本而非單一榜單重新排位。",
+  "watchTomorrow": "重點看 Argon 的首批獨立實測與香港帳戶供應、Apple 是否補充香港及語言時間表，以及 OpenAI／Anthropic 對外部評測發布權會否提出可核實的共同條款。"
+}
