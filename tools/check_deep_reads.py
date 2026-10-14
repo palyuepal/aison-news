@@ -7,6 +7,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from read_time import read_minutes
 
 ROOT = Path(__file__).resolve().parents[1]
 DAILY_DIR = ROOT / "content" / "daily"
@@ -46,11 +47,6 @@ def latest_edition() -> str:
     if not files:
         raise SystemExit("No daily edition found")
     return files[-1].stem
-
-
-def read_minutes(value: object) -> int | None:
-    match = re.search(r"(\d+)\s*分鐘", str(value or ""))
-    return int(match.group(1)) if match else None
 
 
 def metrics(story: dict) -> dict[str, int]:
@@ -112,6 +108,9 @@ def main() -> int:
     by_id = {story.get("id"): story for story in stories if isinstance(story, dict)}
     top3_ids = editorial.get("top3Ids")
     errors: list[str] = []
+    for story in stories:
+        if read_minutes(story.get("readTime")) is None:
+            errors.append(f"{story.get('id')}: readTime must be a positive integer or '<minutes> 分鐘'")
     if not isinstance(top3_ids, list) or len(top3_ids) != 3 or len(set(top3_ids)) != 3:
         errors.append("editorial top3Ids must contain exactly 3 unique IDs")
         top3_ids = top3_ids if isinstance(top3_ids, list) else []
@@ -131,7 +130,7 @@ def main() -> int:
         if ready:
             ready_count += 1
         if minutes is None:
-            errors.append(f"{story_id}: readTime must contain a numeric minute estimate")
+            continue  # Already reported above for all ten stories.
         elif minutes >= 8 and not ready:
             errors.append(
                 f"{story_id}: claims {minutes} min but does not meet Deep Read thresholds "

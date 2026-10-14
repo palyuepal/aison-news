@@ -12,5 +12,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Test read time contract and quality guard regressions
+        run: python -m unittest discover -s tests -p 'test_read_time.py'
       - name: Validate Featured 3 and Deep Read thresholds
         run: python tools/check_deep_reads.py
