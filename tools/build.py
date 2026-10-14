@@ -8,6 +8,7 @@ from urllib.parse import urljoin
 from social_cards import build_social_cards
 from daily_overview import build_daily_overview
 from editorial import build_editorial_payload
+from read_time import format_read_time
 
 ROOT=Path(__file__).resolve().parents[1]
 NEWS=ROOT/'content/news.json'
@@ -115,6 +116,10 @@ def _validate_story(n, ids, ranks):
     required={'id','rank','title','excerpt','category','date','readTime','sourceUrl'}
     miss=required-set(n)
     if miss: raise SystemExit(f"{n.get('id','?')} missing {sorted(miss)}")
+    try:
+        n['readTime'] = format_read_time(n['readTime'])
+    except ValueError as error:
+        raise SystemExit(f"{n.get('id','?')}: {error}") from error
     if n['id'] in ids: raise SystemExit(f"duplicate id {n['id']}")
     if n['rank'] in ranks: raise SystemExit(f"duplicate rank {n['rank']}")
     ids.add(n['id']); ranks.add(n['rank'])

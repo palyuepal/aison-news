@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Validate edition before building or deploying
+        run: python tools/check_deep_reads.py
       - name: Install social card renderer
         run: |
           python -m pip install --disable-pip-version-check "Pillow>=11,<13"

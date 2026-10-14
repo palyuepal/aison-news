@@ -10,6 +10,7 @@ import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import urlsplit
+from read_time import format_read_time
 
 ROOT = Path(__file__).resolve().parents[1]
 NEWS_PATH = ROOT / "content/news.json"
@@ -31,6 +32,10 @@ def validate_story(story: dict) -> None:
         raise SystemExit(
             f"{story.get('id', '?')}: missing={sorted(missing)}, unexpected={sorted(unexpected)}"
         )
+    try:
+        story['readTime'] = format_read_time(story['readTime'])
+    except ValueError as error:
+        raise SystemExit(f"{story.get('id', '?')}: {error}") from error
     if not isinstance(story["id"], str) or not story["id"]:
         raise SystemExit("Every story needs a non-empty string id")
     if not isinstance(story["rank"], int):
