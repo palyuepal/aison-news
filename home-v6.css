@@ -1215,3 +1215,35 @@ html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .
 
 /* Accessibility: keep WATCH TOMORROW heading dark on the gold light-theme card. */
 html:not([data-theme="dark"]) .v6-watch-card h2{color:#14213a!important}
+
+
+/* Mobile spec: stack story cards and Signals instead of hiding content in carousels. */
+@media(max-width:680px){
+  .v6-story-side{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    overflow:visible!important;
+    padding-bottom:0!important;
+    scroll-snap-type:none!important;
+  }
+  .v6-story-small{
+    width:100%!important;
+    min-width:0!important;
+    min-height:0!important;
+    flex:none!important;
+    scroll-snap-align:none!important;
+  }
+  body[data-page="home"].b2-ready .v6-theme-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    overflow:visible!important;
+    scroll-snap-type:none!important;
+  }
+  body[data-page="home"].b2-ready .v6-theme-card{
+    width:100%!important;
+    min-width:0!important;
+    flex:none!important;
+    scroll-snap-align:none!important;
+  }
+  #newsGrid .home-rank-row .card-overline>span:first-child{display:none!important}
+}
