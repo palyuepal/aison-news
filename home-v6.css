@@ -1247,3 +1247,11 @@ html:not([data-theme="dark"]) .v6-watch-card h2{color:#14213a!important}
   }
   #newsGrid .home-rank-row .card-overline>span:first-child{display:none!important}
 }
+
+
+/* Keep footer additions and newsletter helper copy readable on the navy footer/banner. */
+.footer-social{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:12px}
+.footer-social a{color:#dce6f3;font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.footer-social span{color:#b8c8dc;font-size:11px;line-height:1.5}
+.footer-social a:focus-visible{outline:3px solid #F2B705;outline-offset:3px}
+body[data-page="home"].v6-ready #today .newsroom-newsletter .newsletter-terms{margin:3px 0 14px;color:#c7d5e4;font-size:12px;line-height:1.5}
