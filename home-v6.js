@@ -224,7 +224,9 @@
   function cardMedia(n,className='b2-card-media',eager=false){
     const v=visual(n);
     if(!v)return '<div class="'+className+' is-editorial-fallback">'+mediaFallback(n)+'</div>';
-    return '<div class="'+className+'" data-image-kind="'+esc(v.kind||'story')+'"><img src="'+esc(v.src)+'" alt="'+esc(v.alt||('AIson '+(n.category||'新聞')+'配圖'))+'" loading="'+(eager?'eager':'lazy')+'" decoding="async">'+mediaFallback(n)+'</div>';
+    const rawAlt=String(v.alt||'').trim(),title=String(n.title||'').trim();
+    const alt=rawAlt&&rawAlt.length<=80&&(!title||!rawAlt.includes(title))?rawAlt:'AIson '+(n.category||'新聞')+'編輯配圖';
+    return '<div class="'+className+'" data-image-kind="'+esc(v.kind||'story')+'"><img src="'+esc(v.src)+'" alt="'+esc(alt)+'" loading="'+(eager?'eager':'lazy')+'" decoding="async">'+mediaFallback(n)+'</div>';
   }
 
   function pulseMarkup(news){
