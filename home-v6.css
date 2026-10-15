@@ -1045,3 +1045,56 @@ body[data-page="home"].b2-ready .search-trigger kbd{color:#d5e1ef!important;bord
   font-weight:800;
   letter-spacing:.04em;
 }
+
+
+/* Homepage repair pass · 2026-10-15 */
+:root{--aison-navy:#071A33;--aison-blue:#123B78;--aison-gold:#F2B705;--aison-ink:#17263d;--aison-muted:#61728d;--aison-paper:#f7f9fc}
+.editorial-skeleton{min-height:clamp(300px,42vw,540px);padding:clamp(22px,4vw,52px);border-radius:24px;background:linear-gradient(110deg,#e8edf4 8%,#f5f7fa 18%,#e8edf4 33%);background-size:200% 100%;animation:aison-skeleton 1.4s linear infinite}
+.editorial-skeleton span,.editorial-skeleton i{display:block;height:18px;margin:0 0 16px;border-radius:8px;background:rgba(7,26,51,.09)}
+.editorial-skeleton span{width:25%;height:13px}.editorial-skeleton i:nth-of-type(1){width:82%;height:42px}.editorial-skeleton i:nth-of-type(2){width:94%;height:16px}.editorial-skeleton i:nth-of-type(3){width:68%;height:16px}
+@keyframes aison-skeleton{to{background-position-x:-200%}}
+.b2-top-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.b2-top-card{display:flex;min-width:0;flex-direction:column;overflow:hidden;border:1px solid rgba(7,26,51,.12);border-radius:20px;background:#fff;color:var(--aison-ink);text-decoration:none;box-shadow:0 8px 24px rgba(7,26,51,.07);transition:transform .2s ease,box-shadow .2s ease}
+.b2-top-card:hover,.b2-top-card:focus-visible{transform:translateY(-3px);box-shadow:0 14px 32px rgba(7,26,51,.14)}
+.b2-top-card .b2-card-media{width:100%;height:auto;aspect-ratio:16/9;overflow:hidden}
+.b2-top-card .b2-card-media img{width:100%;height:100%;object-fit:cover}
+.b2-top-card .b2-card-copy{display:flex;flex:1;flex-direction:column;padding:20px}
+.b2-top-card h3{margin:12px 0 9px;font-size:clamp(18px,1.7vw,23px);line-height:1.4}
+.b2-top-card p{margin:0 0 16px;color:#52647e;line-height:1.65}
+.b2-card-foot{display:flex;justify-content:space-between;gap:12px;margin-top:auto;padding:10px 0;border-top:1px solid #e8edf4;color:#66758b;font-size:12px}
+.b2-top-card strong{margin-top:8px;color:#123b78}
+.b2-ticker-inner{display:flex;align-items:center;gap:16px;overflow:hidden}
+.b2-ticker-track{display:flex;flex:1;min-width:0;gap:40px;margin:0;padding:12px 0;list-style:none;white-space:nowrap;animation:b2-ticker-scroll 40s linear infinite}
+.b2-ticker-track li{flex:0 0 auto}
+.b2-ticker-duplicate{margin-left:-20px}
+.b2-ticker-toggle{flex:0 0 auto;min-height:44px;padding:8px 14px;border:1px solid currentColor;border-radius:999px;background:transparent;color:inherit;font:inherit;cursor:pointer}
+.b2-ticker:hover .b2-ticker-track,.b2-ticker:focus-within .b2-ticker-track,.b2-ticker.is-paused .b2-ticker-track{animation-play-state:paused}
+.b2-ticker-toggle:focus-visible,.v6-audience-tab:focus-visible,.filter-btn:focus-visible,.category-pill:focus-visible{outline:3px solid #F2B705;outline-offset:3px}
+@keyframes b2-ticker-scroll{to{transform:translateX(-100%)}}
+.home-rank-row{display:grid!important;grid-template-columns:64px minmax(0,1fr)!important;gap:18px;align-items:start;min-height:150px;padding:22px;border:1px solid #e1e7f0;border-radius:18px;background:#fff}
+.home-rank-row>.rank{display:grid;place-items:center;width:56px;height:56px;border-radius:14px;background:#071A33;color:#F2B705;font-size:22px;font-weight:900}
+.home-rank-copy{min-width:0}
+.home-rank-copy h3{margin:8px 0;font-size:20px;line-height:1.4}
+.home-rank-copy p{margin:0 0 12px;color:#52647e;line-height:1.6}
+.home-rank-row .card-footer{display:flex;justify-content:space-between;gap:12px;color:#66758b;font-size:12px}
+.news-grid .home-rank-row.b2-mid-story,.news-grid .home-rank-row.b2-mini-story{grid-column:auto;grid-template-columns:64px minmax(0,1fr)!important}
+.news-grid .home-rank-row.b2-mid-story .card-leading,.news-grid .home-rank-row.b2-mini-story .card-leading{display:none}
+.news-grid .home-rank-row.b2-mid-story h3,.news-grid .home-rank-row.b2-mini-story h3{font-size:20px}
+.news-grid .home-rank-row.b2-mid-story p,.news-grid .home-rank-row.b2-mini-story p{display:block}
+.news-grid .home-rank-row .card-overline{display:flex}
+.news-grid .home-rank-row .card-footer{display:flex}
+.v6-themes{padding:44px 0;background:#f1f4f8}
+.newsletter-embed{width:min(100%,420px)}
+.newsletter-embed iframe{display:block;width:100%;height:250px;border:0;border-radius:12px;background:#fff}
+.newsletter-embed>a{display:inline-block;margin-top:8px;font-size:12px}
+.footer-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:28px;padding-top:32px}
+.footer-brand p{max-width:240px;color:#b8c8dc;font-size:13px;line-height:1.6}
+.footer-group{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.footer-group b{margin-bottom:4px;color:#F2B705}
+.footer-group a,.footer-group span{color:#dce6f3;font-size:13px}
+.footer-group a{min-height:24px}
+.footer-inner>.copyright{grid-column:1/-1;display:flex;justify-content:space-between;gap:16px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15)}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:900px){.b2-top-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-inner{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.b2-top-grid{grid-template-columns:minmax(0,1fr)}.b2-top-card .b2-card-copy{padding:17px}.home-rank-row,.news-grid .home-rank-row.b2-mid-story,.news-grid .home-rank-row.b2-mini-story{grid-template-columns:42px minmax(0,1fr)!important;gap:12px;padding:16px}.home-rank-row>.rank{width:38px;height:38px;font-size:16px}.home-rank-copy h3,.news-grid .home-rank-row.b2-mid-story h3,.news-grid .home-rank-row.b2-mini-story h3{font-size:17px}.home-rank-copy p{font-size:13px}.footer-inner{grid-template-columns:1fr 1fr;gap:22px 16px}.footer-brand{grid-column:1/-1}.footer-inner>.copyright{flex-direction:column}.newsletter-embed{width:100%}.newsletter-embed iframe{height:265px}.b2-ticker-inner{gap:8px}.b2-ticker-track{gap:24px}}
+@media(prefers-reduced-motion:reduce){.editorial-skeleton,.b2-ticker-track{animation:none!important}.b2-top-card{transition:none}}
