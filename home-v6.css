@@ -1098,3 +1098,11 @@ body[data-page="home"].b2-ready .search-trigger kbd{color:#d5e1ef!important;bord
 @media(max-width:900px){.b2-top-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-inner{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.b2-top-grid{grid-template-columns:minmax(0,1fr)}.b2-top-card .b2-card-copy{padding:17px}.home-rank-row,.news-grid .home-rank-row.b2-mid-story,.news-grid .home-rank-row.b2-mini-story{grid-template-columns:42px minmax(0,1fr)!important;gap:12px;padding:16px}.home-rank-row>.rank{width:38px;height:38px;font-size:16px}.home-rank-copy h3,.news-grid .home-rank-row.b2-mid-story h3,.news-grid .home-rank-row.b2-mini-story h3{font-size:17px}.home-rank-copy p{font-size:13px}.footer-inner{grid-template-columns:1fr 1fr;gap:22px 16px}.footer-brand{grid-column:1/-1}.footer-inner>.copyright{flex-direction:column}.newsletter-embed{width:100%}.newsletter-embed iframe{height:265px}.b2-ticker-inner{gap:8px}.b2-ticker-track{gap:24px}}
 @media(prefers-reduced-motion:reduce){.editorial-skeleton,.b2-ticker-track{animation:none!important}.b2-top-card{transition:none}}
+
+/* Keep stories 04–10 as full-width rows in the editorial list. */
+#newsGrid{grid-template-columns:minmax(0,1fr)!important}
+#newsGrid .home-rank-row{width:100%;grid-column:1/-1!important}
+#newsGrid .home-rank-row .home-rank-copy h3{font-size:19px!important;line-height:1.4!important;letter-spacing:normal!important}
+#newsGrid .home-rank-row .home-rank-copy p{font-size:14px!important;line-height:1.6!important}
+#newsGrid .home-rank-row .rank{align-self:start}
+@media(max-width:620px){#newsGrid .home-rank-row{grid-template-columns:42px minmax(0,1fr)!important}#newsGrid .home-rank-row .home-rank-copy h3{font-size:17px!important}}
