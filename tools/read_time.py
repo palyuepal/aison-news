@@ -1,8 +1,9 @@
 """Shared read-time contract: positive integer minutes, rendered in Chinese."""
 import re
+from typing import Optional
 
 
-def read_minutes(value: object) -> int | None:
+def read_minutes(value: object) -> Optional[int]:
     # bool is an int subclass; floats must not be silently rounded.
     if type(value) is int:
         return value if value > 0 else None
