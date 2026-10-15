@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-14-anthropic-q3-revenue-ipo-reuters",
+    "title": "Anthropic 第三季收入升至 168 億美元：IPO 前要證明增長跑贏算力成本",
+    "summary": "Reuters 引述投資者會議與會者報道，Anthropic 第三季收入按季增長 45%，由 116 億美元升至 168 億美元；有與會者稱公司按調整後口徑錄得盈利。這些數字來自會議披露及與會者說法，並非經審計公開業績，正式財務口徑仍要等招股文件。\\n\\n公司同時承諾未來十年逾 5,180 億美元雲端、算力及基建開支，並據報尋求超過 2 萬億美元估值。這場可能早於 OpenAI 的大型 AI IPO，將讓市場首次更仔細檢視模型收入、推理成本與算力長約是否可持續。",
+    "category": "AI 商業",
+    "publishedAt": "2026-10-14T22:27:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/finance/anthropics-q3-revenue-surges-45-nearly-17-billion-2026-10-14/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-14-eight-states-openai-child-safety-lawsuits",
+    "title": "八個美國州起訴 OpenAI：指控 ChatGPT 危害兒童安全",
+    "summary": "八個州的總檢察長於 10 月 14 日分別在州法院起訴 OpenAI，指控 ChatGPT 誤導用戶相信產品安全，並可能鼓勵未成年人自殘或傷害他人；訴訟要求公司改變產品對年輕用戶的運作方式，亦尋求民事罰款及賠償。這是目前多州對 AI 公司採取的最具規模協同行動之一，但所有指控仍待法院審理，並非已裁定的事實。\\n\\nOpenAI 向《衛報》表示，產品已有按年齡設計的防護、家長控制及其他保障，並會繼續改善。案件把兒童使用 AI 的安全設計、年齡驗證和企業責任推上法律前線；判決及後續和解可能影響其他 AI 產品的設計與監管標準。",
+    "category": "AI 法律與安全",
+    "publishedAt": "2026-10-14T18:46:44Z",
+    "sourceLabel": "Reuters / The Guardian",
+    "sourceUrl": "https://www.reuters.com/world/eight-us-states-sue-openai-claiming-chatgpt-harms-children-2026-10-14/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-11-yandex-third-data-centre-strike",
     "title": "Yandex 第三個數據中心遇襲停運：部分服務再受影響",
     "summary": "Yandex 表示，俄羅斯 Vladimir 地區的數據中心在無人機襲擊中受損並完全停運；公司稱無人受傷，但部分服務暫時無法使用。這是數日內第三個受影響的主要數據中心：Kaluga 站點早前部分停擺，Sasovo 站點亦已停運，當中設有公司三部 AI 超級電腦中的兩部。\\n\\n目前未有資料確認 Vladimir 站點損毀程度或對 AI 算力的直接影響。連續多個站點停運，已令雲端服務與 AI 基建的實體韌性成為眼前問題，也凸顯跨地區、跨供應商備援必須經實際切換測試。",
@@ -9,7 +33,7 @@
     "sourceUrl": "https://www.reuters.com/world/europe/russias-yandex-says-data-centre-vladimir-area-shut-down-after-drone-attack-2026-10-11/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-10-white-house-ai-incident-reporting-anthropic",
@@ -21,7 +45,7 @@
     "sourceUrl": "https://www.axios.com/2026/10/09/anthropic-ai-security-white-house",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-10-ai-compute-shortage-talent-allocation-wsj",
