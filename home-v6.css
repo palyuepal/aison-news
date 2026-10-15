@@ -1211,3 +1211,7 @@ html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .
   background:#253a53!important;
   color:#ffd45a!important;
 }
+
+
+/* Accessibility: keep WATCH TOMORROW heading dark on the gold light-theme card. */
+html:not([data-theme="dark"]) .v6-watch-card h2{color:#14213a!important}
