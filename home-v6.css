@@ -1181,3 +1181,33 @@ html[data-theme=dark] .editorial-skeleton{background:linear-gradient(110deg,#132
 html[data-theme=dark] .editorial-skeleton span,
 html[data-theme=dark] .editorial-skeleton i{background:rgba(255,255,255,.11)}
 @media(prefers-reduced-motion:reduce){.theme-toggle{transition:none}}
+
+
+/* Dark theme contrast correction for homepage story rows. */
+html[data-theme="dark"] body[data-page="home"].v6-ready #today #newsGrid .home-rank-row,
+html[data-theme="dark"] body[data-page="home"].b2-ready #today #newsGrid .home-rank-row,
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .news-card.home-rank-row {
+  border-color:#35475d!important;
+  background:#111f30!important;
+  color:#d5deea!important;
+}
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .home-rank-copy,
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .home-rank-copy * {
+  color:#d5deea!important;
+}
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .home-rank-copy h3,
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .home-rank-copy h3 a {
+  color:#f0f3f7!important;
+}
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .home-rank-copy p {
+  color:#c1ccd9!important;
+}
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .home-rank-copy .card-overline,
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .home-rank-copy .card-footer,
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .home-rank-copy .card-footer * {
+  color:#aebdd0!important;
+}
+html[data-theme="dark"] body[data-page="home"] #today #newsGrid .home-rank-row .rank {
+  background:#253a53!important;
+  color:#ffd45a!important;
+}
