@@ -168,7 +168,7 @@
   function renderForYou(){
     const root=document.getElementById('v6ForYou');
     if(!root||!NEWS.some(n=>n.audienceImpact))return;
-    root.innerHTML='<div class="v6-for-you-head"><div><small>FOR YOU</small><h2>今日邊幾單同你最有關？</h2></div><div class="v6-audience-tabs" role="group" aria-label="選擇讀者身份">'+Object.entries(AUDIENCES).map(([key,value])=>'<button type="button" class="v6-audience-tab" data-v6-audience="'+key+'" data-analytics-event="audience_select" data-analytics-content="'+key+'" data-analytics-slot="for_you" aria-pressed="false">'+esc(value.label)+'</button>').join('')+'</div></div><div class="v6-audience-grid" data-v6-audience-grid></div><p class="v6-audience-note">排序只根據每日編輯資料內的受眾影響評級；選擇只儲存在此瀏覽器。</p>';
+    root.innerHTML='<div class="v6-for-you-head"><div><small>FOR YOU</small><h2>今日邊幾單同你最有關？</h2></div><div class="v6-audience-tabs" role="group" aria-label="選擇讀者身份">'+Object.entries(AUDIENCES).map(([key,value])=>'<button type="button" class="v6-audience-tab" data-v6-audience="'+key+'" data-analytics-event="audience_select" data-analytics-content="'+key+'" data-analytics-slot="for_you" aria-pressed="false">'+esc(value.label)+'</button>').join('')+'</div></div><div class="v6-audience-grid" data-v6-audience-grid></div><p class="v6-audience-note">排序根據編輯部每日受眾影響評級；你嘅選擇只會儲存在此瀏覽器，唔會上傳。</p>';
     const initial=savedAudience();
     renderAudienceCards(root,initial);
     root.querySelectorAll('[data-v6-audience]').forEach(button=>button.addEventListener('click',()=>{const key=button.dataset.v6Audience;setAudience(key);renderAudienceCards(root,key)}));
@@ -224,7 +224,7 @@
   function cardMedia(n,className='b2-card-media',eager=false){
     const v=visual(n);
     if(!v)return '<div class="'+className+' is-editorial-fallback">'+mediaFallback(n)+'</div>';
-    return '<div class="'+className+'" data-image-kind="'+esc(v.kind||'story')+'"><img src="'+esc(v.src)+'" alt="'+esc(v.alt||n.title||'AIson 新聞圖片')+'" loading="'+(eager?'eager':'lazy')+'" decoding="async">'+mediaFallback(n)+'</div>';
+    return '<div class="'+className+'" data-image-kind="'+esc(v.kind||'story')+'"><img src="'+esc(v.src)+'" alt="'+esc(v.alt||('AIson '+(n.category||'新聞')+'配圖'))+'" loading="'+(eager?'eager':'lazy')+'" decoding="async">'+mediaFallback(n)+'</div>';
   }
 
   function pulseMarkup(news){
@@ -237,11 +237,9 @@
   }
 
   function topThree(news){
-    const [lead,second,third]=news;
-    const side=[second,third].filter(Boolean);
+    const stories=news.slice(0,3);
     return '<section class="b2-top-three"><div class="container"><div class="b2-section-head"><div><small>TODAY\'S TEN · EDITOR\'S RANKING</small><h2>今日 AI，一頁睇晒</h2></div><a href="daily.html">完整每日 Story Flow →</a></div><div class="b2-top-grid">'+
-      '<a class="b2-lead-card" href="'+url(lead)+'">'+cardMedia(lead,'b2-card-media',true)+'<div class="b2-card-copy"><div class="b2-story-meta"><b>01</b><span>'+esc(lead.category||'AI NEWS')+'</span>'+(lead.verified?'<span>✓ 已核實</span>':'')+'</div><h2>'+esc(lead.title)+'</h2><p>'+esc(brief(lead.quickTake||lead.summary||lead.excerpt,190))+'</p><strong>閱讀完整報道 →</strong></div></a>'+
-      '<div class="b2-side-cards">'+side.map((n,index)=>'<a class="b2-side-card" href="'+url(n)+'">'+cardMedia(n,'b2-side-media')+'<div class="b2-story-meta"><b>0'+(index+2)+'</b><span>'+esc(n.category||'AI NEWS')+'</span>'+(n.verified?'<span>✓ 已核實</span>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(brief(n.quickTake||n.excerpt||n.summary,110))+'</p><strong>閱讀重點 →</strong></a>').join('')+'</div>'+
+      stories.map((n,index)=>'<a class="b2-top-card" href="'+url(n)+'">'+cardMedia(n,'b2-card-media',index===0)+'<div class="b2-card-copy"><div class="b2-story-meta"><b>0'+(index+1)+'</b><span>'+esc(n.category||'AI NEWS')+'</span>'+(n.verified?'<span>✓ 已核實</span>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(brief(n.quickTake||n.summary||n.excerpt,160))+'</p><div class="b2-card-foot"><span>'+esc(n.readTime||'閱讀重點')+'</span><time>'+esc(fmt(n.date))+'</time></div><strong>閱讀完整報道 →</strong></div></a>').join('')+
     '</div></div></section>';
   }
 
@@ -254,9 +252,11 @@
     const root=document.getElementById('v6SignalHero');
     if(!root)return;
 
-    const ticker=major?'<div class="b2-ticker" aria-label="重大新聞快訊"><div class="b2-ticker-track">'+
-      news.slice(0,5).concat(news.slice(0,5)).map(n=>'<span>◆ '+esc(n.title)+'</span>').join('')+
-      '</div></div>':'';
+    const ticker=major?'<section class="b2-ticker" aria-label="重大新聞快訊"><div class="container b2-ticker-inner"><h2 class="sr-only">重大新聞快訊</h2><ul class="b2-ticker-track">'+
+      news.slice(1,10).map(n=>'<li>◆ '+esc(n.title)+'</li>').join('')+
+      '</ul><ul class="b2-ticker-track b2-ticker-duplicate" aria-hidden="true" inert>'+
+      news.slice(1,10).map(n=>'<li>◆ '+esc(n.title)+'</li>').join('')+
+      '</ul><button class="b2-ticker-toggle" type="button" aria-pressed="false">暫停快訊</button></div></section>':'';
 
     root.innerHTML=
       '<section class="b2-front b2-'+(major?'major':'normal')+'">'+
@@ -275,6 +275,8 @@
       '</section>'+ticker+topThree(news);
 
     root.hidden=false;
+    const tickerToggle=root.querySelector('.b2-ticker-toggle');
+    tickerToggle?.addEventListener('click',()=>{const paused=tickerToggle.getAttribute('aria-pressed')!=='true';tickerToggle.setAttribute('aria-pressed',String(paused));tickerToggle.textContent=paused?'播放快訊':'暫停快訊';root.querySelector('.b2-ticker')?.classList.toggle('is-paused',paused)});
     root.querySelectorAll('.b2-card-media img,.b2-side-media img').forEach(img=>img.addEventListener('error',()=>{const media=img.closest('.b2-card-media,.b2-side-media');if(media)media.classList.add('is-editorial-fallback')},{once:true}));
     document.body.classList.add('b2-ready',major?'b2-major-day':'b2-normal-day');
 
