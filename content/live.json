@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-15-ftc-openai-anthropic-consumer-harms-subpoenas",
+    "title": "FTC 向 OpenAI、Anthropic 發民事傳票：調查 AI 安全事故與消費者傷害",
+    "summary": "Axios 與 Reuters 報道，美國聯邦貿易委員會（FTC）已向 OpenAI 和 Anthropic 發出民事調查傳票，要求交出涉及模型安全事故的文件；調查焦點是潛在消費者保護違規。這代表 FTC 早前啟動的 AI 安全風險調查進一步升級，傳票可用於蒐集證據，並不等同已認定任何公司違法。\n\n目前公開報道未披露完整的索取文件範圍、回覆期限或最終執法決定。對兩家公司而言，後續重點將是如何交代事故紀錄、風險揭露及產品保護措施；對整個行業，事件也提高了 Agent 實際行動與消費者保障被納入傳統監管框架審查的可能性。",
+    "category": "AI 政策與安全",
+    "publishedAt": "2026-10-15T09:00:00Z",
+    "sourceLabel": "Reuters / Axios",
+    "sourceUrl": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-14-anthropic-us-midterms-election-safeguards",
     "title": "Anthropic 加強美國中期選舉防護：封禁假新聞帳戶並接入官方投票資料",
     "summary": "Anthropic 表示，已針對 2026 年美國中期選舉加強 Claude 的濫用偵測與防護。公司抽樣分析 25 萬段美國 Claude.ai 對話後稱，約 5.75% 涉及政治、公共政策或社會議題，約 0.51% 直接涉及選舉或投票；違反選舉誠信政策的要求則只佔約 0.002%。公司亦稱曾發現境外假新聞網站營運者利用 Claude 製作偏向俄羅斯、伊朗及北韓敘事的美國中期選舉內容，相關帳戶已被封禁。\n\n面向一般用戶，Claude.ai 將繼續連結非黨派機構 Democracy Works 的 TurboVote 資訊，並計劃在本月稍後把州級官方投票資料及選舉結果直接帶入回應。這是公司自述的防護與執法措施，成效仍有待獨立檢驗；不過它反映前沿模型公司正把選舉完整性、資訊來源與多步驟濫用偵測，當作產品層面的持續工作。",
