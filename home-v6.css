@@ -1106,3 +1106,5 @@ body[data-page="home"].b2-ready .search-trigger kbd{color:#d5e1ef!important;bord
 #newsGrid .home-rank-row .home-rank-copy p{font-size:14px!important;line-height:1.6!important}
 #newsGrid .home-rank-row .rank{align-self:start}
 @media(max-width:620px){#newsGrid .home-rank-row{grid-template-columns:42px minmax(0,1fr)!important}#newsGrid .home-rank-row .home-rank-copy h3{font-size:17px!important}}
+
+#newsGrid .home-rank-row>.rank{position:static;inset:auto}
