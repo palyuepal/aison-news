@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-16",
+  "dailyOneLiner": "AI 熱潮今日同時交出兩張成績表：晶片需求仍然爆升，但資本市場已不再無條件為數據中心與算力故事埋單。",
+  "top3Ids": [
+    "2026-10-16-tsmc-q3-profit-2nm-ramp",
+    "2026-10-16-ai-data-centre-financing-reset",
+    "2026-10-16-apple-intelligence-china-approval"
+  ],
+  "threeThemes": [
+    {
+      "title": "需求仍強，供應鏈拉到 2030",
+      "summary": "TSMC 2nm 首季量產即佔 8%，ASML 客戶已詢問 2029、2030 設備，AI 硬件需求未見斷崖。",
+      "watch": "留意先進封裝、光刻設備與電力能否按時交付。"
+    },
+    {
+      "title": "資本開始向 AI 問現金流",
+      "summary": "數據中心上市延後、債價受壓，市場由估算未來需求轉為查槓桿、長約與融資成本。",
+      "watch": "追蹤 neocloud 再融資及亞洲大型數據中心交易定價。"
+    },
+    {
+      "title": "模型競爭走向全棧與可審計",
+      "summary": "Microsoft 自研基礎模型、NVIDIA 推開放 Agent 模型，Anthropic 引入嵌入式評估，能力、部署與治理開始綁在一起。",
+      "watch": "看獨立 benchmark、模型可用性與 METR 首份公開報告。"
+    }
+  ],
+  "biggestChange": "AI 產業最大改變，是『需求強』已不足以支撐所有估值；供應鏈訂單、模型能力、債務成本和治理證據要在同一張表上接受檢驗。",
+  "watchTomorrow": "最值得追蹤 TSMC 業績後客戶與設備商指引、CoreWeave 等 neocloud 債務走勢、Apple Intelligence 中國測試細節，以及 MAI-Base-2／Nemotron 的第三方實測。"
+}
+

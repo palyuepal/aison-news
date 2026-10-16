@@ -1,0 +1,475 @@
+[
+  {
+    "id": "2026-10-16-tsmc-q3-profit-2nm-ramp",
+    "rank": 1,
+    "title": "TSMC 季績超預期：2nm 首季已佔晶圓收入 8%",
+    "excerpt": "TSMC 第三季收入 1.494 兆新台幣、純利 7,630.6 億新台幣，按年分別升 50.9% 和 68.7%；2nm 首次貢獻 8% 晶圓收入，第四季美元收入指引達 523億至543億美元。",
+    "summary": "TSMC 第三季收入 1.494 兆新台幣、純利 7,630.6 億新台幣，按年分別升 50.9% 和 68.7%；2nm 首次貢獻 8% 晶圓收入，第四季美元收入指引達 523億至543億美元。",
+    "quickTake": "昨日仍是市場預期，今日已變成正式成績表：TSMC 純利按年增 68.7%，2nm 首季量產即佔晶圓收入 8%，第四季收入指引亦高過市場原先估算。這確認 AI 晶片需求仍強，但同日相關股份下跌，反映市場開始同時審視需求與融資成本。",
+    "category": "AI 晶片",
+    "tags": [
+      "TSMC",
+      "2nm",
+      "AI 晶片",
+      "半導體",
+      "供應鏈"
+    ],
+    "date": "2026-10-16",
+    "readTime": 5,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "TSMC 10 月 15 日公布第三季收入 1.494 兆新台幣、純利 7,630.6 億新台幣及每股盈利 29.43 新台幣。收入按年升 50.9%，純利升 68.7%；以美元計收入為 467.2 億美元。公司預計第四季收入 523 億至 543 億美元，毛利率 65% 至 67%。",
+    "reportingContext": "最新數字把 10 月 15 日版的業績預覽變成已確認結果，因此屬實質 follow-up。2nm 首季出貨已佔晶圓收入 8%，3nm 佔 33%，7nm 或以下先進製程合計佔 79%。",
+    "deepDive": "2nm 陡峭爬坡代表 AI 加速器與高階運算客戶正更快轉向新節點；同時 66.4% 毛利率顯示 TSMC 暫時仍能吸收海外廠及先進封裝擴產成本。真正限制會逐步由單一晶圓產能轉向封裝、電力、設備與客戶融資。",
+    "whyImportant": "這是目前最直接的 AI 基建需求驗證：模型公司講算力願景可以延後，代工廠的收入、良率與產能則反映真實訂單。TSMC 的指引亦會影響 NVIDIA、AMD、Apple 及整條亞洲供應鏈的預期。",
+    "whatToWatch": "下一步看 2nm 良率與佔比能否持續上升、先進封裝擴產速度，以及第四季指引能否在利率上升與 AI 融資收緊下兌現。",
+    "hkImpact": [
+      "香港投資者要分開看基本面與估值：業績創新高不等於股價短期一定升，資金成本正在重新定價整個 AI 板塊。",
+      "本地雲端及企業採購可預期高階算力供應繼續增加，但短期價格仍受先進封裝、網絡與電力約束。",
+      "電子、物流及專業服務供應商可留意 2nm 與先進封裝帶來的新訂單，但不宜把單季增長直線外推。"
+    ],
+    "take": "已確認的是財務數據、2nm 佔比及第四季指引；股價與長期需求仍有變數。AIson 判斷，AI 算力未見需求斷崖，但市場已由『有冇需求』轉問『誰有能力、以甚麼資本成本交付』。",
+    "sourceLabel": "TSMC 官方公告",
+    "sourceUrl": "https://pr.tsmc.com/chinese/news/3346",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Reuters Breakingviews，2026-10-15",
+        "url": "https://www.reuters.com/commentary/breakingviews/ai-boom-stumbles-over-white-swan-events-2026-10-15/"
+      }
+    ],
+    "followUpOf": "2026-10-15-tsmc-record-profit-preview",
+    "actionVerdict": "watch",
+    "actionReason": "基本面強但估值與融資環境波動加大，宜追蹤後續產能與客戶資本開支而非只看單日股價。",
+    "aisonScore": 9.8,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-16-ai-data-centre-financing-reset",
+    "rank": 2,
+    "title": "AI 數據中心融資降溫：IPO 延後、債券折價，市場由搶規模轉查現金流",
+    "excerpt": "Reuters 指 AirTrunk、Firmus、SB Energy 等上市計劃被撤回或暫停；CoreWeave 債價跌近困境水平，投資者開始按槓桿、合約與交付能力重新分級 AI 基建。",
+    "summary": "Reuters 指 AirTrunk、Firmus、SB Energy 等上市計劃被撤回或暫停；CoreWeave 債價跌近困境水平，投資者開始按槓桿、合約與交付能力重新分級 AI 基建。",
+    "quickTake": "AI 基建未停止投資，但融資條件突然轉硬。過去一周多個數據中心上市計劃撤回或延後，投資者不再只信未來算力需求，而要看到長約、現金流、電力土地與可執行的建設時間表。",
+    "category": "AI 融資",
+    "tags": [
+      "數據中心",
+      "CoreWeave",
+      "AI 融資",
+      "利率",
+      "亞洲"
+    ],
+    "date": "2026-10-16",
+    "readTime": 5,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Reuters 10 月 15 日報道，AirTrunk REIT、NVIDIA 支持的 Firmus 和 SoftBank 支持的 SB Energy 等上市計劃近期撤回或暫停。亞洲數據中心 M&A 年內仍達 213 億美元，債務融資 223 億美元，但股權融資按年跌 4.6% 至 54 億美元。",
+    "reportingContext": "CoreWeave 約 500 億美元借款及債價跌至面值 85% 以下，令 neocloud 高槓桿模式成為市場壓力中心。Firmus 擬籌 50 億美元，但約 300 億美元債務與進取收入預測令投資者卻步。",
+    "deepDive": "利率上升會同時推高建設融資、再融資和客戶取得算力的成本。具長期客戶合約、已有電力與土地的成熟營運商，會比只靠遠期預測的 AI campus builder 更容易取得資金。",
+    "whyImportant": "AI 擴張的瓶頸正由 GPU 與電力延伸到信用市場。若融資成本長期高企，雲端租價、模型 API 價格與擴產節奏都可能受壓，資本實力弱的供應商會先被淘汰。",
+    "whatToWatch": "追蹤 CoreWeave 等 neocloud 的債務再融資、亞洲大型項目能否如期上市或出售，以及長約是否真正足以覆蓋建設與利息成本。",
+    "hkImpact": [
+      "香港金融機構參與數據中心貸款或債券時，要把已簽客戶、電力批文和建造進度放在估值故事之前。",
+      "本地企業採購算力不應只追最低報價，亦要評估供應商槓桿、持續營運與合約退出安排。",
+      "亞洲數據中心交易仍活躍，香港資本市場有機會受惠，但投資者會要求更清楚的現金流與風險披露。"
+    ],
+    "take": "已確認的是上市延後、融資數據與投資者要求轉變；不是 AI 需求已崩潰。AIson 判斷，今日最大改變是資本市場開始逼 AI 基建由『先建再算』改成『先證明誰埋單』。",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/finance/market-selloff-rising-rates-test-ai-data-centre-deal-boom-2026-10-15/",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "Financial Times，2026-10-15",
+        "url": "https://www.ft.com/content/678bcd31-6c2a-447b-a68c-ce6dec220bbc"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "融資風險正在重定價，但行業投資未停止；先看債務、長約與交付，而非追逐板塊波動。",
+    "aisonScore": 9.6,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-16-apple-intelligence-china-approval",
+    "rank": 3,
+    "title": "Apple Intelligence 獲准在中國測試：月底先上翻譯、寫作與修圖，未包括 Siri AI",
+    "excerpt": "Tim Cook 表示 Apple Intelligence 已獲中國批准，10 月底推出測試版；首批功能包括即時翻譯、寫作工具及圖片清理，但 Siri AI 不在內。",
+    "summary": "Tim Cook 表示 Apple Intelligence 已獲中國批准，10 月底推出測試版；首批功能包括即時翻譯、寫作工具及圖片清理，但 Siri AI 不在內。",
+    "quickTake": "Apple 終於跨過中國市場的監管門檻。測試版預計 10 月底推出，先提供翻譯、寫作與圖片清理，Siri AI 暫缺；Reuters 指中國版模型由 Apple 與 Alibaba 合作開發。",
+    "category": "Apple",
+    "tags": [
+      "Apple Intelligence",
+      "中國",
+      "Alibaba",
+      "Siri",
+      "iPhone"
+    ],
+    "date": "2026-10-16",
+    "readTime": 5,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Reuters 引述中國媒體《澎湃新聞》對 Tim Cook 的訪問，指 Apple Intelligence 已獲中國批准，測試版會於 10 月底推出。已確認功能包括即時翻譯、寫作工具及圖片清理，不包括 Siri AI；中國網信部門早於 7 月已完成相關服務備案。",
+    "reportingContext": "Apple 為中國市場訓練專用大模型，並由 Alibaba 協助，與公司在其他市場依賴不同第三方模型的安排不同。Cook 同日與中國商務部長會面，討論 AI 與 Apple 在華業務。",
+    "deepDive": "這種區域化架構會帶來模型能力、資料處理、功能更新與合規條款的版本差異。Apple 可重啟中國 iPhone 的 AI 賣點，但 Siri AI 缺席意味完整個人助理體驗仍未落地。",
+    "whyImportant": "中國是 Apple 最大市場之一，AI 功能長期缺位會削弱新機換機理由。獲批亦顯示全球 AI 產品正走向按司法區、合作夥伴與資料規則拆分的多版本營運。",
+    "whatToWatch": "看月底測試版的裝置名單、資料流與內容限制、Siri AI 何時加入，以及香港版會否因鄰近中國市場而出現功能或條款差異。",
+    "hkImpact": [
+      "香港用戶毋須把中國獲批等同香港版即時改動；兩地 App Store、帳戶地區與服務條款可能不同。",
+      "跨境企業要先確認中國版與國際版的資料處理、功能及模型差異，再設計員工工作流程。",
+      "創作者與一般用戶可留意中文翻譯、寫作與修圖質素，但涉及敏感資料仍應查看實際私隱說明。"
+    ],
+    "take": "已確認的是批准、月底測試及首批功能；Siri AI 時間表和香港安排未公布。AIson 判斷，Apple 的真正考驗不是『入到中國』，而是能否在區域合規下維持一致而可信的使用體驗。",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/tim-cook-says-apple-intelligence-approved-china-paper-reports-2026-10-15/",
+    "sourceType": "可靠媒體",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "中國測試版尚未推出且香港安排未變，現階段應先核對地區與資料條款。",
+    "aisonScore": 9.3,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 5,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-16-microsoft-mai-base-2-pretraining",
+    "rank": 4,
+    "title": "Microsoft 完成 MAI-Base-2 預訓練：2.8 兆參數，準備經 Foundry 授權權重",
+    "excerpt": "MAI-Base-2 是 2.8 兆總參數、每 token 啟用 800 億參數的 MoE 模型；Microsoft 稱它在自家留出測試優於所測開放權重模型，但仍在後訓練，未公開給客戶。",
+    "summary": "MAI-Base-2 是 2.8 兆總參數、每 token 啟用 800 億參數的 MoE 模型；Microsoft 稱它在自家留出測試優於所測開放權重模型，但仍在後訓練，未公開給客戶。",
+    "quickTake": "Microsoft 公布自研 MAI-Base-2：以 1.6 萬張 GB200 訓練 38 日，總參數 2.8 兆、每 token 啟用 800 億。官方效率與能力數據仍需外部驗證，而且模型目前只完成預訓練，尚未成為可直接使用的產品。",
+    "category": "Microsoft",
+    "tags": [
+      "Microsoft AI",
+      "MAI-Base-2",
+      "MoE",
+      "Foundry",
+      "模型訓練"
+    ],
+    "date": "2026-10-16",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Microsoft AI 10 月 15 日表示已完成 MAI-Base-2 預訓練。模型以 1.6 萬張 NVIDIA GB200 訓練 38 日，採 MoE 架構，總參數 2.8 兆、每次啟用 800 億參數；公司稱在自家留出評測優於其測試過的開放權重模型。",
+    "reportingContext": "Microsoft 指訓練配方較 DeepSeek-V4-Pro-Base 的預訓練 FLOPs 效率高 4.2 至 12.3 倍，但這是公司依自訂測試與外推方法得出的結果。模型仍在後訓練，之後擬透過 Foundry 向可信合作夥伴授權權重。",
+    "deepDive": "自研基礎模型令 Microsoft 能把資料來源、模型與 Azure/Foundry 基建一體化，減少完全依賴 OpenAI。MoE 只啟用部分參數，有助控制推理成本，但真正產品價值仍要看後訓練、安全、延遲和工具使用表現。",
+    "whyImportant": "Microsoft 與 OpenAI 的合作仍在，但自研旗艦模型已成為實質第二條供應線。企業模型市場會由 API 品牌競爭，轉向權重授權、資料來源與全棧成本競爭。",
+    "whatToWatch": "等公開模型卡、獨立評測、Foundry 定價與供應地區，以及 MAI-Base-2 會否進入 Copilot 或取代部分 OpenAI 工作負載。",
+    "hkImpact": [
+      "香港 Azure 客戶現時毋須遷移，因模型仍未公開；可先要求供應商交代日後模型選擇與切換機制。",
+      "開發者要留意 Foundry 是否提供權重或受控部署，這會影響資料駐留與微調彈性。",
+      "企業採購應把官方效率聲稱視為待驗證，不要用預訓練指標代替真實任務測試。"
+    ],
+    "take": "已確認的是架構、訓練規模與官方測試；可用性和獨立成績未定。AIson 判斷，最重要訊號是 Microsoft 正建立不依賴單一模型夥伴的完整供應鏈。",
+    "sourceLabel": "Microsoft AI 官方 Lab Notes",
+    "sourceUrl": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "wait",
+    "actionReason": "模型仍在後訓練且未開放，先等 Foundry 供應、定價與獨立實測。",
+    "aisonScore": 9,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-16-nvidia-nemotron-3-5-super-vl-bolt",
+    "rank": 5,
+    "title": "NVIDIA 推 Nemotron 3.5：120B 開放視覺 Agent，加兩款本地 Bolt 模型",
+    "excerpt": "Nemotron 3.5 Super VL 與 24GB Bolt 現已推出，4GB Bolt 於 10 月 23 日登場；NVIDIA 把開放 Agent 模型由數據中心延伸到 RTX、Jetson 與本地設備。",
+    "summary": "Nemotron 3.5 Super VL 與 24GB Bolt 現已推出，4GB Bolt 於 10 月 23 日登場；NVIDIA 把開放 Agent 模型由數據中心延伸到 RTX、Jetson 與本地設備。",
+    "quickTake": "NVIDIA 發布 120B 開放權重 Nemotron 3.5 Super VL，並推出可在 24GB 顯存運行的 Bolt 74B-A9B；4GB Bolt E4B 將於 10 月 23 日推出。官方速度與榜單聲稱要獨立核實，但開放權重、資料集和訓練配方令企業可自行部署與微調。",
+    "category": "NVIDIA",
+    "tags": [
+      "NVIDIA",
+      "Nemotron",
+      "開放模型",
+      "AI Agent",
+      "本地 AI"
+    ],
+    "date": "2026-10-16",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "NVIDIA 10 月 15 日推出 Nemotron 3.5 Super VL，為 120B 參數多模態 Agent 模型；Bolt 74B-A9B 24GB 同日供應，Bolt E4B 4GB 預定 10 月 23 日推出。Super VL 可處理文字、圖片、網頁和 PDF，並支援工具使用。",
+    "reportingContext": "NVIDIA 公開權重、部分資料集與訓練配方，並透過 Hugging Face、OpenRouter、ModelScope 及 NIM 提供。公司稱 Super VL 在同級最快、Bolt 可本地運行；相關數據主要來自 NVIDIA 與指定榜單。",
+    "deepDive": "NVIDIA 正把模型與 GPU、Dynamo、NIM、NeMo 綁成垂直堆疊。開放模型降低資料離開企業環境的需要，但實際硬件成本、量化損失、安全修補與授權仍要逐項評估。",
+    "whyImportant": "晶片商不再只賣算力，而是直接供應可落地的 Agent 模型與運行棧。這會加劇與模型公司及雲端平台的競爭，也推動本地 AI 由示範走向長時間工作流。",
+    "whatToWatch": "看獨立吞吐、準確率與功耗測試，24GB 量化版本在真實工具使用中的失誤率，以及香港能否方便取得 RTX Spark 與企業支援。",
+    "hkImpact": [
+      "香港開發者可下載模型做非敏感本地測試，但先量度顯存、功耗、延遲與任務成功率。",
+      "金融及專業服務企業可評估內部 PDF／表格 Agent，但仍要加權限、審計與人工批准。",
+      "中小企若無運維能力，開放權重未必比 API 便宜；要計硬件、更新與保安總成本。"
+    ],
+    "take": "已確認的是模型、供應渠道與開放組件；『最快／最準』仍屬官方主張。AIson 判斷，NVIDIA 正用模型把本地 Agent 需求鎖回自己的硬件與軟件生態。",
+    "sourceLabel": "NVIDIA 官方網誌",
+    "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "try-now",
+    "actionReason": "權重已公開，開發者可用非敏感任務小規模測試，但不應直接把官方榜單當採購結論。",
+    "aisonScore": 8.9,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 4,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-16-anthropic-metr-embedded-evaluator",
+    "rank": 6,
+    "title": "Anthropic 讓 METR 六人進駐：可用內部系統，發布結果毋須公司批准",
+    "excerpt": "Anthropic 給 METR 六名評估員近似內部風險團隊的硬件、辦公與系統權限；公司不能否決報告，只可要求狹窄範圍刪節，而 METR 可公開質疑。",
+    "summary": "Anthropic 給 METR 六名評估員近似內部風險團隊的硬件、辦公與系統權限；公司不能否決報告，只可要求狹窄範圍刪節，而 METR 可公開質疑。",
+    "quickTake": "早前爭議是模型公司會否控制外部評估內容；今日出現實質修正。Anthropic 已讓六名 METR 人員以近似員工權限評估未發布模型與事故，公司不能否決結果，但客戶資料、法律特權資料與模型架構仍不開放。",
+    "category": "AI 安全",
+    "tags": [
+      "Anthropic",
+      "METR",
+      "獨立評估",
+      "AI 安全",
+      "治理"
+    ],
+    "date": "2026-10-16",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Anthropic 10 月 15 日宣布 METR 六名人員已取得公司硬件、辦公空間及近似內部風險團隊的系統權限。METR 可毋須 Anthropic 批准發布對風險、事故與實務的評估；公司只可要求指定敏感資料刪節，METR 可公開質疑刪節。",
+    "reportingContext": "這是 10 月 14 日外部評估發布控制爭議的實質 follow-up。Anthropic 同時建立三層權限制度，SecureBio 暫處較低層，Accenture 旗下 Faculty 亦參與其他評估。",
+    "deepDive": "『近似員工』仍非完全獨立監管：公司決定可接觸範圍，客戶資料、模型架構與法律資料被排除。但無公司否決權、可公開限制及內部訪談，已比一次性 API 測試更接近持續審計。",
+    "whyImportant": "前沿模型的風險不能只靠發布前跑 benchmark。若嵌入式評估能查事故、流程與未發布模型，外界可更早發現制度問題；若只是品牌背書，則會變成監管替代品。",
+    "whatToWatch": "看 METR 首份報告會否清楚披露被拒資料、刪節與利益衝突，以及其他模型公司是否採用同等或更強的發布權。",
+    "hkImpact": [
+      "香港企業採購模型時，可要求供應商披露外部評估的權限、限制與完整報告，而非只看『已通過安全測試』。",
+      "受規管行業可把這種持續評估概念套用到內部 Agent：給獨立風險團隊真實系統與事故記錄。",
+      "一般用戶要明白外部評估不等於政府認證，亦不保證每次輸出安全。"
+    ],
+    "take": "已確認的是六人進駐、權限與發布安排；實際獨立性要由首份報告驗證。AIson 判斷，這是一個較可檢驗的治理進步，但不能取代法定監管與事故披露。",
+    "sourceLabel": "Anthropic 官方公告",
+    "sourceUrl": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Reuters，2026-10-15",
+        "url": "https://www.reuters.com/business/anthropic-grants-ai-evaluator-metr-employee-level-access-its-models-2026-10-15/"
+      }
+    ],
+    "followUpOf": "2026-10-14-openai-anthropic-evaluator-publication-control",
+    "actionVerdict": "watch",
+    "actionReason": "安排比一般外部測試深入，但成效要由首份公開報告及限制披露判斷。",
+    "aisonScore": 8.7,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-16-asml-q3-capacity-demand",
+    "rank": 7,
+    "title": "ASML：AI 訂單看到 2030，現有 2027–28 產能或不夠",
+    "excerpt": "ASML 第三季銷售 117 億歐元、純利 49.6 億歐元；客戶已詢問 2029、2030 訂單，公司研究把 2028 產能增幅推高至超過原定 30%。",
+    "summary": "ASML 第三季銷售 117 億歐元、純利 49.6 億歐元；客戶已詢問 2029、2030 訂單，公司研究把 2028 產能增幅推高至超過原定 30%。",
+    "quickTake": "ASML 季度銷售創 117 億歐元，毛利率 57.5%。更關鍵是客戶開始談 2029 至 2030 年訂單，ASML 判斷現有 2027、2028 供應計劃未必足夠，正研究進一步擴產。",
+    "category": "AI 晶片",
+    "tags": [
+      "ASML",
+      "EUV",
+      "晶片設備",
+      "AI 供應鏈",
+      "產能"
+    ],
+    "date": "2026-10-16",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "48h",
+    "whatHappened": "ASML 10 月 14 日公布第三季銷售 116.62 億歐元、純利 49.6 億歐元，毛利率 57.5%。公司預計第四季銷售 142 億至 152 億歐元，全年 440 億至 450 億歐元。",
+    "reportingContext": "CEO Christophe Fouquet 表示客戶因 AI 投資規模與持續期，上調短中期設備需求，甚至詢問 2029、2030 年訂單。ASML 認為現有 2027、2028 產能計劃或不足，正研究在原定增產 30% 之外再加碼。",
+    "deepDive": "EUV 與浸潤式 DUV 是先進製程擴產核心設備，交付周期長。長期預訂提高需求能見度，但同時增加客戶取消、延後及 ASML 過度擴產風險。",
+    "whyImportant": "如果光刻設備成為瓶頸，即使晶圓廠有資金與廠房，也不能快速增加先進晶片產量。ASML 的訂單能見度是 AI 硬件需求延伸至本十年末的重要領先指標。",
+    "whatToWatch": "看新增產能落實時間、客戶會否提供不可取消承諾，以及利率和 AI 融資收緊會否令遠期訂單延後。",
+    "hkImpact": [
+      "香港供應鏈與投資者可把 ASML 訂單視為長周期指標，但遠期詢價不等於已確認收入。",
+      "電子企業要預留先進晶片交期與價格波動，尤其涉及高階 GPU、手機與網絡設備。",
+      "金融機構評估晶片項目時，要同時看設備交付和客戶資本成本，不能只看 AI 需求預測。"
+    ],
+    "take": "已確認的是業績、指引與管理層產能判斷；2030 需求仍是客戶預測。AIson 判斷，供應鏈仍然緊，但融資重定價會測試遠期訂單到底有幾硬。",
+    "sourceLabel": "ASML 官方業績",
+    "sourceUrl": "https://investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026",
+    "sourceType": "公司文件",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "長期需求訊號強，但遠期訂單與擴產仍受融資及執行風險影響。",
+    "aisonScore": 8.5,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 1,
+      "developer": 3
+    }
+  },
+  {
+    "id": "2026-10-16-nvidia-cupotential-ai-fabs",
+    "rank": 8,
+    "title": "NVIDIA 把 AI Agent 帶入晶圓廠：cuPotential 加速原子模擬與製程迭代",
+    "excerpt": "NVIDIA 推出 cuPotential CUDA-X 函式庫，早期測試在既有 GPU 流程再快 2至3 倍；Synopsys、Cadence、KLA、Lam Research 等把 AI 加入設計、模擬與檢測。",
+    "summary": "NVIDIA 推出 cuPotential CUDA-X 函式庫，早期測試在既有 GPU 流程再快 2至3 倍；Synopsys、Cadence、KLA、Lam Research 等把 AI 加入設計、模擬與檢測。",
+    "quickTake": "NVIDIA 新 cuPotential 讓 AI Agent 直接調用原子與分子模擬工具，早期測試再加速 2至3 倍。多家半導體軟硬件商已接入 CUDA-X，但速度數據來自早期廠商測試，尚未等於整座晶圓廠自動運作。",
+    "category": "NVIDIA",
+    "tags": [
+      "NVIDIA",
+      "cuPotential",
+      "晶圓廠",
+      "科學運算",
+      "AI Agent"
+    ],
+    "date": "2026-10-16",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "48h",
+    "whatHappened": "NVIDIA 10 月 14 日宣布 cuPotential，供開發者建立可模擬原子與分子互動的 AI Agent。公司指早期測試在已 GPU 優化流程上再快 2至3 倍；Synopsys、Cadence、KLA、Lam Research、Applied Materials、Siemens 等正使用相關 CUDA-X 工具。",
+    "reportingContext": "同一套工具亦涵蓋 3D 資料與圖像檢測。Lam Research 的部分模擬據報加速 30 倍，Synopsys 不同測試顯示 12 至 30 倍，但各數字對應不同工作負載，不可直接橫向比較。",
+    "deepDive": "半導體製造要反覆模擬材料、熱力、電磁與缺陷。Agent 若能自動提出參數、執行模擬、比較結果與再迭代，可縮短實驗周期；然而錯誤模型與越權改動仍必須由工程師把關。",
+    "whyImportant": "AI 正由晶片需求來源變成製造晶片的工具。若製程開發更快、良率更高，會改善整體供應；同時也深化晶片設計和工廠對 NVIDIA 軟件棧的依賴。",
+    "whatToWatch": "等待量產環境的良率、能耗與開發周期數據，以及 Agent 能否在嚴格變更控制下安全使用。",
+    "hkImpact": [
+      "香港大學與研發團隊可評估 cuPotential 做材料與電子研究，但要先核對硬件和授權成本。",
+      "製造及工程企業應先把 Agent 放在模擬沙盒，不應直接取得生產設備控制權。",
+      "供應鏈企業可受惠於更快製程迭代，但要留意 CUDA 生態鎖定與人才需求。"
+    ],
+    "take": "已確認的是工具與早期合作；量產回報仍待證明。AIson 判斷，Agent 的高價值場景會先出現在可模擬、可驗證、錯誤可攔截的工程流程。",
+    "sourceLabel": "NVIDIA Newsroom",
+    "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-and-semiconductor-leaders-advance-ai-across-chip-design-and-manufacturing-for-ai-defined-labs",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "早期加速數據吸引，但量產良率、安全控制與總成本仍未有獨立驗證。",
+    "aisonScore": 8.2,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 1,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-16-us-courts-deepfake-evidence-rules",
+    "rank": 9,
+    "title": "美國法院研訂 deepfake 證據門檻：OpenAI、Meta 指人與軟件都愈難辨真偽",
+    "excerpt": "美國司法會議證據規則諮詢委員會再討論 AI 偽造證據，並成立小組繼續研究；931 名受訪法官中只有 15 人曾遇相關挑戰，規則仍未定案。",
+    "summary": "美國司法會議證據規則諮詢委員會再討論 AI 偽造證據，並成立小組繼續研究；931 名受訪法官中只有 15 人曾遇相關挑戰，規則仍未定案。",
+    "quickTake": "OpenAI、Meta 與其他專家警告，AI 影音正變得難以靠人眼或偵測器驗真。美國聯邦法院委員會成立小組繼續研究 deepfake 證據規則；案件目前仍不普遍，並未通過新規。",
+    "category": "AI 政策",
+    "tags": [
+      "deepfake",
+      "法院",
+      "證據規則",
+      "OpenAI",
+      "Meta"
+    ],
+    "date": "2026-10-16",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "美國司法會議證據規則諮詢委員會 10 月 15 日在波士頓聽取科技、學界及政府專家意見。OpenAI 與 Meta 代表指生成影音愈來愈難辨真偽；委員會主席成立小組繼續研究。",
+    "reportingContext": "法院自 2023 年起研究 AI 證據認證。司法研究機構調查 931 名法官，只有 15 人遇過有人以 deepfake 理由挑戰證據，顯示風險正在上升但尚未普遍。",
+    "deepDive": "其中一個方向是：挑戰方先提出足夠理據顯示可能是 deepfake，再由提交方證明真實性較可能成立。這會把重點由單一偵測器轉到來源鏈、原檔、元資料、證人與鑑證流程。",
+    "whyImportant": "當偵測器無法保證準確，法律與企業需要保存『證據從哪裡來、誰處理過』。這會影響媒體、保險、合規調查及任何依賴影音記錄的業務。",
+    "whatToWatch": "看小組會否推進新 Rule 901(c) 或其他規則，以及法院如何分配舉證責任、處理合成內容標記與原始檔。",
+    "hkImpact": [
+      "香港法律、保險及調查團隊應保存原檔、時間戳、裝置資料與處理紀錄，不能只靠肉眼判斷。",
+      "企業生成或編輯影音時要標示版本與保留 provenance，避免日後無法證明真偽。",
+      "一般用戶遇到高風險影音應找第二來源和原始發布者，偵測網站只能作輔助。"
+    ],
+    "take": "已確認的是聽證與成立小組；新證據規則尚未通過。AIson 判斷，deepfake 治理正由『找一個完美偵測器』轉向『建立可驗證來源鏈』。",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/government/openai-meta-caution-us-judiciary-about-risk-deepfake-evidence-2026-10-15/",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "美國法院會議議程文件",
+        "url": "https://www.uscourts.gov/sites/default/files/document/2026-10_evidence_rules_agenda_book_9-23_final.pdf"
+      }
+    ],
+    "actionVerdict": "try-now",
+    "actionReason": "即使規則未定，企業現在就可建立原檔、時間戳與處理紀錄，成本低而實用。",
+    "aisonScore": 8,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 5,
+      "developer": 3
+    }
+  },
+  {
+    "id": "2026-10-16-cohere-aisle-cybersecurity-acquisition",
+    "rank": 10,
+    "title": "Cohere 擬收購 AI 網安公司 Aisle：把漏洞搜尋納入企業私有部署",
+    "excerpt": "Cohere 簽意向書收購 Aisle，交易條款未披露；Aisle 稱首年找到逾 500 個漏洞，包括 OpenSSL 12 個已修復問題，50 名員工將加入。",
+    "summary": "Cohere 簽意向書收購 Aisle，交易條款未披露；Aisle 稱首年找到逾 500 個漏洞，包括 OpenSSL 12 個已修復問題，50 名員工將加入。",
+    "quickTake": "Cohere 計劃收購 AI 漏洞搜尋公司 Aisle，建立新網絡安全部門並強化企業、公營機構的私有部署。交易仍只是意向書、價錢未公開；Aisle 的漏洞數字由公司提供，但 OpenSSL 問題已在披露後修復。",
+    "category": "AI 安全",
+    "tags": [
+      "Cohere",
+      "Aisle",
+      "網絡安全",
+      "漏洞",
+      "私有部署"
+    ],
+    "date": "2026-10-16",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Cohere 10 月 15 日表示已簽意向書收購三藩市網安初創 Aisle，條款未披露。Aisle 50 名員工會加入，創辦人 Ondrej Vlcek 將領導新網安部門，營運總監 Jaya Baloo 出任 CISO。",
+    "reportingContext": "Aisle 由前 Avast CEO 及具 DeepMind、Anthropic 背景成員創立，稱首年發現逾 500 個軟件漏洞，包括 OpenSSL 12 個已修復漏洞。Cohere 正與 Aleph Alpha 合併，並以歐洲、企業及公共部門私有部署作差異化。",
+    "deepDive": "AI 可擴大程式碼掃描範圍，但找到『疑似漏洞』與證明可利用、協調披露、完成修補是不同工作。收購價值要看誤報率、修補速度與能否在客戶環境保護原始碼。",
+    "whyImportant": "模型供應商正由通用助理轉向高價值垂直能力。網安既是 AI 風險，也是企業願意付費的剛性需求，私有部署可成為 Cohere 對大型美國模型商的賣點。",
+    "whatToWatch": "看正式交易條款、獨立漏洞紀錄、誤報率與客戶成效，以及 Aleph Alpha 合併後產品整合是否順利。",
+    "hkImpact": [
+      "香港企業可留意私有部署的漏洞掃描方案，但採購前要要求可驗證 CVE、誤報率與資料處理說明。",
+      "開發團隊不應讓 Agent 自動提交或部署修補；高風險變更仍要人工覆核與測試。",
+      "網安人才需求會由單純掃描轉向驗證、修補、威脅建模和負責任披露。"
+    ],
+    "take": "已確認的是收購意向、人事安排與公司披露的漏洞紀錄；交易未完成。AIson 判斷，AI 模型商下一輪併購會集中在能證明企業回報的專業工作流。",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/transactional/cohere-moves-buy-ai-cybersecurity-startup-aisle-2026-10-15/",
+    "sourceType": "可靠媒體",
+    "references": [],
+    "actionVerdict": "wait",
+    "actionReason": "交易未完成且缺乏價格與獨立產品指標，先等正式協議與客戶證據。",
+    "aisonScore": 7.8,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 1,
+      "developer": 5
+    }
+  }
+]
+
