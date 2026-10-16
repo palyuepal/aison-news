@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-15-openai-rosalind-academic-plan",
+    "title": "OpenAI 推 Rosalind Academic Plan：美國大學實驗室可申請免費生命科學 AI 方案",
+    "summary": "OpenAI 推出 Rosalind Academic Plan，讓合資格的美國大學實驗室申請最長 12 個月、最多 30 個免費 ChatGPT Business Standard 帳戶，並可在審批後使用專為生命科學研究設計的 GPT-Rosalind 與 Rosalind Workbench。公司稱方案涵蓋藥物與蛋白設計、基因組學、實驗室輔助等研究工作；API 存取目前不包括在內。\n\nGPT-Rosalind 的使用仍受 trusted-access 審批，研究資料預設不會用於訓練模型。這並非通用模型向所有人開放，而是把高風險生物研究能力放在研究機構、身分核實及權限管理之內；實際價值要看獲批範圍、研究產出與安全審查能否同時落地。",
+    "category": "AI 科研與醫療",
+    "publishedAt": "2026-10-15T16:00:00Z",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-15-ftc-openai-anthropic-consumer-harms-subpoenas",
     "title": "FTC 向 OpenAI、Anthropic 發民事傳票：調查 AI 安全事故與消費者傷害",
     "summary": "Axios 與 Reuters 報道，美國聯邦貿易委員會（FTC）已向 OpenAI 和 Anthropic 發出民事調查傳票，要求交出涉及模型安全事故的文件；調查焦點是潛在消費者保護違規。這代表 FTC 早前啟動的 AI 安全風險調查進一步升級，傳票可用於蒐集證據，並不等同已認定任何公司違法。\n\n目前公開報道未披露完整的索取文件範圍、回覆期限或最終執法決定。對兩家公司而言，後續重點將是如何交代事故紀錄、風險揭露及產品保護措施；對整個行業，事件也提高了 Agent 實際行動與消費者保障被納入傳統監管框架審查的可能性。",
