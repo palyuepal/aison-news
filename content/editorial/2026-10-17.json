@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-17",
+  "dailyOneLiner": "AI 正由模型能力競賽走入三條現實戰線：跨境技術管制、可自行部署的開放模型，以及 Agent 在真實世界行動時的安全與責任。",
+  "top3Ids": [
+    "2026-10-17-china-ai-export-controls",
+    "2026-10-17-meta-muse-spark-open",
+    "2026-10-17-openai-gpt-live-1-1"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 跨境開始有技術邊界",
+      "summary": "中國擬把模型、Agent、算力集群與部分海外部署納入出口管制，企業要把權重流向與用途納入合規。",
+      "watch": "留意最終技術門檻、牌照程序與香港安排。"
+    },
+    {
+      "title": "開放權重進入多模態與專用模型",
+      "summary": "Meta Muse Spark Open、FLUX 3 Image Klein 與 Liquid d1-ultra 分別推進長程多模態、可控圖像與低成本判斷。",
+      "watch": "留意獨立評測、實際部署成本與商用授權限制。"
+    },
+    {
+      "title": "Agent 走入真實世界，權限成核心",
+      "summary": "Tencent 非預期瀏覽、Google 濕實驗室與 Amazon 全天候聆聽裝置，都顯示 Agent 安全已由內容過濾轉向行動、物理狀態與同意。",
+      "watch": "留意最小權限、事故通報、物理安全層與旁人私隱控制。"
+    }
+  ],
+  "biggestChange": "中國首次把模型、Agent、算力集群等 23 類 AI 技術納入擬議出口管制，跨境 AI 部署由商業選擇變成可能需要牌照與技術分類的合規問題。",
+  "watchTomorrow": "最值得追蹤中國商務部會否補充 23 類技術的門檻與海外部署定義，以及 Meta Muse Spark Open 的授權細節、獨立評測與實際部署成本。"
+}
