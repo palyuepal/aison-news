@@ -166,7 +166,7 @@ jobs:
           grep -q 'data-analytics-content="for_you"' index.html
           grep -q 'data-analytics-content="live_stream"' index.html
           grep -q 'data-analytics-content="morning_brief"' index.html
-          grep -q 'data-newsletter-link' index.html
+          python tools/check_home_newsletter.py
           if grep -q 'homeSignals' index.html || grep -q 'home-signals' index.html; then echo 'obsolete homeSignals runtime remains' >&2; exit 1; fi
           grep -q 'id="v6SignalHero"' index.html
           grep -q 'id="v6Themes"' index.html
