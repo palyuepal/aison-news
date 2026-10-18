@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-18",
+  "dailyOneLiner": "模型繼續變強，但今日最清楚的訊號係：資金成本、可攜硬件、網站授權與安全治理，正決定 AI 能否真正落地。",
+  "top3Ids": [
+    "2026-10-18-deepseek-v4-1-flash-1017",
+    "2026-10-18-anthropic-north-star-financing",
+    "2026-10-18-nvidia-rtx-spark-laptops"
+  ],
+  "threeThemes": [
+    {
+      "title": "模型由對話走向完整工具鏈",
+      "summary": "DeepSeek 把新版模型、搜尋與工具調用一起推出，Beam 則補上一條大型 Agent 模型的開放權重路徑。",
+      "watch": "留意第三方任務成功率、工具權限、總成本與中文／廣東話表現。"
+    },
+    {
+      "title": "算力競爭受資本與實物基建約束",
+      "summary": "Anthropic 擬以逾 10% 回報吸引次級債資金，Schneider 同時錄得數據中心需求急升，AI 成本已伸延至信貸、電力與冷卻。",
+      "watch": "留意融資最終條款、數據中心交付及成本會否轉嫁到模型客戶。"
+    },
+    {
+      "title": "Agent 能做乜，取決於誰准佢做",
+      "summary": "網站封鎖、研究安全團隊與科研模型都指向同一問題：AI 行動需要授權、可審計接口與明確責任。",
+      "watch": "留意網站 Agent 標準、外部安全評測、人工接管與科研可重現性。"
+    }
+  ],
+  "biggestChange": "DeepSeek 把 Search、Fetch 與伺服器端工具調用正式接入新版模型，顯示模型供應商競爭已由 token 價格和榜單，轉向能否提供完整、可控且低成本的 Agent 執行層。",
+  "watchTomorrow": "最值得追蹤 DeepSeek 新版的第三方實測、Anthropic 600 億美元融資最終條款，以及首批 RTX Spark 手提電腦在續航、散熱與本地大模型速度上的獨立測試。"
+}
