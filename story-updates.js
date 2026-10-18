@@ -197,14 +197,15 @@
       ['live','live.html','●','AIson LIVE'],
       ['weekly','weekly.html','◷','本週回顧'],
       ['topics','topics.html','◎','主題'],
-      ['archive','archive.html','▤','新聞庫']
+      ['archive','archive.html','▤','新聞庫'],
+      ['reviews','reviews.html','◈','工具評測']
     ];
   }
 
   function currentNavKey(){
     const page=document.body?.dataset.page||'';
     if(location.hash==='#aison-live') return 'live';
-    if(['home','daily','live','weekly','topics','archive'].includes(page)) return page;
+    if(['home','daily','live','weekly','topics','archive','reviews'].includes(page)) return page;
     const name=location.pathname.split('/').pop()||'index.html';
     if(name==='index.html'||name==='') return 'home';
     return '';
