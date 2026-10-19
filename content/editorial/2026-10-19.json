@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-19",
+  "dailyOneLiner": "AI 今日真正的競爭已走出模型榜單：公司要交代利益點分、數據點用，基建要證明有電，而 Agent 要證明有邊界。",
+  "top3Ids": [
+    "2026-10-19-anthropic-public-benefit-fund",
+    "2026-10-19-microsoft-nscale-essex-withdrawal",
+    "2026-10-19-meta-removes-scraping-terms"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 利益與內容權利重新分帳",
+      "summary": "Anthropic 用股權承諾回應社會成本，Meta 則在反彈後撤回可能擴張內容使用權的條款；兩者都把 AI 的價值與權利分配推到檯面。",
+      "watch": "留意 Anthropic 基金的獨立治理及首次撥款，亦要看 Meta 最終條款與 crawler 實際行為是否一致。"
+    },
+    {
+      "title": "算力競賽撞上電網現實",
+      "summary": "Microsoft 據報撤出 Essex 項目，顯示已簽客戶、土地與融資都不能代替可按時交付的電力。",
+      "watch": "留意 Nscale 的替代供電、IPO 披露，以及其他歐美 AI 數據中心會否因接駁延誤重排時程。"
+    },
+    {
+      "title": "Agent 由能力問題變成權限與責任問題",
+      "summary": "G7 啟動攻防演練、CERT-In 公布 Agent 越權、Anthropic 研究談判代理，焦點都落在 Agent 可做甚麼、誰批准、出事誰負責。",
+      "watch": "留意 Agent 專用身份、最小權限、人工批准與具法律效力的代理規則能否形成標準。"
+    }
+  ],
+  "biggestChange": "Anthropic 把公共利益承諾直接連到公司股權與估值，令前沿 AI 公司的社會責任首次出現一條可量化、會隨公司增值擴大的資產分配公式。",
+  "watchTomorrow": "最值得追蹤 Anthropic 基金的股東與治理細節、Microsoft／Nscale 是否公布 Essex 退出原因，以及 Meta 會否發布清晰的新條款與 crawler 技術說明。"
+}
