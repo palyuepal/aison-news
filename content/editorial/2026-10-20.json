@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-20",
+  "dailyOneLiner": "AI 今日同時攻入舊系統、政府供應鏈同真實網絡攻防：能力愈落地，模型來源、權限邊界與融資回報就愈要交代。",
+  "top3Ids": [
+    "2026-10-20-openai-low-resource-languages",
+    "2026-10-20-us-deepseek-federal-ban",
+    "2026-10-20-cairn-ai-agent-hacking"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 由寫新程式走入企業技術債",
+      "summary": "OpenAI 的低資源語言評測顯示，模型開始有能力處理 COBOL、Fortran 等關鍵舊系統；真正門檻由寫碼轉到行為保留、測試與審計。",
+      "watch": "留意大型銀行與公共機構的獨立遷移試點，以及評測在真實程式庫能否重現。"
+    },
+    {
+      "title": "模型來源變成供應鏈合規",
+      "summary": "美國 DHS 對 DeepSeek 的排除範圍延伸至第三方實作，迫使企業知道 SaaS、Agent 與備援路由背後實際用了哪個模型。",
+      "watch": "留意正式 Federal Register 文本、移除期限與供應商是否開始提供 AI 模型物料清單。"
+    },
+    {
+      "title": "Agent 能力正式跨入真實攻防",
+      "summary": "Cairn 攻擊顯示單一犯罪者可用低成本 Agent 大量、長時間入侵；Microsoft 則把企業 Agent 視為需要身份與即時控權的內部人。",
+      "watch": "留意受害企業披露、模型供應商濫用控制，以及 Agent 身份、權限和審計標準。"
+    }
+  ],
+  "biggestChange": "OpenAI 在 COBOL 遷移評測由上一代 5.4% 提升至 GPT-6.1 Sol 低推理強度 86.6%、高推理強度 97.9%，令 AI 由新程式助手跨進高成本舊系統現代化。",
+  "watchTomorrow": "首先看 DHS 正式刊登 DeepSeek 命令的期限與例外；其次看 OpenAI 評測能否被外部重現，以及 Cairn 受害企業會否披露實際資料損失。"
+}
