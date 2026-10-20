@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-20-gemini-25-agent-platform-retirement",
+    "title": "Google Cloud Gemini 2.5 系列今日到退役日：Agent Platform 用戶須核對遷移",
+    "summary": "Google Cloud 官方模型文件列明，Gemini 2.5 Pro、2.5 Flash 及 2.5 Flash-Lite 在 Gemini Enterprise Agent Platform 的支援退役日均為 10 月 20 日。仍以這些模型 ID 部署 Agent 或線上推理的團隊，應核對替代模型、相容性與實際服務狀態。\n\nGoogle 特別註明，這些日期只適用於 Gemini Enterprise Agent Platform；模型其後仍可能經獨立的 Gemini API 使用，不能視作所有 Gemini 2.5 服務同日停用。遷移時應按所在平台與地區核實官方文件，並重新測試輸出、延遲及成本。",
+    "category": "AI 模型與 API",
+    "publishedAt": "2026-10-20T04:01:00Z",
+    "sourceLabel": "Google Cloud 文件",
+    "sourceUrl": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-20-github-copilot-model-policy-api",
     "title": "GitHub Copilot 模型政策 API 正式推出：企業可按組織、團隊及應用管理",
     "summary": "GitHub 宣布 Copilot 模型政策的 REST API 已正式提供，管理員可在企業、企業團隊、企業應用及組織四個層級，以 GET 查詢或 PATCH 更新模型可用政策。企業亦可按管理模式，把模型控制權下放至組織，或下放至團隊及應用。\n\n這讓大型機構可把 Copilot 模型開放範圍納入自動化管治流程，減少逐項手動設定。實際權限仍取決於企業採用的政策層級和委派方式；管理員應先檢查現行設定，再決定如何批量更新。",
