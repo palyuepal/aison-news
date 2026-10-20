@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-21-spacex-ai-revenue-q3",
+    "title": "SpaceX AI 收入九倍增至 76 億美元：已超越 Starlink 成最大業務線",
+    "summary": "SpaceX 公布 2026 年第三季收入按年升 161% 至 145.8 億美元，錄得 44 億美元淨利；其中 AI 收入增逾九倍至 76 億美元，主要來自向 Anthropic、Google 及 Reflection AI 等客戶出租運算容量。公司同期 196 億美元資本開支中，164 億美元投向 AI，反映其商業重心正由火箭與衛星進一步轉向大型算力供應。\\n\\n收入增長不等於 AI 業務已穩定獲利：SpaceX 表示該部門仍錄得龐大營運虧損，並需要持續投資。對市場更重要的訊號，是前沿模型競爭的收益與成本正集中到算力租賃；企業採購 AI 服務時，亦要留意供應商背後的容量、長約與資本開支能否持續。",
+    "category": "AI 基建與商業",
+    "publishedAt": "2026-10-20T20:08:33Z",
+    "sourceLabel": "SpaceX / Reuters",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/spacex-quarterly-revenue-jumps-beats-estimates-ai-business-surges-2026-10-20/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-20-asi-series-c-325m",
+    "title": "ASI 融資 3.25 億美元、估值 30 億：AI 由文字走入空管與電網",
+    "summary": "美國 AI 初創 ASI 完成 3.25 億美元 Series C，投後估值 30 億美元，由 Spark Capital 領投。公司以模擬及監測軟件預測空中交通、電網、物流與軍事系統的中斷，並表示新資金會用於能源、物流及國防部署，以及擴充研究與工程團隊。\\n\\nASI 已取得美國陸軍五年 9,900 萬美元及聯邦航空管理局十二年 8.75 億美元合約，但融資估值與合約上限不等於收入已全部實現。事件反映投資焦點正由生成文字轉向可影響實體基建決策的 AI；採用方要同時審視預測準確度、人工覆核及錯誤決策的責任。",
+    "category": "AI 融資與實體系統",
+    "publishedAt": "2026-10-20T15:53:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/ai-startup-asi-valued-3-billion-latest-funding-round-2026-10-20/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-20-openai-acquires-orchestra-bio",
     "title": "OpenAI 收購 Orchestra Bio：把 AI Agent 接入藥物研發流程",
     "summary": "OpenAI 10 月 20 日確認收購 Orchestra Bio，並將其團隊與技術整合到生命科學平台 Rosalind。Orchestra 的平台讓科學家與 AI Agent 協作追蹤研究計劃、試驗進度及跨部門依賴；OpenAI 表示下一步希望建立協助連結科學發現、研究決策與後續行動的 Agent。\\n\\n這不是藥物已加速上市的證據，也未披露交易條款或具體臨床成果；現階段可確認的是平台與團隊整合方向。對生物醫藥業，焦點由模型解答科學問題進一步延伸到協調藥物開發的長流程工作。",
@@ -691,18 +715,6 @@
     "publishedAt": "2026-09-30T15:59:23Z",
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-30-hpe-vultr-amd-helios-order",
-    "title": "HPE 接獲 Vultr 12 億美元 AI 訂單：AMD Helios 首個大型商業落地",
-    "summary": "HPE 宣布取得雲端公司 Vultr 價值 12 億美元的訂單，將在美國數據中心部署 AMD Helios AI Rack。這是 HPE 首張 Helios 商業訂單，系統整合 AMD Instinct GPU、EPYC CPU、網絡及液冷架構；HPE 同時上調長期網絡業務增長預測。\n\n訂單金額不等於收入會即時一次過入帳，實際部署速度仍受晶片、電力和數據中心建設影響。不過，這宗交易顯示大型 AI 基建採購開始出現 NVIDIA 以外的完整機架選項，AMD 與 HPE 正嘗試把競爭由單一晶片推進到整套數據中心系統。",
-    "category": "AI 基建",
-    "publishedAt": "2026-09-30T15:59:13Z",
-    "sourceLabel": "HPE / Reuters",
-    "sourceUrl": "https://www.hpe.com/us/en/newsroom/press-release/2026/09/hpe-secures-its-first-amd-helios-order-in-12-billion-deal-with-vultr.html",
     "level": "breaking",
     "verified": true,
     "active": false
