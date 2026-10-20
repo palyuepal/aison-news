@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-20-openai-fundraise-before-anthropic-ipo",
+    "title": "Reuters：OpenAI 擬加快約 300 億美元融資，估值或逾 1.4 兆美元",
+    "summary": "Reuters 引述兩名知情人士報道，OpenAI 正加快約 300 億美元融資，目標是在 Anthropic 預期 11 月 IPO 前取得投資承諾；本輪估值可能超過 1.4 兆美元，SoftBank、MGX 等現有支持者據報正磋商參與。這些金額與時間表仍是消息人士披露，OpenAI、SoftBank 拒絕評論，Anthropic 及 MGX 未即時回應，並非已完成交易。\n\n報道亦稱 OpenAI 向投資者表示年化收入已達 500 億美元，並預期年底增至 700 億美元；此為公司向投資者提供的數字，尚非公開審計財報。融資提速凸顯前沿 AI 公司爭奪資本及算力資金的壓力，亦令市場更需要比較收入確認方式、基建承諾與估值假設。",
+    "category": "AI 融資與產業",
+    "publishedAt": "2026-10-19T23:18:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say-2026-10-19/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-20-china-response-us-deepseek-ban",
+    "title": "中國外交部回應美國禁用 DeepSeek：反對把國安概念泛化",
+    "summary": "美國 AP 報道，中國外交部發言人毛寧在例行記者會回應美國禁止聯邦民用機構使用 DeepSeek 及相關第三方服務，稱中方反對把國家安全概念泛化、把科技及經貿議題政治化，並會維護中國企業的合法權益。\n\n這是對美國 DHS 命令的官方回應；禁令範圍與移除要求以美國 Federal Register 文件為準，不能把雙方表態當成新的全球禁令。對香港採用者而言，較實際的影響是跨境企業要查清楚政府／受監管客戶的模型來源、第三方服務依賴及採購限制。",
+    "category": "AI 政策與地緣科技",
+    "publishedAt": "2026-10-20T09:36:19Z",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/us-china-deepseek-ai-ban-2bffa5b0131808735280b2c0e6f0d856",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-20-gemini-25-agent-platform-retirement",
     "title": "Google Cloud Gemini 2.5 系列今日到退役日：Agent Platform 用戶須核對遷移",
     "summary": "Google Cloud 官方模型文件列明，Gemini 2.5 Pro、2.5 Flash 及 2.5 Flash-Lite 在 Gemini Enterprise Agent Platform 的支援退役日均為 10 月 20 日。仍以這些模型 ID 部署 Agent 或線上推理的團隊，應核對替代模型、相容性與實際服務狀態。\n\nGoogle 特別註明，這些日期只適用於 Gemini Enterprise Agent Platform；模型其後仍可能經獨立的 Gemini API 使用，不能視作所有 Gemini 2.5 服務同日停用。遷移時應按所在平台與地區核實官方文件，並重新測試輸出、延遲及成本。",
