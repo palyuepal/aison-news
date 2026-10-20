@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-20-github-copilot-model-policy-api",
+    "title": "GitHub Copilot 模型政策 API 正式推出：企業可按組織、團隊及應用管理",
+    "summary": "GitHub 宣布 Copilot 模型政策的 REST API 已正式提供，管理員可在企業、企業團隊、企業應用及組織四個層級，以 GET 查詢或 PATCH 更新模型可用政策。企業亦可按管理模式，把模型控制權下放至組織，或下放至團隊及應用。\n\n這讓大型機構可把 Copilot 模型開放範圍納入自動化管治流程，減少逐項手動設定。實際權限仍取決於企業採用的政策層級和委派方式；管理員應先檢查現行設定，再決定如何批量更新。",
+    "category": "AI 工具與開發",
+    "publishedAt": "2026-10-20T00:57:30Z",
+    "sourceLabel": "GitHub Changelog",
+    "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-20-github-copilot-model-deprecations",
+    "title": "GitHub Copilot 停用六款舊模型：GPT-5.5、Gemini 3.7 Flash 等受影響",
+    "summary": "GitHub 確認，10 月 19 日起在大部分 Copilot 體驗停用六款模型，包括 Gemini 3.7 Flash、GPT-5.5、GPT-5.4、GPT-5.4 mini、GPT-5 mini 及 Grok 4.5。受影響範圍包括 Copilot Chat、行內編輯、問答及 Agent 模式、程式碼補全；GitHub 已列出各款建議替代模型。\n\n依賴指定模型的工作流程或整合應檢查並遷移。Copilot Enterprise 管理員可能還須在模型政策中啟用替代選項，才能在 VS Code 或 github.com 的模型選單看到；舊模型本身毋須手動移除。",
+    "category": "AI 工具與開發",
+    "publishedAt": "2026-10-20T00:57:00Z",
+    "sourceLabel": "GitHub Changelog",
+    "sourceUrl": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-15-openai-rosalind-academic-plan",
     "title": "OpenAI 推 Rosalind Academic Plan：美國大學實驗室可申請免費生命科學 AI 方案",
     "summary": "OpenAI 推出 Rosalind Academic Plan，讓合資格的美國大學實驗室申請最長 12 個月、最多 30 個免費 ChatGPT Business Standard 帳戶，並可在審批後使用專為生命科學研究設計的 GPT-Rosalind 與 Rosalind Workbench。公司稱方案涵蓋藥物與蛋白設計、基因組學、實驗室輔助等研究工作；API 存取目前不包括在內。\n\nGPT-Rosalind 的使用仍受 trusted-access 審批，研究資料預設不會用於訓練模型。這並非通用模型向所有人開放，而是把高風險生物研究能力放在研究機構、身分核實及權限管理之內；實際價值要看獲批範圍、研究產出與安全審查能否同時落地。",
