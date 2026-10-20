@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-20-openai-acquires-orchestra-bio",
+    "title": "OpenAI 收購 Orchestra Bio：把 AI Agent 接入藥物研發流程",
+    "summary": "OpenAI 10 月 20 日確認收購 Orchestra Bio，並將其團隊與技術整合到生命科學平台 Rosalind。Orchestra 的平台讓科學家與 AI Agent 協作追蹤研究計劃、試驗進度及跨部門依賴；OpenAI 表示下一步希望建立協助連結科學發現、研究決策與後續行動的 Agent。\\n\\n這不是藥物已加速上市的證據，也未披露交易條款或具體臨床成果；現階段可確認的是平台與團隊整合方向。對生物醫藥業，焦點由模型解答科學問題進一步延伸到協調藥物開發的長流程工作。",
+    "category": "AI 科研與醫療",
+    "publishedAt": "2026-10-20T17:55:04Z",
+    "sourceLabel": "OpenAI 官方公告",
+    "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-20-ovhcloud-ai-model-early-2027",
+    "title": "OVHcloud 擬 2027 年初推首款 AI 模型：現有 110MW 算力待客",
+    "summary": "OVHcloud 行政總裁 Octave Klaba 向 Reuters 表示，公司預計 2027 年初推出首款 AI 模型，採用 mixture-of-experts 架構；OVHcloud 亦將很快試行以內部資料調校的 OVHai Workspace。Reuters 報道，公司已接通 250MW 雲端容量，其中 140MW 正運作、110MW 可供新客戶使用。\\n\\n這是管理層對產品時程與容量的披露，尚非模型發布或獨立性能測試。若計劃落地，歐洲雲端供應商將由出租算力進一步延伸至模型與工作平台；香港企業可留意其日後可用地區、資料管治與實際成本。",
+    "category": "AI 基建與模型",
+    "publishedAt": "2026-10-20T07:07:01Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/half-ovhcloud-capacity-is-available-ai-model-launching-early-2027-ceo-says-2026-10-20/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-20-openai-fundraise-before-anthropic-ipo",
     "title": "Reuters：OpenAI 擬加快約 300 億美元融資，估值或逾 1.4 兆美元",
     "summary": "Reuters 引述兩名知情人士報道，OpenAI 正加快約 300 億美元融資，目標是在 Anthropic 預期 11 月 IPO 前取得投資承諾；本輪估值可能超過 1.4 兆美元，SoftBank、MGX 等現有支持者據報正磋商參與。這些金額與時間表仍是消息人士披露，OpenAI、SoftBank 拒絕評論，Anthropic 及 MGX 未即時回應，並非已完成交易。\n\n報道亦稱 OpenAI 向投資者表示年化收入已達 500 億美元，並預期年底增至 700 億美元；此為公司向投資者提供的數字，尚非公開審計財報。融資提速凸顯前沿 AI 公司爭奪資本及算力資金的壓力，亦令市場更需要比較收入確認方式、基建承諾與估值假設。",
