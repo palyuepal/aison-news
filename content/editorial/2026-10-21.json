@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-21",
+  "dailyOneLiner": "AI 今日最清楚嘅訊號係：算力仍然有人搶，但資本市場已開始要求每張卡、每份合約同每一美元收入都講得清楚。",
+  "top3Ids": [
+    "2026-10-21-nvidia-china-35b-orders",
+    "2026-10-21-anthropic-80b-loss",
+    "2026-10-21-google-torchtpu-open-source"
+  ],
+  "threeThemes": [
+    {
+      "title": "算力供應由最強晶片轉向可取得晶片",
+      "summary": "中資科技巨頭據報以逾 350 億美元搶購出口合規的 NVIDIA 工作站卡；Google 則用開源 TorchTPU 降低由 CUDA 轉用 TPU 的門檻。",
+      "watch": "留意 NVIDIA 配貨比例、出口規則與 TorchTPU 真實遷移成本。"
+    },
+    {
+      "title": "AI 財務進入拆帳時代",
+      "summary": "Anthropic 巨額會計虧損、Super Micro 強勁出貨與 Elice 上市急跌同日出現，市場不再用單一增長故事理解整條 AI 供應鏈。",
+      "watch": "等 Anthropic 正式招股文件與 Super Micro 完整業績，把會計、現金、毛利及長約分開比較。"
+    },
+    {
+      "title": "AI 走入城市、物流與企業執行層",
+      "summary": "香港 AI City Brain 聚焦首階段監測，Neolix 加碼無人配送，Salesforce 收購 Braze，反映價值由回答問題轉到可監管的真實行動。",
+      "watch": "留意資料治理、人工覆核、事故責任與每次成功任務的總成本。"
+    }
+  ],
+  "biggestChange": "最大變化不是算力需求降溫，而是供應與資本同時分層：企業會搶得到的次優硬件、找跨平台軟件，而投資者開始要求把收入、會計費用、現金消耗及基建承諾逐項拆開。",
+  "watchTomorrow": "首先看 UNIDIR 軍事 AI 論壇能否提出具體人類控制與事故通報框架；其次看 Anthropic 正式文件、NVIDIA 配貨回應及香港 AI City Brain 的招標和資料治理細節。"
+}
