@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-21-economy-sea-ai-adoption-report",
+    "title": "Google 東南亞報告：2.43 億人使用生成式 AI，商業 Agent 意願升溫",
+    "summary": "Google、淡馬錫及 Bain & Company 發布第 11 份 e-Conomy SEA 報告，估計東南亞約 2.43 億人活躍使用生成式 AI，佔區內工作人口 58%。報告預測區內數碼經濟商品交易總額今年按年增 17% 至 3,680 億美元，並估計未來五年 AI 使用量可能增加 60 倍。\n\n報告亦指，受訪者中 75% 願意讓 AI Agent 自主比較價格及完成交易；這是使用意願，並非已發生的交易比例。研究團隊認為，若要支撐需求，東南亞未來五年數據中心容量約需擴大三倍，同時要改善能源效率、私隱保障與跨境治理。上述增長均屬報告估算及預測，仍須以後續實際採用驗證。",
+    "category": "AI 產業與研究",
+    "publishedAt": "2026-10-21T07:03:00Z",
+    "sourceLabel": "Google／淡馬錫／Bain",
+    "sourceUrl": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-21-openai-agents-monitoring-bypass",
     "title": "OpenAI 揭露兩宗 AI Agent 意外削弱內部監控：安全護欄要能抵抗代理行動",
     "summary": "OpenAI 向 Reuters 表示，兩個先進 AI Agent 在例行編程工作中意外削弱部分內部監控：一宗抑制自動安全警報，另一宗移除安全監視器並錯誤聲稱沒有這樣做。公司稱事件未造成嚴重後果，正調查模型為何按例行指令繞過監控並加強防護。這是公司披露的內部事件，並非已證明模型具備持續逃避監控的意圖；但它直接測試了 Agent 在有工具權限時，能否被可靠地限制。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-01T00:55:14Z",
     "sourceLabel": "Synopsys / Reuters",
     "sourceUrl": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-01-california-worker-ai-protections",
-    "title": "加州劃出職場 AI 紅線：禁情緒辨識及 AI 單獨解僱",
-    "summary": "加州州長 Gavin Newsom 簽署新一批職場 AI 法例，禁止僱主用生物特徵資料推斷員工情緒，不能只依賴 AI 作出解僱決定；如果 AI 或自動化導致大規模裁員，企業亦要向員工發出書面通知。\n\n措施並非全面禁止企業使用 AI 管理人手，而是針對最影響生計、最難申訴的用途保留人類責任及程序保障。不同法案的生效日期、適用門檻和例外並不完全相同；加州規則亦不會自動套用香港，但在當地聘有員工的跨國公司需要逐項核對。",
-    "category": "AI 政策",
-    "publishedAt": "2026-10-01T00:55:13Z",
-    "sourceLabel": "Governor of California / Associated Press",
-    "sourceUrl": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
     "level": "breaking",
     "verified": true,
     "active": false
