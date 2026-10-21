@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-21-google-cloud-open-model-maas-retirement",
+    "title": "Google Cloud 16 款開放模型 MaaS 端點今日到退役日：DeepSeek、Qwen 等受影響",
+    "summary": "Google Cloud 官方退役表列明，16 款透過 Gemini Enterprise Agent Platform 的 Model as a Service（MaaS）提供的開放模型端點，預定於 10 月 21 日退役。名單包括 DeepSeek-R1、DeepSeek-V3.2、Qwen3 Coder、Kimi K2 Thinking、Llama 3.3 及 GPT-OSS 20B 等特定 MaaS 模型 ID。Google 表示，端點退役後對該 ID 的 API 請求會失敗。\n\n這項時間表只針對 Google Cloud 託管的指定 MaaS 端點，並非上述開放模型本身全面消失。仍在使用的團隊應核對實際模型 ID，並遷移至替代託管端點，或按官方指引在 Model Garden 自行部署；切換前要重測權限、延遲及輸出。",
+    "category": "AI 模型與 API",
+    "publishedAt": "2026-10-21T01:54:00Z",
+    "sourceLabel": "Google Cloud 文件",
+    "sourceUrl": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-21-xai-naacp-data-center-lawsuit",
     "title": "美法院拒讓 EPA 終止 xAI 數據中心污染訴訟：基建合規風險升級",
     "summary": "密西西比州聯邦法院裁定，EPA 可以介入 NAACP 針對 xAI 數據中心燃氣電廠的訴訟，但無權在未自行採取相關執法行動時單方面終止案件。訴訟指 xAI 在 Southaven 未取得所需許可便興建及營運燃氣發電設施；法院今次只處理 EPA 權限，未裁定 xAI 是否違法。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Google DeepMind / Reuters",
     "sourceUrl": "https://deepmind.google/models/gemini/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-01-instagram-edits-ai-creative-assistant",
-    "title": "Instagram Edits 加入 AI 創作助手：直接用帳戶數據教你點出帖",
-    "summary": "Instagram 在獨立影片編輯 App Edits 加入 AI「creative assistant」，會讀取創作者帳戶的觀看次數、讚好、分享及影片留存等數據，分析哪些內容有效。用戶可詢問近期趨勢、兩條影片表現不同的原因，亦可要求開場、腳本、caption 及熱門音訊建議。\n\n功能提供有限免費用量，Meta 表示重度使用者可訂閱 Meta One 取得更多使用額，但暫未公布各地推出時間、價格及具體上限。工具可把散落的數據變成行動建議，同時亦代表平台開始直接教創作者如何迎合自己的推薦系統，可能令內容更加同質化。",
-    "category": "AI 工具",
-    "publishedAt": "2026-09-30T19:04:40Z",
-    "sourceLabel": "The Verge / Instagram",
-    "sourceUrl": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
-    "level": "update",
     "verified": true,
     "active": false
   }
