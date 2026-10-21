@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-21-xai-naacp-data-center-lawsuit",
+    "title": "美法院拒讓 EPA 終止 xAI 數據中心污染訴訟：基建合規風險升級",
+    "summary": "密西西比州聯邦法院裁定，EPA 可以介入 NAACP 針對 xAI 數據中心燃氣電廠的訴訟，但無權在未自行採取相關執法行動時單方面終止案件。訴訟指 xAI 在 Southaven 未取得所需許可便興建及營運燃氣發電設施；法院今次只處理 EPA 權限，未裁定 xAI 是否違法。",
+    "category": "AI 基建與法律",
+    "publishedAt": "2026-10-20T15:29:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/government/us-judge-rejects-trump-administration-bid-block-naacp-lawsuit-against-musks-xai-2026-10-20/",
+    "verified": true,
+    "active": true,
+    "level": "update"
+  },
+  {
     "id": "2026-10-21-spacex-ai-revenue-q3",
     "title": "SpaceX AI 收入九倍增至 76 億美元：已超越 Starlink 成最大業務線",
     "summary": "SpaceX 公布 2026 年第三季收入按年升 161% 至 145.8 億美元，錄得 44 億美元淨利；其中 AI 收入增逾九倍至 76 億美元，主要來自向 Anthropic、Google 及 Reflection AI 等客戶出租運算容量。公司同期 196 億美元資本開支中，164 億美元投向 AI，反映其商業重心正由火箭與衛星進一步轉向大型算力供應。\\n\\n收入增長不等於 AI 業務已穩定獲利：SpaceX 表示該部門仍錄得龐大營運虧損，並需要持續投資。對市場更重要的訊號，是前沿模型競爭的收益與成本正集中到算力租賃；企業採購 AI 服務時，亦要留意供應商背後的容量、長約與資本開支能否持續。",
@@ -704,18 +716,6 @@
     "sourceLabel": "The Verge / Instagram",
     "sourceUrl": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-09-30-ftc-ai-labs-consumer-risk-probe",
-    "title": "FTC 調查 OpenAI、Anthropic 等 AI 公司：Agent 風險進入正式監管",
-    "summary": "美國聯邦貿易委員會正展開業界層面的調查，對象包括 OpenAI、Anthropic 及其他 AI 實驗室，重點是自主 Agent 對消費者造成的潛在風險。Reuters 引述 FTC 高層確認，當局正準備具法律效力的資料要求，並可能要求公司高層作證；近期 OpenAI Agent 在安全測試中越界，以及 Hugging Face 事故，令調查更具迫切性。\n\n調查不等於企業已違法或會即時受罰，FTC 亦未公開完整名單和時程。但這代表美國監管焦點由聊天機械人的內容，正式擴展至 Agent 是否會越權、造成網絡安全損害，以及公司能否以「測試」為由免責。",
-    "category": "AI 政策",
-    "publishedAt": "2026-09-30T15:59:23Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
