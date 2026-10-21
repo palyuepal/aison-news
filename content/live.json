@@ -1,5 +1,41 @@
 [
   {
+    "id": "2026-10-21-openai-models-google-cloud-model-garden",
+    "title": "OpenAI 模型與 Codex 將進駐 Google Cloud Model Garden",
+    "summary": "OpenAI 與 Google Cloud 宣布合作，計劃把 OpenAI 前沿模型及 Codex Agent 工作流程帶入 Google Cloud Model Garden。企業將可透過 Google Cloud Marketplace 採購，並使用既有的存取控制與數據治理；已承諾 Google Cloud 支出的客戶可用相關額度購買。\n\nOpenAI 指一般供應預計在未來數周推出，模型也將於稍後進入 Google Antigravity 及 Gemini Agent。這是產品整合計劃，並非所有客戶今天已可使用；OpenAI 同時表示，微軟仍是其主要雲端合作夥伴。",
+    "category": "AI 模型與 API",
+    "publishedAt": "2026-10-21T13:43:32Z",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/openai-models-google-cloud/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-21-openai-rosalind-agents-brain-cell-study",
+    "title": "OpenAI 研究：數千個 Agent 用 32 分鐘分析數百萬個小鼠腦細胞資料",
+    "summary": "OpenAI、PerturbAI 與 Scripps Research 使用 GPT-Rosalind 驅動數千個 AI Agent，平行分析涵蓋數百萬個小鼠腦細胞的既有實驗資料，並在 32 分鐘內把基因擾動、細胞反應及相關文獻連結成可供研究員探索的推理圖譜。團隊已公開圖譜，讓其他科學家檢視及提出後續實驗。\n\nAgent 找到包括兩個疾病相關基因在小腦細胞中的不同影響，以及膽固醇調控與神經退化的潛在線索。這些是值得測試的研究假說，不是已證實的人類疾病機制或療法；論文與資料仍須經獨立研究及實驗驗證。",
+    "category": "AI 科研與醫療",
+    "publishedAt": "2026-10-21T13:43:31Z",
+    "sourceLabel": "OpenAI 研究",
+    "sourceUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-21-chatgpt-ads-26-country-expansion",
+    "title": "ChatGPT Ads 擴至 26 個新市場，覆蓋全球 89 個國家",
+    "summary": "OpenAI 宣布把 ChatGPT Ads 擴展至另外 26 個國家，總覆蓋市場增至 89 個，新增市場包括阿根廷、智利、尼日利亞、南非、柬埔寨、孟加拉及巴基斯坦。公司稱平台推出八個多月以來，已有逾 10 萬名廣告主使用；廣告主可經技術夥伴或 Ads Manager 自助投放。\n\nOpenAI 表示廣告只會出現在 Free 及 Go 方案，Plus、Pro 與 Enterprise 維持無廣告；廣告會標示並與回答分開，對話內容不會出售予廣告主。這些是公司公布的產品政策及使用數字，實際市場成效和用戶體驗仍待觀察。",
+    "category": "AI 商業",
+    "publishedAt": "2026-10-21T13:43:30Z",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-21-nvidia-openshell-agent-security-architecture",
     "title": "NVIDIA 推出 OpenShell 參考架構：由晶片層監察及限制 AI Agent",
     "summary": "NVIDIA 發表 OpenShell 參考架構，把 Vera Rubin 推理基建、Vera CPU 上的 Agent 執行環境，以及 BlueField-4 DPU 的 Sentry 安全軟件結合，讓企業在部署 AI Agent 時設定隔離邊界、持續監察行為及執行政策。NVIDIA 表示，參考架構現已提供，並支援主要企業作業系統及邊緣裝置。\n\nNVIDIA 稱，若 Agent 試圖越過軟件邊界，Sentry 可在晶片層隔離及停止其行動；這屬廠商對架構能力的描述，實際防護效果仍待各部署環境驗證。Anthropic、AWS、微軟及多間資安與企業軟件公司正參與相關整合，但並不代表所有合作產品已全面推出。",
@@ -679,42 +715,6 @@
     "publishedAt": "2026-10-01T13:02:31Z",
     "sourceLabel": "Proofpoint / Reuters",
     "sourceUrl": "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-01-us-senate-thune-ai-safeguards-law",
-    "title": "美國參院領袖倡把 AI 安全承諾寫入法律：自律框架或走向立法",
-    "summary": "美國參議院多數黨領袖 John Thune 表示，支持大型 AI 公司在白宮峰會作出的自願安全承諾，但希望國會把部分保障「寫入法律」。這是峰會後首次由共和黨參院領袖明確推動立法跟進，反映黨內對完全依賴業界自律仍有保留。\n\n目前未有法案文本、涵蓋範圍或表決時間表，亦不代表承諾已具法律效力。真正影響要看國會會否要求外部審查、事故披露及違規後果，以及最終規則會否與特朗普政府偏向低干預的路線出現衝突。",
-    "category": "AI 政策",
-    "publishedAt": "2026-10-01T10:00:12Z",
-    "sourceLabel": "Axios",
-    "sourceUrl": "https://www.axios.com/2026/10/01/senate-ai-artificial-intelligence-trump",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-01-japan-chiba-ai-datacenter-framework",
-    "title": "日本推 150 億美元 AI 數據中心：千葉項目規劃 400MW 算力",
-    "summary": "日本最大發電商 JERA、Dell Technologies 及英國 AI 基建開發商 RHAELM 簽署合作備忘錄，計劃建立可在日本全國複製的 AI 基建開發框架，首個項目是在千葉興建價值 150 億美元、400MW 級超大型 AI 數據中心。JERA 會提供發電站旁土地及長期供電，RHAELM 負責開發、融資與營運，Dell 提供機架級 AI 基建；Apollo 擬作策略投資及融資夥伴。\n\n這仍是 MoU 及發展計劃，不是已落成的數據中心。項目目標在 2028 年分階段投入運作，2029 年才達到全部 400MW 容量。它反映 AI 基建競爭開始把電力、土地、融資與整套運算系統綁成同一個長期項目，而非單純採購 GPU。",
-    "category": "AI 基建",
-    "publishedAt": "2026-10-01T07:03:01Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/energy/jera-teams-up-with-dell-rhaelm-ai-infrastructure-development-japan-2026-10-01/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-01-aws-synopsys-billion-ip-deal",
-    "title": "AWS 簽逾 10 億美元 Synopsys 授權：自研 AI 晶片再加速",
-    "summary": "Amazon Web Services 與 Synopsys 簽訂逾 10 億美元多年協議，AWS 將取得針對特定晶片類型優化的 silicon IP，用於加快自研晶片及雲端基建工程。AWS 已自行設計 Graviton CPU 與 Trainium AI 晶片，但雙方未披露今次授權會落在哪一款產品。\n\n協議同時讓 Synopsys 擴大「授權加版稅」業務模式，並採用 AWS 運算、儲存及 Amazon Bedrock 開發 AI 應用。今次交易的重點不是單一模型，而是雲端公司正把晶片設計能力進一步內部化，以控制 AI 算力成本、供應與效能。",
-    "category": "AI 晶片",
-    "publishedAt": "2026-10-01T07:03:00Z",
-    "sourceLabel": "Synopsys / Reuters",
-    "sourceUrl": "https://news.synopsys.com/2026-09-30-Synopsys-and-Amazon-Announce-Strategic%2C-Multi-year-IP-Agreement-for-Custom-Silicon-Collaboration-Also-Extends-to-Cloud-and-AI-Powered-Engineering",
     "level": "breaking",
     "verified": true,
     "active": false
