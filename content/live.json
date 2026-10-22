@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-22-google-veo-31-preview-api-retirement",
+    "title": "Google：Gemini API 的 Veo 3.1 預覽端點定於今日停用",
+    "summary": "Google 開發者文件提醒，Gemini API 中的 Veo 3.1 Preview 三個影片生成端點，包括標準、Fast 及 Lite 版本，已被棄用，並定於 10 月 22 日停用。仍使用相關模型識別碼的應用程式，可能面臨服務中斷。\n\nGoogle 建議開發者遷移至 Gemini Omni Flash（gemini-omni-1.1-flash），或 Gemini Enterprise Agent Platform 提供的正式版模型。官方停用時間表亦註明，表列日期一般是最早可能停用日；現階段不應推斷所有端點已即時停止運作。",
+    "category": "AI 模型與 API",
+    "publishedAt": "2026-10-22T10:21:44Z",
+    "sourceLabel": "Google AI for Developers",
+    "sourceUrl": "https://ai.google.dev/gemini-api/docs/video.md?example=dialogue",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-21-openai-models-google-cloud-model-garden",
     "title": "OpenAI 模型與 Codex 將進駐 Google Cloud Model Garden",
     "summary": "OpenAI 與 Google Cloud 宣布合作，計劃把 OpenAI 前沿模型及 Codex Agent 工作流程帶入 Google Cloud Model Garden。企業將可透過 Google Cloud Marketplace 採購，並使用既有的存取控制與數據治理；已承諾 Google Cloud 支出的客戶可用相關額度購買。\n\nOpenAI 指一般供應預計在未來數周推出，模型也將於稍後進入 Google Antigravity 及 Gemini Agent。這是產品整合計劃，並非所有客戶今天已可使用；OpenAI 同時表示，微軟仍是其主要雲端合作夥伴。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-01T13:02:32Z",
     "sourceLabel": "Financial Times",
     "sourceUrl": "https://www.ft.com/content/11502a49-5319-4df5-95ea-2d76669c31a6",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-01-ta419-ai-policy-phishing",
-    "title": "黑客冒充 AI 政策專家：假合作邀請可繞過 MFA 竊取帳戶",
-    "summary": "Proofpoint 披露，中國相關威脅組織 TA419 以 AI 政策合作、出口管制報告等名義，冒充前白宮官員、經濟學者及 Anthropic 高層，針對美國與日本智庫、大學、國防承包商及法律界人士發動精準釣魚攻擊。Reuters 獨立確認其中一名目標收到冒充前白宮官員 Lynne Parker 的邀請，但及時識破。\n\n攻擊會先以正常電郵建立信任，再把目標帶到仿冒 OneDrive／Microsoft 365 登入頁。Proofpoint 指相關 adversary-in-the-middle 工具可在真正登入流程中攔截密碼、MFA 驗證及工作階段 cookie；目前未公布有多少帳戶實際失守。中國相關歸因來自 Proofpoint 對惡意程式、基建及目標模式的分析，不是司法裁定。",
-    "category": "AI 安全",
-    "publishedAt": "2026-10-01T13:02:31Z",
-    "sourceLabel": "Proofpoint / Reuters",
-    "sourceUrl": "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
     "level": "breaking",
     "verified": true,
     "active": false
