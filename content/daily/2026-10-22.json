@@ -1,0 +1,476 @@
+[
+  {
+    "id": "2026-10-22-meta-muse-class-c-capex",
+    "rank": 1,
+    "title": "Meta 把 Muse 放到核心、增發無投票權股份：AI 擴張開始重寫資本與控制權",
+    "excerpt": "Meta 季度資本開支達 349.1 億美元，計劃 2027 年發行 Class C 無投票權股份，為收購和人才留任提供新籌碼。",
+    "summary": "Meta 季度資本開支達 349.1 億美元，計劃 2027 年發行 Class C 無投票權股份，為收購和人才留任提供新籌碼。",
+    "quickTake": "Meta 10 月 21 日公布第三季收入 646.0 億美元、按年升 26%，同季資本開支達 349.1 億美元，自由現金流則錄得 21.2 億美元負數。公司會在 2027 年 1 月以實質一拆二方式發行無投票權 Class C 股份，用於收購與人才留任，同時維持 Mark Zuckerberg 控制權；Muse 在美加六星期已有逾 1,000 萬個帳戶。",
+    "category": "AI 商業與資本",
+    "tags": [
+      "Meta",
+      "Muse",
+      "AI Agent",
+      "資本開支",
+      "公司治理"
+    ],
+    "date": "2026-10-22",
+    "readTime": 4,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Meta 把全年資本開支指引收窄至 1,350 億至 1,450 億美元，並預期 AI 業務 2027 年開始帶來增量收入。公司同時表示會把 Reality Labs 資源重新配置到 AI，顯示 Muse 不再只是產品實驗，而是下一個主要平台押注。",
+    "reportingContext": "財務數字及 Class C 安排來自 Meta 官方業績；Muse 用戶數與未來收入預期屬公司披露及管理層預測。無投票權股份尚待 2027 年實施，並不代表已完成任何收購。",
+    "deepDive": "Meta 正用成熟廣告業務產生的現金，補貼高成本 Agent 網絡與算力；Class C 股份則令公司可用股票做交易和薪酬，而不稀釋創辦人的投票控制。這把 AI 競爭由模型跑分推到資本結構、人才市場和公司治理。",
+    "whyImportant": "市場開始接受超大型 AI 開支，但條件是要見到產品增長及變現路徑。Meta 若成功把 Muse 變成交易與商業入口，社交平台的廣告、搜尋和電商流量分配都會重排。",
+    "whatToWatch": "留意 Muse 何時及如何收費、Class C 股份的實際用途、2027 年 AI 增量收入，以及第三方企業對 Muse 權限和私隱的限制會否拖慢採用。",
+    "hkImpact": [
+      "香港品牌要開始測試 Muse 等 Agent 如何發現產品、比較價格及完成交易，SEO 以外要準備可被 Agent 讀取的商品與庫存資料。",
+      "投資者應同時看 AI 用戶增長、自由現金流和投票權安排，唔好只用收入增長合理化所有資本開支。",
+      "本地企業接入 Meta Agent 前，要把客戶資料、付款權限與人工覆核拆清楚，避免把聊天入口直接等同可自主執行。"
+    ],
+    "take": "已確認的是業績、資本開支、Muse 帳戶數與 Class C 計劃；『Muse 會服務數十億人』仍屬管理層目標。AIson 判斷，下一階段最值得看的是 Agent 能否在不犧牲信任下，將 Meta 流量真正變成交易收入。",
+    "sourceLabel": "Meta 官方業績",
+    "sourceUrl": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+    "sourceType": "公司文件",
+    "references": [
+      {
+        "label": "Reuters 交叉核實",
+        "url": "https://www.reuters.com/business/meta-issue-new-class-shares-it-tightens-ai-spending-forecast-2026-10-21/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "Muse 增長與資本配置方向已明確，但變現、企業權限及治理影響仍待實際數據。",
+    "aisonScore": 9.8,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 5,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-22-anthropic-claude-duet",
+    "rank": 2,
+    "title": "Claude Duet 由等你落指令變成主動報告：Anthropic 正面加入常駐 Agent 戰",
+    "excerpt": "Claude Duet 會監察已連接的應用、每日主動彙報待辦，並可處理會議、預測、網頁應用及付款。",
+    "summary": "Claude Duet 會監察已連接的應用、每日主動彙報待辦，並可處理會議、預測、網頁應用及付款。",
+    "quickTake": "Anthropic 10 月 21 日發布 Claude Duet 研究預覽，這個獨立 Agent 會監察已連接應用、每日主動提出待處理事項，而唔係等用戶逐次提問。它可安排會議、建立財務預測與網頁應用，並透過 Stripe Link 或 Shopify Shop Pay 購物；首批只開放美國 Pro、Max 用戶輪候。",
+    "category": "AI Agent",
+    "tags": [
+      "Anthropic",
+      "Claude Duet",
+      "AI Agent",
+      "自動化",
+      "付款"
+    ],
+    "date": "2026-10-22",
+    "readTime": 4,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Duet 以 Opus 5.5 為核心，支援 Claude Marketplace 超過 6,000 個連接器，包括 Gmail 和 Slack；iOS、Android 及 claude.ai 均會提供。研究預覽沿用現有計劃用量限制，香港未列入首批地區。",
+    "reportingContext": "功能、地區及付費限制由 Anthropic 公告並由 Reuters 報道；實際可靠度、誤操作率與審批流程仍未有獨立長期數據。『主動』代表系統持續讀取訊號，亦擴大私隱與權限面。",
+    "deepDive": "聊天機械人競爭已由回答品質轉到誰能長期保存狀態、監察工作流及代表用戶交易。真正壁壘會是連接器、權限模型、審批記錄和錯誤復原，而唔只係底層模型。",
+    "whyImportant": "Duet 把 Anthropic 由企業模型供應商推向日常工作入口，直接挑戰 OpenAI Dots 和 Meta Muse。Agent 一旦掌握日程、通訊及付款，平台鎖定與安全風險都會同步上升。",
+    "whatToWatch": "留意香港開放時間、每項高風險行動是否預設要確認、跨 6,000 個連接器的權限撤銷，以及真實任務完成率與錯誤賠償機制。",
+    "hkImpact": [
+      "香港用戶暫時未屬首批，毋須追住輪候；可先整理哪些郵件、日曆與付款資料絕對不能交予常駐 Agent。",
+      "中小企試用時應先限於草擬、彙報和低額任務，付款、刪除及對外發送要保留逐次批准。",
+      "開發者要把連接器權限、審計紀錄及撤銷流程當產品核心，唔好只測一個漂亮 demo。"
+    ],
+    "take": "已確認的是研究預覽範圍與連接能力；它能否安全地長期代辦仍未證實。AIson 判斷，明日以後 Agent 勝負關鍵會是『幾少錯、出錯點收科』，而唔係『識做幾多事』。",
+    "sourceLabel": "Anthropic 官方公告",
+    "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Reuters 交叉核實",
+        "url": "https://www.reuters.com/technology/anthropic-unveils-claude-duet-ai-agent-app-2026-10-21/"
+      }
+    ],
+    "actionVerdict": "wait",
+    "actionReason": "香港未在首批，且常駐監察與付款涉及高權限，宜等地區開放及安全數據。",
+    "aisonScore": 9.7,
+    "audienceImpact": {
+      "worker": 5,
+      "sme": 5,
+      "creator": 4,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-22-php-ai-discovered-critical-flaws",
+    "rank": 3,
+    "title": "AI 發現 PHP 兩個致命漏洞：政府網站落線，防守速度第一次被推到 AI 節奏",
+    "excerpt": "兩個 PHP 遠端執行漏洞促使歐美政府網站暫時下線；修補已發布，公開可見的潛在受影響實例達數以千萬計。",
+    "summary": "兩個 PHP 遠端執行漏洞促使歐美政府網站暫時下線；修補已發布，公開可見的潛在受影響實例達數以千萬計。",
+    "quickTake": "AI 輔助研究發現兩個評分 9.2 的 PHP 遠端程式碼執行漏洞，10 月 21 日促使美歐多個政府及機構網站暫時下線更新。PHP 維護者已發布修補；OpenAI 表示 GPT-5.6 Sol 參與發現其中一個漏洞，Wiz 亦獨立報告兩個問題，現時重點是立即盤點及升級。",
+    "category": "AI 安全",
+    "tags": [
+      "PHP",
+      "OpenAI",
+      "網絡安全",
+      "漏洞",
+      "AI Agent"
+    ],
+    "date": "2026-10-22",
+    "readTime": 4,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "CVE-2026-109618 與 CVE-2026-109619 可造成未授權遠端執行；CERT-EU、FBI 等機構要求無法即時修補的網站先下線。OpenAI 稱過去兩個月已聯同 PHP 維護者、Wiz、Cloudflare 等協調修補與披露，並提供版本檢查工具。",
+    "reportingContext": "漏洞、修補與政府下線由官方通告及 AP 證實；潛在暴露量不等同所有主機均可被利用。各保安公司對是否已出現實際攻擊的觀察一度不同，不能把『未見大規模入侵』當成安全。",
+    "deepDive": "AI 把漏洞發現速度推快，但披露、修補、舊版本回補和營運商更新仍受人力與供應鏈限制。這次事件展示真正瓶頸由『找不找到』轉成『能否在攻擊者複製前完成全球修補』。",
+    "whyImportant": "PHP 支撐大量網站及 CMS，漏洞影響面遠超單一 AI 產品。它亦證明前沿模型可為防守方創造時間窗，但同一能力一旦普及，攻擊者亦會更快生成利用工具。",
+    "whatToWatch": "追蹤在野利用證據、主機商修補率、舊版 PHP 回補情況，以及 OpenAI 提出的分階段披露框架能否被維護者和政府採用。",
+    "hkImpact": [
+      "香港企業應立即盤點 PHP 版本、雲端映像與外判網站；不能即時修補的公開服務要隔離或暫停，而唔係等供應商主動通知。",
+      "中小企要向網站公司索取已升級版本、備份與入侵檢查證據，避免只收到一句『已處理』。",
+      "開發者應把組件清單、版本檢查和緊急下線流程自動化，因為下一次 AI 發現的高危漏洞反應時間只會更短。"
+    ],
+    "take": "已確認的是漏洞、修補及多個網站下線；全面攻擊規模仍在變化。AIson 判斷，這不是單純『AI 做到安全研究』的勝利，而是所有企業要把 24 小時緊急修補變成基本能力。",
+    "sourceLabel": "OpenAI／PHP Foundation",
+    "sourceUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "AP 交叉核實",
+        "url": "https://apnews.com/article/php-websites-fbi-europe-vulnerability-a0af9576808a0963efca8df14d4b5183"
+      },
+      {
+        "label": "CERT-EU Advisory 2026-018",
+        "url": "https://cert.europa.eu/publications/security-advisories/2026-018/pdf"
+      }
+    ],
+    "actionVerdict": "try-now",
+    "actionReason": "修補已發布且影響嚴重，所有有 PHP 資產的團隊應即時盤點、升級及驗證。",
+    "aisonScore": 9.7,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-22-walmart-agent-shopping-gateway",
+    "rank": 4,
+    "title": "Walmart 開 Agent Gateway：AI 可以代買，但要有獨立身份、限額與紀錄",
+    "excerpt": "Walmart 推 Agent Profiles、Agent Gateway 及專用條款，讓第三方 Agent 在清晰授權和購買限額下代客落單。",
+    "summary": "Walmart 推 Agent Profiles、Agent Gateway 及專用條款，讓第三方 Agent 在清晰授權和購買限額下代客落單。",
+    "quickTake": "Walmart 10 月 21 日公布 Agent Profiles、Walmart Agent Gateway 及 AI Agent 專用條款，讓顧客透過 Muse、ChatGPT、Gemini 等工具購物。Agent 會有獨立身份及購買紀錄，顧客可設定付款方式、地址、單次或累計限額；Profiles 預計一個月內推出。",
+    "category": "AI 商業與電商",
+    "tags": [
+      "Walmart",
+      "AI Agent",
+      "電商",
+      "付款",
+      "Agentic Commerce"
+    ],
+    "date": "2026-10-22",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Walmart 正把 Agent 由普通顧客登入中分離，並提供專用閘道與規則，目標是令代理行為可辨識、可限制及可追溯。它選擇擁抱第三方購物 Agent，與部分平台封鎖自動購物形成鮮明對比。",
+    "reportingContext": "產品與推出時間由 Walmart 官方確認；目前主要服務 Walmart／Sam's Club 生態，香港可用性、跨境物流與退款責任未有公布。",
+    "deepDive": "Agentic commerce 最需要的不是另一個聊天框，而是機器身份、委託範圍、付款授權和爭議處理標準。Walmart 的做法可能成為商戶接納 Agent 的參考接口。",
+    "whyImportant": "當大型零售商正式為 Agent 建身份層，電商流量入口可能由搜尋頁轉向自動代理；商戶能否被 Agent 理解及安全落單，會變成新的分發能力。",
+    "whatToWatch": "留意實際 API、退款與錯買責任、廣告排序透明度，以及其他零售商會採用開放閘道還是繼續封鎖。",
+    "hkImpact": [
+      "香港零售商應預備結構化商品、庫存、配送及退貨資料，令 Agent 可以準確比較，而唔係只為人設計網頁。",
+      "消費者使用代購 Agent 時要設低限額和逐單通知，尤其跨境運費、替代貨品及退貨條款容易出錯。",
+      "支付、電商 SaaS 及物流公司可把 Agent 身份與授權記錄做成服務，呢層基建比單一聊天功能更有長期價值。"
+    ],
+    "take": "已確認的是 Walmart 會推出身份、閘道與條款；交易量及責任爭議仍未經大規模驗證。AIson 判斷，購物 Agent 下一個標準戰會圍繞『誰可代表誰、可以花幾多、出錯由誰埋單』。",
+    "sourceLabel": "Walmart 官方公告",
+    "sourceUrl": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "框架值得參考，但功能仍未全面推出，香港商戶應先整理資料與授權流程。",
+    "aisonScore": 9.2,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 4,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-22-recursive-flint-local-coding-model",
+    "rank": 5,
+    "title": "Flint 在手提電腦跑 Agentic Coding：更矚目係 AI 幫手造出 AI",
+    "excerpt": "Recursive 發布 40B／2.5B active 的開放權重編程模型 Flint，稱大部分研發流程由 Eureka Machine 協助完成。",
+    "summary": "Recursive 發布 40B／2.5B active 的開放權重編程模型 Flint，稱大部分研發流程由 Eureka Machine 協助完成。",
+    "quickTake": "Recursive 10 月 21 日推出首個模型 Flint：40B 參數但每次只啟動約 2.5B 的 MoE 編程模型，可在高階手提電腦本地運行，採 Apache 2.0 開放權重。公司稱其 Eureka Machine 參與架構、訓練方法與晶片優化，小團隊不足四個月完成；跑分與研發貢獻暫主要由公司自述。",
+    "category": "AI 模型與開發",
+    "tags": [
+      "Recursive",
+      "Flint",
+      "開放權重",
+      "編程模型",
+      "本地 AI"
+    ],
+    "date": "2026-10-22",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Flint 以稀疏 MoE 降低每 token 運算，面向調查程式庫、修 bug、寫功能和測試。模型權重已公開，外界可以自行重跑；但『大部分由 AI 建成』涉及流程歸因，仍欠完整技術報告與獨立審核。",
+    "reportingContext": "模型、授權及參數可核實；速度與 benchmark 多屬供應商報告。Recursive self-improvement 在此仍是人類監督下的自動研究系統，不等同模型完全自主提升自己。",
+    "deepDive": "若自動研究系統能重複壓縮模型研發工期，小型團隊會更快追上大實驗室的專用模型；但評估、資料來源與安全審計亦更難跟上。",
+    "whyImportant": "它同時推動兩條線：私隱友好的本地編程 Agent，以及用 Agent 加速模型研發。兩者都可能壓低企業使用編程 AI 的邊際成本。",
+    "whatToWatch": "等待獨立 benchmark、長上下文穩定性、Mac 與 NVIDIA 裝置實測，以及 Recursive 公布 Eureka Machine 的可重現方法與安全邊界。",
+    "hkImpact": [
+      "香港開發團隊可用非敏感倉庫做離線測試，比較 Flint 與雲端模型的任務成功率、耗電和人工覆核時間。",
+      "處理客戶源碼的軟件公司多一個本地部署選項，但要先做授權、依賴與生成代碼安全掃描。",
+      "大學與初創可研究 AI 協助模型研發，但應保留完整實驗紀錄，避免把公司口號當作已證實的遞迴自我改進。"
+    ],
+    "take": "已確認的是模型公開及本地運行定位；自動研發成效仍需獨立重現。AIson 判斷，Flint 真正價值要由『完成一個真實 repo 任務要幾多總時間與電力』來驗證。",
+    "sourceLabel": "TechCrunch／Recursive",
+    "sourceUrl": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+    "sourceType": "可靠媒體",
+    "references": [],
+    "actionVerdict": "try-now",
+    "actionReason": "權重已公開，適合用非關鍵程式庫做可回退的本地實測。",
+    "aisonScore": 9.0,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-22-google-coral-npu-open-standard",
+    "rank": 6,
+    "title": "Google 完成 32-bit Coral NPU 開放架構：Edge AI 由單一晶片變成可攜標準",
+    "excerpt": "Google 公開完整 RTL 與 IREE／MLIR 編譯器 1.0，Synaptics 同步推出 400 GOPS MCU 及開發板。",
+    "summary": "Google 公開完整 RTL 與 IREE／MLIR 編譯器 1.0，Synaptics 同步推出 400 GOPS MCU 及開發板。",
+    "quickTake": "Google 10 月 21 日宣布完成 Coral NPU 32-bit RISC-V 架構，公開完整 RTL、最高 1 TOPS 的 Matrix Execution Unit，以及 IREE／MLIR 編譯器 1.0。Synaptics 同步推出 400 GOPS Astra SR200 MCU 與新開發板，目標是同一模型由毫瓦級穿戴裝置搬到 1 TOPS Linux 板。",
+    "category": "AI 晶片與 Edge AI",
+    "tags": [
+      "Google",
+      "Coral NPU",
+      "RISC-V",
+      "Edge AI",
+      "開源硬件"
+    ],
+    "date": "2026-10-22",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Google 將硬件架構、編譯器、模擬器與參考 FPGA 串起，支援 JAX、PyTorch、TensorFlow 經標準表示落到 Coral。GlobalFoundries 與 VeriSilicon 參與實作與驗證，令項目由研究設計走向商用晶片。",
+    "reportingContext": "規格、代碼與首批硬件由官方公布；1 TOPS、10mW 等屬目標或特定配置，不能直接推算所有模型的真實性能與耗電。",
+    "deepDive": "Edge AI 最大摩擦來自每間晶片廠都有不同工具鏈。若 Coral 能把模型、編譯器與硬件接口標準化，裝置商可減少重寫成本，也更容易更換供應商。",
+    "whyImportant": "開放 NPU 標準可能削弱封閉工具鏈的鎖定，並令語音、視覺與小型 transformer 長期在裝置上運行，減少雲端延遲和資料外傳。",
+    "whatToWatch": "留意第三方晶片採用數、64-bit 與 CHERI 安全路線、開發板實測，以及常見模型有幾多運算仍要跌回 CPU。",
+    "hkImpact": [
+      "香港 IoT、零售硬件及機械人團隊可用開發板驗證離線語音與視覺，尤其適合網絡不穩或資料敏感場景。",
+      "硬件採購要看工具鏈可攜性和供應商替換成本，唔好只比較 TOPS 數字。",
+      "本地院校可把 RISC-V、MLIR 和 Edge 模型優化串成實作課題，貼近晶片與 AI 交叉人才需求。"
+    ],
+    "take": "已確認的是架構完成、代碼公開與商用硬件；生態規模仍未成形。AIson 判斷，下一步關鍵是有冇第二、第三間晶片廠用同一工具鏈推出產品。",
+    "sourceLabel": "Google Developers Blog",
+    "sourceUrl": "https://developers.googleblog.com/unifying-edge-ai-how-coral-npus-open-standard-brings-portable-energy-viable-intelligence-from-model-to-silicon/",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "try-now",
+    "actionReason": "開發板及工具鏈已可用，適合有 Edge AI 需求的團隊做小型原型。",
+    "aisonScore": 8.9,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-22-anthropic-claude-security-continuous",
+    "rank": 7,
+    "title": "Claude Security 由一次掃描變成持續追蹤：漏洞會自動關閉，翻發再重開",
+    "excerpt": "Claude Security Enterprise 公測加入持續重掃、修補追蹤、威脅模型、API、Webhook 及 MCP。",
+    "summary": "Claude Security Enterprise 公測加入持續重掃、修補追蹤、威脅模型、API、Webhook 及 MCP。",
+    "quickTake": "Anthropic 10 月 21 日更新 Claude Security，連接程式庫後會先做深度基準掃描，再隨代碼改動持續重掃。系統可在修補落地後自動標記已解決，漏洞翻發就重新開啟，並提供 API、Webhook、MCP 與可編輯威脅模型；目前屬 Claude Enterprise 公測。",
+    "category": "AI 安全與開發",
+    "tags": [
+      "Anthropic",
+      "Claude Security",
+      "AppSec",
+      "MCP",
+      "DevSecOps"
+    ],
+    "date": "2026-10-22",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "更新把 AI 安全掃描嵌入程式碼變更週期，亦容許團隊加入部署方式、政策與控制等上下文，減少單看源碼的誤判。多 repo 項目可用來找跨服務信任問題。",
+    "reportingContext": "功能與公測資格已公布；Anthropic 稱公測以來辨識逾百萬個漏洞，這是公司統計，未交代真陽性、嚴重度與獨立驗證比例。",
+    "deepDive": "AppSec 的痛點不是發現一次，而是判斷是否真正修好、日後有否翻發，以及怎樣在開發流程內追責。持續 Agent 若能維持上下文，價值會高過單次報告。",
+    "whyImportant": "安全工具正由靜態掃描器變成長期代理，會改變漏洞處理、工程責任和採購標準；同時模型誤判也可能造成警報疲勞或錯誤修補。",
+    "whatToWatch": "要求 Anthropic 公布精確率、誤報率、不同語言覆蓋和資料保留，並觀察 AI 建議修補是否引入新漏洞。",
+    "hkImpact": [
+      "香港軟件公司可先在非核心 repo 試用，對照現有 SAST、人工審計及實際修補時間。",
+      "受監管企業要先確認源碼處理位置、存取權和審計紀錄，再接駁 GitHub Enterprise 或內部 repo。",
+      "開發者唔應直接合併 AI 修補；測試、code review 和安全簽核仍然要保留。"
+    ],
+    "take": "已確認的是持續掃描與整合功能；安全成效的獨立數據不足。AIson 判斷，值得看的 KPI 是平均修補時間與翻發率，而唔係累計『找到幾多漏洞』。",
+    "sourceLabel": "Anthropic 官方公告",
+    "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "功能整理與官方支援文件",
+        "url": "https://www.testingcatalog.com/claude-security-gets-continuous-scans-and-fix-tracking/"
+      }
+    ],
+    "actionVerdict": "try-now",
+    "actionReason": "有 Enterprise 資格的團隊可在低風險 repo 做平行測試，但要保留人工審核。",
+    "aisonScore": 8.7,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-22-microsoft-sovereign-cloud-controls",
+    "rank": 8,
+    "title": "Microsoft Sovereign Cloud 加控制台與外部金鑰：AI 合規由『放邊度』擴展到『邊個可操作』",
+    "excerpt": "Microsoft 將推出 Sovereign Control Panel、歐洲人員監督、不可竄改操作紀錄及客戶持有根金鑰。",
+    "summary": "Microsoft 將推出 Sovereign Control Panel、歐洲人員監督、不可竄改操作紀錄及客戶持有根金鑰。",
+    "quickTake": "Microsoft 10 月 20 日公布 Sovereign Cloud 下一階段：Ignite 會公測 Sovereign Control Panel，歐盟及 EFTA 分階段加入 Data Guardian 和不可竄改 Production Touch Ledger，外部根金鑰管理亦已正式可用。私有雲部分支援連線或斷線運作，目標是讓敏感 AI 工作負載留在客戶控制環境。",
+    "category": "企業 AI 與雲端",
+    "tags": [
+      "Microsoft",
+      "Azure",
+      "Sovereign Cloud",
+      "資料主權",
+      "合規"
+    ],
+    "date": "2026-10-22",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "48h",
+    "whatHappened": "Microsoft 將資料位置、工程師操作、加密金鑰、離線持續運作與伙伴營運模式放在同一套主權框架內。部分功能只先供歐洲，香港並未獲同等地域承諾。",
+    "reportingContext": "產品狀態及地域由 Microsoft 官方公布；『主權』不是單一認證，不同司法管轄區仍要按合約、技術與實際營運逐項判斷。",
+    "deepDive": "Agent 會代表企業讀資料和執行動作，治理問題已由資料 residency 擴展到模型、運維人員、金鑰和失聯時的控制權。大型雲商正把這些要求產品化。",
+    "whyImportant": "受監管行業若能在公有、私有與伙伴雲之間分級部署 AI，採用門檻會下降；但同時亦可能加深對單一雲端治理工具的依賴。",
+    "whatToWatch": "留意香港或亞太 Data Guardian 類功能、Control Panel 實際覆蓋、審計資料可否匯出，以及離開 Azure 時的可攜性。",
+    "hkImpact": [
+      "香港金融、醫療及公共機構應把人員操作、金鑰持有與離線延續寫入招標要求，唔好只問資料中心位置。",
+      "企業可按敏感度分層部署，但要測試跨公私雲的身份、日誌和災難復原是否真係一致。",
+      "本地雲端伙伴有機會提供行業合規與私有環境服務，但需證明獨立營運、審計及退出能力。"
+    ],
+    "take": "已確認的是產品路線與部分功能狀態；香港覆蓋仍未明。AIson 判斷，真正主權要用可驗證控制和退出測試證明，而唔係在服務名稱加一個 Sovereign。",
+    "sourceLabel": "Microsoft 官方博客",
+    "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "功能重要但亞太與香港覆蓋未清楚，應先更新採購清單並等地域細節。",
+    "aisonScore": 8.5,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-22-openai-brockman-pac-regulation",
+    "rank": 9,
+    "title": "OpenAI 高層口頭支持安全規管，個人資助 PAC 卻反對拖慢 AI：政策戰進入選舉資金層",
+    "excerpt": "Greg Brockman 夫婦向 Leading the Future 捐 2,500 萬美元；該組織正介入至少 48 場國會選舉並反對限制 AI 發展。",
+    "summary": "Greg Brockman 夫婦向 Leading the Future 捐 2,500 萬美元；該組織正介入至少 48 場國會選舉並反對限制 AI 發展。",
+    "quickTake": "Reuters 10 月 21 日核實，OpenAI 總裁 Greg Brockman 與妻子個人向政治組織 Leading the Future 捐款 2,500 萬美元；該組織正介入至少 48 場美國國會選舉，反對會『不當限制或拖延』AI 的規管。Brockman 同時代表 OpenAI 簽署自願安全承諾，OpenAI 強調捐款屬個人行為。",
+    "category": "AI 政策與治理",
+    "tags": [
+      "OpenAI",
+      "AI 規管",
+      "政治捐款",
+      "美國",
+      "AI 安全"
+    ],
+    "date": "2026-10-22",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Leading the Future 支持全國標準及聯邦法優先於州級規則；Anthropic 則至少向反對聯邦全面取代州法的 PAC 投入 4,000 萬美元。前沿 AI 公司的政策分歧正直接進入選舉。",
+    "reportingContext": "捐款及競選活動由 Reuters 依公開記錄與採訪核實；個人捐款不能直接等同 OpenAI 公司立場，但高層的政策影響力與利益一致性值得監察。",
+    "deepDive": "AI 監管不再只是技術諮詢，而是誰定義安全、由聯邦還是州執行、規則會否延遲產品的權力競賽。選舉資金會影響最終法律的速度與強度。",
+    "whyImportant": "企業的公開安全承諾與政治投入若不一致，會削弱自願治理可信度，亦令投資者和客戶更難判斷監管風險。",
+    "whatToWatch": "追蹤 PAC 支持候選人的勝負、聯邦優先法案文字、強制獨立審計是否保留，以及 OpenAI 會否建立高層政治活動披露準則。",
+    "hkImpact": [
+      "香港企業使用美國 AI 服務時，要預期合規要求可能因聯邦與州法角力而變動，合約要保留調整和退出條款。",
+      "投資者評估 AI 公司治理時，應把政治捐款、監管主張與實際安全披露一併看。",
+      "政策界可借鏡：自願承諾不足以取代可審計標準，規則設計亦要防止由最大供應商壟斷議程。"
+    ],
+    "take": "已確認的是個人捐款與 PAC 行動；不能直接說 OpenAI 公司秘密反對所有規管。AIson 判斷，下一步要看安全承諾會否寫入可執行法律，而唔係停留在政治口號。",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/openai-president-urges-ai-safeguards-group-he-funds-opposes-regulation-2026-10-21/",
+    "sourceType": "可靠媒體",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "政策影響會由選舉及法案文字逐步顯現，現階段應追蹤而非把個人捐款等同公司政策。",
+    "aisonScore": 8.4,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 3
+    }
+  },
+  {
+    "id": "2026-10-22-hk-gba-ai-rdi-compute-update",
+    "rank": 10,
+    "title": "港府更新 AI 基建路線：AIRDI 年內運作，算力由 5,000 PFLOPS 走向 2032 年 18 萬",
+    "excerpt": "港府在粵港信息化合作會議披露 AIRDI 將於下半年運作，沙嶺數據園區目標 2032 年提供 18 萬 PFLOPS。",
+    "summary": "港府在粵港信息化合作會議披露 AIRDI 將於下半年運作，沙嶺數據園區目標 2032 年提供 18 萬 PFLOPS。",
+    "quickTake": "香港政府 10 月 21 日在廣州舉行的粵港信息化合作會議表示，香港微電子研發院（AIRDI）會在今年下半年投入運作，並重申 30 億元 AI 資助計劃及 16 個 InnoHK 相關實驗室。官方稱全港算力現約 5,000 PFLOPS，已動工的沙嶺數據設施群目標 2032 年提供 180,000 PFLOPS。",
+    "category": "香港 AI 與產業",
+    "tags": [
+      "香港",
+      "AIRDI",
+      "大灣區",
+      "算力",
+      "AI 產業"
+    ],
+    "date": "2026-10-22",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "這次公告主要把微電子研發、AI 資助、現有算力和沙嶺長期容量放在同一條產業路線上，並以粵港澳軟件與雲端合作為應用出口。它不是新批出 18 萬 PFLOPS，而是 2032 年建設目標。",
+    "reportingContext": "數字與時間表來自香港政府新聞稿；尚未提供沙嶺分期容量、電力來源、客戶價格、利用率或 AIRDI 首批項目名單。長期目標不能當成已可用資源。",
+    "deepDive": "香港若要由買算力轉為建立 AI 產業，需要晶片設計、封裝、數據中心、軟件及實際客戶一同成長。單看 PFLOPS 容易忽略電力、網絡、人才與利用率。",
+    "whyImportant": "它提供本地企業可以追蹤的官方時間點，也顯示香港正把微電子和 AI 算力視為同一產業政策，而非兩個孤立項目。",
+    "whatToWatch": "等 AIRDI 正式啟動、首批企業合作與人才計劃，以及沙嶺分期、能源、定價、招標和跨境數據安排。",
+    "hkImpact": [
+      "本地晶片、系統整合及研究團隊可準備與 AIRDI 合作的具體用例，但要等正式申請與知識產權條款。",
+      "中小企短期唔會因 2032 目標即時獲得平價算力，部署預算仍應以現有雲端與超算中心價格計。",
+      "市民與投資者應追蹤耗電、用水、利用率和公共回報，避免把 PFLOPS 增長直接等同產業成功。"
+    ],
+    "take": "已確認的是 AIRDI 時間表與官方容量目標；項目效益仍未可驗證。AIson 判斷，下一步最重要不是再公布更大數字，而是公開誰會用、幾錢用，以及可以產生甚麼研發與商業成果。",
+    "sourceLabel": "香港政府新聞公報",
+    "sourceUrl": "https://www.info.gov.hk/gia/general/202610/21/P2026102100266.htm",
+    "sourceType": "官方文件",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "方向與時間表已公布，但可申請項目、價格和分期容量仍待官方細節。",
+    "aisonScore": 8.2,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    }
+  }
+]

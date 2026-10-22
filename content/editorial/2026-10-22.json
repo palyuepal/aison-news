@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-22",
+  "dailyOneLiner": "AI 今日由『答問題』跨到『長期代辦』：資本、付款、漏洞修補同權限治理，全部要跟住 Agent 速度重寫。",
+  "top3Ids": [
+    "2026-10-22-meta-muse-class-c-capex",
+    "2026-10-22-anthropic-claude-duet",
+    "2026-10-22-php-ai-discovered-critical-flaws"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 由聊天入口變成執行層",
+      "summary": "Meta、Anthropic 與 Walmart 同日把焦點推到常駐代理、交易與機器身份，產品競爭開始圍繞權限、付款和錯誤復原。",
+      "watch": "香港何時開放、每項高風險操作是否預設要人確認，以及商戶能否提供標準化 Agent 接口。"
+    },
+    {
+      "title": "AI 加速安全，也壓縮修補時間",
+      "summary": "PHP 事件證明前沿模型可以先於攻擊者找到互聯網級漏洞，但全球維護者和企業能否快速升級，變成新的防守瓶頸。",
+      "watch": "在野利用、主機商修補率，以及持續安全 Agent 能否降低修補時間而不製造警報疲勞。"
+    },
+    {
+      "title": "算力競爭轉向控制與可攜性",
+      "summary": "Meta 以新股和巨額資本開支押注 AI，Google 開放 Edge NPU，Microsoft 強化主權控制，香港則規劃長期算力容量。",
+      "watch": "真正使用率、跨供應商可攜性、金鑰與人員操作控制，以及本地基建每一元投入的可量度回報。"
+    }
+  ],
+  "biggestChange": "最大變化係 Agent 不再只是生成內容，而係開始持續監察、購物、付款、修補同代表機構行動；因此身份、限額、審計與緊急停止已由『進階功能』變成基本產品規格。",
+  "watchTomorrow": "首先看 PHP 漏洞有否確認大規模在野利用及香港主機商修補進度；其次看 Claude Duet、Walmart Agent Gateway 的高風險操作審批；最後追蹤 Meta 能否提出 Muse 變現與企業安全的更具體數據。"
+}
