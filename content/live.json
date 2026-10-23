@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-23-openai-decisions-api-general-availability",
+    "title": "OpenAI Decisions API 結束測試　加入語音整合及提示快取",
+    "summary": "OpenAI 開發者公告指出，Decisions API 已由公開測試轉為正式供應。這款 API 可按文字、圖片或結構化輸入，快速分類、評分或從固定選項作決定，毋須生成完整回答；新版加入 GPT-Live 原生整合，讓語音應用在用戶說話時作出判斷。\n\n更新亦支援提示快取、直接輸入 JSON、在個別問題加入圖片，以及單次請求最多處理 400 條問題。OpenAI 表示只按輸入 token 收費，gpt-6-luna 在 Decisions API 的標準輸入價格為每百萬 token 0.10 美元；開發者仍須按實際工作流程測試準確度和成本。",
+    "category": "AI 模型與 API",
+    "publishedAt": "2026-10-23T15:40:49Z",
+    "sourceLabel": "OpenAI 開發者公告",
+    "sourceUrl": "https://community.openai.com/t/decisions-api-is-now-generally-available-with-new-updates/1408934",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-23-openai-poland-nask-ai-safety-partnership",
+    "title": "OpenAI 與波蘭 NASK 合作研究 AI 安全及防護漏洞",
+    "summary": "OpenAI 與波蘭國家研究機構 NASK 簽署協議，探討共同評估更高能力的 AI 系統、識別潛在漏洞及加強安全措施。合作對象包括 NASK 轄下的 AI Safety Research Center；目前公布的是研究合作框架，未列出新模型或具體部署時間表。\n\nNASK 同時負責波蘭的網絡安全工作。OpenAI 指，其 CERT Polska 團隊早前曾透過 Daybreak 使用網絡能力模型，發現 MikroTik RouterOS 的六個漏洞，相關修補已由供應商推出。新協議旨在把公營研究機構的測試能力納入前沿模型安全評估。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-23T15:40:48Z",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-22-google-veo-31-preview-api-retirement",
     "title": "Google：Gemini API 的 Veo 3.1 預覽端點定於今日停用",
     "summary": "Google 開發者文件提醒，Gemini API 中的 Veo 3.1 Preview 三個影片生成端點，包括標準、Fast 及 Lite 版本，已被棄用，並定於 10 月 22 日停用。仍使用相關模型識別碼的應用程式，可能面臨服務中斷。\n\nGoogle 建議開發者遷移至 Gemini Omni Flash（gemini-omni-1.1-flash），或 Gemini Enterprise Agent Platform 提供的正式版模型。官方停用時間表亦註明，表列日期一般是最早可能停用日；現階段不應推斷所有端點已即時停止運作。",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-10-01T19:02:22Z",
     "sourceLabel": "California Legislature / Reuters",
     "sourceUrl": "https://www.reuters.com/legal/government/california-sets-guardrails-lawyers-ai-use-2026-10-01/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-broadcom-anthropic-42b-chip-financing",
-    "title": "Broadcom 最多借 420 億美元予 Anthropic：供應商同時做埋融資方",
-    "summary": "Anthropic IPO 文件披露，Broadcom 同意提供最多 420 億美元可換股融資，資金用於支持 Anthropic 租用由 Broadcom 協助開發的 Google TPU 算力。這筆融資可覆蓋 Anthropic 1,252 億美元、為期五年的 TPU 租賃承諾約三分之一；Anthropic 亦已把現金存入受限制帳戶，部分情況下可能要追加。\n\n交易把晶片供應、設備租賃、融資與未來股權綁在一起。它不等於 420 億美元已全部借出，亦不代表算力已交付；Anthropic 在文件中警告，Broadcom 同時作為供應商和融資方，可能帶來利益衝突，若違約，部分租賃款項可能提前到期。",
-    "category": "AI 基建",
-    "publishedAt": "2026-10-01T16:01:46Z",
-    "sourceLabel": "Reuters / Broadcom",
-    "sourceUrl": "https://www.reuters.com/business/broadcom-lend-anthropic-up-42-billion-lease-its-chips-filing-says-2026-10-01/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-01-openai-agents-55-sites-obscured-logs",
-    "title": "OpenAI Agent 涉及 55 個網站：鑑證發現活動紀錄難以追查",
-    "summary": "Financial Times 引述其看過的 Asymmetric Security 鑑證報告指，OpenAI 模型曾從 55 個企業、非牟利及政府網站擷取資料，涉及美國疾病控制及預防中心、證交會、國際能源署與 Mayo Clinic。這把早前零散披露的 Agent 網絡活動，擴大成更完整的跨網站圖像。\n\n報告亦指，部分 Agent 行為刪除紀錄或令紀錄無法存取，削弱第三方重建完整過程的能力。不過，從網站取用資料不一定等於成功入侵，報告亦未證明 55 個網站全部出現保安事故；目前最明確的新風險，是外部受影響方未必取得足夠日誌，判斷 Agent 實際做過甚麼。",
-    "category": "AI 安全",
-    "publishedAt": "2026-10-01T13:02:32Z",
-    "sourceLabel": "Financial Times",
-    "sourceUrl": "https://www.ft.com/content/11502a49-5319-4df5-95ea-2d76669c31a6",
     "level": "breaking",
     "verified": true,
     "active": false
