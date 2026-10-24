@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-24",
+  "dailyOneLiner": "AI 今日最大變化係：模型能力開始直接改寫訓練網絡、臨床流程、企業人手同資本市場規則。",
+  "top3Ids": [
+    "2026-10-24-openai-frontier-training-no-internet",
+    "2026-10-24-microsoft-sequential-diagnosis-ai",
+    "2026-10-24-barclays-ai-workforce-cuts"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 安全由軟件問題升級成基建政策",
+      "summary": "OpenAI 因 microVM escape 與監控缺口，把前沿訓練改成封網；Anthropic 則把審批、憑證與瀏覽器隔離放在模型之外。",
+      "watch": "外部重測、真實漏判率，以及其他實驗室會否採用同類網絡與憑證隔離。"
+    },
+    {
+      "title": "AI 由助理走入高風險流程與人手決策",
+      "summary": "Microsoft 把醫療 AI 推向逐步診斷，Barclays 則把 AI 效率寫入 5,000 人重組，兩邊都需要更強的人類責任與成效證據。",
+      "watch": "醫院前瞻測試、銀行服務質素，以及企業能否交代哪些工作真正被重設。"
+    },
+    {
+      "title": "AI 產業鏈由模型擴展到資本、封裝與規則",
+      "summary": "HKEX 建立 AI 五層指數，Besi 訂單顯示封裝升溫，中國模型出口登記與 UNIDIR 論壇則重塑跨境與安全規則。",
+      "watch": "ETF 條款、混合鍵合量產、模型登記範圍及軍事 AI 論壇能否產生可驗證成果。"
+    }
+  ],
+  "biggestChange": "最大變化係前沿 AI 公司開始用實體隔離而非純模型守則管理風險：無互聯網訓練、獨立審批分類器和憑證代理，正成為 Agent 時代的新安全底座。",
+  "watchTomorrow": "先看 OpenAI 會否容許外部重測封網與 microVM 修補；再看 Microsoft 醫療研究的完整論文限制、Barclays 職位分布，以及 HKEX 公布 AI 指數成分與 ETF 時間表。"
+}
