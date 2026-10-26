@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26",
+  "dailyOneLiner": "AI 今日最大變化係：競爭由模型跑分全面落到融資、陣營、工廠、職位與真實世界感知，能否持續營運開始比 demo 更重要。",
+  "top3Ids": [
+    "2026-10-26-spacex-40b-gpu-debt-neoclouds",
+    "2026-10-26-us-china-ai-blocs-swing-countries",
+    "2026-10-26-toyota-humanoid-factory-scale"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 基建進入資本淘汰賽",
+      "summary": "SpaceX 以非 AI 現金流支撐 400 億美元 GPU 債務，顯示純算力供應商的融資與利用率會成為生死線。",
+      "watch": "債務定價、GPU 交付，以及 neocloud 是否出現縮建、合併或違約。"
+    },
+    {
+      "title": "科技棧由全球市場裂成陣營",
+      "summary": "美國用先進晶片與可信供應鏈組 Pax Silica，中國以平價開源和融資擴大合作，中間國家開始承受揀邊壓力。",
+      "watch": "Pax Silica 是否限制雙重參與，以及新加坡等樞紐經濟體如何選擇。"
+    },
+    {
+      "title": "Physical AI 與工作制度同時落地",
+      "summary": "Toyota 將 humanoid 推入工廠，開源觸覺和離線評測降低機械人門檻；中國就業指引與 Infosys 業績則顯示組織及定價已被重寫。",
+      "watch": "真實部署的稼動率、安全與轉職安排，而非企業公布的機械人數或 AI 收入。"
+    }
+  ],
+  "biggestChange": "最大變化係『能不能做』正在讓位給『能不能長期付錢、合規、安全地運作』：算力要看債務，模型要看陣營，機械人要看產線，AI 生產力要看收入與職位如何重設。",
+  "watchTomorrow": "先看 SpaceX 400 億美元債務的定價與投資者細節；再看美中 AI 陣營有否新增成員或限制，並留意本周 Alphabet、Microsoft、Amazon 業績如何回答 AI 資本開支與回報。"
+}

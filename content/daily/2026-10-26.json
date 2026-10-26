@@ -1,0 +1,477 @@
+[
+  {
+    "id": "2026-10-26-spacex-40b-gpu-debt-neoclouds",
+    "rank": 1,
+    "title": "SpaceX 借 400 億美元買 GPU：AI 算力戰開始淘汰只靠數據中心收入的 neocloud",
+    "excerpt": "SpaceX 稱已完成主要用於 2027 年 GPU 交付的 400 億美元債務融資，Musk 同時預言 AI 專用雲將出現倒閉與整合。",
+    "summary": "SpaceX 稱已完成主要用於 2027 年 GPU 交付的 400 億美元債務融資，Musk 同時預言 AI 專用雲將出現倒閉與整合。",
+    "quickTake": "Elon Musk 10 月 25 日表示，SpaceX 已完成 400 億美元債務融資，主要用來支付 2027 年第一、二季到貨的 GPU；公司第四季資本開支預計達 350 億至 400 億美元。Musk 指 SpaceX 靠 Starlink 與火箭等非 AI 收入及投資級評級取得資金，並預言收入高度集中於 AI 數據中心的 neocloud 會出現倒閉與整合。不過 Reuters 指融資『完成』的具體結構及定價仍未完全公開。",
+    "category": "AI 算力與資本",
+    "tags": [
+      "SpaceX",
+      "NVIDIA",
+      "GPU",
+      "neocloud",
+      "AI 融資"
+    ],
+    "date": "2026-10-26",
+    "readTime": 4,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "SpaceX 第三季收入按年升 161% 至 145.8 億美元，其中 AI 收入 75.6 億美元、接近十倍增長；與 Tesla 合組的 Terafab 則目標 2027 年五、六月做出測試晶片、2028 年第三季量產。這把模型與算力擴張連到長期債務、晶片自製及跨公司資本配置。",
+    "reportingContext": "400 億美元用途、資本開支和收入數字來自公司管理層與文件；債務的投資者、息率及可贖回條款細節未完整披露。Musk 對 neocloud 倒閉的說法是預測，不是已發生事實。",
+    "deepDive": "AI 基建的分水嶺由『有沒有 GPU』變成『誰有可持續現金流支撐多年債務』。具衛星、發射或成熟雲業務的公司可用其他收入補貼算力，而純 AI 容量供應商更受利率、利用率與單一客戶影響。",
+    "whyImportant": "若資本市場只願意借錢給有多元收入的大型平台，算力供應會進一步集中；neocloud 可能被迫縮建、合併或提高價格。SpaceX 自建晶片亦可能令 NVIDIA 客戶逐步變成潛在競爭者。",
+    "whatToWatch": "追蹤債務定價與交付條件、GPU 是否如期到貨、neocloud 再融資情況，以及 Terafab 測試晶片能否按時間表落地。",
+    "hkImpact": [
+      "香港企業採購 AI 雲服務時，要查供應商的融資、客戶集中度與容量交付保障，唔好只比較每小時 GPU 價格。",
+      "本地初創若依賴單一 neocloud，應準備可攜映像、資料備份和第二供應商，避免對方收縮容量時被鎖死。",
+      "投資者要分清已簽債務、GPU 到貨與可產生收入的上線容量；本文不構成投資建議。"
+    ],
+    "take": "已確認的是 SpaceX 公布融資、資本開支與收入；neocloud 淘汰仍屬 Musk 判斷。AIson 分析，下一輪算力競爭最先被淘汰的未必是晶片較慢者，而是現金流撐不到下一次再融資者。",
+    "sourceLabel": "Reuters／SpaceX 管理層披露",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/musk-says-spacex-raised-40-billion-debt-gpus-2026-10-25/",
+    "sourceType": "公司文件",
+    "references": [],
+    "actionVerdict": "try-now",
+    "actionReason": "依賴專用 AI 雲的團隊應立即盤點供應商財務、交付承諾與跨雲復原方案。",
+    "aisonScore": 9.9,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-26-us-china-ai-blocs-swing-countries",
+    "rank": 2,
+    "title": "美中 AI 陣營開始逼各國揀邊：先進晶片對平價開源，科技主權空間收窄",
+    "excerpt": "美國 Pax Silica 與中國 World AI Cooperation Organization 正形成兩套 AI 供應鏈與標準陣營，中間國家嘗試兩邊下注。",
+    "summary": "美國 Pax Silica 與中國 World AI Cooperation Organization 正形成兩套 AI 供應鏈與標準陣營，中間國家嘗試兩邊下注。",
+    "quickTake": "AP 10 月 25 日報道，美國主導的 Pax Silica 以先進晶片、可信供應鏈與技術夥伴為核心；中國倡議的 World AI Cooperation Organization 則主打較平價、開源與廣泛合作。哈薩克先後加入兩邊：一方面爭取涉及 NVIDIA、最高 100 億美元的數據中心投資，另一方面加入中國倡議；印尼、新加坡、沙特、日本等亦用不同方式保持彈性。專家警告，兩套陣營競爭加劇後，中間國家的選擇窗口可能收窄。",
+    "category": "AI 地緣政治與供應鏈",
+    "tags": [
+      "Pax Silica",
+      "中國",
+      "美國",
+      "AI 主權",
+      "開源模型"
+    ],
+    "date": "2026-10-26",
+    "readTime": 4,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "中國已在最少 77 個中低收入國家為使用或支援 AI 的項目提供官方貸款與資助；美國則以頂級晶片、數據中心合作和可信夥伴資格作籌碼。競爭不再只問哪個模型較強，而是誰控制晶片、融資、雲端、標準與更新。",
+    "reportingContext": "本文整合 AP 對多國策略與公開投資的核實；『最終被迫揀邊』是受訪專家的風險判斷，不代表各國已被正式禁止同時參與。",
+    "deepDive": "AI 技術棧一旦分裂，企業會面對模型、晶片、資料規則、出口限制與安全認證的連鎖選擇。短期雙棧可保留彈性，長期卻增加整合、審計與供應中斷成本。",
+    "whyImportant": "全球 AI 市場可能由一個互通市場變成兩個或多個半封閉生態。不能自建前沿模型的經濟體，其算力與標準話語權會更依賴華盛頓與北京。",
+    "whatToWatch": "看新加坡是否加入中國倡議、Pax Silica 對雙重參與的實際限制，以及晶片、雲端或模型更新會否首次與陣營資格掛鈎。",
+    "hkImpact": [
+      "香港企業同時用中美模型與雲服務時，要建立雙供應鏈清單，標記資料跨境、出口管制及服務中斷風險。",
+      "本地金融與專業服務可協助企業做多地合規，但合約要寫清模型版本、地區可用性與替代方案。",
+      "香港作為兩套生態交匯點，短期有整合機會；長期則要避免把關鍵流程綁在任何單一政治或技術陣營。"
+    ],
+    "take": "已確認的是兩個倡議、多國參與與投資安排；真正的排他規則仍在形成。AIson 分析，香港最實際策略不是口號式『兩邊都要』，而是把系統設計成任何一邊收緊時仍可切換。",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/china-us-ai-blocs-9974a3e5dc955a93935d131a4aeb8886",
+    "sourceType": "可靠媒體",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "陣營規則仍在演變，企業應先完成技術棧與跨境依賴盤點。",
+    "aisonScore": 9.8,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-26-toyota-humanoid-factory-scale",
+    "rank": 3,
+    "title": "Toyota 把 humanoid 推入工廠規模戰：40 萬部機械人計劃由自動化延伸到通用操作",
+    "excerpt": "Toyota 加速人形機械人部署，並透過分拆公司 Walden Robotics 把可學習不同任務的通用機械人帶入北美工廠。",
+    "summary": "Toyota 加速人形機械人部署，並透過分拆公司 Walden Robotics 把可學習不同任務的通用機械人帶入北美工廠。",
+    "quickTake": "Financial Times 10 月 25 日報道，Toyota 正加速發展人形機械人，配合每年約 64 億美元的工廠自動化投資計劃，長期涉及集團及供應商約 40 萬部機械人。其分拆公司 Walden Robotics 已以 11 億美元估值融資 3 億美元，並在北美工廠部署可透過 AI 學習不同任務的通用機械人。現階段主要目標是補充人手、提高生產力，並非已全面取代工人。",
+    "category": "機械人與製造業",
+    "tags": [
+      "Toyota",
+      "humanoid",
+      "Walden Robotics",
+      "physical AI",
+      "工廠自動化"
+    ],
+    "date": "2026-10-26",
+    "readTime": 4,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "汽車製造商正把既有工業機械人經驗、工廠資料與新一代視覺—動作模型結合。競爭對手包括 Hyundai 計劃 2028 年起使用 Atlas，以及 Tesla 對 Optimus 的大規模產量目標；但實際產能與回報仍待驗證。",
+    "reportingContext": "40 萬部是整體自動化計劃所涉機械人規模，不等同 40 萬部 humanoid；Goldman Sachs 對 Toyota 2035 年可能取得 3%–8% 全球人形機械人市場的估算亦只是預測。",
+    "deepDive": "Toyota 的優勢不是先做出最搶眼 demo，而是有龐大工廠、供應商和品質流程可持續產生任務數據。若通用機械人能在同一硬件上快速轉換工序，製造商的自動化成本結構會改寫。",
+    "whyImportant": "physical AI 的商業化正由單一示範轉向『能否在真實產線穩定工作』。成功指標將是每小時產出、停機率、安全事故和重新部署時間，而不只是行走或抓取影片。",
+    "whatToWatch": "追蹤 Walden 的實際部署數、每個工序的人工監督、維修成本與安全認證，以及 Toyota 有否將系統擴展至亞洲供應鏈。",
+    "hkImpact": [
+      "香港製造、物流及維修企業可先挑選重複、危險而環境可控的工序試點，唔好一開始就追求全能 humanoid。",
+      "大灣區供應鏈可能增加感測器、關節、控制器與整合服務需求，但採購要以稼動率和總成本驗收。",
+      "打工仔要關注職務拆分多過職位名稱：機械人操作、例外處理、維修與安全監督會先增加。"
+    ],
+    "take": "已確認的是 Toyota 投資方向、Walden 融資與初步部署；市場份額與大規模替代仍屬推測。AIson 分析，下一步最值得看的是同一部機械人能否在數日而非數月內轉換新工序。",
+    "sourceLabel": "Financial Times",
+    "sourceUrl": "https://www.ft.com/content/8bf93407-6b93-4ebb-b54b-f290ebd563e3",
+    "sourceType": "可靠媒體",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "商業化方向清楚，但要等部署量、稼動率及總成本數據。",
+    "aisonScore": 9.6,
+    "audienceImpact": {
+      "worker": 5,
+      "sme": 5,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-26-china-ai-employment-guidelines",
+    "rank": 4,
+    "title": "中國發布 AI 就業指引：18 項任務要求監察失業、轉職支援及演算法歧視",
+    "excerpt": "國務院把 AI 就業影響由宏觀討論落到監測、應變、培訓、再就業及人力資源演算法規範。",
+    "summary": "國務院把 AI 就業影響由宏觀討論落到監測、應變、培訓、再就業及人力資源演算法規範。",
+    "quickTake": "中國國務院辦公廳 10 月 23 日發布 AI 與就業指引，列出六大範疇、18 項任務。文件要求監察 AI 相關就業風險、為重大衝擊制定應變方案，向受影響工人提供轉職培訓與職位配對，並規範招聘和人力資源演算法中的歧視、詐騙及私隱侵害。這是政策框架，具體執行指標與地方措施仍待公布。",
+    "category": "AI 政策與就業",
+    "tags": [
+      "中國",
+      "就業",
+      "AI 政策",
+      "演算法歧視",
+      "再培訓"
+    ],
+    "date": "2026-10-26",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "72h",
+    "whatHappened": "官方同時要求發揮 AI 創造職位及改善工作質素的正面作用，反映政策重點不是停止採用，而是管理採用速度、範圍與分配後果。",
+    "reportingContext": "指引沒有量化受影響職位、補貼金額或執法門檻，不能解讀為已建立完整失業保障或禁止企業以 AI 減員。",
+    "deepDive": "當政府要求提前監察風險，企業的 AI ROI 計算會由節省人頭延伸到培訓、轉職、演算法審計及勞資風險。",
+    "whyImportant": "這是主要經濟體把 AI 就業衝擊納入常設公共政策的一步，亦會影響大型企業的人力資源系統、採購及社會責任披露。",
+    "whatToWatch": "看地方政府如何定義重大就業衝擊、是否要求企業通報，以及招聘演算法歧視會由哪個部門執法。",
+    "hkImpact": [
+      "在內地設團隊的香港企業要留意地方細則，AI 重整前應保留職務影響評估、培訓及轉職紀錄。",
+      "香港 HR 科技供應商若服務內地客戶，要檢查推薦、篩選與評分模型有否產生歧視或超額收集資料。",
+      "本地政策可參考以持續監測和轉職支援取代一次性培訓券，將成效連到實際就業結果。"
+    ],
+    "take": "已確認的是中央政策方向；責任、資金和執法仍待落地。AIson 分析，真正分水嶺會是企業要不要在大規模部署前證明『工作被重設』而非只交代『成本被削減』。",
+    "sourceLabel": "中國國務院英文網",
+    "sourceUrl": "https://english.www.gov.cn/policies/latestreleases/202610/23/content_WS6adb4e53c6d00ca5f9a0deb7.html",
+    "sourceType": "監管文件",
+    "references": [
+      {
+        "label": "Reuters 交叉核實",
+        "url": "https://www.reuters.com/business/world-at-work/china-urges-government-agencies-mitigate-ai-job-displacement-2026-10-23/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "政策已定但地方執行未明，相關企業應先完成職務及演算法風險盤點。",
+    "aisonScore": 9.2,
+    "audienceImpact": {
+      "worker": 5,
+      "sme": 5,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-26-infosys-ai-outsourcing-price-pressure",
+    "rank": 5,
+    "title": "Infosys AI 收入急升仍要削預測：自動化正侵蝕按工時收費的外判模式",
+    "excerpt": "Infosys AI 收入按季升 29%、佔總收入 10.5%，但北美需求與定價受壓，公司把全年增長預測下調至 1%–2%。",
+    "summary": "Infosys AI 收入按季升 29%、佔總收入 10.5%，但北美需求與定價受壓，公司把全年增長預測下調至 1%–2%。",
+    "quickTake": "Infosys 10 月 23 日公布季度業績，AI 相關收入按季升 29%，佔總收入 10.5%；同時把 2027 財年固定匯率收入增長預測由 1.5%–3%下調至 1%–2%。北美收入按年跌 1.5%，是兩年最弱；管理層表示客戶要求把 AI 生產力回饋到價格，傳統按人數與工時計費受壓。",
+    "category": "AI 商業與工作",
+    "tags": [
+      "Infosys",
+      "IT 外判",
+      "AI 生產力",
+      "定價",
+      "企業轉型"
+    ],
+    "date": "2026-10-26",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "72h",
+    "whatHappened": "公司季度總收入按年升 10.7% 至 4,924.4 億盧比，但北美客戶把預算轉向 AI、雲端及 AI 原生供應商，令傳統項目放慢。AI 生意增長未足以抵消原有收入模式被壓價。",
+    "reportingContext": "AI 收入分類與生產力影響主要依公司披露；單一季度不能證明整個 IT 服務業已永久收縮。",
+    "deepDive": "服務商若用 AI 減少工時，客戶自然要求降價。要避免收入被自動化反噬，供應商須由賣人日轉向賣成果、平台與持續營運。",
+    "whyImportant": "這是 AI 生產力悖論的財務證據：技術收入可以高速增長，但若同步壓低舊業務單價，公司整體增長未必加快。",
+    "whatToWatch": "看後續大型合約採用成果定價的比例、AI 收入毛利，以及 Infosys 能否把效率轉成新需求而非只讓價。",
+    "hkImpact": [
+      "香港外判商與顧問公司要重做報價，將可量度成果、風險承擔及專有工具價值寫入合約。",
+      "採購企業可要求 AI 效率回饋，但亦要保留品質、安全及人類覆核指標，避免只壓單價。",
+      "IT 從業員應加強流程設計、客戶領域與例外處理能力，因純執行工時最容易被重新定價。"
+    ],
+    "take": "已確認的是業績、AI 收入與預測下調；產業長期結果仍未定。AIson 分析，外判業下一場競爭不是誰用最多 AI，而是誰能證明成果同時保住可持續毛利。",
+    "sourceLabel": "Infosys 季度業績",
+    "sourceUrl": "https://www.infosys.com/investors/reports-filings/quarterly-results/2026-2027/q2.html",
+    "sourceType": "公司文件",
+    "references": [
+      {
+        "label": "Reuters 交叉核實",
+        "url": "https://www.reuters.com/world/india/indias-infosys-beats-second-quarter-revenue-view-2026-10-23/"
+      }
+    ],
+    "actionVerdict": "try-now",
+    "actionReason": "服務型企業應立即檢查工時計費合約，建立成果指標與 AI 後的成本基線。",
+    "aisonScore": 9,
+    "audienceImpact": {
+      "worker": 5,
+      "sme": 5,
+      "creator": 3,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-26-pathos-bms-tempus-neuro-ai",
+    "rank": 6,
+    "title": "Pathos、BMS、Tempus 把 AI 藥物研發推入神經科：數十萬病人資料配 2.37 億美元融資",
+    "excerpt": "三方合作以真實病人資料研究阿茲海默症等神經疾病；Pathos 同日完成 2.37 億美元 E 輪、估值約 30 億美元。",
+    "summary": "三方合作以真實病人資料研究阿茲海默症等神經疾病；Pathos 同日完成 2.37 億美元 E 輪、估值約 30 億美元。",
+    "quickTake": "Pathos AI 10 月 23 日宣布與 Bristol Myers Squibb（BMS）及 Tempus AI 合作，用 AI 推進阿茲海默症及其他神經疾病藥物研發。Tempus 會建立涵蓋數十萬名神經疾病患者的資料集，Pathos 以五年 5,500 萬美元協議取得授權，並用 Foundry 平台提出及測試疾病機制假設、設計更具針對性的臨床試驗。Pathos 同日完成由 BMS 領投的 2.37 億美元 E 輪，估值約 30 億美元。",
+    "category": "AI 醫療與藥物研發",
+    "tags": [
+      "Pathos AI",
+      "Bristol Myers Squibb",
+      "Tempus AI",
+      "阿茲海默症",
+      "臨床試驗"
+    ],
+    "date": "2026-10-26",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "72h",
+    "whatHappened": "BMS 取得 Foundry 在神經科研發三年獨家使用權及更廣泛藥物組合的非獨家策略存取；資金亦會擴展平台和推進 Pathos 的腫瘤藥管線。",
+    "reportingContext": "合作金額、資料規模及權利已公布，但尚未披露具體候選藥、試驗時間表或臨床成效。AI 生成假設不等同藥物已證明有效。",
+    "deepDive": "AI 藥研價值正由預測分子結構延伸到病人分層、疾病機制與自適應試驗設計；真正壁壘是高質素長期病歷、可驗證假設和監管可接受的證據鏈。",
+    "whyImportant": "神經疾病異質性高、試驗失敗率亦高。若資料與 AI 能較早識別有效病人群組，可能減少昂貴失敗；但亦放大資料偏差和私隱風險。",
+    "whatToWatch": "追蹤首個具名項目、資料代表性、監管互動，以及模型提出的生物學假設有多少能在實驗與臨床中重現。",
+    "hkImpact": [
+      "香港醫院與大學若參與 AI 藥研，要先處理病歷標準、長期追蹤、同意及跨境資料治理。",
+      "本地生物科技初創可由病人分層與試驗營運切入，但必須把 AI 輸出連到可驗證的生物學與臨床指標。",
+      "患者與醫療機構要問清資料會否被二次授權、保存多久，以及模型偏差如何被監察。"
+    ],
+    "take": "已確認的是合作、資料授權及融資；療效改進仍未發生。AIson 分析，下一步最值得看的是 Foundry 能否把『更好假設』轉成較高試驗成功率，而不只是更大資料庫。",
+    "sourceLabel": "Reuters／Pathos 公告",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/pathos-ai-teams-up-with-bristol-myers-tempus-ai-advance-drug-development-2026-10-23/",
+    "sourceType": "公司文件",
+    "references": [
+      {
+        "label": "Pathos 融資公告",
+        "url": "https://markets.ft.com/data/announce/detail?dockey=600-202610230900BIZWIRE_USPRX____20261023_BW421846-1"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "合作規模大，但要等具體候選項目及臨床驗證。",
+    "aisonScore": 8.8,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-26-telecom-ai-agent-guardrails",
+    "rank": 7,
+    "title": "AT&T、T-Mobile 為網絡 Agent 加護欄：可自動修復，但全自治仍要等多年",
+    "excerpt": "兩間電訊商擴大 AI 網絡管理，同時用加密、MFA、人類覆核及 Agent 身份驗證限制高權限操作。",
+    "summary": "兩間電訊商擴大 AI 網絡管理，同時用加密、MFA、人類覆核及 Agent 身份驗證限制高權限操作。",
+    "quickTake": "AT&T 與 T-Mobile 高層 10 月 23 日向 Reuters 表示，隨 AI Agent 接觸客戶資料及網絡軟件，兩公司正加大監察與網絡安全投資。AT&T 已在資料存取加入加密、多重認證及人類覆核，並驗證第三方 Agent 是否真由客戶授權；兩公司雖已用 AI 分析故障、調整天線或自動修復部分問題，但稱全自治網絡仍需多年。",
+    "category": "AI Agent 與電訊安全",
+    "tags": [
+      "AT&T",
+      "T-Mobile",
+      "AI Agent",
+      "電訊",
+      "網絡安全"
+    ],
+    "date": "2026-10-26",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "72h",
+    "whatHappened": "T-Mobile 表示今年冬季風暴期間，自組織網絡一小時內為約 66% 客戶恢復覆蓋、八小時內達 90%。實際能力顯示自動化有價值，但複雜故障仍需人手。",
+    "reportingContext": "成效數字由公司提供，未有獨立審計；『仍需多年』是管理層估計，不是技術時間表。",
+    "deepDive": "關鍵不是 Agent 會否登入網絡，而是每個請求能否證明身份、限制權限、留下紀錄並在異常時回退。電訊網絡把企業 Agent 的治理問題放大到關鍵基建層級。",
+    "whyImportant": "一個錯誤 Agent 可由資料外洩升級成服務中斷。大型營運商的做法會影響企業對機器身份、授權及人類介入的標準。",
+    "whatToWatch": "留意電訊業是否建立跨供應商 Agent 身份標準、事故通報要求，以及自動修復的失誤率與回退時間。",
+    "hkImpact": [
+      "香港電訊商與大型企業應為 Agent 設獨立機器身份、最低權限及逐步升級，不可共用普通員工帳戶。",
+      "中小企接入客服或網絡 Agent 時，要要求操作紀錄、撤銷機制及人工緊急停用。",
+      "開發者可把身份驗證、批准閘門和回退流程當產品功能，而唔係部署後先補的合規附件。"
+    ],
+    "take": "已確認的是現有自動化與新增控制；全自治尚未成熟。AIson 分析，Agent 商業化最快落地的會是『有限自治、隨時回退』，不是無人監管。",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/att-t-mobile-tighten-ai-guardrails-autonomous-networks-remain-years-away-2026-10-23/",
+    "sourceType": "可靠媒體",
+    "references": [],
+    "actionVerdict": "try-now",
+    "actionReason": "任何有高權限 Agent 的團隊都可立即實施機器身份、最低權限與人工回退。",
+    "aisonScore": 8.6,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 2,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-26-ai-values-religion-consultation",
+    "rank": 8,
+    "title": "AI 公司向宗教領袖問『對與錯』：價值對齊不可能只取人類道德平均數",
+    "excerpt": "Anthropic 等公司徵詢宗教、哲學與倫理專家，但學者警告把信仰壓縮成規則會扭曲傳統及偏向西方框架。",
+    "summary": "Anthropic 等公司徵詢宗教、哲學與倫理專家，但學者警告把信仰壓縮成規則會扭曲傳統及偏向西方框架。",
+    "quickTake": "AP 10 月 25 日報道，Anthropic、Microsoft、Google、Meta、Amazon 等科技公司以不同形式接觸宗教領袖、哲學家與倫理學者，希望為模型的道德判斷提供更廣泛觀點。Anthropic 表示曾諮詢超過 15 個宗教及跨文化群體；參與者肯定討論認真，但宗教研究學者警告，信仰包含教義、儀式、文化與關係，不能抽成一套可平均的規則。",
+    "category": "AI 治理與價值對齊",
+    "tags": [
+      "Anthropic",
+      "AI 倫理",
+      "宗教",
+      "價值對齊",
+      "文化偏差"
+    ],
+    "date": "2026-10-26",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "爭議由『模型有沒有安全原則』推進到『誰的價值被寫入、如何處理互相矛盾的世界觀』。諮詢本身已發生，但各公司如何把意見轉成訓練資料、系統規則或產品選項仍欠透明。",
+    "reportingContext": "本文是 AP 對持續做法的最新調查，不代表任何公司今日發布新模型或已完成一套宗教倫理標準。",
+    "deepDive": "道德不是單一 benchmark。把多個傳統取平均，可能產生看似中立、實際上抹平差異的預設；更可靠做法可能是清楚披露價值來源，並容許情境化及可選設定。",
+    "whyImportant": "聊天機械人愈來愈參與教育、心理支援與生活建議，隱藏價值判斷會直接影響信任、公平與文化適配。",
+    "whatToWatch": "看公司會否公布諮詢群體、意見如何轉成產品行為，以及用戶能否理解、選擇或挑戰模型的價值預設。",
+    "hkImpact": [
+      "香港是多宗教、多語言社會，本地部署的教育與公共服務 AI 要做文化測試，不能直接把美國預設當中立。",
+      "學校、社福及企業應為高敏感建議保留人類轉介，並向用戶交代模型不是道德權威。",
+      "本地研究者與公民社會可參與建立廣東話及亞洲語境案例，避免價值評估只靠英文西方資料。"
+    ],
+    "take": "已確認的是企業諮詢與學者批評；實際訓練影響仍未公開。AIson 分析，下一步重點不是找一個『正確道德平均值』，而是令價值選擇可見、可質疑、可按情境調整。",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/anthropic-moral-artificial-intelligence-religion-2bb91e3334fd6d732edf22288cabf4ec",
+    "sourceType": "可靠媒體",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "先要求價值來源與產品落地透明度，再評估高敏感場景使用。",
+    "aisonScore": 8.4,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 3,
+      "creator": 5,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-10-26-opentac-open-robot-skin",
+    "rank": 9,
+    "title": "OpenTac 開源機械人『皮膚』：文字可生成感測器設計，讀取速度快 19.2 倍",
+    "excerpt": "Johns Hopkins 與 MIT 團隊公開可客製柔性觸覺皮膚、CAD、模擬器及軟硬件，讓機械人同時感知正向與剪切力。",
+    "summary": "Johns Hopkins 與 MIT 團隊公開可客製柔性觸覺皮膚、CAD、模擬器及軟硬件，讓機械人同時感知正向與剪切力。",
+    "quickTake": "研究團隊 10 月 22 日公開 OpenTac 預印本及開源工具鏈，用柔性 PCB、壓阻薄膜與可變形表層感測正向及剪切力。其 CAD 工具可由 2D 輪廓、3D 表面，甚至『為 9 號鞋墊設計感測器』等文字描述產生製造檔；團隊已製作超過 30 款感測器，並在四種真實機械人平台測試。對 1,024 個感測點作部分讀取時，速度比完整掃描高 19.2 倍。",
+    "category": "機械人與開源硬件",
+    "tags": [
+      "OpenTac",
+      "觸覺感測",
+      "機械人",
+      "開源硬件",
+      "MIT"
+    ],
+    "date": "2026-10-26",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "72h",
+    "whatHappened": "OpenTac 把感測器設計、製造、模擬、跨感測器轉移與資料擷取放在同一開源生態，降低為不同機械人表面重新做觸覺硬件的門檻。",
+    "reportingContext": "論文是尚未同行評審的 arXiv 預印本；速度數字來自團隊設定，長時間漂移、溫度與量產一致性仍要實際驗證。",
+    "deepDive": "機械人要處理滑動、插接與柔性物件，單靠鏡頭不足。可快速客製的低成本觸覺皮膚，可能成為 physical AI 收集接觸資料與閉環控制的基礎層。",
+    "whyImportant": "若硬件與工具鏈可跨平台重用，小型研究團隊及企業毋須每次由零開發感測器，能更快把觸覺加入機械人學習。",
+    "whatToWatch": "看第三方能否重製、長時間校準是否穩定、每平方厘米成本，以及量產後能否保持跨感測器模型轉移。",
+    "hkImpact": [
+      "香港大學與機械人初創可直接下載硬件及軟件，以夾取、物流或輔助科技做低成本原型。",
+      "製造商若試用，要把耐用度、清潔、溫度漂移與更換成本加入驗收，不可只看實驗室精度。",
+      "電子與柔性 PCB 供應鏈可評估小批量客製機會，連同校準與資料服務一併提供。"
+    ],
+    "take": "已確認的是開源發布與團隊測試；量產可靠度仍未證實。AIson 分析，OpenTac 的價值不只是一塊感測器，而是把機械人觸覺由專案工程變成可複用平台。",
+    "sourceLabel": "OpenTac／arXiv",
+    "sourceUrl": "https://arxiv.org/abs/2610.31661",
+    "sourceType": "研究論文",
+    "references": [
+      {
+        "label": "OpenTac 官方項目",
+        "url": "https://opentac.github.io/"
+      }
+    ],
+    "actionVerdict": "try-now",
+    "actionReason": "開源資源已公開，研究及原型團隊可在非關鍵場景重製測試。",
+    "aisonScore": 8.2,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-10-26-sensorimotor-alignment-robot-metric",
+    "rank": 10,
+    "title": "機械人模型未落地先估成功率：S² 指標用感知—動作對齊篩選 VLA",
+    "excerpt": "新研究提出無需訓練的離線指標，與模擬及真實機械人任務成功率呈正相關，可先篩模型再做昂貴實測。",
+    "summary": "新研究提出無需訓練的離線指標，與模擬及真實機械人任務成功率呈正相關，可先篩模型再做昂貴實測。",
+    "quickTake": "10 月 22 日提交的預印本提出 Sensorimotor Alignment（S²），量度模型的感知表示與實際運動軌跡結構有幾一致。研究稱 S² 在八個 VLM 骨幹、六個 world-action model 及五個真實機械人策略上，都與下游任務成功率呈正相關；真實機械人測試的相關係數為 0.831。它是低成本篩選工具，不是安全認證或成功率替代品。",
+    "category": "機械人評測",
+    "tags": [
+      "S²",
+      "VLA",
+      "world model",
+      "robotics",
+      "benchmark"
+    ],
+    "date": "2026-10-26",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "72h",
+    "whatHappened": "現時 VLA 常要做大量真機閉環測試才知道是否有效。S² 嘗試在微調或部署前，先用公開 checkpoint 與參考軌跡估算哪些骨幹較值得投入。",
+    "reportingContext": "樣本模型與任務數仍有限，相關不代表因果；論文尚未同行評審，而且不同機械人、鏡頭與任務可能改變結果。",
+    "deepDive": "physical AI 的隱藏成本是評測：每次真機 rollout 都耗時間、硬件並帶安全風險。若離線 proxy 能可靠排除弱模型，可大幅縮短選型。",
+    "whyImportant": "這把模型比較由語言或影像跑分拉近實際動作表現，亦提醒開發者不要用影片畫質代替機械人成功率。",
+    "whatToWatch": "等待更多平台重現、S² 對新任務及不同攝影角度的穩定性，以及它能否預測安全失誤而不只任務成功。",
+    "hkImpact": [
+      "香港機械人團隊可把 S² 當前置篩選，減少昂貴真機測試，但最終仍要做本地場景驗證。",
+      "中小企採購 physical AI 時，可要求供應商提供真實任務成功率與失敗案例，不要只看生成影片或模擬分數。",
+      "大學可用本地物流、餐飲或護理任務測試指標跨場景可靠度，建立更貼近香港的評測集。"
+    ],
+    "take": "已確認的是論文報告的相關結果；通用性尚待第三方驗證。AIson 分析，下一步真正有用的評測會是『平、快、能預測真機失敗』，而不是再多一個離線排行榜。",
+    "sourceLabel": "arXiv 預印本",
+    "sourceUrl": "https://arxiv.org/abs/2610.31670",
+    "sourceType": "研究論文",
+    "references": [
+      {
+        "label": "研究項目與程式碼",
+        "url": "https://yunfeixie233.github.io/s2/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "方法值得追蹤，但應先等更多機械人與任務的獨立重現。",
+    "aisonScore": 8,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 3,
+      "creator": 2,
+      "developer": 5
+    }
+  }
+]
