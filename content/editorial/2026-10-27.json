@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-27",
+  "dailyOneLiner": "AI 今日最大變化係：能力更平、更能直接操作電腦，但模型公司、科技巨頭與僱員都要開始為真實成本、驗證及資本紀律埋單。",
+  "top3Ids": [
+    "2026-10-27-openai-gpt-61-terra",
+    "2026-10-27-anthropic-s1-ipo",
+    "2026-10-27-openai-three-science-claims"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 能力開始大幅降價",
+      "summary": "GPT‑6.1 Terra 把視覺理解與電腦操作推到較低價位，企業自動化門檻由模型能力轉向權限、審計與例外處理。",
+      "watch": "獨立實測能否重現官方成本與成功率，以及高權限操作有沒有足夠回滾及審批。"
+    },
+    {
+      "title": "AI 資本帳公開化",
+      "summary": "Anthropic 以 S‑1 攤開收入、成本及風險，Meta 再以最多 950 億美元股本融資，市場開始要求 AI 擴張交代回報。",
+      "watch": "Anthropic 招股條款、Meta 發售定價，以及本周 Alphabet、Microsoft、Amazon 業績的 AI 回報。"
+    },
+    {
+      "title": "科研與工作都進入驗證期",
+      "summary": "OpenAI 公布三項重大研究主張並開放部分證明，同日發布近百國工作用途數據；價值要由外部驗證與可量度成果決定。",
+      "watch": "專家是否確認數學、複雜度及物理結果，以及工作用途擴散能否轉成生產力。"
+    }
+  ],
+  "biggestChange": "最大變化係『平價可行』與『昂貴現實』同日出現：Agent 推理成本急跌，但前沿模型、數據中心及人手重整所需的資本與治理成本反而更清楚。",
+  "watchTomorrow": "先看 GPT‑6.1 Terra 的獨立 agent benchmark 與香港可用情況，再看 Anthropic S‑1 的市場反應、OpenAI 科研主張的首輪外部審查，以及 Alphabet、Microsoft 即將公布的 AI 資本開支回報。"
+}
