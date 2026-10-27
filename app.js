@@ -112,16 +112,18 @@ document.addEventListener('DOMContentLoaded',()=>{mobileMenu();setupNewsletterLi
     const hero=document.querySelector('.daily-hero');
     const label=hero?.querySelector('.mini-label');
     const title=hero?.querySelector('h1');
-    if(label)label.textContent='DAILY STORY FLOW · EDITORIAL RANKING';
-    if(title)title.innerHTML='今日 AI <em>Story Flow</em>';
+    if(label)label.textContent='AI NEWS RANKING · EDITORIAL IMPORTANCE';
+    if(title)title.innerHTML='AI 新聞 <em>重要性排行榜</em>';
     const list=document.getElementById('dailyList');
     if(list&&!document.querySelector('.b2-flow-note')){
       const note=document.createElement('div');
       note.className='b2-flow-note';
-      note.innerHTML='<b>閱讀方式：</b>01–10 永遠代表 AIson 編輯重要性排名；日期／HKT 時間只作事件 metadata，唔會改變排名意思。';
+      note.innerHTML='<b>排名方式：</b>按編輯重要性排序；列表延伸至完整新聞庫，按「載入更多新聞」即可繼續閱讀。';
       list.before(note);
     }
-    [...document.querySelectorAll('.daily-item')].forEach((item,index)=>item.dataset.b2Rank=String(index+1).padStart(2,'0'));
+    const annotateRanks=()=>[...document.querySelectorAll('.daily-item')].forEach(item=>{const rank=item.querySelector('.daily-rank')?.textContent?.trim();if(rank)item.dataset.b2Rank=rank});
+    annotateRanks();
+    if(list&&!list.dataset.rankObserver){new MutationObserver(annotateRanks).observe(list,{childList:true});list.dataset.rankObserver='true'}
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(initB2Daily,0),{once:true});else setTimeout(initB2Daily,0);
 })();
