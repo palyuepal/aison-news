@@ -219,3 +219,6 @@ body[data-page="home"].b2-ready #today .section-head {border-color:var(--ink)}
  body[data-page="home"].b2-ready .b2-top-card .b2-card-media {aspect-ratio:16/9}
  body[data-page="home"].b2-ready .b2-section-head h2 {font-size:31px}
 }
+
+/* Keep the duplicated marquee tracks at their full content width so the loop has no overlap. */
+body[data-page="home"].b2-ready .b2-ticker-track {flex:0 0 max-content;width:max-content;min-width:max-content}
