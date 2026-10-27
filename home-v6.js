@@ -41,7 +41,7 @@
   function buildSignals(){
     const scores=new Map();
     const add=(name,score)=>scores.set(name,(scores.get(name)||0)+score);
-    NEWS.slice(0,10).forEach(story=>{
+    NEWS.forEach(story=>{
       const importance=Number(story.aisonScore)||Math.max(3,11-(Number(story.rank)||10));
       add(signalTheme(story),importance);
       const hay=[story.category,...(story.tags||[])].join(' ').toLowerCase();
@@ -75,7 +75,7 @@
     return '<div class="container">'+
       '<div class="v6-hero" data-v6-reveal>'+
         '<div class="v6-hero-copy">'+
-          '<div class="v6-edition"><b>AIson DAILY</b><span>'+esc(fmt(lead.date))+'</span><span>10 STORIES</span></div>'+
+          '<div class="v6-edition"><b>AIson DAILY</b><span>'+esc(fmt(lead.date))+'</span><span>'+NEWS.length+' STORIES</span></div>'+
           '<h1>今日 AI，<em>真正值得你知道。</em></h1>'+
           '<p class="v6-one-line">'+esc(oneLine)+'</p>'+
           '<div class="v6-hero-actions"><a class="v6-primary" href="daily.html" data-analytics-event="home_cta_click" data-analytics-content="quick_daily" data-analytics-slot="signal_hero">⚡ 快速掌握今日 AI <span>→</span></a><a class="v6-secondary" href="#today" data-analytics-event="home_cta_click" data-analytics-content="full_today" data-analytics-slot="signal_hero">完整今日 10 件事</a></div>'+
@@ -247,7 +247,7 @@
 
   function init(){
     if(document.body?.dataset.page!=='home')return;
-    const news=(window.AISON_NEWS||[]).slice().sort((a,b)=>(Number(a.rank)||999)-(Number(b.rank)||999)).slice(0,10);
+    const news=(window.AISON_NEWS||[]).slice().sort((a,b)=>(Number(a.rank)||999)-(Number(b.rank)||999));
     if(news.length<3)return;
     const lead=news[0], score=Number(lead.aisonScore)||0;
     const major=Boolean(lead.verified&&score>=9.2);
@@ -269,7 +269,7 @@
             '<div class="b2-kicker">AIson DAILY · STORY 01'+(major?' · MAJOR DAY':'')+'</div>'+
             '<h1>'+esc(lead.title)+'</h1>'+
             '<p class="b2-dek">'+esc(brief(lead.summary||lead.excerpt,235))+'</p>'+
-            '<div class="b2-actions"><a class="b2-primary" href="'+url(lead)+'">閱讀完整報道 →</a><a class="b2-secondary" href="daily.html">睇今日其餘 9 件事</a></div>'+
+            '<div class="b2-actions"><a class="b2-primary" href="'+url(lead)+'">閱讀完整報道 →</a><a class="b2-secondary" href="daily.html">睇完整新聞排行榜</a></div>'+
             '<div class="b2-byline">'+(lead.verified?'<span>✓ 已核實</span>':'')+(score?'<span>AIson Score '+score.toFixed(1)+' / 10</span>':'')+'<span>'+esc(lead.category||'AI NEWS')+'</span><span>'+esc(lead.readTime||'完整報道')+'</span></div>'+
           '</div>'+
           '<aside class="b2-pulse"><div class="b2-pulse-head"><span>● AIson LIVE</span><a href="live.html">進入 LIVE →</a></div>'+pulseMarkup(news)+'</aside>'+
@@ -285,8 +285,8 @@
     const sectionHead=document.querySelector('#today .section-head');
     if(sectionHead){
       const label=sectionHead.querySelector('.mini-label'), title=sectionHead.querySelector('h2');
-      if(label)label.textContent='STORIES 04–10 · EDITORIAL RANKING';
-      if(title)title.textContent='繼續今日版';
+      if(label)label.textContent='ALL STORIES · EDITORIAL RANKING';
+      if(title)title.textContent='更多新聞，按重要性排序';
     }
     [...document.querySelectorAll('#newsGrid .news-card')].forEach((card,index)=>{
       card.classList.add(index<2?'b2-mid-story':'b2-mini-story');
