@@ -292,3 +292,10 @@ body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notf
 body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .reader-guide a,
 body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .source-transparency-kicker {color:var(--accent)!important}
 body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .muted-light {color:var(--muted-ink)!important}
+
+
+/* Keep inherited navy panel copy readable after its surfaces are opened up. */
+body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .panel.dark p,
+body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .panel.dark .top-item b {color:var(--muted-ink)!important}
+body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .panel.dark h3 {color:var(--ink)!important;font-family:Georgia,"Noto Serif TC","Songti TC",serif}
+body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .panel.dark .top-item .num {color:var(--accent)!important}
