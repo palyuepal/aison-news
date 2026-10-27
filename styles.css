@@ -299,3 +299,9 @@ body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notf
 body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .panel.dark .top-item b {color:var(--muted-ink)!important}
 body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .panel.dark h3 {color:var(--ink)!important;font-family:Georgia,"Noto Serif TC","Songti TC",serif}
 body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .panel.dark .top-item .num {color:var(--accent)!important}
+
+
+/* Daily ten: continuous newspaper list, with spacing and rules instead of card frames. */
+body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .daily-list {gap:0!important}
+body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .daily-list::before {display:none!important}
+body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .daily-item {border:0!important;border-bottom:1px solid var(--rule)!important;padding:30px 0!important}
