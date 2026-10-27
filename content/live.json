@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-27-nvidia-meta-muse-partnership-investment",
+    "title": "NVIDIA 投資 Meta 30 億美元　Muse 合作由算力延伸至產品與資本",
+    "summary": "NVIDIA 與 Meta 宣布擴大合作，將共同推進 Meta 的 Muse 個人 AI Agent 及 Muse 模型系列；NVIDIA 同時承諾向 Meta 今輪股本發售投資 30 億美元。這把兩家公司原有的 AI 基建合作，進一步延伸至產品開發及股權關係。\n\n目前公開資料未交代完整技術分工、落地時間表或投資條款，亦不代表 NVIDIA 對 Meta 的 AI 回報作出保證。事件值得留意之處，是晶片供應商、模型平台與融資關係進一步重疊，市場往後需要更仔細區分真實產品需求與策略性資本支持。",
+    "category": "AI 基建與資本",
+    "publishedAt": "2026-10-27T06:08:08Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/nvidia-meta-partner-muse-agent-nvidia-invests-3-billion-2026-10-27/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-27-bank-korea-ai-capex-chip-exports",
     "title": "韓國央行警告：若 AI 投資放慢，晶片出口或少 500–1,000 億美元",
     "summary": "韓國央行在提交國會議員的情境分析中推演：若美國大型科技公司明年放慢 AI 基建投資，加上韓國晶片單價下跌 10%，2027 年半導體出口可能較原先預測少 500 億至 1,000 億美元，GDP 增長率或低約 0.4 個百分點。\n\n這是壓力情境，不是央行對必然衰退的預測。報告反映韓國出口對晶片及美國科技公司 AI 資本開支的高度依賴；實際影響仍取決於 AI 需求、記憶體價格及企業支出是否真的放慢。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-02T01:03:06Z",
     "sourceLabel": "Reuters / SoftBank",
     "sourceUrl": "https://www.reuters.com/legal/transactional/softbank-completes-final-phase-30-billion-investment-openai-2026-10-01/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-openai-fires-safety-researchers",
-    "title": "OpenAI 解僱三名安全研究員：保密與外部監督界線再起爭議",
-    "summary": "《華爾街日報》報道，OpenAI 解僱安全團隊研究員 Jasmine Wang、Tomek Korbak 及 Mikita Balesni，指三人向外部 AI 安全機構分享機密內部資料，違反公司政策。OpenAI 發言人確認，決定是在內部調查後作出。\n\n公司沒有公開涉事資料內容或接收機構，也未交代有關分享是否涉及安全事故通報；三名研究員暫未見公開回應。其中 Korbak 曾在 Hugging Face 事故調查中擔任 OpenAI 與外部評測機構 METR 的聯絡人。事件令前沿模型研究的保密、獨立審計與受保護披露渠道再次成為焦點。",
-    "category": "AI 安全",
-    "publishedAt": "2026-10-01T21:58:25Z",
-    "sourceLabel": "The Wall Street Journal / Business Insider",
-    "sourceUrl": "https://www.wsj.com/tech/ai/openai-parts-ways-with-researchers-who-allegedly-shared-confidential-information-aebac528",
     "level": "breaking",
     "verified": true,
     "active": false
