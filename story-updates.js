@@ -193,7 +193,7 @@
   function navItems(){
     return [
       ['home','index.html','⌂','首頁'],
-      ['daily','daily.html','☀','今日 AI 10 件事'],
+      ['daily','daily.html','☀','AI 新聞排行榜'],
       ['live','live.html','●','AIson LIVE'],
       ['weekly','weekly.html','◷','本週回顧'],
       ['topics','topics.html','◎','主題'],
