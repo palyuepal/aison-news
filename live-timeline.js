@@ -4,7 +4,8 @@
   if(!timeline)return;
 
   const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-  const dateObj=value=>value instanceof Date?value:new Date(value);
+  const dateOnly=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value);
+  const dateObj=value=>value instanceof Date?value:(dateOnly(value)?new Date(`${value}T00:00:00+08:00`):new Date(value));
   const hktKey=value=>{
     const d=dateObj(value);if(Number.isNaN(d.getTime()))return '';
     const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Hong_Kong',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(d);
@@ -13,10 +14,12 @@
   };
   const hktTime=value=>{
     const d=dateObj(value);if(Number.isNaN(d.getTime()))return '';
+    if(dateOnly(value))return new Intl.DateTimeFormat('zh-HK',{timeZone:'Asia/Hong_Kong',month:'numeric',day:'numeric'}).format(d);
     return new Intl.DateTimeFormat('zh-HK',{timeZone:'Asia/Hong_Kong',hour:'2-digit',minute:'2-digit',hour12:false}).format(d);
   };
   const hktDateTime=value=>{
     const d=dateObj(value);if(Number.isNaN(d.getTime()))return '';
+    if(dateOnly(value))return `${hktTime(value)}（未提供時間）`;
     return new Intl.DateTimeFormat('zh-HK',{timeZone:'Asia/Hong_Kong',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}).format(d);
   };
   const hktDay=value=>{
@@ -25,6 +28,7 @@
   };
   const relative=value=>{
     const d=dateObj(value);if(Number.isNaN(d.getTime()))return '';
+    if(dateOnly(value)){const days=Math.floor((Date.parse(`${today}T00:00:00+08:00`)-d.getTime())/86400000);return days<=0?'今日':days===1?'昨日':`${days} 日前`;}
     const mins=Math.max(0,Math.floor((Date.now()-d.getTime())/60000));
     if(mins<1)return '剛剛';
     if(mins<60)return `${mins} 分鐘前`;
@@ -80,12 +84,13 @@
     const paragraphs=summaryParagraphs(item.summary).map(part=>`<p>${esc(part)}</p>`).join('');
     const story=item.threadId?'<span class="timeline-thread">同一事件持續更新</span>':'';
     const full=articleLink(item);
-    return `<article class="timeline-item level-${level}${isDeveloping?' active':''}" data-live-level="${level}"><div class="timeline-node" aria-hidden="true"></div><div class="timeline-card"><div class="timeline-top"><div class="timeline-time">${esc(hktTime(item.publishedAt))} HKT <small>${esc(relative(item.publishedAt))}</small></div><span class="timeline-badge ${level}">${meta.symbol} ${meta.label}</span></div><h3>${esc(item.title)}</h3><div class="timeline-summary">${paragraphs}</div><div class="timeline-foot"><span>${esc(item.category||'AI 快訊')} · ${verified}</span><span class="timeline-links">${full?`<a class="timeline-read" href="${full}">閱讀完整報道 →</a>`:''}${sourceLink(item)}</span></div>${story}</div></article>`;
+    const publishedLabel=dateOnly(item.publishedAt)?`${esc(hktTime(item.publishedAt))}（發布日）`:`${esc(hktTime(item.publishedAt))} HKT`;
+    return `<article class="timeline-item level-${level}${isDeveloping?' active':''}" data-live-level="${level}"><div class="timeline-node" aria-hidden="true"></div><div class="timeline-card"><div class="timeline-top"><div class="timeline-time">${publishedLabel} <small>${esc(relative(item.publishedAt))}</small></div><span class="timeline-badge ${level}">${meta.symbol} ${meta.label}</span></div><h3>${esc(item.title)}</h3><div class="timeline-summary">${paragraphs}</div><div class="timeline-foot"><span>${esc(item.category||'AI 快訊')} · ${verified}</span><span class="timeline-links">${full?`<a class="timeline-read" href="${full}">閱讀完整報道 →</a>`:''}${sourceLink(item)}</span></div>${story}</div></article>`;
   };
   const dayDivider=item=>`<div class="timeline-date-divider"><span>${esc(hktDay(item.publishedAt))}</span><small>${hktKey(item.publishedAt)===today?'TODAY':'RECENT'}</small></div>`;
   const render=filter=>{
     const items=filter==='all'?stream:stream.filter(item=>levelOf(item)===filter);
-    if(!items.length){timeline.innerHTML='<div class="live-empty-page"><b>呢個分類暫時未有更新</b><span>可以切換到「全部新聞流」查看最近已核實消息。</span></div>';return}
+    if(!items.length){timeline.innerHTML=filter==='all'?'<div class="live-empty-page"><b>暫時沒有可顯示的新聞</b><span>新聞資料可能仍在載入，請稍後重新整理。</span></div>':'<div class="live-empty-page"><b>呢個分類暫時未有更新</b><span>可以切換到「全部新聞流」查看最近已核實消息。</span></div>';return}
     let lastDay='';
     timeline.innerHTML=items.map(item=>{const day=hktKey(item.publishedAt),divider=day!==lastDay?dayDivider(item):'';lastDay=day;return divider+timelineCard(item)}).join('');
   };
