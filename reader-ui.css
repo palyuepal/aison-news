@@ -83,3 +83,24 @@ html[data-theme="dark"] body[data-page="home"] :is(.b2-pulse,.v6-signal-card) { 
  html { scroll-behavior:auto!important; }
  *,*::before,*::after { animation:none!important; transition:none!important; }
 }
+
+/* The root ID gives shared reader rules stable precedence over legacy page rules. */
+#aison-reader body .page-hero { background:#071A33!important; padding:42px 0!important; }
+#aison-reader body .page-hero h1,#aison-reader body .daily-head h1 { color:#F7FAFF!important; font-size:clamp(32px,4vw,54px)!important; line-height:1.35!important; letter-spacing:-.025em!important; }
+#aison-reader body .page-hero h1 em,#aison-reader body .daily-head h1 em { color:#F6C547!important; text-decoration:none!important; }
+#aison-reader body .page-hero p { color:#C8D5E8!important; }
+#aison-reader body .page-hero .mini-label { color:#F6C547!important; }
+#aison-reader body .daily-item { padding:0 0 24px!important; }
+#aison-reader body .daily-item>div:last-child { padding:24px!important; background:var(--surface)!important; border:1px solid var(--line)!important; border-radius:18px!important; }
+#aison-reader body .daily-item h2 { font-size:clamp(22px,2.3vw,29px)!important; line-height:1.5!important; }
+#aison-reader body .daily-item p { font-size:15px!important; line-height:1.9!important; }
+#aison-reader body .daily-toolbar .primary-btn { background:#F6C547!important; color:#071A33!important; border-color:#F6C547!important; }
+#aison-reader[data-theme="dark"] body .b2-kicker { background:#FFD45E!important; color:#071A33!important; }
+#aison-reader[data-theme="dark"] body .b2-pulse-row time { color:#EACB7F!important; }
+#aison-reader[data-theme="dark"] body .b2-proof span,#aison-reader[data-theme="dark"] body .b2-editor small,#aison-reader[data-theme="dark"] body .b2-edition-bar { color:#B9C7D8!important; }
+#aison-reader[data-theme="dark"] body .b2-proof span:first-child,#aison-reader[data-theme="dark"] body .verified { color:#8DE0B2!important; }
+#aison-reader[data-theme="dark"] body .site-theme-toggle { background:#192C45!important; color:#EAF1FB!important; }
+@media(max-width:760px) {
+ #aison-reader body .page-hero { padding:30px 0!important; }
+ #aison-reader body .daily-item>div:last-child { padding:18px!important; }
+}

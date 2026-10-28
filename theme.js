@@ -1,6 +1,7 @@
 (()=> {
   const key="aison-home-theme";
   const root=document.documentElement;
+  root.id="aison-reader";
   const read=()=>{try{const value=localStorage.getItem(key);return value==="dark"||value==="light"?value:null}catch{return null}};
   const apply=value=>{root.dataset.theme=value;try{localStorage.setItem(key,value)}catch{}};
   const mount=()=>{
