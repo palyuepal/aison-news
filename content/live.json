@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-10-28-google-genie-4-world-model-live",
+    "title": "Google Genie 4 把生成媒體推向可互動世界",
+    "summary": "Google DeepMind 於 10 月 27 日公布 Genie 4，展示可即時操控、會因用戶行動改變並帶有原生聲音的模擬環境，先以研究預覽方式向可信測試者開放。\\n\\n目前仍非一般用戶可用產品；Google 亦指出長時間模擬仍有物件漂移、文字不清及空間錯誤。對遊戲、動畫及機械人團隊而言，值得追蹤的是環境能否保持一致，而非單段示範片的逼真度。",
+    "category": "AI 模型與 Agent",
+    "publishedAt": "2026-10-27T16:10:00Z",
+    "sourceLabel": "Google DeepMind",
+    "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-10-28-apple-creator-studio-ai-live",
+    "title": "Apple 把 AI 助手與 MCP 帶進 Creator Studio",
+    "summary": "Apple 於 10 月 27 日公布 Creator Studio 更新：Pixelmator Pro 加入自然語言 Generate Fill，Logic Pro 及 Keynote、Pages、Numbers 將加入 AI 助手；文件套件亦加入 MCP 支援，讓外部 Agent 可讀取內容、編輯及執行動作。更新預計 11 月推出。\\n\\n助手和 MCP 功能仍有 beta 部分，實際權限、私隱及可靠度要待發布後驗證。創作者與中小企可先用非敏感項目測試，量度工作流是否真的省時，並限制 Agent 可讀寫的文件範圍。",
+    "category": "AI 創作工具",
+    "publishedAt": "2026-10-27T13:36:00Z",
+    "sourceLabel": "Apple Newsroom",
+    "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-27-openai-gpt-61-terra-catchup",
     "title": "GPT‑6.1 Terra 上線：電腦操作接近 Astra　API 輸入價降至每百萬 token 1 美元",
     "summary": "OpenAI 已推出 GPT‑6.1 Terra，主打視覺理解、精準電腦操作、寫作與編程，並向 ChatGPT Plus、Pro、Enterprise、Edu 的 Work／Codex 用戶及 API 開放。官方定價為每百萬輸入 token 1 美元、快取輸入 0.05 美元、輸出 5 美元；OpenAI 的自家 Agents’ Last Exam 顯示，Terra 在部分電腦操作工作可用約 GPT‑6 Astra 十分一的 token 價格取得相近表現。\n\n效能與成本比較主要來自供應商自報評測，未代表所有企業流程的實際可靠度。OpenAI 同時把 Terra 列為網絡安全 Critical、生物及化學能力 High，沿用 Astra 級防護；企業測試桌面 Agent 時仍應限制權限、保留人工審批及設置可回滾流程。",
@@ -9,7 +33,7 @@
     "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-27-openai-three-science-claims-catchup",
@@ -21,7 +45,7 @@
     "sourceUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-27-deepseek-v41-flash-agent-safety-tests",
@@ -69,7 +93,7 @@
     "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/0001628280-26-067168-index.html",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-23-openai-decisions-api-general-availability",
@@ -692,30 +716,6 @@
     "sourceLabel": "Arizona Court of Appeals / Associated Press",
     "sourceUrl": "https://apnews.com/article/cd1ca553c7fa80c6698d7f97b51b1edd",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-volantis-88m-photonic-memory",
-    "title": "Volantis 融資 8,800 萬美元：用光連接 GPU 與 220 顆記憶體",
-    "summary": "AI 晶片初創 Volantis 完成 8,800 萬美元 A 輪融資，開發以 VCSEL 雷射光連接運算晶片與記憶體的光學互連架構。公司表示，傳統 GPU 周邊通常只能放置有限數目的高頻寬記憶體，而其設計目標是在單一 GPU 周圍接駁最多 220 顆記憶體，以同時擴大容量與頻寬。\n\nVolantis 計劃明年推出首款晶片，但目前未有量產產品或獨立性能測試。公司聲稱 A-1 系統可支援超過 20 萬億參數模型及每名用戶最高每秒 10,000 tokens；這些仍是設計目標，不代表已在商用環境實現。真正價值要看功耗、散熱、良率及與現有 GPU 平台的整合成本。",
-    "category": "AI 晶片",
-    "publishedAt": "2026-10-02T03:56:40Z",
-    "sourceLabel": "Volantis / Reuters",
-    "sourceUrl": "https://www.reuters.com/business/volantis-raises-88-million-tech-connect-ai-memory-chips-2026-10-01/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-us-lawmaker-ai-model-weight-security-letters",
-    "title": "美國議員追問五大 AI 公司：模型權重有冇被敵對勢力接觸",
-    "summary": "美國眾議員 Ro Khanna 向 OpenAI、Anthropic、Google、Meta 及 SpaceXAI 發信，要求交代中國或其他敵對勢力曾否嘗試或成功未獲授權接觸其模型權重，並說明現有網絡保安措施。模型權重承載模型核心能力，一旦被竊取，可讓攻擊者毋須由零開始重建高階系統。\n\n這是國會監督要求，不是已證實任何公司的權重被竊，也不是正式執法結論。OpenAI 與 Anthropic 曾披露模型蒸餾活動，但蒸餾輸出與直接取得權重並不相同；真正的新訊號是，美國國會正把前沿模型檔案視為涉及國家安全的高價值資產。",
-    "category": "AI 政策",
-    "publishedAt": "2026-10-02T02:59:12Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/legal/litigation/leading-democrat-asks-ai-firms-data-any-chinese-access-sensitive-code-2026-10-01/",
-    "level": "update",
     "verified": true,
     "active": false
   }
