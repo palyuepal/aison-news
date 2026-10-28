@@ -1,5 +1,17 @@
 window.AISON_LIVE = [
   {
+    "id": "2026-10-29-anthropic-drug-development-catchup",
+    "title": "Anthropic 與六間機構推進 Claude 藥物研發，早期實驗已有候選",
+    "summary": "Anthropic 公布與六間藥物研發機構合作及自有罕見肌肉疾病項目。合作方的早期材料包括 Claude 參與設計並經實驗測試的 CAR-T 受體構造；Divergence Labs 以 Claude 產生約 35,000 個抗體設計，初步找到可結合及移除 IgE 的候選。\\n\\nAnthropic 亦稱 Enveda 的文件審閱流程大幅縮短；惟整體工作多在前臨床或早期階段，數字由公司及合作方公布，並不代表人體臨床療效、藥物已可用或審批時間必然縮短。",
+    "category": "AI 科研與醫療",
+    "publishedAt": "2026-10-27T20:50:00Z",
+    "sourceLabel": "Anthropic／合作機構技術報告",
+    "sourceUrl": "https://www.anthropic.com/research/early-progress-drug-development",
+    "verified": true,
+    "active": true,
+    "level": "update"
+  },
+  {
     "id": "2026-10-28-openai-oracle-enterprise-apps-chatgpt",
     "title": "OpenAI 與 Oracle 把企業應用帶進 ChatGPT：Agent 開始連接財務與採購流程",
     "summary": "OpenAI 與 Oracle 10 月 27 日公布擴大合作：Oracle 正開發 AI Workspace，計劃把 Fusion、NetSuite 等企業應用及數據接入 ChatGPT，讓員工在既有權限與審批下處理跨系統工作。雙方亦公布 AI Security Mesh、供中小企使用的 SMB Bundle，以及以 Codex 建立企業應用的 App Composer。\n\n目前多項功能仍屬規劃或即將推出，並非所有企業已可使用；Oracle 提供的內部採用數字及效率例子亦未經獨立驗證。值得追蹤的是 Agent 能否在保留企業權限、審批和人工把關的前提下，可靠地執行財務、採購等真實流程。",
@@ -703,18 +715,6 @@ window.AISON_LIVE = [
     "publishedAt": "2026-10-02T10:03:23Z",
     "sourceLabel": "AWS / Reuters / The Wall Street Journal",
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-invest-1-billion-over-five-years-us-data-center-communities-2026-10-02/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-perplexity-pplx-decider-open-model",
-    "title": "Perplexity 開源 270 億參數決策模型：輸出選項連機率",
-    "summary": "Perplexity 在 Hugging Face 以 Apache 2.0 授權發布 pplx-decider-v1-27b。它由 Qwen3.8-27B 微調而成，不以長篇聊天為主，而是按指定準則替文字或圖片作選擇、分類及是非判斷，同時輸出校準機率，適合工單分流、內容審核及規則化決策流程。\\n\\n模型權重約需 49 GiB 顯示記憶體以外的運行空間，目前亦未由 Hugging Face Inference Provider 直接託管。Perplexity 公布的 11 項評測平均準確率為 85.71%，但結果經其自家 API 測量，不能取代用企業真實資料、偏差及錯誤成本作獨立測試。",
-    "category": "AI 模型",
-    "publishedAt": "2026-10-02T07:55:16Z",
-    "sourceLabel": "Perplexity / Hugging Face",
-    "sourceUrl": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b",
     "level": "update",
     "verified": true,
     "active": false
