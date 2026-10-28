@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-28",
+  "dailyOneLiner": "AI 今日由『生成答案』再跨一步：開始生成可互動世界、操作企業核心系統，亦逼企業把身份、權限與本地算力當成產品基本功。",
+  "top3Ids": [
+    "2026-10-28-google-genie-4-world-model",
+    "2026-10-28-openai-oracle-apps-chatgpt",
+    "2026-10-28-apple-creator-studio-ai"
+  ],
+  "threeThemes": [
+    {
+      "title": "生成媒體變成可互動世界",
+      "summary": "Genie 4 把影像、聲音、規劃與即時操控合併，世界模型由展示片走向 Agent 與機械人訓練環境。",
+      "watch": "公開版能維持一致多久、API 成本，以及長時間物件與因果漂移。"
+    },
+    {
+      "title": "Agent 進入核心工作流",
+      "summary": "Oracle 將企業應用帶入 ChatGPT，IBM 同步補上 Agent 身份、最小權限、沙箱與停機掣。",
+      "watch": "真實權限、審批、回滾與審計能否達到企業生產要求。"
+    },
+    {
+      "title": "AI 由雲端落到工具與裝置",
+      "summary": "Apple 把助手、MCP 與生成編輯放進創作套件，再以 M6 強推本地模型；Oracle 亦把雲端算力擴至多款晶片。",
+      "watch": "香港語言與價格、第三方實測，以及跨晶片與跨工具可移植性。"
+    }
+  ],
+  "biggestChange": "最大變化係 AI 產品的競爭單位由單一模型，轉成『模型＋世界／資料＋工具＋權限＋算力』的完整系統；能力更強，但系統級錯誤亦更難靠一張模型安全卡解決。",
+  "watchTomorrow": "先看 Genie 4 的首輪可信測試與等候名單細節，再看 Oracle／OpenAI 產品時間表、Apple 香港價格及語言支援，以及本周 Alphabet、Microsoft、Amazon 業績會否證明巨額 AI 資本開支開始轉成現金流。"
+}
