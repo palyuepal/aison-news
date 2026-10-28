@@ -152,6 +152,60 @@ def _home_fallback(data):
     )
 
 
+def _home_news_fallback(data):
+    visuals = {
+        'OpenAI': ('◉', 'openai'), 'Google': ('G', 'google'),
+        'Anthropic': ('AI', 'anthropic'), 'NVIDIA': ('N', 'nvidia'),
+        'Meta': ('∞', 'meta'), 'AI 安全': ('⌁', 'safety'),
+        'AI 晶片': ('▦', 'chip'), 'AI 政策': ('⚖', 'policy'),
+        '教育 AI': ('✎', 'education'), 'AI 工具': ('✣', 'tools'),
+        '產業': ('◆', 'nvidia'), '開源': ('⌘', 'anthropic'),
+        '科學': ('◎', 'google'), '網絡安全': ('⌁', 'safety'),
+        '產品': ('✣', 'tools'), '醫療': ('＋', 'education'),
+        '醫療 AI': ('＋', 'education'), '研究': ('∑', 'google'),
+        '創作': ('✦', 'tools'), 'AI 基建': ('▦', 'chip'),
+        '基建': ('▦', 'chip'), '治理': ('⚖', 'policy'),
+        '政策': ('⚖', 'policy'),
+    }
+    cards = []
+    for index, story in enumerate(data[:10], start=1):
+        story_id = _escape_html(story.get('id'))
+        title = _escape_html(story.get('title'))
+        excerpt = _escape_html(story.get('excerpt') or story.get('summary'))
+        category = _escape_html(story.get('category') or 'AI 新聞')
+        raw_category = str(story.get('category') or '')
+        icon, tone = visuals.get(raw_category, ('✦', 'default'))
+        tags = ''.join(
+            f'<span class="tag">{_escape_html(tag)}</span>'
+            for tag in (story.get('tags') or [])[:3]
+        )
+        freshness = _escape_html(story.get('freshness'))
+        freshness_badge = f'<span class="freshness">{freshness}</span>' if freshness else ''
+        rank = int(story.get('rank') or index)
+        score = story.get('aisonScore')
+        score_badge = ''
+        if isinstance(score, (int, float)) and 0 <= score <= 10:
+            score_badge = f'<span class="aison-score">AIson Score {float(score):.1f} / 10</span>'
+        verified = '<b>✓ 已核實</b>' if story.get('verified') else ''
+        read_time = _escape_html(story.get('readTime') or '')
+        date = _escape_html(story.get('date'))
+        haystack = _escape_html(' '.join([
+            str(story.get('title') or ''), str(story.get('excerpt') or ''),
+            raw_category, ' '.join(str(tag) for tag in (story.get('tags') or [])),
+        ]).lower())
+        cards.append(
+            f'<a class="news-card" href="news/{story_id}.html" data-hay="{haystack}" data-cat="{category}">'
+            f'<div class="card-leading"><span class="rank">{rank:02d}</span>'
+            f'<span class="card-symbol {tone}" aria-hidden="true">{icon}</span></div>'
+            f'<div><div class="card-overline"><span>{category}</span>{verified}</div>'
+            f'<h3>{title}</h3><p>{excerpt}</p><div class="meta">{tags}'
+            f'{freshness_badge}{score_badge}</div>'
+            f'<div class="card-footer"><span>◷ {date} · {read_time}</span>'
+            f'<span class="card-arrow">→</span></div></div></a>'
+        )
+    return ''.join(cards)
+
+
 def _daily_fallback(data):
     items = []
     for index, story in enumerate(data[:10], start=1):
@@ -191,7 +245,24 @@ def patch_static_fallbacks(data):
     )
     if home.count(home_marker) != 1:
         raise SystemExit('homepage fallback placeholder changed; update build_light_payloads.py')
-    home_path.write_text(home.replace(home_marker, _home_fallback(data), 1), encoding='utf-8')
+    home = home.replace(home_marker, _home_fallback(data), 1)
+    news_marker = '<div class="news-grid" id="newsGrid"></div>'
+    if home.count(news_marker) != 1:
+        raise SystemExit('homepage news-grid placeholder changed; update build_light_payloads.py')
+    home = home.replace(
+        news_marker,
+        '<div class="news-grid" id="newsGrid">' + _home_news_fallback(data) + '</div>',
+        1,
+    )
+    empty_marker = '<div class="empty" id="empty">暫時未有呢個分類嘅新聞。</div>'
+    if home.count(empty_marker) != 1:
+        raise SystemExit('homepage empty-state placeholder changed; update build_light_payloads.py')
+    home = home.replace(
+        empty_marker,
+        '<div class="empty" id="empty" style="display:none">暫時未有呢個分類嘅新聞。</div>',
+        1,
+    )
+    home_path.write_text(home, encoding='utf-8')
 
     daily_path = ROOT / 'daily.html'
     daily = daily_path.read_text(encoding='utf-8')
