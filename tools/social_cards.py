@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import os, shutil
+import os, shutil, sys
 
 CARD_LIMIT = 120
 W, H = 1200, 630
@@ -24,7 +24,7 @@ FONT_BOLD_CANDIDATES = [
 ]
 
 def _required():
-    return os.getenv('AISON_REQUIRE_SOCIAL_CARDS', '').strip() == '1'
+    return os.getenv('AISON_REQUIRE_SOCIAL_CARDS', '').strip() == '1' or os.getenv('VERCEL', '').strip() == '1'
 
 def _find_font(candidates):
     custom = os.getenv('AISON_SOCIAL_FONT', '').strip()
@@ -286,8 +286,8 @@ def build_social_cards(data, site, root, limit=CARD_LIMIT):
         from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageFilter
     except Exception as exc:
         if _required():
-            raise SystemExit(f'Social cards required but Pillow is unavailable: {exc}')
-        print('Social cards skipped: Pillow unavailable; article pages will use the generic AIson image.')
+            raise SystemExit(f'Social cards require Pillow; Python={sys.executable}; import error: {type(exc).__name__}: {exc}')
+        print(f'Social cards skipped: Pillow import failed; Python={sys.executable}; {type(exc).__name__}: {exc}. Article pages will use the generic AIson image.')
         return set()
 
     regular_font = _find_font(FONT_REGULAR_CANDIDATES)

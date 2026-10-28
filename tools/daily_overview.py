@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import sys
 import json, os
 
 W, H = 1200, 1500
@@ -25,7 +26,7 @@ FONT_BOLD_CANDIDATES = [
 ]
 
 def _required():
-    return os.getenv('AISON_REQUIRE_SOCIAL_CARDS', '').strip() == '1'
+    return os.getenv('AISON_REQUIRE_SOCIAL_CARDS', '').strip() == '1' or os.getenv('VERCEL', '').strip() == '1'
 
 def _find_font(candidates):
     custom = os.getenv('AISON_SOCIAL_FONT', '').strip()
@@ -137,8 +138,8 @@ def build_daily_overview(data,site,root):
     try:
         from PIL import Image,ImageDraw,ImageFont,ImageFilter
     except Exception as exc:
-        if _required(): raise SystemExit(f'Daily overview required but Pillow unavailable: {exc}')
-        print('Daily overview skipped: Pillow unavailable.')
+        if _required(): raise SystemExit(f'Daily overview requires Pillow; Python={sys.executable}; import error: {type(exc).__name__}: {exc}')
+        print(f'Daily overview skipped: Pillow import failed; Python={sys.executable}; {type(exc).__name__}: {exc}.')
         return None
     regular=_find_font(FONT_REGULAR_CANDIDATES); bold=_find_font(FONT_BOLD_CANDIDATES)
     mascot_path=Path(root)/'assets'/'mascot.webp'
