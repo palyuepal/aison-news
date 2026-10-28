@@ -84,3 +84,23 @@ html[data-theme="dark"] body.notfound .notfound{background:#14243A!important;col
   body[data-page="home"] #themeToggle.site-theme-toggle .theme-toggle-label{display:none!important}
 }
 @media(prefers-reduced-motion:reduce){.site-theme-toggle{transition:none}}
+
+/* Keep the light appearance on AIson's original navy and yellow brand system. */
+html[data-theme="light"]{
+  color-scheme:light;
+  --navy:#071A33;--navy-deep:#041326;--navy2:#0F3D73;--navy3:#174F8A;
+  --royal-blue:#0F3D73;--yellow:#F6C547;--yellow2:#FBE6A1;--gold:#F6C547;
+  --gold-soft:#FFF7D9;--gold-ink:#805900;--paper:#F5F7FB;--paper-bright:#FFFFFF;
+  --ice:#EDF3FB;--surface:#FFFFFF;--surface-alt:#EDF3FB;--white:#FFFFFF;
+  --ink:#0B2345;--muted:#66758C;--muted-light:#8190A5;--line:#DCE5F0;
+  --line-strong:#B8C8DB;--rule:#DCE5F0;--accent:#0F3D73;--link:#174F8A;
+  --green:#25865A;--live:#C9422D
+}
+html[data-theme="light"] body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound){
+  --paper:#F5F7FB;--paper-bright:#FFFFFF;--ink:#0B2345;--muted-ink:#66758C;
+  --rule:#DCE5F0;--accent:#0F3D73;--gold:#F6C547;
+  background:var(--paper)!important;color:var(--ink)!important
+}
+html[data-theme="light"] body.notfound{
+  background:#F5F7FB!important;color:#0B2345!important
+}
