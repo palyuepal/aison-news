@@ -2,8 +2,10 @@
 from pathlib import Path
 import html as html_lib
 import json
+import os
 import re
 import sys
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 DAILY_DIR = ROOT / "content" / "daily"
@@ -51,9 +53,9 @@ def replace_meta(html, kind, key, value):
     return updated
 
 
-def patch(path: Path, edition: str, items):
+def patch(path: Path, edition: str, items, base_url: str = "https://aison.hk"):
     html = path.read_text(encoding="utf-8")
-    image = f"https://aison.hk/assets/social/daily-{edition}.jpg"
+    image = f"{base_url.rstrip('/')}/assets/social/daily-{edition}.jpg"
     title, description = share_copy(edition, items)
     html = replace_meta(html, "property", "og:title", title)
     html = replace_meta(html, "name", "twitter:title", title)
@@ -76,8 +78,21 @@ def patch(path: Path, edition: str, items):
     return image
 
 
+def _deployment_base_url():
+    deployment = os.getenv("VERCEL_URL", "").strip()
+    if not deployment:
+        return "https://aison.hk"
+    if "://" not in deployment:
+        deployment = "https://" + deployment
+    parsed = urlsplit(deployment)
+    if parsed.scheme not in {"https", "http"} or not parsed.netloc or parsed.path not in {"", "/"}:
+        raise SystemExit("VERCEL_URL must be a host name or an absolute origin")
+    return f"{parsed.scheme}://{parsed.netloc}"
+
+
 def main():
     target = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT
+    base_url = _deployment_base_url()
     edition = latest_edition()
     items = load_items(edition)
     generated = ROOT / "assets" / "social" / f"daily-{edition}.jpg"
@@ -87,7 +102,7 @@ def main():
         path = target / name
         if not path.exists():
             raise SystemExit(f"missing target page: {path}")
-        patch(path, edition, items)
+        patch(path, edition, items, base_url)
     title, _ = share_copy(edition, items)
     print(f"Patched share metadata for {edition}: {title} / daily-{edition}.jpg")
 
