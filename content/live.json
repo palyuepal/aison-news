@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-28-liquid-ai-lfm3-open-multimodal-models",
+    "title": "Liquid AI 開放六款 LFM3 模型：多模態推理走向本地部署",
+    "summary": "Liquid AI 於 10 月 27 日發布 LFM3 系列，首批六款約 2B 級開放權重模型共用一個骨幹，涵蓋文字、視覺、音訊、全模態及決策；模型權重已可下載，文字模型亦可在單張 GPU 微調。\\n\\n這令香港開發者及中小企多一個可本地測試、按專門工作微調的選項，但模型能力、粵語表現與實際部署成本仍要自行驗證。參數效率及基準比較目前主要由 Liquid AI 公布，未有足夠獨立評測證明普遍優勢。",
+    "category": "AI 模型與 Agent",
+    "publishedAt": "2026-10-27T17:04:50Z",
+    "sourceLabel": "Liquid AI",
+    "sourceUrl": "https://www.liquid.ai/blog/lfm3",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-28-google-genie-4-world-model-live",
     "title": "Google Genie 4 把生成媒體推向可互動世界",
     "summary": "Google DeepMind 於 10 月 27 日公布 Genie 4，展示可即時操控、會因用戶行動改變並帶有原生聲音的模擬環境，先以研究預覽方式向可信測試者開放。\\n\\n目前仍非一般用戶可用產品；Google 亦指出長時間模擬仍有物件漂移、文字不清及空間錯誤。對遊戲、動畫及機械人團隊而言，值得追蹤的是環境能否保持一致，而非單段示範片的逼真度。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Bull / Reuters",
     "sourceUrl": "https://www.reuters.com/world/europe/french-supercomputer-maker-bull-doubles-output-boost-europes-ai-ambitions-2026-10-01/",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-arizona-ai-victim-video-resentencing",
-    "title": "AI 死者影片令判刑失效：亞利桑那法院下令重新量刑",
-    "summary": "亞利桑那州上訴法院撤銷一宗誤殺案的 10 年半刑期，並下令重新量刑。原審法官曾觀看由死者家人製作、讓死者形象與聲音「親自發言」的 AI 影片，並形容影片真實、像由死者內心說出；上訴法院認為，影片中的說話其實來自家屬想像，並非死者留下的真實陳述，可靠性不足。\n\n裁決沒有推翻 Gabriel Horcasitas 的誤殺定罪，也沒有全面禁止法庭使用 AI。法院針對的是原審法官依賴合成影片作量刑，令程序受到偏見並達到根本不公平的程度。案件將返回下級法院，由另一輪程序重新決定刑期。",
-    "category": "AI 法律",
-    "publishedAt": "2026-10-02T05:01:32Z",
-    "sourceLabel": "Arizona Court of Appeals / Associated Press",
-    "sourceUrl": "https://apnews.com/article/cd1ca553c7fa80c6698d7f97b51b1edd",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
