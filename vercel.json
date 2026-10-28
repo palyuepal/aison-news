@@ -1,1 +1,1 @@
-{"cleanUrls":true,"trailingSlash":false,"buildCommand":"uv run --with pillow python tools/enrich_official_visuals.py --limit 20 && uv run --with pillow python tools/build.py && uv run --with pillow python tools/build_light_payloads.py && rm -rf public && mkdir public && cp -a assets data news topics *.html *.css *.js CNAME public/"}
+{"cleanUrls":true,"trailingSlash":false,"buildCommand":"bash tools/build_vercel.sh"}
