@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-28-uk-vape-consultation-automated-submissions",
+    "title": "英國電子煙諮詢 76% 回應被判為機械提交，民意數字受大規模灌票干擾",
+    "summary": "一項 10 月 27 日刊於《Tobacco Control》的觀察研究，分析英國 2023 年煙草及電子煙法案諮詢。政府將 118,756 份提交中的 90,835 份（76%）識別為機械人提交並排除；幾乎全部集中反對一次性電子煙限制，且不少回覆重複、由少數 IP 高頻送出。\n\n研究指出，大量而方向一致的自動提交可扭曲網上諮詢呈現的民意。不過，研究無法確認幕後身份、動機或商業贊助，也不能直接推廣到其他政策議題；目前能確認的是這批回覆被政府識別並排除，法案其後仍獲通過。",
+    "category": "AI 政策與公眾安全",
+    "publishedAt": "2026-10-27T22:30:00Z",
+    "sourceLabel": "Tobacco Control（BMJ）／The Guardian",
+    "sourceUrl": "https://doi.org/10.1136/tc-2026-060309",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-28-malaysia-ai-chip-seizure-smuggling",
     "title": "馬來西亞查獲約 RM49.5m AI 晶片，調查疑似跨境走私網絡",
     "summary": "馬來西亞海關 10 月 28 日表示，本月查獲約 4,950 萬令吉（約 1,211 萬美元）的先進 AI 晶片，並正調查一個涉嫌經吉隆坡國際機場轉運晶片的網絡。海關稱，10 月 15 日在機場自由貿易區發現 30 部載有先進晶片的伺服器；初步調查指貨物由亞洲另一地運入，原擬再出口至區內另一國，所需貿易許可並未申報。\n\n事件顯示先進 AI 算力的跨境流向正面臨更嚴格查核，但目前公開資料未證實貨物最終目的地或涉及哪一個國家。馬來西亞去年已對美國原產先進 AI 晶片的流動設出口管制；這宗調查仍在進行，不能視作已確認的規避制裁案件。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-02T07:55:15Z",
     "sourceLabel": "Anthropic",
     "sourceUrl": "https://claude.com/blog/claude-code-mods",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-microsoft-mai-streaming-voice-models",
-    "title": "Microsoft 推出即時語音模型：60 種語言轉錄每小時 US$0.54",
-    "summary": "Microsoft 推出 MAI-Transcribe-2-Streaming，可在說話期間持續輸出文字，支援 60 種語言及自動連續語言偵測；同時發布 MAI-Voice-2.1 與低延遲的 Voice-2.1-Flash，供開發者建立多語言語音 Agent、即時字幕及語音介面。三款模型已可透過 Microsoft Foundry、Azure Speech 及直接 API 使用。\\n\\nMicrosoft 指串流轉錄的最終文字錯誤率在第三方榜單為 2.5%，但實際準確度仍會受口音、噪音、專有名詞及語言切換影響。Transcribe-2-Streaming 的推廣價為每小時音訊 0.54 美元，至 2026 年底有效；企業採用前仍要測試廣東話情境、延遲、資料保存及地區可用性。",
-    "category": "AI API",
-    "publishedAt": "2026-10-02T06:58:33Z",
-    "sourceLabel": "Microsoft AI / Microsoft Foundry",
-    "sourceUrl": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
     "level": "update",
     "verified": true,
     "active": false
