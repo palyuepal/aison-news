@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-28-malaysia-ai-chip-seizure-smuggling",
+    "title": "馬來西亞查獲約 RM49.5m AI 晶片，調查疑似跨境走私網絡",
+    "summary": "馬來西亞海關 10 月 28 日表示，本月查獲約 4,950 萬令吉（約 1,211 萬美元）的先進 AI 晶片，並正調查一個涉嫌經吉隆坡國際機場轉運晶片的網絡。海關稱，10 月 15 日在機場自由貿易區發現 30 部載有先進晶片的伺服器；初步調查指貨物由亞洲另一地運入，原擬再出口至區內另一國，所需貿易許可並未申報。\n\n事件顯示先進 AI 算力的跨境流向正面臨更嚴格查核，但目前公開資料未證實貨物最終目的地或涉及哪一個國家。馬來西亞去年已對美國原產先進 AI 晶片的流動設出口管制；這宗調查仍在進行，不能視作已確認的規避制裁案件。",
+    "category": "AI 基建與半導體",
+    "publishedAt": "2026-10-28T05:21:50Z",
+    "sourceLabel": "Reuters／CNA（引述馬來西亞海關）",
+    "sourceUrl": "https://www.reuters.com/world/china/ai-chips-worth-121-million-seized-malaysia-airport-customs-authority-says-2026-10-28/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-28-liquid-ai-lfm3-open-multimodal-models",
     "title": "Liquid AI 開放六款 LFM3 模型：多模態推理走向本地部署",
     "summary": "Liquid AI 於 10 月 27 日發布 LFM3 系列，首批六款約 2B 級開放權重模型共用一個骨幹，涵蓋文字、視覺、音訊、全模態及決策；模型權重已可下載，文字模型亦可在單張 GPU 微調。\\n\\n這令香港開發者及中小企多一個可本地測試、按專門工作微調的選項，但模型能力、粵語表現與實際部署成本仍要自行驗證。參數效率及基準比較目前主要由 Liquid AI 公布，未有足夠獨立評測證明普遍優勢。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-02T06:58:33Z",
     "sourceLabel": "Microsoft AI / Microsoft Foundry",
     "sourceUrl": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-bull-europe-supercomputer-factory-expansion",
-    "title": "歐洲唯一超級電腦工廠擴產：Bull 月產量倍增至 12 個機架",
-    "summary": "法國國營超級電腦製造商 Bull 重開完成擴建的昂熱工廠，投入 8,000 萬歐元後，月產能由 6 個機架增至 12 個；公司表示如需求持續，明年可再提升至 24 個。該廠是歐洲唯一專門製造超級電腦的工廠，正承接歐盟 AI 與高效能運算項目。\\n\\nBull 已取得 18 宗 EuroHPC 招標中的 15 宗，並會為 NVIDIA NVL 系統進行最終組裝。不過，擴產不等於歐洲已能完全自給：系統仍需依賴部分美國晶片與全球供應鏈。今次真正的新訊號，是歐洲正把主權 AI 算力由政策與採購，推進到本地實際製造能力。",
-    "category": "AI 基建",
-    "publishedAt": "2026-10-02T06:58:32Z",
-    "sourceLabel": "Bull / Reuters",
-    "sourceUrl": "https://www.reuters.com/world/europe/french-supercomputer-maker-bull-doubles-output-boost-europes-ai-ambitions-2026-10-01/",
     "level": "update",
     "verified": true,
     "active": false
