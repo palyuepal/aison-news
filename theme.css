@@ -104,3 +104,10 @@ html:not([data-theme="dark"]) body:not([data-page="home"]):not([data-page="admin
 html:not([data-theme="dark"]) body.notfound{
   background:#F5F7FB!important;color:#0B2345!important
 }
+
+html[data-theme="dark"] body :is(.daily-summary,.daily-why,.daily-take) :is(span,p){
+  color:#C8D5E8!important
+}
+html[data-theme="dark"] body :is(.daily-summary,.daily-why,.daily-take) b{
+  color:#FFD45E!important
+}
