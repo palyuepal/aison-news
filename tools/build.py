@@ -618,6 +618,25 @@ def build_status(data,status):
     write_js(ROOT/'data/status.js','AISON_STATUS',out)
 
 
+def apply_reader_ui():
+    """Keep generated articles and topic pages on the shared reader interface."""
+    bootstrap = '<script src="/theme.js?v=20261029-design-review"></script>'
+    for path in ROOT.rglob('*.html'):
+        if any(part in ('.git', 'public') for part in path.relative_to(ROOT).parts):
+            continue
+        text = path.read_text(encoding='utf-8')
+        if '<header class="topbar"' not in text:
+            continue
+        if '/theme.css?' not in text:
+            text = text.replace('</head>', '<link rel="stylesheet" href="/theme.css?v=20261029-design-review"></head>', 1)
+        if '/reader-ui.css?' not in text:
+            text = text.replace('</head>', '<link rel="stylesheet" href="/reader-ui.css?v=20261029-design-review"></head>', 1)
+        if '/theme.js?' not in text:
+            text = text.replace('</body>', bootstrap + '</body>', 1)
+        text = text.replace('今日 AI 10 件事', 'AI 新聞排行榜')
+        path.write_text(text, encoding='utf-8')
+
+
 def main():
     site=load_site(); registry=load_storyline_registry(); data=load_news(registry); status=read_json(STATUS)
     enrich_storylines(data,registry)
@@ -630,6 +649,7 @@ def main():
     build_core_page_seo(site)
     hubs=build_topic_hub_pages(data,site,registry)
     build_search(data); build_article_pages(data,site,social_card_ids); build_rss(data,site); build_sitemap(data,site,registry); build_status(data,status)
+    apply_reader_ui()
     overview=build_daily_overview(data,site,ROOT)
     overview_count=overview.get('count',0) if overview else 0
     linked=sum(1 for n in data if n.get('storylineId'))
