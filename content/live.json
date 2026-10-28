@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-28-openai-oracle-enterprise-apps-chatgpt",
+    "title": "OpenAI 與 Oracle 把企業應用帶進 ChatGPT：Agent 開始連接財務與採購流程",
+    "summary": "OpenAI 與 Oracle 10 月 27 日公布擴大合作：Oracle 正開發 AI Workspace，計劃把 Fusion、NetSuite 等企業應用及數據接入 ChatGPT，讓員工在既有權限與審批下處理跨系統工作。雙方亦公布 AI Security Mesh、供中小企使用的 SMB Bundle，以及以 Codex 建立企業應用的 App Composer。\n\n目前多項功能仍屬規劃或即將推出，並非所有企業已可使用；Oracle 提供的內部採用數字及效率例子亦未經獨立驗證。值得追蹤的是 Agent 能否在保留企業權限、審批和人工把關的前提下，可靠地執行財務、採購等真實流程。",
+    "category": "AI 模型與 Agent",
+    "publishedAt": "2026-10-27T16:00:15Z",
+    "sourceLabel": "OpenAI／Oracle 官方公告",
+    "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-10-28-uk-vape-consultation-automated-submissions",
     "title": "英國電子煙諮詢 76% 回應被判為機械提交，民意數字受大規模灌票干擾",
     "summary": "一項 10 月 27 日刊於《Tobacco Control》的觀察研究，分析英國 2023 年煙草及電子煙法案諮詢。政府將 118,756 份提交中的 90,835 份（76%）識別為機械人提交並排除；幾乎全部集中反對一次性電子煙限制，且不少回覆重複、由少數 IP 高頻送出。\n\n研究指出，大量而方向一致的自動提交可扭曲網上諮詢呈現的民意。不過，研究無法確認幕後身份、動機或商業贊助，也不能直接推廣到其他政策議題；目前能確認的是這批回覆被政府識別並排除，法案其後仍獲通過。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-02T07:55:16Z",
     "sourceLabel": "Perplexity / Hugging Face",
     "sourceUrl": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-claude-code-typescript-mods",
-    "title": "Claude Code 開放 TypeScript Mods：可攔截工具、改權限與重畫介面",
-    "summary": "Anthropic 為 Claude Code 推出 Mods，讓開發者用小型 TypeScript 函數改寫 prompt、攔截或重試工具呼叫、批准或拒絕權限要求、遮蔽 secrets，以及加入或取代終端機與桌面版介面。Mods 會包在既有 plugins 內，可自行編寫，亦可叫 Claude Code 生成並即時載入。\\n\\n這項擴充能力亦提高供應鏈風險：Mods 不在 sandbox 內運行，擁有與 Claude Code 相同的電腦存取權，Anthropic 明確建議只安裝可信來源。Team／Enterprise 及受管理裝置會先載入 sec-default 防護，但管理員若改動載入次序，仍要保留相關限制。",
-    "category": "AI Agent",
-    "publishedAt": "2026-10-02T07:55:15Z",
-    "sourceLabel": "Anthropic",
-    "sourceUrl": "https://claude.com/blog/claude-code-mods",
     "level": "update",
     "verified": true,
     "active": false
