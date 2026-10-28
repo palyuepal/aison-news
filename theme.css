@@ -36,12 +36,9 @@ html[data-theme="dark"] body.notfound{background:#0B1729!important;color:#EAF1FB
 html[data-theme="dark"] body :is(.topbar,#today,.section,.soft,.alt,.editorial-feature,.home-signals,.v6-for-you,.v6-editorial-bridge,.v6-themes,.b2-top-three,.article-hero,.article-body,.prose,.daily-item,.news-card,.panel:not(.dark),.newsletter,.archive-row,.archive-search,.archive-toolbar,.timeline-card,.weekly-item,.weekly-theme,.topic-card,.admin-item,.admin-editor,.notfound,.b2-flow-note,.daily-toolbar,.daily-share-card,.daily-snapshot,.daily-summary,.daily-why,.daily-take,.daily-ranking-count,.daily-morning-brief,.reader-guide,.article-quick-read,.source-transparency,.article-related-card,.article-trust-record,.article-followup,.article-correction,.corrections-empty,.correction-entry,.methodology-contact,.topic-briefing-card,.storyline-latest,.storyline-facts,.topic-deep-card,.follow-item,.follow-empty,.admin-panel){
   background-color:#14243A!important;color:#EAF1FB!important;border-color:#344861!important
 }
-html[data-theme="dark"] body :is(h1,h2,h3,h4,h5,p,li,small,label,legend,summary,.breadcrumbs,.article-meta,.section-title p,.section-head p,.muted,.muted-light,.card-footer,.news-card p,.daily-item p,.article-body p,.prose p,.archive-row time,.b2-flow-note *){
-  color:#EAF1FB!important
-}
-html[data-theme="dark"] body a:not(.primary-btn):not(.ghost-btn):not(.ghost-dark):not(.site-theme-toggle){
-  color:#A9C4FF!important
-}
+html[data-theme="dark"] body :is(h1,h2,h3,h4,h5){color:var(--ink)!important}
+html[data-theme="dark"] body :is(.article-meta,.section-title p,.section-head p,.muted,.muted-light,.card-footer,.news-card p,.daily-item p,.article-body p,.prose p,.archive-row time){color:var(--muted)!important}
+html[data-theme="dark"] body :is(.article-body,.prose) a{color:var(--link)!important;text-decoration:underline;text-underline-offset:3px}
 html[data-theme="dark"] body .topbar,
 html[data-theme="dark"] body .topbar .nav,
 html[data-theme="dark"] body .topbar .brand strong,

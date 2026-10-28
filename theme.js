@@ -33,10 +33,13 @@
       button.dataset.themeBound="true";
     }
     paint();
-    window.addEventListener("storage",event=>{if(event.key===key&&(event.newValue==="dark"||event.newValue==="light")){root.dataset.theme=event.newValue;paint()}});
+    document.addEventListener('aison-theme-change',paint);
+    window.addEventListener("storage",event=>{if(event.key===key){root.dataset.theme=read() || (system.matches?'dark':'light');paint()}});
   };
   const saved=read();
-  if(saved) root.dataset.theme=saved;
+  const system=window.matchMedia('(prefers-color-scheme: dark)');
+  root.dataset.theme=saved || (system.matches?'dark':'light');
+  system.addEventListener('change',event=>{if(!read()){root.dataset.theme=event.matches?'dark':'light';document.dispatchEvent(new Event('aison-theme-change'))}});
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",mount,{once:true});
   else mount();
 })();
