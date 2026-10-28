@@ -21,11 +21,23 @@ jobs:
       - name: Check source-of-truth edition
         id: source
         continue-on-error: true
-        run: python tools/check_freshness.py --source-only --date "$AISON_DATE"
+        shell: bash
+        run: |
+          set +e
+          python tools/check_freshness.py --source-only --date "$AISON_DATE" > "$RUNNER_TEMP/aison-source-check.log" 2>&1
+          code=$?
+          cat "$RUNNER_TEMP/aison-source-check.log"
+          exit "$code"
       - name: Check public edition
         id: live
         continue-on-error: true
-        run: python tools/check_freshness.py --live-only --date "$AISON_DATE"
+        shell: bash
+        run: |
+          set +e
+          python tools/check_freshness.py --live-only --date "$AISON_DATE" > "$RUNNER_TEMP/aison-live-check.log" 2>&1
+          code=$?
+          cat "$RUNNER_TEMP/aison-live-check.log"
+          exit "$code"
       - name: Re-deploy when source is healthy but public site is stale
         id: recovery
         if: steps.source.outcome == 'success' && steps.live.outcome == 'failure'
@@ -52,18 +64,32 @@ jobs:
         if: steps.source.outcome == 'failure' || (steps.live.outcome == 'failure' && steps.recovery.outcome != 'success')
         env:
           GH_TOKEN: ${{ github.token }}
+          SOURCE_OUTCOME: ${{ steps.source.outcome }}
+          SOURCE_CONCLUSION: ${{ steps.source.conclusion }}
+          LIVE_OUTCOME: ${{ steps.live.outcome }}
+          LIVE_CONCLUSION: ${{ steps.live.conclusion }}
+          RECOVERY_OUTCOME: ${{ steps.recovery.outcome }}
+          RECOVERY_CONCLUSION: ${{ steps.recovery.conclusion }}
         shell: bash
         run: |
           set -euo pipefail
           title="AIson stale edition $AISON_DATE"
+          source_detail="$(cat "$RUNNER_TEMP/aison-source-check.log" 2>/dev/null || echo "No source-check output captured")"
+          live_detail="$(cat "$RUNNER_TEMP/aison-live-check.log" 2>/dev/null || echo "No public-check output captured")"
           existing="$(gh issue list --state open --search "$title in:title" --json number,title --jq '.[] | select(.title == "'"$title"'") | .number' | head -1)"
           body=$(cat <<EOF
           Automated freshness sentinel detected a publishing problem for **$AISON_DATE (Asia/Hong_Kong)**.
 
-          - Source check: `${{ steps.source.outcome }}`
-          - Public-site check: `${{ steps.live.outcome }}`
-          - Recovery deploy: `${{ steps.recovery.outcome }}`
+          - Source check: ${SOURCE_OUTCOME} (step conclusion: ${SOURCE_CONCLUSION})
+          - Public-site check: ${LIVE_OUTCOME} (step conclusion: ${LIVE_CONCLUSION})
+          - Recovery deploy: ${RECOVERY_OUTCOME} (step conclusion: ${RECOVERY_CONCLUSION})
           - Workflow run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+
+          Source-check output:
+          ${source_detail}
+
+          Public-site-check output:
+          ${live_detail}
 
           The sentinel never creates or rewrites editorial content. If the daily JSON is missing, the 08:00/09:00 publishing automation must create the single source-of-truth edition. If source is valid but the site is stale, this workflow attempts one Pages redeploy.
           EOF
