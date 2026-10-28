@@ -263,7 +263,7 @@ body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notf
  body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) .topic-briefing-grid {grid-template-columns:1fr}
 }
 html[data-theme="dark"] body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound) {
-  --paper:#1e201d;--paper-bright:#252723;--ink:#efeee8;--muted-ink:#b8b8b0;--rule:#484a43;--accent:#ed705a;--gold:#d1ad68;
+  --paper:#0B1729;--paper-bright:#14243A;--ink:#EAF1FB;--muted-ink:#A8B7CA;--rule:#344861;--accent:#8FB2FF;--gold:#FFD45E;
   background:var(--paper)!important;color:var(--ink)!important;
 }
 
