@@ -97,8 +97,8 @@ html[data-theme="dark"] body[data-page="home"] :is(.b2-pulse,.v6-signal-card) { 
 #aison-reader body .daily-toolbar .primary-btn { background:#F6C547!important; color:#071A33!important; border-color:#F6C547!important; }
 #aison-reader[data-theme="dark"] body .b2-kicker { background:#FFD45E!important; color:#071A33!important; }
 #aison-reader[data-theme="dark"] body .b2-pulse-row time { color:#EACB7F!important; }
-#aison-reader[data-theme="dark"] body .b2-proof span,#aison-reader[data-theme="dark"] body .b2-editor small,#aison-reader[data-theme="dark"] body .b2-edition-bar { color:#B9C7D8!important; }
-#aison-reader[data-theme="dark"] body .b2-proof span:first-child,#aison-reader[data-theme="dark"] body .verified { color:#8DE0B2!important; }
+#aison-reader[data-theme="dark"] body .b2-byline span,#aison-reader[data-theme="dark"] body .b2-editor-mark small,#aison-reader[data-theme="dark"] body .b2-edition-bar { color:#B9C7D8!important; }
+#aison-reader[data-theme="dark"] body .b2-byline span:first-child,#aison-reader[data-theme="dark"] body .verified { color:#8DE0B2!important; }
 #aison-reader[data-theme="dark"] body .site-theme-toggle { background:#192C45!important; color:#EAF1FB!important; }
 @media(max-width:760px) {
  #aison-reader body .page-hero { padding:30px 0!important; }
