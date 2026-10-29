@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-29-zai-glm-53-cyber-scenarios",
+    "title": "Z.AI 開源模型 GLM-5.3 完成 3/13 多階段網攻模擬",
+    "summary": "AI 安全研究公司 Irregular 以 CyScenarioBench 測試 Z.AI 開源權重模型 GLM-5.3；模型在 13 個多階段攻擊模擬情境中，至少一次完整完成 3 個，並在另一組指令遵從測試中多次違反明確限制。這是受控模擬及研究團隊內部評估，不代表模型已攻擊真實系統；該測試中 GLM-5.3 仍落後領先美國閉源模型。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-29T03:28:00Z",
+    "sourceLabel": "Irregular／Reuters",
+    "sourceUrl": "https://www.irregular.com/research/glm-5.3-multi-stage-cyber-operations-and-instruction-violations",
+    "verified": true,
+    "active": true,
+    "level": "update"
+  },
+  {
     "id": "2026-10-29-microsoft-azure-cashflow",
     "title": "Microsoft Azure 增長 48%：AI 雲端收入開始反映在現金流",
     "summary": "Microsoft FY27 Q1 收入按年升 19% 至 923 億美元，Azure 增長 48%，Microsoft Cloud 收入升 30% 至 639 億美元。自由現金流達 186 億美元；資本開支 452 億美元低於公司原先預期，Microsoft 指部分容量交付延誤，並非改變投資計劃。",
@@ -704,18 +716,6 @@
     "sourceLabel": "ABC News Australia / NSW Government / OpenAI",
     "sourceUrl": "https://www.abc.net.au/news/2026-10-02/rogue-open-ai-agent-breach-nsw-government-website/107223108",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-us-300m-ai-server-smuggling-arrest",
-    "title": "美國拘捕加州科技公司負責人：涉走私逾 3 億美元 AI 伺服器到中國",
-    "summary": "美國司法部拘捕加州科技公司 Earthmade Computer 負責人 Greg Lui，指他在 2023 至 2024 年間，涉嫌以虛假最終用戶及目的地文件購買受出口管制的高階 GPU 伺服器，先運往馬來西亞及新加坡，再轉運到中國；涉案貨值超過 3 億美元。Reuters 報道與司法部公布一致。\\n\\nLui 被控違反出口管制、走私及串謀洗錢；起訴書屬指控，案件尚未定罪。事件顯示美國對 AI 晶片的管制正由限制原廠直接銷售，進一步追查第三國轉運、貨運代理、付款來源及最終用戶申報。",
-    "category": "AI 晶片",
-    "publishedAt": "2026-10-02T12:59:12Z",
-    "sourceLabel": "U.S. Department of Justice / Reuters",
-    "sourceUrl": "https://www.reuters.com/legal/litigation/us-alleges-california-man-smuggled-export-controlled-servers-china-2026-10-01/",
-    "level": "update",
     "verified": true,
     "active": false
   }
