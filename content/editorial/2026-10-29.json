@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-29",
+  "dailyOneLiner": "今日 AI 最大轉折係『回報與執行』：雲端巨頭開始用收入和現金流交功課，Agent 則由聊天介面深入企業紀錄、開發底層與實體機械人。",
+  "top3Ids": [
+    "2026-10-29-microsoft-ai-cloud-earnings",
+    "2026-10-29-alphabet-cloud-carbon-earnings",
+    "2026-10-29-openai-servicenow-workflows"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 投資開始交回報表",
+      "summary": "Microsoft 以 Azure、長期合約及現金流證明企業需求，Alphabet Cloud 亦翻倍，但負自由現金流顯示回報差距正在拉開。",
+      "watch": "雲端增長能否追上折舊、能源、融資及下一輪資本開支。"
+    },
+    {
+      "title": "Agent 的護城河移到執行層",
+      "summary": "OpenAI 進入 ServiceNow 真實工作流，Microsoft 把多模型 harness 產品化，競爭由回答問題轉向權限、工具、狀態與回滾。",
+      "watch": "生產環境的錯誤率、審計、模型可替換性與供應商鎖定。"
+    },
+    {
+      "title": "算力與 AI 走出雲端介面",
+      "summary": "英國直接分配戰略電網容量，Apple 把本地 AI 綁入觸控 Mac，Google 將實體 Agent 帶到企業機械人。",
+      "watch": "能源與地區政策、首代硬件實測，以及實體 AI 的安全邊界。"
+    }
+  ],
+  "biggestChange": "最大變化係市場不再只獎勵『更多 AI』：Microsoft 因現金流與雲端回報受追捧，Alphabet 即使 Cloud 翻倍仍因盈利與資本壓力受罰；AI 競爭正式進入回報、治理與執行可靠度階段。",
+  "watchTomorrow": "先看 Amazon 業績會否延續或打破 Microsoft／Alphabet 的 AI 回報分化，再看 Gemini 4 Carbon 存取與安全報告、NVIDIA－Hugging Face 交易有否正式監管文件，以及 ServiceNow MCP plugin 的首批實際權限與動作範圍。"
+}
