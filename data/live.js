@@ -1,5 +1,29 @@
 window.AISON_LIVE = [
   {
+    "id": "2026-10-29-microsoft-azure-cashflow",
+    "title": "Microsoft Azure 增長 48%：AI 雲端收入開始反映在現金流",
+    "summary": "Microsoft FY27 Q1 收入按年升 19% 至 923 億美元，Azure 增長 48%，Microsoft Cloud 收入升 30% 至 639 億美元。自由現金流達 186 億美元；資本開支 452 億美元低於公司原先預期，Microsoft 指部分容量交付延誤，並非改變投資計劃。",
+    "category": "AI 商業與雲端",
+    "publishedAt": "2026-10-28T20:07:25Z",
+    "sourceLabel": "Microsoft Investor Relations／Reuters",
+    "sourceUrl": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+    "verified": true,
+    "active": true,
+    "level": "update"
+  },
+  {
+    "id": "2026-10-29-alphabet-cloud-capex-earnings",
+    "title": "Google Cloud 增長 103%，Alphabet 的 AI 基建支出亦急升",
+    "summary": "Alphabet Q3 Google Cloud 收入按年增長 103% 至約 307 億美元，顯示企業 AI 基建需求強勁；但季度自由現金流轉為負 91 億美元，資本開支大增。業績反映 AI 雲端收入與基建支出同時擴張，回本速度仍需持續觀察。",
+    "category": "AI 商業與雲端",
+    "publishedAt": "2026-10-28T20:07:00Z",
+    "sourceLabel": "Alphabet SEC Filing／Reuters",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+    "verified": true,
+    "active": true,
+    "level": "update"
+  },
+  {
     "id": "2026-10-29-anthropic-drug-development-catchup",
     "title": "Anthropic 與六間機構推進 Claude 藥物研發，早期實驗已有候選",
     "summary": "Anthropic 公布與六間藥物研發機構合作及自有罕見肌肉疾病項目。合作方的早期材料包括 Claude 參與設計並經實驗測試的 CAR-T 受體構造；Divergence Labs 以 Claude 產生約 35,000 個抗體設計，初步找到可結合及移除 IgE 的候選。\\n\\nAnthropic 亦稱 Enveda 的文件審閱流程大幅縮短；惟整體工作多在前臨床或早期階段，數字由公司及合作方公布，並不代表人體臨床療效、藥物已可用或審批時間必然縮短。",
@@ -8,7 +32,7 @@ window.AISON_LIVE = [
     "sourceLabel": "Anthropic／合作機構技術報告",
     "sourceUrl": "https://www.anthropic.com/research/early-progress-drug-development",
     "verified": true,
-    "active": true,
+    "active": false,
     "level": "update"
   },
   {
@@ -21,7 +45,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-28-uk-vape-consultation-automated-submissions",
@@ -33,7 +57,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://doi.org/10.1136/tc-2026-060309",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-28-malaysia-ai-chip-seizure-smuggling",
@@ -57,7 +81,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.liquid.ai/blog/lfm3",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-28-google-genie-4-world-model-live",
@@ -69,7 +93,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-28-apple-creator-studio-ai-live",
@@ -81,7 +105,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-27-openai-gpt-61-terra-catchup",
@@ -117,7 +141,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.reuters.com/world/china/deepseek-ai-model-shows-safety-gaps-independent-tests-2026-10-27/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-27-nvidia-meta-muse-partnership-investment",
@@ -129,7 +153,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.reuters.com/technology/nvidia-meta-partner-muse-agent-nvidia-invests-3-billion-2026-10-27/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-27-bank-korea-ai-capex-chip-exports",
@@ -141,7 +165,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/bank-korea-warns-countrys-chip-exports-could-fall-by-up-100-billion-if-ai-2026-10-27/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-26-anthropic-s1-agent-security-disclosures",
@@ -691,30 +715,6 @@ window.AISON_LIVE = [
     "publishedAt": "2026-10-02T12:59:12Z",
     "sourceLabel": "U.S. Department of Justice / Reuters",
     "sourceUrl": "https://www.reuters.com/legal/litigation/us-alleges-california-man-smuggled-export-controlled-servers-china-2026-10-01/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-gemini-25-flash-image-shutdown",
-    "title": "Gemini 2.5 Flash Image 今日停用：舊 API 要立即遷移",
-    "summary": "Google 官方模型生命週期文件顯示，`gemini-2.5-flash-image`（Nano Banana）在 2026 年 10 月 2 日停止服務。仍把該模型名稱寫死在圖片生成或編輯程式的開發者，可能遇到請求失敗；Google 建議遷移至 Gemini 3.1 Flash Image 或 Gemini 3.1 Flash Lite Image。\\n\\n這不是整個 Gemini 2.5 Flash 文字模型停用，受影響的是 Flash Image 圖像模型端點。遷移前應在測試環境重新檢查輸入格式、輸出畫質、延遲、價格、安全設定與錯誤處理，亦不要假設更換模型名稱後所有提示詞結果完全相同。",
-    "category": "AI API",
-    "publishedAt": "2026-10-02T10:59:27Z",
-    "sourceLabel": "Google AI for Developers",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/deprecations",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-02-aws-1b-datacenter-community-fund",
-    "title": "AWS 投資 10 億美元支援數據中心社區：AI 基建先回應電力與水資源反彈",
-    "summary": "Amazon Web Services 宣布未來五年投資 10 億美元，支援美國數據中心所在社區的教育、職業培訓、能源負擔能力及資源保育項目，首批涵蓋印第安納、路易斯安那、北卡羅來納、維珍尼亞及密西西比州。AWS 亦表示會停止在數據中心規劃中使用保密協議，並發布年度能源效率報告。\\n\\n這筆資金不等於新建數據中心本身已獲社區接受，也未交代各項目分配及成效指標。美國已有逾 100 項數據中心暫停建設倡議正在考慮，爭議集中在電費、用水及本地回報；今次真正的新訊號，是 AI 基建競爭開始把社區補償、透明度與算力擴張綁在一起。",
-    "category": "AI 基建",
-    "publishedAt": "2026-10-02T10:03:23Z",
-    "sourceLabel": "AWS / Reuters / The Wall Street Journal",
-    "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-invest-1-billion-over-five-years-us-data-center-communities-2026-10-02/",
     "level": "update",
     "verified": true,
     "active": false
