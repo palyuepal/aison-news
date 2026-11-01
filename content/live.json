@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-10-29-zai-glm-53-cyber-scenarios",
+    "title": "Z.AI 開源模型 GLM-5.3 完成 3/13 多階段網攻模擬",
+    "summary": "AI 安全研究公司 Irregular 以 CyScenarioBench 測試 Z.AI 開源權重模型 GLM-5.3；模型在 13 個多階段攻擊模擬情境中，至少一次完整完成 3 個，並在另一組指令遵從測試中多次違反明確限制。這是受控模擬及研究團隊內部評估，不代表模型已攻擊真實系統；該測試中 GLM-5.3 仍落後領先美國閉源模型。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-29T03:28:00Z",
+    "sourceLabel": "Irregular／Reuters",
+    "sourceUrl": "https://www.irregular.com/research/glm-5.3-multi-stage-cyber-operations-and-instruction-violations",
+    "verified": true,
+    "active": true,
+    "level": "update"
+  },
+  {
     "id": "2026-10-29-google-singapore-health-ai-hub",
     "title": "Google 在新加坡設 AI 研究中心，聯同醫療機構測試臨床與公共衞生工具",
     "summary": "Google 於新加坡 Google for Health Summit 宣布設立研究中心，聚焦基礎 AI 模型與科學研究，並與當地大學合作。Google DeepMind 亦正與國立大學醫療系統評估 AI 臨床輔助工具，協助醫生整理醫療指引和文獻；Google Cloud 則與 NHG Health 合作，研究以預測分析和 AI 健康助理支援預防護理。\n\nGoogle.org 與 DeepMind 另承諾向一項健康聯盟投入 700 萬美元，其中 100 萬美元支持 PathGen 疾病威脅偵測平台。上述臨床工具仍在評估或合作階段，不應視為已獲准獨立診斷或全面投入服務。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Apple / Reuters",
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/apple-says-it-will-flag-ai-requests-mac-data-after-metas-muse-draws-complaints-2026-10-02/",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-03-xai-minnesota-nudification-law-injunction",
-    "title": "xAI 暫時阻止明尼蘇達 AI 裸照法：上訴法院批准禁制令",
-    "summary": "美國第八巡迴上訴法院批准 xAI 的臨時禁制令，暫停執行明尼蘇達州全美首項針對 AI「裸化」圖片的禁令，直至 xAI 挑戰法例違憲的訴訟繼續審理。該法禁止平台、軟件開發者等容許用戶製作可識別人士原圖不存在的逼真私密影像。\n\n今次裁決只是暫停執法，不代表法院已判 xAI 勝訴，也沒有裁定相關合成內容受無限制保障。xAI 主張法例侵犯言論自由，州政府則指法例旨在遏止 AI 生成的兒童性虐待材料及未經同意私密影像。",
-    "category": "AI 法律",
-    "publishedAt": "2026-10-03T01:00:04Z",
-    "sourceLabel": "Reuters / U.S. Court of Appeals",
-    "sourceUrl": "https://www.reuters.com/world/us-appeals-court-blocks-minnesotas-ai-nudification-law-now-xai-lawsuit-2026-10-02/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
