@@ -51,6 +51,24 @@ jobs:
           cp -a *.html *.css *.js *.xml *.txt *.webmanifest CNAME public/
       - name: Inject visual news layer
         run: python tools/patch_news_visuals.py public
+      - name: Version LIVE assets per deployment
+        env:
+          DEPLOY_SHA: ${{ github.sha }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          import re
+          page = Path('public/live.html')
+          text = page.read_text(encoding='utf-8')
+          version = os.environ['DEPLOY_SHA'][:12]
+          for asset in ('data/live.js', 'live-timeline.js'):
+              pattern = re.escape(asset) + r'(?:\\?v=[^"\\s<]*)?'
+              text, count = re.subn(pattern, asset + '?v=' + version, text)
+              if count != 1:
+                  raise SystemExit(f'Expected one {asset} reference, found {count}')
+          page.write_text(text, encoding='utf-8')
+          PY
       - name: Inject enhanced search
         run: python tools/patch_search_quality.py public
       - name: Use dated social preview URLs
@@ -94,4 +112,20 @@ jobs:
             fi
           done
           echo "::error::Pages deployed, but public edition did not match $edition after 8 attempts"
+          exit 1
+      - name: Verify LIVE feed matches published source
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/check_live_publish.py --source-only
+          for attempt in $(seq 1 8); do
+            if python tools/check_live_publish.py; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 8 ]; then
+              echo "LIVE feed not propagated (attempt $attempt/8); retrying in 20s"
+              sleep 20
+            fi
+          done
+          echo "::error::Public LIVE payload does not match content/live.json"
           exit 1
