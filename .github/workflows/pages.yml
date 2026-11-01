@@ -76,7 +76,12 @@ jobs:
           edition="$(TZ=Asia/Hong_Kong date +%F)"
           echo "Verifying public edition $edition after Pages deployment"
           # CDN propagation can lag a successful Pages deployment.
-          # A missing source edition must not be disguised as a cache issue.
+          # LIVE pushes can occur before the day's editorial edition is written.
+          # In that case the scheduled freshness sentinel remains responsible.
+          if [ ! -f "content/daily/$edition.json" ]; then
+            echo "Today's source edition not available yet; skipping post-deploy edition comparison"
+            exit 0
+          fi
           python tools/check_freshness.py --source-only --date "$edition"
           for attempt in $(seq 1 8); do
             if python tools/check_freshness.py --live-only --date "$edition"; then
