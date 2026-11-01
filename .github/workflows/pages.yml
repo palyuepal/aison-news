@@ -63,7 +63,7 @@ jobs:
           text = page.read_text(encoding='utf-8')
           version = os.environ['DEPLOY_SHA'][:12]
           for asset in ('data/live.js', 'live-timeline.js'):
-              pattern = re.escape(asset) + r'(?:\\?v=[^"\\s<]*)?'
+              pattern = re.escape(asset) + r'(?:\?v=[^"\s<]*)?'
               text, count = re.subn(pattern, asset + '?v=' + version, text)
               if count != 1:
                   raise SystemExit(f'Expected one {asset} reference, found {count}')
