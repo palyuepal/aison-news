@@ -69,3 +69,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify public edition after deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          edition="$(TZ=Asia/Hong_Kong date +%F)"
+          echo "Verifying public edition $edition after Pages deployment"
+          # CDN propagation can lag a successful Pages deployment.
+          # A missing source edition must not be disguised as a cache issue.
+          python tools/check_freshness.py --source-only --date "$edition"
+          for attempt in $(seq 1 8); do
+            if python tools/check_freshness.py --live-only --date "$edition"; then
+              echo "Verified: public edition matches $edition"
+              exit 0
+            fi
+            if [ "$attempt" -lt 8 ]; then
+              echo "Public edition not ready (attempt $attempt/8); retrying in 20s"
+              sleep 20
+            fi
+          done
+          echo "::error::Pages deployed, but public edition did not match $edition after 8 attempts"
+          exit 1
