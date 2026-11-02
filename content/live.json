@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-02-china-embodied-ai-brain-race",
+    "title": "中國機械人競爭轉向「大腦」：具身 AI 融資半年增至 935 億元",
+    "summary": "Reuters 11 月 1 日報道，中國具身 AI 企業 2026 年上半年錄得 322 宗融資、合共 935 億元人民幣，資金焦點由人形機械人硬件轉向讓機械人理解環境、學習任務的 AI。工廠及藥房已有指定場景試用，但跨陌生環境的可靠能力仍未成熟；融資與示範不等於已證明可大規模商用。",
+    "category": "具身 AI 與機械人",
+    "publishedAt": "2026-11-01T23:08:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/",
+    "verified": true,
+    "active": true,
+    "level": "update"
+  },
+  {
     "id": "2026-11-01-korea-ai-chip-export-surge",
     "title": "韓國 10 月半導體出口按年升 259%：AI 基建需求推高貿易數字",
     "summary": "韓國產業通商資源部公布，10 月半導體出口按年升 259.4% 至 564.4 億美元，電腦出口亦升 496.6%；官方把半導體表現連結至全球大型科技公司的 AI 基建投資。韓國總出口升 93.7% 至 1,152.8 億美元，但增幅亦受去年同期工作日較少影響，不能把整體升幅全歸因於 AI 需求；貿易數據亦不等於 AI 投資回報已獲證明。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-06T08:59:31Z",
     "sourceLabel": "ABC News Australia / The Guardian",
     "sourceUrl": "https://www.abc.net.au/news/2026-10-06/openai-hearing-apology-key-takeaways/107235640",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-03-amazon-nvidia-chips-spv-leaseback-talks",
-    "title": "Amazon 擬把 80 億美元 Nvidia 晶片轉入 SPV：AI 算力融資走向售後租回",
-    "summary": "Reuters 引述《金融時報》報道，Amazon 正與投資者探討把約 80 億美元、已部署於美國數據中心的 Nvidia Grace Blackwell 晶片轉入特殊目的公司（SPV），再由 Amazon 租回。相關方案仍在洽談，Amazon 與 Nvidia 未有即時回應，未能視作已完成交易。\\n\\n若落實，Amazon 可把部分晶片資產及折舊風險移向外部投資者，同時以較輕資產負債表支撐算力擴張；投資者則要承擔晶片更新快、殘值難估及單一租戶風險。這顯示 AI 基建競賽正由搶 GPU，延伸到誰持有硬件、誰承擔過時成本。",
-    "category": "AI 基建",
-    "publishedAt": "2026-10-03T01:56:52Z",
-    "sourceLabel": "Reuters / Financial Times",
-    "sourceUrl": "https://www.reuters.com/business/retail-consumer/amazon-seeks-offload-8-billion-nvidia-chips-investors-ft-reports-2026-10-02/",
     "level": "update",
     "verified": true,
     "active": false
