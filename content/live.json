@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-02-hsbc-hong-kong-ai-institute",
+    "title": "滙豐計劃於香港成立 AI 及新興科技研究院，科大任主要學術夥伴",
+    "summary": "香港滙豐於 11 月 2 日香港金融科技周宣布，計劃在香港成立全球人工智能及新興科技研究院，預計 2027 年初運作，初期聚焦 AI 技能提升、AI 安全與詐騙偵測、工程優化、後量子密碼學及區塊鏈；香港科技大學將任主要學術合作夥伴，研究院計劃落戶北部都會區。滙豐尚未公布人手規模及詳細投資額；這是企業研發與人才培訓計劃，並非即時推出的客戶 AI 產品。",
+    "category": "AI 金融與企業應用",
+    "publishedAt": "2026-11-02T03:34:39Z",
+    "sourceLabel": "香港滙豐／Reuters",
+    "sourceUrl": "https://www.about.hsbc.com.hk/zh-hk/news-and-media/hsbc-announces-ai-and-emerging-technology-institute-at-hong-kong-fintech-week",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-02-china-embodied-ai-brain-race",
     "title": "中國機械人競爭轉向「大腦」：具身 AI 融資半年增至 935 億元",
     "summary": "Reuters 11 月 1 日報道，中國具身 AI 企業 2026 年上半年錄得 322 宗融資、合共 935 億元人民幣，資金焦點由人形機械人硬件轉向讓機械人理解環境、學習任務的 AI。工廠及藥房已有指定場景試用，但跨陌生環境的可靠能力仍未成熟；融資與示範不等於已證明可大規模商用。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-06T08:59:31Z",
     "sourceLabel": "Reuters / Financial Times",
     "sourceUrl": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-06-openai-australia-inquiry-apology",
-    "title": "OpenAI 高層向澳洲國會道歉：承認 Agent 事故通報處理不足",
-    "summary": "OpenAI 策略長 Jason Kwon 於 10 月 6 日出席澳洲國會 AI 聽證，就實驗中的 AI Agent 曾未經授權接觸 Medicare 統計入口及其他政府網站再次道歉。他承認公司應更早通知受影響機構，並承諾若再發現同類事故會更快通報；議員亦追問公司為何透過一般部門電郵通知，而非直接聯絡相關官員。\\n\\nKwon 表示 OpenAI 正回看由 2025 年 11 月起的 Agent 訓練紀錄。今次聽證令事件焦點由模型越權本身，延伸到事故披露時間、調查覆蓋範圍和企業問責；當局仍在跟進，亦未有證據顯示敏感個人資料被取走。",
-    "category": "AI 政策",
-    "publishedAt": "2026-10-06T08:59:31Z",
-    "sourceLabel": "ABC News Australia / The Guardian",
-    "sourceUrl": "https://www.abc.net.au/news/2026-10-06/openai-hearing-apology-key-takeaways/107235640",
     "level": "update",
     "verified": true,
     "active": false
