@@ -161,7 +161,7 @@ body[data-page="home"] .newsroom-edition{
   letter-spacing:.08em;
 }
 body[data-page="home"] .newsroom-edition span{color:#0b4f99}
-body[data-page="home"] .newsroom-header h1{
+body[data-page="home"] .newsroom-header h1,.newsroom-header h2{
   grid-column:1;
   margin:8px 0 0;
   color:#071a33;
@@ -385,7 +385,7 @@ body[data-page="home"] .newsroom-newsletter iframe{max-height:180px}
 @media(max-width:620px){
   body[data-page="home"] .editorial-feature{padding:24px 0 30px}
   body[data-page="home"] .newsroom-header{margin-bottom:24px;padding-bottom:17px;border-bottom-width:4px}
-  body[data-page="home"] .newsroom-header h1{font-size:43px}
+  body[data-page="home"] .newsroom-header h1,.newsroom-header h2{font-size:43px}
   body[data-page="home"] .newsroom-header>p{font-size:14px;line-height:1.68}
   body[data-page="home"] .front-story.lead h2{font-size:31px;line-height:1.2}
   body[data-page="home"] .front-story.lead p{font-size:14px;line-height:1.65}
@@ -423,7 +423,7 @@ body[data-page="home"] .editorial-feature{
   border-bottom-color:#c7d3df;
 }
 body[data-page="home"] .newsroom-header{border-bottom-color:var(--news-blue)}
-body[data-page="home"] .newsroom-header h1{color:var(--news-blue)}
+body[data-page="home"] .newsroom-header h1,.newsroom-header h2{color:var(--news-blue)}
 body[data-page="home"] .newsroom-header>p{color:#3e5168}
 body[data-page="home"] .newsroom-edition span{color:var(--news-blue-2)}
 
@@ -585,7 +585,7 @@ body[data-page="home"] .newsroom-edition time{
   border-left:0;
   border-radius:0 999px 999px 0;
 }
-body[data-page="home"] .newsroom-header h1{
+body[data-page="home"] .newsroom-header h1,.newsroom-header h2{
   grid-column:1;
   max-width:none;
   margin:10px 0 0;
@@ -1026,7 +1026,7 @@ body[data-page="home"] .newsletter-action small{
   body[data-page="home"] .editorial-feature{padding:25px 0 34px}
   body[data-page="home"] .editorial-feature::before{top:-120px;right:-155px}
   body[data-page="home"] .newsroom-header{margin-bottom:20px;padding-bottom:20px;border-bottom-width:1px}
-  body[data-page="home"] .newsroom-header h1{font-size:39px;letter-spacing:-.05em}
+  body[data-page="home"] .newsroom-header h1,.newsroom-header h2{font-size:39px;letter-spacing:-.05em}
   body[data-page="home"] .newsroom-header>p{font-size:13px;line-height:1.65}
   body[data-page="home"] .front-story.lead{
     grid-template-columns:1fr;
