@@ -145,7 +145,7 @@ def _home_fallback(data):
         '<header class="newsroom-header"><div class="newsroom-edition">'
         '<span>AIson DAILY</span>'
         f'<time>{_escape_html(lead.get("date"))}</time></div>'
-        '<h1 id="editorialFeatureTitle">今日 AI 新聞</h1>'
+        '<h2 id="editorialFeatureTitle">今日 AI 新聞</h2>'
         f'<p>{lead_quick_take}</p></header>'
         '<div class="frontpage-grid">' + lead_card
         + '<div class="frontpage-secondary">' + ''.join(side_cards) + '</div></div></div>'
