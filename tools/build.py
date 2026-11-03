@@ -550,7 +550,7 @@ def build_article_pages(data,site,social_card_ids=None):
                 if candidate['id'] != n['id'] and candidate['id'] not in {item['id'] for item in related}:
                     related.append(candidate)
         category_neighbors=[(abs(index-article_index),index,story) for index,story in enumerate(data) if story['id'] != n['id'] and story.get('category') == n.get('category')]
-        for _,_,candidate in sorted(category_neighbors)[:2]:
+        for _,_,candidate in sorted(category_neighbors)[:1]:
             if candidate['id'] not in {item['id'] for item in related}:
                 related.append(candidate)
         related_html=''.join(
