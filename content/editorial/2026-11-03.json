@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-03",
+  "dailyOneLiner": "今日 AI 一句講晒：前沿 AI 已經由模型賽跑進入資產負債表、光互連、公共基建與真實任務驗收的硬仗。",
+  "top3Ids": [
+    "2026-11-03-anthropic-s1-compute-commitments",
+    "2026-11-03-apple-q4-ai-capex-contrast",
+    "2026-11-03-marvell-lumentum-ai-optics-deal"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 經濟開始接受現金流審判",
+      "summary": "Anthropic 公開近 9,000 億美元算力承諾，Apple 以較低基建開支守住現金流，Palantir 則用企業收入證明 AI 可以變現。",
+      "watch": "收入能否快過算力付款、折舊與融資成本，以及短期 AI 合約能否轉成長約。"
+    },
+    {
+      "title": "瓶頸由 GPU 擴展到光、水與主權",
+      "summary": "Marvell 收購 Lumentum 押注光互連，Google 為馬來西亞數據中心投資共享水務，德國要求由硬件到軟件保留自主能力。",
+      "watch": "交易與基建能否如期落地，社區回報及供應商可替換性會否成為標準採購條件。"
+    },
+    {
+      "title": "Agent 由 Demo 走向完整任務驗收",
+      "summary": "LongCat‑2.5、OpenAI LifeVal、GDPx 與 ADNOC 部署都把焦點放在長程、多步、真實工作，而非單次回答。",
+      "watch": "第三方複現、人工接管率、每次成功成本及高風險場景的權限邊界。"
+    }
+  ],
+  "biggestChange": "biggest change：AI 競爭今日正式攤開四張賬——收入與算力付款、晶片與光互連、數據中心與公共資源、模型能力與真實任務成功率；單靠 benchmark 或公布多少 GW 已經不足以判斷領先。",
+  "watchTomorrow": "watch tomorrow：美國中期選舉及地方數據中心提案結果、Anthropic IPO 推銷前的估值與算力融資細節、Apple 假日季度成本指引，以及 Marvell–Lumentum 交易的監管與客戶反應。"
+}
