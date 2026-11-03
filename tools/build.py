@@ -523,7 +523,7 @@ def build_topic_hub_pages(data,site,registry):
 def build_article_pages(data,site,social_card_ids=None):
     social_card_ids=set(social_card_ids or [])
     template=(ROOT/'article.html').read_text(encoding='utf-8')
-    markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<meta name="robots" content="noindex,follow"><!-- ARTICLE SEO -->','<script type="application/ld+json" id="jsonld"></script>','<script src="data/news.js']
+    markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<h1 id="articleTitle"></h1>','<meta name="robots" content="noindex,follow"><!-- ARTICLE SEO -->','<script type="application/ld+json" id="jsonld"></script>','<script src="data/news.js']
     missing=[marker for marker in markers if marker not in template]
     if missing: raise SystemExit(f'article template missing expected markers: {missing}')
     out_dir=ROOT/'news'
@@ -542,6 +542,7 @@ def build_article_pages(data,site,social_card_ids=None):
         desc=html.escape(n['excerpt'],quote=True)
         page=template.replace('<head>','<head><base href="../">',1)
         page=page.replace('<title>文章｜AIson</title>',f'<title>{title}</title>',1)
+        page=page.replace('<h1 id="articleTitle"></h1>',f'<h1 id="articleTitle">{title}</h1>',1)
         page=page.replace('<meta name="description" content="AIson AI 新聞文章">',f'<meta name="description" content="{desc}">',1)
         og=(f'<meta property="og:type" content="article"><meta property="og:site_name" content="AIson"><meta property="og:locale" content="zh_HK">'
             f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">'
