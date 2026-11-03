@@ -531,7 +531,7 @@ def build_article_pages(data,site,social_card_ids=None):
     out_dir.mkdir(parents=True)
     generic_image=urljoin(site['baseUrl'],'assets/icon-512.png')
     publisher_logo=generic_image
-    for n in data:
+    for article_index,n in enumerate(data):
         url=article_url(site['baseUrl'],n['id'])
         has_social_card=n['id'] in social_card_ids
         image=urljoin(site['baseUrl'],f"assets/social/{n['id']}.jpg") if has_social_card else generic_image
@@ -543,6 +543,23 @@ def build_article_pages(data,site,social_card_ids=None):
         page=template.replace('<head>','<head><base href="../">',1)
         page=page.replace('<title>文章｜AIson</title>',f'<title>{title}</title>',1)
         page=page.replace('<h1 id="articleTitle"></h1>',f'<h1 id="articleTitle">{title}</h1>',1)
+        related=[]
+        for neighbor_index in (article_index-1,article_index+1):
+            if 0 <= neighbor_index < len(data):
+                candidate=data[neighbor_index]
+                if candidate['id'] != n['id'] and candidate['id'] not in {item['id'] for item in related}:
+                    related.append(candidate)
+        category_neighbors=[(abs(index-article_index),index,story) for index,story in enumerate(data) if story['id'] != n['id'] and story.get('category') == n.get('category')]
+        for _,_,candidate in sorted(category_neighbors)[:2]:
+            if candidate['id'] not in {item['id'] for item in related}:
+                related.append(candidate)
+        related_html=''.join(
+            f'<a class="article-related-card" href="news/{html.escape(str(item["id"]),quote=True)}.html">'
+            f'<small>{html.escape(str(item.get("category","AI 新聞")))} · {html.escape(str(item.get("date","")))}</small>'
+            f'<b>{html.escape(str(item.get("title","")))}</b><span>閱讀完整報導 →</span></a>'
+            for item in related
+        )
+        page=page.replace('<div class="article-related-grid" id="articleRelated"></div>',f'<div class="article-related-grid" id="articleRelated">{related_html}</div>',1)
         page=page.replace('<meta name="description" content="AIson AI 新聞文章">',f'<meta name="description" content="{desc}">',1)
         og=(f'<meta property="og:type" content="article"><meta property="og:site_name" content="AIson"><meta property="og:locale" content="zh_HK">'
             f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">'
@@ -568,6 +585,7 @@ def build_article_pages(data,site,social_card_ids=None):
         injected=f'<script>window.AISON_ARTICLE_ID={story_id};if(!new URLSearchParams(location.search).get("id"))history.replaceState({{}},"",location.pathname+"?id="+encodeURIComponent(window.AISON_ARTICLE_ID));</script>'
         page=page.replace(marker,injected+marker,1)
         required=[f'<title>{title}</title>','property="og:title"','name="twitter:card" content="summary_large_image"','rel="canonical"','"@type":"NewsArticle"',f'window.AISON_ARTICLE_ID={story_id}']
+        if related: required.append('class="article-related-card"')
         if has_social_card:
             required.extend([f'assets/social/{n["id"]}.jpg','content="1200"','content="630"'])
         if not all(token in page for token in required):
