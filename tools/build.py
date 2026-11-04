@@ -604,7 +604,7 @@ def build_article_pages(data,site,social_card_ids=None):
         page=page.replace('<script type="application/ld+json" id="jsonld"></script>',f'<script type="application/ld+json" id="jsonld">{jsonld}</script>',1)
         marker='<script src="data/news.js'
         story_id=json.dumps(n['id'],ensure_ascii=False)
-        injected=f'<script>window.AISON_ARTICLE_ID={story_id};if(!new URLSearchParams(location.search).get("id"))history.replaceState({{}},"",location.pathname+"?id="+encodeURIComponent(window.AISON_ARTICLE_ID));</script>'
+        injected=f'<script>window.AISON_ARTICLE_ID={story_id};</script>'
         page=page.replace(marker,injected+marker,1)
         required=[f'<title>{title}</title>','property="og:title"','name="twitter:card" content="summary_large_image"','rel="canonical"','"@type":"NewsArticle"',f'window.AISON_ARTICLE_ID={story_id}']
         if related: required.append('class="article-related-card"')
