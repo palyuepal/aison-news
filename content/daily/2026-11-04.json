@@ -1,0 +1,482 @@
+[
+  {
+    "id": "2026-11-04-eu-gemini-publisher-copyright-opinion",
+    "rank": 1,
+    "title": "歐盟法院法律意見：Gemini 即時擷取新聞作答案，特定情況或侵犯出版商權利",
+    "excerpt": "首宗到達歐盟最高法院的生成式 AI 案件，把模型訓練與即時 RAG 回答分開處理。",
+    "summary": "首宗到達歐盟最高法院的生成式 AI 案件，把模型訓練與即時 RAG 回答分開處理。",
+    "quickTake": "歐盟法院首席法律顧問 Maciej Szpunar 11 月 3 日就 Like Company 對 Google 案提出意見，認為 AI 聊天機械人即時擷取並重用新聞內容產生答案，在繞過技術限制或可辨認地重現受保護表達時，可能侵犯新聞出版商權利。意見同時指出，以受版權保護作品訓練 LLM 原則上可受歐盟文本及數據挖掘例外涵蓋，但本案沒有證據證明涉案文章曾用於訓練 Gemini。這是非約束性法律意見，法院仍未作最終裁決。",
+    "category": "AI 政策與版權",
+    "tags": [
+      "Google",
+      "Gemini",
+      "Copyright",
+      "European Union",
+      "RAG"
+    ],
+    "date": "2026-11-04",
+    "readTime": 5,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "歐盟法院法律顧問在 Case C-250/25 分析 Gemini 以 RAG 從網上擷取新聞、再向用戶生成摘要的行為。意見認為，若系統取得出版物後在答案中重現可辨認的受保護表達，或無視付費牆及其他技術限制，便可能觸及出版商的複製及向公眾提供權；單純報道事實則不受版權保護。",
+    "reportingContext": "Like Company 指控 Google 使用其匈牙利新聞網站文章訓練 Gemini，並透過聊天機械人重現內容。法律顧問認為訓練相關問題因缺乏證據而屬假設，但補充指出歐盟文本及數據挖掘例外一般可涵蓋模型訓練。法律顧問意見經常獲法院參考，但不是判決，最終法律界線仍待法院確認。",
+    "deepDive": "案件把兩種經常混在一起的活動分開：模型訓練是在較早階段分析大量作品；RAG 則在用戶提問時即時取得特定文章，再利用內容組成答案。前者可能受文本及數據挖掘例外保護，後者若令聊天答案成為原文替代品，出版商可主張其線上使用權受侵害。實際責任將取決於擷取方式、答案與原文相似程度、是否繞過技術限制，以及使用者能否從答案識別作品的原創表達。",
+    "whyImportant": "如果法院採納這套分析，搜尋式 AI、新聞摘要、企業 RAG 與內容授權都要分開評估訓練權利和即時取用權利。平台不能再單靠『模型沒有逐字記憶』回應所有版權爭議，出版商亦可能獲得更明確的授權與技術阻擋工具。",
+    "whatToWatch": "留意歐盟法院最終判決是否採納法律顧問意見、如何界定可辨認重現及技術限制，以及 Google 會否調整 Gemini 引用、摘要長度、付費牆處理與出版商控制。",
+    "hkImpact": [
+      "香港媒體及內容網站可重新檢視 robots.txt、付費牆、授權條款與 AI 摘要帶來的流量變化，但歐盟法律意見不會自動成為香港法例。",
+      "為歐洲客戶建立 RAG 的香港開發者，要分開保存訓練資料授權與即時擷取紀錄，並限制答案重現原文的程度。",
+      "普通用戶閱讀 AI 新聞摘要時應保留回到原始來源的習慣，因為答案可能省略條件、更新及出版商更正。"
+    ],
+    "take": "已確認的是法律顧問意見，不是最終判決。AIson 分析，最值得留意的轉變是歐洲可能把『訓練模型』與『即時用內容代替原文』劃成兩套權利問題，這會直接改變搜尋式 AI 的產品設計。",
+    "sourceLabel": "Court of Justice of the European Union",
+    "sourceUrl": "https://curia.europa.eu/site/upload/docs/application/pdf/2026-11/cp260155en.pdf",
+    "sourceType": "監管文件",
+    "references": [
+      {
+        "label": "Reuters 法律報道",
+        "url": "https://www.reuters.com/world/googles-use-press-by-ai-chatbot-may-infringe-copyright-rules-eu-court-adviser-2026-11-03/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "法院仍未作最終裁決；內容網站及 RAG 開發者應先盤點授權、擷取與引用做法。",
+    "aisonScore": 9.8,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 5,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-04-google-schools-search-ai-controls",
+    "rank": 2,
+    "title": "Google 學校 AI 控制引爭議：唔啟用 Gemini，學生帳戶連 Search 都會關閉",
+    "excerpt": "Google 將 K-12 學生帳戶改為由學校明確啟用，但 Search 與 AI 工具被放在同一控制組。",
+    "summary": "Google 將 K-12 學生帳戶改為由學校明確啟用，但 Search 與 AI 工具被放在同一控制組。",
+    "quickTake": "Google 宣布 Gemini、Gemini Notebook、Gemini in Classroom 與 Google Search 將在 K-12 學生帳戶預設關閉，直至學校管理員明確啟用。Google 同時把 Guided Learning 帶入 Classroom，並將於部分美國學校測試 Search 版本。爭議在於 Search 與 AI 產品被綁在同一開關，學校若拒絕 AI，學生帳戶亦會失去 Google Search。",
+    "category": "AI 教育與平台政策",
+    "tags": [
+      "Google",
+      "Gemini",
+      "Education",
+      "Search",
+      "Children"
+    ],
+    "date": "2026-11-04",
+    "readTime": 4,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Google 表示會把教育帳戶控制改為 opt-in，回應教師、家長及政策制定者對兒童使用生成式 AI 的憂慮。管理員開啟後，學生可使用 Search、Gemini、Gemini Notebook 及 Classroom AI；不開啟則上述產品全部停用。Google 稱 Search 已整合 AI 功能，無法把傳統搜尋完全獨立處理。",
+    "reportingContext": "Google 8 月曾為不少學生帳戶開啟 Gemini，引起作弊、批判思考、私隱及兒童發展爭議。今次改為由學校決定，但前 FTC 主席 Lina Khan 及教育倡議者批評，將 Search 同 AI 綁在一起可能利用市場地位迫使學校接受 AI。Google 指全球約有 1.5 億學生及教師使用 Classroom。",
+    "deepDive": "產品層面上，Search 的 AI Overview、延伸聊天及 Guided Learning 已與傳統連結列表交疊。治理層面上，學校需要的不只是『開或關』，而是可分開控制搜尋、生成答案、資料保留、教師指派、學生年齡與高風險題目。若平台只提供整組開關，學校的選擇成本會由功能取捨變成更換整個生態系統。",
+    "whyImportant": "這件事把兒童 AI 安全、教育科技依賴及平台競爭放在同一個政策問題。Google 控制搜尋、Chromebook、Classroom 與 AI 助手，任何產品綁定安排都可能影響學校是否真正有自由選擇。",
+    "whatToWatch": "看 Google 會否提供更細緻的獨立控制、香港及其他地區的推出安排、學生資料保留政策，以及學校會否轉用其他搜尋或教育平台。",
+    "hkImpact": [
+      "香港學校使用 Google Workspace for Education 時，要預先核對本地帳戶會否採用同一控制方式，並為停用 Search 準備替代研究工具。",
+      "家長及教師應要求分開設定搜尋、生成答案及資料保留，而唔係只接受『全部開或全部關』。",
+      "教育科技供應商可把細緻權限、粵語支援、來源引用與學生資料治理作為產品差異。"
+    ],
+    "take": "已確認 Google 會採用管理員明確啟用，但具體推出細節仍待公布。AIson 分析，真正爭議不是學校應否用 AI，而是掌握核心搜尋入口的平台可否把 AI 接受程度變成使用搜尋的條件。",
+    "sourceLabel": "Google",
+    "sourceUrl": "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Associated Press",
+        "url": "https://apnews.com/article/7ba4219e505db1c11d672f6eefe7155a"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "香港推出方式尚未確定；學校應先盤點帳戶控制與替代搜尋方案。",
+    "aisonScore": 9.6,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 3,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-11-04-openai-physical-engineering-mazda",
+    "rank": 3,
+    "title": "OpenAI 將 Codex 帶入 CAD、PCB 與汽車工程：Astra 一周設計出實體裝置",
+    "excerpt": "OpenAI 公開由機械設計、電路板到製造圖的工程測試，並宣布與 Mazda 研究空氣動力及撞擊安全。",
+    "summary": "OpenAI 公開由機械設計、電路板到製造圖的工程測試，並宣布與 Mazda 研究空氣動力及撞擊安全。",
+    "quickTake": "OpenAI 11 月 3 日展示 ChatGPT、Codex 與 Astra 如何協助 CAD、PCB、模擬及跨工程協調。兩名團隊成員在不足一周內用 Astra 設計一部連接 Codex 的裝置，代工廠一個月內造出小批原型，但量產前仍要多輪人工修正。OpenAI 亦宣布與 Mazda 合作，研究利用模型輔助空氣動力及撞擊安全設計。",
+    "category": "AI 工程與製造",
+    "tags": [
+      "OpenAI",
+      "Codex",
+      "Astra",
+      "Mazda",
+      "CAD"
+    ],
+    "date": "2026-11-04",
+    "readTime": 5,
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "OpenAI 讓 Astra 處理裝置外形、機械結構、電子元件選擇、PCB 佈局、介面及韌體整合，並由合約製造商生產原型。公司亦稱，自 2 月起內部硬件團隊使用模型的 token 數增加 23 倍；新內部模型在 BenchCAD 2.0 平均得分 0.875，高過 GPT-6 Astra 的 0.594。",
+    "reportingContext": "這些數字及案例由 OpenAI 自行公布，不是獨立生產力研究。公司明確承認 Astra 未能持續理解製造商的生產限制、公差及裝配細節，因此原型仍需要工程師審查及多輪修改。Mazda 合作亦屬研究階段，未有量產車型、成本節省或安全改善數據。",
+    "deepDive": "工程 Agent 的難度高過一般 coding：它要同時理解三維幾何、材料、電氣規則、軟件、供應鏈與製造公差，而且錯誤可能在實體產品出現。OpenAI 的方向是讓模型操作 CAD、ECAD、有限元素分析及製造文件，再由工程師驗證。若工具整合成熟，模型最先取代的未必是設計判斷，而是重複建模、格式轉換、模擬設定與跨團隊檢查。",
+    "whyImportant": "生成式 AI 正由純軟件進入汽車、電子及基建等實體工程工作。成功的話，工程迭代速度、原型成本與專業軟件市場都會改變；但可製造性、責任及安全驗證亦會成為比 benchmark 更重要的門檻。",
+    "whatToWatch": "看 Mazda 合作會否公布量化結果、OpenAI 是否開放工程工具接口與評測、模型如何記錄設計依據，以及安全關鍵圖則的簽核責任由誰承擔。",
+    "hkImpact": [
+      "香港工程、建築及電子團隊可先在非安全關鍵工作測試模型，例如整理圖則、設定模擬及找出版本差異。",
+      "中小製造商採用前要保留工程師簽核、版本紀錄與公差驗證，AI 產生的 CAD 或 PCB 不應直接落單生產。",
+      "大專院校可把 AI 工具操作、製造限制與安全審查一併加入工程課程，而唔係只教提示詞。"
+    ],
+    "take": "已確認原型測試與 Mazda 研究合作，量產效益仍未證實。AIson 分析，AI 進入實體工程後，真正護城河會由懂唔懂畫圖，轉向能否理解製造限制、留下可審計依據並接受專業簽核。",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+    "sourceType": "研究論文",
+    "references": [],
+    "actionVerdict": "try-now",
+    "actionReason": "可在低風險、可人工驗證的工程輔助工作小規模試用，暫不應自動放行生產。",
+    "aisonScore": 9.4,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-04-snowflake-coco-cowork-agent-governance",
+    "rank": 4,
+    "title": "Snowflake 推常駐企業 Agent：CoCo、CoWork 加入 Bots、Business Ontology 與統一閘道",
+    "excerpt": "企業 Agent 由等候提示變成在背景主動工作，但每個動作要受同一套資料定義、權限及成本控制。",
+    "summary": "企業 Agent 由等候提示變成在背景主動工作，但每個動作要受同一套資料定義、權限及成本控制。",
+    "quickTake": "Snowflake 在 Expedition 2026 更新 CoCo 與 CoWork，加入可在背景執行定期工作的 Bots、共享技能、記憶與成果物。公司同時推出 Business Ontology，讓企業預先批准『淨收入』等正式定義，並以 Cortex AI Gateway 管理 Agent 使用模型、工具、權限及預算。CoWork 已有逾 5,800 個帳戶使用，CoCo 則超過 9,100 個，但功能成效主要來自公司與客戶案例。",
+    "category": "企業 AI Agent",
+    "tags": [
+      "Snowflake",
+      "CoCo",
+      "CoWork",
+      "AI Agents",
+      "Governance"
+    ],
+    "date": "2026-11-04",
+    "readTime": 4,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Snowflake 將個人工作 Agent 與資料開發 Agent 擴展成常駐 Bots，可在 Slack、Excel、手機及既有工作流程中執行重複任務，只在需要決策或批准時找人。Business Ontology 會把經批准的商業定義連結到表格及資料視圖；AI Gateway 則集中記錄模型調用、工具使用、政策與支出。",
+    "reportingContext": "兩項公告屬同一產品堆疊的新能力，不代表所有客戶即日全面可用。Snowflake 引述的使用帳戶數與客戶成效未提供一致的任務成功率、人工接管率及成本基準；部分功能亦可能分階段或預覽推出。",
+    "deepDive": "企業 Agent 常見失敗不是模型完全不懂，而是不同部門對收入、客戶、風險等概念定義不一致。Ontology 嘗試把正式定義變成機器可用政策，Gateway 則把模型路由、工具權限及審計放在同一控制面。這意味 Agent 平台競爭正由模型選擇，轉向誰掌握資料語義、身份、操作紀錄與成本控制。",
+    "whyImportant": "常駐 Agent 可以主動完成工作，但亦會把錯誤及越權由一次回答放大成持續流程。企業能否提供可信商業語境、最小權限及完整審計，將決定 Agent 能否由試點走入核心營運。",
+    "whatToWatch": "看 Bots 的正式供應地區、定價、人工批准機制、跨雲及第三方模型支援，以及客戶能否量化每次成功成本與錯誤回復時間。",
+    "hkImpact": [
+      "香港企業導入常駐 Agent 前，要先統一財務、客戶及風險定義，否則自動化只會更快放大部門矛盾。",
+      "受規管行業要確保每次模型調用、工具操作、批准人及資料來源都可審計。",
+      "中小企毋須一開始購買完整平台，可先為一個重複流程建立批准詞彙、權限及人工停止點。"
+    ],
+    "take": "已確認產品方向及公布的帳戶數，實際回報仍需個別客戶驗證。AIson 分析，企業 Agent 下一場競爭唔再只係邊個模型識得做，而係邊個平台可以證明 Agent 點解咁做、用過咩資料同花咗幾多錢。",
+    "sourceLabel": "Snowflake",
+    "sourceUrl": "https://www.snowflake.com/en/news/press-releases/expedition-2026-coco-cowork/",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Snowflake Business Ontology 與 Cortex AI Gateway",
+        "url": "https://www.snowflake.com/en/news/press-releases/expedition-2026-business-ontology-ai-gateway/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "值得研究治理架構，但應等供應、價格及真實任務數據更完整後再大規模採購。",
+    "aisonScore": 9.1,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-04-china-ai-investment-concentration-hk-summit",
+    "rank": 5,
+    "title": "中國金融監管官員在香港警告：AI 投資過度集中，正推高傳統企業融資成本",
+    "excerpt": "監管焦點由 AI 泡沫價格延伸到槓桿、信貸與資本排擠，政策框架可能跟住改。",
+    "summary": "監管焦點由 AI 泡沫價格延伸到槓桿、信貸與資本排擠，政策框架可能跟住改。",
+    "quickTake": "中國國家金融監督管理總局副局長肖遠企 11 月 3 日在香港金融管理局全球金融領袖投資峰會表示，全球 AI 投資過度集中於科技行業及龍頭企業，推高槓桿並可能造成過快擴張。他認為資金集中亦會抬高傳統行業借貸成本、削弱再投資能力及增加信用風險，並促請政策制定者建立針對 AI 經濟轉型的宏觀與金融風險框架。這是監管政策訊號，未有即時公布新限制。",
+    "category": "AI 金融與監管",
+    "tags": [
+      "Hong Kong",
+      "AI Investment",
+      "Financial Regulation",
+      "China",
+      "Credit Risk"
+    ],
+    "date": "2026-11-04",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "肖遠企在香港峰會把 AI 資金熱潮描述為資本過度集中問題，指出領先科技公司及相關基建獲得大量融資時，其他行業可能面對更高資金成本。HKMA 確認峰會約有 280 名全球金融領袖參與，包括約 120 名集團主席及行政總裁。",
+    "reportingContext": "講話沒有列出市場集中度、槓桿或信貸損失的具體門檻，亦未宣布監管措施。因此，現階段不能將其解讀為中國即將限制所有 AI 融資，而應視為監管機構開始把 AI 資本開支納入宏觀審慎與信用風險討論。",
+    "deepDive": "AI 基建需要債務、租賃、專項融資及長期購買承諾。如果市場相信少數龍頭必然勝出，資本會集中流入同一批企業和供應鏈，令估值與槓桿同步上升；其他企業則可能因銀行資本、債券需求及設備資源被吸走而付出更高成本。這將把 AI 風險由科技股價格，傳導到銀行、保險及實體經濟。",
+    "whyImportant": "香港是國際融資與內地資本之間的重要接口。當中國監管官員公開討論 AI 投資的排擠與信用風險，金融機構可能更重視集中度、抵押品、現金流及長期算力承諾，而唔只看增長故事。",
+    "whatToWatch": "留意內地及香港監管機構會否提出 AI 相關集中度、壓力測試、披露或風險權重指引，以及銀行是否收緊數據中心與算力融資條件。",
+    "hkImpact": [
+      "香港銀行及資產管理公司可能要為 AI 基建融資加入更嚴格的現金流、集中度與壓力測試。",
+      "非科技中小企若感受到融資成本上升，要提早比較銀行、政府擔保及設備租賃方案，而唔好假設問題只影響美股。",
+      "投資者應分開 AI 需求增長與融資結構風險；監管警告不等於行業即將逆轉，本文不構成投資建議。"
+    ],
+    "take": "已確認的是監管官員公開警告，未有新規則。AIson 分析，香港今日收到的關鍵訊號是 AI 熱潮正由科技估值問題，變成銀行及宏觀風險管理問題。",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/finance/ai-investment-is-becoming-overly-concentrated-chinese-official-says-2026-11-03/",
+    "sourceType": "媒體報道",
+    "references": [
+      {
+        "label": "香港金融管理局峰會公告",
+        "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/11/20261103-4/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "現時是政策訊號而非新規；金融機構及借款企業應先盤點集中度和融資敏感度。",
+    "aisonScore": 8.9,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 2,
+      "developer": 3
+    }
+  },
+  {
+    "id": "2026-11-04-singapore-future-finance-ai-institute",
+    "rank": 6,
+    "title": "新加坡 Future of Finance Institute 正式運作：首階段聚焦金融 Agent 與風險管理",
+    "excerpt": "MAS 以 PathFin.ai、BuildFin.ai 及 SafeFin.ai 建立公私營協作平台，直接瞄準金融 AI 落地。",
+    "summary": "MAS 以 PathFin.ai、BuildFin.ai 及 SafeFin.ai 建立公私營協作平台，直接瞄準金融 AI 落地。",
+    "quickTake": "新加坡金融管理局宣布 Future of Finance Institute 正式運作，首個重點是金融 AI，分為知識分享、方案建設及安全治理三條支柱。研究院會協助金融機構分享 Agentic AI 實施經驗、驗證方案效用，並擴充 MindForge AI 風險管理工具，涵蓋用例評估、測試保證及第三方 AI。具體參與機構、預算及推出時間仍會分階段公布。",
+    "category": "AI 金融與亞洲政策",
+    "tags": [
+      "Singapore",
+      "MAS",
+      "Finance",
+      "Agentic AI",
+      "AI Governance"
+    ],
+    "date": "2026-11-04",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Future of Finance Institute 是 MAS、金融機構、科技公司及研究界共同參與的平台。PathFin.ai 負責知識與方案配對，BuildFin.ai 推動共同開發，SafeFin.ai 則處理風險、測試與保證；未來亦會擴展到代幣化等金融科技。",
+    "reportingContext": "研究院開始運作不等於已有統一法規或完成可直接採購的產品。MAS 表示多項細節稍後公布，目前可確認的是治理架構、三條工作支柱及擴充風險工具的方向。",
+    "deepDive": "金融 Agent 會接觸客戶資料、投資決策、合規及操作流程，單靠一般企業 AI 指引不足。MAS 嘗試讓機構共同分享失敗模式、驗證效用及建立測試方法，降低每間銀行重複探索的成本。這亦可能令新加坡形成一套可輸出的金融 Agent 保證框架。",
+    "whyImportant": "亞洲金融中心競爭已由吸引 AI 投資，轉向誰能提供可落地、可測試及獲監管接受的 Agent 環境。這會影響金融科技公司選擇在哪裏做產品驗證及區域部署。",
+    "whatToWatch": "看參與金融機構名單、SafeFin.ai 測試標準、第三方 AI 要求，以及相關成果會否成為正式監管預期。",
+    "hkImpact": [
+      "香港銀行與金融科技公司要比較新加坡平台能否提供更快的 Agent 測試、監管交流及區域客戶入口。",
+      "本地監管及研究機構可留意 MindForge 擴充後會否形成跨市場可互認的測試方法。",
+      "開發者若服務金融客戶，應提早準備用例風險評估、第三方模型清單、測試證據及人工接管設計。"
+    ],
+    "take": "研究院及三條支柱已正式啟動，具體成果仍待驗證。AIson 分析，新加坡正在把『安全採用 AI』由政策口號變成共用測試與產業基建，香港需要留意區域競爭差距。",
+    "sourceLabel": "Monetary Authority of Singapore",
+    "sourceUrl": "https://www.mas.gov.sg/news/media-releases/2026/future-of-finance-institute-commences-operations-starting-with-ai-in-finance",
+    "sourceType": "監管文件",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "平台剛開始運作；金融科技團隊應追蹤參與及測試機會，暫毋須改變現有系統。",
+    "aisonScore": 8.7,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-04-thomson-reuters-ai-revenue-margin",
+    "rank": 7,
+    "title": "Thomson Reuters 收入升 10%：生成式 AI 佔合約價值 34%，但法律業務利潤率下跌",
+    "excerpt": "CoCounsel 與 AI 授權開始帶動收入，亦同時增加科技投資及壓低短期利潤率。",
+    "summary": "CoCounsel 與 AI 授權開始帶動收入，亦同時增加科技投資及壓低短期利潤率。",
+    "quickTake": "Thomson Reuters 第三季收入按年升 10% 至 18.3 億美元，並上調全年有機收入增長預測至 8.5%–9.0%。Reuters 報道指生成式 AI 已佔公司基礎合約價值 34%，高過一年前的 24%；CoCounsel 及內容授權推動增長。另一方面，法律業務利潤率由 49% 降至 46.6%，反映 AI 投資、遣散及收購成本。",
+    "category": "法律 AI 與商業模式",
+    "tags": [
+      "Thomson Reuters",
+      "CoCounsel",
+      "Legal AI",
+      "Licensing",
+      "Earnings"
+    ],
+    "date": "2026-11-04",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "公司公布總收入及有機收入均升 10%，法律專業部門收入以固定匯率計升 9%，主要由 Westlaw 與 CoCounsel Legal 帶動。Thomson Reuters 同時表示客戶對新一代 CoCounsel 反應正面，並繼續洽談 Thomson LLM 商業合作。",
+    "reportingContext": "34% 是基礎合約價值中與生成式 AI 相關的比例，不等同公司收入有 34% 直接來自 AI。股價在業績後下跌，顯示市場亦關注科技投資會延後利潤率改善；單季增長不能證明所有法律 AI 客戶均獲得相同回報。",
+    "deepDive": "法律與稅務 AI 的商業優勢來自可信資料、工作流程及責任體系，而不只是模型。Thomson Reuters 可以把內容授權、專業資料庫與 CoCounsel 訂閱綁在一起，形成較高定價；但建立代理、模型及審計能力亦需要持續投資，短期會壓低利潤率。",
+    "whyImportant": "這是專業 AI 由試用走向合約收入的具體證據，同時提醒市場 AI 產品增長並非零成本。擁有高質資料及既有客戶關係的公司，可能比單純模型供應商更容易收費。",
+    "whatToWatch": "看 CoCounsel 續約、每客戶收入、Thomson LLM 授權及法律部門利潤率，並留意專業責任與錯誤保險條款。",
+    "hkImpact": [
+      "香港律師、會計及稅務團隊可預期專業資料庫會逐步把 AI 功能納入較高價方案，採購時要量度節省時間而唔只看功能。",
+      "本地內容商可留意生成式 AI 授權成為收入來源，但合約要清楚界定訓練、即時檢索、引用及再分發。",
+      "中小專業服務公司要保留人手覆核與責任分工，不能因供應商有權威資料就把輸出當成最終意見。"
+    ],
+    "take": "收入、合約價值及利潤率數據已確認，但客戶實際生產力未統一披露。AIson 分析，專業 AI 的贏家可能不是最平模型，而是能同時掌握可信資料、工作流程與收費入口的供應商。",
+    "sourceLabel": "Thomson Reuters",
+    "sourceUrl": "https://ir.thomsonreuters.com/news-releases/news-release-details/thomson-reuters-reports-third-quarter-2026-results",
+    "sourceType": "公司文件",
+    "references": [
+      {
+        "label": "Reuters 業績分析",
+        "url": "https://www.reuters.com/business/thomson-reuters-reports-higher-third-quarter-revenue-2026-11-03/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "專業團隊可測試個別流程，但應先量度續約成本、覆核時間及責任風險。",
+    "aisonScore": 8.5,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 3,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-11-04-lumen-microsoft-ai-ready-networks",
+    "rank": 8,
+    "title": "Microsoft 與 Lumen 擴大合作：企業 AI 網絡、Azure 遷移及 Agent 治理一併規劃",
+    "excerpt": "企業 AI 瓶頸由雲端算力延伸到辦公室、私有數據中心與多雲之間的連接。",
+    "summary": "企業 AI 瓶頸由雲端算力延伸到辦公室、私有數據中心與多雲之間的連接。",
+    "quickTake": "Microsoft 與 Lumen 擴大聯合銷售合作，計劃在企業採用 Azure 與 AI 時，同步規劃光纖、混合雲連接、安全與資料搬運。Lumen 將逐步把更多雲端網絡及應用連接能力帶到 Azure 與 Marketplace，雙方亦會研究網絡連接如何配合 Microsoft 的 Agent 治理與安全工具。公告未披露合約金額、客戶名單或全面供應日期。",
+    "category": "AI 雲端與網絡",
+    "tags": [
+      "Microsoft",
+      "Lumen",
+      "Azure",
+      "Networking",
+      "Enterprise AI"
+    ],
+    "date": "2026-11-04",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "48h",
+    "whatHappened": "雙方將共同尋找同時涉及網絡現代化、Azure 遷移與 AI 轉型的企業項目。Lumen 的 Alkira 雲端網絡產品已在 Microsoft Marketplace 提供，未來可能加入更多連接與控制功能。",
+    "reportingContext": "合作屬擴大聯合銷售及產品整合意向，並非完成的大型基建交易。官方沒有提供延遲、頻寬、成本或部署速度改善數據，所以實際價值需由客戶項目驗證。",
+    "deepDive": "企業資料通常分散在公有雲、私有數據中心、分店及合作夥伴系統。Agent 要跨系統取資料及採取行動時，網絡路由、身份、政策與可觀察性會共同決定速度及風險。將網絡規劃提前到 AI 架構階段，可以避免模型上線後才發現資料搬不到、權限不一致或延遲過高。",
+    "whyImportant": "企業 AI 的基礎設施競爭正由 GPU 與雲端平台，延伸到連接資料的網絡控制層。電訊商、雲端商及安全平台之間的界線會進一步模糊。",
+    "whatToWatch": "看新增功能何時上架 Marketplace、是否支援多雲與可替換供應商，以及企業能否量化延遲、出站流量費及營運複雜度。",
+    "hkImpact": [
+      "香港企業部署跨境或混合雲 Agent 時，要先盤點資料位置、網絡延遲、出站費用及故障備援。",
+      "電訊及系統整合商可把 AI 網絡評估變成新服務，但要避免只綁定單一雲端供應商。",
+      "中小企若主要資料仍在 SaaS，可先用安全連接及身份管理，未必需要立即採購大型專線方案。"
+    ],
+    "take": "合作方向已確認，實際效益及供應時間未公開。AIson 分析，當 Agent 開始跨多個系統做事，網絡唔再只是傳輸成本，而會變成權限、速度與可靠性的共同控制面。",
+    "sourceLabel": "Microsoft",
+    "sourceUrl": "https://news.microsoft.com/source/2026/11/02/lumen-and-microsoft-expand-collaboration-to-co-sell-enterprise-ai-ready-networks/",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "先等待可用功能及量化效益；企業可立即盤點資料與網絡依賴。",
+    "aisonScore": 8.3,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-04-nvidia-ai-defined-semiconductor-fabs",
+    "rank": 9,
+    "title": "NVIDIA 推『AI-defined fab』概念：模擬、物理模型、Agent 與數碼分身連成生產閉環",
+    "excerpt": "晶圓廠開始用 AI 縮短材料、微影、測試及產線調整時間，但數字主要來自供應商案例。",
+    "summary": "晶圓廠開始用 AI 縮短材料、微影、測試及產線調整時間，但數字主要來自供應商案例。",
+    "quickTake": "NVIDIA 11 月 3 日整理其『AI-defined fab』路線，把加速模擬、物理 AI、工程 Agent 及 Omniverse 數碼分身放入半導體製造。公司稱 COMSOL 與 Applied Materials 的部分模擬可加速最多 10 倍，Applied 的地形模擬最高 35 倍，Siemens Calibre 微影工作最高 17 倍；Advantest 亦以 Agent 將模型選擇由數小時縮短至數分鐘。這些是合作方及 NVIDIA 公布的個別工作負載結果，不代表整間晶圓廠產能提升相同比例。",
+    "category": "AI 晶片與製造",
+    "tags": [
+      "NVIDIA",
+      "Semiconductor",
+      "Digital Twin",
+      "Physical AI",
+      "Manufacturing"
+    ],
+    "date": "2026-11-04",
+    "readTime": 3,
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "NVIDIA 公開 Applied Materials、Siemens、COMSOL 及 Advantest 等合作案例，展示 GPU 加速求解器、PhysicsNeMo、cuLitho、Omniverse 及 NeMo Switchyard Agent 如何支援材料探索、微影、測試及工廠佈局。",
+    "reportingContext": "這不是單一新產品發布，而是 NVIDIA 將現有及合作技術包裝成完整製造架構。所有倍數均針對指定軟件與工作負載，未披露統一硬件、成本、能耗及良率基準，不能直接推算實際投資回報。",
+    "deepDive": "晶圓製造每次實體試驗成本高、時間長，因此最適合先在模擬與數碼分身測試。物理 AI 可近似昂貴模擬，Agent 負責串連資料與工具，工程師再決定是否落實到產線。價值取決於模型能否處理製程漂移、保護機密配方並將錯誤限制在虛擬環境。",
+    "whyImportant": "AI 晶片需求愈高，晶片製造本身亦愈需要 AI 提升設計與良率。這形成回饋循環，同時加深晶圓廠對 GPU、模擬軟件及數碼分身平台的依賴。",
+    "whatToWatch": "看合作方會否公布實際良率、停機時間、能耗與總成本數據，以及 Agent 何時由實驗工具變成受控生產流程。",
+    "hkImpact": [
+      "香港及大灣區電子製造商可先在設備佈局、測試及維護模擬採用數碼分身，毋須直接改動生產線。",
+      "工程團隊評估供應商倍數時，要要求相同硬件、資料及成本基準，避免把單一模擬加速當成整體產能提升。",
+      "大專院校可加強物理模擬、製造數據與 Agent 編排的交叉訓練，相關人才需求會增加。"
+    ],
+    "take": "合作案例與指定測試數據已公布，整廠回報未獲證實。AIson 分析，半導體業下一步唔只係用 AI 設計晶片，而係用 AI 管理製造晶片的完整試驗循環。",
+    "sourceLabel": "NVIDIA",
+    "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+    "sourceType": "公司文件",
+    "references": [],
+    "actionVerdict": "watch",
+    "actionReason": "值得追蹤真實良率及成本數據；製造商可先在虛擬、可回復環境試用。",
+    "aisonScore": 8.1,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-11-04-openai-dan-driscoll-national-security",
+    "rank": 10,
+    "title": "OpenAI 新設國家安全現代化顧問職位：前美國陸軍部長 Dan Driscoll 加入",
+    "excerpt": "OpenAI 將政府、盟友、網絡韌性與『民主 AI』協作提升到高層專職角色。",
+    "summary": "OpenAI 將政府、盟友、網絡韌性與『民主 AI』協作提升到高層專職角色。",
+    "quickTake": "OpenAI 委任前美國陸軍部長 Dan Driscoll 出任新設的國家安全現代化高級顧問，向管理層及外部夥伴提供意見。工作範圍包括國家及網絡安全、盟友合作、政府機構營運需求，以及推動公司所稱的『民主 AI』。這是人事與政策方向更新，未有公布新政府合約、模型權限或軍事部署。",
+    "category": "AI 國家安全",
+    "tags": [
+      "OpenAI",
+      "National Security",
+      "Cybersecurity",
+      "Government",
+      "AI Policy"
+    ],
+    "date": "2026-11-04",
+    "readTime": 2,
+    "featured": false,
+    "verified": true,
+    "freshness": "48h",
+    "whatHappened": "Driscoll 將與政府、產業、學術及盟友機構合作，協助把 AI 用於國家安全現代化及網絡韌性。他曾管理近一百萬名現役、國民警衞及後備軍人，以及超過 26.5 萬名陸軍文職人員。",
+    "reportingContext": "OpenAI 將職位描述為顧問及合作角色，並未交代決策權、匯報細節、具體項目或安全邊界。人事任命顯示戰略優先次序，但不能當成任何軍事用途已獲批准或正式部署。",
+    "deepDive": "前沿模型公司愈來愈需要理解政府採購、保密環境、盟友互通與責任制度。引入具軍事及政府背景的高層，可縮短產品與機構需求之間的距離；同時亦會增加外界對模型軍事用途、出口、監督及公司使命的關注。",
+    "whyImportant": "AI 公司與國家安全機構的關係正由單一合約走向長期制度合作。這會影響政府市場、使用政策、盟友技術標準及公眾信任。",
+    "whatToWatch": "看 OpenAI 會否公布首批現代化項目、盟友合作、模型使用邊界、獨立監督及透明度安排。",
+    "hkImpact": [
+      "香港企業使用美國前沿模型時，要留意國家安全、出口管制及地區供應政策會否改變。",
+      "網絡安全及關鍵基建團隊可關注盟友標準是否影響供應商審查與事故通報要求。",
+      "普通用戶應分開人事任命與實際軍事部署，未有文件支持時唔應將政策方向當成已發生用途。"
+    ],
+    "take": "任命與職責範圍已確認，具體項目未公布。AIson 分析，OpenAI 正把國家安全由外部合作變成內部長期能力，但其可信度將取決於使用邊界與監督能否同擴張速度同步。",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/dan-driscoll-joins-openai/",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Reuters",
+        "url": "https://www.reuters.com/business/openai-taps-former-us-army-secretary-dan-driscoll-national-security-role-2026-11-03/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "現階段屬戰略人事訊號；等待具體合約、使用邊界及透明度安排。",
+    "aisonScore": 7.9,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 2,
+      "developer": 3
+    }
+  }
+]
