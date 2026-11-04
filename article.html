@@ -63,16 +63,5 @@ document.addEventListener('DOMContentLoaded',()=>{
       take.after(label);
     }
   }
-  const related=document.getElementById('articleRelated');
-  if(related){
-    const esc=s=>String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-    const id=window.AISON_ARTICLE_ID||new URLSearchParams(location.search).get('id')||'';
-    const all=(window.AISON_NEWS||[]).slice().sort((a,b)=>(Number(a.rank)||999)-(Number(b.rank)||999));
-    const current=all.find(n=>n.id===id);
-    const same=current?all.filter(n=>n.id!==id&&n.category===current.category):[];
-    const fallback=all.filter(n=>n.id!==id&&!same.includes(n));
-    const picks=[...same,...fallback].slice(0,3);
-    related.innerHTML=picks.map(n=>`<a class="article-related-card" href="news/${encodeURIComponent(n.id)}.html"><small>${esc(n.category||'AI NEWS')}</small><b>${esc(n.title)}</b><span>繼續閱讀 →</span></a>`).join('');
-  }
 });
 </script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js?v=20261006-news-image-v1-1").catch(()=>{})}</script><script src="/theme.js?v=20261029-design-review"></script></body></html>
