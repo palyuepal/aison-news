@@ -606,7 +606,7 @@ def build_rss(data,site):
 
 
 def build_sitemap(data,site,registry):
-    base=site['baseUrl']; pages=['','daily.html','live.html','weekly.html','guides.html','topics.html','archive.html','about.html','methodology.html','corrections.html','privacy.html']
+    base=site['baseUrl']; pages=['','daily.html','live.html','weekly.html','guides.html','topics.html','archive.html','reviews.html','about.html','methodology.html','corrections.html','privacy.html']
     urls=[f'<url><loc>{html.escape(urljoin(base,p))}</loc></url>' for p in pages]
     for hub in registry.get('hubs',[]):
         hub_path=f"topics/{hub['id']}.html"
