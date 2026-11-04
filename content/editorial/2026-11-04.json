@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-04",
+  "dailyOneLiner": "今日 AI 一句講晒：生成式 AI 開始同時接受版權、教育選擇權、實體工程、企業治理同金融風險五重現實考驗。",
+  "top3Ids": [
+    "2026-11-04-eu-gemini-publisher-copyright-opinion",
+    "2026-11-04-google-schools-search-ai-controls",
+    "2026-11-04-openai-physical-engineering-mazda"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 平台權力開始受法律與公共選擇審視",
+      "summary": "歐盟法律顧問把即時新聞擷取與模型訓練分開處理；Google 將學校 Search 與 AI 控制綁在一起亦引起競爭與兒童安全爭議。",
+      "watch": "留意歐盟法院最終裁決、出版商控制，以及 Google 會否提供真正獨立的學校搜尋與 AI 開關。"
+    },
+    {
+      "title": "Agent 由軟件走入實體工程與核心營運",
+      "summary": "OpenAI 把模型帶進 CAD、PCB 與 Mazda 汽車研究；Snowflake 則以常駐 Bots、Ontology 及 Gateway 管理企業 Agent。",
+      "watch": "重點不是 Demo，而是可製造性、人工批准、每次成功成本及完整操作紀錄。"
+    },
+    {
+      "title": "亞洲開始建立 AI 金融治理基建",
+      "summary": "中國金融監管官員在香港警告 AI 資本過度集中，新加坡則啟動以 Agentic AI 與風險管理為核心的 Future of Finance Institute。",
+      "watch": "留意集中度、壓力測試、第三方 AI 保證及跨市場測試標準會否變成正式監管要求。"
+    }
+  ],
+  "biggestChange": "biggest change：AI 競爭今日由『產品能否做到』進一步轉成『平台可否合法取得內容、用戶有冇真正選擇、Agent 能否在實體及受規管環境留下可審計責任』。",
+  "watchTomorrow": "watch tomorrow：歐盟 Like Company 案後續、Google 對學校 Search／AI 綁定爭議的回應、OpenAI–Mazda 工程合作細節，以及香港與新加坡金融 AI 治理會否公布更具體測試或監管安排。"
+}
