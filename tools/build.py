@@ -68,6 +68,28 @@ def _text_len(value=''):
     return len(''.join(str(value or '').split()))
 
 
+def _article_meta_description(story):
+    """Prefer a useful editorial summary of snippet length without padding."""
+    excerpt=str(story.get('excerpt') or '').strip()
+    summary=str(story.get('summary') or '').strip()
+    quick_take=str(story.get('quickTake') or '').strip()
+
+    if 102 <= len(excerpt) <= 160:
+        return excerpt
+    if summary != excerpt and 102 <= len(summary) <= 160:
+        return summary
+
+    sentences=[part.strip() for part in re.split(r'(?<=[。！？])',quick_take) if part.strip()]
+    combined=''
+    for sentence in sentences:
+        if len(combined)+len(sentence) > 160:
+            break
+        combined+=sentence
+        if len(combined) >= 102:
+            return combined
+    return excerpt or summary or quick_take
+
+
 def _deep_read_ready(n):
     if not n.get('verified') or not n.get('sourceUrl'):
         return False
@@ -539,7 +561,7 @@ def build_article_pages(data,site,social_card_ids=None):
         image_type='image/jpeg' if has_social_card else 'image/png'
         image_alt=f"{n['title']}｜AIson"
         title=html.escape(n['title']+'｜AIson',quote=True)
-        desc=html.escape(n['excerpt'],quote=True)
+        desc=html.escape(_article_meta_description(n),quote=True)
         page=template.replace('<head>','<head><base href="../">',1)
         page=page.replace('<title>文章｜AIson</title>',f'<title>{title}</title>',1)
         page=page.replace('<h1 id="articleTitle"></h1>',f'<h1 id="articleTitle">{title}</h1>',1)
