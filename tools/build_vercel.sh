@@ -13,4 +13,4 @@ uv run --with pillow python tools/build_light_payloads.py
 uv run --with pillow python tools/patch_share_meta.py
 rm -rf public
 mkdir public
-cp -a assets data news topics *.html *.css *.js CNAME public/
+cp -a assets data news topics *.html *.css *.js sitemap.xml robots.txt rss.xml CNAME public/
