@@ -76,7 +76,7 @@
       '<div class="v6-hero" data-v6-reveal>'+
         '<div class="v6-hero-copy">'+
           '<div class="v6-edition"><b>AIson DAILY</b><span>'+esc(fmt(lead.date))+'</span><span>'+NEWS.length+' STORIES</span></div>'+
-          '<h1>今日 AI，<em>真正值得你知道。</em></h1>'+
+          '<h2>今日 AI，<em>真正值得你知道。</em></h2>'+
           '<p class="v6-one-line">'+esc(oneLine)+'</p>'+
           '<div class="v6-hero-actions"><a class="v6-primary" href="daily.html" data-analytics-event="home_cta_click" data-analytics-content="quick_daily" data-analytics-slot="signal_hero">⚡ 快速掌握今日 AI <span>→</span></a><a class="v6-secondary" href="#today" data-analytics-event="home_cta_click" data-analytics-content="full_today" data-analytics-slot="signal_hero">完整新聞排行榜</a></div>'+
           '<div class="v6-hero-proof"><span>每日人工編輯</span><span>來源核實</span><span>香港影響</span></div>'+
@@ -267,7 +267,7 @@
           '<div class="b2-front-copy">'+
             '<div class="b2-editor-mark"><img src="assets/mascot.webp" alt="" width="42" height="42"><span><b>AIson 編輯台</b><small>01–10 依重要性排序</small></span></div>'+
             '<div class="b2-kicker">AIson DAILY · STORY 01'+(major?' · MAJOR DAY':'')+'</div>'+
-            '<h1>'+esc(lead.title)+'</h1>'+
+            '<h2>'+esc(lead.title)+'</h2>'+
             '<p class="b2-dek">'+esc(brief(lead.summary||lead.excerpt,235))+'</p>'+
             '<div class="b2-actions"><a class="b2-primary" href="'+url(lead)+'">閱讀完整報道 →</a><a class="b2-secondary" href="daily.html">睇完整新聞排行榜</a></div>'+
             '<div class="b2-byline">'+(lead.verified?'<span>✓ 已核實</span>':'')+(score?'<span>AIson Score '+score.toFixed(1)+' / 10</span>':'')+'<span>'+esc(lead.category||'AI NEWS')+'</span><span>'+esc(lead.readTime||'完整報道')+'</span></div>'+

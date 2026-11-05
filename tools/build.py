@@ -68,6 +68,28 @@ def _text_len(value=''):
     return len(''.join(str(value or '').split()))
 
 
+def _article_meta_description(story):
+    """Prefer a useful editorial summary of snippet length without padding."""
+    excerpt=str(story.get('excerpt') or '').strip()
+    summary=str(story.get('summary') or '').strip()
+    quick_take=str(story.get('quickTake') or '').strip()
+
+    if 102 <= len(excerpt) <= 160:
+        return excerpt
+    if summary != excerpt and 102 <= len(summary) <= 160:
+        return summary
+
+    sentences=[part.strip() for part in re.split(r'(?<=[。！？])',quick_take) if part.strip()]
+    combined=''
+    for sentence in sentences:
+        if len(combined)+len(sentence) > 160:
+            break
+        combined+=sentence
+        if len(combined) >= 102:
+            return combined
+    return excerpt or summary or quick_take
+
+
 def _deep_read_ready(n):
     if not n.get('verified') or not n.get('sourceUrl'):
         return False
@@ -520,10 +542,41 @@ def build_topic_hub_pages(data,site,registry):
     return generated
 
 
+
+def _article_body_html(story):
+    def paragraphs(value):
+        return ''.join('<p>'+html.escape(part.strip())+'</p>' for part in str(value or '').split('\n') if part.strip())
+
+    sections=[]
+    opening=story.get('summary') or story.get('excerpt')
+    if opening:
+        sections.append('<div class="report-opening">'+paragraphs(opening)+'</div>')
+    for field,heading in (
+        ('whatHappened','發生咗咩事？'),
+        ('reportingContext','背景與脈絡'),
+        ('deepDive','深入分析'),
+        ('whyImportant','點解重要？'),
+        ('whatToWatch','下一步睇甚麼？'),
+    ):
+        if story.get(field):
+            sections.append('<section class="info-block"><h2>'+heading+'</h2>'+paragraphs(story[field])+'</section>')
+    impacts=story.get('hkImpact') or []
+    if impacts:
+        items=''.join('<li>'+html.escape(str(item))+'</li>' for item in impacts)
+        sections.append('<section class="hkbox"><h2>香港影響</h2><ul>'+items+'</ul></section>')
+    if story.get('take'):
+        sections.append('<section class="take"><h2>AIson Take</h2>'+paragraphs(story['take'])+'</section>')
+    source=str(story.get('sourceUrl') or '')
+    if source.startswith('https://'):
+        label=html.escape(str(story.get('sourceLabel') or '原始來源'))
+        sections.append('<p class="source-link"><a href="'+html.escape(source,quote=True)+'" target="_blank" rel="noopener noreferrer">'+label+'</a></p>')
+    return ''.join(sections)
+
+
 def build_article_pages(data,site,social_card_ids=None):
     social_card_ids=set(social_card_ids or [])
     template=(ROOT/'article.html').read_text(encoding='utf-8')
-    markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<meta name="robots" content="noindex,follow"><!-- ARTICLE SEO -->','<script type="application/ld+json" id="jsonld"></script>','<script src="data/news.js']
+    markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<h1 id="articleTitle"></h1>','<meta name="robots" content="noindex,follow"><!-- ARTICLE SEO -->','<script type="application/ld+json" id="jsonld"></script>','<script src="data/news.js']
     missing=[marker for marker in markers if marker not in template]
     if missing: raise SystemExit(f'article template missing expected markers: {missing}')
     out_dir=ROOT/'news'
@@ -531,7 +584,7 @@ def build_article_pages(data,site,social_card_ids=None):
     out_dir.mkdir(parents=True)
     generic_image=urljoin(site['baseUrl'],'assets/icon-512.png')
     publisher_logo=generic_image
-    for n in data:
+    for article_index,n in enumerate(data):
         url=article_url(site['baseUrl'],n['id'])
         has_social_card=n['id'] in social_card_ids
         image=urljoin(site['baseUrl'],f"assets/social/{n['id']}.jpg") if has_social_card else generic_image
@@ -539,9 +592,28 @@ def build_article_pages(data,site,social_card_ids=None):
         image_type='image/jpeg' if has_social_card else 'image/png'
         image_alt=f"{n['title']}｜AIson"
         title=html.escape(n['title']+'｜AIson',quote=True)
-        desc=html.escape(n['excerpt'],quote=True)
+        desc=html.escape(_article_meta_description(n),quote=True)
         page=template.replace('<head>','<head><base href="../">',1)
         page=page.replace('<title>文章｜AIson</title>',f'<title>{title}</title>',1)
+        page=page.replace('<h1 id="articleTitle"></h1>',f'<h1 id="articleTitle">{title}</h1>',1)
+        page=page.replace('<article class="article-body" id="articleBody"></article>', '<article class="article-body" id="articleBody">'+_article_body_html(n)+'</article>',1)
+        related=[]
+        for neighbor_index in (article_index-1,article_index+1):
+            if 0 <= neighbor_index < len(data):
+                candidate=data[neighbor_index]
+                if candidate['id'] != n['id'] and candidate['id'] not in {item['id'] for item in related}:
+                    related.append(candidate)
+        category_neighbors=[(abs(index-article_index),index,story) for index,story in enumerate(data) if story['id'] != n['id'] and story.get('category') == n.get('category')]
+        for _,_,candidate in sorted(category_neighbors)[:1]:
+            if candidate['id'] not in {item['id'] for item in related}:
+                related.append(candidate)
+        related_html=''.join(
+            f'<a class="article-related-card" href="news/{html.escape(str(item["id"]),quote=True)}.html">'
+            f'<small>{html.escape(str(item.get("category","AI 新聞")))} · {html.escape(str(item.get("date","")))}</small>'
+            f'<b>{html.escape(str(item.get("title","")))}</b><span>閱讀完整報導 →</span></a>'
+            for item in related
+        )
+        page=page.replace('<div class="article-related-grid" id="articleRelated"></div>',f'<div class="article-related-grid" id="articleRelated">{related_html}</div>',1)
         page=page.replace('<meta name="description" content="AIson AI 新聞文章">',f'<meta name="description" content="{desc}">',1)
         og=(f'<meta property="og:type" content="article"><meta property="og:site_name" content="AIson"><meta property="og:locale" content="zh_HK">'
             f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">'
@@ -564,9 +636,10 @@ def build_article_pages(data,site,social_card_ids=None):
         page=page.replace('<script type="application/ld+json" id="jsonld"></script>',f'<script type="application/ld+json" id="jsonld">{jsonld}</script>',1)
         marker='<script src="data/news.js'
         story_id=json.dumps(n['id'],ensure_ascii=False)
-        injected=f'<script>window.AISON_ARTICLE_ID={story_id};if(!new URLSearchParams(location.search).get("id"))history.replaceState({{}},"",location.pathname+"?id="+encodeURIComponent(window.AISON_ARTICLE_ID));</script>'
+        injected=f'<script>window.AISON_ARTICLE_ID={story_id};</script>'
         page=page.replace(marker,injected+marker,1)
         required=[f'<title>{title}</title>','property="og:title"','name="twitter:card" content="summary_large_image"','rel="canonical"','"@type":"NewsArticle"',f'window.AISON_ARTICLE_ID={story_id}']
+        if related: required.append('class="article-related-card"')
         if has_social_card:
             required.extend([f'assets/social/{n["id"]}.jpg','content="1200"','content="630"'])
         if not all(token in page for token in required):
@@ -587,7 +660,7 @@ def build_rss(data,site):
 
 
 def build_sitemap(data,site,registry):
-    base=site['baseUrl']; pages=['','daily.html','live.html','weekly.html','guides.html','topics.html','archive.html','about.html','methodology.html','corrections.html','privacy.html']
+    base=site['baseUrl']; pages=['','daily.html','live.html','weekly.html','guides.html','topics.html','archive.html','reviews.html','about.html','methodology.html','corrections.html','privacy.html']
     urls=[f'<url><loc>{html.escape(urljoin(base,p))}</loc></url>' for p in pages]
     for hub in registry.get('hubs',[]):
         hub_path=f"topics/{hub['id']}.html"
