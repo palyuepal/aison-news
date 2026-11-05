@@ -542,6 +542,37 @@ def build_topic_hub_pages(data,site,registry):
     return generated
 
 
+
+def _article_body_html(story):
+    def paragraphs(value):
+        return ''.join('<p>'+html.escape(part.strip())+'</p>' for part in str(value or '').split('\n') if part.strip())
+
+    sections=[]
+    opening=story.get('summary') or story.get('excerpt')
+    if opening:
+        sections.append('<div class="report-opening">'+paragraphs(opening)+'</div>')
+    for field,heading in (
+        ('whatHappened','發生咗咩事？'),
+        ('reportingContext','背景與脈絡'),
+        ('deepDive','深入分析'),
+        ('whyImportant','點解重要？'),
+        ('whatToWatch','下一步睇甚麼？'),
+    ):
+        if story.get(field):
+            sections.append('<section class="info-block"><h2>'+heading+'</h2>'+paragraphs(story[field])+'</section>')
+    impacts=story.get('hkImpact') or []
+    if impacts:
+        items=''.join('<li>'+html.escape(str(item))+'</li>' for item in impacts)
+        sections.append('<section class="hkbox"><h2>香港影響</h2><ul>'+items+'</ul></section>')
+    if story.get('take'):
+        sections.append('<section class="take"><h2>AIson Take</h2>'+paragraphs(story['take'])+'</section>')
+    source=str(story.get('sourceUrl') or '')
+    if source.startswith('https://'):
+        label=html.escape(str(story.get('sourceLabel') or '原始來源'))
+        sections.append('<p class="source-link"><a href="'+html.escape(source,quote=True)+'" target="_blank" rel="noopener noreferrer">'+label+'</a></p>')
+    return ''.join(sections)
+
+
 def build_article_pages(data,site,social_card_ids=None):
     social_card_ids=set(social_card_ids or [])
     template=(ROOT/'article.html').read_text(encoding='utf-8')
@@ -565,6 +596,7 @@ def build_article_pages(data,site,social_card_ids=None):
         page=template.replace('<head>','<head><base href="../">',1)
         page=page.replace('<title>文章｜AIson</title>',f'<title>{title}</title>',1)
         page=page.replace('<h1 id="articleTitle"></h1>',f'<h1 id="articleTitle">{title}</h1>',1)
+        page=page.replace('<article class="article-body" id="articleBody"></article>', '<article class="article-body" id="articleBody">'+_article_body_html(n)+'</article>',1)
         related=[]
         for neighbor_index in (article_index-1,article_index+1):
             if 0 <= neighbor_index < len(data):
