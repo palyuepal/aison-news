@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-05",
+  "dailyOneLiner": "今日 AI 一句講晒：AI 由生成內容走向可部署能力，圖像工作流、漏洞研究、銀行監管與企業資料層同日進入產品化。",
+  "top3Ids": [
+    "2026-11-05-openai-images-2-6",
+    "2026-11-05-openai-linux-vulnerability-pipeline",
+    "2026-11-05-occ-bank-ai-supervision-framework"
+  ],
+  "threeThemes": [
+    {
+      "title": "生成工具由單點能力變成完整工作流",
+      "summary": "Images 2.6 把速度、GIF、局部修改與 SVG 交付放進同一產品；Codex 則透過 Pierre 補強程式碼儲存、分支與差異檢視底層。",
+      "watch": "留意真實項目的一致性、每個可用成品成本，以及平台收購後的開源與鎖定風險。"
+    },
+    {
+      "title": "高能力 AI 開始以證據鏈與分層存取落地",
+      "summary": "Linux 漏洞管線由發現一路做到重現及 exploit；Daybreak Red 則以 GovCloud、身份和用途控制開放更強 cyber 能力。",
+      "watch": "留意上游確認率、負責任披露、審批標準，以及控制措施在擴大用戶後是否仍然有效。"
+    },
+    {
+      "title": "企業 Agent 的競爭移到監管與資料層",
+      "summary": "OCC 用用途與自主程度審視銀行 AI；Google 與 Confluent 同時搶佔跨雲、治理及即時語境，客服市場亦透過 Dialpad／Ada 合併整合渠道。",
+      "watch": "重點是權限能否貫穿資料到行動、人工覆核是否真有作用，以及跨雲與即時資料的完整成本。"
+    }
+  ],
+  "biggestChange": "biggest change：今日 AI 的價值不再只由模型輸出決定，而由它能否接入版本控制、即時資料、監管流程與受控安全環境，形成可審計、可交付的完整系統。",
+  "watchTomorrow": "watch tomorrow：OpenAI Images 2.6 的實測質素與 API 成本、Linux 漏洞獲上游確認的比例、OCC 框架的首批實務解讀，以及美國 AI 實驗室法律指南會否釋出正式文本。"
+}
