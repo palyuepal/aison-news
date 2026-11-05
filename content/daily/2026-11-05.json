@@ -93,7 +93,7 @@
     ],
     "take": "已確認的是監督框架而非新法規。AIson 分析，最重要訊號是監管開始由『有冇用 AI』轉向『AI 在哪一步有幾大決定權』；下一步看實際檢查個案會否形成跨市場標準。",
     "sourceLabel": "Office of the Comptroller of the Currency",
-    "sourceUrl": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-112.html",
+    "sourceUrl": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-97.html",
     "sourceType": "監管文件",
     "references": [
       {"label": "Reuters 監管報道", "url": "https://www.reuters.com/business/finance/us-bank-regulator-unveils-framework-overseeing-artificial-intelligence-2026-11-04/"}
@@ -231,7 +231,7 @@
     ],
     "take": "已確認功能屬 public preview。AIson 分析，價值在於降低 Apple 開發者使用 AI 的摩擦；下一步要看原生版能否取代 extension，而不犧牲企業控制。",
     "sourceLabel": "GitHub",
-    "sourceUrl": "https://github.blog/changelog/2026-11-04-github-copilot-in-xcodes-built-in-coding-assistant-is-now-in-public-preview/",
+    "sourceUrl": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/",
     "sourceType": "官方公告",
     "references": [],
     "actionVerdict": "try-now",
@@ -265,7 +265,7 @@
     ],
     "take": "已確認 Lightning Tables 在 AWS GA，其餘能力成熟度需逐項核對。AIson 分析，即時語境會成為企業 Agent 的基本要求；下一步看它能否在真實負載下兼顧治理、延遲與成本。",
     "sourceLabel": "Confluent",
-    "sourceUrl": "https://www.confluent.io/press-release/confluent-unveils-streamhouse/",
+    "sourceUrl": "https://master.www.confluent.io/press-release/confluent-introduces-its-streamhouse-architecture-to-power-ai-with-real-time-business-context/",
     "sourceType": "官方公告",
     "references": [
       {"label": "IBM 公告", "url": "https://newsroom.ibm.com/2026-11-04-ibm-and-confluent-unveil-streamhouse-for-real-time-ai"}
