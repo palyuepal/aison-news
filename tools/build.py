@@ -573,7 +573,7 @@ def _article_body_html(story):
     return ''.join(sections)
 
 
-def build_article_pages(data,site,social_card_ids=None):
+def build_article_pages(data,site,social_card_ids=None,registry=None):
     social_card_ids=set(social_card_ids or [])
     template=(ROOT/'article.html').read_text(encoding='utf-8')
     markers=['<head>','<title>文章｜AIson</title>','<meta name="description" content="AIson AI 新聞文章">','<h1 id="articleTitle"></h1>','<meta name="robots" content="noindex,follow"><!-- ARTICLE SEO -->','<script type="application/ld+json" id="jsonld"></script>','<script src="data/news.js']
@@ -613,6 +613,17 @@ def build_article_pages(data,site,social_card_ids=None):
             f'<b>{html.escape(str(item.get("title","")))}</b><span>閱讀完整報導 →</span></a>'
             for item in related
         )
+        hub_links=[]
+        for hub in (registry or {}).get('hubs',[]):
+            if _hub_matches(n,hub):
+                hub_id=html.escape(str(hub.get('id','')),quote=True)
+                hub_name=html.escape(str(hub.get('name','AI 主題')),quote=True)
+                if hub_id:
+                    hub_links.append(
+                        f'<a class="article-related-card" href="topics/{hub_id}.html">'
+                        f'<small>主題追蹤</small><b>{hub_name}｜AI 新聞與追蹤</b><span>瀏覽相關報道 →</span></a>'
+                    )
+        related_html+=''.join(hub_links)
         page=page.replace('<div class="article-related-grid" id="articleRelated"></div>',f'<div class="article-related-grid" id="articleRelated">{related_html}</div>',1)
         page=page.replace('<meta name="description" content="AIson AI 新聞文章">',f'<meta name="description" content="{desc}">',1)
         og=(f'<meta property="og:type" content="article"><meta property="og:site_name" content="AIson"><meta property="og:locale" content="zh_HK">'
@@ -721,7 +732,7 @@ def main():
     write_js(ROOT/'data/site.js','AISON_SITE',site)
     build_core_page_seo(site)
     hubs=build_topic_hub_pages(data,site,registry)
-    build_search(data); build_article_pages(data,site,social_card_ids); build_rss(data,site); build_sitemap(data,site,registry); build_status(data,status)
+    build_search(data); build_article_pages(data,site,social_card_ids,registry); build_rss(data,site); build_sitemap(data,site,registry); build_status(data,status)
     apply_reader_ui()
     overview=build_daily_overview(data,site,ROOT)
     overview_count=overview.get('count',0) if overview else 0
