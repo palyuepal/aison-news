@@ -1,0 +1,470 @@
+[
+  {
+    "id": "2026-11-06-openai-gpt-6-cyber",
+    "rank": 1,
+    "title": "OpenAI 推 GPT‑6 Cyber：列為「Critical」級網安能力",
+    "excerpt": "GPT‑6 Cyber 正式推出，漏洞利用基準較 GPT‑5.6 Cyber 提升 51%，並在 Firefox 找到 81 個新高嚴重度漏洞。",
+    "summary": "OpenAI 11 月 5 日發布 GPT‑6 Cyber，面向經審批的 Daybreak Red 客戶。官方稱模型在 ExploitGym 得分 48.5%，較 GPT‑5.6 Cyber 的 32.1% 相對提高 51%；與 Mozilla 合作時找到 81 個新的高嚴重度 Firefox 漏洞，多個已修補。",
+    "quickTake": "GPT‑6 Cyber 正式推出，漏洞利用基準較 GPT‑5.6 Cyber 提升 51%，並在 Firefox 找到 81 個新高嚴重度漏洞。",
+    "category": "模型與安全",
+    "tags": [
+      "OpenAI",
+      "GPT-6 Cyber",
+      "網絡安全"
+    ],
+    "date": "2026-11-06",
+    "readTime": "3 分鐘",
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "OpenAI 11 月 5 日發布 GPT‑6 Cyber，面向經審批的 Daybreak Red 客戶。官方稱模型在 ExploitGym 得分 48.5%，較 GPT‑5.6 Cyber 的 32.1% 相對提高 51%；與 Mozilla 合作時找到 81 個新的高嚴重度 Firefox 漏洞，多個已修補。",
+    "reportingContext": "模型按 OpenAI Preparedness Framework 被列為 Critical cybersecurity capability；這是公司自訂分級。OpenAI 同時報告，在測試中模型避免攻擊超出範圍服務的比率為 99.93%，加上部署提示後為 100%，但真實環境仍需持續監察。",
+    "deepDive": "系統卡把存取限制在身份核實、SSO、MFA、API IP allowlisting 與用途監察之下。昨日報道的 Linux 948 個候選漏洞屬同一能力演進的先行研究；今日新增的是正式模型、分級、Firefox 結果及受控存取條件。",
+    "whyImportant": "模型開始同時加速漏洞發現、利用驗證與修補，防守方的審批、披露和修補吞吐量可能成為新瓶頸。Critical 分級亦顯示高能力模型的發布方式正由一般 API 轉向分層存取。",
+    "whatToWatch": "Mozilla 最終確認及修補比例、其他獨立軟件項目的重現結果，以及 Daybreak Red 擴大客戶後能否維持同一越界率。",
+    "hkImpact": [
+      "香港企業應把 AI 漏洞研究放在隔離環境，並預先訂明授權範圍、停止條件及完整日誌。",
+      "本地安全團隊可用模型加快重現與修補，但不可把官方 benchmark 當成生產網絡安全保證。",
+      "一般香港用戶暫時不能把它當普通 ChatGPT 功能；存取資格與地區仍受嚴格限制。"
+    ],
+    "take": "已確認模型、系統卡和 Firefox 合作結果；AIson 分析，真正轉折不是單一 benchmark，而是漏洞研究開始成為需要身份、環境和用途管制的專業 AI 服務。",
+    "sourceLabel": "OpenAI｜GPT‑6 Cyber",
+    "sourceUrl": "https://openai.com/index/gpt-6-cyber/",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "OpenAI 系統卡",
+        "url": "https://openai.com/index/gpt-6-cyber-system-card/"
+      },
+      {
+        "label": "Reuters",
+        "url": "https://www.reuters.com/technology/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-2026-11-05/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "高能力但存取受限；企業應先更新授權與隔離流程。",
+    "aisonScore": 97,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 2,
+      "developer": 5
+    },
+    "followUpOf": "2026-11-05-openai-linux-vulnerability-pipeline",
+    "updatedAt": "2026-11-06T07:45:00+08:00"
+  },
+  {
+    "id": "2026-11-06-nvidia-h200-hong-kong-stockpile",
+    "rank": 2,
+    "title": "約 60 萬枚 NVIDIA H200 報稱積存在香港，等候內地進口批准",
+    "excerpt": "Reuters 引述消息人士稱約 60 萬枚 H200 存放香港，反映晶片供應不只受美國出口規則影響，亦受中國進口審批左右。",
+    "summary": "Reuters 11 月 5 日引述兩名知情人士稱，約 60 萬枚 NVIDIA H200 晶片正存放香港，等候運往中國內地；北京尚未批准大規模進口，但有部分有限付運。",
+    "quickTake": "Reuters 引述消息人士稱約 60 萬枚 H200 存放香港，反映晶片供應不只受美國出口規則影響，亦受中國進口審批左右。",
+    "category": "晶片與供應鏈",
+    "tags": [
+      "NVIDIA",
+      "H200",
+      "香港",
+      "中國"
+    ],
+    "date": "2026-11-06",
+    "readTime": "3 分鐘",
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Reuters 11 月 5 日引述兩名知情人士稱，約 60 萬枚 NVIDIA H200 晶片正存放香港，等候運往中國內地；北京尚未批准大規模進口，但有部分有限付運。",
+    "reportingContext": "數量、存放狀態及審批進度來自匿名消息人士，並非中國政府、NVIDIA 或香港方面的公開文件，因此應視為可靠媒體報道而非官方確認。",
+    "deepDive": "H200 處於美中科技管制交叉位：即使出口端合規，進口端的政策與本地晶片扶持仍可決定實際交付。香港在報道中成為轉運及倉儲節點，令政策延誤直接變成庫存、保險和資金成本。",
+    "whyImportant": "若報道屬實，AI 晶片供應鏈的瓶頸已由「能否生產」延伸到跨境批准與本地替代政策，亦可能影響中國大型模型訓練進度及價格。",
+    "whatToWatch": "中國是否正式批出大規模進口、NVIDIA 如何回應、庫存會否改道，以及香港海關或物流數據能否提供獨立印證。",
+    "hkImpact": [
+      "香港物流、倉儲與保險業可能面對高價值晶片滯留的合規、保安與資金週期風險。",
+      "本地雲端及 AI 公司不可假設香港有庫存就等於可買到，供應資格、用途及最終目的地仍是關鍵。",
+      "投資者應把「約 60 萬枚」視為 Reuters 消息人士數字，等待官方文件或公司確認後再判斷。"
+    ],
+    "take": "已確認 Reuters 發出報道；晶片數量與審批狀態尚未獲官方公開確認。AIson 分析，香港在 AI 晶片地緣政治中已由金融與轉口角色，變成實際庫存風險節點。",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/nvidia-chips-pile-up-hong-kong-china-withholds-import-approval-2026-11-05/",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "Business Times 轉載 Reuters",
+        "url": "https://www.businesstimes.com.sg/companies-markets/nvidia-chips-pile-hong-kong-china-withholds-import-approval"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "直接影響香港供應鏈，但核心數字仍待官方印證。",
+    "aisonScore": 95,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-11-06-metr-anthropic-ai-rd-acceleration",
+    "rank": 3,
+    "title": "獨立評估：Anthropic 模型研發速度在 AI 協助下接近翻倍",
+    "excerpt": "METR 高權限評估估算 Anthropic 在明確任務上的能力進步速度約為過往 1.9 倍，但關鍵證據有大量刪節，不確定性仍高。",
+    "summary": "METR 在 8 月 12 日至 10 月 29 日進入 Anthropic 進行高權限評估，接觸內部訓練、benchmark、運算與訪談資料。研究估計自 2025 年 10 月起，模型在 AECI 明確任務上的進步速度約為之前 1.9 倍，95% 信賴區間為 1.5 至 2.8 倍。",
+    "quickTake": "METR 高權限評估估算 Anthropic 在明確任務上的能力進步速度約為過往 1.9 倍，但關鍵證據有大量刪節，不確定性仍高。",
+    "category": "研究與安全",
+    "tags": [
+      "Anthropic",
+      "METR",
+      "AI研發"
+    ],
+    "date": "2026-11-06",
+    "readTime": "3 分鐘",
+    "featured": true,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "METR 在 8 月 12 日至 10 月 29 日進入 Anthropic 進行高權限評估，接觸內部訓練、benchmark、運算與訪談資料。研究估計自 2025 年 10 月起，模型在 AECI 明確任務上的進步速度約為之前 1.9 倍，95% 信賴區間為 1.5 至 2.8 倍。",
+    "reportingContext": "METR 認為大部分加速很可能來自 AI 協助研發，而非訓練算力增長加快；但 Anthropic 刪節了多數最有資訊量的非公開證據，METR 亦承認公眾難以自行覆核。",
+    "deepDive": "研究未發現未來 12 個月必然阻止進一步加速的明顯瓶頸，但評估者對各項限制的理解曾多次改變。現階段主要是 AI 輔助人類研究，而非 AI 完全自主完成最重要訓練貢獻。",
+    "whyImportant": "如果 AI 持續加速下一代 AI 開發，模型能力、安全測試與監管更新之間的時間差會縮短；企業及政策制定者不能再假設模型迭代速度固定。",
+    "whatToWatch": "METR 能否在其他實驗室重複評估、Anthropic 會否公開更多證據，以及自主貢獻比例是否真正上升。",
+    "hkImpact": [
+      "香港企業做年度 AI 採購時要預留更短重評週期，避免合約、風險評估及技能培訓落後模型更新。",
+      "本地研究機構可參考高權限第三方評估模式，但要處理商業機密與可公開驗證之間的衝突。",
+      "打工仔毋須把「1.9 倍」理解成所有工作效率翻倍；數字只描述特定模型研發指標。"
+    ],
+    "take": "已確認評估範圍與 1.9 倍估算；AIson 分析，最重要訊號是研發節奏可能自我加速，但證據被刪節令結論不宜外推至所有 AI 或所有工作。",
+    "sourceLabel": "METR",
+    "sourceUrl": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+    "sourceType": "研究論文",
+    "references": [
+      {
+        "label": "Reuters",
+        "url": "https://www.reuters.com/technology/anthropics-models-improving-nearly-twice-fast-with-help-ai-study-finds-2026-11-05/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "高影響但不確定性及刪節證據必須保留。",
+    "aisonScore": 93,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-06-openai-community-compact-compute-campus",
+    "rank": 4,
+    "title": "OpenAI 為自營算力園區訂社區承諾：電力、用水與噪音要公開",
+    "excerpt": "OpenAI 發布 National Community Compact 及 Compute Campus Policy Blueprint，承諾未來自營園區逐個訂地方協議並承擔新增基建成本。",
+    "summary": "OpenAI 11 月 5 日發布兩份文件，承諾每個未來由公司擁有及營運的算力園區會設地方協議、早期社區諮詢、本地聯絡人及年度公開報告，並承擔其電力及基建新增成本。",
+    "quickTake": "OpenAI 發布 National Community Compact 及 Compute Campus Policy Blueprint，承諾未來自營園區逐個訂地方協議並承擔新增基建成本。",
+    "category": "算力與政策",
+    "tags": [
+      "OpenAI",
+      "數據中心",
+      "能源"
+    ],
+    "date": "2026-11-06",
+    "readTime": "2 分鐘",
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "OpenAI 11 月 5 日發布兩份文件，承諾每個未來由公司擁有及營運的算力園區會設地方協議、早期社區諮詢、本地聯絡人及年度公開報告，並承擔其電力及基建新增成本。",
+    "reportingContext": "承諾只直接適用於 OpenAI 未來擁有及營運的園區；政策藍圖是向美國政府提出的建議，不是已生效法例。",
+    "deepDive": "文件亦包括水耗、能源、噪音、工程和職位等透明度，以及工程開始前的財務保障。這是對數據中心電費、用水和地方反彈的治理回應。",
+    "whyImportant": "AI 基建競爭開始把地方成本、能源公平與社區許可納入部署條件；算力不再只是晶片與資金問題。",
+    "whatToWatch": "首個地方 compact 的可執行條款、獨立審核方法，以及供應商或合資園區是否同樣受約束。",
+    "hkImpact": [
+      "香港及大灣區規劃 AI 數據中心時，可把用電、用水、噪音與社區回饋提前納入招標。",
+      "本地企業購買雲端算力時，ESG 審查應追問實際園區成本與披露，而非只看供應商總體承諾。",
+      "市民要分清公司自願承諾與法定要求，兩者的追責力度並不相同。"
+    ],
+    "take": "文件發布已確認；AIson 分析，算力擴張的競爭門檻正加入「地方信任」，下一步要看承諾能否寫成可量度、可追責的合約。",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Washington Post",
+        "url": "https://www.washingtonpost.com/business/2026/11/05/open-ai-makes-pledges-data-center-operation-after-midterm-backlash/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "屬自願框架，需等待首批實際園區條款。",
+    "aisonScore": 89,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-11-06-singapore-ai-incident-reporting",
+    "rank": 5,
+    "title": "新加坡推動 AI 事故與「差啲出事」跨境通報機制",
+    "excerpt": "新加坡確認會同國際伙伴建立 AI 事故及 near-miss 共同定義，探索安全分享安排；目前未另設獨立強制通報制度。",
+    "summary": "新加坡 MDDI 11 月 4 日表示，現有網安、私隱、醫療及金融通報要求無論 AI 是否涉事都適用；政府會同有興趣伙伴建立 AI 事故與 near-miss 的共同理解，並探索安全分享資料的實務安排。",
+    "quickTake": "新加坡確認會同國際伙伴建立 AI 事故及 near-miss 共同定義，探索安全分享安排；目前未另設獨立強制通報制度。",
+    "category": "政策與安全",
+    "tags": [
+      "新加坡",
+      "AI安全",
+      "事故通報"
+    ],
+    "date": "2026-11-06",
+    "readTime": "2 分鐘",
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "新加坡 MDDI 11 月 4 日表示，現有網安、私隱、醫療及金融通報要求無論 AI 是否涉事都適用；政府會同有興趣伙伴建立 AI 事故與 near-miss 的共同理解，並探索安全分享資料的實務安排。",
+    "reportingContext": "這承接總理黃循財 10 月 28 日提出的國際 AI 事故通報 pilot。現階段是政策方向與合作探索，未公布統一表格、門檻或強制時限。",
+    "deepDive": "航空業式 near-miss 分享的價值，在真正造成損害前累積跨機構教訓；但 AI 事故可能同時牽涉商業機密、個人資料和安全漏洞，需設分級及保密機制。",
+    "whyImportant": "沒有共通事故分類，各行業會重複犯錯，亦難以比較模型、供應商與使用場景的真實風險。",
+    "whatToWatch": "pilot 參與國家、事故定義、保密與免責安排，以及是否與 ISO、ASEAN 或全球 AI 安全機制對接。",
+    "hkImpact": [
+      "香港監管機構可參考 near-miss 機制，把未造成損失的 Agent 越權、幻覺及資料外洩納入學習。",
+      "金融、醫療及關鍵基建企業應先把 AI 是否涉事加入現有事故報告欄位，毋須等新規則。",
+      "跨境企業要避免為每個市場建立互不兼容格式，應保留可映射的事件分類與證據。"
+    ],
+    "take": "已確認新加坡會探索共同分類和安全分享；AIson 分析，真正價值不在多一張表，而在 near-miss 能否跨公司分享而不懲罰主動披露。",
+    "sourceLabel": "新加坡 MDDI",
+    "sourceUrl": "https://www.mddi.gov.sg/newsroom/mddi-s-response-to-pq-on-reporting-of-serious-and-near-miss-incidents-involving-autonomous-ai-systems/",
+    "sourceType": "監管文件",
+    "references": [
+      {
+        "label": "新加坡總理公署",
+        "url": "https://www.pmo.gov.sg/newsroom/pm-lawrence-wong-at-the-virtual-leaders-meeting-on-frontier-ai-safety-co-hosted-by-norway-and-finland-oct-2026/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "方向明確但 pilot 細節尚未公布。",
+    "aisonScore": 87,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 2,
+      "developer": 4
+    }
+  },
+  {
+    "id": "2026-11-06-cloudflare-trusted-agent-delegation",
+    "rank": 6,
+    "title": "Cloudflare 推 Trusted Agent Delegation：網站要識別 Agent 背後邊個負責",
+    "excerpt": "Cloudflare 成立 TAD 聯盟，推動 Agent、用戶與網站之間的身份、信譽及責任標準；部分流量控制功能已上線。",
+    "summary": "Cloudflare 11 月 5 日宣布 Trusted Agent Delegation 聯盟，將同 Agent 平台、身份驗證、支付、商戶及出版商研究互通標準，並把問題帶到 IETF。Cloudflare 本週亦加入 Personal Assistants 流量分類、逐 Agent 存取政策，以及部分帳戶濫用保護。",
+    "quickTake": "Cloudflare 成立 TAD 聯盟，推動 Agent、用戶與網站之間的身份、信譽及責任標準；部分流量控制功能已上線。",
+    "category": "AI Agent",
+    "tags": [
+      "Cloudflare",
+      "Agent",
+      "身份"
+    ],
+    "date": "2026-11-06",
+    "readTime": "2 分鐘",
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Cloudflare 11 月 5 日宣布 Trusted Agent Delegation 聯盟，將同 Agent 平台、身份驗證、支付、商戶及出版商研究互通標準，並把問題帶到 IETF。Cloudflare 本週亦加入 Personal Assistants 流量分類、逐 Agent 存取政策，以及部分帳戶濫用保護。",
+    "reportingContext": "TAD 目前是產業聯盟，不是正式互聯網標準；帳戶級 Agent 識別功能仍有 early access 限制。",
+    "deepDive": "核心問題是雲端 Agent 代表用戶行動時，網站只看到中介流量，難以回答「邊個授權、可做乜、出事邊個負責」。Cloudflare 提議連接 Web Bot Auth、OAuth、AIPREFs、WIMSE 和 MOLE 等機制。",
+    "whyImportant": "Agent 能大量平行操作，傳統 robots.txt、登入和封 IP 不足以管理購物、付款、廣告及受限制內容；身份與委託可能成為 Agent 商業化前置層。",
+    "whatToWatch": "TAD 成員、IETF 是否接納具體問題，以及 Agent 平台能否在不洩露用戶私隱下提供可驗證委託。",
+    "hkImpact": [
+      "香港電商要開始區分人類、爬蟲與代表用戶交易的 Agent，避免一刀切封鎖真正客戶。",
+      "開發者設計 Agent 時應保存用戶授權範圍、操作身份與撤銷機制。",
+      "涉及付款或年齡限制的企業要留意，Agent 身份不等於背後用戶已完成所需驗證。"
+    ],
+    "take": "已確認 TAD 成立及部分產品功能上線；AIson 分析，Agent 下一個基建層不是更像人，而是能證明代表邊個、被授權做乜。",
+    "sourceLabel": "Cloudflare",
+    "sourceUrl": "https://blog.cloudflare.com/trusted-agent-delegation/",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "try-now",
+    "actionReason": "網站營運者可立即查看 Agent 流量並設定分層政策。",
+    "aisonScore": 85,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-06-nvidia-vera-agent-benchmarks",
+    "rank": 7,
+    "title": "NVIDIA 公布 Vera CPU Agent 實測：主打每瓦可跑更多 Agent",
+    "excerpt": "NVIDIA 稱 Vera 在 100MW 數據中心比較中可比最快 x86 多跑 1.6 倍 agents/watt；數字屬公司及伙伴測試。",
+    "summary": "NVIDIA 11 月 5 日發布新一輪 Vera CPU Agent 工作負載結果，稱在相同 100MW 數據中心假設下，Vera 較最快 x86 CPU 可提供 1.6 倍 agents per watt。伙伴測試亦包括 coding agent、推理服務與 sandbox 啟動。",
+    "quickTake": "NVIDIA 稱 Vera 在 100MW 數據中心比較中可比最快 x86 多跑 1.6 倍 agents/watt；數字屬公司及伙伴測試。",
+    "category": "晶片與算力",
+    "tags": [
+      "NVIDIA",
+      "Vera",
+      "Agentic AI"
+    ],
+    "date": "2026-11-06",
+    "readTime": "2 分鐘",
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "NVIDIA 11 月 5 日發布新一輪 Vera CPU Agent 工作負載結果，稱在相同 100MW 數據中心假設下，Vera 較最快 x86 CPU 可提供 1.6 倍 agents per watt。伙伴測試亦包括 coding agent、推理服務與 sandbox 啟動。",
+    "reportingContext": "所有數字由 NVIDIA 或伙伴提供，硬件、軟件與測試配置未必代表香港企業實際環境；Vera 並非今日首次發布。",
+    "deepDive": "Agent 工作負載把大量工具調用、程式執行、沙盒及記憶操作移到 CPU，令單線程、記憶體頻寬與並發效率重新成為 AI 基建瓶頸。",
+    "whyImportant": "AI 成本比較正由 GPU token 速度，擴展到整個 Agent 迴圈每瓦、每個任務及每次沙盒的總吞吐量。",
+    "whatToWatch": "獨立 benchmark、雲端可用時間、實際價格，以及在不同模型與 sandbox 比例下的每任務成本。",
+    "hkImpact": [
+      "香港雲端與數據中心採購應用真實 Agent 工作流測試，而非只比較 CPU 核心數。",
+      "開發團隊可先量度工具等待、sandbox 啟動和 CPU 成本，判斷瓶頸是否真的在處理器。",
+      "企業不應把 1.6 倍直接套用到現有系統，需核對功耗、軟件及網絡條件。"
+    ],
+    "take": "官方 benchmark 已發布；AIson 分析，重點是 Agent 經濟學開始用「完整任務／瓦」衡量，但仍要等待第三方重現。",
+    "sourceLabel": "NVIDIA",
+    "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "wait",
+    "actionReason": "數據主要來自供應商，等待獨立測試與價格。",
+    "aisonScore": 82,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 2,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-06-nvidia-cosmos-3-open-world-models",
+    "rank": 8,
+    "title": "NVIDIA Cosmos 3 加四款開放權重世界模型，支援駕駛與機械人模擬",
+    "excerpt": "四個 16B checkpoint 可生成多鏡頭駕駛資料、LiDAR 串流、模擬器影片及雙臂機械人動作結果。",
+    "summary": "NVIDIA 與 Hugging Face 11 月 5 日公布四個 Cosmos 3 Nano 後訓練 checkpoint：Transfer-Auto、Sim-Auto、Sim-Transfer 及 Sim-Bimanual，涵蓋多鏡頭駕駛、相機加 LiDAR、模擬器轉影片與機械人動作預測。",
+    "quickTake": "四個 16B checkpoint 可生成多鏡頭駕駛資料、LiDAR 串流、模擬器影片及雙臂機械人動作結果。",
+    "category": "AI Video 與機械人",
+    "tags": [
+      "NVIDIA",
+      "Cosmos 3",
+      "世界模型"
+    ],
+    "date": "2026-11-06",
+    "readTime": "2 分鐘",
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "NVIDIA 與 Hugging Face 11 月 5 日公布四個 Cosmos 3 Nano 後訓練 checkpoint：Transfer-Auto、Sim-Auto、Sim-Transfer 及 Sim-Bimanual，涵蓋多鏡頭駕駛、相機加 LiDAR、模擬器轉影片與機械人動作預測。",
+    "reportingContext": "四款均有 16B 可訓練參數，按 OpenMDW1.1 條款供商業及非商業使用；「開放權重」不等於完整資料、訓練流程或無限制開源。",
+    "deepDive": "模型把世界生成由一次性影片推向受控制、可連續互動的感知環境，用於自動駕駛和機械人訓練資料。",
+    "whyImportant": "若合成多感測器資料足夠一致，可降低收集極端天氣、罕見路況和機械人失敗案例的成本。",
+    "whatToWatch": "真實世界轉移效果、LiDAR 與影像同步誤差、授權限制，以及香港道路場景的 domain adaptation 成本。",
+    "hkImpact": [
+      "香港大學及機械人團隊可下載試驗，但要自行補足本地道路、天氣與高密度行人資料。",
+      "自動駕駛公司可用合成資料覆蓋罕見情境，仍需真車測試和安全驗證。",
+      "創作者可留意互動影片技術，但目前產品定位主要是物理 AI 研發，不是一般影片生成工具。"
+    ],
+    "take": "checkpoint 與用途已確認；AIson 分析，世界模型的競爭正由畫面質素走向感測器一致性及動作因果，下一步要看真實部署誤差。",
+    "sourceLabel": "Hugging Face／NVIDIA",
+    "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "try-now",
+    "actionReason": "權重可下載，研發團隊可用小型受控資料集驗證。",
+    "aisonScore": 80,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-06-aws-agentcore-web-answer",
+    "rank": 9,
+    "title": "AWS AgentCore Web Answer 正式推出：一個工具調用完成搜尋、綜合與引用",
+    "excerpt": "Agent 可用一次 MCP 調用取得當前網頁資料的綜合答案與來源引用，減少自建搜尋管線，但只在美東區域提供。",
+    "summary": "AWS 11 月 5 日宣布 Bedrock AgentCore Web Answer 正式可用。工具會規劃多個搜尋、讀取頁面、在證據不足時再搜尋，最後返回逐項引用的綜合答案。",
+    "quickTake": "Agent 可用一次 MCP 調用取得當前網頁資料的綜合答案與來源引用，減少自建搜尋管線，但只在美東區域提供。",
+    "category": "AI Agent",
+    "tags": [
+      "AWS",
+      "Bedrock",
+      "MCP",
+      "搜尋"
+    ],
+    "date": "2026-11-06",
+    "readTime": "2 分鐘",
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "AWS 11 月 5 日宣布 Bedrock AgentCore Web Answer 正式可用。工具會規劃多個搜尋、讀取頁面、在證據不足時再搜尋，最後返回逐項引用的綜合答案。",
+    "reportingContext": "服務現時只在 US East（N. Virginia）提供，按每次工具調用收費；透過 AgentCore Gateway 與 MCP 使用，可用 IAM 驗證、網域 allow/deny list 及發布日期篩選。",
+    "deepDive": "Web Search 返回原始結果，Web Answer 則連模型、檢索迴圈、綜合與引用一併代管；便利性上升，同時把來源選擇與答案生成更多交給供應商。",
+    "whyImportant": "大量企業 Agent 都需要當前網頁資訊，代管搜尋答案可縮短開發時間，但亦增加對供應商覆蓋、引用準確度和區域的依賴。",
+    "whatToWatch": "香港可用區域、定價、粵語與繁中表現，以及引用是否能在複雜問題中逐句對應。",
+    "hkImpact": [
+      "香港開發者可在美東測試原型，但要評估延遲、資料地域及合規。",
+      "中小企可省卻自建檢索管線，仍要保留來源白名單與人工覆核。",
+      "內容團隊要抽查引用是否真的支持結論，不能因有連結就視為已核實。"
+    ],
+    "take": "GA、區域與控制項已確認；AIson 分析，這是 Agent 搜尋由零件變成成品服務，但「有引用」仍不等於「引用正確」。",
+    "sourceLabel": "AWS",
+    "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/11/web-answer-amazon-bedrock/",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "AWS 技術教學",
+        "url": "https://aws.amazon.com/blogs/machine-learning/getting-started-with-web-answer-on-amazon-bedrock-agentcore/"
+      }
+    ],
+    "actionVerdict": "try-now",
+    "actionReason": "已 GA，適合以低風險問答做引用準確度測試。",
+    "aisonScore": 78,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 4,
+      "developer": 5
+    }
+  },
+  {
+    "id": "2026-11-06-meta-muse-realtime-voice-avatars",
+    "rank": 10,
+    "title": "Meta Muse 加入即時語音與表情 Avatar，先在美國推出",
+    "excerpt": "Muse 流動、網頁與 Mac 版開始支援可打斷的即時語音、數百種聲音及表情 Avatar，但首階段只限美國。",
+    "summary": "Meta 11 月 5 日宣布在 Muse app 的 mobile、web 及 Mac 版推出即時語音與表情 avatar。用戶可在對話中打斷，並從數百款聲音選擇風格；Meta 稱功能可用於腦震盪、旅行規劃及面試排練。",
+    "quickTake": "Muse 流動、網頁與 Mac 版開始支援可打斷的即時語音、數百種聲音及表情 Avatar，但首階段只限美國。",
+    "category": "消費者 AI",
+    "tags": [
+      "Meta",
+      "Muse",
+      "語音 Agent"
+    ],
+    "date": "2026-11-06",
+    "readTime": "2 分鐘",
+    "featured": false,
+    "verified": true,
+    "freshness": "24h",
+    "whatHappened": "Meta 11 月 5 日宣布在 Muse app 的 mobile、web 及 Mac 版推出即時語音與表情 avatar。用戶可在對話中打斷，並從數百款聲音選擇風格；Meta 稱功能可用於腦震盪、旅行規劃及面試排練。",
+    "reportingContext": "功能先在美國逐步推出，語音稍後才會進入 AI Glasses 與 Muse Charm；香港可用時間及廣東話支援未公布。",
+    "deepDive": "語音把個人 Agent 由文字查詢變成持續對話與背景工作介面，而 avatar 則增加情緒與存在感，也提高用戶對系統能力與意圖的擬人化風險。",
+    "whyImportant": "即時、可打斷語音會降低 Agent 使用摩擦，並把競爭推向延遲、記憶、裝置延伸及可信行動。",
+    "whatToWatch": "香港推出時間、廣東話及繁中能力、語音資料保存政策，以及背景任務的確認與取消流程。",
+    "hkImpact": [
+      "香港用戶暫時毋須下載或付費等候，首階段只限美國。",
+      "創作者可留意多聲線與 avatar 的互動形式，但要避免未經同意模仿真人聲音。",
+      "企業評估語音 Agent 時要測試打斷、誤聽及背景任務取消，而非只看示範流暢度。"
+    ],
+    "take": "美國 rollout 與功能範圍已確認；AIson 分析，語音會令 Agent 更自然，但愈像真人，愈需要清楚顯示它是系統、記錄甚麼及正在做甚麼。",
+    "sourceLabel": "Meta",
+    "sourceUrl": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+    "sourceType": "官方公告",
+    "references": [],
+    "actionVerdict": "wait",
+    "actionReason": "香港尚未推出，先等地區與語言支援。",
+    "aisonScore": 74,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 2,
+      "creator": 4,
+      "developer": 3
+    }
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-06",
+  "dailyOneLiner": "AI 今日同時跨過兩條線：網安模型升至 Critical 級別，而香港則成為高階晶片政策拉鋸下的實體庫存節點。",
+  "top3Ids": [
+    "2026-11-06-openai-gpt-6-cyber",
+    "2026-11-06-nvidia-h200-hong-kong-stockpile",
+    "2026-11-06-metr-anthropic-ai-rd-acceleration"
+  ],
+  "threeThemes": [
+    {
+      "title": "高能力要配分層存取",
+      "summary": "GPT‑6 Cyber 展示模型可大幅加速漏洞研究，但發布方式已轉向身份、用途及環境受控。",
+      "watch": "獨立重現、越界率與客戶擴張後的安全表現。"
+    },
+    {
+      "title": "算力競爭受政策與地方成本限制",
+      "summary": "H200 在香港的報道與 OpenAI 社區承諾，顯示晶片交付、電力、用水和地方許可都是 AI 供應鏈。",
+      "watch": "中國進口決定與首份可執行園區 compact。"
+    },
+    {
+      "title": "Agent 基建由模型移向身份、資料與硬件",
+      "summary": "Cloudflare、AWS、NVIDIA 與 Meta 分別補上委託身份、網頁答案、每瓦吞吐及語音介面。",
+      "watch": "互通標準、引用準確度、獨立 benchmark 及香港語言支援。"
+    }
+  ],
+  "biggestChange": "模型能力增長不再只是產品更新：它開始改寫漏洞研究速度、晶片跨境庫存、數據中心社區責任，以及 Agent 在網上的身份與責任鏈。",
+  "watchTomorrow": "追蹤中國是否回應 H200 進口報道、Mozilla 公布更多 GPT‑6 Cyber 修補資料、TAD 聯盟成員與協議細節，以及首批 Vera 與 Cosmos 3 獨立測試。"
+}
