@@ -43,7 +43,7 @@
     ],
     "actionVerdict": "watch",
     "actionReason": "高能力但存取受限；企業應先更新授權與隔離流程。",
-    "aisonScore": 97,
+    "aisonScore": 9.7,
     "audienceImpact": {
       "worker": 4,
       "sme": 5,
@@ -51,7 +51,7 @@
       "developer": 5
     },
     "followUpOf": "2026-11-05-openai-linux-vulnerability-pipeline",
-    "updatedAt": "2026-11-06T07:45:00+08:00"
+    "updatedAt": "2026-11-06"
   },
   {
     "id": "2026-11-06-nvidia-h200-hong-kong-stockpile",
@@ -94,7 +94,7 @@
     ],
     "actionVerdict": "watch",
     "actionReason": "直接影響香港供應鏈，但核心數字仍待官方印證。",
-    "aisonScore": 95,
+    "aisonScore": 9.5,
     "audienceImpact": {
       "worker": 3,
       "sme": 5,
@@ -142,7 +142,7 @@
     ],
     "actionVerdict": "watch",
     "actionReason": "高影響但不確定性及刪節證據必須保留。",
-    "aisonScore": 93,
+    "aisonScore": 9.3,
     "audienceImpact": {
       "worker": 4,
       "sme": 4,
@@ -190,7 +190,7 @@
     ],
     "actionVerdict": "watch",
     "actionReason": "屬自願框架，需等待首批實際園區條款。",
-    "aisonScore": 89,
+    "aisonScore": 8.9,
     "audienceImpact": {
       "worker": 3,
       "sme": 4,
@@ -238,7 +238,7 @@
     ],
     "actionVerdict": "watch",
     "actionReason": "方向明確但 pilot 細節尚未公布。",
-    "aisonScore": 87,
+    "aisonScore": 8.7,
     "audienceImpact": {
       "worker": 3,
       "sme": 5,
@@ -281,7 +281,7 @@
     "references": [],
     "actionVerdict": "try-now",
     "actionReason": "網站營運者可立即查看 Agent 流量並設定分層政策。",
-    "aisonScore": 85,
+    "aisonScore": 8.5,
     "audienceImpact": {
       "worker": 3,
       "sme": 5,
@@ -324,7 +324,7 @@
     "references": [],
     "actionVerdict": "wait",
     "actionReason": "數據主要來自供應商，等待獨立測試與價格。",
-    "aisonScore": 82,
+    "aisonScore": 8.2,
     "audienceImpact": {
       "worker": 2,
       "sme": 3,
@@ -367,7 +367,7 @@
     "references": [],
     "actionVerdict": "try-now",
     "actionReason": "權重可下載，研發團隊可用小型受控資料集驗證。",
-    "aisonScore": 80,
+    "aisonScore": 8,
     "audienceImpact": {
       "worker": 2,
       "sme": 3,
@@ -416,7 +416,7 @@
     ],
     "actionVerdict": "try-now",
     "actionReason": "已 GA，適合以低風險問答做引用準確度測試。",
-    "aisonScore": 78,
+    "aisonScore": 7.8,
     "audienceImpact": {
       "worker": 3,
       "sme": 4,
@@ -459,7 +459,7 @@
     "references": [],
     "actionVerdict": "wait",
     "actionReason": "香港尚未推出，先等地區與語言支援。",
-    "aisonScore": 74,
+    "aisonScore": 7.4,
     "audienceImpact": {
       "worker": 3,
       "sme": 2,
