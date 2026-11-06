@@ -68,25 +68,44 @@ def _text_len(value=''):
     return len(''.join(str(value or '').split()))
 
 
+def _clip_meta_description(value,limit=160):
+    text=' '.join(str(value or '').split())
+    if len(text)<=limit:
+        return text
+    clipped=text[:limit-1].rstrip()
+    boundaries=[clipped.rfind(mark) for mark in ('。','！','？','；','，','、',':',';',',',' ')]
+    boundary=max(boundaries,default=-1)
+    if boundary>=102:
+        return clipped[:boundary+1].rstrip()
+    return clipped.rstrip('，、；：,; ')+'…'
+
+
 def _article_meta_description(story):
-    """Prefer a useful editorial summary of snippet length without padding."""
+    """Use existing editorial copy to produce a concise description without padding."""
     excerpt=str(story.get('excerpt') or '').strip()
     summary=str(story.get('summary') or '').strip()
     quick_take=str(story.get('quickTake') or '').strip()
 
-    if 102 <= len(excerpt) <= 160:
-        return excerpt
-    if summary != excerpt and 102 <= len(summary) <= 160:
-        return summary
+    for candidate in (excerpt,summary):
+        if len(candidate)>=102:
+            return _clip_meta_description(candidate)
 
     sentences=[part.strip() for part in re.split(r'(?<=[。！？])',quick_take) if part.strip()]
     combined=''
     for sentence in sentences:
-        if len(combined)+len(sentence) > 160:
+        if len(combined)+len(sentence)>160:
             break
         combined+=sentence
-        if len(combined) >= 102:
+        if len(combined)>=102:
             return combined
+    if len(quick_take)>=102:
+        return _clip_meta_description(quick_take)
+
+    for field in ('whatHappened','reportingContext','deepDive','whyImportant','whatToWatch','take'):
+        candidate=str(story.get(field) or '').strip()
+        if len(candidate)>=102:
+            return _clip_meta_description(candidate)
+
     return excerpt or summary or quick_take
 
 
