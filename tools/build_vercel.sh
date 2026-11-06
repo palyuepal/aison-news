@@ -14,3 +14,4 @@ uv run --with pillow python tools/patch_share_meta.py
 rm -rf public
 mkdir public
 cp -a assets data news topics *.html *.css *.js sitemap.xml robots.txt rss.xml CNAME public/
+cp 4s77dfcxegypatb2t5bhm4k687j63rkj.txt public/
