@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-07",
+  "dailyOneLiner": "AI Agent 正由「識答」變成「有權代你做」；今日最重要的不是再多一個功能，而是權限、責任、資本與基建能否跟上。",
+  "top3Ids": [
+    "2026-11-07-singapore-personal-ai-agent-advisory",
+    "2026-11-07-openai-11b-funding",
+    "2026-11-07-google-gemini-omni-12-flash"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 權限要由提示升級成系統控制",
+      "summary": "新加坡個人 Agent 指引與 Google coding-agent 研究都顯示，背景任務、過時脈絡和過闊權限會把小錯變成真實操作。",
+      "watch": "留意平台會否預設唯讀、逐次批准、活動紀錄與一鍵撤銷。"
+    },
+    {
+      "title": "AI 資本與監管同時收緊",
+      "summary": "OpenAI 仍能籌得巨額資金，但估值更受紀律；美國新國會則準備從模型責任與數據中心成本入手。",
+      "watch": "等待 OpenAI 正式融資條款及美國國會具體草案。"
+    },
+    {
+      "title": "生成與運算競爭移向完整生產管線",
+      "summary": "Google 影片模型、Microsoft 多模型平台、先進封裝與高速儲存，都在解決由模型輸出到可交付產品的瓶頸。",
+      "watch": "比較正式價格、地區供應、獨立品質測試及整體任務成本。"
+    }
+  ],
+  "biggestChange": "AI 產品的核心風險與成本正由模型本身移向周邊系統：它連接了哪些帳戶、讀到甚麼舊資料、由誰出資、受甚麼規則約束，以及算力能否真正轉成可交付成果。",
+  "watchTomorrow": "追蹤 OpenAI 會否確認 110 億美元融資、Meta 及其他 Agent 平台如何回應新加坡指引、美國 AI 法案正式文本，以及 Gemini Omni 1.2、Foundry fal 與 Z4M 的亞洲供應和獨立實測。"
+}
