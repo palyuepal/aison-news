@@ -1,0 +1,484 @@
+[
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-microsoft-agentic-secret-theft",
+    "rank": 1,
+    "title": "Microsoft：攻擊者用 AI Agent 掃 GitHub 洩漏憑證，最快五分鐘攻入 Azure Key Vault",
+    "excerpt": "Microsoft Threat Intelligence 觀察到攻擊者以 ARTEX 等 Agent 工具自動搜尋公開 GitHub 憑證，再調整 API 請求及橫向存取雲端資源；至少一宗由搜尋到外洩 Key Vault 資料只用了五分鐘。",
+    "summary": "Microsoft Threat Intelligence 在 11 月 5 日披露，攻擊者正以 Agentic AI 框架大量搜尋公開 GitHub repository 的密鑰、應用程式憑證及 AI API key，再利用所得權限存取 Entra ID、Azure、Microsoft 365、Key Vault、Storage Account 等資源。這是 Microsoft 觀察到的真實攻擊活動，不只是概念驗證；但報告沒有公開受影響客戶數目。",
+    "quickTake": "AI Agent 已把「搵到一條漏咗上網嘅 key」到「實際進入雲端、調整 API 再外洩資料」壓縮成分鐘級。Microsoft 指至少一宗由掃 GitHub 到外洩 Azure Key Vault 資料只用五分鐘；企業應假設公開過的 key 已被使用，而不是刪除 commit 就當修復完成。",
+    "category": "AI 安全",
+    "tags": [
+      "Microsoft",
+      "AI Agent",
+      "GitHub",
+      "Azure",
+      "網絡安全"
+    ],
+    "readTime": "5 分鐘",
+    "featured": true,
+    "whatHappened": "Microsoft Threat Intelligence 表示，自 2026 年 8 月起觀察到威脅者利用 ARTEX 等 Agentic AI 攻擊框架，大量查詢公開 GitHub repository，尋找密碼、應用程式憑證、雲端 access key 及 AI inference API key。找到可用憑證後，Agent 會繼續登入 Entra ID、列舉 Azure subscription、resource group、AI 模型部署及服務設定，並嘗試取得 Key Vault、Storage Account、App Service、Azure Kubernetes Service 等敏感資料。Microsoft 指至少一宗個案由在 GitHub 搜尋 client secret 到從 Azure Key Vault 外洩資料，只用了五分鐘；另有多租戶應用程式憑證在供應商端被盜後，被用來接觸多個下游客戶 tenant。報告確認的是 Microsoft 所觀察到的攻擊鏈，未披露受影響機構名稱或總數。",
+    "reportingContext": "公開 repository 掃描秘密不是新手法；真正新增的是 Agent 把搜尋、判斷、驗證、API 修正及後續行動串成自動化流程。Microsoft 的例子顯示，當一個 Azure Resource Manager 請求因 API version 錯誤失敗後，Agent 可在約 28 至 80 秒內改用正確方法或版本並得到成功回應。這種自我修正能力降低攻擊者需要親自操作的時間。報告亦提醒，刪除公開程式碼中的秘密並不會令已外洩憑證失效；只要未撤銷或輪換，攻擊者仍可保持存取。",
+    "deepDive": "風險核心不只是「AI 變得更懂攻擊」，而是企業原本分散在 source control、OAuth application、service principal 及雲端控制面的弱點，被 Agent 用一條流水線接起來。長效 client secret 特別危險：它可讓程式以非人類身份直接登入，而權限往往比建立者以為的更闊。若同一個多租戶應用程式憑證在供應商端洩漏，影響可以沿供應鏈擴散。Microsoft 建議組織掃描自有及第三方公開 repository、立即輪換所有曾公開的秘密、採用 managed identity、最小權限及 workload identity 保護，並監察異常 service-principal 登入。AI 防守工具可以加快偵測，但不能代替憑證生命週期、權限收窄及復原演練。",
+    "whyImportant": "軟件供應鏈的反應窗口由「幾日內輪換」縮短至「幾分鐘內已可能被利用」。對依賴雲端、SaaS 及第三方整合的公司，安全投資重點要由單純掃描 repository，移到密鑰一旦出現便自動撤銷、輪換及追蹤下游權限。",
+    "hkImpact": [
+      "香港中小企如用 GitHub、Azure 或 Microsoft 365，應即時搜尋公開 repo、fork、issue 及 CI log 有冇 key；發現後要撤銷及輪換，單靠刪檔無效。",
+      "金融、醫療及專業服務機構要把 service principal、OAuth app 同第三方供應商憑證納入同一套風險盤點，特別檢查多租戶應用程式的權限。",
+      "開發團隊應啟用 secret scanning、push protection、短效憑證及 managed identity，並演練「五分鐘內撤銷」而唔係只寫事故手冊。"
+    ],
+    "whatToWatch": "下一步看 Microsoft、GitHub 及受影響供應商會否公布更完整的入侵指標、客戶通知與修復範圍；企業亦要驗證現有 SIEM 能否及時捕捉異常 service-principal 登入、Key Vault 存取及 API version 快速切換。",
+    "take": "🧠 AIson 分析：今次最大轉變不是 Agent 發明新漏洞，而是它把人手攻擊鏈壓縮到機器速度。防守標準要由「有冇掃描」升級為「秘密一曝光，幾分鐘內可否自動失效」。",
+    "sourceLabel": "Microsoft Threat Intelligence",
+    "sourceUrl": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+    "sourceType": "公司文件",
+    "actionVerdict": "try-now",
+    "actionReason": "立即盤點公開過的秘密、輪換憑證及檢查 service-principal 登入，屬低成本而高優先級行動。",
+    "aisonScore": 9.5,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 2,
+      "developer": 5
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-psi-aaronson-ambainis-proof",
+    "rank": 2,
+    "title": "PSI 稱 AI 三日證明 18 年量子複雜度猜想，Lean 已驗證但仍待學界審查",
+    "excerpt": "Physical Superintelligence 表示，內部研究系統配合一個未公開 Anthropic 模型，在第三日找到 Aaronson–Ambainis 猜想證明，並由 Lean proof assistant 接受；論文、證明及程式碼已公開。",
+    "summary": "PSI 在 11 月 6 日公布，一套內部 AI 研究系統配合未公開 Anthropic 模型，解出 2008 年提出的 Aaronson–Ambainis 猜想。這條猜想關乎量子電腦在隨機、缺乏結構的問題上能否取得指數級優勢。PSI 已公開論文、Lean 證明及程式碼；Lean 接受代表形式化步驟可被機器檢查，但不等於學界已完成獨立審查或接受所有建模前提。",
+    "quickTake": "PSI 聲稱 AI 系統在三日內找到一條 18 年未解猜想的證明，最終版本獲 Lean 接受，材料亦已公開。這是一個高價值研究訊號，但「Lean 通過」與「學術共識成立」並非同一件事，仍要等獨立數學家重跑及審閱。",
+    "category": "AI 科研",
+    "tags": [
+      "Anthropic",
+      "數學",
+      "量子計算",
+      "Lean",
+      "AI 科學"
+    ],
+    "readTime": "5 分鐘",
+    "featured": true,
+    "whatHappened": "Physical Superintelligence（PSI）在 11 月 6 日宣布，Aaronson–Ambainis 猜想已被證明。PSI 稱，內部研發的研究系統在自家基建上運行，多個未公開 Anthropic 模型實例參與推導；系統在第三日已有完整證明，之後再兩次改良結果。最終證明由 Lean proof assistant 接受，PSI 同時公開約 60 頁論文、形式化證明及程式碼，讓外界檢查。這條猜想由 Scott Aaronson 與 Andris Ambainis 在 2008 年提出，研究量子查詢在一般、隨機輸入上可取得幾大優勢。",
+    "reportingContext": "Lean 的作用是按照形式規則檢查每一步，能大幅降低隱藏代數錯誤或跳步風險，但形式化證明仍依賴定義、前提及程式庫是否正確表達原問題。PSI 是研究成果的發布者，同時也是系統開發者；截至本版截稿，公開資料未顯示論文已經同行評審或由外部團隊完整重現。因此最準確的表述是「PSI 公布並提供可檢查的形式化證明」，而不是把學界尚未完成的審核寫成既定共識。",
+    "deepDive": "Aaronson–Ambainis 猜想試圖界定量子電腦在「沒有特殊結構」的函數問題上可比傳統電腦快幾多。若結論成立，它支持一個重要直覺：量子電腦的戲劇性優勢通常依賴可利用的結構，而不是對所有隨機問題都能指數加速。今次亦展示一種較可信的 AI 科研流程：模型負責搜尋證明路徑，proof assistant 負責逐步檢查，公開材料讓人類與其他系統重現。價值不只是一條定理，而是把「AI 提議—形式驗證—外部審查」變成可複製工作流。限制是模型未公開，外界暫時不能完整重建原本的生成過程。",
+    "whyImportant": "如果外部審查確認，這會是 AI 參與前沿數學研究的代表案例，亦顯示高風險科研輸出不一定只能靠自然語言說服，而可以交給形式驗證工具逐步核對。",
+    "hkImpact": [
+      "本地大學做數學、量子計算或形式方法研究，可直接下載公開證明與程式碼，先做重跑及找反例，而唔需要等新聞二手解讀。",
+      "企業研發團隊可參考「模型提出、工具驗證、人類審批」流程，用於程式正確性、合約邏輯或安全規則；但不能把 Lean 通過當成商業系統全盤安全。",
+      "學生與科研人員的競爭重點會由單純寫答案，轉向定義問題、選擇驗證器、檢查前提及重現結果。"
+    ],
+    "whatToWatch": "最值得看數學家是否找到缺口、能否在獨立環境重跑 Lean 證明，以及 PSI 會否公開更多研究系統方法或模型可用性。若正式同行評審接受，事件的重要性會再上調。",
+    "take": "🧠 AIson 分析：AI 做科研最有說服力的方向，不是「模型話自己解到」，而是交出任何人都可以逐步檢查的證明。今次真正門檻是外部重現，而不是發布會。",
+    "sourceLabel": "Physical Superintelligence",
+    "sourceUrl": "https://psi.inc/research/aaronson-ambainis/",
+    "sourceType": "研究論文",
+    "references": [
+      {
+        "label": "PSI 論文與 Lean 證明 repository",
+        "url": "https://github.com/physical-intelligence/aaronson-ambainis"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "成果值得追蹤，但在外部重現及同行審查完成前，不宜把它當成已建立的學術共識。",
+    "aisonScore": 9.1,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 2,
+      "creator": 2,
+      "developer": 5
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-meta-pauses-commercial-ai-terms",
+    "rank": 3,
+    "title": "Meta 暫停四套商業與生成式 AI 條款，原定 11 月 20 日生效計劃撤回",
+    "excerpt": "Meta 確認暫停 Commercial Terms、Product Catalog Terms、Self-Serve Ad Terms 及 Ad Creative Generative AI Terms 更新，現行條款繼續有效；公司未提供新生效日期。",
+    "summary": "Reuters 11 月 6 日報道，Meta 暫停四套原定 11 月 20 日生效的商業、產品目錄、自助廣告及廣告生成式 AI 條款。公司表示會繼續與持份者溝通並花時間調整，現有條款維持不變。今次是具體狀態改變，不只是外界批評；但「暫停」不是永久取消，亦未有新文本或時間表。",
+    "quickTake": "Meta 已把四套商業及生成式 AI 條款更新按下暫停鍵，原定 11 月 20 日的生效日取消，舊條款繼續適用。受影響企業暫時毋須按擬議版本更改流程，但要保存通知、核對帳戶類型，等待新文本。",
+    "category": "AI 政策與內容權利",
+    "tags": [
+      "Meta",
+      "廣告",
+      "生成式 AI",
+      "內容權利",
+      "條款"
+    ],
+    "readTime": "4 分鐘",
+    "featured": true,
+    "whatHappened": "Meta 在 11 月 6 日確認，暫停更新 Commercial Terms、Product Catalog Terms、Self-Serve Ad Terms 及 Ad Creative Generative AI Terms。四套更新原定 11 月 20 日生效，現時不會按該日期實施；Meta 表示會繼續與持份者接觸並花時間把更新做好，期間沿用現有條款。可確認的事實是生效計劃已暫停，並非法院最終裁決，也未等於 Meta 永久放棄相關政策方向。",
+    "reportingContext": "擬議商業條款早前引起出版商、商戶及政策人士關注，爭議包括平台可如何使用企業帳戶所連結網站、目錄及廣告素材。Meta 曾修改字眼及延後生效期，今次再進一步全面暫停四套更新。Reuters 的最新報道只確認狀態和公司回應，沒有公布下一輪諮詢範圍、修訂文本或恢復時間。",
+    "deepDive": "對企業而言，條款更新常直接影響資料使用許可、網站內容、產品目錄、廣告素材及生成式 AI 功能。暫停能避免企業在短時間內被迫接受不清晰的權利安排，但並沒有解決核心問題：平台可以從商業帳戶、外部網站或廣告內容取得甚麼資料、作何種模型或產品用途、是否可退出，以及內容被使用後如何追蹤。真正的下一步應該是逐條比較新舊文本，而不是只靠「暫停」兩字作永久政策判斷。",
+    "whyImportant": "大型平台嘗試擴大 AI 資料使用範圍時，商業客戶、出版商及監管壓力已足以改變落地時間表。這會影響其他平台日後設計企業條款時，是否提供更清楚的通知、選擇權與用途限制。",
+    "hkImpact": [
+      "香港商戶、媒體及廣告代理暫時繼續按現有條款運作，毋須因原定 11 月 20 日版本急改網站或素材流程。",
+      "企業應保存 Meta 通知及當時條款版本，盤點 Facebook、Instagram、Threads、Catalog 同廣告素材連到邊啲外部網站。",
+      "內容持有人要等新文本先判斷權利，唔好把「暫停」當「永久撤回」；合約、私隱及版權審查仍要保留。"
+    ],
+    "whatToWatch": "下一步看 Meta 會否發布修訂文本、正式諮詢機制、退出安排與新生效日期，以及英國、歐洲等地監管或法院程序會否對資料用途訂出更清楚界線。",
+    "take": "🧠 AIson 分析：今次最大改變是平台條款不再可以「出通知就落地」。企業真正要爭取的不是一次延期，而是可核對、可退出、可追責的資料用途。",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/meta-pauses-planned-terms-updates-keeps-existing-rules-place-2026-11-06/",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "Nieman Journalism Lab 背景整理",
+        "url": "https://www.niemanlab.org/2026/11/meta-pulls-down-controversial-terms-of-service/"
+      }
+    ],
+    "actionVerdict": "watch",
+    "actionReason": "現行條款未變，但企業應保存版本並等新文本，毋須按已暫停版本倉促改流程。",
+    "aisonScore": 8.8,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 5,
+      "developer": 3
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-meta-muse-spaces",
+    "rank": 4,
+    "title": "Meta Muse 推 Spaces：一句描述就建立會自動更新的個人工作頁",
+    "excerpt": "Muse Spaces 可把禮物清單、學校行事曆、訂單、客戶項目或旅程資料組成互動頁，並從已連接 App 在背景更新；功能在 Muse 可用地區推出。",
+    "summary": "Meta 11 月 6 日推出 Muse Spaces，用戶描述需要後，Muse 可建立互動頁並放到 sidebar 或主分頁。Spaces 可連接電郵、日曆及 Meta 服務持續更新；Meta 稱功能在所有已提供 Muse 的地方推出，但未列出香港可用性、資料保存與每個 connector 的權限細節。",
+    "quickTake": "Muse 由聊天介面走向「即場砌一個會更新的小型 App」。實際價值在於整合訊息、日曆及清單，但權限與錯誤資料同樣會持續存在；香港未確認可用。",
+    "category": "AI Agent",
+    "tags": [
+      "Meta",
+      "Muse",
+      "AI Agent",
+      "個人應用"
+    ],
+    "readTime": "3 分鐘",
+    "featured": false,
+    "whatHappened": "Meta 發布 Muse Spaces，用戶可用自然語言建立自訂互動空間，例如學校 dashboard、禮物追蹤、婚禮計劃、客戶 hub 或小店訂單頁。Spaces 可固定在 Muse 側欄或主分頁，亦可設定何時顯示；連接 App 後，內容可在背景更新。",
+    "reportingContext": "這是 Muse 個人 Agent 的實質功能擴展，不是獨立 App 商店。Meta 提供的是產品示例與 rollout 描述，未公開第三方評測、香港地區名單或所有連接服務的細節。",
+    "deepDive": "Spaces 把 Agent 的輸出由一次性答案變成可回訪、可編輯、可持續同步的介面。便利同時增加長期權限、錯誤同步及敏感資料混合的風險。",
+    "whyImportant": "如果這類功能普及，非技術用戶可按工作建立小型應用，個人軟件與聊天助手的界線會進一步消失。",
+    "hkImpact": [
+      "香港用戶暫時要等地區開放，唔好假設美國功能已可用。",
+      "中小企可留意訂單、客戶與發票 hub，但正式用前要確認資料存放、權限及匯出方法。",
+      "創作者可把研究、腳本及發布清單放入 Space，仍要人手核對自動更新內容。"
+    ],
+    "whatToWatch": "看香港 rollout、支援 connector、分享協作、審批紀錄及可否逐項限制背景同步。",
+    "take": "🧠 AIson 分析：Spaces 最值得看的不是「一句整 App」，而是 Meta 能否把長期權限做得足夠透明。",
+    "sourceLabel": "Meta Newsroom",
+    "sourceUrl": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Meta AI Research：Muse 專門模型",
+        "url": "https://research.meta.ai/blog/specialized-models-for-muse-and-metaai"
+      }
+    ],
+    "followUpOf": "2026-09-09-meta-muse-personal-agent",
+    "topicId": "agentic-ai",
+    "storylineId": "meta-muse-agent",
+    "hubIds": [
+      "ai-agent"
+    ],
+    "actionVerdict": "wait",
+    "actionReason": "香港可用性與 connector 權限未清楚，等地區、私隱及匯出細節再試。",
+    "aisonScore": 8.3,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 4,
+      "developer": 3
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-claude-personal-finance",
+    "rank": 5,
+    "title": "Claude Personal Finance 測試連接銀行帳戶：唯讀最多兩年交易，暫限美國付費用戶",
+    "excerpt": "Anthropic 與 Plaid 合作讓 Claude 讀取用戶選定帳戶的餘額、信用額及最多 24 個月交易；不能轉帳、投資或管理資金，Beta 暫限美國 Pro、Max、Ultra。",
+    "summary": "Claude Personal Finance 在美國開始 Beta，用戶經 Plaid 登入並授權後，可問支出、訂閱、帳單及現金流。Anthropic 表示連接為唯讀，hub 內對話不會用於模型訓練；Claude 仍可能計錯，重要數字要回銀行核對。",
+    "quickTake": "Claude 開始直接讀真實銀行與信用卡資料，但目前只做分析，不可動錢。功能未到香港，最值得留意是 AI 理財介面如何處理錯誤、同意、資料保留及日後與持牌機構合作。",
+    "category": "AI 金融",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Plaid",
+      "個人理財"
+    ],
+    "readTime": "3 分鐘",
+    "featured": false,
+    "whatHappened": "Anthropic 11 月 5 日推出 Personal Finance Beta，讓美國 Pro、Max、Ultra 用戶經 Plaid 連接銀行、信用卡、貸款及投資帳戶。Claude 可讀帳戶名稱、類型、尾四位、餘額、信用額及最多 24 個月交易，建立支出圖表、帳單日曆及現金流分析。",
+    "reportingContext": "功能是唯讀，不能轉帳、買賣或投資；現階段亦不是持牌投資建議。Anthropic 表示 hub 內對話不用於模型訓練，但服務供應商仍會按條款處理資料。",
+    "deepDive": "這是通用助手向高敏感個人資料再行前一步。Plaid 負責銀行驗證，Claude 不會直接看密碼；但交易描述可能包含額外個人資料，模型計算亦可能出錯。",
+    "whyImportant": "AI 助手競爭由回答一般問題轉到讀取真實財務脈絡；信任、監管及錯誤責任會成為產品差異。",
+    "hkImpact": [
+      "香港用戶未可用，唔好把美國 Beta 當成本地銀行已支援。",
+      "銀行及 fintech 可觀察唯讀連接、同意撤回與持牌顧問協作模式。",
+      "普通用戶即使日後開放，都應先連低風險帳戶並逐筆核對重要計算。"
+    ],
+    "whatToWatch": "看香港／亞洲銀行支援、資料保留期、錯誤申訴，以及 Anthropic 與持牌金融機構的合作方式。",
+    "take": "🧠 AIson 分析：只讀是合理第一步，但「睇得錯」同樣可以影響財務決定，核對責任不能外判畀模型。",
+    "sourceLabel": "Claude by Anthropic",
+    "sourceUrl": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Claude Help Center 權限說明",
+        "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude"
+      },
+      {
+        "label": "Plaid 合作公告",
+        "url": "https://plaid.com/blog/plaid-anthropic-financial-insights-in-claude/"
+      }
+    ],
+    "actionVerdict": "wait",
+    "actionReason": "只限美國 Beta，香港用戶未有可行動的本地版本。",
+    "aisonScore": 8.1,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 3,
+      "creator": 2,
+      "developer": 3
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-perplexity-teammates-local-mac",
+    "rank": 6,
+    "title": "Perplexity 推 Teammates 常駐 Agent，同時讓 Computer 可在 Apple Silicon Mac 本機運行",
+    "excerpt": "Max 用戶可把長期工作交給多個 Teammates；Pro、Max、Enterprise 用戶亦可在配備足夠記憶體的 Mac 選擇 Local 模式，資料毋須交由雲端協調。",
+    "summary": "Perplexity 11 月 6 日推出 Teammates 及 Mac 本機 Computer。Teammates 可持續處理電郵、競爭監察與客戶支援並經 Slack 協作；Local 模式支援 Apple Silicon、建議 36GB unified memory。產品能力與私隱描述來自官方，實際準確度及耗能仍要用戶測試。",
+    "quickTake": "一邊是常駐 Agent，一邊是本機執行：Perplexity 同時搶工作協作與私隱敏感場景。香港團隊最實際是先選一個可回復、需審批的流程試行。",
+    "category": "AI Agent",
+    "tags": [
+      "Perplexity",
+      "AI Agent",
+      "Mac",
+      "私隱"
+    ],
+    "readTime": "3 分鐘",
+    "featured": false,
+    "whatHappened": "Teammates 可接手持續工作、平行跑任務、使用 Computer、skills、memory 及 tools，亦可在 Slack 聯絡同事；暫供 Max 網頁用戶。Computer Local 模式則供 Pro、Max、Enterprise 的 Apple Silicon Mac，用戶可選完全本機或 Hybrid。",
+    "reportingContext": "36GB unified memory 是官方建議，不代表所有 Mac 都有相同速度。常駐 Agent 的權限、誤發訊息及審批設定仍由使用者負責。",
+    "deepDive": "產品把 Agent 部署分成兩條路：長期雲端協作追求持續性，本機模式追求資料控制與離線能力。企業選擇時要按工作資料敏感度，而不是只比較模型分數。",
+    "whyImportant": "Agent 市場開始由一次一問，轉向可被指派職責、長期記憶及多 Agent 協作；同時本機推理成為差異化。",
+    "hkImpact": [
+      "處理客戶資料的香港團隊可研究本機模式，但先核對裝置規格、備份及管理政策。",
+      "中小企可用 Teammate 監察競爭或草擬回覆，退款、付款及發送仍應保留人手批准。",
+      "Mac 用戶要評估 36GB 記憶體門檻與耗電，唔好只因「本機」就假設零風險。"
+    ],
+    "whatToWatch": "看權限審計、企業管理、本機支援型號、模型更新與 Teammates 的價格／用量限制。",
+    "take": "🧠 AIson 分析：真正有價值的是可以按資料敏感度選 Local 或 Cloud，而不是每件事都交畀同一個 Agent。",
+    "sourceLabel": "Perplexity Changelog",
+    "sourceUrl": "https://www.perplexity.ai/changelog/teammates-fully-local-computer-on-mac-and-voice-mode",
+    "sourceType": "官方公告",
+    "actionVerdict": "try-now",
+    "actionReason": "合資格用戶可用低風險、需人手批准的工作測試 Teammates 或本機模式。",
+    "aisonScore": 7.9,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 3,
+      "developer": 4
+    },
+    "hubIds": [
+      "ai-agent"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-cursor-build-live-apps",
+    "rank": 7,
+    "title": "Cursor Cloud Agent 可由一句需求建立及發布 App，連 Postgres、SSO、hosting 一併處理",
+    "excerpt": "Cursor 新功能可建立 web app、按需要配置 Postgres、Cursor SSO 及 hosting，通過確定性與 Agent 安全檢查後，仍要用戶明確按 Publish 才上線。",
+    "summary": "Cursor 在 11 月 5 日推出 Build Live Apps。Cloud Agent 可由零開始或從 GitHub repo 部署，處理資料庫、登入、hosting 及 secrets 接入；團隊管理員可檢視 App 與 secrets、設額外規則及下架。",
+    "quickTake": "AI coding 工具由寫 code 再向前一步，直接包辦內部 App 的運行環境。部署變快，但資料庫、權限、域名、成本及持續維護仍是產品責任，不能因自動 security check 就跳過 review。",
+    "category": "AI Coding",
+    "tags": [
+      "Cursor",
+      "Cloud Agent",
+      "App 開發",
+      "部署"
+    ],
+    "readTime": "3 分鐘",
+    "featured": false,
+    "whatHappened": "用戶明確要求建立 App 後，Cursor Cloud Agent 可 scaffold 專案、配置 Postgres、設定 Cursor SSO、provision hosting，再提供預覽與發布連結。任何 App 都不會在用戶明確發布前上線。",
+    "reportingContext": "安全檢查會找秘密寫入檔案或憑證外露等常見問題；管理員可加規則及封鎖發布，但官方沒有聲稱可取代完整應用安全測試。",
+    "deepDive": "功能特別適合 dashboard、portal、活動登記及內部工具。真正營運成本會在資料 schema、權限、監控、資料刪除與平台鎖定。",
+    "whyImportant": "「由 prompt 到 production」的距離再縮短，軟件供應商、IT 部門及 no-code 平台要重新界定價值。",
+    "hkImpact": [
+      "中小企可先做內部 dashboard 或登記工具，避免一開始放付款或敏感個資。",
+      "開發團隊要把 Agent 生成 App 納入 code review、漏洞掃描、備份及責任人清單。",
+      "非技術部門可更快試概念，但上線後仍要有人負責資料、權限與成本。"
+    ],
+    "whatToWatch": "看香港地區 hosting、資料駐留、GitLab 支援、匯出／遷移及安全事故處理。",
+    "take": "🧠 AIson 分析：一句部署 App 不等於一句維護 App；真正瓶頸會由寫 code 移去治理與營運。",
+    "sourceLabel": "Cursor Changelog",
+    "sourceUrl": "https://cursor.com/changelog/build-live-apps",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Cursor Apps 文件",
+        "url": "https://cursor.com/docs/cloud-agent/apps"
+      }
+    ],
+    "actionVerdict": "try-now",
+    "actionReason": "可先用不含敏感資料的內部工具做 PoC，驗證部署、權限及維護流程。",
+    "aisonScore": 7.8,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    },
+    "hubIds": [
+      "ai-coding"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-google-gemini-school-safety-lawsuit",
+    "rank": 8,
+    "title": "Google 面對 Gemini 校園安全訴訟：家長指控學校 Chromebook 內 AI 未妥善保護未成年人",
+    "excerpt": "一對美國家長起訴 Google，指女兒在校方 Chromebook 使用 Gemini 時獲得危險回應；Google 表示正審閱指控，並稱已與醫療及學術專家建立危機支援功能。",
+    "summary": "Reuters 11 月 5 日報道，美國家長就未成年女兒使用 Gemini 的經歷起訴 Google。訴訟指控仍待法院審理，不能視為已證實違法；Google 表示正審閱案件，並強調已建立協助年輕人尋求可信支援的功能。",
+    "quickTake": "案件把「學校提供裝置＋預設 AI 功能＋未成年人安全」三件事放到同一法律問題。現階段是指控，不是判決；但學校不能只靠供應商預設，要有獨立啟用、監察、通報及家長溝通機制。",
+    "category": "AI 法律與安全",
+    "tags": [
+      "Google",
+      "Gemini",
+      "教育",
+      "未成年人安全"
+    ],
+    "readTime": "3 分鐘",
+    "featured": false,
+    "whatHappened": "家長在美國法院起訴 Google 及 Alphabet，聲稱女兒由 13 歲起在學校提供的 Chromebook 使用 Gemini，系統未及時把她導向現實世界支援。Google 表示正審閱指控，並稱已與醫療及學術專家建立保護功能。",
+    "reportingContext": "所有具體傷害與產品責任主張現時屬原告指控，法院尚未裁定。事件發生於美國教育環境，不能直接套用成香港法律結論。",
+    "deepDive": "案件焦點不只在單次模型回答，亦包括校方裝置的預設設定、供應商如何向家長與學校披露風險，以及危機訊號何時觸發真人支援。",
+    "whyImportant": "未成年人使用通用 AI 的安全標準可能由自願產品政策，逐步轉向學校採購、責任分配及法律審查。",
+    "hkImpact": [
+      "香港學校應分開管理搜尋、生成式 AI 與學生帳戶權限，唔好把整套服務視作單一開關。",
+      "家長與教師要知道危機支援功能有局限，遇到風險訊號應直接接觸真人專業支援。",
+      "教育科技採購要要求事故通報、記錄保存、年齡設定及退出安排，而不只比較功能。"
+    ],
+    "whatToWatch": "看法院如何處理平台、學校與家長責任，以及 Google 會否改變學生帳戶預設與危機處理流程。",
+    "take": "🧠 AIson 分析：校園 AI 最危險的假設，是「供應商開咗安全功能就等於學校完成風險管理」。",
+    "sourceLabel": "Reuters（CNA 轉載）",
+    "sourceUrl": "https://www.channelnewsasia.com/business/google-faces-claims-student-used-ai-chat-us-school-laptop-plan-suicide-attempt-6528611",
+    "sourceType": "可靠媒體",
+    "actionVerdict": "watch",
+    "actionReason": "香港學校應檢視學生帳戶設定與危機流程，但案件仍在審理，不宜把指控當判決。",
+    "aisonScore": 7.7,
+    "audienceImpact": {
+      "worker": 5,
+      "sme": 3,
+      "creator": 2,
+      "developer": 3
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-thinking-machines-inkling-2-small",
+    "rank": 9,
+    "title": "Thinking Machines 推 Inkling 2 Small：594B MoE、17B active，承諾安全測試後開放權重",
+    "excerpt": "Inkling 2 Small 支援圖像與可變推理 effort，先在 Tinker 提供 fine-tuning 及 sampling；公司稱完成外部安全測試與 red-team 後，下一周以 Apache 2.0 發布完整權重。",
+    "summary": "Thinking Machines Lab 11 月 5 日發布第二代 Inkling 2 Small，總參數 594B、每次啟用 17B。公司自報 Artificial Analysis Intelligence Index 31，權重現時仍關閉；開源時間是計劃，不是已完成。",
+    "quickTake": "大型 MoE 新模型先用服務形式推出，再以外部安全測試作開權重閘門。開發者可試 Tinker，但應等模型卡、獨立 benchmark、成本及真正 license 檔案再決定部署。",
+    "category": "AI 模型",
+    "tags": [
+      "Thinking Machines Lab",
+      "Inkling",
+      "開放權重",
+      "MoE"
+    ],
+    "readTime": "3 分鐘",
+    "featured": false,
+    "whatHappened": "Inkling 2 Small 有 594B 總參數、17B active parameters，支援圖像輸入及 variable effort，主打 agentic coding、視覺、知識工作與長任務。Tinker Playground、fine-tuning 及 sampling 已開放。",
+    "reportingContext": "31 分 benchmark 是公司引用的評測，權重尚未發布。Apache 2.0 開放是預告，取決於外部 safety testing 與 red-team 完成。",
+    "deepDive": "17B active 反映 MoE 只啟用部分網絡以控制推理成本，但總權重記憶體與部署需求仍可能很高。開權重後才可真正評估本地部署與修改自由。",
+    "whyImportant": "新一代模型公司嘗試把服務收入、可微調平台與延後開權重放在同一產品路線，測試開放與安全之間的新平衡。",
+    "hkImpact": [
+      "香港開發者可先用 Tinker 測試，唔好在權重未出前設計本地部署預算。",
+      "大學可等 Apache 2.0 檔案與模型卡後評估研究重現。",
+      "企業採購應比較實際 task cost、延遲及資料條款，唔好只睇參數量。"
+    ],
+    "whatToWatch": "看完整權重是否按時發布、硬件門檻、獨立評測與外部安全報告。",
+    "take": "🧠 AIson 分析：「下周開源」最終要以 repository、license 同可下載權重為準。",
+    "sourceLabel": "Thinking Machines Lab",
+    "sourceUrl": "https://thinkingmachines.ai/news/inkling-2-small/",
+    "sourceType": "官方公告",
+    "actionVerdict": "wait",
+    "actionReason": "服務可試但權重仍未開放，等完整發布與獨立評測再作部署判斷。",
+    "aisonScore": 7.5,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 3,
+      "developer": 5
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "verified": true,
+    "freshness": "72h",
+    "id": "2026-11-08-github-slack-teams-ga",
+    "rank": 10,
+    "title": "@GitHub 在 Slack、Teams 正式推出：由對話開 issue、改 code、開 PR",
+    "excerpt": "GitHub 把 Slack／Teams 內的 @GitHub 推至 GA，可調查 bug、建立 issue、實作改動及開 PR；Teams 加入 Canvas 供對話旁檢視計劃、程式碼與預覽。",
+    "summary": "GitHub 11 月 6 日宣布 @GitHub in Slack and Teams 一般可用。系統可由訊息辨認 repository，啟動 coding session，並在建立的 issue／PR 留下對話來源與用戶署名。",
+    "quickTake": "寫碼 Agent 正搬入團隊聊天，減少複製上下文，但亦令聊天權限、repository 權限與審批流程重疊。開發團隊應先限制 repo、保留 attribution 並要求 PR review。",
+    "category": "AI Coding",
+    "tags": [
+      "GitHub",
+      "Copilot",
+      "Slack",
+      "Microsoft Teams"
+    ],
+    "readTime": "2 分鐘",
+    "featured": false,
+    "whatHappened": "@GitHub 可在 Slack 或 Teams 內調查 bug、建立 issue、修改程式及開 PR。Teams Canvas 可並排檢視計劃、code change 與 preview；系統亦改善 repo 辨認與 follow-up reliability。",
+    "reportingContext": "GA 代表正式可用，不代表自動生成改動已通過公司測試。建立內容會標示來自哪段對話與哪位用戶，有助追蹤。",
+    "deepDive": "聊天變成開發入口後，最關鍵是身分、最小權限、訊息保留及 PR 保護規則能否保持一致。",
+    "whyImportant": "開發工作由 IDE 移到日常協作工具，產品與工程溝通可更快轉成可執行工作。",
+    "hkImpact": [
+      "使用 Slack／Teams 的香港開發團隊可減少搬運需求，但應先限制可操作 repository。",
+      "管理員要核對聊天訊息保留、外部成員、GitHub 權限與審計紀錄。",
+      "所有 Agent PR 仍要測試、code review 及 branch protection，唔好因對話來源清楚就自動合併。"
+    ],
+    "whatToWatch": "看 Enterprise 管理、細粒度權限、成本、錯誤 repo 配對及實際團隊採用率。",
+    "take": "🧠 AIson 分析：AI Coding 下一站不是更大 IDE，而是把每段團隊對話變成可追蹤的開發任務。",
+    "sourceLabel": "GitHub Changelog",
+    "sourceUrl": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/",
+    "sourceType": "官方公告",
+    "actionVerdict": "try-now",
+    "actionReason": "可先在非關鍵 repository 試用，配合 PR review 與 branch protection 驗證流程。",
+    "aisonScore": 7.2,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 3,
+      "creator": 2,
+      "developer": 5
+    },
+    "hubIds": [
+      "ai-coding"
+    ]
+  }
+]

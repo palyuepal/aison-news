@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-08",
+  "dailyOneLiner": "AI Agent 已由「幫你做嘢」進入「幾分鐘攻入雲端、持續管理工作與直接建立產品」的新階段，驗證、權限同責任成為今日共同主線。",
+  "top3Ids": [
+    "2026-11-08-microsoft-agentic-secret-theft",
+    "2026-11-08-psi-aaronson-ambainis-proof",
+    "2026-11-08-meta-pauses-commercial-ai-terms"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 速度快過人手防線",
+      "summary": "Microsoft 觀察到攻擊者用 Agent 把公開憑證掃描、API 修正與雲端外洩串成五分鐘攻擊鏈。",
+      "watch": "企業能否把秘密撤銷與權限收窄壓縮到分鐘級。"
+    },
+    {
+      "title": "AI 科研要交可驗證成果",
+      "summary": "PSI 公布一條 18 年猜想的 Lean 形式化證明，焦點由模型說法轉向外部重現。",
+      "watch": "獨立數學家會否重跑、審閱並接受證明。"
+    },
+    {
+      "title": "Agent 產品由聊天變工作介面",
+      "summary": "Muse Spaces、Claude 財務、Perplexity Teammates、Cursor Live Apps 都把 AI 接入長期資料與實際流程。",
+      "watch": "地區 rollout、資料權限、人工審批與出錯責任。"
+    }
+  ],
+  "biggestChange": "AI 的競爭焦點由單次回答質素，轉向誰能持續讀取資料、操作工具、建立介面及在失敗後自我修正；因此安全窗口亦由日級縮短到分鐘級。",
+  "watchTomorrow": "留意 PSI 證明的外部審查、Meta 新條款諮詢、Inkling 2 Small 權重是否按時開放，以及 Agent 平台會否補充香港可用性與企業權限細節。"
+}
