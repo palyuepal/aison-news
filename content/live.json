@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-09-rba-ai-productivity-financial-stability",
+    "title": "澳洲央行：AI 暫未顯著推高整體生產力，投資回報不足或觸發市場急速重估",
+    "summary": "澳洲儲備銀行助理行長 Sarah Hunter 在 11 月 9 日演說指出，目前只有有限證據顯示 AI 已實質提升整體生產力，亦未見廣泛就業衝擊；不過，較受 AI 影響的職業已出現招聘廣告及就業表現轉弱的初步跡象，年輕工作者尤其值得留意。\n\n她表示，數據中心等 AI 基建投資短期可增加需求及通脹壓力；長遠若生產力提升，供應才可能追上。若 AI 投資回報低於預期，資產價格或出現急速甚至失序調整。這是央行的風險框架與現況判斷，不是預測市場必然下跌。",
+    "category": "AI 商業與宏觀經濟",
+    "publishedAt": "2026-11-08T22:30:00Z",
+    "sourceLabel": "澳洲儲備銀行／Reuters",
+    "sourceUrl": "https://www.rba.gov.au/speeches/2026/sp-ag-2026-11-09.html",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-09-nvidia-board-independent-investigation",
     "title": "NVIDIA 董事會啟動獨立調查，核查黃仁勳據報成為外國情報行動目標",
     "summary": "NVIDIA 董事會在 11 月 8 日宣布，因應近期有關創辦人兼行政總裁黃仁勳成為外國情報行動目標的報道，將由獨立董事組成委員會，並由外部獨立法律顧問協助調查。黃仁勳支持調查並承諾合作；公司表示他會繼續擔任行政總裁。\n\n公司強調，目前沒有理由相信美國國家安全或 NVIDIA 機密曾受損，但調查會審視所有可取得資料。Reuters 報道所涉外國情報、敏感晶片流向等指控仍未獲調查結論確認，現階段可確認的新進展只有董事會已正式展開獨立調查。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Anthropic",
     "sourceUrl": "https://www.anthropic.com/news/2026-us-midterms",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-11-yandex-third-data-centre-strike",
-    "title": "Yandex 第三個數據中心遇襲停運：部分服務再受影響",
-    "summary": "Yandex 表示，俄羅斯 Vladimir 地區的數據中心在無人機襲擊中受損並完全停運；公司稱無人受傷，但部分服務暫時無法使用。這是數日內第三個受影響的主要數據中心：Kaluga 站點早前部分停擺，Sasovo 站點亦已停運，當中設有公司三部 AI 超級電腦中的兩部。\\n\\n目前未有資料確認 Vladimir 站點損毀程度或對 AI 算力的直接影響。連續多個站點停運，已令雲端服務與 AI 基建的實體韌性成為眼前問題，也凸顯跨地區、跨供應商備援必須經實際切換測試。",
-    "category": "AI 基建與安全",
-    "publishedAt": "2026-10-11T07:38:57Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/europe/russias-yandex-says-data-centre-vladimir-area-shut-down-after-drone-attack-2026-10-11/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
