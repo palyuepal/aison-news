@@ -108,3 +108,39 @@ html[data-theme="dark"] body :is(.daily-summary,.daily-why,.daily-take) :is(span
 html[data-theme="dark"] body :is(.daily-summary,.daily-why,.daily-take) b{
   color:#FFD45E!important
 }
+
+/* B2 homepage contrast: light and dark themes (2026-11-08). */
+/* B2's visible headline is rendered as h2. The legacy light rule styled only h1. */
+html:not([data-theme="dark"]) body[data-page="home"].b2-ready .b2-front :is(h1,h2){
+  color:#0B2345!important;
+}
+/* Small editorial metadata must reach AA contrast on the pale blue/yellow front page. */
+html:not([data-theme="dark"]) body[data-page="home"].b2-ready :is(.b2-util,.b2-editor-mark small,.b2-byline,.b2-card-foot){
+  color:#4B5F78!important;
+}
+html:not([data-theme="dark"]) body[data-page="home"].b2-ready .b2-byline span:first-child{
+  color:#136B4D!important;
+}
+html:not([data-theme="dark"]) body[data-page="home"].b2-ready .b2-story-meta b{
+  color:#805900!important;
+}
+/* Avoid inheriting light-theme ink/accent into dark cards when changing themes. */
+html[data-theme="dark"] body[data-page="home"].b2-ready .b2-front :is(h1,h2){
+  color:#EAF1FB!important;
+}
+html[data-theme="dark"] body[data-page="home"].b2-ready :is(.b2-util,.b2-editor-mark small,.b2-byline,.b2-card-foot){
+  color:#B9C7D8!important;
+}
+html[data-theme="dark"] body[data-page="home"].b2-ready .b2-dek{
+  color:#C8D5E8!important;
+}
+html[data-theme="dark"] body[data-page="home"].b2-ready .b2-pulse-head{
+  color:#FFD45E!important;
+}
+html[data-theme="dark"] body[data-page="home"].b2-ready .b2-pulse-head a,
+html[data-theme="dark"] body[data-page="home"].b2-ready .b2-pulse-row p{
+  color:#EAF1FB!important;
+}
+html[data-theme="dark"] body[data-page="home"].b2-ready .b2-story-meta b{
+  color:#FFD45E!important;
+}
