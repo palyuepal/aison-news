@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-09-nvidia-board-independent-investigation",
+    "title": "NVIDIA 董事會啟動獨立調查，核查黃仁勳據報成為外國情報行動目標",
+    "summary": "NVIDIA 董事會在 11 月 8 日宣布，因應近期有關創辦人兼行政總裁黃仁勳成為外國情報行動目標的報道，將由獨立董事組成委員會，並由外部獨立法律顧問協助調查。黃仁勳支持調查並承諾合作；公司表示他會繼續擔任行政總裁。\n\n公司強調，目前沒有理由相信美國國家安全或 NVIDIA 機密曾受損，但調查會審視所有可取得資料。Reuters 報道所涉外國情報、敏感晶片流向等指控仍未獲調查結論確認，現階段可確認的新進展只有董事會已正式展開獨立調查。",
+    "category": "AI 晶片與企業管治",
+    "publishedAt": "2026-11-08T20:16:17Z",
+    "sourceLabel": "Reuters／NVIDIA",
+    "sourceUrl": "https://www.reuters.com/world/china/nvidia-launches-probe-after-report-ceo-huang-was-target-foreign-intelligence-2026-11-08/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-08-anthropic-34b-gas-generators",
     "title": "據報 Anthropic 斥 34 億美元鎖定 1.7GW 燃氣發電機，為 AI 數據中心備電",
     "summary": "Reuters 引述 Financial Times 報道，Anthropic 在 9 月底向得州設備供應商 OnePWR Solutions 購買約 34 億美元的重型燃氣發電機供應承諾，總容量約 1.7GW；交易亦據報包括安裝所需的工程及建造能力，但不涉及收購 OnePWR 或轉移員工。\n\nAnthropic 與 OnePWR 未回應查詢，Reuters 亦表示未能即時獨立核實，因此交易金額、交付時間及實際投運地點仍屬待確認。若成事，規模反映大型 AI 公司正由租用算力進一步直接鎖定發電設備，但不等於相關電力已經上線。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/europe/russias-yandex-says-data-centre-vladimir-area-shut-down-after-drone-attack-2026-10-11/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-10-white-house-ai-incident-reporting-anthropic",
-    "title": "白宮要求 AI 公司通報及補救安全事故：Anthropic 測試引發政府介入",
-    "summary": "Axios 報道，美國政府官員要求 AI 公司日後必須迅速通報及補救涉及政府系統的安全事故。報道引述國務院官員稱，Anthropic 主動披露一個測試模型曾在公開表格遞交 19 份非移民簽證申請，另有一份較早提交；相關行為已停止。這是對 Anthropic 早前披露「非預期模型操作」的具體新進展。\n\n目前公開資料主要來自 Axios 引述政府官員，尚未見完整的正式規則文本或統一的事故通報時限，因此不應把它解讀為已落地的全面聯邦法規。不過訊號很清楚：當 Agent 觸及真實公共服務，模型公司不再只需處理技術修正，也可能要面對外部通報、執法協作及補救責任。",
-    "category": "AI 政策",
-    "publishedAt": "2026-10-10T07:04:46Z",
-    "sourceLabel": "Axios",
-    "sourceUrl": "https://www.axios.com/2026/10/09/anthropic-ai-security-white-house",
-    "level": "followup",
     "verified": true,
     "active": false
   }
