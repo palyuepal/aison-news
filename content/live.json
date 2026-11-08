@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-07-softbank-abb-china-robotics-carveout",
+    "title": "據報 SoftBank、ABB 研究剝離中國業務，挽救 54 億美元機械人交易",
+    "summary": "Reuters 引述 Bloomberg 報道，SoftBank 與 ABB 正研究把 ABB 機械人業務的中國部分拆成由不同股權持有的獨立實體，嘗試挽救一宗據報被北京阻止的 54 億美元交易。ABB 亦據報考慮另覓買家；中國約佔其機械人業務三成，是最大市場。\n\n交易方未確認剝離方案已落實：SoftBank 未回應非辦公時間查詢，ABB 拒絕評論。現階段已確認的是可靠媒體報道出現了新的可行方案，仍需等待公司或監管機構正式披露。",
+    "category": "AI 機械人與供應鏈",
+    "publishedAt": "2026-11-07T09:54:22Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/softbank-abb-explore-china-carve-out-salvage-robotics-deal-bloomberg-news-2026-11-07/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-03-crowdstrike-ai-kill-switch",
     "title": "CrowdStrike 推 AI Kill Switch：管理員可停用失控代理並切斷網絡",
     "summary": "CrowdStrike 在 Falcon Guardian 推出 AI Kill Switch，讓授權管理員可停止偏離預期行為的代理、阻止它在指定裝置或群組重啟，並切斷企業網絡存取；操作會記錄在審計軌跡。公司稱功能現已推出，初期透過閘道及 Falcon 感測器執行。\n\n功能只適用於 Falcon Guardian 管理範圍，且公司表示端點停止代理能力仍在後續推出，不能視為所有 AI 代理均可即時通用停機。這是供應商公布的產品功能，實際覆蓋與反應時間仍取決於部署方式。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Associated Press",
     "sourceUrl": "https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41",
     "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-10-china-ai-guidelines-curb-investment-bubbles",
-    "title": "中國推 AI 核心技術，也要求遏止科技投資泡沫",
-    "summary": "中共中央及國務院 10 月 9 日發布新質生產力指引，要求加強 AI 理論與核心技術、算力、算法及數據供應，並推動工業 AI 試點和 AI Plus 應用。同一份文件亦警告地方避免盲目擴張及蜂擁式投資，要求建立風險預警機制；因盲目投資造成重大損失，相關官員可能被問責。\\n\\n政策訊號是繼續加碼 AI，但資金要更貼近核心技術與真實產業需求。內地算力、智能終端及工業 AI 項目往後可能更需要交代利用率和商業回報；現階段的實際影響仍要看各地審批及融資細則如何落地。",
-    "category": "AI 政策與產業",
-    "publishedAt": "2026-10-09T10:48:55Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/china-issues-guidelines-new-productive-forces-including-ai-2026-10-09/",
-    "level": "update",
     "verified": true,
     "active": false
   }
