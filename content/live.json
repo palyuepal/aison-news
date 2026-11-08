@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-08-us-ai-safety-center-white-house-reporting",
+    "title": "美國 AI 安全中心被要求非正式向白宮匯報，獨立性受質疑",
+    "summary": "AP 引述兩名前政府官員報道，美國商務部轄下的 AI 安全評估部門 CAISSI，近日被要求非正式向白宮一個辦公室匯報。該中心目前沒有常任主管，自 8 月起亦停止公開模型安全測試結果；年度預算約 1,000 萬美元。\n\n白宮未回應匯報安排的具體問題，只表示已成立「Super Intelligence Force」並會維持美國在 AI 領域的領導。由於安排未有正式文件公開，現階段可確認的是 AP 的可靠調查報道及中心的領導、預算與報告狀況，不能把匿名消息視為政府已公布的新架構。",
+    "category": "AI 政策與安全",
+    "publishedAt": "2026-11-08T08:06:38Z",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/d3318eb2cf011df53e9ddb3e03d25f13",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-07-softbank-abb-china-robotics-carveout",
     "title": "據報 SoftBank、ABB 研究剝離中國業務，挽救 54 億美元機械人交易",
     "summary": "Reuters 引述 Bloomberg 報道，SoftBank 與 ABB 正研究把 ABB 機械人業務的中國部分拆成由不同股權持有的獨立實體，嘗試挽救一宗據報被北京阻止的 54 億美元交易。ABB 亦據報考慮另覓買家；中國約佔其機械人業務三成，是最大市場。\n\n交易方未確認剝離方案已落實：SoftBank 未回應非辦公時間查詢，ABB 拒絕評論。現階段已確認的是可靠媒體報道出現了新的可行方案，仍需等待公司或監管機構正式披露。",
@@ -704,18 +716,6 @@
     "sourceLabel": "The Wall Street Journal",
     "sourceUrl": "https://www.wsj.com/tech/ai/ai-computing-power-demand-a63da9b9",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-10-openai-three-safety-researchers-dismissed",
-    "title": "OpenAI 解僱三名安全研究員：雙方對原因各有說法",
-    "summary": "OpenAI 表示，三名安全研究員因違反敏感資料處理規則而被解僱；研究員則公開質疑事件會否令員工不敢提出 AI 安全疑慮。公司否認解僱與安全異議有關，但未公開具體違規細節。AP 及其他媒體已報道雙方說法。\\n\\n目前可確認的是解僱及雙方公開分歧，未有足夠公開證據判定哪一方的說法完整。事件重要之處在於前沿 AI 公司的內部安全監督、資料保密和員工異議渠道如何並存，亦會影響外界評估安全承諾的可信度。",
-    "category": "AI 公司治理",
-    "publishedAt": "2026-10-09T11:06:00Z",
-    "sourceLabel": "Associated Press",
-    "sourceUrl": "https://apnews.com/article/openai-chatgpt-ai-artificial-intelligence-safety-789d4f5293fba45a22fcb62ebfbc2a41",
-    "level": "followup",
     "verified": true,
     "active": false
   }
