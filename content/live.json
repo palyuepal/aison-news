@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-08-anthropic-34b-gas-generators",
+    "title": "據報 Anthropic 斥 34 億美元鎖定 1.7GW 燃氣發電機，為 AI 數據中心備電",
+    "summary": "Reuters 引述 Financial Times 報道，Anthropic 在 9 月底向得州設備供應商 OnePWR Solutions 購買約 34 億美元的重型燃氣發電機供應承諾，總容量約 1.7GW；交易亦據報包括安裝所需的工程及建造能力，但不涉及收購 OnePWR 或轉移員工。\n\nAnthropic 與 OnePWR 未回應查詢，Reuters 亦表示未能即時獨立核實，因此交易金額、交付時間及實際投運地點仍屬待確認。若成事，規模反映大型 AI 公司正由租用算力進一步直接鎖定發電設備，但不等於相關電力已經上線。",
+    "category": "AI 基建與能源",
+    "publishedAt": "2026-11-08T12:54:00Z",
+    "sourceLabel": "Reuters／Financial Times",
+    "sourceUrl": "https://www.reuters.com/business/energy/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-2026-11-08/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-08-us-ai-safety-center-white-house-reporting",
     "title": "美國 AI 安全中心被要求非正式向白宮匯報，獨立性受質疑",
     "summary": "AP 引述兩名前政府官員報道，美國商務部轄下的 AI 安全評估部門 CAISSI，近日被要求非正式向白宮一個辦公室匯報。該中心目前沒有常任主管，自 8 月起亦停止公開模型安全測試結果；年度預算約 1,000 萬美元。\n\n白宮未回應匯報安排的具體問題，只表示已成立「Super Intelligence Force」並會維持美國在 AI 領域的領導。由於安排未有正式文件公開，現階段可確認的是 AP 的可靠調查報道及中心的領導、預算與報告狀況，不能把匿名消息視為政府已公布的新架構。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Axios",
     "sourceUrl": "https://www.axios.com/2026/10/09/anthropic-ai-security-white-house",
     "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-10-ai-compute-shortage-talent-allocation-wsj",
-    "title": "AI 算力愈來愈緊：資源分配開始左右人才與初創去向",
-    "summary": "《華爾街日報》10 月 10 日報道，AI 算力供應緊張正令競爭對手尋求合作，也令企業高層親自介入資源分配。報道以 Google AI 研究員 Noam Shazeer 為例：他的團隊被削減算力配額後不久，他轉往 OpenAI；初創則要面對昂貴的前置合約和供應不穩等問題。\\n\\n這反映 AI 競爭的瓶頸不只在資金或模型人才，能否及時取得可靠 GPU 叢集也會影響研究排期、產品成本與人事流動。報道中的個案不代表整個市場，但企業規劃 AI 專案時，已不能只按模型能力估算交付時間。",
-    "category": "AI 基建",
-    "publishedAt": "2026-10-10T05:00:00Z",
-    "sourceLabel": "The Wall Street Journal",
-    "sourceUrl": "https://www.wsj.com/tech/ai/ai-computing-power-demand-a63da9b9",
-    "level": "update",
     "verified": true,
     "active": false
   }
