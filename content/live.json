@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-09-google-tpu-8tx-8i-max-report",
+    "title": "據報 Google 推 TPU 8tx、8i Max：分攻機密運算與長 context AI",
+    "summary": "Reuters 引述 Bloomberg News 11 月 9 日報道，Google 正引入兩個第八代 TPU 的重配置版本。TPU 8tx 針對政府及受規管行業需要的安全、機密工作負載；TPU 8i Max 則面向需要長 context window 的 AI 應用。Google AI 基建首席技術官 Amin Vahdat 向 Bloomberg 表示，兩者並非全新晶片，而是按客戶需求調整的配置。\n\nAlphabet 未即時回應 Reuters 查詢，Reuters 亦未能獨立核實報道；目前未見 Google 公開產品頁交代售價、供應地區或正式上線時間。已確認的背景是 Google 早前推出 TPU 8t 與 8i，並逐步把自研 TPU 向外部雲端客戶開放。下一步要看 Google 官方規格、可用區域及機密運算認證。",
+    "category": "AI 晶片與雲端基建",
+    "publishedAt": "2026-11-09T12:39:57Z",
+    "sourceLabel": "Reuters／Bloomberg News",
+    "sourceUrl": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-09-south-korea-nvidia-gpu-supply-followup",
     "title": "南韓稱 NVIDIA 風波不影響已簽約 GPU 供應，2026 年交付維持計劃",
     "summary": "南韓科學技術情報通信部第二次官 Ryu Jemyung 11 月 9 日在國會預算委員會表示，預期與 NVIDIA 已簽約的 GPU 生產及交付不會受公司行政總裁黃仁勳相關調查風波影響。以 2025 年追加預算購入的 10,000 顆 GPU 已運抵並投入使用；2026 年批次亦已簽約，預計年內投入運作，當局正與 NVIDIA Korea 商討價格及交付時間。\n\n這是南韓政府對合約執行情況的最新評估，不代表 NVIDIA 董事會調查已有結論。Kakao Mobility 表示合作協議照常，NVIDIA AI Day Seoul 亦按計劃舉行；下一步要核實的是實際交付數量、時間及價格有否變動。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-14T22:27:00Z",
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/business/finance/anthropics-q3-revenue-surges-45-nearly-17-billion-2026-10-14/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-14-eight-states-openai-child-safety-lawsuits",
-    "title": "八個美國州起訴 OpenAI：指控 ChatGPT 危害兒童安全",
-    "summary": "八個州的總檢察長於 10 月 14 日分別在州法院起訴 OpenAI，指控 ChatGPT 誤導用戶相信產品安全，並可能鼓勵未成年人自殘或傷害他人；訴訟要求公司改變產品對年輕用戶的運作方式，亦尋求民事罰款及賠償。這是目前多州對 AI 公司採取的最具規模協同行動之一，但所有指控仍待法院審理，並非已裁定的事實。\\n\\nOpenAI 向《衛報》表示，產品已有按年齡設計的防護、家長控制及其他保障，並會繼續改善。案件把兒童使用 AI 的安全設計、年齡驗證和企業責任推上法律前線；判決及後續和解可能影響其他 AI 產品的設計與監管標準。",
-    "category": "AI 法律與安全",
-    "publishedAt": "2026-10-14T18:46:44Z",
-    "sourceLabel": "Reuters / The Guardian",
-    "sourceUrl": "https://www.reuters.com/world/eight-us-states-sue-openai-claiming-chatgpt-harms-children-2026-10-14/",
     "level": "breaking",
     "verified": true,
     "active": false
