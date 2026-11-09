@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-09-disney-adobe-custom-ai-models",
+    "title": "Disney、Adobe 共建專屬生成式 AI 模型，延伸至園區、影視與 ESPN 工作流",
+    "summary": "Disney 與 Adobe 11 月 9 日公布多年策略合作，會透過 Adobe Firefly Foundry 建立按 Disney 角色、場景及視覺風格調校的私有生成式 AI 模型。Disney Imagineering 已把自訂圖像模型及「手繪草圖轉概念圖」工具用於主題樂園設計；合作亦會延伸至 Walt Disney Studios 的 StudioLAB，以及 ESPN 的內容與球迷互動工作。\n\nAdobe 表示模型以 Disney 自有素材及知識調校，目標是產出可供製作使用、符合品牌的內容。Disney 稱工具用來加快創作迭代而非取代 Imagineering 職位；不過公司未公布模型訓練資料範圍、創作者審批流程、成本或量化成效。下一步要看實際製作案例、權利管理與人工把關機制。",
+    "category": "AI 創作與媒體",
+    "publishedAt": "2026-11-09T13:08:00Z",
+    "sourceLabel": "Adobe 官方公告／Reuters",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/disney-adobe-co-develop-custom-ai-models-tailored-media-giant-2026-11-09/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-09-apple-intelligence-china-tablet-laptop-registration",
+    "title": "Apple Intelligence 在中國新增平板與手提電腦備案，覆蓋範圍擴至 iPad、Mac",
+    "summary": "上海網信部門 11 月 9 日表示，Apple Intelligence 生成式 AI 服務已完成新增蘋果平板及手提電腦兩類使用場景的備案。中國規定面向公眾的大模型及生成式 AI 服務推出前須完成備案；Apple 早前已獲准在 iPhone 上推出相關服務。\n\nReuters 報道，Apple 為中國市場與阿里巴巴合作訓練模型，Qwen 將支援 Siri、Writing Tools 及視覺智能的文字、圖像理解與內容生成。阿里巴巴早前稱相關功能計劃隨 iOS 27.3 於 12 月推出，但今次備案本身不等於功能已即時開放；正式裝置清單、地區限制及資料處理細節仍待 Apple 公布。",
+    "category": "AI 產品與監管",
+    "publishedAt": "2026-11-09T11:47:00Z",
+    "sourceLabel": "Reuters／上海網信部門",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/apple-intelligence-ai-service-registers-with-chinese-regulator-use-tablets-2026-11-09/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-09-google-tpu-8tx-8i-max-report",
     "title": "據報 Google 推 TPU 8tx、8i Max：分攻機密運算與長 context AI",
     "summary": "Reuters 引述 Bloomberg News 11 月 9 日報道，Google 正引入兩個第八代 TPU 的重配置版本。TPU 8tx 針對政府及受規管行業需要的安全、機密工作負載；TPU 8i Max 則面向需要長 context window 的 AI 應用。Google AI 基建首席技術官 Amin Vahdat 向 Bloomberg 表示，兩者並非全新晶片，而是按客戶需求調整的配置。\n\nAlphabet 未即時回應 Reuters 查詢，Reuters 亦未能獨立核實報道；目前未見 Google 公開產品頁交代售價、供應地區或正式上線時間。已確認的背景是 Google 早前推出 TPU 8t 與 8i，並逐步把自研 TPU 向外部雲端客戶開放。下一步要看 Google 官方規格、可用區域及機密運算認證。",
@@ -692,30 +716,6 @@
     "sourceLabel": "OpenAI",
     "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-15-ftc-openai-anthropic-consumer-harms-subpoenas",
-    "title": "FTC 向 OpenAI、Anthropic 發民事傳票：調查 AI 安全事故與消費者傷害",
-    "summary": "Axios 與 Reuters 報道，美國聯邦貿易委員會（FTC）已向 OpenAI 和 Anthropic 發出民事調查傳票，要求交出涉及模型安全事故的文件；調查焦點是潛在消費者保護違規。這代表 FTC 早前啟動的 AI 安全風險調查進一步升級，傳票可用於蒐集證據，並不等同已認定任何公司違法。\n\n目前公開報道未披露完整的索取文件範圍、回覆期限或最終執法決定。對兩家公司而言，後續重點將是如何交代事故紀錄、風險揭露及產品保護措施；對整個行業，事件也提高了 Agent 實際行動與消費者保障被納入傳統監管框架審查的可能性。",
-    "category": "AI 政策與安全",
-    "publishedAt": "2026-10-15T09:00:00Z",
-    "sourceLabel": "Reuters / Axios",
-    "sourceUrl": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
-    "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-14-anthropic-q3-revenue-ipo-reuters",
-    "title": "Anthropic 第三季收入升至 168 億美元：IPO 前要證明增長跑贏算力成本",
-    "summary": "Reuters 引述投資者會議與會者報道，Anthropic 第三季收入按季增長 45%，由 116 億美元升至 168 億美元；有與會者稱公司按調整後口徑錄得盈利。這些數字來自會議披露及與會者說法，並非經審計公開業績，正式財務口徑仍要等招股文件。\\n\\n公司同時承諾未來十年逾 5,180 億美元雲端、算力及基建開支，並據報尋求超過 2 萬億美元估值。這場可能早於 OpenAI 的大型 AI IPO，將讓市場首次更仔細檢視模型收入、推理成本與算力長約是否可持續。",
-    "category": "AI 商業",
-    "publishedAt": "2026-10-14T22:27:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/finance/anthropics-q3-revenue-surges-45-nearly-17-billion-2026-10-14/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
