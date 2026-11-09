@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-09-south-korea-nvidia-gpu-supply-followup",
+    "title": "南韓稱 NVIDIA 風波不影響已簽約 GPU 供應，2026 年交付維持計劃",
+    "summary": "南韓科學技術情報通信部第二次官 Ryu Jemyung 11 月 9 日在國會預算委員會表示，預期與 NVIDIA 已簽約的 GPU 生產及交付不會受公司行政總裁黃仁勳相關調查風波影響。以 2025 年追加預算購入的 10,000 顆 GPU 已運抵並投入使用；2026 年批次亦已簽約，預計年內投入運作，當局正與 NVIDIA Korea 商討價格及交付時間。\n\n這是南韓政府對合約執行情況的最新評估，不代表 NVIDIA 董事會調查已有結論。Kakao Mobility 表示合作協議照常，NVIDIA AI Day Seoul 亦按計劃舉行；下一步要核實的是實際交付數量、時間及價格有否變動。",
+    "category": "AI 晶片與供應鏈",
+    "publishedAt": "2026-11-09T02:27:00Z",
+    "sourceLabel": "Reuters／南韓科學技術情報通信部",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/south-korea-says-nvidia-issues-wont-affect-contracted-gpu-supplies-2026-11-09/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-09-rba-ai-productivity-financial-stability",
     "title": "澳洲央行：AI 暫未顯著推高整體生產力，投資回報不足或觸發市場急速重估",
     "summary": "澳洲儲備銀行助理行長 Sarah Hunter 在 11 月 9 日演說指出，目前只有有限證據顯示 AI 已實質提升整體生產力，亦未見廣泛就業衝擊；不過，較受 AI 影響的職業已出現招聘廣告及就業表現轉弱的初步跡象，年輕工作者尤其值得留意。\n\n她表示，數據中心等 AI 基建投資短期可增加需求及通脹壓力；長遠若生產力提升，供應才可能追上。若 AI 投資回報低於預期，資產價格或出現急速甚至失序調整。這是央行的風險框架與現況判斷，不是預測市場必然下跌。",
@@ -57,7 +69,7 @@
     "sourceUrl": "https://www.reuters.com/business/media-telecom/softbank-abb-explore-china-carve-out-salvage-robotics-deal-bloomberg-news-2026-11-07/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-03-crowdstrike-ai-kill-switch",
@@ -69,7 +81,7 @@
     "sourceUrl": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-introduces-ai-kill-switch-ai-safety/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-03-cognizant-ai-india-gdp-study",
@@ -81,7 +93,7 @@
     "sourceUrl": "https://news.cognizant.com/2026-110-03-Cognizant-study-says-productivity-gains-from-AI-could-expand-Indias-GDP",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-03-openai-grid-protectors",
@@ -93,7 +105,7 @@
     "sourceUrl": "https://openai.com/index/grid-protectors-program/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-03-openai-pando-git-backend",
@@ -105,7 +117,7 @@
     "sourceUrl": "https://openai.com/index/scaling-git-at-openai/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-03-openai-security-sprint-cathedral",
@@ -117,7 +129,7 @@
     "sourceUrl": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-03-openai-bug-bounty-increase",
@@ -129,7 +141,7 @@
     "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-03-etsi-tta-ttc-ai-standards",
@@ -141,7 +153,7 @@
     "sourceUrl": "https://www.etsi.org/newsroom/press-releases/etsi-ttc-and-tta-explore-new-global-partnership-for-standardisation-in-artificial-intelligence/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-02-hsbc-hong-kong-ai-institute",
@@ -153,7 +165,7 @@
     "sourceUrl": "https://www.about.hsbc.com.hk/zh-hk/news-and-media/hsbc-announces-ai-and-emerging-technology-institute-at-hong-kong-fintech-week",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-02-china-embodied-ai-brain-race",
@@ -164,7 +176,7 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/",
     "verified": true,
-    "active": true,
+    "active": false,
     "level": "update"
   },
   {
@@ -176,7 +188,7 @@
     "sourceLabel": "韓國產業通商資源部／Reuters",
     "sourceUrl": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view?mno=&pageIndex=1",
     "verified": true,
-    "active": true,
+    "active": false,
     "level": "update"
   },
   {
@@ -188,7 +200,7 @@
     "sourceLabel": "Irregular／Reuters",
     "sourceUrl": "https://www.irregular.com/research/glm-5.3-multi-stage-cyber-operations-and-instruction-violations",
     "verified": true,
-    "active": true,
+    "active": false,
     "level": "update"
   },
   {
@@ -200,7 +212,7 @@
     "sourceLabel": "Google 官方網誌",
     "sourceUrl": "https://blog.google/innovation-and-ai/technology/health/google-for-health-summit-singapore/",
     "verified": true,
-    "active": true,
+    "active": false,
     "level": "update"
   },
   {
@@ -212,7 +224,7 @@
     "sourceLabel": "Google 官方網誌",
     "sourceUrl": "https://blog.google/innovation-and-ai/technology/health/google-ai-for-healthcare-professionals-certificate/",
     "verified": true,
-    "active": true,
+    "active": false,
     "level": "update"
   },
   {
@@ -224,7 +236,7 @@
     "sourceLabel": "Microsoft Investor Relations／Reuters",
     "sourceUrl": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
     "verified": true,
-    "active": true,
+    "active": false,
     "level": "update"
   },
   {
@@ -236,7 +248,7 @@
     "sourceLabel": "Alphabet SEC Filing／Reuters",
     "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
     "verified": true,
-    "active": true,
+    "active": false,
     "level": "update"
   },
   {
@@ -285,7 +297,7 @@
     "sourceUrl": "https://www.reuters.com/world/china/ai-chips-worth-121-million-seized-malaysia-airport-customs-authority-says-2026-10-28/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-10-28-liquid-ai-lfm3-open-multimodal-models",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters / The Guardian",
     "sourceUrl": "https://www.reuters.com/world/eight-us-states-sue-openai-claiming-chatgpt-harms-children-2026-10-14/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-14-anthropic-us-midterms-election-safeguards",
-    "title": "Anthropic 加強美國中期選舉防護：封禁假新聞帳戶並接入官方投票資料",
-    "summary": "Anthropic 表示，已針對 2026 年美國中期選舉加強 Claude 的濫用偵測與防護。公司抽樣分析 25 萬段美國 Claude.ai 對話後稱，約 5.75% 涉及政治、公共政策或社會議題，約 0.51% 直接涉及選舉或投票；違反選舉誠信政策的要求則只佔約 0.002%。公司亦稱曾發現境外假新聞網站營運者利用 Claude 製作偏向俄羅斯、伊朗及北韓敘事的美國中期選舉內容，相關帳戶已被封禁。\n\n面向一般用戶，Claude.ai 將繼續連結非黨派機構 Democracy Works 的 TurboVote 資訊，並計劃在本月稍後把州級官方投票資料及選舉結果直接帶入回應。這是公司自述的防護與執法措施，成效仍有待獨立檢驗；不過它反映前沿模型公司正把選舉完整性、資訊來源與多步驟濫用偵測，當作產品層面的持續工作。",
-    "category": "AI 政策與安全",
-    "publishedAt": "2026-10-14T09:00:00Z",
-    "sourceLabel": "Anthropic",
-    "sourceUrl": "https://www.anthropic.com/news/2026-us-midterms",
-    "level": "update",
     "verified": true,
     "active": false
   }
