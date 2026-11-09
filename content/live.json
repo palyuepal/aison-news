@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-09-anthropic-claude-fable-mythos-5-2",
+    "title": "Anthropic 推 Claude Fable 5.2、Mythos 5.2：技術工作更快兼降價",
+    "summary": "Anthropic 11 月 9 日推出 Claude Fable 5.2 與 Claude Mythos 5.2，兩者採用相同底層模型，主攻複雜編程、推理、AI Agent、科學與工程工作。公司稱新版本輸出速度較 5.1 最多快 30%，API 定價降至每百萬輸入 token 8 美元、輸出 token 40 美元；另設最多快 2.5 倍、價格加倍的 fast mode。\n\nFable 5.2 已在 Claude 平台、AWS、Google Cloud 及 Microsoft Azure 等渠道提供；Mythos 5.2 則只開放予通過網絡安全或生命科學驗證的機構。Anthropic 公布多項內部測試成績，但這些能力主張仍需更多獨立、真實工作負載驗證；香港開發團隊最值得比較的是實際代理任務成功率、總 token 成本與延遲。",
+    "category": "AI 模型與開發工具",
+    "publishedAt": "2026-11-09T20:21:05Z",
+    "sourceLabel": "Anthropic 官方公告／Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/anthropic-unveils-new-fable-mythos-models-competition-heats-up-ahead-ipo-2026-11-09/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-09-spacex-starbase-ai-power-supercompute",
+    "title": "SpaceX 擬斥約 240 億美元建 Starbase 燃氣發電與超算設施",
+    "summary": "Reuters 根據公開聽證通知報道，SpaceX 計劃在美國德州 Starbase 興建燃氣發電廠及超級運算設施，首階段估計資本投資約 240 億美元，並已申請物業稅減免。SpaceX 會自行建造、持有及營運設施；Starbase 市委會預計 12 月 9 日審議稅務減免及相關發展協議。\n\n文件未披露發電容量、運算設施規模、稅務優惠金額或項目時間表，240 億美元亦是計劃中的估算而非已落實支出。SpaceX 今年較早前收購 xAI，並向 Google、Anthropic 等出租算力；今次計劃反映大型 AI 基建正嘗試以自建能源繞過電網接駁等待，但環境、審批及融資風險仍需觀察。",
+    "category": "AI 基建與能源",
+    "publishedAt": "2026-11-09T19:56:00Z",
+    "sourceLabel": "Reuters／公開聽證通知",
+    "sourceUrl": "https://www.reuters.com/legal/transactional/spacex-plans-24-billion-gas-power-plant-data-center-project-texas-2026-11-09/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-09-disney-adobe-custom-ai-models",
     "title": "Disney、Adobe 共建專屬生成式 AI 模型，延伸至園區、影視與 ESPN 工作流",
     "summary": "Disney 與 Adobe 11 月 9 日公布多年策略合作，會透過 Adobe Firefly Foundry 建立按 Disney 角色、場景及視覺風格調校的私有生成式 AI 模型。Disney Imagineering 已把自訂圖像模型及「手繪草圖轉概念圖」工具用於主題樂園設計；合作亦會延伸至 Walt Disney Studios 的 StudioLAB，以及 ESPN 的內容與球迷互動工作。\n\nAdobe 表示模型以 Disney 自有素材及知識調校，目標是產出可供製作使用、符合品牌的內容。Disney 稱工具用來加快創作迭代而非取代 Imagineering 職位；不過公司未公布模型訓練資料範圍、創作者審批流程、成本或量化成效。下一步要看實際製作案例、權利管理與人工把關機制。",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-10-20T00:57:00Z",
     "sourceLabel": "GitHub Changelog",
     "sourceUrl": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-20-openai-fundraise-before-anthropic-ipo",
-    "title": "Reuters：OpenAI 擬加快約 300 億美元融資，估值或逾 1.4 兆美元",
-    "summary": "Reuters 引述兩名知情人士報道，OpenAI 正加快約 300 億美元融資，目標是在 Anthropic 預期 11 月 IPO 前取得投資承諾；本輪估值可能超過 1.4 兆美元，SoftBank、MGX 等現有支持者據報正磋商參與。這些金額與時間表仍是消息人士披露，OpenAI、SoftBank 拒絕評論，Anthropic 及 MGX 未即時回應，並非已完成交易。\n\n報道亦稱 OpenAI 向投資者表示年化收入已達 500 億美元，並預期年底增至 700 億美元；此為公司向投資者提供的數字，尚非公開審計財報。融資提速凸顯前沿 AI 公司爭奪資本及算力資金的壓力，亦令市場更需要比較收入確認方式、基建承諾與估值假設。",
-    "category": "AI 融資與產業",
-    "publishedAt": "2026-10-19T23:18:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say-2026-10-19/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-15-openai-rosalind-academic-plan",
-    "title": "OpenAI 推 Rosalind Academic Plan：美國大學實驗室可申請免費生命科學 AI 方案",
-    "summary": "OpenAI 推出 Rosalind Academic Plan，讓合資格的美國大學實驗室申請最長 12 個月、最多 30 個免費 ChatGPT Business Standard 帳戶，並可在審批後使用專為生命科學研究設計的 GPT-Rosalind 與 Rosalind Workbench。公司稱方案涵蓋藥物與蛋白設計、基因組學、實驗室輔助等研究工作；API 存取目前不包括在內。\n\nGPT-Rosalind 的使用仍受 trusted-access 審批，研究資料預設不會用於訓練模型。這並非通用模型向所有人開放，而是把高風險生物研究能力放在研究機構、身分核實及權限管理之內；實際價值要看獲批範圍、研究產出與安全審查能否同時落地。",
-    "category": "AI 科研與醫療",
-    "publishedAt": "2026-10-15T16:00:00Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
     "level": "update",
     "verified": true,
     "active": false
