@@ -53,19 +53,22 @@
     const results=modal.querySelector('#searchResults');
     const closeButton=modal.querySelector('#closeSearch');
     let timer,lastFocus=null;
+    const isOpen=()=>modal.classList.contains('open');
     const open=()=>{
+      if(isOpen()) return;
       lastFocus=document.activeElement instanceof HTMLElement?document.activeElement:null;
       modal.classList.add('open');
       modal.setAttribute('aria-hidden','false');
       renderLiteSearch(results,input?.value||'');
-      setTimeout(()=>input?.focus(),50);
+      (input||closeButton)?.focus();
     };
     const close=()=>{
+      if(!isOpen()) return;
+      const target=lastFocus?.isConnected&&lastFocus.getClientRects().length?lastFocus:searchTrigger;
+      target?.focus();
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden','true');
-      const target=lastFocus;
       lastFocus=null;
-      setTimeout(()=>target?.focus?.(),0);
     };
     searchTrigger?.addEventListener('click',open);
     heroSearch?.addEventListener('click',open);
@@ -76,8 +79,20 @@
       if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'){
         event.preventDefault();event.stopImmediatePropagation();open();return;
       }
-      if(event.key==='Escape'&&modal.classList.contains('open')){
-        event.stopImmediatePropagation();close();
+      if(!isOpen()) return;
+      if(event.key==='Escape'){
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        close();
+        return;
+      }
+      if(event.key!=='Tab') return;
+      const controls=[...modal.querySelectorAll('a[href],button,input')]
+        .filter(control=>control.tabIndex>=0&&!control.matches(':disabled')&&control.getClientRects().length);
+      const current=controls.indexOf(document.activeElement);
+      if(current===-1||(event.shiftKey?current===0:current===controls.length-1)){
+        event.preventDefault();
+        (event.shiftKey?controls.at(-1):controls[0])?.focus();
       }
     },true);
   }

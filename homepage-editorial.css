@@ -1,4 +1,5 @@
-/* AIson front page — open editorial newspaper treatment */
+/* Hallmark · genre: editorial · redesign: restyle · theme: AIson brand · entry: index.html */
+/* Lead with the top story and place live headlines on a separate, ruled surface. */
 body[data-page="home"] {
   --paper:#F3F7FC; --paper-bright:#FFFFFF; --ink:#0B2345; --muted-ink:#566B85;
   --rule:#DCE5F0; --accent:#0F3D73; --gold:#F6C547;
@@ -226,3 +227,143 @@ body[data-page="home"].b2-ready #today .section-head {border-color:var(--ink)}
 
 /* Keep the duplicated marquee tracks at their full content width so the loop has no overlap. */
 body[data-page="home"].b2-ready .b2-ticker-track {flex:0 0 max-content;width:max-content;min-width:max-content}
+
+/* Keep the lead story and the live desk on the same editorial grid. */
+:root {
+  --front-surface: #fbfdff;
+  --front-rule: #bdccdd;
+  --front-live: #edf3fa;
+  --front-action: #0b2345;
+  --front-action-text: #fbfdff;
+  --front-focus: #1564b3;
+}
+:root[data-theme="dark"] {
+  --front-surface: #101f34;
+  --front-rule: #4b6280;
+  --front-live: #182b44;
+  --front-action: #ffd45e;
+  --front-action-text: #0b2345;
+  --front-focus: #ffd45e;
+}
+html:has(body[data-page="home"]),
+body[data-page="home"] {
+  overflow-x: clip;
+}
+html body[data-page="home"].b2-ready .b2-front,
+html[data-theme="dark"] body[data-page="home"].b2-ready .b2-front {
+  background: var(--front-surface) !important;
+  border-bottom: 1px solid var(--front-rule);
+}
+body[data-page="home"].b2-ready .b2-front-grid,
+body[data-page="home"].b2-ready .b2-major .b2-front-grid {
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(24px, 5vw, 64px);
+  padding-block: clamp(26px, 4vw, 52px);
+}
+body[data-page="home"].b2-ready .b2-front-copy {
+  min-width: 0;
+}
+body[data-page="home"].b2-ready .b2-editor-mark {
+  margin: 0 0 12px;
+}
+body[data-page="home"].b2-ready .b2-kicker {
+  margin-inline-start: 12px;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+body[data-page="home"].b2-ready .b2-front h2 {
+  font-size: clamp(29px, 4.1vw, 56px);
+  line-height: 1.17;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+body[data-page="home"].b2-ready .b2-dek {
+  font-size: 16px;
+  line-height: 1.65;
+}
+body[data-page="home"].b2-ready :is(.b2-primary, .b2-secondary) {
+  min-height: 44px;
+  padding: 8px 0;
+  font-size: 14px;
+}
+body[data-page="home"].b2-ready .b2-primary,
+html[data-theme="dark"] body[data-page="home"].b2-ready .b2-front .b2-primary {
+  padding-inline: 16px;
+  border: 0;
+  background: var(--front-action) !important;
+  color: var(--front-action-text) !important;
+}
+body[data-page="home"].b2-ready .b2-byline {
+  font-size: 13px;
+}
+html body[data-page="home"].b2-ready .b2-pulse,
+html[data-theme="dark"] body[data-page="home"].b2-ready .b2-pulse {
+  border: 0 !important;
+  border-top: 3px solid var(--gold) !important;
+  border-radius: 0;
+  padding: 18px clamp(14px, 2vw, 24px);
+  background: var(--front-live) !important;
+}
+body[data-page="home"].b2-ready .b2-pulse-head,
+body[data-page="home"].b2-ready .b2-pulse-head a {
+  font-size: 13px;
+  letter-spacing: normal;
+}
+body[data-page="home"].b2-ready .b2-top-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+body[data-page="home"].b2-ready .b2-top-card .b2-card-media {
+  aspect-ratio: 16 / 10;
+}
+body[data-page="home"].b2-ready .b2-top-card h3,
+body[data-page="home"].b2-ready #today h3 {
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+body[data-page="home"].b2-ready .b2-top-card p {
+  font-size: 15px;
+}
+body[data-page="home"].b2-ready :is(#today, #aison-live, #newsletter, #main-content, :focus-visible) {
+  scroll-margin-block-start: 90px;
+}
+body[data-page="home"].b2-ready :focus-visible {
+  outline: 2px solid var(--front-focus);
+  outline-offset: 3px;
+}
+body[data-page="home"] #closeSearch {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+@media (max-width: 760px) {
+  body[data-page="home"].b2-ready .b2-front-grid,
+  body[data-page="home"].b2-ready .b2-major .b2-front-grid,
+  body[data-page="home"].b2-ready .b2-top-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body[data-page="home"].b2-ready .b2-kicker {
+    margin-inline-start: 0;
+  }
+  body[data-page="home"].b2-ready :is(#today .section-head, .b2-section-head) {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+  body[data-page="home"].b2-ready #today .edition-link {
+    white-space: normal;
+    padding-top: 0;
+  }
+}
+
+body[data-page="home"] [hidden],
+body[data-page="home"].b2-ready #newsGrid .news-card[hidden] {
+  display: none !important;
+}
+
+body[data-page="home"].b2-ready .live-panel :is(a.live-source, a.live-timeline-link) {
+  background: var(--front-action);
+  color: var(--front-action-text) !important;
+  padding: 3px 7px;
+}
