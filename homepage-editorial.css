@@ -666,3 +666,35 @@ body[data-page="home"].b2-ready #today .newsroom-newsletter {
   color: var(--desk-muted);
   opacity: 1;
 }
+
+body[data-page="home"] .b2-mobile-jumps {
+  display: none;
+}
+body[data-page="home"] :is(#b2RankingTitle, #b2LiveTitle) {
+  scroll-margin-block-start: 110px;
+}
+body[data-page="home"].b2-ready .b2-top-card:first-child {
+  align-items: center;
+}
+body[data-page="home"].b2-ready .b2-top-card:first-child h3 {
+  margin-block: 0;
+}
+
+@media (max-width: 760px) {
+  body[data-page="home"] .b2-mobile-jumps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+    border-bottom: 1px solid var(--desk-rule);
+  }
+  body[data-page="home"] .b2-mobile-jumps a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--desk-accent);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

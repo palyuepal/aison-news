@@ -233,22 +233,22 @@
     const stories=news.slice(0,3);
     return `<section class="b2-top-three"><div class="container b2-desk">
       <div class="b2-ranking">
-        <div class="b2-section-head"><h2>今日新聞排行榜</h2><a href="daily.html">查看完整排行</a></div>
+        <div class="b2-section-head"><h2 id="b2RankingTitle" tabindex="-1">今日新聞排行榜</h2><a href="daily.html">查看完整排行</a></div>
         <div class="b2-top-grid">
           ${stories.map((n,index)=>`<a class="b2-top-card" href="${url(n)}">
             <b class="b2-rank-number">${String(index+1).padStart(2,'0')}</b>
             <div class="b2-card-copy">
-              <div class="b2-story-meta"><span>${esc(n.category||'AI 新聞')}</span>${n.verified?'<span>已核實</span>':''}</div>
+              ${index>0?`<div class="b2-story-meta"><span>${esc(n.category||'AI 新聞')}</span>${n.verified?'<span>已核實</span>':''}</div>`:''}
               <h3>${esc(n.title)}</h3>
-              <p>${esc(brief(n.quickTake||n.summary||n.excerpt,160))}</p>
-              <div class="b2-card-foot"><span>${esc(n.readTime||'閱讀重點')}</span><time>${esc(fmt(n.date))}</time></div>
+              ${index>0?`<p>${esc(brief(n.quickTake||n.summary||n.excerpt,160))}</p>
+              <div class="b2-card-foot"><span>${esc(n.readTime||'閱讀重點')}</span><time>${esc(fmt(n.date))}</time></div>`:''}
             </div>
             ${index>0&&visual(n)?`<img class="b2-rank-thumbnail" src="${esc(n.visual.src)}" alt="" loading="lazy" decoding="async">`:''}
           </a>`).join('')}
         </div>
       </div>
       <aside class="b2-pulse" aria-labelledby="b2LiveTitle">
-        <div class="b2-pulse-head"><h2 id="b2LiveTitle">AIson LIVE</h2><a href="live.html">查看時間線</a></div>
+        <div class="b2-pulse-head"><h2 id="b2LiveTitle" tabindex="-1">AIson LIVE</h2><a href="live.html">查看時間線</a></div>
         ${pulseMarkup()}
       </aside>
     </div></section>`;
@@ -287,6 +287,10 @@
       <div class="b2-util"><div class="container">
         <span>AIson 編輯台</span><span>${esc(fmt(lead.date))}｜香港</span>
       </div></div>
+      <nav class="container b2-mobile-jumps" aria-label="首頁快速跳轉">
+        <a href="#b2RankingTitle">跳到排行榜</a>
+        <a href="#b2LiveTitle">跳到 LIVE</a>
+      </nav>
       <div class="container b2-front-grid">
         <div class="b2-front-copy">
           <div class="b2-byline">
