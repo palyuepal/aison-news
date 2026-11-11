@@ -220,29 +220,52 @@
   const brief=(value='',limit=155)=>{const s=String(value||'').replace(/\s+/g,' ').trim();return s.length>limit?s.slice(0,limit).replace(/[，。；、\s]+$/,'')+'…':s};
   const url=n=>'news/'+encodeURIComponent(n.id)+'.html';
   const visual=n=>n&&n.visual&&typeof n.visual==='object'&&n.visual.src?n.visual:null;
-  const mediaFallback=n=>{const tags=(n.tags||[]).filter(Boolean).slice(0,2).join(' · ');return '<span class="story-media-fallback"><i aria-hidden="true"></i><small>AIson NEWS · EMERGENCY VISUAL</small><b>'+esc(n.category||'AI NEWS')+'</b><em>'+esc(tags||'TOP STORY')+'</em></span>'};
-  function cardMedia(n,className='b2-card-media',eager=false){
-    const v=visual(n);
-    if(!v)return '<div class="'+className+' is-editorial-fallback">'+mediaFallback(n)+'</div>';
-    const rawAlt=String(v.alt||'').trim(),title=String(n.title||'').trim();
-    const alt=rawAlt&&rawAlt.length<=80&&(!title||!rawAlt.includes(title))?rawAlt:'AIson '+(n.category||'新聞')+'編輯配圖';
-    return '<div class="'+className+'" data-image-kind="'+esc(v.kind||'story')+'"><img src="'+esc(v.src)+'" alt="'+esc(alt)+'" loading="'+(eager?'eager':'lazy')+'" decoding="async">'+mediaFallback(n)+'</div>';
-  }
-
-  function pulseMarkup(news){
+  function pulseMarkup(){
     const live=[...document.querySelectorAll('#liveList .live-item')].slice(0,3).map(item=>({
       time:item.querySelector('.live-time')?.textContent?.trim()||'LIVE',
       title:item.querySelector('h4')?.textContent?.trim()||'AIson LIVE 更新'
     })).filter(x=>x.title);
-    const rows=live.length?live:news.slice(1,4).map((n,index)=>({time:'0'+(index+1),title:n.title}));
-    return rows.map(row=>'<div class="b2-pulse-row"><time>'+esc(row.time)+'</time><p>'+esc(row.title)+'</p></div>').join('');
+    if(!live.length) return '<p class="b2-pulse-empty">暫時未有即時更新。</p>';
+    return live.map(row=>'<div class="b2-pulse-row"><time>'+esc(row.time)+'</time><p>'+esc(row.title)+'</p></div>').join('');
   }
 
   function topThree(news){
     const stories=news.slice(0,3);
-    return '<section class="b2-top-three"><div class="container"><div class="b2-section-head"><div><small>TODAY\'S TEN · EDITOR\'S RANKING</small><h2>今日 AI，一頁睇晒</h2></div><a href="daily.html">完整每日 Story Flow →</a></div><div class="b2-top-grid">'+
-      stories.map((n,index)=>'<a class="b2-top-card" href="'+url(n)+'">'+cardMedia(n,'b2-card-media',index===0)+'<div class="b2-card-copy"><div class="b2-story-meta"><b>0'+(index+1)+'</b><span>'+esc(n.category||'AI NEWS')+'</span>'+(n.verified?'<span>✓ 已核實</span>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(brief(n.quickTake||n.summary||n.excerpt,160))+'</p><div class="b2-card-foot"><span>'+esc(n.readTime||'閱讀重點')+'</span><time>'+esc(fmt(n.date))+'</time></div><strong>閱讀完整報道 →</strong></div></a>').join('')+
-    '</div></div></section>';
+    return `<section class="b2-top-three"><div class="container b2-desk">
+      <div class="b2-ranking">
+        <div class="b2-section-head"><h2>今日新聞排行榜</h2><a href="daily.html">查看完整排行</a></div>
+        <div class="b2-top-grid">
+          ${stories.map((n,index)=>`<a class="b2-top-card" href="${url(n)}">
+            <b class="b2-rank-number">${String(index+1).padStart(2,'0')}</b>
+            <div class="b2-card-copy">
+              <div class="b2-story-meta"><span>${esc(n.category||'AI 新聞')}</span>${n.verified?'<span>已核實</span>':''}</div>
+              <h3>${esc(n.title)}</h3>
+              <p>${esc(brief(n.quickTake||n.summary||n.excerpt,160))}</p>
+              <div class="b2-card-foot"><span>${esc(n.readTime||'閱讀重點')}</span><time>${esc(fmt(n.date))}</time></div>
+            </div>
+            ${index>0&&visual(n)?`<img class="b2-rank-thumbnail" src="${esc(n.visual.src)}" alt="" loading="lazy" decoding="async">`:''}
+          </a>`).join('')}
+        </div>
+      </div>
+      <aside class="b2-pulse" aria-labelledby="b2LiveTitle">
+        <div class="b2-pulse-head"><h2 id="b2LiveTitle">AIson LIVE</h2><a href="live.html">查看時間線</a></div>
+        ${pulseMarkup()}
+      </aside>
+    </div></section>`;
+  }
+
+  function leadMedia(story){
+    const fallback=`<div class="b2-cover-fallback" aria-hidden="true">
+      <img src="assets/mascot.webp" alt="" width="96" height="96">
+      <span>AIson 編輯台</span><b>${esc(story.category||'AI 新聞')}</b>
+    </div>`;
+    const image=visual(story);
+    if(!image) return `<div class="b2-lead-visual">${fallback}</div>`;
+    return `<figure class="b2-lead-visual" data-image-kind="${esc(image.kind||'story')}">
+      <img class="b2-lead-image" src="${esc(image.src)}" alt="${esc(image.alt||'頭條配圖')}" fetchpriority="high" decoding="async">
+      ${fallback}
+      ${image.credit?`<figcaption>${esc(image.credit)}</figcaption>`:''}
+    </figure>`;
   }
 
   function init(){
@@ -260,32 +283,49 @@
       news.slice(1,10).map(n=>'<li>◆ '+esc(n.title)+'</li>').join('')+
       '</ul><button class="b2-ticker-toggle" type="button" aria-pressed="false">暫停快訊</button></div></section>':'';
 
-    root.innerHTML=
-      '<section class="b2-front b2-'+(major?'major':'normal')+'">'+
-        '<div class="b2-util"><div class="container"><span>'+esc(fmt(lead.date))+' · 香港</span><span class="b2-live-state"><i></i> AIson LIVE · 即時更新</span></div></div>'+
-        '<div class="container b2-front-grid">'+
-          '<div class="b2-front-copy">'+
-            '<div class="b2-editor-mark"><img src="assets/mascot.webp" alt="" width="42" height="42"><span><b>AIson 編輯台</b><small>01–10 依重要性排序</small></span></div>'+
-            '<div class="b2-kicker">AIson DAILY · STORY 01'+(major?' · MAJOR DAY':'')+'</div>'+
-            '<h2>'+esc(lead.title)+'</h2>'+
-            '<p class="b2-dek">'+esc(brief(lead.summary||lead.excerpt,235))+'</p>'+
-            '<div class="b2-actions"><a class="b2-primary" href="'+url(lead)+'">閱讀完整報道 →</a><a class="b2-secondary" href="daily.html">睇完整新聞排行榜</a></div>'+
-            '<div class="b2-byline">'+(lead.verified?'<span>✓ 已核實</span>':'')+(score?'<span>AIson Score '+score.toFixed(1)+' / 10</span>':'')+'<span>'+esc(lead.category||'AI NEWS')+'</span><span>'+esc(lead.readTime||'完整報道')+'</span></div>'+
-          '</div>'+
-          '<aside class="b2-pulse"><div class="b2-pulse-head"><span>● AIson LIVE</span><a href="live.html">進入 LIVE →</a></div>'+pulseMarkup(news)+'</aside>'+
-        '</div>'+
-      '</section>'+ticker+topThree(news);
+    root.innerHTML=`<section class="b2-front b2-${major?'major':'normal'}" aria-labelledby="b2LeadTitle">
+      <div class="b2-util"><div class="container">
+        <span>AIson 編輯台</span><span>${esc(fmt(lead.date))}｜香港</span>
+      </div></div>
+      <div class="container b2-front-grid">
+        <div class="b2-front-copy">
+          <div class="b2-byline">
+            <span>今日頭條</span><span>${esc(lead.category||'AI 新聞')}</span>
+            ${lead.verified?'<span>已核實</span>':''}
+            ${score?`<span>AIson Score ${score.toFixed(1)} / 10</span>`:''}
+            <span>${esc(lead.readTime||'完整報道')}</span>
+          </div>
+          <h2 id="b2LeadTitle">${esc(lead.title)}</h2>
+          <p class="b2-dek">${esc(brief(lead.summary||lead.excerpt,180))}</p>
+          <div class="b2-actions">
+            <a class="b2-primary" href="${url(lead)}">閱讀完整報道</a>
+            <a class="b2-secondary" href="daily.html">睇完整新聞排行榜</a>
+          </div>
+        </div>
+        ${leadMedia(lead)}
+      </div>
+    </section>`+ticker+topThree(news);
+
+    const leadImage=root.querySelector('.b2-lead-image');
+    if(leadImage){
+      const showFallback=()=>leadImage.parentElement.classList.add('is-image-unavailable');
+      leadImage.addEventListener('error',showFallback,{once:true});
+      if(leadImage.complete&&!leadImage.naturalWidth) showFallback();
+    }
 
     root.hidden=false;
+    root.querySelectorAll('.b2-rank-thumbnail').forEach(image=>{
+      const hideImage=()=>{image.hidden=true};
+      image.addEventListener('error',hideImage,{once:true});
+      if(image.complete&&!image.naturalWidth) hideImage();
+    });
     const tickerToggle=root.querySelector('.b2-ticker-toggle');
     tickerToggle?.addEventListener('click',()=>{const paused=tickerToggle.getAttribute('aria-pressed')!=='true';tickerToggle.setAttribute('aria-pressed',String(paused));tickerToggle.textContent=paused?'播放快訊':'暫停快訊';root.querySelector('.b2-ticker')?.classList.toggle('is-paused',paused)});
-    root.querySelectorAll('.b2-card-media img,.b2-side-media img').forEach(img=>img.addEventListener('error',()=>{const media=img.closest('.b2-card-media,.b2-side-media');if(media)media.classList.add('is-editorial-fallback')},{once:true}));
     document.body.classList.add('b2-ready',major?'b2-major-day':'b2-normal-day');
 
     const sectionHead=document.querySelector('#today .section-head');
     if(sectionHead){
-      const label=sectionHead.querySelector('.mini-label'), title=sectionHead.querySelector('h2');
-      if(label)label.textContent='ALL STORIES · EDITORIAL RANKING';
+      const title=sectionHead.querySelector('h2');
       if(title)title.textContent='更多新聞，按重要性排序';
     }
     [...document.querySelectorAll('#newsGrid .news-card')].forEach((card,index)=>{
@@ -300,7 +340,7 @@
       if(p)p.textContent='唔只逐條睇新聞：將今日事件串成三條值得追落去嘅脈絡。';
     }
     const liveTitle=document.querySelector('#aison-live .live-title');
-    if(liveTitle)liveTitle.lastChild.textContent='完整即時脈搏';
+    if(liveTitle)liveTitle.lastChild.textContent='即時新聞詳情';
   }
 
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(init,0),{once:true});

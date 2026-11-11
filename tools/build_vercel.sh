@@ -8,6 +8,7 @@ urlretrieve("https://raw.githubusercontent.com/google/fonts/main/ofl/notosanstc/
 PY
 export AISON_SOCIAL_FONT=/tmp/aison-noto-sans-tc.ttf
 uv run --with pillow python tools/enrich_official_visuals.py --limit 20
+uv run --with pillow python tools/ensure_top3_visuals.py
 uv run --with pillow python tools/build.py
 uv run --with pillow python tools/build_light_payloads.py
 uv run --with pillow python tools/patch_share_meta.py

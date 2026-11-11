@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import re
 import tempfile
 from pathlib import Path
@@ -64,8 +65,10 @@ def _find_font(candidates: Iterable[str]) -> str | None:
 
 
 def _font_factory(ImageFont):
-    regular = _find_font(FONT_REGULAR_CANDIDATES)
-    bold = _find_font(FONT_BOLD_CANDIDATES)
+    configured = os.environ.get("AISON_SOCIAL_FONT")
+    fallback = configured if configured and Path(configured).is_file() else None
+    regular = _find_font(FONT_REGULAR_CANDIDATES) or fallback
+    bold = _find_font(FONT_BOLD_CANDIDATES) or fallback
 
     def font(size: int, strong: bool = False):
         path = bold if strong else regular
@@ -171,27 +174,29 @@ def _wrap(draw, text: str, font, max_width: int, max_lines: int) -> list[str]:
     text = re.sub(r"\s+", " ", str(text or "")).strip()
     if not text:
         return []
+    def width(value: str) -> int:
+        return draw.textbbox((0, 0), value, font=font)[2]
+
     lines: list[str] = []
     current = ""
-    for ch in text:
-        test = current + ch
-        width = draw.textbbox((0, 0), test, font=font)[2]
-        if current and width > max_width:
-            lines.append(current)
-            current = ch
-            if len(lines) >= max_lines:
-                break
-        else:
-            current = test
-    if len(lines) < max_lines and current:
-        lines.append(current)
-    consumed = "".join(lines)
-    if len(consumed) < len(text) and lines:
-        last = lines[-1].rstrip("，。；、 ")
-        while last and draw.textbbox((0, 0), last + "…", font=font)[2] > max_width:
-            last = last[:-1]
-        lines[-1] = last + "…"
-    return lines[:max_lines]
+    tokens = re.findall(r"[A-Za-z0-9]+(?:[._/-][A-Za-z0-9]+)*|.", text)
+    for token in tokens:
+        parts = list(token) if width(token) > max_width else [token]
+        for part in parts:
+            candidate = current + part
+            if current and width(candidate) > max_width:
+                if len(lines) == max_lines - 1:
+                    last = current.rstrip("，。；、 ")
+                    while last and width(last + "…") > max_width:
+                        last = last[:-1]
+                    return [*lines, last + "…"]
+                lines.append(current.rstrip())
+                current = part.lstrip()
+            else:
+                current = candidate
+    if current.strip():
+        lines.append(current.rstrip())
+    return lines
 
 
 def _grid(draw):
