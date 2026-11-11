@@ -223,10 +223,11 @@
   function pulseMarkup(){
     const live=[...document.querySelectorAll('#liveList .live-item')].slice(0,3).map(item=>({
       time:item.querySelector('.live-time')?.textContent?.trim()||'LIVE',
+      href:item.dataset.timelineHref||'live.html',
       title:item.querySelector('h4')?.textContent?.trim()||'AIson LIVE 更新'
     })).filter(x=>x.title);
     if(!live.length) return '<p class="b2-pulse-empty">暫時未有即時更新。</p>';
-    return live.map(row=>'<div class="b2-pulse-row"><time>'+esc(row.time)+'</time><p>'+esc(row.title)+'</p></div>').join('');
+    return live.map(row=>'<div class="b2-pulse-row"><time>'+esc(row.time)+'</time><p><a href="'+esc(row.href)+'">'+esc(row.title)+'</a></p></div>').join('');
   }
 
   function topThree(news){

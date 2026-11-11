@@ -698,3 +698,9 @@ body[data-page="home"].b2-ready .b2-top-card:first-child h3 {
     text-underline-offset: 3px;
   }
 }
+
+body[data-page="home"] .b2-pulse-row p a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

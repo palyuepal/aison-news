@@ -56,8 +56,12 @@
   const today=hktKey(new Date());
   const todayItems=all.filter(item=>hktKey(item.publishedAt)===today);
   const developing=all.filter(item=>item.active!==false);
-  const stream=all.slice(0,24);
-  const archived=all.slice(24,32);
+  const anchorId=item=>item.id?`live-update-${item.id}`:'';
+  let requestedId='';
+  try{requestedId=decodeURIComponent(location.hash.slice(1))}catch{}
+  const requested=requestedId?all.find(item=>anchorId(item)===requestedId):null;
+  const stream=all.filter((item,index)=>index<24||item===requested);
+  const archived=all.slice(24,32).filter(item=>item!==requested);
   const followups=stream.filter(item=>levelOf(item)==='followup');
 
   const todayCount=document.getElementById('liveTodayCount');
@@ -85,7 +89,7 @@
     const story=item.threadId?'<span class="timeline-thread">同一事件持續更新</span>':'';
     const full=articleLink(item);
     const publishedLabel=dateOnly(item.publishedAt)?`${esc(hktTime(item.publishedAt))}（發布日）`:`${esc(hktTime(item.publishedAt))} HKT`;
-    return `<article class="timeline-item level-${level}${isDeveloping?' active':''}" data-live-level="${level}"><div class="timeline-node" aria-hidden="true"></div><div class="timeline-card"><div class="timeline-top"><div class="timeline-time">${publishedLabel} <small>${esc(relative(item.publishedAt))}</small></div><span class="timeline-badge ${level}">${meta.symbol} ${meta.label}</span></div><h3>${esc(item.title)}</h3><div class="timeline-summary">${paragraphs}</div><div class="timeline-foot"><span>${esc(item.category||'AI 快訊')} · ${verified}</span><span class="timeline-links">${full?`<a class="timeline-read" href="${full}">閱讀完整報道 →</a>`:''}${sourceLink(item)}</span></div>${story}</div></article>`;
+    return `<article class="timeline-item level-${level}${isDeveloping?' active':''}" data-live-level="${level}"><div class="timeline-node" aria-hidden="true"></div><div class="timeline-card"><div class="timeline-top"><div class="timeline-time">${publishedLabel} <small>${esc(relative(item.publishedAt))}</small></div><span class="timeline-badge ${level}">${meta.symbol} ${meta.label}</span></div><h3${item.id?` id="${esc(anchorId(item))}" tabindex="-1"`:''}>${esc(item.title)}</h3><div class="timeline-summary">${paragraphs}</div><div class="timeline-foot"><span>${esc(item.category||'AI 快訊')} · ${verified}</span><span class="timeline-links">${full?`<a class="timeline-read" href="${full}">閱讀完整報道 →</a>`:''}${sourceLink(item)}</span></div>${story}</div></article>`;
   };
   const dayDivider=item=>`<div class="timeline-date-divider"><span>${esc(hktDay(item.publishedAt))}</span><small>${hktKey(item.publishedAt)===today?'TODAY':'RECENT'}</small></div>`;
   const render=filter=>{
@@ -105,6 +109,13 @@
     }));
   }
   render('all');
+  if(requested){
+    requestAnimationFrame(()=>{
+      const heading=document.getElementById(requestedId);
+      heading?.focus({preventScroll:true});
+      heading?.scrollIntoView({block:'start',behavior:'instant'});
+    });
+  }
 
   const archiveBlock=document.getElementById('liveArchiveBlock');
   const archiveList=document.getElementById('liveArchiveList');

@@ -39,6 +39,7 @@
   root.innerHTML=items.map(item=>{
     const source=item.sourceUrl?`<a class="live-source" href="${esc(item.sourceUrl)}" target="_blank" rel="noopener noreferrer" data-analytics-event="live_source_open" data-analytics-content="${esc(item.sourceLabel||'source')}" data-analytics-slot="live_stream">${esc(item.sourceLabel||'核實來源')} ↗</a>`:'';
     const title=item.articleId?`<a href="news/${encodeURIComponent(item.articleId)}.html" data-analytics-event="live_story_open" data-analytics-content="${esc(item.articleId)}" data-analytics-slot="live_stream">${esc(item.title)}</a>`:esc(item.title);
-    return `<article class="live-item"><div class="live-item-top"><span class="live-time">${esc(relative(item.publishedAt))}</span>${item.verified!==false?'<span class="live-verified">✓ 已核實</span>':''}</div><span class="live-tier">${esc(levelLabel(item))}</span><h4>${title}</h4><p>${esc(item.summary||'')}</p><div class="live-item-foot"><span>${esc(item.category||'AI 快訊')}</span>${source}</div></article>`;
+    const timelineHref=item.id?`live.html#live-update-${encodeURIComponent(item.id)}`:'live.html';
+    return `<article class="live-item" data-timeline-href="${timelineHref}"><div class="live-item-top"><span class="live-time">${esc(relative(item.publishedAt))}</span>${item.verified!==false?'<span class="live-verified">✓ 已核實</span>':''}</div><span class="live-tier">${esc(levelLabel(item))}</span><h4>${title}</h4><p>${esc(item.summary||'')}</p><div class="live-item-foot"><span>${esc(item.category||'AI 快訊')}</span>${source}</div></article>`;
   }).join('');
 })();
