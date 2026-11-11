@@ -1,5 +1,53 @@
 [
   {
+    "id": "2026-11-11-nvidia-h200-blacklisted-chinese-university",
+    "title": "美國黑名單中國大學仍買到 NVIDIA H200，出口管制漏洞再受關注",
+    "summary": "Reuters 根據採購紀錄報道，與中國解放軍研究關係密切、列入美國實體清單的西北工業大學，上月經中國供應商購入兩枚 NVIDIA H200，成交價 874,700 元人民幣；校方今年亦透過多份合約租用載有 H200、A100 及 A800 的算力。H200 屬受出口許可限制的高階 AI 晶片，而實體清單機構一般面對拒批政策。\n\nReuters 檢視 26 份中國採購及企業紀錄，發現多間大學或研究機構經本地供應商購買受限晶片或租用相關算力，但未能確定晶片原始來源及部分伺服器所在地。事件顯示單靠邊境出口許可未必能堵截轉售與遙距算力，下一步要看美國會否加推晶片追蹤、雲端 KYC 或更嚴格的最終用戶核查。",
+    "category": "AI 晶片與政策",
+    "publishedAt": "2026-11-11T05:13:22Z",
+    "sourceLabel": "Reuters／公開採購紀錄",
+    "sourceUrl": "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-10-anthropic-claude-meetings-google-meet",
+    "title": "Claude Meetings 登陸 Google Meet：會議進行中直接做計劃、時間線與問答",
+    "summary": "Anthropic 推出 Claude Meetings beta，讓 Team 與 Enterprise 客戶把 Claude 以可見參與者身份加入 Google Meet。Claude 可跟進對話、在聊天室回答問題，並在會議期間起草計劃及製作時間線；公司亦同步介紹 Claude Whiteboards、Claude Sheets 與 Claude Data，之後計劃擴展至其他會議平台。\n\n功能由「會後摘要」推進到「會內執行」，但現階段只屬 beta，實際權限、資料保留、外部與會者處理及錯誤行動風險仍需企業自行驗證。香港團隊若試用，應先限定可連接的工作資料與可執行範圍，保留人工確認步驟。",
+    "category": "AI Agent 與辦公工具",
+    "publishedAt": "2026-11-10T17:31:00Z",
+    "sourceLabel": "Anthropic／Reuters",
+    "sourceUrl": "https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-10-tsmc-anthropic-openai-investment",
+    "title": "台積電董事會批最多 10 億美元投資 Anthropic 與 OpenAI",
+    "summary": "台積電董事會批准最多 5 億美元按 IPO 價購入 Anthropic 普通股，另最多 5 億美元購入 OpenAI 優先股，合計上限 10 億美元。Reuters 指這令全球最大晶圓代工廠在供應 AI 晶片之外，亦直接持有兩間主要模型公司的權益；批准額不等於資金已全數投入。\n\n投資把晶片供應商與核心客戶的利益連結再推前一步，但亦加深產業循環與集中風險。香港投資者應分清董事會授權、實際成交與投資回報三件事，下一步看交易完成條款及台積電如何披露持股。",
+    "category": "AI 晶片與投資",
+    "publishedAt": "2026-11-10T14:15:56Z",
+    "sourceLabel": "台積電董事會決議／Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-10-alibaba-t-head-hong-kong-ipo",
+    "title": "阿里巴巴 AI 晶片部門平頭哥已向港交所秘密遞交上市申請",
+    "summary": "阿里巴巴表示，旗下晶片部門平頭哥（T-Head）已在 9 月 11 日向港交所秘密遞交 Form A1，推進分拆上市。交易規模、發售架構及阿里上市後持股仍未確定，亦須監管批准；平頭哥今年公布的鎮武 V900 主攻下一代 AI 模型訓練與推理。\n\n若上市落實，香港市場會新增一個直接投資中國自研 AI 晶片資產的渠道，亦可為平頭哥獨立融資。現階段仍屬申請程序，投資者不應把保密遞表等同獲批或確定上市；下一步看公開聆訊資料、招股書與客戶收入結構。",
+    "category": "AI 晶片與香港市場",
+    "publishedAt": "2026-11-10T12:47:00Z",
+    "sourceLabel": "阿里巴巴／Reuters",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-09-anthropic-claude-fable-mythos-5-2",
     "title": "Anthropic 推 Claude Fable 5.2、Mythos 5.2：技術工作更快兼降價",
     "summary": "Anthropic 11 月 9 日推出 Claude Fable 5.2 與 Claude Mythos 5.2，兩者採用相同底層模型，主攻複雜編程、推理、AI Agent、科學與工程工作。公司稱新版本輸出速度較 5.1 最多快 30%，API 定價降至每百萬輸入 token 8 美元、輸出 token 40 美元；另設最多快 2.5 倍、價格加倍的 fast mode。\n\nFable 5.2 已在 Claude 平台、AWS、Google Cloud 及 Microsoft Azure 等渠道提供；Mythos 5.2 則只開放予通過網絡安全或生命科學驗證的機構。Anthropic 公布多項內部測試成績，但這些能力主張仍需更多獨立、真實工作負載驗證；香港開發團隊最值得比較的是實際代理任務成功率、總 token 成本與延遲。",
@@ -668,54 +716,6 @@
     "sourceLabel": "Associated Press",
     "sourceUrl": "https://apnews.com/article/us-china-deepseek-ai-ban-2bffa5b0131808735280b2c0e6f0d856",
     "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-20-ovhcloud-ai-model-early-2027",
-    "title": "OVHcloud 擬 2027 年初推首款 AI 模型：現有 110MW 算力待客",
-    "summary": "OVHcloud 行政總裁 Octave Klaba 向 Reuters 表示，公司預計 2027 年初推出首款 AI 模型，採用 mixture-of-experts 架構；OVHcloud 亦將很快試行以內部資料調校的 OVHai Workspace。Reuters 報道，公司已接通 250MW 雲端容量，其中 140MW 正運作、110MW 可供新客戶使用。\\n\\n這是管理層對產品時程與容量的披露，尚非模型發布或獨立性能測試。若計劃落地，歐洲雲端供應商將由出租算力進一步延伸至模型與工作平台；香港企業可留意其日後可用地區、資料管治與實際成本。",
-    "category": "AI 基建與模型",
-    "publishedAt": "2026-10-20T07:07:01Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/half-ovhcloud-capacity-is-available-ai-model-launching-early-2027-ceo-says-2026-10-20/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-20-gemini-25-agent-platform-retirement",
-    "title": "Google Cloud Gemini 2.5 系列今日到退役日：Agent Platform 用戶須核對遷移",
-    "summary": "Google Cloud 官方模型文件列明，Gemini 2.5 Pro、2.5 Flash 及 2.5 Flash-Lite 在 Gemini Enterprise Agent Platform 的支援退役日均為 10 月 20 日。仍以這些模型 ID 部署 Agent 或線上推理的團隊，應核對替代模型、相容性與實際服務狀態。\n\nGoogle 特別註明，這些日期只適用於 Gemini Enterprise Agent Platform；模型其後仍可能經獨立的 Gemini API 使用，不能視作所有 Gemini 2.5 服務同日停用。遷移時應按所在平台與地區核實官方文件，並重新測試輸出、延遲及成本。",
-    "category": "AI 模型與 API",
-    "publishedAt": "2026-10-20T04:01:00Z",
-    "sourceLabel": "Google Cloud 文件",
-    "sourceUrl": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-20-github-copilot-model-policy-api",
-    "title": "GitHub Copilot 模型政策 API 正式推出：企業可按組織、團隊及應用管理",
-    "summary": "GitHub 宣布 Copilot 模型政策的 REST API 已正式提供，管理員可在企業、企業團隊、企業應用及組織四個層級，以 GET 查詢或 PATCH 更新模型可用政策。企業亦可按管理模式，把模型控制權下放至組織，或下放至團隊及應用。\n\n這讓大型機構可把 Copilot 模型開放範圍納入自動化管治流程，減少逐項手動設定。實際權限仍取決於企業採用的政策層級和委派方式；管理員應先檢查現行設定，再決定如何批量更新。",
-    "category": "AI 工具與開發",
-    "publishedAt": "2026-10-20T00:57:30Z",
-    "sourceLabel": "GitHub Changelog",
-    "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-20-github-copilot-model-deprecations",
-    "title": "GitHub Copilot 停用六款舊模型：GPT-5.5、Gemini 3.7 Flash 等受影響",
-    "summary": "GitHub 確認，10 月 19 日起在大部分 Copilot 體驗停用六款模型，包括 Gemini 3.7 Flash、GPT-5.5、GPT-5.4、GPT-5.4 mini、GPT-5 mini 及 Grok 4.5。受影響範圍包括 Copilot Chat、行內編輯、問答及 Agent 模式、程式碼補全；GitHub 已列出各款建議替代模型。\n\n依賴指定模型的工作流程或整合應檢查並遷移。Copilot Enterprise 管理員可能還須在模型政策中啟用替代選項，才能在 VS Code 或 github.com 的模型選單看到；舊模型本身毋須手動移除。",
-    "category": "AI 工具與開發",
-    "publishedAt": "2026-10-20T00:57:00Z",
-    "sourceLabel": "GitHub Changelog",
-    "sourceUrl": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026/",
-    "level": "update",
     "verified": true,
     "active": false
   }
