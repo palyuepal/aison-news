@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-11-indonesia-ai-copyright-platform-opposition",
+    "title": "Meta、TikTok 加入 Google 反對印尼 AI 版權法修訂",
+    "summary": "Meta、TikTok 與 Google 在印尼國會聽證會反對版權法修訂草案。草案擬要求數碼平台就展示新聞內容向出版商付費，並為 AI 設立規則；若通過，印尼或成為東南亞首個把 AI 納入版權法的國家。\n\nGoogle 與 Meta 爭議焦點包括連結新聞是否等同重製內容、付費要求會否減少出版商流量；TikTok 則要求純輔助式 AI 使用不應承受完整披露義務，並保留安全港保障。法案仍未通過，條文亦可能修改；香港內容平台、媒體及 AI 開發者應留意它會否成為區內訓練資料、生成內容標示與平台責任的新參考框架。",
+    "category": "AI 政策與版權",
+    "publishedAt": "2026-11-11T12:17:16Z",
+    "sourceLabel": "印尼國會聽證／Reuters",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/meta-tiktok-join-google-opposing-indonesias-copyright-law-revision-2026-11-11/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-11-ai-agent-tajik-government-document-theft",
+    "title": "研究員：哈薩克相關黑客用 AI Agent 竊取逾 2,000 份塔吉克政府文件",
+    "summary": "新加坡網安公司 CloudSek 表示，名為 Silent Lynx、被研究員指與哈薩克有關的黑客組織，利用開源自主 Agent 框架 Hermes 入侵塔吉克政府電子文件系統，竊取逾 2,000 份涉及國家安全的文件。CloudSek 因攻擊者誤把伺服器暴露在互聯網，取得指令與操作紀錄；資料顯示 Agent 由偵察、撰寫下載程式、整理到分拆檔案外傳均有參與。\n\n歸因來自 CloudSek 對語言、工作時段與網絡連線的分析，哈薩克及塔吉克官員未有回應，不能視為政府已確認。事件顯示 AI Agent 已由輔助寫惡意程式走向編排整段間諜入侵；香港機構要把 Agent 工具、外部內容、憑證及資料外傳行為納入同一套監控與隔離。",
+    "category": "AI 安全與網絡攻擊",
+    "publishedAt": "2026-11-11T11:07:00Z",
+    "sourceLabel": "CloudSek 研究／Reuters",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/kazakhstan-linked-hackers-used-ai-steal-tajik-government-documents-researchers-2026-11-11/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-11-nvidia-h200-blacklisted-chinese-university",
     "title": "美國黑名單中國大學仍買到 NVIDIA H200，出口管制漏洞再受關注",
     "summary": "Reuters 根據採購紀錄報道，與中國解放軍研究關係密切、列入美國實體清單的西北工業大學，上月經中國供應商購入兩枚 NVIDIA H200，成交價 874,700 元人民幣；校方今年亦透過多份合約租用載有 H200、A100 及 A800 的算力。H200 屬受出口許可限制的高階 AI 晶片，而實體清單機構一般面對拒批政策。\n\nReuters 檢視 26 份中國採購及企業紀錄，發現多間大學或研究機構經本地供應商購買受限晶片或租用相關算力，但未能確定晶片原始來源及部分伺服器所在地。事件顯示單靠邊境出口許可未必能堵截轉售與遙距算力，下一步要看美國會否加推晶片追蹤、雲端 KYC 或更嚴格的最終用戶核查。",
@@ -692,30 +716,6 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/business/ai-startup-asi-valued-3-billion-latest-funding-round-2026-10-20/",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-xai-naacp-data-center-lawsuit",
-    "title": "美法院拒讓 EPA 終止 xAI 數據中心污染訴訟：基建合規風險升級",
-    "summary": "密西西比州聯邦法院裁定，EPA 可以介入 NAACP 針對 xAI 數據中心燃氣電廠的訴訟，但無權在未自行採取相關執法行動時單方面終止案件。訴訟指 xAI 在 Southaven 未取得所需許可便興建及營運燃氣發電設施；法院今次只處理 EPA 權限，未裁定 xAI 是否違法。",
-    "category": "AI 基建與法律",
-    "publishedAt": "2026-10-20T15:29:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/legal/government/us-judge-rejects-trump-administration-bid-block-naacp-lawsuit-against-musks-xai-2026-10-20/",
-    "verified": true,
-    "active": false,
-    "level": "update"
-  },
-  {
-    "id": "2026-10-20-china-response-us-deepseek-ban",
-    "title": "中國外交部回應美國禁用 DeepSeek：反對把國安概念泛化",
-    "summary": "美國 AP 報道，中國外交部發言人毛寧在例行記者會回應美國禁止聯邦民用機構使用 DeepSeek 及相關第三方服務，稱中方反對把國家安全概念泛化、把科技及經貿議題政治化，並會維護中國企業的合法權益。\n\n這是對美國 DHS 命令的官方回應；禁令範圍與移除要求以美國 Federal Register 文件為準，不能把雙方表態當成新的全球禁令。對香港採用者而言，較實際的影響是跨境企業要查清楚政府／受監管客戶的模型來源、第三方服務依賴及採購限制。",
-    "category": "AI 政策與地緣科技",
-    "publishedAt": "2026-10-20T09:36:19Z",
-    "sourceLabel": "Associated Press",
-    "sourceUrl": "https://apnews.com/article/us-china-deepseek-ai-ban-2bffa5b0131808735280b2c0e6f0d856",
-    "level": "followup",
     "verified": true,
     "active": false
   }
