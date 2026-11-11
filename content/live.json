@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-11-fractile-series-c-ai-inference-chip",
+    "title": "英國 AI 晶片初創 Fractile 融資 7.2 億美元，估值升至 70 億美元",
+    "summary": "英國倫敦及布里斯托 AI 晶片初創 Fractile 完成 7.2 億美元 C 輪融資，據參與交易人士稱公司估值達 70 億美元。融資由 Thrive Capital、Founders Fund、Lightspeed 及 Redpoint 領投，Google 旗下 CapitalG、BlackRock、英國 Sovereign AI fund 與 British Business Bank 等亦有參與。\n\nFractile 主攻 AI 推理晶片，聲稱可提高速度並降低能源與成本，計劃明年推出首款商用晶片；實際效能仍待獨立測試與量產驗證。交易顯示投資者仍願意押注 NVIDIA 以外的推理硬件，但香港企業及投資者應把融資估值、產品落地與可持續競爭力分開判斷。",
+    "category": "AI 晶片與融資",
+    "publishedAt": "2026-11-11T14:53:00Z",
+    "sourceLabel": "Reuters／Fractile",
+    "sourceUrl": "https://www.reuters.com/legal/transactional/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-funding-round-2026-11-11/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-11-indonesia-ai-copyright-platform-opposition",
     "title": "Meta、TikTok 加入 Google 反對印尼 AI 版權法修訂",
     "summary": "Meta、TikTok 與 Google 在印尼國會聽證會反對版權法修訂草案。草案擬要求數碼平台就展示新聞內容向出版商付費，並為 AI 設立規則；若通過，印尼或成為東南亞首個把 AI 納入版權法的國家。\n\nGoogle 與 Meta 爭議焦點包括連結新聞是否等同重製內容、付費要求會否減少出版商流量；TikTok 則要求純輔助式 AI 使用不應承受完整披露義務，並保留安全港保障。法案仍未通過，條文亦可能修改；香港內容平台、媒體及 AI 開發者應留意它會否成為區內訓練資料、生成內容標示與平台責任的新參考框架。",
@@ -704,18 +716,6 @@
     "sourceLabel": "OpenAI 官方公告",
     "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-20-asi-series-c-325m",
-    "title": "ASI 融資 3.25 億美元、估值 30 億：AI 由文字走入空管與電網",
-    "summary": "美國 AI 初創 ASI 完成 3.25 億美元 Series C，投後估值 30 億美元，由 Spark Capital 領投。公司以模擬及監測軟件預測空中交通、電網、物流與軍事系統的中斷，並表示新資金會用於能源、物流及國防部署，以及擴充研究與工程團隊。\\n\\nASI 已取得美國陸軍五年 9,900 萬美元及聯邦航空管理局十二年 8.75 億美元合約，但融資估值與合約上限不等於收入已全部實現。事件反映投資焦點正由生成文字轉向可影響實體基建決策的 AI；採用方要同時審視預測準確度、人工覆核及錯誤決策的責任。",
-    "category": "AI 融資與實體系統",
-    "publishedAt": "2026-10-20T15:53:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/ai-startup-asi-valued-3-billion-latest-funding-round-2026-10-20/",
-    "level": "update",
     "verified": true,
     "active": false
   }
