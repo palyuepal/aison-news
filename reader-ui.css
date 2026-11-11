@@ -104,3 +104,105 @@ html[data-theme="dark"] body[data-page="home"] :is(.b2-pulse,.v6-signal-card) { 
  #aison-reader body .page-hero { padding:30px 0!important; }
  #aison-reader body .daily-item>div:last-child { padding:18px!important; }
 }
+
+/* Match the newsroom palette on its three main reading routes. */
+:root {
+  --reader-masthead: #f5f8fc;
+  --reader-highlight: #745000;
+  --reader-masthead-muted: #425b76;
+  --reader-live-badge: #eaf0f7;
+  --reader-live-count: #174b80;
+}
+:root[data-theme="dark"] {
+  --reader-masthead: #0d1f36;
+  --reader-highlight: #ffd45e;
+  --reader-masthead-muted: #bbcade;
+  --reader-live-badge: #203958;
+  --reader-live-count: #bbcade;
+}
+#aison-reader body:is([data-page="daily"], [data-page="live"], [data-page="article"]) .topbar {
+  background: var(--surface) !important;
+}
+#aison-reader body:is([data-page="daily"], [data-page="live"], [data-page="article"]) .topbar :is(.nav, .brand strong, .navlinks a, .menuBtn, .search-trigger, .search-trigger b, .site-theme-toggle) {
+  color: var(--ink) !important;
+}
+#aison-reader body:is([data-page="daily"], [data-page="live"], [data-page="article"]) .topbar .brand strong span {
+  color: var(--reader-highlight) !important;
+}
+#aison-reader body:is([data-page="daily"], [data-page="live"], [data-page="article"]) .topbar .brand small {
+  color: var(--muted) !important;
+}
+#aison-reader body:is([data-page="daily"], [data-page="live"], [data-page="article"]) .topbar :is(.search-trigger, .site-theme-toggle) {
+  background: var(--surface-alt) !important;
+  border-color: var(--line-strong, var(--line)) !important;
+}
+#aison-reader body:is([data-page="daily"], [data-page="live"]) .page-hero {
+  background: var(--reader-masthead) !important;
+  color: var(--ink) !important;
+  border-bottom: 1px solid var(--line);
+}
+#aison-reader body:is([data-page="daily"], [data-page="live"]) .page-hero h1 {
+  color: var(--ink) !important;
+}
+#aison-reader body:is([data-page="daily"], [data-page="live"]) .page-hero :is(h1 em, .mini-label, .live-kicker) {
+  color: var(--reader-highlight) !important;
+}
+#aison-reader body:is([data-page="daily"], [data-page="live"]) .page-hero p {
+  color: var(--reader-masthead-muted) !important;
+}
+#aison-reader body[data-page="daily"] .daily-ranking-count {
+  color: var(--ink) !important;
+}
+#aison-reader body[data-page="live"] .live-stat,
+#aison-reader body[data-page="live"] .live-page-grid .live-filter {
+  background: var(--reader-live-badge);
+  color: var(--ink);
+  border-color: var(--line);
+}
+#aison-reader body[data-page="live"] .live-stat b {
+  color: var(--ink);
+}
+#aison-reader body[data-page="live"] .live-stat small {
+  color: var(--reader-live-count);
+}
+#aison-reader body[data-page="live"] .live-page-grid .live-filter[aria-pressed="true"] {
+  border-color: var(--reader-highlight);
+  box-shadow: inset 0 -2px var(--reader-highlight);
+}
+#aison-reader body[data-page="live"] .live-page-grid .sidebar .panel.dark {
+  background: var(--surface) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--line);
+}
+#aison-reader body[data-page="live"] .live-page-grid .sidebar .panel.dark :is(h3, p, li, a) {
+  color: var(--ink) !important;
+}
+#aison-reader body[data-page="live"] .live-page-grid .sidebar .panel.dark .live-rule-list b {
+  color: var(--reader-highlight);
+}
+#aison-reader body[data-page="live"] .timeline-card {
+  background: var(--surface) !important;
+}
+#aison-reader body[data-page="live"] .timeline-card h3 {
+  color: var(--ink) !important;
+}
+#aison-reader body[data-page="live"] .timeline-card :is(.timeline-summary p, .timeline-foot) {
+  color: var(--muted) !important;
+}
+#aison-reader body[data-page="live"] .timeline-card .timeline-read {
+  color: var(--link) !important;
+}
+#aison-reader[data-theme="dark"] body[data-page="article"] .article-body :is(.report-opening, .info-block, .hkbox, .take, .article-quick-read) {
+  background: var(--surface) !important;
+  border-color: var(--line) !important;
+}
+#aison-reader[data-theme="dark"] body[data-page="article"] .article-body :is(.article-quick-item, .action-verdict, .report-note) {
+  background: var(--surface-alt) !important;
+  border-color: var(--line) !important;
+}
+#aison-reader[data-theme="dark"] body[data-page="article"] .article-body :is(.article-quick-item, .action-verdict, .report-note) :is(p, li, strong) {
+  color: var(--ink) !important;
+}
+#aison-reader[data-theme="dark"] body[data-page="article"] :is(.breadcrumbs a, .source-link, .report-opening a, .info-block a) {
+  color: var(--link) !important;
+}
