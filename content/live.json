@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-11-google-gemini-apple-carplay",
+    "title": "Gemini 正式登陸 Apple CarPlay，全球 iOS 用戶可免提處理電郵與行程",
+    "summary": "Google 宣布把 Gemini app 帶到 Apple CarPlay，並由 11 月 11 日起向全球所有使用支援 Gemini Live 語言的 iOS 用戶陸續推出。駕駛者可免提與 Gemini Live 對話、查日程、整理未讀電郵、準備會議或腦暴；CarPlay 對話會同步回 iPhone。\\n\\n用戶需更新 Gemini iPhone app、開啟咪高峰權限，並先在手機使用過 Gemini Live。Google 稱介面以減少駕駛分心為設計目標，但生成內容仍可能出錯；香港司機應只在安全情況下使用，重要電郵、路線與行程資料仍要自行核對。",
+    "category": "AI 助手與汽車",
+    "publishedAt": "2026-11-11T19:50:00Z",
+    "sourceLabel": "Google 官方公告／MacRumors",
+    "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-11-fractile-series-c-ai-inference-chip",
     "title": "英國 AI 晶片初創 Fractile 融資 7.2 億美元，估值升至 70 億美元",
     "summary": "英國倫敦及布里斯托 AI 晶片初創 Fractile 完成 7.2 億美元 C 輪融資，據參與交易人士稱公司估值達 70 億美元。融資由 Thrive Capital、Founders Fund、Lightspeed 及 Redpoint 領投，Google 旗下 CapitalG、BlackRock、英國 Sovereign AI fund 與 British Business Bank 等亦有參與。\n\nFractile 主攻 AI 推理晶片，聲稱可提高速度並降低能源與成本，計劃明年推出首款商用晶片；實際效能仍待獨立測試與量產驗證。交易顯示投資者仍願意押注 NVIDIA 以外的推理硬件，但香港企業及投資者應把融資估值、產品落地與可持續競爭力分開判斷。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-20T20:08:33Z",
     "sourceLabel": "SpaceX / Reuters",
     "sourceUrl": "https://www.reuters.com/business/media-telecom/spacex-quarterly-revenue-jumps-beats-estimates-ai-business-surges-2026-10-20/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-20-openai-acquires-orchestra-bio",
-    "title": "OpenAI 收購 Orchestra Bio：把 AI Agent 接入藥物研發流程",
-    "summary": "OpenAI 10 月 20 日確認收購 Orchestra Bio，並將其團隊與技術整合到生命科學平台 Rosalind。Orchestra 的平台讓科學家與 AI Agent 協作追蹤研究計劃、試驗進度及跨部門依賴；OpenAI 表示下一步希望建立協助連結科學發現、研究決策與後續行動的 Agent。\\n\\n這不是藥物已加速上市的證據，也未披露交易條款或具體臨床成果；現階段可確認的是平台與團隊整合方向。對生物醫藥業，焦點由模型解答科學問題進一步延伸到協調藥物開發的長流程工作。",
-    "category": "AI 科研與醫療",
-    "publishedAt": "2026-10-20T17:55:04Z",
-    "sourceLabel": "OpenAI 官方公告",
-    "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
     "level": "breaking",
     "verified": true,
     "active": false
