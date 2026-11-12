@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-11-google-gemini-decisions-api",
+    "title": "Google 推 Gemini Decisions API：一次處理最多 1,000 個多模態判斷",
+    "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驅動，專門處理真假、選項及評分等封閉式判斷。單一請求可輸入最多 256K tokens 的文字、圖片、音訊、影片或 PDF，並一次回答最多 1,000 條獨立問題，適合工具選擇、政策檢查、模型路由及內容評分。\n\nGoogle 稱端到端延遲約 150–250 毫秒，收費為每百萬輸入 token 0.10 美元，毋須支付輸出 token；API 已經可經 Gemini API／Google AI Studio 使用。以上速度與成本屬官方資料，香港開發者仍應用真實工作負載測試準確度、校準及誤判成本，尤其不應把概率分數直接當成合規或安全決定。",
+    "category": "AI 模型與 API",
+    "publishedAt": "2026-11-11T18:00:00Z",
+    "sourceLabel": "Google DeepMind 官方公告",
+    "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-11-united-restricts-third-party-ai-agents",
+    "title": "United 限制第三方 AI Agent 代客訂票，安全與航空合規成新門檻",
+    "summary": "United Airlines 宣布限制未獲授權的第三方個人 AI Agent 存取其數碼平台，措施涵蓋 United 自家渠道，以及旅行社和票務聚合平台。公司指，共享帳戶憑證可能暴露敏感資料，Agent 亦可能造成非預期購買、帳戶變更或誤用 MileagePlus 里數。\n\nUnited 亦指出，航班登機等流程涉及 FAA／美國運輸部規定，例如旅客須親自確認行李沒有禁運物品，因此部分步驟不能完全交由自動化工具。公司尚未交代受影響 Agent 名單、技術執行細節或全面生效時間；對香港旅客而言，AI 仍可協助比較行程，但涉及付款、里數及登機確認時應預期需要本人完成。",
+    "category": "AI Agent 與旅遊",
+    "publishedAt": "2026-11-11T18:50:00Z",
+    "sourceLabel": "United Airlines 官方公告／Reuters",
+    "sourceUrl": "https://united.mediaroom.com/news-releases?item=125496",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-11-google-gemini-apple-carplay",
     "title": "Gemini 正式登陸 Apple CarPlay，全球 iOS 用戶可免提處理電郵與行程",
     "summary": "Google 宣布把 Gemini app 帶到 Apple CarPlay，並由 11 月 11 日起向全球所有使用支援 Gemini Live 語言的 iOS 用戶陸續推出。駕駛者可免提與 Gemini Live 對話、查日程、整理未讀電郵、準備會議或腦暴；CarPlay 對話會同步回 iPhone。\\n\\n用戶需更新 Gemini iPhone app、開啟咪高峰權限，並先在手機使用過 Gemini Live。Google 稱介面以減少駕駛分心為設計目標，但生成內容仍可能出錯；香港司機應只在安全情況下使用，重要電郵、路線與行程資料仍要自行核對。",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-10-21T03:00:00Z",
     "sourceLabel": "Reuters / OpenAI",
     "sourceUrl": "https://www.reuters.com/legal/litigation/openai-says-its-ai-agents-weakened-internal-monitoring-system-2026-10-21/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-google-cloud-open-model-maas-retirement",
-    "title": "Google Cloud 16 款開放模型 MaaS 端點今日到退役日：DeepSeek、Qwen 等受影響",
-    "summary": "Google Cloud 官方退役表列明，16 款透過 Gemini Enterprise Agent Platform 的 Model as a Service（MaaS）提供的開放模型端點，預定於 10 月 21 日退役。名單包括 DeepSeek-R1、DeepSeek-V3.2、Qwen3 Coder、Kimi K2 Thinking、Llama 3.3 及 GPT-OSS 20B 等特定 MaaS 模型 ID。Google 表示，端點退役後對該 ID 的 API 請求會失敗。\n\n這項時間表只針對 Google Cloud 託管的指定 MaaS 端點，並非上述開放模型本身全面消失。仍在使用的團隊應核對實際模型 ID，並遷移至替代託管端點，或按官方指引在 Model Garden 自行部署；切換前要重測權限、延遲及輸出。",
-    "category": "AI 模型與 API",
-    "publishedAt": "2026-10-21T01:54:00Z",
-    "sourceLabel": "Google Cloud 文件",
-    "sourceUrl": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-spacex-ai-revenue-q3",
-    "title": "SpaceX AI 收入九倍增至 76 億美元：已超越 Starlink 成最大業務線",
-    "summary": "SpaceX 公布 2026 年第三季收入按年升 161% 至 145.8 億美元，錄得 44 億美元淨利；其中 AI 收入增逾九倍至 76 億美元，主要來自向 Anthropic、Google 及 Reflection AI 等客戶出租運算容量。公司同期 196 億美元資本開支中，164 億美元投向 AI，反映其商業重心正由火箭與衛星進一步轉向大型算力供應。\\n\\n收入增長不等於 AI 業務已穩定獲利：SpaceX 表示該部門仍錄得龐大營運虧損，並需要持續投資。對市場更重要的訊號，是前沿模型競爭的收益與成本正集中到算力租賃；企業採購 AI 服務時，亦要留意供應商背後的容量、長約與資本開支能否持續。",
-    "category": "AI 基建與商業",
-    "publishedAt": "2026-10-20T20:08:33Z",
-    "sourceLabel": "SpaceX / Reuters",
-    "sourceUrl": "https://www.reuters.com/business/media-telecom/spacex-quarterly-revenue-jumps-beats-estimates-ai-business-surges-2026-10-20/",
     "level": "breaking",
     "verified": true,
     "active": false
