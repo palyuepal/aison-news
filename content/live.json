@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-12-north-korea-facestealer-ai-deepfake-crypto",
+    "title": "北韓黑客用偷拍視像與 AI Deepfake 擴散詐騙，FBI 指18個月盜逾4億美元",
+    "summary": "美國 FBI 表示，北韓國家支持黑客以「FaceStealer」社交工程行動，在過去18個月盜取逾4億美元加密貨幣。攻擊者先入侵真實聯絡人的社交及通訊帳戶，用暗中錄下的視像冒充對方，誘使目標進入偽冒 Zoom、Teams 或 Google Meet；再以技術故障為由要求點擊「修復」連結，感染電腦及帳戶。FBI 已識別並扣押超過900段受害者 webcam 影片。\\n\\nFBI 指攻擊者開始利用 AI 製作加密貨幣及區塊鏈業界知名人士的 deepfake 視像，並將行動歸因於 Sapphire Sleet／UNC1069；歸因屬 FBI 評估。對香港企業和投資者而言，熟悉聯絡人及視像畫面已不足以證明身份；涉及付款、錢包、密碼重設或軟件安裝時，應改用獨立渠道覆核，並禁止會議連結要求的即時安裝。",
+    "category": "AI 安全與 Deepfake",
+    "publishedAt": "2026-11-12T21:40:00Z",
+    "sourceLabel": "Reuters（引述 FBI 公告）",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/north-korean-hackers-steal-more-than-400-million-using-video-images-fbi-says-2026-11-12/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-12-us-congress-tighter-ai-chip-curbs-after-huang",
+    "title": "黃仁勳辭任後美國國會加推 AI 晶片管制，海外租算力亦成焦點",
+    "summary": "Reuters 報道，美國兩黨議員正推動多項收緊中國取得先進 AI 晶片的法案，眾議院議長 Mike Johnson 稱國會正形成支持加強限制的共識。參議院版國防授權法案已包括 AI Overwatch Act、Chip Security Act 和 MATCH Act；相關方案分別增加國會對出口規則的審查、要求晶片商追蹤先進處理器及報告疑似轉運，並促使荷蘭、日本等盟友同步限制晶片製造設備。\\n\\n另一項 Remote Access Security Act 已獲眾議院通過、仍待參議院處理，目標是讓商務部規管中國企業經海外數據中心租用 NVIDIA 算力。這是立法推動而非已生效新禁令；對香港及亞洲數據中心而言，下一步要留意最終條文、客戶盡職審查、晶片追蹤責任及跨境雲端合約成本。",
+    "category": "AI 晶片與政策",
+    "publishedAt": "2026-11-12T18:47:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/tougher-curbs-ai-chip-sales-china-likely-after-nvidia-ceo-resigns-2026-11-12/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-12-frontier-ai-companies-lawsuit-halt-development",
     "title": "非牟利組織入稟，要求法院叫停 OpenAI、Google、Anthropic 等前沿模型研發",
     "summary": "一批科技問責非牟利組織已在三藩市起訴 OpenAI、Anthropic、SpaceX 的 AI 部門、Meta 及 Google，要求法院禁止這些公司繼續開發最先進的 AI 模型。原告援引加州不公平商業行為法，指相關研發構成公共滋擾；這是訴訟主張，法院尚未裁決，亦未頒下任何禁制令。\\n\\nReuters 報道，Meta 拒絕置評，其餘公司未即時回應。案件即使未必成功，亦把 AI 安全爭議由政策辯論推進至可能直接影響產品研發的司法程序；香港企業毋須立即停用 ChatGPT、Gemini 或 Claude，但應留意法院會否接納臨時禁制申請，以及模型發布、企業合約和合規披露會否因此受影響。",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-10-22T10:21:44Z",
     "sourceLabel": "Google AI for Developers",
     "sourceUrl": "https://ai.google.dev/gemini-api/docs/video.md?example=dialogue",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-openai-models-google-cloud-model-garden",
-    "title": "OpenAI 模型與 Codex 將進駐 Google Cloud Model Garden",
-    "summary": "OpenAI 與 Google Cloud 宣布合作，計劃把 OpenAI 前沿模型及 Codex Agent 工作流程帶入 Google Cloud Model Garden。企業將可透過 Google Cloud Marketplace 採購，並使用既有的存取控制與數據治理；已承諾 Google Cloud 支出的客戶可用相關額度購買。\n\nOpenAI 指一般供應預計在未來數周推出，模型也將於稍後進入 Google Antigravity 及 Gemini Agent。這是產品整合計劃，並非所有客戶今天已可使用；OpenAI 同時表示，微軟仍是其主要雲端合作夥伴。",
-    "category": "AI 模型與 API",
-    "publishedAt": "2026-10-21T13:43:32Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/openai-models-google-cloud/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-openai-rosalind-agents-brain-cell-study",
-    "title": "OpenAI 研究：數千個 Agent 用 32 分鐘分析數百萬個小鼠腦細胞資料",
-    "summary": "OpenAI、PerturbAI 與 Scripps Research 使用 GPT-Rosalind 驅動數千個 AI Agent，平行分析涵蓋數百萬個小鼠腦細胞的既有實驗資料，並在 32 分鐘內把基因擾動、細胞反應及相關文獻連結成可供研究員探索的推理圖譜。團隊已公開圖譜，讓其他科學家檢視及提出後續實驗。\n\nAgent 找到包括兩個疾病相關基因在小腦細胞中的不同影響，以及膽固醇調控與神經退化的潛在線索。這些是值得測試的研究假說，不是已證實的人類疾病機制或療法；論文與資料仍須經獨立研究及實驗驗證。",
-    "category": "AI 科研與醫療",
-    "publishedAt": "2026-10-21T13:43:31Z",
-    "sourceLabel": "OpenAI 研究",
-    "sourceUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
     "level": "update",
     "verified": true,
     "active": false
