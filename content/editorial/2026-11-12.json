@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-12",
+  "dailyOneLiner": "AI 由更強模型走向可驗證的程式安全、商戶服務和企業流程，焦點轉為 Agent 交付、來源可信度與可審計治理。",
+  "top3Ids": [
+    "2026-11-12-gemini-4-carbon-availability",
+    "2026-11-12-alphaproof-code-signal-verification",
+    "2026-11-12-openai-businesses-chatgpt-beta"
+  ],
+  "threeThemes": [
+    {
+      "title": "模型能力走向長流程 Agent",
+      "summary": "Google 開放 Gemini 4 Carbon，並把多 Agent 分工帶進開發預覽，成本與安全驗證成焦點。",
+      "watch": "第三方完整任務評測、實際成本及企業權限模式。"
+    },
+    {
+      "title": "安全由宣稱走向機器可驗證",
+      "summary": "DeepMind 展示用 Agent 與 Lean 形式化證明 Signal 核心密碼協定的指定性質。",
+      "watch": "開源證明重現、規格覆蓋和真實系統應用。"
+    },
+    {
+      "title": "AI 成為商戶與企業工作入口",
+      "summary": "OpenAI 開放商戶資料認領 Beta；IBM/Microsoft、AWS、Adobe 等推進連接和管治。",
+      "watch": "香港開放範圍、資料來源透明度及實際業務 ROI。"
+    }
+  ],
+  "biggestChange": "模型發布不再等於競爭完成。可查核的程式證明、可治理的 Agent、真實成本和跨平台操作，開始影響企業採購及消費者使用入口。",
+  "watchTomorrow": "追蹤 Gemini 4 Carbon 長流程實測、AlphaProof Code 的公開重現、Businesses in ChatGPT 香港資格及新企業 Agent 服務的權限控制。"
+}
