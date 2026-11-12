@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-12-nvidia-huang-resigns-kress-interim-ceo",
+    "title": "黃仁勳辭任 NVIDIA 行政總裁，財務總監 Colette Kress 暫代",
+    "summary": "NVIDIA 已正式公布，共同創辦人黃仁勳辭任行政總裁及董事，財務總監 Colette Kress 暫代行政總裁；公司將同時物色內部及外部永久接任人選。這是早前董事會討論其去留後的實質決定，不再只是傳聞或未決會議。\\n\\nReuters 報道，NVIDIA 股價一度跌逾 8%，整個 AI 晶片及雲端供應鏈亦受壓。領導層變動不代表產品或供應即時中斷，但 NVIDIA 的技術路線、客戶融資與生態合作高度依賴黃仁勳的策略角色；香港投資者及使用 NVIDIA 基建的企業，下一步應留意永久行政總裁人選、11 月 17 日業績，以及公司是否調整產品、資本配置或客戶承諾。",
+    "category": "AI 晶片與企業管治",
+    "publishedAt": "2026-11-12T13:52:36Z",
+    "sourceLabel": "Reuters（NVIDIA 官方公告交叉核實）",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-12-enterprises-open-weight-ai-costs",
     "title": "近六成大型企業擬增用開放權重模型，AI 支出平均超預算 24%",
     "summary": "Reuters 引述 Capgemini 對 10 個國家、500 名大型企業高層的調查：59% 受訪者表示過去一年 AI 支出明顯超出預期或預算，平均超支 24%；同樣有 59% 計劃未來一年增加使用較便宜的開放權重模型。受訪企業年收入均超過 10 億美元，結果反映大型企業正由單純追求最強模型，轉向控制整體 AI 成本。\\n\\nCapgemini 指開放權重模型 token 平均比封閉模型便宜 87%；今年 9 月它們佔 OpenRouter 流量 72%，但只佔支出 27%。不過，半數受訪者仍會在複雜任務保留封閉模型，調查亦不代表所有企業或實際工作負載都能取得同等節省。對香港企業而言，下一步應按任務比較準確度、基建、私隱及維運成本，而不是只比較 API 單價。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-21T12:06:32Z",
     "sourceLabel": "NVIDIA Newsroom",
     "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-nvidia-dsx-pod-ai-factories",
-    "title": "NVIDIA 發表 DSX POD：預製模組化 Vera Rubin AI 工廠",
-    "summary": "NVIDIA 推出 DSX POD 參考設計，由合作夥伴在工廠內完成 Vera Rubin AI 運算系統、網絡、電力及液冷設備的模組化容器整合與測試，再運往已準備好供電及冷卻設施的場地。公司稱，這可把現場部署時間由約六個月縮短至最快 14 天。\n\nDell、HPE、Lenovo、Schneider Electric、Vertiv 等夥伴正參與供應鏈，目標是在 2027 年初開始交付。14 天是對符合場地條件的最快部署估算，並非所有項目的保證；產品目前屬新發表的參考設計，尚非已普遍交付的現成 AI 工廠。",
-    "category": "AI 基建",
-    "publishedAt": "2026-10-21T12:06:31Z",
-    "sourceLabel": "NVIDIA Newsroom",
-    "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment",
     "level": "update",
     "verified": true,
     "active": false
