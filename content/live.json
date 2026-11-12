@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-12-chinese-ai-firms-overseas-nvidia-capacity",
+    "title": "中國 AI 公司急租海外 NVIDIA 算力，憂美國收緊雲端晶片管制",
+    "summary": "Reuters 引述三名知情人士報道，中國 AI 公司正嘗試預留中國境外、由 NVIDIA 晶片驅動的數據中心算力。一間大型中國雲端供應商曾內部討論鎖定海外容量，部分較小型 AI 實驗室亦接觸東南亞算力營運商；涉事公司未被點名，NVIDIA 及美國商務部亦未有即時回應。\\n\\n企業憂慮黃仁勳相關風波會推高華府收緊遙距取用先進晶片的政治壓力；美國眾議院已通過 Remote Access Security Act，法案仍待參議院處理。Reuters 未能獨立核實相關間諜指控，中國亦已否認；但預留海外算力及灰市囤貨反映，出口管制風險正由實體晶片延伸至跨境雲端容量，香港與東南亞數據中心的客戶審查壓力可能上升。",
+    "category": "AI 晶片與政策",
+    "publishedAt": "2026-11-12T05:31:00Z",
+    "sourceLabel": "Reuters 獨家報道",
+    "sourceUrl": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-11-nvidia-board-decides-jensen-huang-future",
     "title": "NVIDIA 董事會開會決定黃仁勳去留，盤後股價跌逾 8%",
     "summary": "Reuters 引述知情人士報道，NVIDIA 董事會周三晚開會，決定是否罷免共同創辦人兼行政總裁黃仁勳。這是董事會日前因黃仁勳涉及私人關係及相關國安疑慮而啟動內部調查後的實質新進展；NVIDIA 未有即時回應，會議結果尚未公布。\\n\\n消息傳出後，NVIDIA 股價盤後跌逾 8%；公司約一周後公布業績，而目前沒有明確接班人。對香港投資者、晶片客戶及 AI 基建企業而言，短期晶片需求未必即時改變，但領導層去留可能影響 NVIDIA 技術路線、資本配置及與客戶的策略關係；現階段不應把董事會開會等同已罷免。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-21T12:06:30Z",
     "sourceLabel": "NVIDIA Newsroom",
     "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-economy-sea-ai-adoption-report",
-    "title": "Google 東南亞報告：2.43 億人使用生成式 AI，商業 Agent 意願升溫",
-    "summary": "Google、淡馬錫及 Bain & Company 發布第 11 份 e-Conomy SEA 報告，估計東南亞約 2.43 億人活躍使用生成式 AI，佔區內工作人口 58%。報告預測區內數碼經濟商品交易總額今年按年增 17% 至 3,680 億美元，並估計未來五年 AI 使用量可能增加 60 倍。\n\n報告亦指，受訪者中 75% 願意讓 AI Agent 自主比較價格及完成交易；這是使用意願，並非已發生的交易比例。研究團隊認為，若要支撐需求，東南亞未來五年數據中心容量約需擴大三倍，同時要改善能源效率、私隱保障與跨境治理。上述增長均屬報告估算及預測，仍須以後續實際採用驗證。",
-    "category": "AI 產業與研究",
-    "publishedAt": "2026-10-21T07:03:00Z",
-    "sourceLabel": "Google／淡馬錫／Bain",
-    "sourceUrl": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
     "level": "update",
     "verified": true,
     "active": false
