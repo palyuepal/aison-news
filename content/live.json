@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-12-frontier-ai-companies-lawsuit-halt-development",
+    "title": "非牟利組織入稟，要求法院叫停 OpenAI、Google、Anthropic 等前沿模型研發",
+    "summary": "一批科技問責非牟利組織已在三藩市起訴 OpenAI、Anthropic、SpaceX 的 AI 部門、Meta 及 Google，要求法院禁止這些公司繼續開發最先進的 AI 模型。原告援引加州不公平商業行為法，指相關研發構成公共滋擾；這是訴訟主張，法院尚未裁決，亦未頒下任何禁制令。\\n\\nReuters 報道，Meta 拒絕置評，其餘公司未即時回應。案件即使未必成功，亦把 AI 安全爭議由政策辯論推進至可能直接影響產品研發的司法程序；香港企業毋須立即停用 ChatGPT、Gemini 或 Claude，但應留意法院會否接納臨時禁制申請，以及模型發布、企業合約和合規披露會否因此受影響。",
+    "category": "AI 政策與法律",
+    "publishedAt": "2026-11-12T18:23:46Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-12-openai-daybreak-defense-factory-red-team",
+    "title": "OpenAI 推 Daybreak Defense Factory 與 Red Team，AI Agent 由找漏洞做到驗證修補",
+    "summary": "OpenAI 在 Daybreak 發布活動推出兩套企業網絡安全方案。Defense Factory 會接收現有安全工具及 Daybreak Red Team 的發現，由 AI agents 追查漏洞、準備修補，交工程師審核及測試後才合併；亦可隨程式碼變更持續掃描。Red Team 則以協調代理團隊測試 Web 應用、驗證掃描器或漏洞獎勵計劃的報告，再重測修補是否真正阻止攻擊。\\n\\nOpenAI 表示 Red Team 會用隔離環境、Guardian review 及範圍控制限制代理可接觸的應用與端點；目前標示為 early access。這不是向所有人無限制開放的攻擊工具，Daybreak Blue／Red 均須申請及獲批。對香港開發團隊而言，重點是安全流程開始由「找出問題」延伸至可審核修補；下一步要看地區及企業資格、實際誤報率、支援的程式碼庫，以及責任和審批界線。",
+    "category": "AI Agent 與網絡安全",
+    "publishedAt": "2026-11-12T18:00:00Z",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/cyber-at-the-frontier/",
+    "level": "launch",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-12-nvidia-huang-resigns-kress-interim-ceo",
     "title": "黃仁勳辭任 NVIDIA 行政總裁，財務總監 Colette Kress 暫代",
     "summary": "NVIDIA 已正式公布，共同創辦人黃仁勳辭任行政總裁及董事，財務總監 Colette Kress 暫代行政總裁；公司將同時物色內部及外部永久接任人選。這是早前董事會討論其去留後的實質決定，不再只是傳聞或未決會議。\\n\\nReuters 報道，NVIDIA 股價一度跌逾 8%，整個 AI 晶片及雲端供應鏈亦受壓。領導層變動不代表產品或供應即時中斷，但 NVIDIA 的技術路線、客戶融資與生態合作高度依賴黃仁勳的策略角色；香港投資者及使用 NVIDIA 基建的企業，下一步應留意永久行政總裁人選、11 月 17 日業績，以及公司是否調整產品、資本配置或客戶承諾。",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-10-21T13:43:31Z",
     "sourceLabel": "OpenAI 研究",
     "sourceUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-chatgpt-ads-26-country-expansion",
-    "title": "ChatGPT Ads 擴至 26 個新市場，覆蓋全球 89 個國家",
-    "summary": "OpenAI 宣布把 ChatGPT Ads 擴展至另外 26 個國家，總覆蓋市場增至 89 個，新增市場包括阿根廷、智利、尼日利亞、南非、柬埔寨、孟加拉及巴基斯坦。公司稱平台推出八個多月以來，已有逾 10 萬名廣告主使用；廣告主可經技術夥伴或 Ads Manager 自助投放。\n\nOpenAI 表示廣告只會出現在 Free 及 Go 方案，Plus、Pro 與 Enterprise 維持無廣告；廣告會標示並與回答分開，對話內容不會出售予廣告主。這些是公司公布的產品政策及使用數字，實際市場成效和用戶體驗仍待觀察。",
-    "category": "AI 商業",
-    "publishedAt": "2026-10-21T13:43:30Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-nvidia-openshell-agent-security-architecture",
-    "title": "NVIDIA 推出 OpenShell 參考架構：由晶片層監察及限制 AI Agent",
-    "summary": "NVIDIA 發表 OpenShell 參考架構，把 Vera Rubin 推理基建、Vera CPU 上的 Agent 執行環境，以及 BlueField-4 DPU 的 Sentry 安全軟件結合，讓企業在部署 AI Agent 時設定隔離邊界、持續監察行為及執行政策。NVIDIA 表示，參考架構現已提供，並支援主要企業作業系統及邊緣裝置。\n\nNVIDIA 稱，若 Agent 試圖越過軟件邊界，Sentry 可在晶片層隔離及停止其行動；這屬廠商對架構能力的描述，實際防護效果仍待各部署環境驗證。Anthropic、AWS、微軟及多間資安與企業軟件公司正參與相關整合，但並不代表所有合作產品已全面推出。",
-    "category": "AI 安全與 Agent",
-    "publishedAt": "2026-10-21T12:06:32Z",
-    "sourceLabel": "NVIDIA Newsroom",
-    "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
     "level": "update",
     "verified": true,
     "active": false
