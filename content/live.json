@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-12-enterprises-open-weight-ai-costs",
+    "title": "近六成大型企業擬增用開放權重模型，AI 支出平均超預算 24%",
+    "summary": "Reuters 引述 Capgemini 對 10 個國家、500 名大型企業高層的調查：59% 受訪者表示過去一年 AI 支出明顯超出預期或預算，平均超支 24%；同樣有 59% 計劃未來一年增加使用較便宜的開放權重模型。受訪企業年收入均超過 10 億美元，結果反映大型企業正由單純追求最強模型，轉向控制整體 AI 成本。\\n\\nCapgemini 指開放權重模型 token 平均比封閉模型便宜 87%；今年 9 月它們佔 OpenRouter 流量 72%，但只佔支出 27%。不過，半數受訪者仍會在複雜任務保留封閉模型，調查亦不代表所有企業或實際工作負載都能取得同等節省。對香港企業而言，下一步應按任務比較準確度、基建、私隱及維運成本，而不是只比較 API 單價。",
+    "category": "AI 模型與企業成本",
+    "publishedAt": "2026-11-12T09:01:56Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/most-large-firms-plan-higher-open-weight-ai-use-cap-bills-study-shows-2026-11-12/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-12-chinese-ai-firms-overseas-nvidia-capacity",
     "title": "中國 AI 公司急租海外 NVIDIA 算力，憂美國收緊雲端晶片管制",
     "summary": "Reuters 引述三名知情人士報道，中國 AI 公司正嘗試預留中國境外、由 NVIDIA 晶片驅動的數據中心算力。一間大型中國雲端供應商曾內部討論鎖定海外容量，部分較小型 AI 實驗室亦接觸東南亞算力營運商；涉事公司未被點名，NVIDIA 及美國商務部亦未有即時回應。\\n\\n企業憂慮黃仁勳相關風波會推高華府收緊遙距取用先進晶片的政治壓力；美國眾議院已通過 Remote Access Security Act，法案仍待參議院處理。Reuters 未能獨立核實相關間諜指控，中國亦已否認；但預留海外算力及灰市囤貨反映，出口管制風險正由實體晶片延伸至跨境雲端容量，香港與東南亞數據中心的客戶審查壓力可能上升。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-21T12:06:31Z",
     "sourceLabel": "NVIDIA Newsroom",
     "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-21-nvidia-ai-supply-chain-capacity",
-    "title": "NVIDIA 擴充 AI 晶片供應鏈：基板、封裝及光學引擎同步增產",
-    "summary": "NVIDIA 宣布與 IBIDEN、Samsung Electro-Mechanics、Unimicron、Amkor、KYEC 及 SPIL 擴大供應合作，涵蓋晶片基板、先進封裝、測試與共封裝光學引擎。公司預計相關基板協議可在未來三年合共把產能提高 2.5 倍，並向 KYEC 提供 11 億美元產能預留款，支持美國新測試設施。\n\nAmkor 目標在 2028 年底前把中介層晶圓封裝產能提高逾 300%；SPIL 則目標在 2027 年中前把光學引擎產能提高 15 倍。這些均是廠商的擴產計劃與目標，不等於相關產能已落地；進度仍取決於新廠建設及量產。",
-    "category": "AI 晶片",
-    "publishedAt": "2026-10-21T12:06:30Z",
-    "sourceLabel": "NVIDIA Newsroom",
-    "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout/",
     "level": "update",
     "verified": true,
     "active": false
