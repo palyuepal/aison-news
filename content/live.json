@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-13-microsoft-365-global-outage-ai-connectors",
+    "title": "Microsoft 指 365 全球故障源於網絡容量升級問題，已處理根因但仍在復原",
+    "summary": "Microsoft 就持續超過 22 小時、影響 Outlook、Teams、Copilot 及多項 Microsoft 365 服務的全球故障致歉，並首次交代事故由較早前網絡容量升級中的問題引起，其後一次網絡變更令問題浮現。公司表示事件屬技術故障，與網攻或 AI agents 無關；根本問題已處理，但截至最新更新仍在恢復餘下客戶及地區，未公布全面復原時間。\\n\\n香港企業不應把「已處理根因」當成所有服務已正常：應繼續保留獨立通訊渠道、核對延遲電郵與重跑失敗工作，並待 Microsoft、OpenAI 及 Anthropic 狀態頁確認相關連接器穩定後，才恢復依賴 Microsoft 365 的關鍵 AI 自動化。",
+    "category": "雲端服務與 AI 工具",
+    "publishedAt": "2026-11-13T18:13:17Z",
+    "sourceLabel": "Microsoft／Business Insider",
+    "sourceUrl": "https://www.businessinsider.com/microsoft-365-outage-outlook-teams-down-claude-what-we-know-2026-11",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-13-eu-first-leaders-ai-summit",
+    "title": "歐盟首場領袖級 AI 峰會落幕：追加資金、AI 主權與 2027 就業峰會成後續主線",
+    "summary": "歐盟首場領袖級人工智能峰會在都柏林結束。歐洲理事會公布的正式結果顯示，領袖把大規模公私營投資、AI 基建、潔淨及可負擔能源、供應鏈安全與減少關鍵依賴列為提升競爭力的重點，並指出下一份歐盟長期預算及新的 European Competitiveness Fund 將具決定性作用；今次未公布新法例、確定撥款或七座 AI gigafactory 的落實時間表。\\n\\n安全方面，領袖討論基本權利、民主程序、網絡安全、市場集中及 AI 對勞工市場的影響，並會在 2027 年 2 月 5 日再次討論 AI，把 AI 與社會影響列為 2027 社會峰會主題。對面向歐洲的香港企業，短期毋須因峰會即時改合規流程，但應留意後續預算、AI Act 執行、基建採購與就業政策會否轉成具約束力措施。",
+    "category": "AI 政策與基建",
+    "publishedAt": "2026-11-13T18:08:00Z",
+    "sourceLabel": "歐洲理事會",
+    "sourceUrl": "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/13/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-13-china-nvidia-ai-projects-3-billion",
     "title": "Reuters 查出逾 32 億美元中國 AI 項目依賴受限 NVIDIA 晶片，供應與改造風險升溫",
     "summary": "Reuters 審閱逾 150 份中國採購公告、投資計劃、建設合約及公司披露，識別出總值逾 230 億元人民幣（約 32 億美元）的運算項目與設備協議，涉及 NVIDIA 受出口限制的處理器，範圍由沿海科技中心延伸至地方政府項目、大學及區域算力中心。金額包括建築、電力系統等基建，並非全部是晶片支出；部分設施已營運或施工，但報道沒有證實這些受限硬件如何進入中國。\\n\\n這批項目未被指與 Megaspeed 或黃仁勳相關指控有關，亦沒有證據表明所有項目違反出口規則。實際風險在於美國收緊管制後，營運商可能面對延誤、供應中斷或改用國產晶片的昂貴重設計；香港及區內雲端、融資與設備供應商應加強最終用戶、晶片來源及替代方案審查。",
@@ -7,30 +31,6 @@
     "publishedAt": "2026-11-13T08:31:00Z",
     "sourceLabel": "Reuters 獨家調查",
     "sourceUrl": "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
-    "level": "breaking",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-11-13-microsoft-365-global-outage-ai-connectors",
-    "title": "Microsoft 365 全球故障拖至亞洲工作時段，香港企業、Copilot 及 AI 連接器受影響",
-    "summary": "Microsoft 365 全球故障由周四延續至周五亞洲工作時段，Outlook、Teams、Exchange Online 及 Copilot 等服務出現中斷或效能下降。Microsoft 表示復原分階段進行、部分工作負載改善但容量仍未完全回復，暫無跡象顯示事故由惡意活動造成；OpenAI 與 Anthropic 亦確認 Microsoft 365 連接器受上游事故影響。\\n\\nAP 報道香港企業未能透過 Outlook 收取美國客戶更新，部分銀行運作亦受干擾；新加坡、日本、菲律賓、澳洲及歐美政府與企業同樣受影響。香港公司應改用獨立通訊渠道處理緊急指示，核對延遲郵件與自動化任務，並暫停依賴 Outlook、Teams 或 Microsoft 連接器的關鍵 AI 工作流，直至官方確認全面復原。",
-    "category": "雲端服務與 AI 工具",
-    "publishedAt": "2026-11-13T07:47:15Z",
-    "sourceLabel": "AP／Microsoft／Anthropic",
-    "sourceUrl": "https://apnews.com/article/microsoft-outage-outlook-email-365-status-down-d92547a821930290db2964388016979a",
-    "level": "breaking",
-    "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-11-13-eu-first-leaders-ai-summit",
-    "title": "歐盟舉行首次領袖級 AI 峰會，聚焦監管、資金與七座 AI Gigafactory 卡關",
-    "summary": "歐盟領袖周五在都柏林舉行首個專門討論人工智能的峰會，議題包括如何追趕美國與中國、減少繁複規管、建立安全護欄，以及解決 AI 基建資金問題。Mistral AI 行政總裁 Arthur Mensch 與 AI 學者 Geoffrey Hinton 將向領袖簡報；峰會仍在進行，尚未公布具法律效力的新政策。\\n\\nReuters 指歐盟《晶片法案》可能未能達到2030年把全球晶片產量佔比提高至20%的目標，而七座 AI gigafactory 計劃亦因2028至2034年競爭力預算爭議尚未全面啟動。對香港企業而言，下一步要留意峰會結論會否改變進入歐洲市場的合規、雲端採購及模型安全要求。",
-    "category": "AI 政策與基建",
-    "publishedAt": "2026-11-13T06:06:44Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
     "level": "breaking",
     "verified": true,
     "active": true
