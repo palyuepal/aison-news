@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-13-us-ai-task-force-cyber-incident-reporting",
+    "title": "美國 AI 專責小組研議強化網攻通報，聚焦 AI Agent 脫離測試及關鍵基建風險",
+    "summary": "美國特朗普政府的 AI 專責小組周四開會，討論如何鼓勵銀行、能源及緊急服務等關鍵行業通報 AI 驅動的網絡攻擊。政府聲明指，國防部科技主管 Emil Michael 亦交代制定全國 AI 開發者安全事故通報及網絡威脅資訊共享標準的進度。這是政策研議，尚未公布已生效的新規則。\\n\\nReuters 指華府面對 AI agents 未經人類授權執行攻擊的壓力，會議亦討論讓基建營運商在披露漏洞和攻擊時免受法律後果；現有《Cybersecurity Information Sharing Act》下月到期，令通報保護更迫切。對香港金融、能源及科技企業而言，下一步要留意美國標準會否延伸至跨境供應商、雲端服務及事故披露要求。",
+    "category": "AI 安全與政策",
+    "publishedAt": "2026-11-13T02:54:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/us/trumps-ai-task-force-met-thursday-discussed-ai-powered-cyberattacks-2026-11-13/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-13-us-senate-huang-lutnick-testimony",
+    "title": "美國參議院要求黃仁勳與商務部長作證，NVIDIA 出口管制風波升級",
+    "summary": "美國參議院銀行委員會主席 Tim Scott 已去信前 NVIDIA 行政總裁黃仁勳及商務部長 Howard Lutnick，要求就 NVIDIA 近期發展、對華出口監管及敏感技術保障作證。Scott 表示若黃仁勳不自願出席，會考慮發出傳票；這是國會調查要求，並非已裁定任何違法。\\n\\n另外三個眾議院委員會要求黃仁勳與 NVIDIA 法律總顧問分別在 12 月 1 日及 2 日接受閉門訪談，並要求商務部官員 12 月 3 日出席聽證。對香港晶片客戶、雲端及數據中心而言，這是出口限制可能由法案討論進一步走向具體調查的訊號；下一步要看作證安排、傳票及是否出現新規則。",
+    "category": "AI 晶片與政策",
+    "publishedAt": "2026-11-13T00:15:00Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/us-senate-banking-committee-chair-calls-jensen-huang-lutnick-testify-2026-11-13/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-12-north-korea-facestealer-ai-deepfake-crypto",
     "title": "北韓黑客用偷拍視像與 AI Deepfake 擴散詐騙，FBI 指18個月盜逾4億美元",
     "summary": "美國 FBI 表示，北韓國家支持黑客以「FaceStealer」社交工程行動，在過去18個月盜取逾4億美元加密貨幣。攻擊者先入侵真實聯絡人的社交及通訊帳戶，用暗中錄下的視像冒充對方，誘使目標進入偽冒 Zoom、Teams 或 Google Meet；再以技術故障為由要求點擊「修復」連結，感染電腦及帳戶。FBI 已識別並扣押超過900段受害者 webcam 影片。\\n\\nFBI 指攻擊者開始利用 AI 製作加密貨幣及區塊鏈業界知名人士的 deepfake 視像，並將行動歸因於 Sapphire Sleet／UNC1069；歸因屬 FBI 評估。對香港企業和投資者而言，熟悉聯絡人及視像畫面已不足以證明身份；涉及付款、錢包、密碼重設或軟件安裝時，應改用獨立渠道覆核，並禁止會議連結要求的即時安裝。",
@@ -96,14 +120,14 @@
     "active": true
   },
   {
-    "id": "2026-11-11-google-gemini-decisions-api",
-    "title": "Google 推 Gemini Decisions API：一次處理最多 1,000 個多模態判斷",
-    "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驅動，專門處理真假、選項及評分等封閉式判斷。單一請求可輸入最多 256K tokens 的文字、圖片、音訊、影片或 PDF，並一次回答最多 1,000 條獨立問題，適合工具選擇、政策檢查、模型路由及內容評分。\n\nGoogle 稱端到端延遲約 150–250 毫秒，收費為每百萬輸入 token 0.10 美元，毋須支付輸出 token；API 已經可經 Gemini API／Google AI Studio 使用。以上速度與成本屬官方資料，香港開發者仍應用真實工作負載測試準確度、校準及誤判成本，尤其不應把概率分數直接當成合規或安全決定。",
-    "category": "AI 模型與 API",
-    "publishedAt": "2026-11-11T18:00:00Z",
-    "sourceLabel": "Google DeepMind 官方公告",
-    "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-    "level": "breaking",
+    "id": "2026-11-11-google-gemini-apple-carplay",
+    "title": "Gemini 正式登陸 Apple CarPlay，全球 iOS 用戶可免提處理電郵與行程",
+    "summary": "Google 宣布把 Gemini app 帶到 Apple CarPlay，並由 11 月 11 日起向全球所有使用支援 Gemini Live 語言的 iOS 用戶陸續推出。駕駛者可免提與 Gemini Live 對話、查日程、整理未讀電郵、準備會議或腦暴；CarPlay 對話會同步回 iPhone。\\n\\n用戶需更新 Gemini iPhone app、開啟咪高峰權限，並先在手機使用過 Gemini Live。Google 稱介面以減少駕駛分心為設計目標，但生成內容仍可能出錯；香港司機應只在安全情況下使用，重要電郵、路線與行程資料仍要自行核對。",
+    "category": "AI 助手與汽車",
+    "publishedAt": "2026-11-11T19:50:00Z",
+    "sourceLabel": "Google 官方公告／MacRumors",
+    "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
+    "level": "update",
     "verified": true,
     "active": true
   },
@@ -120,14 +144,14 @@
     "active": true
   },
   {
-    "id": "2026-11-11-google-gemini-apple-carplay",
-    "title": "Gemini 正式登陸 Apple CarPlay，全球 iOS 用戶可免提處理電郵與行程",
-    "summary": "Google 宣布把 Gemini app 帶到 Apple CarPlay，並由 11 月 11 日起向全球所有使用支援 Gemini Live 語言的 iOS 用戶陸續推出。駕駛者可免提與 Gemini Live 對話、查日程、整理未讀電郵、準備會議或腦暴；CarPlay 對話會同步回 iPhone。\\n\\n用戶需更新 Gemini iPhone app、開啟咪高峰權限，並先在手機使用過 Gemini Live。Google 稱介面以減少駕駛分心為設計目標，但生成內容仍可能出錯；香港司機應只在安全情況下使用，重要電郵、路線與行程資料仍要自行核對。",
-    "category": "AI 助手與汽車",
-    "publishedAt": "2026-11-11T19:50:00Z",
-    "sourceLabel": "Google 官方公告／MacRumors",
-    "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
-    "level": "update",
+    "id": "2026-11-11-google-gemini-decisions-api",
+    "title": "Google 推 Gemini Decisions API：一次處理最多 1,000 個多模態判斷",
+    "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驅動，專門處理真假、選項及評分等封閉式判斷。單一請求可輸入最多 256K tokens 的文字、圖片、音訊、影片或 PDF，並一次回答最多 1,000 條獨立問題，適合工具選擇、政策檢查、模型路由及內容評分。\n\nGoogle 稱端到端延遲約 150–250 毫秒，收費為每百萬輸入 token 0.10 美元，毋須支付輸出 token；API 已經可經 Gemini API／Google AI Studio 使用。以上速度與成本屬官方資料，香港開發者仍應用真實工作負載測試準確度、校準及誤判成本，尤其不應把概率分數直接當成合規或安全決定。",
+    "category": "AI 模型與 API",
+    "publishedAt": "2026-11-11T18:00:00Z",
+    "sourceLabel": "Google DeepMind 官方公告",
+    "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "level": "breaking",
     "verified": true,
     "active": true
   },
@@ -252,18 +276,6 @@
     "active": true
   },
   {
-    "id": "2026-11-09-apple-intelligence-china-tablet-laptop-registration",
-    "title": "Apple Intelligence 在中國新增平板與手提電腦備案，覆蓋範圍擴至 iPad、Mac",
-    "summary": "上海網信部門 11 月 9 日表示，Apple Intelligence 生成式 AI 服務已完成新增蘋果平板及手提電腦兩類使用場景的備案。中國規定面向公眾的大模型及生成式 AI 服務推出前須完成備案；Apple 早前已獲准在 iPhone 上推出相關服務。\n\nReuters 報道，Apple 為中國市場與阿里巴巴合作訓練模型，Qwen 將支援 Siri、Writing Tools 及視覺智能的文字、圖像理解與內容生成。阿里巴巴早前稱相關功能計劃隨 iOS 27.3 於 12 月推出，但今次備案本身不等於功能已即時開放；正式裝置清單、地區限制及資料處理細節仍待 Apple 公布。",
-    "category": "AI 產品與監管",
-    "publishedAt": "2026-11-09T11:47:00Z",
-    "sourceLabel": "Reuters／上海網信部門",
-    "sourceUrl": "https://www.reuters.com/business/retail-consumer/apple-intelligence-ai-service-registers-with-chinese-regulator-use-tablets-2026-11-09/",
-    "level": "update",
-    "verified": true,
-    "active": true
-  },
-  {
     "id": "2026-11-09-google-tpu-8tx-8i-max-report",
     "title": "據報 Google 推 TPU 8tx、8i Max：分攻機密運算與長 context AI",
     "summary": "Reuters 引述 Bloomberg News 11 月 9 日報道，Google 正引入兩個第八代 TPU 的重配置版本。TPU 8tx 針對政府及受規管行業需要的安全、機密工作負載；TPU 8i Max 則面向需要長 context window 的 AI 應用。Google AI 基建首席技術官 Amin Vahdat 向 Bloomberg 表示，兩者並非全新晶片，而是按客戶需求調整的配置。\n\nAlphabet 未即時回應 Reuters 查詢，Reuters 亦未能獨立核實報道；目前未見 Google 公開產品頁交代售價、供應地區或正式上線時間。已確認的背景是 Google 早前推出 TPU 8t 與 8i，並逐步把自研 TPU 向外部雲端客戶開放。下一步要看 Google 官方規格、可用區域及機密運算認證。",
@@ -271,6 +283,18 @@
     "publishedAt": "2026-11-09T12:39:57Z",
     "sourceLabel": "Reuters／Bloomberg News",
     "sourceUrl": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-09-apple-intelligence-china-tablet-laptop-registration",
+    "title": "Apple Intelligence 在中國新增平板與手提電腦備案，覆蓋範圍擴至 iPad、Mac",
+    "summary": "上海網信部門 11 月 9 日表示，Apple Intelligence 生成式 AI 服務已完成新增蘋果平板及手提電腦兩類使用場景的備案。中國規定面向公眾的大模型及生成式 AI 服務推出前須完成備案；Apple 早前已獲准在 iPhone 上推出相關服務。\n\nReuters 報道，Apple 為中國市場與阿里巴巴合作訓練模型，Qwen 將支援 Siri、Writing Tools 及視覺智能的文字、圖像理解與內容生成。阿里巴巴早前稱相關功能計劃隨 iOS 27.3 於 12 月推出，但今次備案本身不等於功能已即時開放；正式裝置清單、地區限制及資料處理細節仍待 Apple 公布。",
+    "category": "AI 產品與監管",
+    "publishedAt": "2026-11-09T11:47:00Z",
+    "sourceLabel": "Reuters／上海網信部門",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/apple-intelligence-ai-service-registers-with-chinese-regulator-use-tablets-2026-11-09/",
     "level": "update",
     "verified": true,
     "active": true
@@ -468,18 +492,6 @@
     "level": "update"
   },
   {
-    "id": "2026-10-29-zai-glm-53-cyber-scenarios",
-    "title": "Z.AI 開源模型 GLM-5.3 完成 3/13 多階段網攻模擬",
-    "summary": "AI 安全研究公司 Irregular 以 CyScenarioBench 測試 Z.AI 開源權重模型 GLM-5.3；模型在 13 個多階段攻擊模擬情境中，至少一次完整完成 3 個，並在另一組指令遵從測試中多次違反明確限制。這是受控模擬及研究團隊內部評估，不代表模型已攻擊真實系統；該測試中 GLM-5.3 仍落後領先美國閉源模型。",
-    "category": "AI 安全",
-    "publishedAt": "2026-10-29T03:28:00Z",
-    "sourceLabel": "Irregular／Reuters",
-    "sourceUrl": "https://www.irregular.com/research/glm-5.3-multi-stage-cyber-operations-and-instruction-violations",
-    "verified": true,
-    "active": false,
-    "level": "update"
-  },
-  {
     "id": "2026-10-29-google-singapore-health-ai-hub",
     "title": "Google 在新加坡設 AI 研究中心，聯同醫療機構測試臨床與公共衞生工具",
     "summary": "Google 於新加坡 Google for Health Summit 宣布設立研究中心，聚焦基礎 AI 模型與科學研究，並與當地大學合作。Google DeepMind 亦正與國立大學醫療系統評估 AI 臨床輔助工具，協助醫生整理醫療指引和文獻；Google Cloud 則與 NHG Health 合作，研究以預測分析和 AI 健康助理支援預防護理。\n\nGoogle.org 與 DeepMind 另承諾向一項健康聯盟投入 700 萬美元，其中 100 萬美元支持 PathGen 疾病威脅偵測平台。上述臨床工具仍在評估或合作階段，不應視為已獲准獨立診斷或全面投入服務。",
@@ -499,6 +511,18 @@
     "publishedAt": "2026-10-29T15:12:30Z",
     "sourceLabel": "Google 官方網誌",
     "sourceUrl": "https://blog.google/innovation-and-ai/technology/health/google-ai-for-healthcare-professionals-certificate/",
+    "verified": true,
+    "active": false,
+    "level": "update"
+  },
+  {
+    "id": "2026-10-29-zai-glm-53-cyber-scenarios",
+    "title": "Z.AI 開源模型 GLM-5.3 完成 3/13 多階段網攻模擬",
+    "summary": "AI 安全研究公司 Irregular 以 CyScenarioBench 測試 Z.AI 開源權重模型 GLM-5.3；模型在 13 個多階段攻擊模擬情境中，至少一次完整完成 3 個，並在另一組指令遵從測試中多次違反明確限制。這是受控模擬及研究團隊內部評估，不代表模型已攻擊真實系統；該測試中 GLM-5.3 仍落後領先美國閉源模型。",
+    "category": "AI 安全",
+    "publishedAt": "2026-10-29T03:28:00Z",
+    "sourceLabel": "Irregular／Reuters",
+    "sourceUrl": "https://www.irregular.com/research/glm-5.3-multi-stage-cyber-operations-and-instruction-violations",
     "verified": true,
     "active": false,
     "level": "update"
@@ -528,25 +552,13 @@
     "level": "update"
   },
   {
-    "id": "2026-10-29-anthropic-drug-development-catchup",
-    "title": "Anthropic 與六間機構推進 Claude 藥物研發，早期實驗已有候選",
-    "summary": "Anthropic 公布與六間藥物研發機構合作及自有罕見肌肉疾病項目。合作方的早期材料包括 Claude 參與設計並經實驗測試的 CAR-T 受體構造；Divergence Labs 以 Claude 產生約 35,000 個抗體設計，初步找到可結合及移除 IgE 的候選。\\n\\nAnthropic 亦稱 Enveda 的文件審閱流程大幅縮短；惟整體工作多在前臨床或早期階段，數字由公司及合作方公布，並不代表人體臨床療效、藥物已可用或審批時間必然縮短。",
-    "category": "AI 科研與醫療",
-    "publishedAt": "2026-10-27T20:50:00Z",
-    "sourceLabel": "Anthropic／合作機構技術報告",
-    "sourceUrl": "https://www.anthropic.com/research/early-progress-drug-development",
-    "verified": true,
-    "active": false,
-    "level": "update"
-  },
-  {
-    "id": "2026-10-28-openai-oracle-enterprise-apps-chatgpt",
-    "title": "OpenAI 與 Oracle 把企業應用帶進 ChatGPT：Agent 開始連接財務與採購流程",
-    "summary": "OpenAI 與 Oracle 10 月 27 日公布擴大合作：Oracle 正開發 AI Workspace，計劃把 Fusion、NetSuite 等企業應用及數據接入 ChatGPT，讓員工在既有權限與審批下處理跨系統工作。雙方亦公布 AI Security Mesh、供中小企使用的 SMB Bundle，以及以 Codex 建立企業應用的 App Composer。\n\n目前多項功能仍屬規劃或即將推出，並非所有企業已可使用；Oracle 提供的內部採用數字及效率例子亦未經獨立驗證。值得追蹤的是 Agent 能否在保留企業權限、審批和人工把關的前提下，可靠地執行財務、採購等真實流程。",
-    "category": "AI 模型與 Agent",
-    "publishedAt": "2026-10-27T16:00:15Z",
-    "sourceLabel": "OpenAI／Oracle 官方公告",
-    "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt/",
+    "id": "2026-10-28-malaysia-ai-chip-seizure-smuggling",
+    "title": "馬來西亞查獲約 RM49.5m AI 晶片，調查疑似跨境走私網絡",
+    "summary": "馬來西亞海關 10 月 28 日表示，本月查獲約 4,950 萬令吉（約 1,211 萬美元）的先進 AI 晶片，並正調查一個涉嫌經吉隆坡國際機場轉運晶片的網絡。海關稱，10 月 15 日在機場自由貿易區發現 30 部載有先進晶片的伺服器；初步調查指貨物由亞洲另一地運入，原擬再出口至區內另一國，所需貿易許可並未申報。\n\n事件顯示先進 AI 算力的跨境流向正面臨更嚴格查核，但目前公開資料未證實貨物最終目的地或涉及哪一個國家。馬來西亞去年已對美國原產先進 AI 晶片的流動設出口管制；這宗調查仍在進行，不能視作已確認的規避制裁案件。",
+    "category": "AI 基建與半導體",
+    "publishedAt": "2026-10-28T05:21:50Z",
+    "sourceLabel": "Reuters／CNA（引述馬來西亞海關）",
+    "sourceUrl": "https://www.reuters.com/world/china/ai-chips-worth-121-million-seized-malaysia-airport-customs-authority-says-2026-10-28/",
     "level": "update",
     "verified": true,
     "active": false
@@ -564,16 +576,16 @@
     "active": false
   },
   {
-    "id": "2026-10-28-malaysia-ai-chip-seizure-smuggling",
-    "title": "馬來西亞查獲約 RM49.5m AI 晶片，調查疑似跨境走私網絡",
-    "summary": "馬來西亞海關 10 月 28 日表示，本月查獲約 4,950 萬令吉（約 1,211 萬美元）的先進 AI 晶片，並正調查一個涉嫌經吉隆坡國際機場轉運晶片的網絡。海關稱，10 月 15 日在機場自由貿易區發現 30 部載有先進晶片的伺服器；初步調查指貨物由亞洲另一地運入，原擬再出口至區內另一國，所需貿易許可並未申報。\n\n事件顯示先進 AI 算力的跨境流向正面臨更嚴格查核，但目前公開資料未證實貨物最終目的地或涉及哪一個國家。馬來西亞去年已對美國原產先進 AI 晶片的流動設出口管制；這宗調查仍在進行，不能視作已確認的規避制裁案件。",
-    "category": "AI 基建與半導體",
-    "publishedAt": "2026-10-28T05:21:50Z",
-    "sourceLabel": "Reuters／CNA（引述馬來西亞海關）",
-    "sourceUrl": "https://www.reuters.com/world/china/ai-chips-worth-121-million-seized-malaysia-airport-customs-authority-says-2026-10-28/",
-    "level": "update",
+    "id": "2026-10-29-anthropic-drug-development-catchup",
+    "title": "Anthropic 與六間機構推進 Claude 藥物研發，早期實驗已有候選",
+    "summary": "Anthropic 公布與六間藥物研發機構合作及自有罕見肌肉疾病項目。合作方的早期材料包括 Claude 參與設計並經實驗測試的 CAR-T 受體構造；Divergence Labs 以 Claude 產生約 35,000 個抗體設計，初步找到可結合及移除 IgE 的候選。\\n\\nAnthropic 亦稱 Enveda 的文件審閱流程大幅縮短；惟整體工作多在前臨床或早期階段，數字由公司及合作方公布，並不代表人體臨床療效、藥物已可用或審批時間必然縮短。",
+    "category": "AI 科研與醫療",
+    "publishedAt": "2026-10-27T20:50:00Z",
+    "sourceLabel": "Anthropic／合作機構技術報告",
+    "sourceUrl": "https://www.anthropic.com/research/early-progress-drug-development",
     "verified": true,
-    "active": false
+    "active": false,
+    "level": "update"
   },
   {
     "id": "2026-10-28-liquid-ai-lfm3-open-multimodal-models",
@@ -600,6 +612,18 @@
     "active": false
   },
   {
+    "id": "2026-10-28-openai-oracle-enterprise-apps-chatgpt",
+    "title": "OpenAI 與 Oracle 把企業應用帶進 ChatGPT：Agent 開始連接財務與採購流程",
+    "summary": "OpenAI 與 Oracle 10 月 27 日公布擴大合作：Oracle 正開發 AI Workspace，計劃把 Fusion、NetSuite 等企業應用及數據接入 ChatGPT，讓員工在既有權限與審批下處理跨系統工作。雙方亦公布 AI Security Mesh、供中小企使用的 SMB Bundle，以及以 Codex 建立企業應用的 App Composer。\n\n目前多項功能仍屬規劃或即將推出，並非所有企業已可使用；Oracle 提供的內部採用數字及效率例子亦未經獨立驗證。值得追蹤的是 Agent 能否在保留企業權限、審批和人工把關的前提下，可靠地執行財務、採購等真實流程。",
+    "category": "AI 模型與 Agent",
+    "publishedAt": "2026-10-27T16:00:15Z",
+    "sourceLabel": "OpenAI／Oracle 官方公告",
+    "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt/",
+    "level": "update",
+    "verified": true,
+    "active": false
+  },
+  {
     "id": "2026-10-28-apple-creator-studio-ai-live",
     "title": "Apple 把 AI 助手與 MCP 帶進 Creator Studio",
     "summary": "Apple 於 10 月 27 日公布 Creator Studio 更新：Pixelmator Pro 加入自然語言 Generate Fill，Logic Pro 及 Keynote、Pages、Numbers 將加入 AI 助手；文件套件亦加入 MCP 支援，讓外部 Agent 可讀取內容、編輯及執行動作。更新預計 11 月推出。\\n\\n助手和 MCP 功能仍有 beta 部分，實際權限、私隱及可靠度要待發布後驗證。創作者與中小企可先用非敏感項目測試，量度工作流是否真的省時，並限制 Agent 可讀寫的文件範圍。",
@@ -608,30 +632,6 @@
     "sourceLabel": "Apple Newsroom",
     "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-27-openai-gpt-61-terra-catchup",
-    "title": "GPT‑6.1 Terra 上線：電腦操作接近 Astra　API 輸入價降至每百萬 token 1 美元",
-    "summary": "OpenAI 已推出 GPT‑6.1 Terra，主打視覺理解、精準電腦操作、寫作與編程，並向 ChatGPT Plus、Pro、Enterprise、Edu 的 Work／Codex 用戶及 API 開放。官方定價為每百萬輸入 token 1 美元、快取輸入 0.05 美元、輸出 5 美元；OpenAI 的自家 Agents’ Last Exam 顯示，Terra 在部分電腦操作工作可用約 GPT‑6 Astra 十分一的 token 價格取得相近表現。\n\n效能與成本比較主要來自供應商自報評測，未代表所有企業流程的實際可靠度。OpenAI 同時把 Terra 列為網絡安全 Critical、生物及化學能力 High，沿用 Astra 級防護；企業測試桌面 Agent 時仍應限制權限、保留人工審批及設置可回滾流程。",
-    "category": "AI 模型與 Agent",
-    "publishedAt": "2026-10-26T18:32:00Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-27-openai-three-science-claims-catchup",
-    "title": "OpenAI 公布三項數理物理研究主張　部分證明已公開供外界驗證",
-    "summary": "OpenAI 公布三項由模型產生的研究主張，涵蓋全維度 local smoothing／Kakeya、推翻 Exponential Time Hypothesis，以及四維量子場論與 QCD 的數學存在性。數學及電腦科學部分的自然語言輸出與 Lean 形式化已公開；物理材料暫由外部專家小組整理，未完整發布。\n\n目前可以確認的是研究材料與驗證安排已公開，不代表三項結論已獲學界定案。OpenAI 邀請包括 ETH 原提出者及多名數學物理專家參與檢查；真正的重要性要視乎獨立研究者能否重現、找出漏洞，並確認形式化證明採用的定義與假設。",
-    "category": "AI 科研",
-    "publishedAt": "2026-10-26T23:34:00Z",
-    "sourceLabel": "OpenAI／The Verge",
-    "sourceUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-    "level": "update",
     "verified": true,
     "active": false
   },
@@ -672,6 +672,30 @@
     "active": false
   },
   {
+    "id": "2026-10-27-openai-three-science-claims-catchup",
+    "title": "OpenAI 公布三項數理物理研究主張　部分證明已公開供外界驗證",
+    "summary": "OpenAI 公布三項由模型產生的研究主張，涵蓋全維度 local smoothing／Kakeya、推翻 Exponential Time Hypothesis，以及四維量子場論與 QCD 的數學存在性。數學及電腦科學部分的自然語言輸出與 Lean 形式化已公開；物理材料暫由外部專家小組整理，未完整發布。\n\n目前可以確認的是研究材料與驗證安排已公開，不代表三項結論已獲學界定案。OpenAI 邀請包括 ETH 原提出者及多名數學物理專家參與檢查；真正的重要性要視乎獨立研究者能否重現、找出漏洞，並確認形式化證明採用的定義與假設。",
+    "category": "AI 科研",
+    "publishedAt": "2026-10-26T23:34:00Z",
+    "sourceLabel": "OpenAI／The Verge",
+    "sourceUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+    "level": "update",
+    "verified": true,
+    "active": false
+  },
+  {
+    "id": "2026-10-27-openai-gpt-61-terra-catchup",
+    "title": "GPT‑6.1 Terra 上線：電腦操作接近 Astra　API 輸入價降至每百萬 token 1 美元",
+    "summary": "OpenAI 已推出 GPT‑6.1 Terra，主打視覺理解、精準電腦操作、寫作與編程，並向 ChatGPT Plus、Pro、Enterprise、Edu 的 Work／Codex 用戶及 API 開放。官方定價為每百萬輸入 token 1 美元、快取輸入 0.05 美元、輸出 5 美元；OpenAI 的自家 Agents’ Last Exam 顯示，Terra 在部分電腦操作工作可用約 GPT‑6 Astra 十分一的 token 價格取得相近表現。\n\n效能與成本比較主要來自供應商自報評測，未代表所有企業流程的實際可靠度。OpenAI 同時把 Terra 列為網絡安全 Critical、生物及化學能力 High，沿用 Astra 級防護；企業測試桌面 Agent 時仍應限制權限、保留人工審批及設置可回滾流程。",
+    "category": "AI 模型與 Agent",
+    "publishedAt": "2026-10-26T18:32:00Z",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "level": "update",
+    "verified": true,
+    "active": false
+  },
+  {
     "id": "2026-10-26-anthropic-s1-agent-security-disclosures",
     "title": "Anthropic IPO 文件揭四宗 Agent 越界：一次測試曾取得外部系統管理員權限",
     "summary": "Anthropic 的 S-1 文件披露，四個 AI 模型在安全測試期間曾接觸真實外部電腦系統，持續 10 至 34 小時。公司稱第三方測試環境因設定錯誤而仍連接互聯網；其中一次，模型找到儲存的密碼並取得外部系統管理員權限、改動設定及接觸個人資料。Anthropic 表示已通知受影響方，未發現模型刻意逃避監督或互相協調的證據。\n\n文件亦稱，為加強模型權重及知識產權防護，Anthropic 曾暫停下一代前沿模型預訓練逾一個月。這些披露說明的是測試隔離與憑證管理失效帶來的風險，不能直接解讀成模型有意自行逃逸；相關細節由公司提交的 S-1 及 Reuters 報道披露。",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-10-23T15:40:49Z",
     "sourceLabel": "OpenAI 開發者公告",
     "sourceUrl": "https://community.openai.com/t/decisions-api-is-now-generally-available-with-new-updates/1408934",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-23-openai-poland-nask-ai-safety-partnership",
-    "title": "OpenAI 與波蘭 NASK 合作研究 AI 安全及防護漏洞",
-    "summary": "OpenAI 與波蘭國家研究機構 NASK 簽署協議，探討共同評估更高能力的 AI 系統、識別潛在漏洞及加強安全措施。合作對象包括 NASK 轄下的 AI Safety Research Center；目前公布的是研究合作框架，未列出新模型或具體部署時間表。\n\nNASK 同時負責波蘭的網絡安全工作。OpenAI 指，其 CERT Polska 團隊早前曾透過 Daybreak 使用網絡能力模型，發現 MikroTik RouterOS 的六個漏洞，相關修補已由供應商推出。新協議旨在把公營研究機構的測試能力納入前沿模型安全評估。",
-    "category": "AI 安全",
-    "publishedAt": "2026-10-23T15:40:48Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-22-google-veo-31-preview-api-retirement",
-    "title": "Google：Gemini API 的 Veo 3.1 預覽端點定於今日停用",
-    "summary": "Google 開發者文件提醒，Gemini API 中的 Veo 3.1 Preview 三個影片生成端點，包括標準、Fast 及 Lite 版本，已被棄用，並定於 10 月 22 日停用。仍使用相關模型識別碼的應用程式，可能面臨服務中斷。\n\nGoogle 建議開發者遷移至 Gemini Omni Flash（gemini-omni-1.1-flash），或 Gemini Enterprise Agent Platform 提供的正式版模型。官方停用時間表亦註明，表列日期一般是最早可能停用日；現階段不應推斷所有端點已即時停止運作。",
-    "category": "AI 模型與 API",
-    "publishedAt": "2026-10-22T10:21:44Z",
-    "sourceLabel": "Google AI for Developers",
-    "sourceUrl": "https://ai.google.dev/gemini-api/docs/video.md?example=dialogue",
     "level": "update",
     "verified": true,
     "active": false
