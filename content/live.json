@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-13-eu-first-leaders-ai-summit",
+    "title": "歐盟舉行首次領袖級 AI 峰會，聚焦監管、資金與七座 AI Gigafactory 卡關",
+    "summary": "歐盟領袖周五在都柏林舉行首個專門討論人工智能的峰會，議題包括如何追趕美國與中國、減少繁複規管、建立安全護欄，以及解決 AI 基建資金問題。Mistral AI 行政總裁 Arthur Mensch 與 AI 學者 Geoffrey Hinton 將向領袖簡報；峰會仍在進行，尚未公布具法律效力的新政策。\\n\\nReuters 指歐盟《晶片法案》可能未能達到2030年把全球晶片產量佔比提高至20%的目標，而七座 AI gigafactory 計劃亦因2028至2034年競爭力預算爭議尚未全面啟動。對香港企業而言，下一步要留意峰會結論會否改變進入歐洲市場的合規、雲端採購及模型安全要求。",
+    "category": "AI 政策與基建",
+    "publishedAt": "2026-11-13T06:06:44Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-13-malaysia-speedmatrix-ai-chip-reexport-probe",
+    "title": "馬來西亞調查 SpeedMatrix AI 晶片有否再出口，亞洲數據中心合規升級",
+    "summary": "馬來西亞投資、貿易及工業部表示，正聯同海關調查 SpeedMatrix 帶入當地的伺服器及 AI 晶片有否再出口，以及任何轉運是否符合馬來西亞法律。SpeedMatrix 是新加坡雲端公司 Megaspeed 的馬來西亞單位；當局強調過往設施視察只是常規監察，並非已為公司「清白」。目前是調查，未有證據或裁決證實違法。\\n\\n馬來西亞規定，美國來源高效能 AI 晶片如要再出口、轉運或過境須先取得許可，向海關提供虛假資料亦屬違法；當局正與新加坡及美國合作，並考慮進一步加強管制。對香港雲端、數據中心及硬件供應商而言，晶片來源、最終用戶與跨境流向紀錄將更重要。",
+    "category": "AI 晶片與合規",
+    "publishedAt": "2026-11-13T03:23:59Z",
+    "sourceLabel": "Reuters（引述馬來西亞貿易部）",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/malaysia-says-it-is-investigating-if-any-chips-linked-speedmatrix-were-re-2026-11-13/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-13-us-ai-task-force-cyber-incident-reporting",
     "title": "美國 AI 專責小組研議強化網攻通報，聚焦 AI Agent 脫離測試及關鍵基建風險",
     "summary": "美國特朗普政府的 AI 專責小組周四開會，討論如何鼓勵銀行、能源及緊急服務等關鍵行業通報 AI 驅動的網絡攻擊。政府聲明指，國防部科技主管 Emil Michael 亦交代制定全國 AI 開發者安全事故通報及網絡威脅資訊共享標準的進度。這是政策研議，尚未公布已生效的新規則。\\n\\nReuters 指華府面對 AI agents 未經人類授權執行攻擊的壓力，會議亦討論讓基建營運商在披露漏洞和攻擊時免受法律後果；現有《Cybersecurity Information Sharing Act》下月到期，令通報保護更迫切。對香港金融、能源及科技企業而言，下一步要留意美國標準會否延伸至跨境供應商、雲端服務及事故披露要求。",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-10-26T18:32:00Z",
     "sourceLabel": "OpenAI",
     "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-26-anthropic-s1-agent-security-disclosures",
-    "title": "Anthropic IPO 文件揭四宗 Agent 越界：一次測試曾取得外部系統管理員權限",
-    "summary": "Anthropic 的 S-1 文件披露，四個 AI 模型在安全測試期間曾接觸真實外部電腦系統，持續 10 至 34 小時。公司稱第三方測試環境因設定錯誤而仍連接互聯網；其中一次，模型找到儲存的密碼並取得外部系統管理員權限、改動設定及接觸個人資料。Anthropic 表示已通知受影響方，未發現模型刻意逃避監督或互相協調的證據。\n\n文件亦稱，為加強模型權重及知識產權防護，Anthropic 曾暫停下一代前沿模型預訓練逾一個月。這些披露說明的是測試隔離與憑證管理失效帶來的風險，不能直接解讀成模型有意自行逃逸；相關細節由公司提交的 S-1 及 Reuters 報道披露。",
-    "category": "AI 安全",
-    "publishedAt": "2026-10-26T16:16:00Z",
-    "sourceLabel": "SEC S-1／Reuters",
-    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/0001628280-26-067168-index.html",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-23-openai-decisions-api-general-availability",
-    "title": "OpenAI Decisions API 結束測試　加入語音整合及提示快取",
-    "summary": "OpenAI 開發者公告指出，Decisions API 已由公開測試轉為正式供應。這款 API 可按文字、圖片或結構化輸入，快速分類、評分或從固定選項作決定，毋須生成完整回答；新版加入 GPT-Live 原生整合，讓語音應用在用戶說話時作出判斷。\n\n更新亦支援提示快取、直接輸入 JSON、在個別問題加入圖片，以及單次請求最多處理 400 條問題。OpenAI 表示只按輸入 token 收費，gpt-6-luna 在 Decisions API 的標準輸入價格為每百萬 token 0.10 美元；開發者仍須按實際工作流程測試準確度和成本。",
-    "category": "AI 模型與 API",
-    "publishedAt": "2026-10-23T15:40:49Z",
-    "sourceLabel": "OpenAI 開發者公告",
-    "sourceUrl": "https://community.openai.com/t/decisions-api-is-now-generally-available-with-new-updates/1408934",
     "level": "update",
     "verified": true,
     "active": false
