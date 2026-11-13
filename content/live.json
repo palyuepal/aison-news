@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-13-china-nvidia-ai-projects-3-billion",
+    "title": "Reuters 查出逾 32 億美元中國 AI 項目依賴受限 NVIDIA 晶片，供應與改造風險升溫",
+    "summary": "Reuters 審閱逾 150 份中國採購公告、投資計劃、建設合約及公司披露，識別出總值逾 230 億元人民幣（約 32 億美元）的運算項目與設備協議，涉及 NVIDIA 受出口限制的處理器，範圍由沿海科技中心延伸至地方政府項目、大學及區域算力中心。金額包括建築、電力系統等基建，並非全部是晶片支出；部分設施已營運或施工，但報道沒有證實這些受限硬件如何進入中國。\\n\\n這批項目未被指與 Megaspeed 或黃仁勳相關指控有關，亦沒有證據表明所有項目違反出口規則。實際風險在於美國收緊管制後，營運商可能面對延誤、供應中斷或改用國產晶片的昂貴重設計；香港及區內雲端、融資與設備供應商應加強最終用戶、晶片來源及替代方案審查。",
+    "category": "AI 晶片與供應鏈",
+    "publishedAt": "2026-11-13T08:31:00Z",
+    "sourceLabel": "Reuters 獨家調查",
+    "sourceUrl": "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-13-eu-first-leaders-ai-summit",
     "title": "歐盟舉行首次領袖級 AI 峰會，聚焦監管、資金與七座 AI Gigafactory 卡關",
     "summary": "歐盟領袖周五在都柏林舉行首個專門討論人工智能的峰會，議題包括如何追趕美國與中國、減少繁複規管、建立安全護欄，以及解決 AI 基建資金問題。Mistral AI 行政總裁 Arthur Mensch 與 AI 學者 Geoffrey Hinton 將向領袖簡報；峰會仍在進行，尚未公布具法律效力的新政策。\\n\\nReuters 指歐盟《晶片法案》可能未能達到2030年把全球晶片產量佔比提高至20%的目標，而七座 AI gigafactory 計劃亦因2028至2034年競爭力預算爭議尚未全面啟動。對香港企業而言，下一步要留意峰會結論會否改變進入歐洲市場的合規、雲端採購及模型安全要求。",
@@ -8,6 +20,18 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/china/eu-leaders-seek-tackle-challenges-first-ever-ai-summit-2026-11-13/",
     "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-13-singapore-fifth-person-ai-server-fraud",
+    "title": "新加坡 AI 伺服器案再控一人兩公司，涉 917 部伺服器與 41 宗交易",
+    "summary": "新加坡警方表示，第五名被告 Shi Bingzhe 及其兩間相關公司 Superphi、NJ Global 已就洗黑錢罪名被起訴。當局指兩公司在 2024 年 5 月至 2025 年 2 月、共 41 宗交易中向 Aperia International 購入 917 部伺服器，控方指被告有合理理由相信這些伺服器涉及 Aperia 以虛假陳述取得的犯罪得益；這是控罪及指控，案件尚未判決。\\n\\nReuters 指相關伺服器可能包含 NVIDIA AI 晶片，美國亦限制高階晶片輸往中國，但本輪起訴本身未證實晶片最終流向。案件目前累計五人及六間公司被控，反映區內硬件採購的最終用戶陳述、轉售紀錄與資金來源正成為刑事執法重點；香港供應商應保存可追溯文件並獨立核實買家用途。",
+    "category": "AI 晶片與執法",
+    "publishedAt": "2026-11-13T04:25:57Z",
+    "sourceLabel": "Reuters／新加坡警方",
+    "sourceUrl": "https://www.reuters.com/legal/government/singapore-charges-fifth-person-ai-server-fraud-case-2026-11-13/",
+    "level": "followup",
     "verified": true,
     "active": true
   },
@@ -691,30 +715,6 @@
     "publishedAt": "2026-10-27T02:17:00Z",
     "sourceLabel": "Reuters／韓國央行資料",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/bank-korea-warns-countrys-chip-exports-could-fall-by-up-100-billion-if-ai-2026-10-27/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-27-openai-three-science-claims-catchup",
-    "title": "OpenAI 公布三項數理物理研究主張　部分證明已公開供外界驗證",
-    "summary": "OpenAI 公布三項由模型產生的研究主張，涵蓋全維度 local smoothing／Kakeya、推翻 Exponential Time Hypothesis，以及四維量子場論與 QCD 的數學存在性。數學及電腦科學部分的自然語言輸出與 Lean 形式化已公開；物理材料暫由外部專家小組整理，未完整發布。\n\n目前可以確認的是研究材料與驗證安排已公開，不代表三項結論已獲學界定案。OpenAI 邀請包括 ETH 原提出者及多名數學物理專家參與檢查；真正的重要性要視乎獨立研究者能否重現、找出漏洞，並確認形式化證明採用的定義與假設。",
-    "category": "AI 科研",
-    "publishedAt": "2026-10-26T23:34:00Z",
-    "sourceLabel": "OpenAI／The Verge",
-    "sourceUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-27-openai-gpt-61-terra-catchup",
-    "title": "GPT‑6.1 Terra 上線：電腦操作接近 Astra　API 輸入價降至每百萬 token 1 美元",
-    "summary": "OpenAI 已推出 GPT‑6.1 Terra，主打視覺理解、精準電腦操作、寫作與編程，並向 ChatGPT Plus、Pro、Enterprise、Edu 的 Work／Codex 用戶及 API 開放。官方定價為每百萬輸入 token 1 美元、快取輸入 0.05 美元、輸出 5 美元；OpenAI 的自家 Agents’ Last Exam 顯示，Terra 在部分電腦操作工作可用約 GPT‑6 Astra 十分一的 token 價格取得相近表現。\n\n效能與成本比較主要來自供應商自報評測，未代表所有企業流程的實際可靠度。OpenAI 同時把 Terra 列為網絡安全 Critical、生物及化學能力 High，沿用 Astra 級防護；企業測試桌面 Agent 時仍應限制權限、保留人工審批及設置可回滾流程。",
-    "category": "AI 模型與 Agent",
-    "publishedAt": "2026-10-26T18:32:00Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra/",
     "level": "update",
     "verified": true,
     "active": false
