@@ -12,6 +12,18 @@
     "active": true
   },
   {
+    "id": "2026-11-13-microsoft-365-global-outage-ai-connectors",
+    "title": "Microsoft 365 全球故障拖至亞洲工作時段，香港企業、Copilot 及 AI 連接器受影響",
+    "summary": "Microsoft 365 全球故障由周四延續至周五亞洲工作時段，Outlook、Teams、Exchange Online 及 Copilot 等服務出現中斷或效能下降。Microsoft 表示復原分階段進行、部分工作負載改善但容量仍未完全回復，暫無跡象顯示事故由惡意活動造成；OpenAI 與 Anthropic 亦確認 Microsoft 365 連接器受上游事故影響。\\n\\nAP 報道香港企業未能透過 Outlook 收取美國客戶更新，部分銀行運作亦受干擾；新加坡、日本、菲律賓、澳洲及歐美政府與企業同樣受影響。香港公司應改用獨立通訊渠道處理緊急指示，核對延遲郵件與自動化任務，並暫停依賴 Outlook、Teams 或 Microsoft 連接器的關鍵 AI 工作流，直至官方確認全面復原。",
+    "category": "雲端服務與 AI 工具",
+    "publishedAt": "2026-11-13T07:47:15Z",
+    "sourceLabel": "AP／Microsoft／Anthropic",
+    "sourceUrl": "https://apnews.com/article/microsoft-outage-outlook-email-365-status-down-d92547a821930290db2964388016979a",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-13-eu-first-leaders-ai-summit",
     "title": "歐盟舉行首次領袖級 AI 峰會，聚焦監管、資金與七座 AI Gigafactory 卡關",
     "summary": "歐盟領袖周五在都柏林舉行首個專門討論人工智能的峰會，議題包括如何追趕美國與中國、減少繁複規管、建立安全護欄，以及解決 AI 基建資金問題。Mistral AI 行政總裁 Arthur Mensch 與 AI 學者 Geoffrey Hinton 將向領袖簡報；峰會仍在進行，尚未公布具法律效力的新政策。\\n\\nReuters 指歐盟《晶片法案》可能未能達到2030年把全球晶片產量佔比提高至20%的目標，而七座 AI gigafactory 計劃亦因2028至2034年競爭力預算爭議尚未全面啟動。對香港企業而言，下一步要留意峰會結論會否改變進入歐洲市場的合規、雲端採購及模型安全要求。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/technology/nvidia-meta-partner-muse-agent-nvidia-invests-3-billion-2026-10-27/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-27-bank-korea-ai-capex-chip-exports",
-    "title": "韓國央行警告：若 AI 投資放慢，晶片出口或少 500–1,000 億美元",
-    "summary": "韓國央行在提交國會議員的情境分析中推演：若美國大型科技公司明年放慢 AI 基建投資，加上韓國晶片單價下跌 10%，2027 年半導體出口可能較原先預測少 500 億至 1,000 億美元，GDP 增長率或低約 0.4 個百分點。\n\n這是壓力情境，不是央行對必然衰退的預測。報告反映韓國出口對晶片及美國科技公司 AI 資本開支的高度依賴；實際影響仍取決於 AI 需求、記憶體價格及企業支出是否真的放慢。",
-    "category": "AI 基建與半導體",
-    "publishedAt": "2026-10-27T02:17:00Z",
-    "sourceLabel": "Reuters／韓國央行資料",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/bank-korea-warns-countrys-chip-exports-could-fall-by-up-100-billion-if-ai-2026-10-27/",
-    "level": "update",
     "verified": true,
     "active": false
   }
