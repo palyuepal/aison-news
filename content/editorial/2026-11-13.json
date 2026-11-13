@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-13",
+  "dailyOneLiner": "今日 AI 主線由「邊個模型最強」轉向「點樣用更平模型、更多基建與更嚴治理，把 AI 變成可持續工作流」。",
+  "top3Ids": [
+    "2026-11-13-gemini-4-hydrogen",
+    "2026-11-13-alphagenome-2",
+    "2026-11-13-cisco-ai-networking-forecast"
+  ],
+  "threeThemes": [
+    {
+      "title": "模型開始分工與自動路由",
+      "summary": "Gemini 4 Hydrogen 把日常 Agent 執行放到較平成本層，Google 同時用 Orchestrator 在前沿模型之間切換。",
+      "watch": "真實工作完成率、重試成本及香港 rollout。"
+    },
+    {
+      "title": "AI 科研由答案走向可驗證預測",
+      "summary": "AlphaGenome 2 把 DNA 變異預測縮細到特定細胞狀態，TerraNova 則嘗試降低碳移除量測成本。",
+      "watch": "獨立實驗、誤差披露及監管用途邊界。"
+    },
+    {
+      "title": "算力熱潮擴散到整條供應鏈",
+      "summary": "Cisco、Cerebras、Foxconn 與 Applied Materials 顯示資金由晶片延伸到網絡、機櫃、雲端與製造設備。",
+      "watch": "訂單能否轉成收入、產能與供應是否跟得上。"
+    }
+  ],
+  "biggestChange": "模型層的成本分工與硬件層的擴產同步發生：AI 競爭已由單一模型能力，轉成涵蓋路由、網絡、伺服器、製造、治理與實際回報的系統戰。",
+  "watchTomorrow": "留意 Gemini 4 Hydrogen 的獨立實測與香港可用性、Cisco/Cerebras 訂單和產能細節、AlphaGenome 2 的外部重現，以及企業會否公布更可審計的 AI ROI 與就業影響。"
+}
