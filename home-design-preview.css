@@ -1,0 +1,44 @@
+/* AIson homepage design preview — isolated branch only. No global CSS overrides. */
+body[data-page="home"]{
+  --design-ink:#0B2345;
+  --design-blue:#0F3D73;
+  --design-gold:#F6C547;
+  --design-rule:#DCE5F0;
+}
+body[data-page="home"] .v6-hero h1{
+  max-width:18ch;
+  font-size:clamp(2.25rem,5vw,4.25rem);
+  line-height:1.13;
+  letter-spacing:-.035em;
+  text-wrap:balance;
+}
+body[data-page="home"] .v6-one-line{max-width:65ch;font-size:clamp(.9rem,1.3vw,1.05rem);line-height:1.8}
+body[data-page="home"] .v6-top-stories h2,
+body[data-page="home"] #today .section-head h2{
+  letter-spacing:-.035em;
+  text-wrap:balance;
+}
+body[data-page="home"] .news-card{
+  transition:box-shadow .2s ease,border-color .2s ease,transform .2s ease;
+}
+body[data-page="home"] .news-card:focus-within{
+  outline:3px solid var(--design-gold);
+  outline-offset:3px;
+}
+body[data-page="home"] .news-card h3{
+  overflow-wrap:anywhere;
+  text-wrap:pretty;
+}
+body[data-page="home"] .v6-edition,
+body[data-page="home"] .mini-label{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang HK","Noto Sans TC",sans-serif;
+}
+@media(max-width:680px){
+  body[data-page="home"] .v6-hero h1{max-width:none;font-size:clamp(2rem,9vw,3rem);line-height:1.2}
+  body[data-page="home"] .news-grid{grid-template-columns:minmax(0,1fr)}
+  body[data-page="home"] .news-card{min-width:0}
+}
+@media(prefers-reduced-motion:reduce){
+  body[data-page="home"] .news-card{transition:none}
+  body[data-page="home"] .news-card:hover{transform:none}
+}
