@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-13-openai-chatgpt-wallet-agent-payments",
+    "title": "OpenAI 推 ChatGPT Wallet：Agent 可代付款，但每宗交易仍要生物認證",
+    "summary": "OpenAI 推出 ChatGPT Wallet，讓 AI agent 在用戶確認後代為完成網上付款。系統以 token 化方式連接合資格的 American Express、Mastercard 及 Visa 卡，agent 不會看到實際卡號；每宗交易都要由用戶覆核，並通過裝置生物認證。首階段透過「dots」向美國年滿 18 歲的 ChatGPT Pro 用戶開放，暫只支援合資格的美國發卡。\\n\\nOpenAI 表示，用戶仍直接與商戶交易，定價、履約、退貨及客戶服務由商戶負責。對香港用戶而言目前未開放，但這是 agent 從「幫你比較」走向「代你付款」的重要一步；企業應預先把付款上限、人工覆核、退款責任及審計紀錄寫入 agent 採購流程。",
+    "category": "AI Agent 與支付",
+    "publishedAt": "2026-11-13T15:43:18Z",
+    "sourceLabel": "OpenAI／Reuters",
+    "sourceUrl": "https://openai.com/index/introducing-chatgpt-wallet/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-13-microsoft-365-global-outage-ai-connectors",
     "title": "Microsoft 指 365 全球故障源於網絡容量升級問題，已處理根因但仍在復原",
     "summary": "Microsoft 就持續超過 22 小時、影響 Outlook、Teams、Copilot 及多項 Microsoft 365 服務的全球故障致歉，並首次交代事故由較早前網絡容量升級中的問題引起，其後一次網絡變更令問題浮現。公司表示事件屬技術故障，與網攻或 AI agents 無關；根本問題已處理，但截至最新更新仍在恢復餘下客戶及地區，未公布全面復原時間。\\n\\n香港企業不應把「已處理根因」當成所有服務已正常：應繼續保留獨立通訊渠道、核對延遲電郵與重跑失敗工作，並待 Microsoft、OpenAI 及 Anthropic 狀態頁確認相關連接器穩定後，才恢復依賴 Microsoft 365 的關鍵 AI 自動化。",
@@ -81,7 +93,7 @@
     "sourceUrl": "https://www.reuters.com/business/us-senate-banking-committee-chair-calls-jensen-huang-lutnick-testify-2026-11-13/",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-12-north-korea-facestealer-ai-deepfake-crypto",
@@ -93,7 +105,7 @@
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/north-korean-hackers-steal-more-than-400-million-using-video-images-fbi-says-2026-11-12/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-12-us-congress-tighter-ai-chip-curbs-after-huang",
@@ -105,7 +117,7 @@
     "sourceUrl": "https://www.reuters.com/world/china/tougher-curbs-ai-chip-sales-china-likely-after-nvidia-ceo-resigns-2026-11-12/",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-12-frontier-ai-companies-lawsuit-halt-development",
@@ -117,7 +129,7 @@
     "sourceUrl": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-12-openai-daybreak-defense-factory-red-team",
@@ -129,7 +141,7 @@
     "sourceUrl": "https://openai.com/cyber-at-the-frontier/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-12-mirendil-billion-series-a-ai-rd-agents",
@@ -141,7 +153,7 @@
     "sourceUrl": "https://mirendil.com/news/series-a/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-12-google-samsung-gemini-intelligent-eyewear-preorders",
@@ -153,7 +165,7 @@
     "sourceUrl": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-12-nvidia-huang-resigns-kress-interim-ceo",
@@ -165,7 +177,7 @@
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-12-enterprises-open-weight-ai-costs",
@@ -177,7 +189,7 @@
     "sourceUrl": "https://www.reuters.com/business/most-large-firms-plan-higher-open-weight-ai-use-cap-bills-study-shows-2026-11-12/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-12-chinese-ai-firms-overseas-nvidia-capacity",
@@ -189,7 +201,7 @@
     "sourceUrl": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-11-nvidia-board-decides-jensen-huang-future",
@@ -201,7 +213,7 @@
     "sourceUrl": "https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-11-google-gemini-apple-carplay",
@@ -213,7 +225,7 @@
     "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-11-united-restricts-third-party-ai-agents",
@@ -225,7 +237,7 @@
     "sourceUrl": "https://united.mediaroom.com/news-releases?item=125496",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-11-google-gemini-decisions-api",
@@ -237,7 +249,7 @@
     "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-11-fractile-series-c-ai-inference-chip",
@@ -249,7 +261,7 @@
     "sourceUrl": "https://www.reuters.com/legal/transactional/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-funding-round-2026-11-11/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-11-indonesia-ai-copyright-platform-opposition",
@@ -261,7 +273,7 @@
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/meta-tiktok-join-google-opposing-indonesias-copyright-law-revision-2026-11-11/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-11-ai-agent-tajik-government-document-theft",
@@ -273,7 +285,7 @@
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/kazakhstan-linked-hackers-used-ai-steal-tajik-government-documents-researchers-2026-11-11/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-11-nvidia-h200-blacklisted-chinese-university",
@@ -285,7 +297,7 @@
     "sourceUrl": "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-10-anthropic-claude-meetings-google-meet",
@@ -297,7 +309,7 @@
     "sourceUrl": "https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-10-tsmc-anthropic-openai-investment",
@@ -309,7 +321,7 @@
     "sourceUrl": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-10-alibaba-t-head-hong-kong-ipo",
@@ -321,7 +333,7 @@
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-09-anthropic-claude-fable-mythos-5-2",
@@ -333,7 +345,7 @@
     "sourceUrl": "https://www.reuters.com/technology/anthropic-unveils-new-fable-mythos-models-competition-heats-up-ahead-ipo-2026-11-09/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-09-spacex-starbase-ai-power-supercompute",
@@ -345,7 +357,7 @@
     "sourceUrl": "https://www.reuters.com/legal/transactional/spacex-plans-24-billion-gas-power-plant-data-center-project-texas-2026-11-09/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-09-disney-adobe-custom-ai-models",
@@ -357,7 +369,7 @@
     "sourceUrl": "https://www.reuters.com/business/media-telecom/disney-adobe-co-develop-custom-ai-models-tailored-media-giant-2026-11-09/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-09-google-tpu-8tx-8i-max-report",
@@ -369,7 +381,7 @@
     "sourceUrl": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-09-apple-intelligence-china-tablet-laptop-registration",
@@ -381,7 +393,7 @@
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/apple-intelligence-ai-service-registers-with-chinese-regulator-use-tablets-2026-11-09/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-09-south-korea-nvidia-gpu-supply-followup",
@@ -393,7 +405,7 @@
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/south-korea-says-nvidia-issues-wont-affect-contracted-gpu-supplies-2026-11-09/",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-09-rba-ai-productivity-financial-stability",
@@ -405,7 +417,7 @@
     "sourceUrl": "https://www.rba.gov.au/speeches/2026/sp-ag-2026-11-09.html",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-09-nvidia-board-independent-investigation",
@@ -417,7 +429,7 @@
     "sourceUrl": "https://www.reuters.com/world/china/nvidia-launches-probe-after-report-ceo-huang-was-target-foreign-intelligence-2026-11-08/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-08-anthropic-34b-gas-generators",
@@ -429,7 +441,7 @@
     "sourceUrl": "https://www.reuters.com/business/energy/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-2026-11-08/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-08-us-ai-safety-center-white-house-reporting",
@@ -441,7 +453,7 @@
     "sourceUrl": "https://apnews.com/article/d3318eb2cf011df53e9ddb3e03d25f13",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-07-softbank-abb-china-robotics-carveout",
@@ -704,18 +716,6 @@
     "sourceLabel": "OpenAI／Oracle 官方公告",
     "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt/",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-28-apple-creator-studio-ai-live",
-    "title": "Apple 把 AI 助手與 MCP 帶進 Creator Studio",
-    "summary": "Apple 於 10 月 27 日公布 Creator Studio 更新：Pixelmator Pro 加入自然語言 Generate Fill，Logic Pro 及 Keynote、Pages、Numbers 將加入 AI 助手；文件套件亦加入 MCP 支援，讓外部 Agent 可讀取內容、編輯及執行動作。更新預計 11 月推出。\\n\\n助手和 MCP 功能仍有 beta 部分，實際權限、私隱及可靠度要待發布後驗證。創作者與中小企可先用非敏感項目測試，量度工作流是否真的省時，並限制 Agent 可讀寫的文件範圍。",
-    "category": "AI 創作工具",
-    "publishedAt": "2026-10-27T13:36:00Z",
-    "sourceLabel": "Apple Newsroom",
-    "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
