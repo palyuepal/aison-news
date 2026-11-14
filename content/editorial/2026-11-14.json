@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-14",
+  "dailyOneLiner": "今日 AI 焦點由模型能力轉到系統責任：NVIDIA 接班、歐盟主權投資、Microsoft 雲端韌性，以及 Agent 的安全與資料控制同步受考驗。",
+  "top3Ids": [
+    "2026-11-14-nvidia-ceo-transition-senate-testimony",
+    "2026-11-14-eu-leaders-ai-summit-outcome",
+    "2026-11-14-microsoft-365-outage-recovery"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 巨頭進入治理與接班考試",
+      "summary": "NVIDIA 在黃仁勳離任後同時面對永久接班、季度業績與美國國會對敏感技術的追問。",
+      "watch": "11 月 17 日業績、永久行政總裁搜尋及參議院聽證安排。"
+    },
+    {
+      "title": "AI 主權由監管走向資金與能源",
+      "summary": "歐盟領袖首次深入討論 AI，把模型投資、供應鏈、潔淨能源、全球治理與就業轉型放進同一框架。",
+      "watch": "競爭力基金實際金額、2027 年 2 月後續與 AI Act 執行。"
+    },
+    {
+      "title": "Agent 愈深入，系統責任愈重要",
+      "summary": "Microsoft 故障、OpenAI 防禦 Agent、Anthropic 自託管與美國事故通報討論都指向權限、日誌、回退和供應商相依。",
+      "watch": "Microsoft 最終事故報告、Daybreak 實測、自託管安全責任及通報標準。"
+    }
+  ],
+  "biggestChange": "AI 競爭的決勝點正由單一模型分數，移到企業能否在領導更替、雲端故障、跨境監管與高權限 Agent 下保持可控、可追溯及可回復。",
+  "watchTomorrow": "留意 Microsoft 365 是否完全清理積壓、NVIDIA 業績前的接班與國會進展、歐盟是否公開新增資金細節，以及 Daybreak／Claude 自託管 Agent 的資格與安全限制。"
+}
