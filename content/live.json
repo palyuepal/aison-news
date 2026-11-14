@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-13-anthropic-ipo-roadshow-six-times-subscribed",
+    "title": "Anthropic IPO 據報獲約 6 倍認購，估值與模型優勢仍成投資者焦點",
+    "summary": "Reuters 引述熟悉路演情況的消息人士報道，Anthropic 的首次公開招股在路演首日約獲兩倍認購，到周四已增至約六倍，早期需求快過 SpaceX 同期。Anthropic 官方招股文件確認今次發售 8.25 億股、每股預期 70 至 78 美元，最高集資規模約 643.5 億美元，擬以「ANT」在 Nasdaq 上市；路演預計下周三定價，註冊聲明仍未生效。\n\n認購倍數來自匿名消息人士，Anthropic 拒絕評論，訂單亦可在定價前改變，不能視為最終成交或上市後表現保證。投資者同時質疑 Claude 能否在 Google 等對手追近下維持模型優勢，並由程式編寫擴展至更廣泛知識工作；香港投資者與 AI 企業應把高認購、估值、財務披露及產品競爭力分開判斷，下一步留意最終定價、有效註冊及首日交易。",
+    "category": "AI 商業與資本市場",
+    "publishedAt": "2026-11-13T22:03:58Z",
+    "sourceLabel": "Reuters／Anthropic／SEC",
+    "sourceUrl": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-13-openai-chatgpt-wallet-agent-payments",
     "title": "OpenAI 推 ChatGPT Wallet：Agent 可代付款，但每宗交易仍要生物認證",
     "summary": "OpenAI 推出 ChatGPT Wallet，讓 AI agent 在用戶確認後代為完成網上付款。系統以 token 化方式連接合資格的 American Express、Mastercard 及 Visa 卡，agent 不會看到實際卡號；每宗交易都要由用戶覆核，並通過裝置生物認證。首階段透過「dots」向美國年滿 18 歲的 ChatGPT Pro 用戶開放，暫只支援合資格的美國發卡。\\n\\nOpenAI 表示，用戶仍直接與商戶交易，定價、履約、退貨及客戶服務由商戶負責。對香港用戶而言目前未開放，但這是 agent 從「幫你比較」走向「代你付款」的重要一步；企業應預先把付款上限、人工覆核、退款責任及審計紀錄寫入 agent 採購流程。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Google DeepMind",
     "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-28-openai-oracle-enterprise-apps-chatgpt",
-    "title": "OpenAI 與 Oracle 把企業應用帶進 ChatGPT：Agent 開始連接財務與採購流程",
-    "summary": "OpenAI 與 Oracle 10 月 27 日公布擴大合作：Oracle 正開發 AI Workspace，計劃把 Fusion、NetSuite 等企業應用及數據接入 ChatGPT，讓員工在既有權限與審批下處理跨系統工作。雙方亦公布 AI Security Mesh、供中小企使用的 SMB Bundle，以及以 Codex 建立企業應用的 App Composer。\n\n目前多項功能仍屬規劃或即將推出，並非所有企業已可使用；Oracle 提供的內部採用數字及效率例子亦未經獨立驗證。值得追蹤的是 Agent 能否在保留企業權限、審批和人工把關的前提下，可靠地執行財務、採購等真實流程。",
-    "category": "AI 模型與 Agent",
-    "publishedAt": "2026-10-27T16:00:15Z",
-    "sourceLabel": "OpenAI／Oracle 官方公告",
-    "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt/",
-    "level": "update",
     "verified": true,
     "active": false
   }
