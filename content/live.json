@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-14-nvidia-arm-rene-haas-ceo-search",
+    "title": "NVIDIA 接班搜尋傳接觸 Arm CEO Rene Haas，公司稱尚未正式接洽候選人",
+    "summary": "Reuters 引述《金融時報》報道，NVIDIA 董事會已接觸 Arm 行政總裁 Rene Haas，將他列為黃仁勳離任後的潛在接班人之一；Haas 曾在 NVIDIA 工作七年，2022 年起領導 Arm，並帶領公司於 2023 年在 Nasdaq 上市。不過 Reuters 未能獨立核實報道，Arm 拒絕置評，亦未有證據顯示 Haas 已獲正式聘任或接受職位。\n\nNVIDIA 董事會的正式說法是仍在挑選行政總裁搜尋顧問，尚未正式接洽任何候選人，個別人選的揣測仍屬時之尚早；財務總監 Colette Kress 繼續暫代行政總裁。對香港雲端、晶片客戶及投資者而言，這項進展反映接班搜尋已成為市場焦點，但產品路線與客戶承諾暫無官方改動；下一步應看搜尋顧問、正式候選名單、11 月 17 日業績會及最終任命。",
+    "category": "AI 晶片與企業治理",
+    "publishedAt": "2026-11-14T00:11:00Z",
+    "sourceLabel": "Reuters／NVIDIA／Financial Times",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/arms-haas-approached-by-nvidia-board-part-ceo-search-ft-reports-2026-11-13/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-14-microsoft-365-services-fully-restored",
     "title": "Microsoft 365 全球服務全面恢復，逾 20 小時故障進入事後檢討",
     "summary": "Microsoft 表示已完成處理事故根本問題，並恢復最後一批受影響客戶及地區的服務；早前受影響範圍包括 Outlook、Teams、Copilot、Exchange Online、SharePoint 等。公司重申事故源於較早前網絡容量升級的問題在近期網絡變更後浮現，沒有跡象顯示涉及網攻或 AI agents；完整事故報告仍待公布。\n\n故障期間，超過 70 個國家及地區出現報告，政府、法院、醫療、航空、銀行及企業工作流均受影響，香港部分銀行與公司亦受牽連。服務恢復不代表延誤郵件、失敗自動化或積壓工作已由每間機構完成核對；香港企業應檢查郵件佇列、重跑失敗流程及核對關鍵交易，下一步留意 Microsoft 的事後報告、根因細節與防止重演措施。",
@@ -706,17 +718,5 @@
     "level": "breaking",
     "verified": true,
     "active": false
-  },
-  {
-    "id": "2026-10-29-anthropic-drug-development-catchup",
-    "title": "Anthropic 與六間機構推進 Claude 藥物研發，早期實驗已有候選",
-    "summary": "Anthropic 公布與六間藥物研發機構合作及自有罕見肌肉疾病項目。合作方的早期材料包括 Claude 參與設計並經實驗測試的 CAR-T 受體構造；Divergence Labs 以 Claude 產生約 35,000 個抗體設計，初步找到可結合及移除 IgE 的候選。\\n\\nAnthropic 亦稱 Enveda 的文件審閱流程大幅縮短；惟整體工作多在前臨床或早期階段，數字由公司及合作方公布，並不代表人體臨床療效、藥物已可用或審批時間必然縮短。",
-    "category": "AI 科研與醫療",
-    "publishedAt": "2026-10-27T20:50:00Z",
-    "sourceLabel": "Anthropic／合作機構技術報告",
-    "sourceUrl": "https://www.anthropic.com/research/early-progress-drug-development",
-    "verified": true,
-    "active": false,
-    "level": "update"
   }
 ]
