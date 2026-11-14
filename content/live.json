@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-14-microsoft-365-services-fully-restored",
+    "title": "Microsoft 365 全球服務全面恢復，逾 20 小時故障進入事後檢討",
+    "summary": "Microsoft 表示已完成處理事故根本問題，並恢復最後一批受影響客戶及地區的服務；早前受影響範圍包括 Outlook、Teams、Copilot、Exchange Online、SharePoint 等。公司重申事故源於較早前網絡容量升級的問題在近期網絡變更後浮現，沒有跡象顯示涉及網攻或 AI agents；完整事故報告仍待公布。\n\n故障期間，超過 70 個國家及地區出現報告，政府、法院、醫療、航空、銀行及企業工作流均受影響，香港部分銀行與公司亦受牽連。服務恢復不代表延誤郵件、失敗自動化或積壓工作已由每間機構完成核對；香港企業應檢查郵件佇列、重跑失敗流程及核對關鍵交易，下一步留意 Microsoft 的事後報告、根因細節與防止重演措施。",
+    "category": "雲端服務與 AI 工具",
+    "publishedAt": "2026-11-14T09:11:59Z",
+    "sourceLabel": "Microsoft／AP",
+    "sourceUrl": "https://apnews.com/article/ca395c0f1e51af784b6d70afb6554f6a",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-13-fed-ai-financial-stability-risk",
     "title": "美聯儲調查：87% 市場聯絡人把 AI 列為金融穩定風險，較五月 50% 急升",
     "summary": "美國聯儲局最新《金融穩定報告》顯示，23 名銀行、券商、基金及顧問業界聯絡人之中，87% 把 AI 列為未來 12 至 18 個月可能衝擊金融體系的顯著風險，較五月調查的 50% 上升。關注包括高估值與盈利不及預期引發市場調整、AI 相關網絡攻擊，以及數據中心與算力基建的複雜融資；這是受訪者在九月至十月提出的風險看法，不是 87% 危機概率，也不代表美聯儲預測危機已發生。\n\n報告指出，科技公司、公開信貸、私募貸款及特殊目的融資工具之間的連結需要密切監察；部分大型企業雖有能力吸收損失，但實際曝險亦可能高於資產負債表顯示。對香港銀行、基金、保險及科技企業而言，應把資料中心融資、交易對手集中及 AI 估值回調納入壓力測試；下一步留意監管機構會否要求更多披露、風險集中度管理或資本緩衝。",
@@ -45,7 +57,7 @@
     "sourceUrl": "https://www.businessinsider.com/microsoft-365-outage-outlook-teams-down-claude-what-we-know-2026-11",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-eu-first-leaders-ai-summit",
@@ -706,17 +718,5 @@
     "verified": true,
     "active": false,
     "level": "update"
-  },
-  {
-    "id": "2026-10-28-liquid-ai-lfm3-open-multimodal-models",
-    "title": "Liquid AI 開放六款 LFM3 模型：多模態推理走向本地部署",
-    "summary": "Liquid AI 於 10 月 27 日發布 LFM3 系列，首批六款約 2B 級開放權重模型共用一個骨幹，涵蓋文字、視覺、音訊、全模態及決策；模型權重已可下載，文字模型亦可在單張 GPU 微調。\\n\\n這令香港開發者及中小企多一個可本地測試、按專門工作微調的選項，但模型能力、粵語表現與實際部署成本仍要自行驗證。參數效率及基準比較目前主要由 Liquid AI 公布，未有足夠獨立評測證明普遍優勢。",
-    "category": "AI 模型與 Agent",
-    "publishedAt": "2026-10-27T17:04:50Z",
-    "sourceLabel": "Liquid AI",
-    "sourceUrl": "https://www.liquid.ai/blog/lfm3",
-    "level": "update",
-    "verified": true,
-    "active": false
   }
 ]
