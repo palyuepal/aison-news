@@ -100,10 +100,11 @@ def _load_stories(path: Path) -> list[dict]:
 
 def _top3(stories: list[dict]) -> list[dict]:
     by_rank = {int(s.get("rank", 999)): s for s in stories if str(s.get("rank", "")).isdigit()}
-    missing = [rank for rank in (1, 2, 3) if rank not in by_rank]
+    required = range(1, min(3, len(stories)) + 1)
+    missing = [rank for rank in required if rank not in by_rank]
     if missing:
         raise SystemExit(f"Latest edition is missing Top 3 ranks: {missing}")
-    return [by_rank[1], by_rank[2], by_rank[3]]
+    return [by_rank[rank] for rank in required]
 
 
 def _visual_path(root: Path, story: dict) -> Path | None:

@@ -50,7 +50,7 @@
     const e=validEditorial(date),map=new Map(items.map(item=>[item.id,item]));
     if(e&&Array.isArray(e.top3Ids)){
       const picked=e.top3Ids.map(id=>map.get(id)).filter(Boolean);
-      if(picked.length===3)return picked;
+      if(picked.length===Math.min(3,items.length))return picked;
     }
     return items.slice(0,3);
   }
@@ -61,7 +61,7 @@
     const first=items[0],cats=dominantCategories(items);
     if(!first) return '今日版本正在整理。';
     const categoryText=cats.length?cats.join('、'):'AI 大事';
-    return `今日 10 件事最集中喺 ${categoryText}；第一焦點係「${short(first.title,58)}」。`;
+    return `今日 ${items.length} 則重點集中喺 ${categoryText}；第一焦點係「${short(first.title,58)}」。`;
   }
 
   function shareBody(items,date){
@@ -69,11 +69,11 @@
     const lines=top.map((item,index)=>`${index+1}. ${short(item.title,74)}`);
     const e=validEditorial(date);
     const one=e?.dailyOneLiner?['',short(e.dailyOneLiner,130)]:[];
-    return [`AIson 今日 AI 10 件事｜${fmtDate(date)}`,...one,'',...lines].join('\n');
+    return [`AIson 今日 AI ${items.length} 則重點｜${fmtDate(date)}`,...one,'',...lines].join('\n');
   }
 
   function shareText(items,date){
-    return [shareBody(items,date),'','其餘 7 件＋香港影響：'+DAILY_URL].join('\n');
+    return [shareBody(items,date),'',`${items.length>3?`其餘 ${items.length-3} 件＋`:''}香港影響：`+DAILY_URL].join('\n');
   }
 
   async function copyText(text){
@@ -107,12 +107,12 @@
   }
 
   function renderSnapshot(){
-    const items=NEWS().slice(0,10),date=editionDate(items);
+    const items=NEWS(),date=editionDate(items);
     const text=$('#dailySnapshotText'),meta=$('#dailySnapshotMeta');
     if(text) text.textContent=summaryText(items,date);
     if(meta){
       const e=validEditorial(date);
-      meta.textContent=date?`${fmtDate(date)} · 10 則已整理重點 · ${e?.source==='editorial'?'編輯主線':'香港視點'}`:'最新編輯版';
+      meta.textContent=date?`${fmtDate(date)} · ${items.length} 則已整理重點 · ${e?.source==='editorial'?'編輯主線':'香港視點'}`:'最新編輯版';
     }
     renderReturnStatus(date);
     setupNewsletter();
@@ -121,7 +121,7 @@
     $('#shareDailyBtn')?.addEventListener('click',async()=>{
       try{
         if(navigator.share){
-          await navigator.share({title:`AIson 今日 AI 10 件事｜${fmtDate(date)}`,text:nativeText,url:DAILY_URL});
+          await navigator.share({title:`AIson 今日 AI ${items.length} 則重點｜${fmtDate(date)}`,text:nativeText,url:DAILY_URL});
           return;
         }
         await copyText(payload);showToast('已複製今日分享文字');

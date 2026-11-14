@@ -84,7 +84,7 @@
         '<div class="v6-signal-stage" aria-label="今日 AI 訊號集中於 '+esc(labels)+'">'+
           '<div class="v6-signal-orbit" aria-hidden="true"></div>'+
           signalMarkup(signals)+
-          '<div class="v6-signal-core" aria-hidden="true"><span><strong>10</strong><span>TODAY\'S<br>SIGNAL</span></span></div>'+
+          '<div class="v6-signal-core" aria-hidden="true"><span><strong>'+NEWS.length+'</strong><span>TODAY\'S<br>SIGNAL</span></span></div>'+
           '<div class="v6-signal-summary">今日主要訊號：'+esc(labels)+'</div>'+
         '</div>'+
       '</div>'+
@@ -240,7 +240,7 @@
 
   function topThree(news){
     const stories=news.slice(0,3);
-    return '<section class="b2-top-three"><div class="container"><div class="b2-section-head"><div><small>TODAY\'S TEN · EDITOR\'S RANKING</small><h2>今日 AI，一頁睇晒</h2></div><a href="daily.html">完整每日 Story Flow →</a></div><div class="b2-top-grid">'+
+    return '<section class="b2-top-three"><div class="container"><div class="b2-section-head"><div><small>TODAY\'S NEWS · EDITOR\'S RANKING</small><h2>今日 AI，一頁睇晒</h2></div><a href="daily.html">完整每日 Story Flow →</a></div><div class="b2-top-grid">'+
       stories.map((n,index)=>'<a class="b2-top-card" href="'+url(n)+'">'+cardMedia(n,'b2-card-media',index===0)+'<div class="b2-card-copy"><div class="b2-story-meta"><b>0'+(index+1)+'</b><span>'+esc(n.category||'AI NEWS')+'</span>'+(n.verified?'<span>✓ 已核實</span>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(brief(n.quickTake||n.summary||n.excerpt,160))+'</p><div class="b2-card-foot"><span>'+esc(n.readTime||'閱讀重點')+'</span><time>'+esc(fmt(n.date))+'</time></div><strong>閱讀完整報道 →</strong></div></a>').join('')+
     '</div></div></section>';
   }
@@ -265,7 +265,7 @@
         '<div class="b2-util"><div class="container"><span>'+esc(fmt(lead.date))+' · 香港</span><span class="b2-live-state"><i></i> AIson LIVE · 即時更新</span></div></div>'+
         '<div class="container b2-front-grid">'+
           '<div class="b2-front-copy">'+
-            '<div class="b2-editor-mark"><img src="assets/mascot.webp" alt="" width="42" height="42"><span><b>AIson 編輯台</b><small>01–10 依重要性排序</small></span></div>'+
+            '<div class="b2-editor-mark"><img src="assets/mascot.webp" alt="" width="42" height="42"><span><b>AIson 編輯台</b><small>按重要性排序</small></span></div>'+
             '<div class="b2-kicker">AIson DAILY · STORY 01'+(major?' · MAJOR DAY':'')+'</div>'+
             '<h2>'+esc(lead.title)+'</h2>'+
             '<p class="b2-dek">'+esc(brief(lead.summary||lead.excerpt,235))+'</p>'+

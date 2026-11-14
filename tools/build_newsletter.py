@@ -30,8 +30,8 @@ def latest_editions(limit=30):
             raise SystemExit(f"invalid daily edition filename: {path.name}") from exc
 
         stories = read_json(path)
-        if not isinstance(stories, list) or len(stories) != 10:
-            raise SystemExit(f"{path}: newsletter feed requires exactly 10 stories")
+        if not isinstance(stories, list) or not 1 <= len(stories) <= 10:
+            raise SystemExit(f"{path}: newsletter feed requires 1..10 stories")
 
         try:
             stories = sorted(stories, key=lambda story: int(story["rank"]))
@@ -39,8 +39,8 @@ def latest_editions(limit=30):
             raise SystemExit(f"{path}: every story needs an integer rank") from exc
 
         ranks = [int(story["rank"]) for story in stories]
-        if ranks != list(range(1, 11)):
-            raise SystemExit(f"{path}: ranks must be exactly 1..10")
+        if ranks != list(range(1, len(stories) + 1)):
+            raise SystemExit(f"{path}: ranks must be consecutive from 1")
 
         for story in stories:
             if str(story.get("date", "")) != path.stem:
@@ -54,7 +54,7 @@ def latest_editions(limit=30):
 
 def digest_html(date, stories, base):
     parts = [
-        f"<p><strong>AIson｜今日 AI 10 件事</strong>｜{html.escape(date)}</p>",
+        f"<p><strong>AIson｜今日 AI {len(stories)} 則重點</strong>｜{html.escape(date)}</p>",
         "<p>每日幫香港人篩選全球最值得知道嘅 AI 大事，重點講清楚發生咩事、點解重要，同香港人／做生意／創作者有咩關係。</p>",
     ]
     for story in stories:
@@ -76,7 +76,7 @@ def digest_html(date, stories, base):
             )
 
     parts.append(
-        f'<p><a href="{html.escape(urljoin(base, "daily.html"), quote=True)}">睇完整今日 AI 10 件事 →</a></p>'
+        f'<p><a href="{html.escape(urljoin(base, "daily.html"), quote=True)}">睇完整今日 AI {len(stories)} 則重點 →</a></p>'
     )
     return "".join(parts)
 
@@ -96,12 +96,11 @@ def build():
         dt = datetime.strptime(date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
         digest = digest_html(date, stories, base)
         first = stories[0]
-        preview = html.escape(
-            f"{first['title']}；另外仲有 9 件今日值得香港人知道嘅 AI 大事。"
-        )
+        preview_text = f"{first['title']}；另外仲有 {len(stories)-1} 件今日值得香港人知道嘅 AI 大事。" if len(stories)>1 else f"{first['title']}；睇清楚香港影響與 AIson Take。"
+        preview = html.escape(preview_text)
         items.append(
             "<item>"
-            f"<title>AIson｜今日 AI 10 件事｜{html.escape(date)}</title>"
+            f"<title>AIson｜今日 AI {len(stories)} 則重點｜{html.escape(date)}</title>"
             f"<link>{html.escape(urljoin(base, 'daily.html'))}</link>"
             f"<guid isPermaLink=\"false\">aison-daily-{html.escape(date)}</guid>"
             f"<pubDate>{format_datetime(dt)}</pubDate>"
@@ -114,7 +113,7 @@ def build():
     channel_link = urljoin(base, "daily.html")
     title = html.escape(str(site.get("name", "AIson")))
     description = html.escape(
-        "AIson 每日 AI 10 件事 Email 專用 feed：香港視點、重點摘要與 AIson Take。"
+        "AIson 每日 AI 重點 Email 專用 feed：香港視點、重點摘要與 AIson Take。"
     )
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>'
@@ -122,7 +121,7 @@ def build():
         'xmlns:content="http://purl.org/rss/1.0/modules/content/" '
         'xmlns:atom="http://www.w3.org/2005/Atom">'
         "<channel>"
-        f"<title>{title}｜每日 AI 10 件事 Newsletter</title>"
+        f"<title>{title}｜每日 AI 重點 Newsletter</title>"
         f"<link>{html.escape(channel_link)}</link>"
         f"<description>{description}</description>"
         "<language>zh-HK</language>"

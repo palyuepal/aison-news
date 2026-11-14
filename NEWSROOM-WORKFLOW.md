@@ -77,9 +77,9 @@ Deep Read 只有在已核實、有實際 sourceUrl，而且材料足以支持長
 讀者應該一眼分得出「發生咗」與「AIson 認為可能會發生」。
 
 ## 08:25 — 發布
-- 首頁：今日 3 條主線 → Featured 3 → 今日 AI 10 件事
-- 網站：完整 10 篇
-- `daily.html`：今日 AI 10 件事總覽
+- 首頁：今日 3 條主線 → Featured 3 → 今日 AI 重點新聞
+- 網站：當日已核實新聞（目標 6–10 則，不為湊數補舊聞）
+- `daily.html`：今日 AI 重點新聞總覽
 - Threads：一鍵 Copy 版本
 - IG：總覽圖 / Major story carousel
 - Newsletter：沿用同一批已核實內容，不另外生成一套互相矛盾的新聞

@@ -22,14 +22,14 @@ def latest_daily_path():
 
 def validate_daily(path):
     items = read_json(path)
-    if not isinstance(items, list) or len(items) != 10:
-        raise SystemExit(f'{path}: daily edition must contain exactly 10 stories')
+    if not isinstance(items, list) or not 1 <= len(items) <= 10:
+        raise SystemExit(f'{path}: daily edition must contain 1..10 stories')
     items = sorted(items, key=lambda x: int(x.get('rank', 999)))
-    if {int(x.get('rank', 0)) for x in items} != set(range(1, 11)):
-        raise SystemExit(f'{path}: local ranks must be exactly 1..10')
+    if {int(x.get('rank', 0)) for x in items} != set(range(1, len(items) + 1)):
+        raise SystemExit(f'{path}: local ranks must be consecutive from 1')
     if any(str(x.get('date', '')) != path.stem for x in items):
         raise SystemExit(f'{path}: story date must match edition date')
-    if len({x.get('id') for x in items}) != 10:
+    if len({x.get('id') for x in items}) != len(items):
         raise SystemExit(f'{path}: story ids must be unique')
     return items
 
@@ -75,8 +75,8 @@ def validate_meta(meta, date, items):
         raise SystemExit(f'editorial metadata date must equal {date}')
     ids = {x['id'] for x in items}
     top3 = meta['top3Ids']
-    if not isinstance(top3, list) or len(top3) != 3 or len(set(top3)) != 3 or not set(top3) <= ids:
-        raise SystemExit('top3Ids must contain exactly 3 unique ids from the same daily edition')
+    if not isinstance(top3, list) or len(top3) != min(3, len(items)) or len(set(top3)) != min(3, len(items)) or not set(top3) <= ids:
+        raise SystemExit('top3Ids must contain up to 3 unique ids from the same daily edition')
     themes = meta['threeThemes']
     if not isinstance(themes, list) or len(themes) != 3:
         raise SystemExit('threeThemes must contain exactly 3 themes')

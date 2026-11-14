@@ -101,8 +101,8 @@ def main() -> int:
 
     stories = load_json(daily_path)
     editorial = load_json(editorial_path)
-    if not isinstance(stories, list) or len(stories) != 10:
-        print(f"ERROR: {daily_path} must contain exactly 10 stories", file=sys.stderr)
+    if not isinstance(stories, list) or not 1 <= len(stories) <= 10:
+        print(f"ERROR: {daily_path} must contain 1..10 stories", file=sys.stderr)
         return 1
 
     by_id = {story.get("id"): story for story in stories if isinstance(story, dict)}
@@ -111,8 +111,8 @@ def main() -> int:
     for story in stories:
         if read_minutes(story.get("readTime")) is None:
             errors.append(f"{story.get('id')}: readTime must be a positive integer or '<minutes> 分鐘'")
-    if not isinstance(top3_ids, list) or len(top3_ids) != 3 or len(set(top3_ids)) != 3:
-        errors.append("editorial top3Ids must contain exactly 3 unique IDs")
+    if not isinstance(top3_ids, list) or len(top3_ids) != min(3, len(stories)) or len(set(top3_ids)) != min(3, len(stories)):
+        errors.append("editorial top3Ids must contain up to 3 unique IDs")
         top3_ids = top3_ids if isinstance(top3_ids, list) else []
 
     ready_count = 0
@@ -130,7 +130,7 @@ def main() -> int:
         if ready:
             ready_count += 1
         if minutes is None:
-            continue  # Already reported above for all ten stories.
+            continue  # Already reported above for all stories.
         elif minutes >= 8 and not ready:
             errors.append(
                 f"{story_id}: claims {minutes} min but does not meet Deep Read thresholds "
@@ -148,7 +148,7 @@ def main() -> int:
             f"hk={values['hkImpact']}"
         )
 
-    print(f"  Deep Reads ready: {ready_count}/3 (editorial target is 2–3 when evidence supports it; not a hard quota)")
+    print(f"  Deep Reads ready: {ready_count}/{min(3,len(stories))} (editorial target is 2–3 when evidence supports it; not a hard quota)")
     if errors:
         print("Deep Read quality gate failed:", file=sys.stderr)
         for error in errors:

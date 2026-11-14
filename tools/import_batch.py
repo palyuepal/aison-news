@@ -58,8 +58,8 @@ def main() -> None:
     batch_path = Path(sys.argv[1])
     news = read_json(NEWS_PATH)
     batch = read_json(batch_path)
-    if not isinstance(batch, list) or len(batch) != 10:
-        raise SystemExit("Daily edition must be a JSON array with exactly 10 stories")
+    if not isinstance(batch, list) or not 1 <= len(batch) <= 10:
+        raise SystemExit("Daily edition must be a JSON array with 1..10 stories")
 
     for story in batch:
         if not isinstance(story, dict):
@@ -70,8 +70,8 @@ def main() -> None:
     if len(edition_dates) != 1:
         raise SystemExit("A daily edition must use exactly one date")
     edition_date = edition_dates.pop()
-    if sorted(story["rank"] for story in batch) != list(range(1, 11)):
-        raise SystemExit("Daily edition ranks must be exactly 1 through 10")
+    if sorted(story["rank"] for story in batch) != list(range(1, len(batch) + 1)):
+        raise SystemExit("Daily edition ranks must be consecutive from 1")
     ids = [story["id"] for story in batch]
     if len(ids) != len(set(ids)):
         raise SystemExit("Daily edition contains duplicate ids")
@@ -82,7 +82,7 @@ def main() -> None:
         key=lambda story: (story.get("date", ""), -int(story.get("rank", 999))),
         reverse=True,
     )
-    for rank, story in enumerate(old, start=11):
+    for rank, story in enumerate(old, start=len(batch)+1):
         story["rank"] = rank
 
     latest = []
@@ -95,7 +95,7 @@ def main() -> None:
     merged = latest + old
     NEWS_PATH.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     subprocess.check_call([sys.executable, str(ROOT / "tools/build.py")])
-    print(f"Imported {edition_date}: 10 new stories; archive total {len(merged)}")
+    print(f"Imported {edition_date}: {len(batch)} new stories; archive total {len(merged)}")
 
 
 if __name__ == "__main__":

@@ -220,8 +220,8 @@ jobs:
           edition=p.latest_edition()
           items=p.load_items(edition)
           title,description=p.share_copy(edition,items)
-          assert len(items)==10
-          assert title.startswith('AIson 今日 AI 10 件事｜')
+          assert 1 <= len(items) <= 10
+          assert title.startswith(f'AIson 今日 AI {len(items)} 則重點｜')
           assert '今日焦點：' in description
           assert items[0]['title'][:10] in description
           print(title)
@@ -256,7 +256,7 @@ jobs:
           python tools/patch_share_meta.py /tmp/aison-share-preview
           grep -q 'assets/social/daily-20' /tmp/aison-share-preview/index.html
           grep -q 'assets/social/daily-20' /tmp/aison-share-preview/daily.html
-          grep -q 'AIson 今日 AI 10 件事｜20' /tmp/aison-share-preview/index.html
+          grep -q 'AIson 今日 AI .* 則重點｜20' /tmp/aison-share-preview/index.html
           grep -q '今日焦點：' /tmp/aison-share-preview/daily.html
       - run: git diff --exit-code -- . ':!data/status.js' ':!data/news.js' ':!data/search-index.json' ':!data/editorial.js' ':!data/site.js' ':!data/live.js' ':(glob,exclude)topics/*.html'
       - name: Build lightweight page payloads
@@ -279,8 +279,8 @@ jobs:
           text=pathlib.Path('data/latest.js').read_text(encoding='utf-8').strip()
           payload=text[len('window.AISON_NEWS = '):].rstrip(';')
           latest=json.loads(payload)
-          assert len(latest)==10
-          assert {int(x['rank']) for x in latest}==set(range(1,11))
+          assert 1 <= len(latest) <= 10
+          assert {int(x['rank']) for x in latest}==set(range(1,len(latest)+1))
           pages=list(pathlib.Path('news').glob('*.html'))
           assert pages
           pattern=re.compile(r'<script>window\.AISON_NEWS=(\[.*?\]);</script>',re.S)

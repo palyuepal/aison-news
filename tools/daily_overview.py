@@ -130,8 +130,6 @@ def _edition(data):
     if not dates: return '', list(data)[:10]
     latest=dates[0]
     current=sorted([n for n in data if str(n.get('date'))==latest],key=lambda n:n.get('rank',999))[:10]
-    if len(current)<10:
-        current=sorted(list(data),key=lambda n:n.get('rank',999))[:10]
     return latest,current
 
 def build_daily_overview(data,site,root):
@@ -162,14 +160,14 @@ def build_daily_overview(data,site,root):
     draw.line((215,53,215,101),fill=(145,160,184),width=2)
     draw.text((245,55),'香港人的每日 AI 新聞站',font=font(25,True),fill=WHITE)
     draw.text((58,145),'今日 AI',font=font(76,True),fill=YELLOW)
-    draw.text((58,225),'10 件事',font=font(76,True),fill=WHITE)
+    draw.text((58,225),f'{len(stories)} 則重點',font=font(76,True),fill=WHITE)
     draw.text((60,324),'一眼睇晒今日最值得知道的 AI 變化',font=font(24,True),fill=(221,228,239))
     draw.rounded_rectangle((60,370,245,416),radius=23,fill=YELLOW)
     draw.text((87,379),'DAILY BRIEF',font=font(18,True),fill=NAVY)
     draw.text((270,381),edition,font=font(19),fill=MUTED)
     verified=sum(1 for s in stories if s.get('verified'))
     draw.ellipse((425,374,461,410),fill=BLUE); draw.line((435,392,442,399),fill=WHITE,width=4); draw.line((442,399,452,384),fill=WHITE,width=4)
-    draw.text((474,380),f'{verified}/10 已核實',font=font(19,True),fill=WHITE)
+    draw.text((474,380),f'{verified}/{len(stories)} 已核實',font=font(19,True),fill=WHITE)
 
     mascot=Image.open(mascot_path); cutout=_cutout_mascot(mascot,Image,ImageDraw).resize((365,365),Image.Resampling.LANCZOS)
     image.paste(cutout,(720,28),cutout); draw=ImageDraw.Draw(image)

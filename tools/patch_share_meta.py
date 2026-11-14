@@ -24,8 +24,8 @@ def load_items(edition: str):
         rows = json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:
         raise SystemExit(f"cannot read daily edition {path}: {exc}") from exc
-    if not isinstance(rows, list) or len(rows) != 10:
-        raise SystemExit(f"daily edition must contain exactly 10 items: {path}")
+    if not isinstance(rows, list) or not 1 <= len(rows) <= 10:
+        raise SystemExit(f"daily edition must contain 1..10 items: {path}")
     return sorted(rows, key=lambda item: int(item.get("rank", 99)))
 
 
@@ -36,9 +36,9 @@ def clipped(value: str, limit: int = 46):
 
 def share_copy(edition: str, items):
     date_label = edition.replace("-", ".")
-    title = f"AIson 今日 AI 10 件事｜{date_label}"
+    title = f"AIson 今日 AI {len(items)} 則重點｜{date_label}"
     focus = "｜".join(clipped(item.get("title", ""), 42) for item in items[:3])
-    description = f"今日焦點：{focus}。一頁睇晒 10 件 AI 大事、香港影響與 AIson Take。"
+    description = f"今日焦點：{focus}。一頁睇晒 {len(items)} 件 AI 大事、香港影響與 AIson Take。"
     if len(description) > 180:
         description = description[:179].rstrip("，。；、 ") + "…"
     return title, description
@@ -69,7 +69,7 @@ def patch(path: Path, edition: str, items, base_url: str = "https://aison.hk"):
     html = replace_meta(html, "property", "og:image:height", "1500")
     if 'property="og:image:type"' in html:
         html = replace_meta(html, "property", "og:image:type", "image/jpeg")
-    alt = f"AIson｜{edition.replace('-', '.')} 今日 AI 10 件事總覽"
+    alt = f"AIson｜{edition.replace('-', '.')} 今日 AI {len(items)} 則重點總覽"
     if 'property="og:image:alt"' in html:
         html = replace_meta(html, "property", "og:image:alt", alt)
     if 'name="twitter:image:alt"' in html:

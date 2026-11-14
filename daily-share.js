@@ -26,8 +26,8 @@
   }
 
   async function shareDailyCard() {
-    const title = `AIson｜今日 AI 10 件事 ${editionDate()}`;
-    const text = '一張圖睇晒今日最重要 10 件 AI 大事＋香港角度。';
+    const title = `AIson｜今日 AI ${window.AISON_NEWS?.length||0} 則重點 ${editionDate()}`;
+    const text = '一張圖睇晒今日最重要 ${window.AISON_NEWS?.length||0} 件 AI 大事＋香港角度。';
     try {
       const file = await cardFile();
       if (navigator.share && navigator.canShare?.({ files: [file] })) {

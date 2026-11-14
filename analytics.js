@@ -77,6 +77,7 @@
       query_length:boundedNumber(data.query_length,200),
       results_count:boundedNumber(data.results_count,500),
       result_rank:boundedNumber(data.result_rank,100),
+      story_rank:boundedNumber(data.story_rank,100),
       ts:new Date().toISOString()
     };
     dispatch(safe.event,safe);
@@ -97,6 +98,7 @@
           query_length:safe.query_length,
           results_count:safe.results_count,
           result_rank:safe.result_rank,
+          story_rank:safe.story_rank,
           aison_event:safe.event
         });
         return true;
@@ -242,7 +244,8 @@
     track('pageview',{path:location.pathname});
     const articleId=currentContent();
     if(articleId && (location.pathname.includes('/news/') || location.pathname.endsWith('/article.html'))){
-      track('story_open',{content:articleId,path:location.pathname,placement:'article'});
+      const story=(window.AISON_NEWS||[]).find(item=>item.id===articleId);
+      track('story_open',{content:articleId,path:location.pathname,placement:'article',edition:story?.date||'',story_rank:story?.rank||0});
     }
     document.addEventListener('click',event=>{
       const hit=classifyClick(event.target);

@@ -29,9 +29,11 @@ def safe_json(value):
 
 
 def write_latest(data):
-    latest = data[:10]
-    if len(latest) != 10 or {int(n.get('rank', 0)) for n in latest} != set(range(1, 11)):
-        raise SystemExit('latest payload must contain global ranks 1..10')
+    if not data:
+        raise SystemExit('news archive is empty')
+    latest = [story for story in data if story.get('date') == data[0].get('date')]
+    if not 1 <= len(latest) <= 10 or {int(n.get('rank', 0)) for n in latest} != set(range(1, len(latest) + 1)):
+        raise SystemExit('latest payload must contain consecutive global ranks from 1')
     LATEST_JS.write_text('window.AISON_NEWS = ' + safe_json(latest) + ';\n', encoding='utf-8')
     return latest
 
@@ -50,7 +52,7 @@ def related_for(current, data, limit=8):
 
 
 def article_subset(current, data):
-    selected = [current, *data[:10], *related_for(current, data, limit=3)]
+    selected = [current, *[story for story in data if story.get('date') == data[0].get('date')], *related_for(current, data, limit=3)]
     out = []
     seen = set()
     for story in selected:
@@ -168,7 +170,7 @@ def _home_news_fallback(data):
         '政策': ('⚖', 'policy'),
     }
     cards = []
-    for index, story in enumerate(data[:10], start=1):
+    for index, story in enumerate([story for story in data if story.get('date') == data[0].get('date')], start=1):
         story_id = _escape_html(story.get('id'))
         title = _escape_html(story.get('title'))
         excerpt = _escape_html(story.get('excerpt') or story.get('summary'))
@@ -208,7 +210,7 @@ def _home_news_fallback(data):
 
 def _daily_fallback(data):
     items = []
-    for index, story in enumerate(data[:10], start=1):
+    for index, story in enumerate([story for story in data if story.get('date') == data[0].get('date')], start=1):
         story_id = _escape_html(story.get('id'))
         title = _escape_html(story.get('title'))
         category = _escape_html(story.get('category') or 'AI')
@@ -233,8 +235,8 @@ def _daily_fallback(data):
 
 
 def patch_static_fallbacks(data):
-    if len(data) < 10:
-        raise SystemExit('static fallbacks require at least ten latest stories')
+    if not data:
+        raise SystemExit('static fallbacks require a latest story')
 
     home_path = ROOT / 'index.html'
     home = home_path.read_text(encoding='utf-8')
@@ -279,7 +281,7 @@ def patch_static_fallbacks(data):
         raise SystemExit('daily ranking status placeholder changed; update build_light_payloads.py')
     daily = daily.replace(
         count_marker,
-        'id="dailyRankingCount" aria-live="polite">今日精選 10 則；完整排行榜由互動版載入。</p>',
+        f'id="dailyRankingCount" aria-live="polite">今日精選 {len(data)} 則；完整排行榜由互動版載入。</p>',
         1,
     )
     daily_path.write_text(daily, encoding='utf-8')
@@ -288,7 +290,7 @@ def main():
     data = load_news()
     latest = write_latest(data)
     patched = patch_article_pages(data)
-    patch_static_fallbacks(data)
+    patch_static_fallbacks(latest)
     print(f'Built lightweight payloads: {len(latest)} latest stories / {patched} article pages patched / static fallbacks written')
 
 

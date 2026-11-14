@@ -29,17 +29,17 @@ def validate_source(date):
         rows=read_json(path)
     except Exception as exc:
         return False,f'{path.as_posix()} invalid JSON: {exc}'
-    if not isinstance(rows,list) or len(rows)!=10:
-        return False,f'{path.as_posix()} must contain exactly 10 stories'
+    if not isinstance(rows,list) or not 1 <= len(rows) <= 10:
+        return False,f'{path.as_posix()} must contain 1..10 stories'
     try:
         ranks={int(r.get('rank',0)) for r in rows}
     except Exception:
         return False,f'{path.as_posix()} contains invalid rank values'
-    if ranks!=set(range(1,11)):
-        return False,f'{path.as_posix()} local ranks must be exactly 1..10'
+    if ranks!=set(range(1,len(rows)+1)):
+        return False,f'{path.as_posix()} local ranks must be consecutive from 1'
     if any(str(r.get('date',''))!=date for r in rows):
         return False,f'{path.as_posix()} story dates do not all match {date}'
-    if len({r.get('id') for r in rows})!=10:
+    if len({r.get('id') for r in rows})!=len(rows):
         return False,f'{path.as_posix()} story ids must be unique'
     return True,f'source ok: {path.as_posix()}'
 
@@ -74,17 +74,25 @@ def validate_live(date):
     edition=str(status.get('editionDate') or '')
     if edition!=date:
         return False,f'public editionDate is {edition or "missing"}, expected {date}'
-    if not isinstance(latest,list) or len(latest)!=10:
-        return False,f'public latest payload has {len(latest) if isinstance(latest,list) else "invalid"} stories, expected 10'
+    if not isinstance(latest,list) or not 1 <= len(latest) <= 10:
+        return False,f'public latest payload has {len(latest) if isinstance(latest,list) else "invalid"} stories, expected 1..10'
+    source_path=DAILY_DIR/f'{date}.json'
+    if source_path.exists():
+        expected=read_json(source_path)
+        if isinstance(expected,list):
+            if len(latest)!=len(expected):
+                return False,f'public latest has {len(latest)} stories; source has {len(expected)}'
+            if {x.get('id') for x in latest}!={x.get('id') for x in expected}:
+                return False,'public latest story IDs differ from source edition'
     if any(str(x.get('date',''))!=date for x in latest):
         return False,f'public latest payload contains a non-{date} story'
     try:
         ranks={int(x.get('rank',0)) for x in latest}
     except Exception:
         return False,'public latest payload has invalid ranks'
-    if ranks!=set(range(1,11)):
-        return False,f'public latest ranks are {sorted(ranks)}, expected 1..10'
-    return True,f'live ok: editionDate={edition}, 10 current stories'
+    if ranks!=set(range(1,len(latest)+1)):
+        return False,f'public latest ranks are {sorted(ranks)}, expected consecutive ranks'
+    return True,f'live ok: editionDate={edition}, {len(latest)} current stories'
 
 
 def main():
