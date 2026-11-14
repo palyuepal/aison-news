@@ -569,9 +569,15 @@ def _article_body_html(story):
     sections=[]
     opening=story.get('summary') or story.get('excerpt')
     if opening:
-        sections.append('<div class="report-opening">'+paragraphs(opening)+'</div>')
+        sections.append('<section class="report-opening"><h2>30 秒睇明</h2>'+paragraphs(opening)+'</section>')
+    confirmed=story.get('confirmedFacts') or [str(story.get('whatHappened') or opening or '').split('。')[0]]
+    pending=story.get('openQuestions') or [str(story.get('whatToWatch') or '').split('。')[0]]
+    if confirmed or pending:
+        facts=''.join('<li>'+html.escape(str(x))+'</li>' for x in confirmed if x)
+        questions=''.join('<li>'+html.escape(str(x))+'</li>' for x in pending if x)
+        sections.append('<section class="info-block fact-status"><h2>已確認／仍待確認</h2><h3>已確認</h3><ul>'+facts+'</ul><h3>仍待確認</h3><ul>'+questions+'</ul></section>')
     for field,heading in (
-        ('whatHappened','發生咗咩事？'),
+        ('whatHappened','事件詳情'),
         ('reportingContext','背景與脈絡'),
         ('deepDive','深入分析'),
         ('whyImportant','點解重要？'),
