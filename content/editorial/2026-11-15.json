@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-15",
+  "dailyOneLiner": "AI 由模型排行榜走入接班治理、個人財務、家居裝置與監管責任：今日真正要比的是邊界、證據與承擔能力。",
+  "top3Ids": [
+    "2026-11-15-nvidia-ceo-search-rene-haas",
+    "2026-11-15-anthropic-safety-evaluation-methodology",
+    "2026-11-15-google-wallet-gemini-personal-finance"
+  ],
+  "threeThemes": [
+    {
+      "title": "領導層與資本耐力",
+      "summary": "NVIDIA 接班搜尋、Anthropic 的 IPO／算力難題與 LangChain 融資，顯示 AI 競爭已延伸至治理、資產負債表與生產工具層。",
+      "watch": "正式候選名單、招股披露及 Agent 平台客戶留存。"
+    },
+    {
+      "title": "AI 進入個人資料與共享空間",
+      "summary": "Gemini 連接 Wallet、Apple HomeView 進入家居，便利性開始直接碰上財務資料、身份辨識與多人權限。",
+      "watch": "香港地區支援、資料保留、只讀邊界與共享裝置的私隱設計。"
+    },
+    {
+      "title": "由安全口號走向可審計責任",
+      "summary": "Anthropic 評測方法、加州保險諮詢、兒童研究與供應鏈承諾，都要求清楚交代數字、責任和證據。",
+      "watch": "第三方重現、監管細則、負面研究結果與實際交付核證。"
+    }
+  ],
+  "biggestChange": "AI 產品不再只回答問題，而是開始接觸個人財務、家居身份與高影響決策；安全與競爭優勢因此由模型能力轉向資料權限、部署設定和可追責流程。",
+  "watchTomorrow": "留意 NVIDIA 11 月 17 日業績會前的接班程序、Gemini Wallet rollout 的權限細節，以及 Anthropic 是否進一步披露 IPO 與算力承諾。"
+}

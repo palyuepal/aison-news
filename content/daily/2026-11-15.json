@@ -1,0 +1,514 @@
+[
+  {
+    "id": "2026-11-15-nvidia-ceo-search-rene-haas",
+    "rank": 1,
+    "featured": true,
+    "title": "NVIDIA 接班搜尋傳接觸 Arm CEO Rene Haas，官方稱尚未正式接洽候選人",
+    "excerpt": "接班程序由「宣布過渡」進入市場點名階段，但 NVIDIA 強調董事會仍在選搜尋顧問，未有正式候選名單。",
+    "category": "AI 晶片與企業治理",
+    "date": "2026-11-15",
+    "readTime": "6 分鐘",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/arms-haas-approached-by-nvidia-board-part-ceo-search-ft-reports-2026-11-13/",
+    "sourceLabel": "Reuters／NVIDIA／Financial Times",
+    "sourceType": "可靠媒體＋公司聲明",
+    "references": [
+      {
+        "label": "Reuters 報道",
+        "url": "https://www.reuters.com/business/media-telecom/arms-haas-approached-by-nvidia-board-part-ceo-search-ft-reports-2026-11-13/"
+      },
+      {
+        "label": "NVIDIA CEO transition",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–48 小時",
+    "quickTake": "Reuters 引述《金融時報》報道，NVIDIA 董事會曾接觸 Arm 行政總裁 Rene Haas，將他視為黃仁勳離任後的潛在接班人之一；Reuters 未能獨立核實，Arm 亦拒絕置評。NVIDIA 的正式說法是仍在挑選行政總裁搜尋顧問，尚未正式接洽任何候選人，財務總監 Colette Kress 繼續暫代行政總裁。",
+    "summary": "接班搜尋開始出現具名人選，但「被接觸」與「正式候選人」之間仍有明確距離。",
+    "whatHappened": "Haas 曾在 NVIDIA 工作多年，現時領導 Arm；他的晶片產業背景令報道具市場敏感度。不過目前可核實的公司立場仍是程序早期，未有正式聘任、候選名單或產品路線改動。",
+    "reportingContext": "這是 11 月 13 日 NVIDIA 宣布管理層過渡後的實質新進展。報道內容與公司聲明存在層級差異，本文分開呈現，沒有把消息來源的接觸說法寫成已確認任命。",
+    "deepDive": "NVIDIA 正處於 AI 加速器需求、供應鏈安排與軟件生態都極敏感的階段。新任 CEO 不只要管理晶片設計，亦要處理雲端客戶、代工夥伴、出口管制及 CUDA 生態；因此董事會最後選擇內部財務／營運型領袖，抑或具外部晶片平台經驗的人選，會釋出不同治理訊號。",
+    "whyImportant": "NVIDIA 的領導層穩定性會直接影響 AI 基建投資信心、長期產品節奏和供應鏈談判。現階段最重要的不是猜人名，而是觀察搜尋程序、權責安排與客戶承諾有沒有正式改變。",
+    "hkImpact": [
+      "香港投資者：人選傳聞可能放大股價波動，但未有正式候選名單，不宜把報道當成任命事實。",
+      "香港雲端與開發團隊：目前沒有官方產品、CUDA 或供貨路線改動，既有採購毋須因傳聞即時重排。",
+      "香港晶片與供應鏈企業：應留意 11 月 17 日業績會及搜尋顧問公布，這些才較可能提供治理與策略線索。"
+    ],
+    "whatToWatch": "留意搜尋顧問、正式候選名單、董事會時間表，以及 11 月 17 日業績會有否交代產品路線與客戶承諾。",
+    "take": "AIson 分析：接班風險由抽象變成市場可定價事件，但證據仍只支持「搜尋進入受注目階段」。下一步要看正式程序，而不是追逐單一名字。",
+    "actionVerdict": "watch",
+    "actionReason": "等候正式候選名單與業績會說明；現有報道不足以支持營運或投資上的即時轉向。",
+    "aisonScore": 9.2,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 5
+    },
+    "tags": [
+      "NVIDIA",
+      "Arm",
+      "Rene Haas",
+      "AI 晶片",
+      "企業治理"
+    ]
+  },
+  {
+    "id": "2026-11-15-anthropic-safety-evaluation-methodology",
+    "rank": 2,
+    "featured": true,
+    "title": "Anthropic 拆解 AI 安全評測盲點：單一總分可能掩蓋真正風險",
+    "excerpt": "新研究指出，系統提示、評分器與統計不確定性都會扭曲安全結論，公開總分不足以代表產品實際表現。",
+    "category": "AI 安全與研究",
+    "date": "2026-11-15",
+    "readTime": "6 分鐘",
+    "sourceUrl": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+    "sourceLabel": "Anthropic Research",
+    "sourceType": "公司研究",
+    "references": [
+      {
+        "label": "Building strong safety evaluations",
+        "url": "https://www.anthropic.com/research/building-strong-safety-evaluations"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–48 小時",
+    "quickTake": "Anthropic 公布一套建立強健安全評測的方法，提醒外界不要只看合併總分。研究以自傷風險測試為例：同一模型在 API 基本設定與 claude.ai 加入系統提示後，適當回應率可由約 60% 升至 94%；這是不同部署設定的結果，不代表網頁產品在所有情境都一定更安全。",
+    "summary": "安全評測開始由排行榜式單一分數，轉向檢查部署設定、評分可靠度與不確定性。",
+    "whatHappened": "研究建議評測必須清楚定義失敗、驗證人類與自動評分器的一致性、報告置信區間，並測試提示、抽樣與產品層防護的影響。Anthropic 同時承認，樣本與評分設計可以令看似精準的數字產生誤導。",
+    "reportingContext": "這是方法論文章，不是獨立第三方審計，也不是證明 Claude 已消除安全風險。文中的數值只適用於指定測試、模型與配置。",
+    "deepDive": "企業常以一個安全百分比決定模型是否上線，但這個數字可能混合不同風險、嚴重程度與使用情境。若評分器本身有偏差，或產品層提示在 API 中不存在，採購者就可能比較了兩個完全不同的系統。更可靠做法是保留逐項失敗案例、設定版本與不確定範圍。",
+    "whyImportant": "企業與監管者正愈來愈依賴 benchmark 決定採購和合規。若評測方法不透明，安全分數就可能變成一種錯誤確定感，令高風險部署過早上線。",
+    "hkImpact": [
+      "香港企業採購：比較模型時要問清楚是 API、消費者 App 還是企業版設定，不能只抄官方總分。",
+      "香港開發者：系統提示、內容分類器和人手升級流程都是安全系統一部分，測模型本身並不足夠。",
+      "教育與醫療等高風險機構：應保存失敗案例、人工覆核與置信區間，方便日後審計及事故追蹤。"
+    ],
+    "whatToWatch": "觀察其他模型公司會否公開同等粒度的評測設定、失敗樣本及統計不確定性，以及第三方能否重現結果。",
+    "take": "AIson 分析：安全競爭的下一階段，不是誰報出最高百分比，而是誰能交代數字如何得來、在哪些部署條件下仍然成立。",
+    "actionVerdict": "try-now",
+    "actionReason": "團隊可立即把版本、系統提示、人工覆核和失敗案例加入現有模型評測紀錄。",
+    "aisonScore": 9,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    },
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "AI 安全",
+      "評測",
+      "Trust Layer"
+    ]
+  },
+  {
+    "id": "2026-11-15-google-wallet-gemini-personal-finance",
+    "rank": 3,
+    "featured": true,
+    "title": "Gemini 可連接 Google Wallet 分析個人開支，暫只在美國推出",
+    "excerpt": "Google 把 Wallet 與可選的 Plaid 金融帳戶資料帶入 Gemini，但功能只讀，不能轉帳、管理或投資資金。",
+    "category": "AI 產品與個人財務",
+    "date": "2026-11-15",
+    "readTime": "5 分鐘",
+    "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+    "sourceLabel": "Google",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Google Wallet in Gemini",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–48 小時",
+    "quickTake": "Google 正在美國向 Gemini App 用戶推出 Wallet 連接，讓用戶查詢消費、訂閱及預算趨勢；亦可選擇經 Plaid 接駁金融帳戶。功能屬自願開啟及只讀，不能替用戶轉帳、管理帳戶或作投資；香港目前未在推出名單。",
+    "summary": "聊天助手開始接觸真實個人財務資料，但首階段刻意維持只讀邊界。",
+    "whatHappened": "功能在 web、Android 與 iOS 的 Gemini App 逐步推出。用戶可以關閉連接，Google 表示 Gemini 只會在獲授權後使用相關資料作回答；實際可見資料和保留政策仍需按帳戶設定檢查。",
+    "reportingContext": "官方公告確認的是美國 rollout，不等於香港可用，也不等於 Gemini 取得付款或投資權限。任何理財建議仍可能出錯。",
+    "deepDive": "個人財務是 AI 助手最有用、亦最敏感的資料層之一。只讀模式降低直接資金損失風險，但仍存在錯誤分類、私隱暴露與不當建議。真正風險邊界會由資料最小化、撤銷權限、紀錄保留和之後是否加入交易動作決定。",
+    "whyImportant": "這顯示大型 AI 助手由通用問答走向個人資料操作層。即使未能動用資金，對開支習慣的持續分析已大幅提高便利與私隱責任。",
+    "hkImpact": [
+      "香港普通用戶：功能暫未在港推出，不應誤以為本地 Wallet 已可連接；可先檢視 Google 帳戶活動與資料權限。",
+      "香港金融科技公司：只讀、可撤銷授權及明確動作邊界，值得作為接入生成式 AI 的基本設計參考。",
+      "香港中小企與顧問：若將來用於財務分析，仍需人手核對分類、稅務及現金流結論，不能把聊天答案當會計紀錄。"
+    ],
+    "whatToWatch": "留意香港 rollout、Plaid 以外的本地銀行接駁、資料保留說明，以及 Google 會否把只讀功能擴展至可執行交易。",
+    "take": "AIson 分析：真正轉折不是 Gemini 多了一條查詢指令，而是 AI 開始成為個人財務資料入口；只讀邊界應該被視為安全底線，而非過渡障礙。",
+    "actionVerdict": "wait",
+    "actionReason": "香港尚未推出；先等地區支援與本地資料／銀行接駁條款。",
+    "aisonScore": 8.8,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 3,
+      "developer": 4
+    },
+    "tags": [
+      "Google",
+      "Gemini",
+      "Google Wallet",
+      "Plaid",
+      "個人財務"
+    ]
+  },
+  {
+    "id": "2026-11-15-apple-homeview-launch",
+    "rank": 4,
+    "featured": false,
+    "title": "Apple HomeView 開售：家居 AI 顯示器先進七個市場，香港未在名單",
+    "excerpt": "7 吋家居顯示器支援 Siri AI beta 與六個面孔個人化，但敏感個人內容需配對並解鎖 iPhone 或 iPad。",
+    "category": "AI 裝置與智能家居",
+    "date": "2026-11-15",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
+    "sourceLabel": "Apple Newsroom",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Apple HomeView available today",
+        "url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–48 小時",
+    "quickTake": "Apple HomeView 於美國、澳洲、加拿大、印度、紐西蘭、新加坡及英國開售，定價 US$299。裝置提供 7 吋屏幕、Siri AI beta 及最多六個面孔個人化；顯示個人內容前，需要配對並解鎖 iPhone 或 iPad。香港及歐盟未在首輪名單。",
+    "summary": "Apple 把生成式 AI 放入家居共享空間，同時以手機解鎖作個人資料閘門。",
+    "whatHappened": "HomeView 主打家居控制、通訊及個人化資訊。部分雲端 AI 功能設有每日使用限制，Apple 亦保留未來收費可能；實際語言、地區與功能可用性需按市場確認。",
+    "reportingContext": "本文只按 Apple 公告描述首輪功能和市場，未把 beta 功能寫成穩定完成品，亦沒有推斷香港上市日期。",
+    "deepDive": "共享屏幕的風險與個人手機不同：家庭成員、訪客和鏡頭辨識都可能改變資訊可見範圍。Apple 把敏感內容再綁定已解鎖裝置，是一個清晰但仍需實測的權限設計。",
+    "whyImportant": "家居 AI 的競爭焦點由語音回答轉向身份辨識、共享權限與跨裝置資料。誰能處理好多人共用場景，才有機會成為家居入口。",
+    "hkImpact": [
+      "香港消費者：首輪沒有香港，水貨亦可能受地區、語言、保養與服務限制。",
+      "香港智能家居用戶：購買前要核對 HomeKit 相容、面孔個人化及個人內容解鎖流程，而非只看 Siri AI 標籤。",
+      "香港開發者與品牌：共享裝置需要按人、按場景分權，不能沿用單一帳戶的私隱假設。"
+    ],
+    "whatToWatch": "香港上市、廣東話支援、beta 的每日限制與收費，以及第三方家居配件整合。",
+    "take": "AIson 分析：HomeView 的價值不只是一塊 AI 屏幕，而是 Apple 如何把個人化帶入多人共享空間；私隱閘門是否順手會決定接受度。",
+    "actionVerdict": "wait",
+    "actionReason": "香港未推出，而且核心 AI 功能仍在 beta；先等地區與語言支援。",
+    "aisonScore": 8.3,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 3,
+      "creator": 4,
+      "developer": 4
+    },
+    "tags": [
+      "Apple",
+      "HomeView",
+      "Siri",
+      "智能家居",
+      "AI 裝置"
+    ]
+  },
+  {
+    "id": "2026-11-15-anthropic-ipo-compute-dilemma",
+    "rank": 5,
+    "featured": false,
+    "title": "Anthropic CEO 稱算力是最深商業難題，IPO 重點在建立現金緩衝",
+    "excerpt": "Dario Amodei 把上市視為應付龐大而不確定算力承諾的工具，未承諾確實時間表。",
+    "category": "AI 公司與資本",
+    "date": "2026-11-15",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.bloomberg.com/news/articles/2026-11-13/anthropic-ceo-calls-computing-power-deepest-business-dilemma",
+    "sourceLabel": "Bloomberg／Reuters／Anthropic 公開路演",
+    "sourceType": "可靠媒體＋公司公開陳述",
+    "references": [
+      {
+        "label": "Bloomberg 報道",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-13/anthropic-ceo-calls-computing-power-deepest-business-dilemma"
+      },
+      {
+        "label": "SEC 公司文件",
+        "url": "https://www.sec.gov/edgar/browse/?CIK=2075283&owner=exclude"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–48 小時",
+    "quickTake": "Anthropic 行政總裁 Dario Amodei 在公開場合把算力稱為公司最深層的商業難題，指 IPO 可提供更大的現金緩衝，以應付規模龐大、回報時間不確定的運算承諾。他未承諾確實上市時間，只表示希望對市場保守承諾、再以執行超越預期。",
+    "summary": "前沿模型公司的資本問題，正由融資估值轉向如何承受多年算力承諾。",
+    "whatHappened": "報道顯示 Anthropic 把公開市場資本視為風險管理工具，而不只是早期股東退出。公司仍要面對收入增長、基建成本、供應商集中及市場周期等不確定性。",
+    "reportingContext": "這是管理層對 IPO 與算力的公開解釋，不是已完成上市，也不代表投資回報獲保證。",
+    "deepDive": "模型公司往往需要在需求尚未完全確定前預訂晶片、電力和數據中心。現金緩衝愈大，愈能承受供應與需求錯配；但公開市場同時會要求更透明的成本、毛利與風險披露。",
+    "whyImportant": "算力承諾正成為模型公司的資產負債表問題。IPO 能否成功，會影響 Anthropic 與 OpenAI、Google、Meta 的長期競爭速度。",
+    "hkImpact": [
+      "香港企業客戶：模型供應商的資本韌性會影響價格、容量與長約穩定性，採購時宜保留多供應商方案。",
+      "香港投資者：IPO 故事不能只看收入增長，亦要看算力承諾、現金消耗和供應商集中。",
+      "香港開發者：建立可替換模型層，可降低單一供應商因成本或容量調整帶來的風險。"
+    ],
+    "whatToWatch": "正式招股文件、算力合約披露、毛利與現金流，以及公司最終上市時間表。",
+    "take": "AIson 分析：前沿 AI 的競爭已不只比模型能力，而是比誰能在不確定需求下承擔最長、最昂貴的基建承諾。",
+    "actionVerdict": "watch",
+    "actionReason": "等正式上市文件提供可核實的財務與算力承諾資料。",
+    "aisonScore": 8.2,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": [
+      "Anthropic",
+      "IPO",
+      "算力",
+      "AI 資本",
+      "數據中心"
+    ]
+  },
+  {
+    "id": "2026-11-15-california-insurance-ai-safeguards",
+    "rank": 6,
+    "featured": false,
+    "title": "加州保險監管機構啟動 AI 保障諮詢，第三方模型責任仍歸保險公司",
+    "excerpt": "監管機構將討論透明度、問責、私隱與公平，並要求保險公司提交負責任使用 AI 調查。",
+    "category": "AI 政策與金融",
+    "date": "2026-11-15",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.insurance.ca.gov/0400-news/0100-press-releases/2026/release042-2026.cfm",
+    "sourceLabel": "California Department of Insurance",
+    "sourceType": "監管公告",
+    "references": [
+      {
+        "label": "California DOI announcement",
+        "url": "https://www.insurance.ca.gov/0400-news/0100-press-releases/2026/release042-2026.cfm"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–48 小時",
+    "quickTake": "加州保險部宣布就保險業使用 AI 的透明度、問責、私隱與公平展開諮詢，12 月 15 日舉行工作坊，負責任使用 AI 調查於 12 月 30 日到期。監管機構強調，即使採用第三方供應商，保險公司仍要為決策與合規負責。",
+    "summary": "AI 外判不等於責任外判，保險業的供應商治理正走向正式監管。",
+    "whatHappened": "今次是諮詢與資料蒐集程序，並非已生效的完整規則。重點包括如何說明 AI 決策、避免歧視、保護個人資料及建立問責紀錄。",
+    "reportingContext": "公告確認的是工作坊與調查要求；最終規則內容、執法尺度及生效時間仍未確定。",
+    "deepDive": "保險承保與理賠涉及高影響決策。即使模型由外部供應商提供，機構仍需知道資料來源、偏差測試、人工覆核與申訴路徑，否則無法解釋個別決定。",
+    "whyImportant": "這種『用第三方也要自己負責』的框架可擴散至金融、招聘及醫療，改變企業採購 AI 的盡職審查標準。",
+    "hkImpact": [
+      "香港保險與金融機構：海外監管方向可作供應商合約、模型清單及人工覆核流程的壓力測試。",
+      "香港 AI 供應商：客戶會更重視資料來源、偏差測試、可解釋紀錄與事故通報。",
+      "香港消費者：高影響決策應保留申訴與人手覆核途徑，不能只接受『系統判定』。"
+    ],
+    "whatToWatch": "12 月工作坊、調查結果，以及其後是否形成具體規則或執法指引。",
+    "take": "AIson 分析：監管焦點正由『可否用 AI』轉向『用了之後誰負責』；採購合約不能再把核心風險全推給供應商。",
+    "actionVerdict": "try-now",
+    "actionReason": "金融與保險團隊可立即盤點第三方模型、資料來源、人工覆核與申訴流程。",
+    "aisonScore": 8,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": [
+      "加州",
+      "保險",
+      "AI 監管",
+      "公平",
+      "供應商治理"
+    ]
+  },
+  {
+    "id": "2026-11-15-langchain-series-c",
+    "rank": 7,
+    "featured": false,
+    "title": "LangChain 據報完成 3 億美元 C 輪融資，估值升至 30 億美元",
+    "excerpt": "CapitalG 領投，資金押注模型中立的 Agent 開發與觀測平台；公司稱 LangSmith 已有 7,000 個客戶。",
+    "category": "AI Agent 與開發工具",
+    "date": "2026-11-15",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+    "sourceLabel": "TechCrunch／WSJ",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "TechCrunch 報道",
+        "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+      },
+      {
+        "label": "Wall Street Journal 報道",
+        "url": "https://www.wsj.com/articles/ai-agent-startup-langchain-raises-300-million-at-3-billion-valuation-5f0a7de4"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–48 小時",
+    "quickTake": "TechCrunch 與《華爾街日報》報道，AI Agent 開發工具公司 LangChain 完成 3 億美元 C 輪融資，估值約 30 億美元，由 Alphabet 旗下 CapitalG 領投。公司稱觀測與評測產品 LangSmith 已有約 7,000 個客戶；客戶數屬公司披露。",
+    "summary": "資本正由單一模型押注，延伸至跨模型 Agent 的測試、追蹤與生產治理層。",
+    "whatHappened": "參與者據報包括 GIC、DFJ Growth、IVP 及 Sapphire Ventures。LangChain 的賣點是可跨模型與雲端使用，LangSmith 則針對 tracing、evaluation 與部署監控。",
+    "reportingContext": "融資與估值由可靠媒體報道；產品採用數字主要來自公司，並不等於獨立驗證的收入或留存。",
+    "deepDive": "Agent 進入生產後，最大難題常不是首次 demo，而是追蹤每一步工具調用、重現失敗、控制成本和回歸測試。若模型持續商品化，這個中間治理層可能比單一框架更耐用。",
+    "whyImportant": "融資反映市場相信 Agent 生產基建仍有獨立價值，也加劇 OpenAI、Google、Microsoft 與開源工具之間的平台競爭。",
+    "hkImpact": [
+      "香港開發團隊：可評估 LangSmith 等工具是否真正改善 tracing、評測與成本，而非因融資消息盲目遷移。",
+      "香港中小企：使用模型中立架構可降低被單一供應商鎖定，但會增加平台與觀測成本。",
+      "香港創業者：Agent 的機會不只在前台助手，也在權限、評測、審計及行業整合。"
+    ],
+    "whatToWatch": "資金如何用於產品整合、企業客戶留存、價格，以及大型模型商會否把同類功能免費綁入平台。",
+    "take": "AIson 分析：Agent 熱潮真正值得留意的不是框架名稱，而是哪一層能持續掌握失敗資料、評測流程與企業治理。",
+    "actionVerdict": "watch",
+    "actionReason": "先以小型生產流程比較 tracing、評測與總成本，再決定是否採用。",
+    "aisonScore": 7.8,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 3,
+      "developer": 5
+    },
+    "tags": [
+      "LangChain",
+      "LangSmith",
+      "AI Agent",
+      "融資",
+      "開發工具"
+    ]
+  },
+  {
+    "id": "2026-11-15-openai-children-ai-research-fund",
+    "rank": 8,
+    "featured": false,
+    "title": "OpenAI 撥款 200 萬美元研究兒童與 AI，承諾公開負面或不確定結果",
+    "excerpt": "資助將建立共享量度工具，研究控制權由學者保留；這是研究承諾，不等於產品已證實安全。",
+    "category": "AI 安全與兒童",
+    "date": "2026-11-15",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://openai.com/index/children-first-declaration/",
+    "sourceLabel": "OpenAI",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Children First Declaration",
+        "url": "https://openai.com/index/children-first-declaration/"
+      }
+    ],
+    "verified": true,
+    "freshness": "48–72 小時",
+    "quickTake": "OpenAI 在巴黎和平論壇簽署 Children First Declaration，並承諾向兒童權利聯盟旗下科學網絡提供 200 萬美元，建立研究 AI 對兒童影響的共享量度工具。公告稱研究者保留研究控制，負面或不確定結果亦會公開；這不等於 OpenAI 產品已被證明對兒童安全。",
+    "summary": "兒童 AI 研究開始強調可比較量度與公開不利結果，而不只由平台自行發布安全聲明。",
+    "whatHappened": "資助目標包括跨研究者共用方法、比較不同產品與情境的影響。具體研究設計、樣本、治理與長期資金安排仍待後續公布。",
+    "reportingContext": "金額、聯盟與公開原則來自 OpenAI 公告，尚未有完成研究結果可評估。",
+    "deepDive": "兒童使用 AI 涉及發展階段、依賴、私隱和內容風險，單次紅隊測試不足以回答長期影響。由研究者保留控制並公布不利結果，是可信度的重要條件，但仍需看資料可得性和方法是否真正獨立。",
+    "whyImportant": "兒童安全是生成式 AI 最敏感的治理議題之一。若量度工具可跨平台使用，監管者與學校才有較一致的證據基礎。",
+    "hkImpact": [
+      "香港家長：暫時沒有新安全結論，仍應設定使用界線、陪同及避免輸入個人資料。",
+      "香港學校：採用 AI 前要有年齡分層、教師覆核、家長溝通與事故處理，不宜等研究完成才建立制度。",
+      "香港研究者與政策制定者：可留意量度工具能否涵蓋廣東話、亞洲文化與本地教育場景。"
+    ],
+    "whatToWatch": "首批研究計劃、資料存取與獨立治理，以及有否公布對平台不利或不確定的結果。",
+    "take": "AIson 分析：200 萬美元本身不會解決兒童 AI 風險；真正測試是研究者能否取得足夠資料、保持獨立，並公開不舒服的結論。",
+    "actionVerdict": "watch",
+    "actionReason": "等待具體研究方法和結果；家庭與學校現有保護措施不應延後。",
+    "aisonScore": 7.6,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 3,
+      "creator": 3,
+      "developer": 3
+    },
+    "tags": [
+      "OpenAI",
+      "兒童安全",
+      "AI 研究",
+      "教育",
+      "治理"
+    ]
+  },
+  {
+    "id": "2026-11-15-meta-clean-manufacturing-data-centers",
+    "rank": 9,
+    "featured": false,
+    "title": "Meta 簽低碳建材與電動運輸協議，瞄準 AI 數據中心供應鏈",
+    "excerpt": "協議涵蓋低碳水泥、綠鋼、電動貨運與再生塑膠，但採購承諾不等於已完成減排。",
+    "category": "AI 基建與氣候",
+    "date": "2026-11-15",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://about.fb.com/news/2026/11/meta-new-agreements-clean-manufacturing-data-center-supply-chains/",
+    "sourceLabel": "Meta",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Meta clean manufacturing agreements",
+        "url": "https://about.fb.com/news/2026/11/meta-new-agreements-clean-manufacturing-data-center-supply-chains/"
+      }
+    ],
+    "verified": true,
+    "freshness": "48–72 小時",
+    "quickTake": "Meta 公布多項 AI 數據中心供應鏈協議，包括向 Sublime Systems 承諾至少 18 萬噸低碳水泥、與 Stegra 合作綠鋼、推動電動貨運及支援每年目標 5,000 噸再生塑膠設施。部分安排採環境屬性憑證模式，相關材料不一定直接用於 Meta 設施。",
+    "summary": "AI 基建競爭開始把水泥、鋼材、運輸與塑膠納入減碳採購。",
+    "whatHappened": "Meta 以長期採購與市場承諾協助新型材料擴產。公告中的數量多屬承諾或設施目標，尚不能等同實際交付量與已核實減排。",
+    "reportingContext": "來源是 Meta 公司公告，未有獨立生命週期審計；本文分開標示承諾、目標與實際結果。",
+    "deepDive": "數據中心的碳排不只來自運行用電，建築材料與物流的隱含碳亦很大。長期採購可降低新供應商投資風險，但 EAC 模式能否帶來額外、可追蹤的減排，需看交付和核證。",
+    "whyImportant": "AI 基建快速擴張令供應鏈排放成為成本與監管問題。大型買家的採購規格可能改變建材市場，而不只影響科技公司自身報告。",
+    "hkImpact": [
+      "香港數據中心與地產企業：可把建材隱含碳、運輸與再生材料納入招標，而非只計算用電。",
+      "香港供應鏈公司：低碳材料若要進入大型科技採購，需要可追蹤產地、核證與交付數據。",
+      "香港企業 ESG 團隊：要分清採購承諾、環境屬性憑證和實際物料流，避免把目標當已減排。"
+    ],
+    "whatToWatch": "實際交付量、第三方生命週期核證、EAC 額外性，以及相關成本會否轉嫁到 AI 雲端服務。",
+    "take": "AIson 分析：AI 的環境帳單正由電費擴展到水泥、鋼材與物流；最值得追蹤的是實際交付與核證，而不是公告中的大數字。",
+    "actionVerdict": "watch",
+    "actionReason": "等待交付與第三方核證資料，再判斷實際減排效果。",
+    "aisonScore": 7.4,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 3
+    },
+    "tags": [
+      "Meta",
+      "數據中心",
+      "低碳水泥",
+      "綠鋼",
+      "AI 基建"
+    ]
+  },
+  {
+    "id": "2026-11-15-anthropic-mythos-trademark-lawsuit",
+    "rank": 10,
+    "featured": false,
+    "title": "Anthropic 因 Mythos 模型名稱被控商標侵權，案件剛進入訴訟",
+    "excerpt": "Global Printing 旗下 Mythos 提告，指 Anthropic 的 Mythos 模型名稱造成混淆；目前只是原告指控，未有法院裁決。",
+    "category": "AI 法律與品牌",
+    "date": "2026-11-15",
+    "readTime": "3 分鐘",
+    "sourceUrl": "https://www.reuters.com/legal/legalindustry/anthropic-sued-trademark-infringement-over-mythos-model-2026-11-13/",
+    "sourceLabel": "Reuters／美國聯邦法院案件",
+    "sourceType": "可靠媒體＋法院案件",
+    "references": [
+      {
+        "label": "Reuters 報道",
+        "url": "https://www.reuters.com/legal/legalindustry/anthropic-sued-trademark-infringement-over-mythos-model-2026-11-13/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–48 小時",
+    "quickTake": "Global Printing Inc. 以 Mythos 名義在美國維珍尼亞東區聯邦法院起訴 Anthropic，指其 Mythos 模型名稱涉及商標侵權及可能造成市場混淆。案件於 11 月 13 日提出，目前只有原告指控，未有法院裁決或已確認侵權。",
+    "summary": "AI 公司密集推出模型名稱，商標清查正由品牌細節變成發布風險。",
+    "whatHappened": "訴訟編號為 1:26-cv-03756。原告要求的具體救濟與 Anthropic 的正式抗辯仍要以法院文件及後續程序為準。",
+    "reportingContext": "本文不把訴狀內容當成事實裁定，也不推斷 Anthropic 會否改名或和解。",
+    "deepDive": "模型名稱會同時出現在 API、文件、合作夥伴整合與客戶合約。若發布後才出現商標爭議，改名成本遠高於一般產品頁更新，亦可能影響開發者依賴與版本管理。",
+    "whyImportant": "AI 產品更新頻率愈高，命名、商標檢索與地區權利清查愈需要前置，否則法律風險會傳導到技術文件和客戶整合。",
+    "hkImpact": [
+      "香港 AI 創業者：模型、Agent 與功能命名上線前應做主要市場商標檢索，保留命名決策紀錄。",
+      "香港開發者：第三方模型可能改名，API 整合宜避免把品牌名稱硬編碼在商業流程。",
+      "香港品牌與法律團隊：美國訴訟未等於香港權利結論，但提醒跨境發布要逐區檢查。"
+    ],
+    "whatToWatch": "Anthropic 回應、法院是否接納原告主張、臨時禁制令與任何改名或和解安排。",
+    "take": "AIson 分析：這宗案的即時影響有限，但它提醒市場——模型命名已是產品基建的一部分，法律清查不能留到發布日才做。",
+    "actionVerdict": "watch",
+    "actionReason": "案件初期未有裁決；先監察答辯與法院命令。",
+    "aisonScore": 6.8,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 3,
+      "developer": 3
+    },
+    "tags": [
+      "Anthropic",
+      "Mythos",
+      "商標",
+      "AI 法律",
+      "模型命名"
+    ]
+  }
+]
