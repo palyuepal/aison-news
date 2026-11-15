@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-16-us-bessent-nvidia-external-ceo-compliance",
+    "title": "美國財長要求 NVIDIA 從外部物色新 CEO，10 日內交代出口管制合規文化",
+    "summary": "美國財長 Scott Bessent 周日表示，NVIDIA 在黃仁勳突然離任後需要「徹底重整」，董事會物色新行政總裁時應考慮公司以外人選。他亦要求 NVIDIA 董事會及外部法律顧問在 10 日內回答公司出口限制合規文化的問題；這是財長公開施壓，並非董事會已確定接班人或公布新合規措施。Reuters 指《金融時報》早前報道董事會曾接觸 Arm 行政總裁 Rene Haas，但 NVIDIA 的正式接班安排仍未落實。對香港晶片客戶、雲端及供應鏈企業而言，管理層更替已與出口管制審查直接交疊，短期應留意合規政策、供貨承諾及 10 日內是否有正式回應。",
+    "category": "AI 晶片與企業治理",
+    "publishedAt": "2026-11-15T15:50:31Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-16-applied-digital-power-guarantees",
     "title": "AI 數據中心電力風險轉嫁：Applied Digital 據報要求 Oracle、Meta 提供數十億美元擔保",
     "summary": "The Next Web 引述 Bloomberg 報道，AI 數據中心開發商 Applied Digital 在簽署新租約前，要求包括 Oracle、Meta 在內的大型租戶提供數十億美元級母公司擔保，用作鎖定電力及承擔電網接駁成本；公司亦會按個別項目向 NVIDIA、AMD 尋求擔保。Applied Digital 行政總裁 Wes Cummins 表示，公司偏好 70% 投資級、30% 非投資級租戶組合，並限制向較低評級 neocloud 租出容量。報道未披露每宗擔保的確實金額、條款或哪些公司已正式同意；Meta 沒有評論，Oracle 拒絕評論。對香港企業而言，重點是 AI 基建成本已不只包括伺服器與租金，電力接駁和信用擔保正成為擴容門檻。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-29T03:28:00Z",
     "sourceLabel": "Irregular／Reuters",
     "sourceUrl": "https://www.irregular.com/research/glm-5.3-multi-stage-cyber-operations-and-instruction-violations",
-    "verified": true,
-    "active": false,
-    "level": "update"
-  },
-  {
-    "id": "2026-10-29-microsoft-azure-cashflow",
-    "title": "Microsoft Azure 增長 48%：AI 雲端收入開始反映在現金流",
-    "summary": "Microsoft FY27 Q1 收入按年升 19% 至 923 億美元，Azure 增長 48%，Microsoft Cloud 收入升 30% 至 639 億美元。自由現金流達 186 億美元；資本開支 452 億美元低於公司原先預期，Microsoft 指部分容量交付延誤，並非改變投資計劃。",
-    "category": "AI 商業與雲端",
-    "publishedAt": "2026-10-28T20:07:25Z",
-    "sourceLabel": "Microsoft Investor Relations／Reuters",
-    "sourceUrl": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
     "verified": true,
     "active": false,
     "level": "update"
