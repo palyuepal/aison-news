@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-16-applied-digital-power-guarantees",
+    "title": "AI 數據中心電力風險轉嫁：Applied Digital 據報要求 Oracle、Meta 提供數十億美元擔保",
+    "summary": "The Next Web 引述 Bloomberg 報道，AI 數據中心開發商 Applied Digital 在簽署新租約前，要求包括 Oracle、Meta 在內的大型租戶提供數十億美元級母公司擔保，用作鎖定電力及承擔電網接駁成本；公司亦會按個別項目向 NVIDIA、AMD 尋求擔保。Applied Digital 行政總裁 Wes Cummins 表示，公司偏好 70% 投資級、30% 非投資級租戶組合，並限制向較低評級 neocloud 租出容量。報道未披露每宗擔保的確實金額、條款或哪些公司已正式同意；Meta 沒有評論，Oracle 拒絕評論。對香港企業而言，重點是 AI 基建成本已不只包括伺服器與租金，電力接駁和信用擔保正成為擴容門檻。",
+    "category": "AI 基建與能源",
+    "publishedAt": "2026-11-15T15:29:00Z",
+    "sourceLabel": "The Next Web／Bloomberg",
+    "sourceUrl": "https://thenextweb.com/news/applied-digital-power-guarantees-oracle-meta-grid-costs",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-15-italy-meta-android-gallery-fine",
     "title": "意大利罰 Meta 8.05 億歐元：指 Facebook 未充分告知便存取 Android 相片與影片",
     "summary": "意大利資料保障機構表示，Meta 透過 Facebook 的發帖建議功能存取約 2,000 萬名 Android 用戶的相片與影片，未有取得獨立同意或充分告知，因此罰款 8.05 億歐元（約 8.87 億美元），並要求公司在 60 日內把功能預設關閉及另行取得用戶同意。\n\nMeta 表示會上訴，稱功能只有在用戶授予裝置權限後運作，而且權限可以隨時更改。監管機構亦說，今次調查不涵蓋內容有否用於訓練 AI；Meta 否認有此做法。對香港用戶與開發者而言，重點是裝置層相簿權限不等於平台可持續分析私人媒體的清晰同意，雲端處理與 AI 用途亦應分開說明。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-10-28T20:07:25Z",
     "sourceLabel": "Microsoft Investor Relations／Reuters",
     "sourceUrl": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
-    "verified": true,
-    "active": false,
-    "level": "update"
-  },
-  {
-    "id": "2026-10-29-alphabet-cloud-capex-earnings",
-    "title": "Google Cloud 增長 103%，Alphabet 的 AI 基建支出亦急升",
-    "summary": "Alphabet Q3 Google Cloud 收入按年增長 103% 至約 307 億美元，顯示企業 AI 基建需求強勁；但季度自由現金流轉為負 91 億美元，資本開支大增。業績反映 AI 雲端收入與基建支出同時擴張，回本速度仍需持續觀察。",
-    "category": "AI 商業與雲端",
-    "publishedAt": "2026-10-28T20:07:00Z",
-    "sourceLabel": "Alphabet SEC Filing／Reuters",
-    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
     "verified": true,
     "active": false,
     "level": "update"
