@@ -1,5 +1,53 @@
 window.AISON_LIVE = [
   {
+    "id": "2026-11-15-italy-meta-android-gallery-fine",
+    "title": "意大利罰 Meta 8.05 億歐元：指 Facebook 未充分告知便存取 Android 相片與影片",
+    "summary": "意大利資料保障機構表示，Meta 透過 Facebook 的發帖建議功能存取約 2,000 萬名 Android 用戶的相片與影片，未有取得獨立同意或充分告知，因此罰款 8.05 億歐元（約 8.87 億美元），並要求公司在 60 日內把功能預設關閉及另行取得用戶同意。\n\nMeta 表示會上訴，稱功能只有在用戶授予裝置權限後運作，而且權限可以隨時更改。監管機構亦說，今次調查不涵蓋內容有否用於訓練 AI；Meta 否認有此做法。對香港用戶與開發者而言，重點是裝置層相簿權限不等於平台可持續分析私人媒體的清晰同意，雲端處理與 AI 用途亦應分開說明。",
+    "category": "資料私隱與平台治理",
+    "publishedAt": "2026-11-14T13:07:51Z",
+    "sourceLabel": "Reuters／意大利資料保障機構",
+    "sourceUrl": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-15-us-nvidia-chip-export-pressure-trump-xi",
+    "title": "NVIDIA 風波推高美國對華晶片限制壓力，議員要求即時暫停先進 AI 晶片出口",
+    "summary": "美聯社報道，在特朗普下周訪華並與習近平會面前，美國國會兩黨議員正藉 NVIDIA 管理層風波要求收緊對華科技出口；多名民主黨議員已要求商務部即時暫停先進 AI 晶片出口。參議院國防政策法案版本亦包括讓國會審查對華晶片許可、授權追蹤晶片去向，以及要求盟友配合出口限制等條文。\n\n相關措施尚未全部成為生效政策，特朗普政府亦未表示會在會面中直接提出 NVIDIA 事件。北京否認相關間諜指控，反對以事件作為新增科技限制的理由。對香港企業而言，這是出口管制政治風險的實質升級訊號，但採購與合規決策仍應以最終法例、商務部規則和實際許可為準。",
+    "category": "AI 晶片與中美政策",
+    "publishedAt": "2026-11-14T05:17:45Z",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/nvidia-trump-xi-huang-ai-rivalry-aba7f92a1ec2f0f9e4b4da206d640d61",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-14-nvidia-arm-rene-haas-ceo-search",
+    "title": "NVIDIA 接班搜尋傳接觸 Arm CEO Rene Haas，公司稱尚未正式接洽候選人",
+    "summary": "Reuters 引述《金融時報》報道，NVIDIA 董事會已接觸 Arm 行政總裁 Rene Haas，將他列為黃仁勳離任後的潛在接班人之一；Haas 曾在 NVIDIA 工作七年，2022 年起領導 Arm，並帶領公司於 2023 年在 Nasdaq 上市。不過 Reuters 未能獨立核實報道，Arm 拒絕置評，亦未有證據顯示 Haas 已獲正式聘任或接受職位。\n\nNVIDIA 董事會的正式說法是仍在挑選行政總裁搜尋顧問，尚未正式接洽任何候選人，個別人選的揣測仍屬時之尚早；財務總監 Colette Kress 繼續暫代行政總裁。對香港雲端、晶片客戶及投資者而言，這項進展反映接班搜尋已成為市場焦點，但產品路線與客戶承諾暫無官方改動；下一步應看搜尋顧問、正式候選名單、11 月 17 日業績會及最終任命。",
+    "category": "AI 晶片與企業治理",
+    "publishedAt": "2026-11-14T00:11:00Z",
+    "sourceLabel": "Reuters／NVIDIA／Financial Times",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/arms-haas-approached-by-nvidia-board-part-ceo-search-ft-reports-2026-11-13/",
+    "level": "followup",
+    "verified": true,
+    "active": false
+  },
+  {
+    "id": "2026-11-14-microsoft-365-services-fully-restored",
+    "title": "Microsoft 365 全球服務全面恢復，逾 20 小時故障進入事後檢討",
+    "summary": "Microsoft 表示已完成處理事故根本問題，並恢復最後一批受影響客戶及地區的服務；早前受影響範圍包括 Outlook、Teams、Copilot、Exchange Online、SharePoint 等。公司重申事故源於較早前網絡容量升級的問題在近期網絡變更後浮現，沒有跡象顯示涉及網攻或 AI agents；完整事故報告仍待公布。\n\n故障期間，超過 70 個國家及地區出現報告，政府、法院、醫療、航空、銀行及企業工作流均受影響，香港部分銀行與公司亦受牽連。服務恢復不代表延誤郵件、失敗自動化或積壓工作已由每間機構完成核對；香港企業應檢查郵件佇列、重跑失敗流程及核對關鍵交易，下一步留意 Microsoft 的事後報告、根因細節與防止重演措施。",
+    "category": "雲端服務與 AI 工具",
+    "publishedAt": "2026-11-14T09:11:59Z",
+    "sourceLabel": "Microsoft／AP",
+    "sourceUrl": "https://apnews.com/article/ca395c0f1e51af784b6d70afb6554f6a",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-13-fed-ai-financial-stability-risk",
     "title": "美聯儲調查：87% 市場聯絡人把 AI 列為金融穩定風險，較五月 50% 急升",
     "summary": "美國聯儲局最新《金融穩定報告》顯示，23 名銀行、券商、基金及顧問業界聯絡人之中，87% 把 AI 列為未來 12 至 18 個月可能衝擊金融體系的顯著風險，較五月調查的 50% 上升。關注包括高估值與盈利不及預期引發市場調整、AI 相關網絡攻擊，以及數據中心與算力基建的複雜融資；這是受訪者在九月至十月提出的風險看法，不是 87% 危機概率，也不代表美聯儲預測危機已發生。\n\n報告指出，科技公司、公開信貸、私募貸款及特殊目的融資工具之間的連結需要密切監察；部分大型企業雖有能力吸收損失，但實際曝險亦可能高於資產負債表顯示。對香港銀行、基金、保險及科技企業而言，應把資料中心融資、交易對手集中及 AI 估值回調納入壓力測試；下一步留意監管機構會否要求更多披露、風險集中度管理或資本緩衝。",
@@ -9,7 +57,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.federalreserve.gov/publications/financial-stability-report.htm",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-anthropic-ipo-roadshow-six-times-subscribed",
@@ -21,7 +69,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-openai-chatgpt-wallet-agent-payments",
@@ -33,7 +81,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://openai.com/index/introducing-chatgpt-wallet/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-microsoft-365-global-outage-ai-connectors",
@@ -45,7 +93,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.businessinsider.com/microsoft-365-outage-outlook-teams-down-claude-what-we-know-2026-11",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-eu-first-leaders-ai-summit",
@@ -57,7 +105,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/13/",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-china-nvidia-ai-projects-3-billion",
@@ -69,7 +117,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-singapore-fifth-person-ai-server-fraud",
@@ -81,7 +129,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.reuters.com/legal/government/singapore-charges-fifth-person-ai-server-fraud-case-2026-11-13/",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-malaysia-speedmatrix-ai-chip-reexport-probe",
@@ -93,7 +141,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/malaysia-says-it-is-investigating-if-any-chips-linked-speedmatrix-were-re-2026-11-13/",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-us-ai-task-force-cyber-incident-reporting",
@@ -105,7 +153,7 @@ window.AISON_LIVE = [
     "sourceUrl": "https://www.reuters.com/world/us/trumps-ai-task-force-met-thursday-discussed-ai-powered-cyberattacks-2026-11-13/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-13-us-senate-huang-lutnick-testimony",
@@ -670,53 +718,5 @@ window.AISON_LIVE = [
     "verified": true,
     "active": false,
     "level": "update"
-  },
-  {
-    "id": "2026-10-28-malaysia-ai-chip-seizure-smuggling",
-    "title": "馬來西亞查獲約 RM49.5m AI 晶片，調查疑似跨境走私網絡",
-    "summary": "馬來西亞海關 10 月 28 日表示，本月查獲約 4,950 萬令吉（約 1,211 萬美元）的先進 AI 晶片，並正調查一個涉嫌經吉隆坡國際機場轉運晶片的網絡。海關稱，10 月 15 日在機場自由貿易區發現 30 部載有先進晶片的伺服器；初步調查指貨物由亞洲另一地運入，原擬再出口至區內另一國，所需貿易許可並未申報。\n\n事件顯示先進 AI 算力的跨境流向正面臨更嚴格查核，但目前公開資料未證實貨物最終目的地或涉及哪一個國家。馬來西亞去年已對美國原產先進 AI 晶片的流動設出口管制；這宗調查仍在進行，不能視作已確認的規避制裁案件。",
-    "category": "AI 基建與半導體",
-    "publishedAt": "2026-10-28T05:21:50Z",
-    "sourceLabel": "Reuters／CNA（引述馬來西亞海關）",
-    "sourceUrl": "https://www.reuters.com/world/china/ai-chips-worth-121-million-seized-malaysia-airport-customs-authority-says-2026-10-28/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-28-uk-vape-consultation-automated-submissions",
-    "title": "英國電子煙諮詢 76% 回應被判為機械提交，民意數字受大規模灌票干擾",
-    "summary": "一項 10 月 27 日刊於《Tobacco Control》的觀察研究，分析英國 2023 年煙草及電子煙法案諮詢。政府將 118,756 份提交中的 90,835 份（76%）識別為機械人提交並排除；幾乎全部集中反對一次性電子煙限制，且不少回覆重複、由少數 IP 高頻送出。\n\n研究指出，大量而方向一致的自動提交可扭曲網上諮詢呈現的民意。不過，研究無法確認幕後身份、動機或商業贊助，也不能直接推廣到其他政策議題；目前能確認的是這批回覆被政府識別並排除，法案其後仍獲通過。",
-    "category": "AI 政策與公眾安全",
-    "publishedAt": "2026-10-27T22:30:00Z",
-    "sourceLabel": "Tobacco Control（BMJ）／The Guardian",
-    "sourceUrl": "https://doi.org/10.1136/tc-2026-060309",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-29-anthropic-drug-development-catchup",
-    "title": "Anthropic 與六間機構推進 Claude 藥物研發，早期實驗已有候選",
-    "summary": "Anthropic 公布與六間藥物研發機構合作及自有罕見肌肉疾病項目。合作方的早期材料包括 Claude 參與設計並經實驗測試的 CAR-T 受體構造；Divergence Labs 以 Claude 產生約 35,000 個抗體設計，初步找到可結合及移除 IgE 的候選。\\n\\nAnthropic 亦稱 Enveda 的文件審閱流程大幅縮短；惟整體工作多在前臨床或早期階段，數字由公司及合作方公布，並不代表人體臨床療效、藥物已可用或審批時間必然縮短。",
-    "category": "AI 科研與醫療",
-    "publishedAt": "2026-10-27T20:50:00Z",
-    "sourceLabel": "Anthropic／合作機構技術報告",
-    "sourceUrl": "https://www.anthropic.com/research/early-progress-drug-development",
-    "verified": true,
-    "active": false,
-    "level": "update"
-  },
-  {
-    "id": "2026-10-28-liquid-ai-lfm3-open-multimodal-models",
-    "title": "Liquid AI 開放六款 LFM3 模型：多模態推理走向本地部署",
-    "summary": "Liquid AI 於 10 月 27 日發布 LFM3 系列，首批六款約 2B 級開放權重模型共用一個骨幹，涵蓋文字、視覺、音訊、全模態及決策；模型權重已可下載，文字模型亦可在單張 GPU 微調。\\n\\n這令香港開發者及中小企多一個可本地測試、按專門工作微調的選項，但模型能力、粵語表現與實際部署成本仍要自行驗證。參數效率及基準比較目前主要由 Liquid AI 公布，未有足夠獨立評測證明普遍優勢。",
-    "category": "AI 模型與 Agent",
-    "publishedAt": "2026-10-27T17:04:50Z",
-    "sourceLabel": "Liquid AI",
-    "sourceUrl": "https://www.liquid.ai/blog/lfm3",
-    "level": "update",
-    "verified": true,
-    "active": false
   }
 ];
