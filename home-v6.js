@@ -239,10 +239,10 @@
   }
 
   function topThree(news){
-    // The lead story is already displayed prominently above; show the next three here.
-    const stories=news.slice(1,4);
+    // The lead story is above; show #2–#3 here, since #4 onward is already in #newsGrid.
+    const stories=news.slice(1,3);
     return '<section class="b2-top-three"><div class="container"><div class="b2-section-head"><div><small>TODAY\'S NEWS · EDITOR\'S RANKING</small><h2>今日 AI，一頁睇晒</h2></div><a href="daily.html">完整每日 Story Flow →</a></div><div class="b2-top-grid">'+
-      stories.map((n,index)=>'<a class="b2-top-card" href="'+url(n)+'">'+cardMedia(n,'b2-card-media',index===0)+'<div class="b2-card-copy"><div class="b2-story-meta"><b>0'+(index+1)+'</b><span>'+esc(n.category||'AI NEWS')+'</span>'+(n.verified?'<span>✓ 已核實</span>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(brief(n.quickTake||n.summary||n.excerpt,160))+'</p><div class="b2-card-foot"><span>'+esc(n.readTime||'閱讀重點')+'</span><time>'+esc(fmt(n.date))+'</time></div><strong>閱讀完整報道 →</strong></div></a>').join('')+
+      stories.map((n,index)=>'<a class="b2-top-card" href="'+url(n)+'">'+cardMedia(n,'b2-card-media',index===0)+'<div class="b2-card-copy"><div class="b2-story-meta"><b>0'+(index+2)+'</b><span>'+esc(n.category||'AI NEWS')+'</span>'+(n.verified?'<span>✓ 已核實</span>':'')+'</div><h3>'+esc(n.title)+'</h3><p>'+esc(brief(n.quickTake||n.summary||n.excerpt,160))+'</p><div class="b2-card-foot"><span>'+esc(n.readTime||'閱讀重點')+'</span><time>'+esc(fmt(n.date))+'</time></div><strong>閱讀完整報道 →</strong></div></a>').join('')+
     '</div></div></section>';
   }
 
