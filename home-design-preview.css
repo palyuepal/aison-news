@@ -108,3 +108,19 @@ html[data-theme="dark"] body[data-page="home"].b2-ready .b2-dek{color:#bdcde2!im
  body[data-page="home"].b2-ready .b2-front h1{font-size:27px!important}
  body[data-page="home"].b2-ready .b2-kicker{font-size:10px!important;letter-spacing:.04em!important}
 }
+
+/* V3 hotfix: runtime markup uses H2 (not H1) for lead headline. */
+body[data-page="home"].b2-ready .b2-front .b2-front-copy>h2{
+ font-size:clamp(29px,3.1vw,46px)!important;
+ line-height:1.19!important;letter-spacing:-.035em!important;
+ max-width:22ch!important;margin:12px 0!important;
+ text-wrap:balance;
+}
+@media(max-width:800px){
+ body[data-page="home"].b2-ready .b2-front .b2-front-copy>h2{
+  font-size:clamp(27px,6.6vw,39px)!important;max-width:none!important;
+ }
+}
+@media(max-width:420px){
+ body[data-page="home"].b2-ready .b2-front .b2-front-copy>h2{font-size:27px!important}
+}
