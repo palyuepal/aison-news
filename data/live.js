@@ -1,5 +1,29 @@
 window.AISON_LIVE = [
   {
+    "id": "2026-11-13-fed-ai-financial-stability-risk",
+    "title": "美聯儲調查：87% 市場聯絡人把 AI 列為金融穩定風險，較五月 50% 急升",
+    "summary": "美國聯儲局最新《金融穩定報告》顯示，23 名銀行、券商、基金及顧問業界聯絡人之中，87% 把 AI 列為未來 12 至 18 個月可能衝擊金融體系的顯著風險，較五月調查的 50% 上升。關注包括高估值與盈利不及預期引發市場調整、AI 相關網絡攻擊，以及數據中心與算力基建的複雜融資；這是受訪者在九月至十月提出的風險看法，不是 87% 危機概率，也不代表美聯儲預測危機已發生。\n\n報告指出，科技公司、公開信貸、私募貸款及特殊目的融資工具之間的連結需要密切監察；部分大型企業雖有能力吸收損失，但實際曝險亦可能高於資產負債表顯示。對香港銀行、基金、保險及科技企業而言，應把資料中心融資、交易對手集中及 AI 估值回調納入壓力測試；下一步留意監管機構會否要求更多披露、風險集中度管理或資本緩衝。",
+    "category": "AI 金融與風險",
+    "publishedAt": "2026-11-13T21:02:00Z",
+    "sourceLabel": "美國聯儲局／Reuters",
+    "sourceUrl": "https://www.federalreserve.gov/publications/financial-stability-report.htm",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-13-anthropic-ipo-roadshow-six-times-subscribed",
+    "title": "Anthropic IPO 據報獲約 6 倍認購，估值與模型優勢仍成投資者焦點",
+    "summary": "Reuters 引述熟悉路演情況的消息人士報道，Anthropic 的首次公開招股在路演首日約獲兩倍認購，到周四已增至約六倍，早期需求快過 SpaceX 同期。Anthropic 官方招股文件確認今次發售 8.25 億股、每股預期 70 至 78 美元，最高集資規模約 643.5 億美元，擬以「ANT」在 Nasdaq 上市；路演預計下周三定價，註冊聲明仍未生效。\n\n認購倍數來自匿名消息人士，Anthropic 拒絕評論，訂單亦可在定價前改變，不能視為最終成交或上市後表現保證。投資者同時質疑 Claude 能否在 Google 等對手追近下維持模型優勢，並由程式編寫擴展至更廣泛知識工作；香港投資者與 AI 企業應把高認購、估值、財務披露及產品競爭力分開判斷，下一步留意最終定價、有效註冊及首日交易。",
+    "category": "AI 商業與資本市場",
+    "publishedAt": "2026-11-13T22:03:58Z",
+    "sourceLabel": "Reuters／Anthropic／SEC",
+    "sourceUrl": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-13-openai-chatgpt-wallet-agent-payments",
     "title": "OpenAI 推 ChatGPT Wallet：Agent 可代付款，但每宗交易仍要生物認證",
     "summary": "OpenAI 推出 ChatGPT Wallet，讓 AI agent 在用戶確認後代為完成網上付款。系統以 token 化方式連接合資格的 American Express、Mastercard 及 Visa 卡，agent 不會看到實際卡號；每宗交易都要由用戶覆核，並通過裝置生物認證。首階段透過「dots」向美國年滿 18 歲的 ChatGPT Pro 用戶開放，暫只支援合資格的美國發卡。\\n\\nOpenAI 表示，用戶仍直接與商戶交易，定價、履約、退貨及客戶服務由商戶負責。對香港用戶而言目前未開放，但這是 agent 從「幫你比較」走向「代你付款」的重要一步；企業應預先把付款上限、人工覆核、退款責任及審計紀錄寫入 agent 採購流程。",
@@ -691,30 +715,6 @@ window.AISON_LIVE = [
     "publishedAt": "2026-10-27T17:04:50Z",
     "sourceLabel": "Liquid AI",
     "sourceUrl": "https://www.liquid.ai/blog/lfm3",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-28-google-genie-4-world-model-live",
-    "title": "Google Genie 4 把生成媒體推向可互動世界",
-    "summary": "Google DeepMind 於 10 月 27 日公布 Genie 4，展示可即時操控、會因用戶行動改變並帶有原生聲音的模擬環境，先以研究預覽方式向可信測試者開放。\\n\\n目前仍非一般用戶可用產品；Google 亦指出長時間模擬仍有物件漂移、文字不清及空間錯誤。對遊戲、動畫及機械人團隊而言，值得追蹤的是環境能否保持一致，而非單段示範片的逼真度。",
-    "category": "AI 模型與 Agent",
-    "publishedAt": "2026-10-27T16:10:00Z",
-    "sourceLabel": "Google DeepMind",
-    "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-10-28-openai-oracle-enterprise-apps-chatgpt",
-    "title": "OpenAI 與 Oracle 把企業應用帶進 ChatGPT：Agent 開始連接財務與採購流程",
-    "summary": "OpenAI 與 Oracle 10 月 27 日公布擴大合作：Oracle 正開發 AI Workspace，計劃把 Fusion、NetSuite 等企業應用及數據接入 ChatGPT，讓員工在既有權限與審批下處理跨系統工作。雙方亦公布 AI Security Mesh、供中小企使用的 SMB Bundle，以及以 Codex 建立企業應用的 App Composer。\n\n目前多項功能仍屬規劃或即將推出，並非所有企業已可使用；Oracle 提供的內部採用數字及效率例子亦未經獨立驗證。值得追蹤的是 Agent 能否在保留企業權限、審批和人工把關的前提下，可靠地執行財務、採購等真實流程。",
-    "category": "AI 模型與 Agent",
-    "publishedAt": "2026-10-27T16:00:15Z",
-    "sourceLabel": "OpenAI／Oracle 官方公告",
-    "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt/",
     "level": "update",
     "verified": true,
     "active": false
