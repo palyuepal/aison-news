@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-16",
+  "dailyOneLiner": "AI 的競爭焦點由模型能力轉向治理、電力、資安與資本承擔：今日最重要的是誰能證明自己控制到整條鏈。",
+  "top3Ids": [
+    "2026-11-16-us-bessent-nvidia-external-ceo-compliance",
+    "2026-11-16-applied-digital-power-guarantees",
+    "2026-11-16-jpcert-ai-cyberattack-servers"
+  ],
+  "threeThemes": [
+    {
+      "title": "治理與地緣壓力進入董事會及資本市場",
+      "summary": "NVIDIA 接班被出口管制合規綁住，Anthropic IPO 據報拒收香港及內地機構訂單。",
+      "watch": "NVIDIA 的 10 日回應、正式候選程序及 Anthropic 配售規則。"
+    },
+    {
+      "title": "算力成本由晶片擴散至電力與記憶體",
+      "summary": "Applied Digital 要求租戶擔保電力成本，DRAM 訴訟聚焦 HBM 轉產。",
+      "watch": "擔保條款、記憶體廠商回應與 NVIDIA 業績指引。"
+    },
+    {
+      "title": "AI 工具供應鏈成為真正攻擊面",
+      "summary": "日本追蹤疑似 AI 網攻伺服器，Fireworks 事故延伸至 Cursor 與 Notion。",
+      "watch": "JPCERT/CC 技術指標、事故最終範圍及供應商整改。"
+    }
+  ],
+  "biggestChange": "AI 風險已由單一模型輸出，轉向接班治理、電網信用、供應鏈憑證與跨境資本限制；能否控制依賴關係，正在變成競爭優勢。",
+  "watchTomorrow": "留意 NVIDIA 業績前的接班／合規回應、Anthropic IPO 配售細節、JPCERT/CC 技術指標，以及 SC26 的可驗證產品與效能數據。"
+}
