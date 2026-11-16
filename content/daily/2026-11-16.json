@@ -1,0 +1,497 @@
+[
+  {
+    "id": "2026-11-16-us-bessent-nvidia-external-ceo-compliance",
+    "rank": 1,
+    "featured": true,
+    "title": "美國財長要求 NVIDIA 外聘新 CEO，10 日內交代出口管制合規文化",
+    "excerpt": "NVIDIA 接班由企業治理問題升級成政府公開施壓。",
+    "category": "AI 晶片與企業治理",
+    "date": "2026-11-16",
+    "readTime": "6 分鐘",
+    "sourceUrl": "https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/",
+    "sourceLabel": "Reuters",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "Reuters",
+        "url": "https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "美國財長 Scott Bessent 表示 NVIDIA 應從外部物色新行政總裁，並要求董事會及外部法律顧問在 10 日內回答出口限制合規文化問題。這是官員公開要求，不代表公司已決定人選或承認違規。",
+    "summary": "NVIDIA 接班由企業治理問題升級成政府公開施壓。",
+    "whatHappened": "美國財長 Scott Bessent 表示 NVIDIA 應從外部物色新行政總裁，並要求董事會及外部法律顧問在 10 日內回答出口限制合規文化問題。這是官員公開要求，不代表公司已決定人選或承認違規。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "接班人要同時處理晶片路線、CUDA、生態、客戶與出口規則；政府把合規文化列為接班條件，令董事會選擇受到政治及國安審視。",
+    "whyImportant": "接班人要同時處理晶片路線、CUDA、生態、客戶與出口規則；政府把合規文化列為接班條件，令董事會選擇受到政治及國安審視。",
+    "hkImpact": [
+      "投資者：把官員意見與董事會正式決定分開，短期波動或會增加。",
+      "雲端及開發團隊：目前沒有產品、CUDA 或供貨政策正式改動，毋須急於遷移。",
+      "供應鏈企業：加強最終用戶與出口文件，留意 NVIDIA 會否收緊客戶審查。"
+    ],
+    "whatToWatch": "留意 NVIDIA 是否在 10 日內正式回應、搜尋顧問及候選名單，以及 11 月 17 日業績會。",
+    "take": "AIson 分析：接班標準已由「誰懂晶片」擴大到「誰能重建合規可信度」；未有正式文件前，不應把外聘寫成既定結果。",
+    "actionVerdict": "watch",
+    "actionReason": "等待公司正式回應及業績會說明。",
+    "aisonScore": 9.6,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 5
+    },
+    "tags": [
+      "NVIDIA",
+      "出口管制",
+      "CEO",
+      "企業治理"
+    ]
+  },
+  {
+    "id": "2026-11-16-applied-digital-power-guarantees",
+    "rank": 2,
+    "featured": true,
+    "title": "Applied Digital 據報要求 Oracle、Meta 為 AI 數據中心提供數十億美元電力擔保",
+    "excerpt": "AI 基建合約開始把電網接駁與租戶信用綁在一起。",
+    "category": "AI 基建與能源",
+    "date": "2026-11-16",
+    "readTime": "6 分鐘",
+    "sourceUrl": "https://thenextweb.com/news/applied-digital-power-guarantees-oracle-meta-grid-costs",
+    "sourceLabel": "The Next Web／Bloomberg",
+    "sourceType": "可靠媒體轉述",
+    "references": [
+      {
+        "label": "The Next Web／Bloomberg",
+        "url": "https://thenextweb.com/news/applied-digital-power-guarantees-oracle-meta-grid-costs"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "報道指 Applied Digital 在部分 AI 數據中心租約前，要求 Oracle、Meta 等大型租戶提供數十億美元級母公司擔保，以支持電力接駁與基建承諾。個別金額及已簽條款未公開，Meta 沒有評論，Oracle 拒絕評論。",
+    "summary": "AI 基建合約開始把電網接駁與租戶信用綁在一起。",
+    "whatHappened": "報道指 Applied Digital 在部分 AI 數據中心租約前，要求 Oracle、Meta 等大型租戶提供數十億美元級母公司擔保，以支持電力接駁與基建承諾。個別金額及已簽條款未公開，Meta 沒有評論，Oracle 拒絕評論。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "數據中心的瓶頸由 GPU 延伸至電網信用。若租戶擔保前置電力支出，雲端公司的資本承諾會由租金擴展至電網風險，信用較弱的 neocloud 亦更難取得容量。",
+    "whyImportant": "數據中心的瓶頸由 GPU 延伸至電網信用。若租戶擔保前置電力支出，雲端公司的資本承諾會由租金擴展至電網風險，信用較弱的 neocloud 亦更難取得容量。",
+    "hkImpact": [
+      "企業採購雲端時要問容量保證、電力附加費與長約退出條款。",
+      "金融機構參與數據中心融資時，要評估租戶信用及接駁延誤。",
+      "區內數據中心營運商需更透明交代能源來源、成本分攤與備援。"
+    ],
+    "whatToWatch": "留意相關公司是否披露正式擔保條款，以及其他發展商會否採用相似結構。",
+    "take": "AIson 分析：AI 基建競爭正由「誰買到 GPU」變成「誰有信用鎖定電力」。",
+    "actionVerdict": "watch",
+    "actionReason": "合約細節未公開，先檢查自身長約及能源風險。",
+    "aisonScore": 9.3,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": [
+      "Applied Digital",
+      "Oracle",
+      "Meta",
+      "數據中心",
+      "電力"
+    ]
+  },
+  {
+    "id": "2026-11-16-jpcert-ai-cyberattack-servers",
+    "rank": 3,
+    "featured": true,
+    "title": "日本牽頭調查發現約 1,000 部伺服器疑支援 AI 網攻",
+    "excerpt": "JPCERT/CC 正追蹤其中 600 至 700 部，AI 輔助攻擊已形成可觀察基建。",
+    "category": "AI 安全與網絡攻擊",
+    "date": "2026-11-16",
+    "readTime": "6 分鐘",
+    "sourceUrl": "https://www.straitstimes.com/asia/east-asia/japan-led-probe-finds-1000-servers-likely-used-for-ai-driven-cyberattacks",
+    "sourceLabel": "The Straits Times／Kyodo／JPCERT/CC",
+    "sourceType": "可靠媒體＋資安機構",
+    "references": [
+      {
+        "label": "The Straits Times／Kyodo／JPCERT/CC",
+        "url": "https://www.straitstimes.com/asia/east-asia/japan-led-probe-finds-1000-servers-likely-used-for-ai-driven-cyberattacks"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "JPCERT/CC 與海外資安公司發現約 1,000 部伺服器自 10 月起疑被用作 AI 網攻基地，部分系統用 AI 工具掃描漏洞及嘗試竊取配置檔。這是調查結果，不等於每部伺服器均已成功入侵目標。",
+    "summary": "JPCERT/CC 正追蹤其中 600 至 700 部，AI 輔助攻擊已形成可觀察基建。",
+    "whatHappened": "JPCERT/CC 與海外資安公司發現約 1,000 部伺服器自 10 月起疑被用作 AI 網攻基地，部分系統用 AI 工具掃描漏洞及嘗試竊取配置檔。這是調查結果，不等於每部伺服器均已成功入侵目標。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "自動化漏洞搜尋能降低攻擊成本，並同時測試大量網站。防守方不能只阻擋單一模型或 IP，亦要監察憑證濫用、異常 API 存取及配置檔外流。",
+    "whyImportant": "自動化漏洞搜尋能降低攻擊成本，並同時測試大量網站。防守方不能只阻擋單一模型或 IP，亦要監察憑證濫用、異常 API 存取及配置檔外流。",
+    "hkImpact": [
+      "中小企：優先修補公開網站、VPN 與常見框架漏洞。",
+      "開發者：使用短期憑證、定期輪換密鑰，避免把配置檔交予未受控工具。",
+      "金融及關鍵基建：把 AI 輔助掃描加入紅隊與事故演練。"
+    ],
+    "whatToWatch": "留意 JPCERT/CC 是否公開 IOC、受影響地區及工具鏈細節。",
+    "take": "AIson 分析：AI 未必創造全新漏洞，但能放大尋找與利用已知弱點的速度。",
+    "actionVerdict": "try-now",
+    "actionReason": "可即時檢查公開服務、密鑰輪換與異常登入。",
+    "aisonScore": 9.1,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    },
+    "tags": [
+      "JPCERT/CC",
+      "AI 網攻",
+      "漏洞掃描",
+      "網絡安全"
+    ]
+  },
+  {
+    "id": "2026-11-16-italy-meta-android-gallery-fine",
+    "rank": 4,
+    "featured": false,
+    "title": "意大利罰 Meta 8.05 億歐元：指 Facebook 未充分告知便存取 Android 相簿",
+    "excerpt": "監管機構把裝置權限與平台處理私人媒體的具體目的分開。",
+    "category": "資料私隱與平台治理",
+    "date": "2026-11-16",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+    "sourceLabel": "Reuters／意大利資料保障機構",
+    "sourceType": "監管消息＋可靠媒體",
+    "references": [
+      {
+        "label": "Reuters／意大利資料保障機構",
+        "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "意大利監管機構指 Facebook 的建議功能存取約 2,000 萬名 Android 用戶相片與影片時，未取得獨立同意或充分告知，因而罰款 8.05 億歐元並要求 60 日內整改。Meta 表示會上訴。調查未涵蓋內容是否用於 AI 訓練。",
+    "summary": "監管機構把裝置權限與平台處理私人媒體的具體目的分開。",
+    "whatHappened": "意大利監管機構指 Facebook 的建議功能存取約 2,000 萬名 Android 用戶相片與影片時，未取得獨立同意或充分告知，因而罰款 8.05 億歐元並要求 60 日內整改。Meta 表示會上訴。調查未涵蓋內容是否用於 AI 訓練。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "作業系統權限不等於平台可把私人媒體用於所有後續目的。若監管立場擴散，產品要由一次性授權轉向目的限定同意，違規成本亦會成為重大財務風險。",
+    "whyImportant": "作業系統權限不等於平台可把私人媒體用於所有後續目的。若監管立場擴散，產品要由一次性授權轉向目的限定同意，違規成本亦會成為重大財務風險。",
+    "hkImpact": [
+      "用戶：檢查 Facebook 相片權限及建議設定。",
+      "中小企：相簿分析、雲端上傳與訓練用途要分開說明。",
+      "開發者：提供產品內同意、保留期及刪除機制。"
+    ],
+    "whatToWatch": "留意 Meta 上訴、60 日整改安排及其他歐洲監管機構反應。",
+    "take": "AIson 分析：真正風險是企業把一次授權當成所有後續用途的通行證。",
+    "actionVerdict": "try-now",
+    "actionReason": "可立即收窄不需要的相簿權限並檢查資料流程。",
+    "aisonScore": 8.8,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 4,
+      "developer": 5
+    },
+    "tags": [
+      "Meta",
+      "Facebook",
+      "Android",
+      "私隱"
+    ]
+  },
+  {
+    "id": "2026-11-16-fireworks-cursor-notion-supply-chain",
+    "rank": 5,
+    "featured": false,
+    "title": "Fireworks AI 外洩延伸至 Cursor 與 Notion：惡意 Claude Code 擴充套件及聊天紀錄受影響",
+    "excerpt": "同一供應商事故擴散至開發工具市集與客戶聊天資料。",
+    "category": "AI 開發工具與資安",
+    "date": "2026-11-16",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+    "sourceLabel": "TechCrunch／Cursor／Microsoft",
+    "sourceType": "可靠媒體＋公司披露",
+    "references": [
+      {
+        "label": "TechCrunch／Cursor／Microsoft",
+        "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "Fireworks AI 確認攻擊者進入開發系統；Notion 指約 1% 客戶受影響，部分 AI Insights 聊天輸入與輸出被取走。Cursor 事後資料指，被盜憑證亦被用來發布惡意 Claude Code 擴充版本 2.1.312、2.1.313，最多約 5,000 名使用者可能收到。",
+    "summary": "同一供應商事故擴散至開發工具市集與客戶聊天資料。",
+    "whatHappened": "Fireworks AI 確認攻擊者進入開發系統；Notion 指約 1% 客戶受影響，部分 AI Insights 聊天輸入與輸出被取走。Cursor 事後資料指，被盜憑證亦被用來發布惡意 Claude Code 擴充版本 2.1.312、2.1.313，最多約 5,000 名使用者可能收到。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "AI 產品依賴模型供應商、雲端與外掛市集，單一憑證可跨產品擴散。品牌名稱不足以證明安全，企業需要簽章、版本鎖定、最小權限及憑證輪換。",
+    "whyImportant": "AI 產品依賴模型供應商、雲端與外掛市集，單一憑證可跨產品擴散。品牌名稱不足以證明安全，企業需要簽章、版本鎖定、最小權限及憑證輪換。",
+    "hkImpact": [
+      "曾於 10 月 29 日經 Cursor 更新相關版本的開發者，應依官方指引蒐證及輪換憑證。",
+      "企業要盤點 AI 工具的子處理商、支援系統與外掛市集。",
+      "中小企應用集中軟件清單、短期密鑰與限制資料流向。"
+    ],
+    "whatToWatch": "留意完整事故報告、最終受影響人數及是否出現監管通報。",
+    "take": "AIson 分析：AI 工具的真正攻擊面是整條供應鏈；最有效回應是可驗證版本與可撤銷憑證。",
+    "actionVerdict": "try-now",
+    "actionReason": "受影響團隊應立即檢查；其他企業亦可即時輪換長期密鑰。",
+    "aisonScore": 8.7,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    },
+    "tags": [
+      "Fireworks AI",
+      "Cursor",
+      "Notion",
+      "Claude Code",
+      "供應鏈攻擊"
+    ]
+  },
+  {
+    "id": "2026-11-16-anthropic-ipo-hk-china-orders",
+    "rank": 6,
+    "featured": false,
+    "title": "Anthropic IPO 據報拒收中國內地與香港機構訂單",
+    "excerpt": "香港機構可能無法參與配售，限制據報涉及戰略與出口管制敏感度。",
+    "category": "AI 資本市場與地緣政策",
+    "date": "2026-11-16",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://bloomberg.com/news/articles/2026-11-13/anthropic-ipo-share-orders-from-china-are-said-to-be-rebuffed",
+    "sourceLabel": "Bloomberg",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "Bloomberg",
+        "url": "https://bloomberg.com/news/articles/2026-11-13/anthropic-ipo-share-orders-from-china-are-said-to-be-rebuffed"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–72 小時",
+    "quickTake": "Bloomberg 引述知情人士指，部分銀行拒絕接受中國內地及香港機構投資者對 Anthropic IPO 的訂單，或認為難獲配售；部分考慮涉及美國國際武器貿易條例。完整地域規則與最終配售尚未公開。",
+    "summary": "香港機構可能無法參與配售，限制據報涉及戰略與出口管制敏感度。",
+    "whatHappened": "Bloomberg 引述知情人士指，部分銀行拒絕接受中國內地及香港機構投資者對 Anthropic IPO 的訂單，或認為難獲配售；部分考慮涉及美國國際武器貿易條例。完整地域規則與最終配售尚未公開。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "前沿模型公司同時是商業平台、國安敏感技術開發者與資本市場發行人。路演配售會把投資者來源、出口規則與聲譽風險一併處理。",
+    "whyImportant": "前沿模型公司同時是商業平台、國安敏感技術開發者與資本市場發行人。路演配售會把投資者來源、出口規則與聲譽風險一併處理。",
+    "hkImpact": [
+      "機構投資者：先向承銷行核實資格，勿假設訂單一定獲接受。",
+      "散戶：報道針對 IPO 配售，不等於上市後所有交易被禁止。",
+      "AI 企業：跨境融資要更早評估國安及投資者來源限制。"
+    ],
+    "whatToWatch": "留意承銷行與 Anthropic 是否公開地域限制、最終配售及上市後安排。",
+    "take": "AIson 分析：香港在全球 AI 資本鏈的角色正受技術管制外溢影響。",
+    "actionVerdict": "watch",
+    "actionReason": "等待承銷文件與正式資格說明。",
+    "aisonScore": 8.6,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 3
+    },
+    "tags": [
+      "Anthropic",
+      "IPO",
+      "香港",
+      "中國",
+      "出口管制"
+    ]
+  },
+  {
+    "id": "2026-11-16-dram-ai-hbm-antitrust-case",
+    "rank": 7,
+    "featured": false,
+    "title": "美國法官准 DRAM 反壟斷案繼續：HBM 轉產成審查焦點",
+    "excerpt": "法院未判三星、SK hynix、Micron 合謀，只認為指控足以繼續。",
+    "category": "AI 晶片與供應鏈",
+    "date": "2026-11-16",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://finance.yahoo.com/technology/articles/judge-denies-motion-dismiss-dram-152445837.html",
+    "sourceLabel": "Tom's Hardware／法院文件",
+    "sourceType": "可靠媒體＋法院程序",
+    "references": [
+      {
+        "label": "Tom's Hardware／法院文件",
+        "url": "https://finance.yahoo.com/technology/articles/judge-denies-motion-dismiss-dram-152445837.html"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–72 小時",
+    "quickTake": "美國法官拒絕三家記憶體廠撤銷集體訴訟的申請。原告指公司削減傳統 DRAM 供應、轉向 AI 加速器所需 HBM，並採取相近客戶審查與 DDR4 退場安排。法院未裁定合謀或價格操控成立。",
+    "summary": "法院未判三星、SK hynix、Micron 合謀，只認為指控足以繼續。",
+    "whatHappened": "美國法官拒絕三家記憶體廠撤銷集體訴訟的申請。原告指公司削減傳統 DRAM 供應、轉向 AI 加速器所需 HBM，並採取相近客戶審查與 DDR4 退場安排。法院未裁定合謀或價格操控成立。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "HBM 使用更多晶圓面積並帶來較高回報，轉產有商業誘因；若主導企業同步收縮傳統產品，普通伺服器與消費電子成本可能上升。案件會檢驗這是市場反應還是協同行為。",
+    "whyImportant": "HBM 使用更多晶圓面積並帶來較高回報，轉產有商業誘因；若主導企業同步收縮傳統產品，普通伺服器與消費電子成本可能上升。案件會檢驗這是市場反應還是協同行為。",
+    "hkImpact": [
+      "PC 與伺服器採購商要預留 DRAM 價格與交期波動。",
+      "電子供應鏈留意 DDR4 退場及 HBM 轉產對庫存的影響。",
+      "法務與投資者要記住案件只是獲准繼續，並非已判違法。"
+    ],
+    "whatToWatch": "留意公司 12 月 7 日回應、證據開示及法院是否取得直接證據。",
+    "take": "AIson 分析：AI 基建成本可能由 HBM 外溢至普通記憶體，但是否合謀仍待審理。",
+    "actionVerdict": "watch",
+    "actionReason": "做供應風險管理，但不應據此認定違法。",
+    "aisonScore": 8.2,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": [
+      "DRAM",
+      "HBM",
+      "Samsung",
+      "SK hynix",
+      "Micron"
+    ]
+  },
+  {
+    "id": "2026-11-16-google-cloud-sc26-alphaevolve-tpu",
+    "rank": 8,
+    "featured": false,
+    "title": "Google Cloud 為 SC26 推 AlphaEvolve 批次方案及第八代 TPU 超算部署",
+    "excerpt": "Google 把演算法演化、TPU 與大規模實驗接成科研工作流。",
+    "category": "AI 基建與科學運算",
+    "date": "2026-11-16",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26",
+    "sourceLabel": "Google Cloud 官方網誌",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Google Cloud 官方網誌",
+        "url": "https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–72 小時",
+    "quickTake": "Google Cloud 公布 AlphaEvolve on Cloud Batch 方案，讓研究團隊由種子演算法擴展至大量並行評估；亦介紹 TPU 8t 用於大型訓練與模擬、TPU 8i 用於低延遲推理。實際效能與成本仍視工作負載及地區容量。",
+    "summary": "Google 把演算法演化、TPU 與大規模實驗接成科研工作流。",
+    "whatHappened": "Google Cloud 公布 AlphaEvolve on Cloud Batch 方案，讓研究團隊由種子演算法擴展至大量並行評估；亦介紹 TPU 8t 用於大型訓練與模擬、TPU 8i 用於低延遲推理。實際效能與成本仍視工作負載及地區容量。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "AI for Science 的競爭由單一模型能力轉向能否把實驗、計算資源與結果管理自動化。平台可降低編排門檻，但會增加雲端鎖定、成本監控與可重現性要求。",
+    "whyImportant": "AI for Science 的競爭由單一模型能力轉向能否把實驗、計算資源與結果管理自動化。平台可降低編排門檻，但會增加雲端鎖定、成本監控與可重現性要求。",
+    "hkImpact": [
+      "大學及研發團隊可先用小型基準比較現有叢集。",
+      "開發者要留意 TPU 支援、排程及資料傳輸成本。",
+      "一般中小企即時相關度較低，毋須急於遷移。"
+    ],
+    "whatToWatch": "留意 SC26 實測、香港可用區、TPU 容量與定價。",
+    "take": "AIson 分析：基建競爭不只賣晶片，而是賣一套讓代理持續做實驗的操作系統。",
+    "actionVerdict": "wait",
+    "actionReason": "先等待地區供應、定價與第三方實測。",
+    "aisonScore": 7.7,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 2,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": [
+      "Google Cloud",
+      "AlphaEvolve",
+      "Cloud Batch",
+      "TPU",
+      "SC26"
+    ]
+  },
+  {
+    "id": "2026-11-16-juntendo-sylavids-ai-video",
+    "rank": 9,
+    "featured": false,
+    "title": "順天堂大學向約 3,000 名教職員部署 Sylavids AI 影片工具",
+    "excerpt": "生成式影片由示範走入日常教材製作，但學習成效仍待驗證。",
+    "category": "AI 教育與影片",
+    "date": "2026-11-16",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000012.000104403.html/",
+    "sourceLabel": "Spline Global／PR Times",
+    "sourceType": "公司公告",
+    "references": [
+      {
+        "label": "Spline Global／PR Times",
+        "url": "https://prtimes.jp/main/html/rd/p/000000012.000104403.html/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–72 小時",
+    "quickTake": "日本順天堂大學向約 3,000 名教職員提供 Sylavids，把 PowerPoint、PDF 等資料轉成帶旁白解說影片。供應商表示會評估使用情況；學生教育成效尚未證實，計劃透過訪談與學習成果逐步驗證至 2030 年。",
+    "summary": "生成式影片由示範走入日常教材製作，但學習成效仍待驗證。",
+    "whatHappened": "日本順天堂大學向約 3,000 名教職員提供 Sylavids，把 PowerPoint、PDF 等資料轉成帶旁白解說影片。供應商表示會評估使用情況；學生教育成效尚未證實，計劃透過訪談與學習成果逐步驗證至 2030 年。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "院校級部署的重點由生成效果轉向流程、授權與成效量度。公告沒有提供實際使用率、節省工時或成績改善數據，也未證明所有課程都會採用。",
+    "whyImportant": "院校級部署的重點由生成效果轉向流程、授權與成效量度。公告沒有提供實際使用率、節省工時或成績改善數據，也未證明所有課程都會採用。",
+    "hkImpact": [
+      "教師可先在低風險教材試用並保留逐字稿與來源。",
+      "院校採購時要問聲音樣本、教材與學生資料的保留用途。",
+      "創作者可留意字幕、引用、版本控制與可修改性需求。"
+    ],
+    "whatToWatch": "留意實際使用率、錯誤率、學生學習成效及資料條款。",
+    "take": "AIson 分析：可持續的教育 AI 影片，不是最快生成，而是最容易核對、更新和證明有效。",
+    "actionVerdict": "watch",
+    "actionReason": "缺乏獨立成效數據，宜先小規模試行。",
+    "aisonScore": 7.2,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 3,
+      "creator": 4,
+      "developer": 2
+    },
+    "tags": [
+      "順天堂大學",
+      "Sylavids",
+      "AI 影片",
+      "教育科技"
+    ]
+  },
+  {
+    "id": "2026-11-16-nvidia-results-anthropic-ipo-week",
+    "rank": 10,
+    "featured": false,
+    "title": "NVIDIA 業績與 Anthropic IPO 本周接連登場",
+    "excerpt": "AI 市場同時測試晶片盈利、管理層信心與模型公司的資本胃納。",
+    "category": "AI 商業與資本市場",
+    "date": "2026-11-16",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.gulf-times.com/gulftimes/uploads/pdf/2026/11/15/business-20261115-1-1794690881.pdf?ts=1794690881",
+    "sourceLabel": "Reuters",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "Reuters",
+        "url": "https://www.gulf-times.com/gulftimes/uploads/pdf/2026/11/15/business-20261115-1-1794690881.pdf?ts=1794690881"
+      }
+    ],
+    "verified": true,
+    "freshness": "24–72 小時",
+    "quickTake": "Reuters 前瞻指 NVIDIA 預定 11 月 17 日公布業績，Anthropic 股票則預期其後開始交易。兩件事會分別測試 AI 晶片需求、管理層信心及投資者是否願意承擔模型公司的高估值與長期算力承諾。這是前瞻，不是結果已發生。",
+    "summary": "AI 市場同時測試晶片盈利、管理層信心與模型公司的資本胃納。",
+    "whatHappened": "Reuters 前瞻指 NVIDIA 預定 11 月 17 日公布業績，Anthropic 股票則預期其後開始交易。兩件事會分別測試 AI 晶片需求、管理層信心及投資者是否願意承擔模型公司的高估值與長期算力承諾。這是前瞻，不是結果已發生。",
+    "reportingContext": "本文只採用來源直接支持的已確認資料；匿名消息、公司主張、訴訟指控或事件前瞻均已清楚標示限制，未把推測寫成事實。",
+    "deepDive": "晶片公司能否把需求轉成收入，與模型公司能否用融資支持長期算力承諾，是 AI 商業循環的兩端。本周數據會比社交熱度提供更實質訊號，但單一季度或上市首日不足以證明長期回報。",
+    "whyImportant": "晶片公司能否把需求轉成收入，與模型公司能否用融資支持長期算力承諾，是 AI 商業循環的兩端。本周數據會比社交熱度提供更實質訊號，但單一季度或上市首日不足以證明長期回報。",
+    "hkImpact": [
+      "投資者要分開看業績、指引、IPO 定價與首日波動。",
+      "科技企業可把 NVIDIA 供應與需求說法納入 2027 算力預算參考。",
+      "開發者與創作者毋須因股價波動急換平台。"
+    ],
+    "whatToWatch": "留意 NVIDIA 11 月 17 日業績、接班問答、Anthropic 最終定價及配售。",
+    "take": "AIson 分析：市場會否繼續為長期 AI 承諾付高價，應看現金流與合約，而不只一日股價。",
+    "actionVerdict": "watch",
+    "actionReason": "等待已公布數據再判斷。",
+    "aisonScore": 7,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 2,
+      "developer": 3
+    },
+    "tags": [
+      "NVIDIA",
+      "Anthropic",
+      "業績",
+      "IPO"
+    ]
+  }
+]
