@@ -1,5 +1,41 @@
 [
   {
+    "id": "2026-11-16-us-allies-ai-supply-chain-declaration",
+    "title": "美國與九個盟友簽 AI 供應鏈安全宣言，將設政策、供應鏈與韌性工作組",
+    "summary": "美國國務院表示，美國、澳洲、印度、以色列、日本、南韓、卡塔爾、新加坡、阿聯酋及英國已簽署《三藩市宣言》，協調保護 AI 供應鏈依賴的敏感技術與關鍵基建。參與方將就 AI 政策與採用、完整供應鏈合作、安全樞紐及系統韌性設立工作組；這是美國主導 Pax Silica 計劃的具體一步，涵蓋模型、半導體及關鍵礦物。宣言尚未公布個別項目的時間表、資金或共同出口管制細節；香港及區內企業現階段應把它視為供應鏈與合規方向，而非已生效的新禁令。",
+    "category": "AI 政策與供應鏈",
+    "publishedAt": "2026-11-16T09:00:58Z",
+    "sourceLabel": "Reuters／美國國務院",
+    "sourceUrl": "https://www.reuters.com/world/china/us-allies-team-up-protect-ai-tech-infrastructure-amid-china-rivalry-2026-11-16/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-16-ecb-ai-financial-stability-risks",
+    "title": "歐央行副總裁：AI 風險已由高估值擴至債務融資、集中曝險與網絡攻擊",
+    "summary": "歐洲央行副總裁 Boris Vujcic 表示，AI 與主權債務已成為歐元區金融穩定的突出風險。其演說指出，主要美國科技公司到 2030 年或需 5.5 萬億美元融資，可能擴大債券與股權發行、表外安排及循環融資；更自主的 AI 系統亦會提升網攻速度、規模與社交工程成效。這是央行官員的風險評估，並非宣布新監管措施或預測危機必然發生；香港金融機構可留意科技曝險集中度、第三方 AI 操作風險與防守成本。",
+    "category": "AI 金融與風險",
+    "publishedAt": "2026-11-16T08:34:05Z",
+    "sourceLabel": "Reuters／歐洲央行",
+    "sourceUrl": "https://www.reuters.com/legal/transactional/ecb-vp-says-ai-debt-have-become-prominent-stability-risks-2026-11-16/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-16-faa-smart-ai-airspace-rollout",
+    "title": "FAA 全國部署 8.75 億美元 SMART AI 輔助空域管理，決策權仍由人員掌握",
+    "summary": "美國 FAA 的 SMART 系統已於 11 月 10 日擴展至全國 22 個空管中心覆蓋的空域，整合約 200 組天氣、航線、流量與人手數據，向空域管理人員提供擠塞、改道及天氣影響建議；最終決策仍由人類交通管理員和空管人員作出。FAA 與開發商 Air Space Intelligence 表示，系統與上周五的全國停飛無關，停飛源於通訊問題；眾議院民主黨人此前已要求 GAO 審計培訓、可靠性及 AI 錯誤資訊防護。對香港航空與關鍵基建而言，重點是高風險 AI 必須保留人工決策、可驗證輸出及獨立審計。",
+    "category": "AI 安全與關鍵基建",
+    "publishedAt": "2026-11-16T07:27:35Z",
+    "sourceLabel": "AP／FAA",
+    "sourceUrl": "https://apnews.com/article/08af345749c81fd8364299cd75275fa6",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-16-alibaba-qwen4-max-safety-upgrades",
     "title": "Alibaba 推 Qwen4-Max：加強專業工作能力與安全測試，實際表現仍待獨立驗證",
     "summary": "Alibaba 公布新旗艦模型 Qwen4-Max，稱它可處理 3D 建模、遊戲開發、精密製造、金融、法律、醫療及科學研究等工作，並較 8 月推出的 Qwen3.8-Max 使用更少 token、成本效益更高。公司表示訓練同時進行程式安全檢查，針對 code injection、記憶體安全及存取控制漏洞，亦加強防止模型被用於網絡犯罪和危險物料。以上能力與風險結論來自 Alibaba 內部測試，尚未有獨立 benchmark、完整價格或實際部署數據；香港企業及開發者應等待 API 可用性、中文／粵語表現與第三方安全測試。",
@@ -679,42 +715,6 @@
     "publishedAt": "2026-11-03T10:08:40Z",
     "sourceLabel": "Cognizant",
     "sourceUrl": "https://news.cognizant.com/2026-110-03-Cognizant-study-says-productivity-gains-from-AI-could-expand-Indias-GDP",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-03-openai-grid-protectors",
-    "title": "OpenAI 推 Grid Protectors：未來算力園區承諾高峰時可減少用電",
-    "summary": "OpenAI 推出 Grid Protectors 計劃，與電力公司及監管機構合作，讓未來算力園區在電網吃緊時降低需求，並研究現場供電、儲能與電池調峰。佐治亞州是首站；公司稱與 Georgia Power 的協議包括最多 1,000 兆瓦的彈性需求響應，並承擔項目所需的電力及基建成本。\n\n這些安排仍待園區投運及實際執行；佐治亞州電力公司估算的住戶節省額來自整體大型用戶協議與需求增長，不能視為此單一項目的已實現成果。OpenAI 亦指出，需求彈性不能取代新增電源與輸電投資。",
-    "category": "AI 基建與能源",
-    "publishedAt": "2026-11-03T04:23:49Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/grid-protectors-program/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-03-openai-pando-git-backend",
-    "title": "OpenAI 揭露 Pando Git 後端：Codex 併行開發推高版本控制需求",
-    "summary": "OpenAI 表示，自建 Git 後端 Pando 已用於其整個 monorepo 開發，支援不同分支並行推送及大量讀取，同時保留 Git 協定與用戶端相容。公司稱上線後平均推送延遲縮短近五倍，每日傳輸近 1 PB Git 資料。\n\n這是 OpenAI 內部基礎設施披露，效能數字由公司提供，Pando 並非已公開提供的獨立產品。OpenAI 說正把部分改進回饋 Git 上游，並探索如何讓相關技術惠及其他用戶。",
-    "category": "AI 開發工具與基建",
-    "publishedAt": "2026-11-03T04:23:49Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/scaling-git-at-openai/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-03-openai-security-sprint-cathedral",
-    "title": "OpenAI 將與 Cathedral 合作進行內部安全衝刺，以模型測試防線",
-    "summary": "OpenAI 表示，下一輪內部安全衝刺將由外部安全團隊 Cathedral 與公司研究員合作，使用 OpenAI 模型測試系統弱點、驗證修補方案，並加強平台防護。這延續公司以模型協助持續尋找及修補弱點的防禦工作。\n\n公告描述的是計劃中的測試活動，尚未提供本輪成果或獨立成效數據。OpenAI 亦指出，前線防禦者可透過 Daybreak 計劃申請補貼使用模型，相關資助額與資格以公司公布為準。",
-    "category": "AI 安全與資安",
-    "publishedAt": "2026-11-03T04:23:49Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
     "level": "update",
     "verified": true,
     "active": false
