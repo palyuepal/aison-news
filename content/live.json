@@ -1,5 +1,41 @@
 [
   {
+    "id": "2026-11-16-sk-hynix-1-billion-supplier-support",
+    "title": "SK Hynix 五年投資逾 10 億美元扶植晶片供應商，Yongin 共用測試廠擬 2027 年啟用",
+    "summary": "SK Hynix 表示未來五年將投放 1.4 萬億韓圜（約 10.5 億美元），支援南韓半導體材料、零件及設備供應商，由研發、測試延伸至量產與銷售。公司同時公布與中央及地方政府共同出資 8,746 億韓圜興建 Trinity Fab，讓較小型供應商以 12 吋晶圓及接近商業生產線的環境測試產品，目標於 2027 年 5 月啟用。這是 SK Hynix 公布的投資計劃，不代表所有資金已支出；對香港電子及伺服器供應鏈而言，AI 記憶體競爭正推動韓國把支援範圍由大型晶片廠擴展至上游設備與材料企業。",
+    "category": "AI 晶片與供應鏈",
+    "publishedAt": "2026-11-16T00:10:25Z",
+    "sourceLabel": "Reuters／SK Hynix",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/sk-hynix-spend-1-billion-over-five-years-support-chip-suppliers-2026-11-16/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-16-un-autonomous-weapons-binding-rules-talks",
+    "title": "聯合國會議擬啟動自主武器約束談判，美俄反對具法律約束力規則",
+    "summary": "聯合國在日內瓦舉行的《特定常規武器公約》會議將決定是否啟動致命自主武器系統的正式談判；Reuters 指大部分 128 個締約方支持推進規則，但美國、俄羅斯及以色列反對具法律約束力安排，認為現有國際人道法已足夠。美國傾向以五年時間制定非約束指引，會議主席則提出兩年內談判具約束力議定書。會議尚未作出決定；對香港大學、AI 研究及無人系統企業而言，重點是人類控制、風險測試與出口合規可能由倫理原則轉成跨境法律要求。",
+    "category": "AI 政策與自主武器",
+    "publishedAt": "2026-11-16T00:03:45Z",
+    "sourceLabel": "Reuters／聯合國 CCW",
+    "sourceUrl": "https://www.reuters.com/world/us-russia-oppose-talks-limiting-autonomous-weapons-2026-11-16/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-16-jensen-huang-nvidia-ceo-comeback-talks",
+    "title": "黃仁勳據報考慮重返 NVIDIA CEO，盟友游說董事會及白宮支持",
+    "summary": "《金融時報》引述知情人士指，黃仁勳正與親信討論重返 NVIDIA 行政總裁的可能，支持者並組織矽谷高層游說董事會及爭取白宮支持。Reuters 轉述報道時指 NVIDIA 未有即時回應；公司正式安排仍是由財務總監 Colette Kress 暫任 CEO，董事會物色長期接班人。這是未獲董事會確認的回歸討論，不代表黃仁勳已復職；消息與美國財長要求公司外聘 CEO 的公開壓力形成直接衝突，香港投資者及供應鏈應等待董事會文件與 11 月 17 日業績會，而非把游說行動當成決定。",
+    "category": "AI 晶片與企業治理",
+    "publishedAt": "2026-11-15T20:43:00Z",
+    "sourceLabel": "Reuters／Financial Times",
+    "sourceUrl": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-16-us-bessent-nvidia-external-ceo-compliance",
     "title": "美國財長要求 NVIDIA 從外部物色新 CEO，10 日內交代出口管制合規文化",
     "summary": "美國財長 Scott Bessent 周日表示，NVIDIA 在黃仁勳突然離任後需要「徹底重整」，董事會物色新行政總裁時應考慮公司以外人選。他亦要求 NVIDIA 董事會及外部法律顧問在 10 日內回答公司出口限制合規文化的問題；這是財長公開施壓，並非董事會已確定接班人或公布新合規措施。Reuters 指《金融時報》早前報道董事會曾接觸 Arm 行政總裁 Rene Haas，但 NVIDIA 的正式接班安排仍未落實。對香港晶片客戶、雲端及供應鏈企業而言，管理層更替已與出口管制審查直接交疊，短期應留意合規政策、供貨承諾及 10 日內是否有正式回應。",
@@ -682,41 +718,5 @@
     "level": "update",
     "verified": true,
     "active": false
-  },
-  {
-    "id": "2026-11-02-china-embodied-ai-brain-race",
-    "title": "中國機械人競爭轉向「大腦」：具身 AI 融資半年增至 935 億元",
-    "summary": "Reuters 11 月 1 日報道，中國具身 AI 企業 2026 年上半年錄得 322 宗融資、合共 935 億元人民幣，資金焦點由人形機械人硬件轉向讓機械人理解環境、學習任務的 AI。工廠及藥房已有指定場景試用，但跨陌生環境的可靠能力仍未成熟；融資與示範不等於已證明可大規模商用。",
-    "category": "具身 AI 與機械人",
-    "publishedAt": "2026-11-01T23:08:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/china/chinas-robot-makers-have-mastered-moves-now-comes-race-brains-2026-11-01/",
-    "verified": true,
-    "active": false,
-    "level": "update"
-  },
-  {
-    "id": "2026-11-01-korea-ai-chip-export-surge",
-    "title": "韓國 10 月半導體出口按年升 259%：AI 基建需求推高貿易數字",
-    "summary": "韓國產業通商資源部公布，10 月半導體出口按年升 259.4% 至 564.4 億美元，電腦出口亦升 496.6%；官方把半導體表現連結至全球大型科技公司的 AI 基建投資。韓國總出口升 93.7% 至 1,152.8 億美元，但增幅亦受去年同期工作日較少影響，不能把整體升幅全歸因於 AI 需求；貿易數據亦不等於 AI 投資回報已獲證明。",
-    "category": "AI 基建與半導體",
-    "publishedAt": "2026-11-01T00:39:07Z",
-    "sourceLabel": "韓國產業通商資源部／Reuters",
-    "sourceUrl": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view?mno=&pageIndex=1",
-    "verified": true,
-    "active": false,
-    "level": "update"
-  },
-  {
-    "id": "2026-10-29-google-singapore-health-ai-hub",
-    "title": "Google 在新加坡設 AI 研究中心，聯同醫療機構測試臨床與公共衞生工具",
-    "summary": "Google 於新加坡 Google for Health Summit 宣布設立研究中心，聚焦基礎 AI 模型與科學研究，並與當地大學合作。Google DeepMind 亦正與國立大學醫療系統評估 AI 臨床輔助工具，協助醫生整理醫療指引和文獻；Google Cloud 則與 NHG Health 合作，研究以預測分析和 AI 健康助理支援預防護理。\n\nGoogle.org 與 DeepMind 另承諾向一項健康聯盟投入 700 萬美元，其中 100 萬美元支持 PathGen 疾病威脅偵測平台。上述臨床工具仍在評估或合作階段，不應視為已獲准獨立診斷或全面投入服務。",
-    "category": "AI 科研與醫療",
-    "publishedAt": "2026-10-29T15:13:00Z",
-    "sourceLabel": "Google 官方網誌",
-    "sourceUrl": "https://blog.google/innovation-and-ai/technology/health/google-for-health-summit-singapore/",
-    "verified": true,
-    "active": false,
-    "level": "update"
   }
 ]
