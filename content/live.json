@@ -1,5 +1,41 @@
 [
   {
+    "id": "2026-11-16-alibaba-qwen4-max-safety-upgrades",
+    "title": "Alibaba 推 Qwen4-Max：加強專業工作能力與安全測試，實際表現仍待獨立驗證",
+    "summary": "Alibaba 公布新旗艦模型 Qwen4-Max，稱它可處理 3D 建模、遊戲開發、精密製造、金融、法律、醫療及科學研究等工作，並較 8 月推出的 Qwen3.8-Max 使用更少 token、成本效益更高。公司表示訓練同時進行程式安全檢查，針對 code injection、記憶體安全及存取控制漏洞，亦加強防止模型被用於網絡犯罪和危險物料。以上能力與風險結論來自 Alibaba 內部測試，尚未有獨立 benchmark、完整價格或實際部署數據；香港企業及開發者應等待 API 可用性、中文／粵語表現與第三方安全測試。",
+    "category": "AI 模型與安全",
+    "publishedAt": "2026-11-16T04:29:42Z",
+    "sourceLabel": "Reuters／Alibaba",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/alibaba-unveils-new-flagship-ai-model-with-safety-upgrades-2026-11-16/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-16-us-ai-national-champions-plan-report",
+    "title": "美國據報擬把逾 20 間 AI 公司列為「國家冠軍」，協助海外擴張抗衡中國",
+    "summary": "《華爾街日報》引述知情人士指，特朗普政府計劃把逾 20 間 AI 公司列為美國「國家冠軍」，名單據報包括 NVIDIA、Amazon、Microsoft、OpenAI 及 Anthropic，目標是協助企業拓展海外市場並與中國對手競爭。Reuters 未能即時獨立核實報道，白宮亦未公布計劃細節、完整名單、支援方式或生效時間。對香港企業而言，若計劃最終落實，可能影響政府採購、海外基建合作、技術標準及出口合規，但現階段不應視為已生效政策。",
+    "category": "AI 政策與產業競爭",
+    "publishedAt": "2026-11-16T04:17:19Z",
+    "sourceLabel": "Reuters／Wall Street Journal",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/trump-administration-name-nvidia-other-ai-firms-us-national-champions-wsj-2026-11-16/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-16-korea-csat-glasses-ai-cheating-controls",
+    "title": "南韓大學試每節檢查考生眼鏡，AI 作弊風波觸發即時收緊監考",
+    "summary": "南韓教育部宣布，本周大學修學能力試驗每一節都會檢查所有考生眼鏡；每個試場至少安排一名專責監察智能裝置的人員，並設熱線處理現場難以判斷的個案。智能裝置已於 7 月列入禁品，作弊者當年成績會作廢並被禁止翌年重考；政府亦研究把禁考期延長至 3 至 10 年，以及明年引入無線電訊號偵測。措施是對稅務師考試 AI 作弊案的具體跟進，教育部已排除延期考試；香港學校及專業試機構可參考裝置檢查、專責監察與即時升級機制，但應按私隱與法規設計。",
+    "category": "AI 治理與教育",
+    "publishedAt": "2026-11-16T03:48:17Z",
+    "sourceLabel": "Reuters／南韓教育部",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/south-korea-inspect-glasses-worn-by-exam-candidates-after-ai-cheating-scandal-2026-11-16/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-16-sk-hynix-1-billion-supplier-support",
     "title": "SK Hynix 五年投資逾 10 億美元扶植晶片供應商，Yongin 共用測試廠擬 2027 年啟用",
     "summary": "SK Hynix 表示未來五年將投放 1.4 萬億韓圜（約 10.5 億美元），支援南韓半導體材料、零件及設備供應商，由研發、測試延伸至量產與銷售。公司同時公布與中央及地方政府共同出資 8,746 億韓圜興建 Trinity Fab，讓較小型供應商以 12 吋晶圓及接近商業生產線的環境測試產品，目標於 2027 年 5 月啟用。這是 SK Hynix 公布的投資計劃，不代表所有資金已支出；對香港電子及伺服器供應鏈而言，AI 記憶體競爭正推動韓國把支援範圍由大型晶片廠擴展至上游設備與材料企業。",
@@ -679,42 +715,6 @@
     "publishedAt": "2026-11-03T04:23:49Z",
     "sourceLabel": "OpenAI",
     "sourceUrl": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-03-openai-bug-bounty-increase",
-    "title": "OpenAI 大幅提高漏洞賞金：核心產品嚴重漏洞最高可獲 3 萬美元",
-    "summary": "OpenAI 調高 Security Bug Bounty 賞金，中、高及嚴重級別漏洞的平均獎金區間中位數提高逾四倍。ChatGPT、Codex 或 API Platform 等核心產品的嚴重漏洞最高可獲 3 萬美元，特別重大發現連同獎勵最高可達 17.2 萬美元。\n\n新安排亦加入高質素報告、研究員長期合作及指定測試活動的額外獎勵；尚未結算的舊報告會套用新區間，最近 30 日已支付的部分獎金亦可能補差額。具體範圍、資格與漏洞處理規則仍以官方計劃頁為準。",
-    "category": "AI 安全與資安",
-    "publishedAt": "2026-11-03T04:23:49Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-03-etsi-tta-ttc-ai-standards",
-    "title": "ETSI、日韓標準機構探討成立國際 AI 標準合作項目",
-    "summary": "歐洲電信標準協會 ETSI、日本電信技術委員會 TTC 及韓國電信技術協會 TTA 簽署意向書，研究成立由產業主導的 AI Partnership Project。構想是讓業界、學術界及研究社群協調 AI 標準優先次序，並借鏡 3GPP 的跨國合作模式。\n\n三方目前只是探討可行方案，尚未正式成立項目或公布標準內容、時程與參與機制。若合作落實，後續值得留意互通性、可信 AI 及安全要求如何形成跨區域共識。",
-    "category": "AI 政策與標準",
-    "publishedAt": "2026-11-03T04:23:49Z",
-    "sourceLabel": "ETSI",
-    "sourceUrl": "https://www.etsi.org/newsroom/press-releases/etsi-ttc-and-tta-explore-new-global-partnership-for-standardisation-in-artificial-intelligence/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-02-hsbc-hong-kong-ai-institute",
-    "title": "滙豐計劃於香港成立 AI 及新興科技研究院，科大任主要學術夥伴",
-    "summary": "香港滙豐於 11 月 2 日香港金融科技周宣布，計劃在香港成立全球人工智能及新興科技研究院，預計 2027 年初運作，初期聚焦 AI 技能提升、AI 安全與詐騙偵測、工程優化、後量子密碼學及區塊鏈；香港科技大學將任主要學術合作夥伴，研究院計劃落戶北部都會區。滙豐尚未公布人手規模及詳細投資額；這是企業研發與人才培訓計劃，並非即時推出的客戶 AI 產品。",
-    "category": "AI 金融與企業應用",
-    "publishedAt": "2026-11-02T03:34:39Z",
-    "sourceLabel": "香港滙豐／Reuters",
-    "sourceUrl": "https://www.about.hsbc.com.hk/zh-hk/news-and-media/hsbc-announces-ai-and-emerging-technology-institute-at-hong-kong-fintech-week",
     "level": "update",
     "verified": true,
     "active": false
