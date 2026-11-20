@@ -1,16 +1,22 @@
 name: AIson Daily Freshness Sentinel
+concurrency:
+  group: daily-freshness-sentinel
+  cancel-in-progress: false
 on:
   schedule:
-    - cron: '15 1 * * *'
-    - cron: '15 2 * * *'
+    - cron: '15,45 0-15 * * *'
   workflow_dispatch:
+  workflow_run:
+    workflows: [Deploy AIson to GitHub Pages]
+    types: [completed]
 permissions:
   contents: read
   actions: write
   issues: write
 jobs:
   health:
-    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -40,12 +46,16 @@ jobs:
           exit "$code"
       - name: Re-deploy when source is healthy but public site is stale
         id: recovery
+        continue-on-error: true
         if: steps.source.outcome == 'success' && steps.live.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
+          cutoff="$(date -u -d "$AISON_DATE 00:00:00 +0800" +%Y-%m-%dT%H:%M:%SZ)"
+          attempts="$(gh run list --workflow=pages.yml --branch main --event workflow_dispatch --limit 100 --json createdAt --jq '[.[] | select(.createdAt >= "'"$cutoff"'")] | length')"
+          if [ "$attempts" -ge 2 ]; then echo "Daily redeploy limit reached; incident remains open" >&2; exit 1; fi
           before="$(gh run list --workflow=pages.yml --branch main --limit 1 --json databaseId --jq '.[0].databaseId // 0')"
           echo "Public site is stale while source is valid; dispatching Pages once. Previous run: $before"
           gh workflow run pages.yml --ref main
@@ -57,7 +67,7 @@ jobs:
           done
           if [ -z "$new_id" ]; then echo "Could not resolve dispatched Pages run" >&2; exit 1; fi
           echo "Waiting for Pages run $new_id"
-          gh run watch "$new_id" --exit-status
+          timeout 900 gh run watch "$new_id" --exit-status
           sleep 20
           python tools/check_freshness.py --live-only --date "$AISON_DATE"
       - name: Open or refresh stale-edition issue
@@ -95,7 +105,7 @@ jobs:
           EOF
           )
           if [ -n "$existing" ]; then
-            gh issue comment "$existing" --body "$body"
+            gh issue edit "$existing" --body "$body"
           else
             gh issue create --title "$title" --body "$body"
           fi

@@ -11,6 +11,7 @@ on:
       - 'home-v6.css'
       - '.github/workflows/pages.yml'
       - '.github/workflows/validate-news-visuals.yml'
+      - '.github/actions/social-renderer/**'
   pull_request:
     paths:
       - 'news-visuals-v1.js'
@@ -22,20 +23,20 @@ on:
       - 'home-v6.css'
       - '.github/workflows/pages.yml'
       - '.github/workflows/validate-news-visuals.yml'
+      - '.github/actions/social-renderer/**'
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Install visual test dependencies
-        run: |
-          python -m pip install --disable-pip-version-check "Pillow>=11,<13"
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+        timeout-minutes: 10
+        uses: ./.github/actions/social-renderer
       - name: Syntax checks and Top 3 guarantee self-test
         run: |
           node --check news-visuals-v1.js

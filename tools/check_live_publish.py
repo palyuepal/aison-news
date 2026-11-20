@@ -72,16 +72,8 @@ def main():
         print(f"Source LIVE: {len(source)} items; latest {newest(source)}")
         if args.source_only:
             return
-        try:
-            public = items_from_public()
-            print(f"Public LIVE: {len(public)} items; latest {newest(public)}")
-        except Exception as exc:
-            # DNS/network outages must not block a safe local build. The local
-            # generated payload is still compared byte-for-structure; deployment
-            # remains explicitly unverified and is reported to the caller.
-            print(f"WARN: public LIVE unavailable ({exc}); checking local data/live.js", file=sys.stderr)
-            public = items_from_local_public()
-            print(f"Local LIVE: {len(public)} items; latest {newest(public)} (deployment unverified)")
+        public = items_from_public()
+        print(f"Public LIVE: {len(public)} items; latest {newest(public)}")
         if signature(source) != signature(public):
             raise ValueError("Public LIVE items differ from source: missing, old or mismatched IDs/timestamps/titles")
         print("OK: public LIVE feed matches content/live.json")
