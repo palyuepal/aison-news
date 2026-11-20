@@ -6,7 +6,7 @@ globalThis.crypto ||= webcrypto;
 const now=new Date('2026-11-20T02:00:00Z');
 const row={id:'one',rank:1,date:'2026-11-20',title:'Verified item',verified:true};
 const meta={date:row.date,top3Ids:[row.id]};
-const live=[{id:'live',summary:'correct facts',active:true,verified:true,publishedAt:'2026-11-20T01:00:00Z'}];
+const live=[{id:'live',summary:'correct facts',active:true,verified:true,publishedAt:'2026-11-19T22:00:00Z'}];
 async function fixture(tamper=''){
  const files={'data/latest.js':'window.AISON_NEWS = '+JSON.stringify([row])+';',
  'data/editorial.js':'window.AISON_EDITORIAL = '+JSON.stringify(meta)+';',
@@ -36,10 +36,10 @@ test('reject outdated HTML and LIVE corrections',async()=>{
  for(const variant of ['html','live'])assert.equal((await inspect(now,await fixture(variant))).state,'failed');
 });
 test('stale LIVE source cannot report healthy even when it matches the public feed',async()=>{
- const checkedAt=new Date('2026-11-21T03:00:00Z');
+ const checkedAt=new Date('2026-11-20T23:59:00Z');
  const result=await inspect(checkedAt,await fixture());
  assert.equal(result.state,'failed');
- assert.equal(result.latestLiveAt,'2026-11-20T01:00:00.000Z');
+ assert.equal(result.latestLiveAt,'2026-11-19T22:00:00.000Z');
  assert.ok(result.errors.some(message=>message.includes('editorial freshness overdue')));
  assert.ok(result.liveAgeHours>=26);
 });
