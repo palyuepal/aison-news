@@ -12,6 +12,30 @@
     "active": true
   },
   {
+    "id": "2026-11-20-nvidia-megaspeed-congress-probe",
+    "title": "美國眾議員調查 NVIDIA 有否影響 Megaspeed 晶片轉運執法，尚未裁定違規",
+    "summary": "Reuters 11 月 20 日報道，美國眾議院民主黨議員已去信商務部長 Howard Lutnick，調查 NVIDIA 對商務部審查雲端公司 Megaspeed 涉嫌把 AI 晶片轉運中國一事，曾否施加不當影響，並要求在 12 月 1 日前提供答案與文件。商務部 BIS 表示執法一向按規則進行；Megaspeed 稱遵守適用出口管制，NVIDIA 亦表示與官員聯絡是為提供資料及尋求指引。這是國會查詢，不是違規裁決，也未證實晶片已非法轉運；但對香港及區內雲端、數據中心和供應鏈企業而言，客戶身分、最終用途、跨境算力與政府溝通紀錄將面對更嚴格審視。",
+    "category": "AI 晶片與出口管制",
+    "publishedAt": "2026-11-20T09:49:03Z",
+    "sourceLabel": "Reuters／美國眾議院民主黨議員",
+    "sourceUrl": "https://www.reuters.com/business/finance/democrats-open-probe-into-nvidia-influence-us-megaspeed-investigation-2026-11-20/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-20-signal-blocks-os-ai-agent-screen-capture",
+    "title": "Signal 阻止 Siri／Gemini 等 AI Agent 擷取私訊畫面，macOS 保護仍有限",
+    "summary": "Signal 正式宣布在 iOS 27 阻止 App 截圖並加入「Block Siri AI」，Android 則會在偵測到 AI 助手嘗試讀取畫面時自動開啟 Screen Security，避免 OS 級 AI Agent 把加密訊息帶離 Signal 的受保護環境。用戶可關閉設定，但會重新暴露畫面內容；Signal 同時承認措施不完整，無法阻止所有檔案系統存取，也未能在 macOS 可靠封鎖截圖，建議 macOS 27 用戶把 Signal 加入 Siri 的 Excluded Apps。這不代表 Signal 端到端加密已被破解，而是 AI Agent 可利用作業系統權限繞過應用層私隱邊界；香港用戶及處理客戶資料的商戶應重新檢查 AI 助手的螢幕、輔助使用與通知權限。",
+    "category": "AI 私隱與平台安全",
+    "publishedAt": "2026-11-20T09:02:00Z",
+    "sourceLabel": "Signal／Reuters",
+    "sourceUrl": "https://signal.org/blog/protecting-your-privacy/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-20-ecb-lagarde-ai-cyber-finance-risk",
     "title": "拉加德稱 AI 強化網絡攻擊是金融業最迫切風險，未宣布新監管措施",
     "summary": "歐洲央行行長 Christine Lagarde 在法蘭克福 European Banking Congress 表示，愈來愈先進的 AI Agent 會放大網絡威脅，可能成為金融業當前最迫切的挑戰，並指政策制定者仍未給予足夠關注。她提到攻擊者往往難以追蹤，部分可能獲對破壞金融體系有利益的國家支持。這是風險警告，不是新的歐洲央行規例、利率決定或已發生的大型銀行事故；但對香港銀行、金融科技及依賴少數雲端供應商的企業而言，應加強 AI 輔助攻擊演練、供應商集中風險及事故應變，而非只購入更多 AI 工具。",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-11-10T12:47:00Z",
     "sourceLabel": "阿里巴巴／Reuters",
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/alibaba-chip-unit-t-head-files-confidential-hong-kong-ipo-application-2026-11-10/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-09-anthropic-claude-fable-mythos-5-2",
-    "title": "Anthropic 推 Claude Fable 5.2、Mythos 5.2：技術工作更快兼降價",
-    "summary": "Anthropic 11 月 9 日推出 Claude Fable 5.2 與 Claude Mythos 5.2，兩者採用相同底層模型，主攻複雜編程、推理、AI Agent、科學與工程工作。公司稱新版本輸出速度較 5.1 最多快 30%，API 定價降至每百萬輸入 token 8 美元、輸出 token 40 美元；另設最多快 2.5 倍、價格加倍的 fast mode。\n\nFable 5.2 已在 Claude 平台、AWS、Google Cloud 及 Microsoft Azure 等渠道提供；Mythos 5.2 則只開放予通過網絡安全或生命科學驗證的機構。Anthropic 公布多項內部測試成績，但這些能力主張仍需更多獨立、真實工作負載驗證；香港開發團隊最值得比較的是實際代理任務成功率、總 token 成本與延遲。",
-    "category": "AI 模型與開發工具",
-    "publishedAt": "2026-11-09T20:21:05Z",
-    "sourceLabel": "Anthropic 官方公告／Reuters",
-    "sourceUrl": "https://www.reuters.com/technology/anthropic-unveils-new-fable-mythos-models-competition-heats-up-ahead-ipo-2026-11-09/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-09-spacex-starbase-ai-power-supercompute",
-    "title": "SpaceX 擬斥約 240 億美元建 Starbase 燃氣發電與超算設施",
-    "summary": "Reuters 根據公開聽證通知報道，SpaceX 計劃在美國德州 Starbase 興建燃氣發電廠及超級運算設施，首階段估計資本投資約 240 億美元，並已申請物業稅減免。SpaceX 會自行建造、持有及營運設施；Starbase 市委會預計 12 月 9 日審議稅務減免及相關發展協議。\n\n文件未披露發電容量、運算設施規模、稅務優惠金額或項目時間表，240 億美元亦是計劃中的估算而非已落實支出。SpaceX 今年較早前收購 xAI，並向 Google、Anthropic 等出租算力；今次計劃反映大型 AI 基建正嘗試以自建能源繞過電網接駁等待，但環境、審批及融資風險仍需觀察。",
-    "category": "AI 基建與能源",
-    "publishedAt": "2026-11-09T19:56:00Z",
-    "sourceLabel": "Reuters／公開聽證通知",
-    "sourceUrl": "https://www.reuters.com/legal/transactional/spacex-plans-24-billion-gas-power-plant-data-center-project-texas-2026-11-09/",
     "level": "breaking",
     "verified": true,
     "active": false
