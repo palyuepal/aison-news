@@ -2,7 +2,7 @@
 
 A read-only Cloudflare Worker checks the existing public AIson site and public GitHub source every five minutes, independently of GitHub Actions and the desktop editor. It does not generate news, merge PRs, deploy the news site or hold GitHub credentials.
 
-The scheduled handler verifies the due Hong Kong edition, all four publication-receipt artifact hashes, story count/ranks/verification, editorial metadata, every source DAILY field, and the full LIVE array. The 08:00–09:15 preparation window accepts only yesterday's fully verified edition, never arbitrarily old content. Responses have a 15-second timeout and a 1MiB cap.
+The scheduled handler verifies the due Hong Kong edition, all four publication-receipt artifact hashes, story count/ranks/verification, editorial metadata, every source DAILY field, and the full LIVE array. It also verifies the newest active, verified LIVE item is at most 24 hours old; a matching-but-stale source is an editorial incident, **not** a reason to redeploy unchanged files or fabricate a publication timestamp. `latestLiveAt` and `liveAgeHours` are included in status for triage. The 08:00–09:15 preparation window accepts only yesterday's fully verified edition, never arbitrarily old content. Responses have a 15-second timeout and a 1MiB cap.
 
 State is stored in a dedicated KV namespace under `status`. Two consecutive failures open an incident; an unchanged incident can send at most one reminder per six hours. A successful delivery is tracked separately; delivery failure remains visible and recovery notification failure is retried. KV is eventually consistent, so delivery deduplication is best effort, not an exactly-once guarantee.
 
