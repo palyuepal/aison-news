@@ -1,12 +1,12 @@
 name: Install bounded social renderer
-description: Cache font and pin Pillow, retaining required social card rendering
+description: Verify immutable official CJK fonts and pin Pillow without apt mirrors
 runs:
   using: composite
   steps:
     - uses: actions/cache@v4
       with:
         path: ~/.cache/aison-fonts
-        key: noto-cjk-ubuntu24-${{ runner.os }}-${{ runner.arch }}-v2
+        key: noto-cjk-sans2.004-523d033-${{ runner.os }}-${{ runner.arch }}-v3
     - shell: bash
       run: timeout 180 python -m pip install --disable-pip-version-check --timeout 30 --retries 2 'Pillow==11.3.0'
     - shell: bash
@@ -14,11 +14,17 @@ runs:
         set -euo pipefail
         cache="$HOME/.cache/aison-fonts"
         mkdir -p "$cache"
-        if [ ! -s "$cache/NotoSansCJK-Regular.ttc" ] || [ ! -s "$cache/NotoSansCJK-Bold.ttc" ]; then
-          sudo timeout 240 apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
-          sudo timeout 240 apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends fonts-noto-cjk
-          cp /usr/share/fonts/opentype/noto/NotoSansCJK-{Regular,Bold}.ttc "$cache/"
-        fi
+        base='https://raw.githubusercontent.com/notofonts/noto-cjk/523d033d6cb47f4a80c58a35753646f5c3608a78/Sans/OTC'
+        install_font() {
+          local name="$1" expected="$2"
+          if ! echo "$expected  $cache/$name" | sha256sum --check --status; then
+            curl --fail --location --connect-timeout 15 --max-time 90 --retry 2 --retry-all-errors --output "$cache/$name.part" "$base/$name"
+            echo "$expected  $cache/$name.part" | sha256sum --check
+            mv "$cache/$name.part" "$cache/$name"
+          fi
+          echo "$expected  $cache/$name" | sha256sum --check
+        }
+        install_font NotoSansCJK-Regular.ttc b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a
+        install_font NotoSansCJK-Bold.ttc faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb
         sudo mkdir -p /usr/share/fonts/opentype/noto
-        sudo cp "$cache"/*.ttc /usr/share/fonts/opentype/noto/
-        fc-cache -f
+        sudo cp "$cache"/NotoSansCJK-{Regular,Bold}.ttc /usr/share/fonts/opentype/noto/
