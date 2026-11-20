@@ -22,26 +22,12 @@ def read_json(path):
 
 
 def validate_source(date):
-    path=DAILY_DIR/f'{date}.json'
-    if not path.exists():
-        return False,f'missing {path.as_posix()}'
     try:
-        rows=read_json(path)
-    except Exception as exc:
-        return False,f'{path.as_posix()} invalid JSON: {exc}'
-    if not isinstance(rows,list) or not 1 <= len(rows) <= 10:
-        return False,f'{path.as_posix()} must contain 1..10 stories'
-    try:
-        ranks={int(r.get('rank',0)) for r in rows}
-    except Exception:
-        return False,f'{path.as_posix()} contains invalid rank values'
-    if ranks!=set(range(1,len(rows)+1)):
-        return False,f'{path.as_posix()} local ranks must be consecutive from 1'
-    if any(str(r.get('date',''))!=date for r in rows):
-        return False,f'{path.as_posix()} story dates do not all match {date}'
-    if len({r.get('id') for r in rows})!=len(rows):
-        return False,f'{path.as_posix()} story ids must be unique'
-    return True,f'source ok: {path.as_posix()}'
+        from publication import validate_pair
+        rows, meta = validate_pair(date, ROOT)
+        return True, f'paired source ok: {date}, {len(rows)} stories, top3Ids={meta["top3Ids"]}'
+    except (Exception, SystemExit) as exc:
+        return False, f'paired source invalid: {exc}'
 
 
 def fetch_text(url):
@@ -92,6 +78,24 @@ def validate_live(date):
         return False,'public latest payload has invalid ranks'
     if ranks!=set(range(1,len(latest)+1)):
         return False,f'public latest ranks are {sorted(ranks)}, expected consecutive ranks'
+    try:
+        from publication import receipt
+        import hashlib
+        published = json.loads(fetch_text(BASE+f'data/publication.json?health={stamp}'))
+        expected = receipt(date, ROOT)
+        for key, value in expected.items():
+            if published.get(key) != value:
+                raise ValueError(f'publication receipt differs: {key}')
+        for name, digest in published['artifacts'].items():
+            if name not in ('data/latest.js', 'data/editorial.js', 'index.html', 'daily.html'):
+                raise ValueError('unexpected publication artifact')
+            actual = hashlib.sha256(fetch_text(BASE+name+f'?health={stamp}').encode()).hexdigest()
+            if actual != digest:
+                raise ValueError(f'public {name} hash differs from deployment receipt')
+        if set(published['artifacts']) != {'data/latest.js', 'data/editorial.js', 'index.html', 'daily.html'}:
+            raise ValueError('publication artifact hashes missing')
+    except (Exception, SystemExit) as exc:
+        return False, f'publication verification failed: {exc}'
     return True,f'live ok: editionDate={edition}, {len(latest)} current stories'
 
 
