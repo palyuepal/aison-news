@@ -3,6 +3,8 @@ const SITE = 'https://aison.hk/';
 const RAW = 'https://raw.githubusercontent.com/palyuepal/aison-news/main/';
 const ARTIFACTS = ['data/latest.js','data/editorial.js','index.html','daily.html'];
 const MAX_BYTES = 1024 * 1024;
+// A matching public feed can still be editorially stale. Alert when the newest verified active item is over 24h old.
+const MAX_LIVE_AGE_MS = 24 * 3600000;
 export function editionClock(now = new Date()) {
   const hk = new Date(now.getTime() + 8 * 3600000);
   const calendar = hk.toISOString().slice(0,10);
@@ -62,7 +64,16 @@ export async function inspect(now=new Date(),fetcher=fetch) {
     if (Object.keys(meta).some(k=>canonical(meta[k])!==canonical(editorial[k]))) throw new Error('main editorial differs from public');
     const [liveSource,livePublic]=await Promise.all([read(RAW+'content/live.json').then(JSON.parse),read(SITE+'data/live.js').then(t=>payload(t,'AISON_LIVE'))]);
     if (canonical(liveSource)!==canonical(livePublic)) throw new Error('main LIVE differs from public');
-    result.checks.push('main-source','live-source');result.state=preparing?'preparing':'healthy';
+    if (!Array.isArray(liveSource)) throw new Error('Invalid LIVE feed');
+    const currentItems=liveSource.filter(item=>item.active===true && item.verified===true);
+    const publishedTimes=currentItems.map(item=>Date.parse(item.publishedAt));
+    if (!publishedTimes.length || publishedTimes.some(time=>!Number.isFinite(time))) throw new Error('No valid active verified LIVE items');
+    const latest=Math.max(...publishedTimes);
+    const ageMs=now.getTime()-latest;
+    result.latestLiveAt=new Date(latest).toISOString();
+    result.liveAgeHours=Math.round(ageMs/360000)/10;
+    if (ageMs>MAX_LIVE_AGE_MS) throw new Error('LIVE editorial freshness overdue: latest '+result.latestLiveAt+' ('+result.liveAgeHours+'h old). Content matches main but needs a verified new LIVE scan; redeploying stale sources will not help.');
+    result.checks.push('main-source','live-source','live-freshness');result.state=preparing?'preparing':'healthy';
   } catch(error) {result.errors.push(error instanceof Error?error.message:String(error));}
   return result;
 }
