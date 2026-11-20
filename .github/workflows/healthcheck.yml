@@ -6,6 +6,9 @@ on:
   schedule:
     - cron: '15,45 0-15 * * *'
   workflow_dispatch:
+  workflow_run:
+    workflows: [Deploy AIson to GitHub Pages]
+    types: [completed]
 permissions:
   contents: read
   actions: write
