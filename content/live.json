@@ -24,6 +24,30 @@
     "active": true
   },
   {
+    "id": "2026-11-20-us-ai-chip-china-license-disclosure",
+    "title": "美國眾議院披露近 87.9 萬枚 AI 晶片獲准售華，阿里、騰訊與百度在名單內",
+    "summary": "美國眾議院外交事務委員會公開商務部牌照資料，顯示 2025 年 12 月至 2026 年 5 月期間，NVIDIA 及 AMD 對華先進 AI 晶片申請中超過 87.9 萬枚獲批，包括阿里巴巴 7.5 萬枚、騰訊 15 萬枚及百度 4.3 萬枚。Reuters 指申請總量超過 340 萬枚，但牌照獲批不等於晶片已實際付運；NVIDIA 亦稱其後已停止向中國付運 H200。對香港投資者及企業而言，這份披露會影響對內地雲端算力供應、合規風險及美國後續收緊政策的判斷，但不能把批准數量當成已交付庫存。",
+    "category": "AI 晶片與供應鏈",
+    "publishedAt": "2026-11-19T20:11:07Z",
+    "sourceLabel": "Reuters／美國眾議院外交事務委員會",
+    "sourceUrl": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-20-us-lawmakers-doj-openai-copyright-probe",
+    "title": "美國 12 名眾議員追問司法部介入 OpenAI 版權案，要求交代有否外部機構影響",
+    "summary": "12 名美國民主黨眾議員去信司法部長 Todd Blanche，要求解釋司法部在《紐約時報》等媒體控告 OpenAI 及 Microsoft 的版權案中支持 OpenAI 前，為何沒有先諮詢美國版權局及專利商標局，並要求披露有否外部公司或組織影響該文件。議員要求司法部在 11 月 30 日前回覆。這是國會查詢，不是法院裁決，也未改變現行版權規則；但案件日後對 AI 訓練是否屬合理使用的判斷，會直接影響香港內容創作者及出版商的授權、報酬與風險管理。",
+    "category": "AI 政策與版權",
+    "publishedAt": "2026-11-19T19:34:28Z",
+    "sourceLabel": "Reuters／美國眾議員 Chellie Pingree",
+    "sourceUrl": "https://www.reuters.com/legal/government/democratic-lawmakers-probe-doj-filing-openai-copyright-case-2026-11-19/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-20-alibaba-cloud-september-quarter",
     "title": "阿里巴巴公布 AI Cloud and Compute 收入按年升 53%，新美國晶片規則或影響海外擴張",
     "summary": "阿里巴巴 11 月 19 日公布截至 9 月 30 日季度業績，AI Cloud and Compute Services 收入約人民幣 609.73 億元，按年升 53%；集團表示多個行業增加 AI 與雲端採用。AP 同日報道指阿里巴巴警告，美國針對先進晶片遙距使用的新限制可能影響部分全球數據中心擴張計劃。53% 是公司正式財報中的分類收入增幅，並非純模型 API 收入增長；出口規則對個別項目造成的實際影響尚待披露。香港企業要把雲服務擴張能力、可用區及跨境算力合規分開評估。",
@@ -692,30 +716,6 @@
     "sourceLabel": "Reuters／Bloomberg News",
     "sourceUrl": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-09-apple-intelligence-china-tablet-laptop-registration",
-    "title": "Apple Intelligence 在中國新增平板與手提電腦備案，覆蓋範圍擴至 iPad、Mac",
-    "summary": "上海網信部門 11 月 9 日表示，Apple Intelligence 生成式 AI 服務已完成新增蘋果平板及手提電腦兩類使用場景的備案。中國規定面向公眾的大模型及生成式 AI 服務推出前須完成備案；Apple 早前已獲准在 iPhone 上推出相關服務。\n\nReuters 報道，Apple 為中國市場與阿里巴巴合作訓練模型，Qwen 將支援 Siri、Writing Tools 及視覺智能的文字、圖像理解與內容生成。阿里巴巴早前稱相關功能計劃隨 iOS 27.3 於 12 月推出，但今次備案本身不等於功能已即時開放；正式裝置清單、地區限制及資料處理細節仍待 Apple 公布。",
-    "category": "AI 產品與監管",
-    "publishedAt": "2026-11-09T11:47:00Z",
-    "sourceLabel": "Reuters／上海網信部門",
-    "sourceUrl": "https://www.reuters.com/business/retail-consumer/apple-intelligence-ai-service-registers-with-chinese-regulator-use-tablets-2026-11-09/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-09-south-korea-nvidia-gpu-supply-followup",
-    "title": "南韓稱 NVIDIA 風波不影響已簽約 GPU 供應，2026 年交付維持計劃",
-    "summary": "南韓科學技術情報通信部第二次官 Ryu Jemyung 11 月 9 日在國會預算委員會表示，預期與 NVIDIA 已簽約的 GPU 生產及交付不會受公司行政總裁黃仁勳相關調查風波影響。以 2025 年追加預算購入的 10,000 顆 GPU 已運抵並投入使用；2026 年批次亦已簽約，預計年內投入運作，當局正與 NVIDIA Korea 商討價格及交付時間。\n\n這是南韓政府對合約執行情況的最新評估，不代表 NVIDIA 董事會調查已有結論。Kakao Mobility 表示合作協議照常，NVIDIA AI Day Seoul 亦按計劃舉行；下一步要核實的是實際交付數量、時間及價格有否變動。",
-    "category": "AI 晶片與供應鏈",
-    "publishedAt": "2026-11-09T02:27:00Z",
-    "sourceLabel": "Reuters／南韓科學技術情報通信部",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/south-korea-says-nvidia-issues-wont-affect-contracted-gpu-supplies-2026-11-09/",
-    "level": "followup",
     "verified": true,
     "active": false
   }
