@@ -6,6 +6,7 @@ on:
   workflow_run:
     workflows: [Validate AIson V3, Validate AIson Trust Layer, Validate AIson Search Quality, Validate AIson Deep Read Quality, Validate AIson PWA Return Experience]
     types: [completed]
+    branches: ['daily/**']
 permissions:
   contents: write
   pull-requests: write

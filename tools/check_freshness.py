@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
-from datetime import datetime
-from zoneinfo import ZoneInfo
+from datetime import datetime, timezone
+import publication
 import argparse
 import json
 import re
@@ -12,9 +12,6 @@ ROOT=Path(__file__).resolve().parents[1]
 DAILY_DIR=ROOT/'content'/'daily'
 BASE='https://aison.hk/'
 
-
-def hk_today():
-    return datetime.now(ZoneInfo('Asia/Hong_Kong')).strftime('%Y-%m-%d')
 
 
 def read_json(path):
@@ -51,7 +48,7 @@ def parse_latest(text):
 
 
 def validate_live(date):
-    stamp=datetime.utcnow().strftime('%Y%m%d%H%M%S')
+    stamp=datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')
     try:
         status=parse_status(fetch_text(BASE+f'data/status.js?health={stamp}'))
         latest=parse_latest(fetch_text(BASE+f'data/latest.js?health={stamp}'))
@@ -105,7 +102,7 @@ def main():
     parser.add_argument('--live-only',action='store_true')
     parser.add_argument('--date',default='')
     args=parser.parse_args()
-    date=args.date or hk_today()
+    date=args.date or publication.due_date()
     checks=[]
     if not args.live_only:
         checks.append(('source',)+validate_source(date))

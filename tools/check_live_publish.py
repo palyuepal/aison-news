@@ -50,10 +50,10 @@ def items_from_local_public():
 
 
 def signature(rows):
-    return sorted(
-        (str(row["id"]), str(row["publishedAt"]), str(row["title"]))
-        for row in rows
-    )
+    # build_live publishes source objects unchanged. Compare every field, including
+    # corrections, provenance links, active/verified flags and optional references.
+    # JSON key order is irrelevant; the feed's editorial ordering is significant.
+    return json.dumps(rows, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
 
 
 def newest(rows):
@@ -75,7 +75,7 @@ def main():
         public = items_from_public()
         print(f"Public LIVE: {len(public)} items; latest {newest(public)}")
         if signature(source) != signature(public):
-            raise ValueError("Public LIVE items differ from source: missing, old or mismatched IDs/timestamps/titles")
+            raise ValueError("Public LIVE items differ from source: content, provenance, flags or ordering mismatch")
         print("OK: public LIVE feed matches content/live.json")
     except Exception as exc:
         print(f"FAIL: LIVE publication verification: {exc}", file=sys.stderr)
