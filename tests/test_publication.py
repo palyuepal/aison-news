@@ -74,6 +74,22 @@ class PublicationTests(unittest.TestCase):
                 ok,message=f.validate_live(self.date)
             self.assertEqual(ok,not tamper,message)
 
+    def test_default_monitor_date_uses_due_edition_before_0800(self):
+        with patch.object(p,'due_date',return_value='2026-11-19'), \
+             patch.object(f,'hk_today',return_value='2026-11-20',create=True), \
+             patch.object(f,'validate_source',return_value=(True,'ok')) as validate, \
+             patch.object(sys,'argv',['check_freshness','--source-only']):
+            f.main()
+        validate.assert_called_once_with('2026-11-19')
+
+    def test_live_detects_changed_body_link_and_active_flag(self):
+        row={'id':'test','publishedAt':'2026-11-20T08:00:00+08:00','title':'same',
+             'summary':'current facts','sourceUrl':'https://example.com/source','active':True}
+        for key,value in [('summary','outdated facts'),('sourceUrl','https://example.com/old'),('active',False)]:
+            changed=dict(row); changed[key]=value
+            with self.subTest(key=key):
+                self.assertNotEqual(live.signature([row]),live.signature([changed]))
+
     def test_network_failure_never_reports_live_success(self):
         with patch.object(live,'items_from_source',return_value=[]), patch.object(live,'items_from_public',side_effect=OSError('offline')), patch.object(sys,'argv',['check_live_publish']):
             with self.assertRaises(SystemExit): live.main()

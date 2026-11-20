@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Resolve Hong Kong edition date
-        run: echo "AISON_DATE=$(TZ=Asia/Hong_Kong date +%F)" >> "$GITHUB_ENV"
+        run: echo "AISON_DATE=$(python -c 'from tools.publication import due_date; print(due_date())')" >> "$GITHUB_ENV"
       - name: Check source-of-truth edition
         id: source
         continue-on-error: true
@@ -40,7 +40,10 @@ jobs:
         shell: bash
         run: |
           set +e
-          python tools/check_freshness.py --live-only --date "$AISON_DATE" > "$RUNNER_TEMP/aison-live-check.log" 2>&1
+          {
+            python tools/check_freshness.py --live-only --date "$AISON_DATE" &&
+            python tools/check_live_publish.py
+          } > "$RUNNER_TEMP/aison-live-check.log" 2>&1
           code=$?
           cat "$RUNNER_TEMP/aison-live-check.log"
           exit "$code"
@@ -70,6 +73,7 @@ jobs:
           timeout 900 gh run watch "$new_id" --exit-status
           sleep 20
           python tools/check_freshness.py --live-only --date "$AISON_DATE"
+          python tools/check_live_publish.py
       - name: Open or refresh stale-edition issue
         if: steps.source.outcome == 'failure' || (steps.live.outcome == 'failure' && steps.recovery.outcome != 'success')
         env:

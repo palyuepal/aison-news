@@ -17,3 +17,11 @@ Pages writes `data/publication.json` into the final artifact after all HTML patc
 The sentinel runs at 08:15/08:45 and every 30 minutes through 23:45. Missing/invalid source fails and opens or refreshes one dated incident issue. Valid source with stale public output gets one bounded redeploy per sentinel run, capped at two manual Pages dispatches per Hong Kong date; after a failed recovery, the issue stays open and the run fails. Recovered issues close only after public verification. Scheduled GitHub execution can be delayed; Codex usage limits/offline desktop can still stop research. Neither is concealed as success. Repository notifications and failed Actions runs are the alert channels; no external email is sent.
 
 Operational handoff: source prepared → PR pending → checks passed → merged → built/deployed → public verified. Only the last state is published. Record PR, head and main SHA, Pages URL and public verification. If a run ends pending, the next recovery owns that same PR. Do not create duplicate editions. Historical gaps on November 17–19 remain unfilled pending research.
+
+## Additional safeguards
+
+All default freshness dates, including deployment-triggered checks after midnight, use the same 08:00 Hong Kong due-date function. At 00:00–07:59, yesterday remains due; a missing tomorrow edition must not create an early incident or consume recovery attempts. Scheduled monitoring remains 08:15 onward.
+
+The sentinel verifies DAILY and the complete LIVE source objects, including body corrections, provenance URLs, active/verified flags and feed order. A LIVE-only mismatch therefore triggers the same bounded redeployment even if DAILY is already correct. LIVE source publication does not mean a fresh round of editorial research.
+
+Check-completion recovery events are restricted to daily/** branches. Unrelated feature and main validations cannot generate redundant recovery jobs; manual and scheduled recovery remain available. These guards do not supply a missing research service or an independent external alert channel.
