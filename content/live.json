@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-20-ecb-lagarde-ai-cyber-finance-risk",
+    "title": "拉加德稱 AI 強化網絡攻擊是金融業最迫切風險，未宣布新監管措施",
+    "summary": "歐洲央行行長 Christine Lagarde 在法蘭克福 European Banking Congress 表示，愈來愈先進的 AI Agent 會放大網絡威脅，可能成為金融業當前最迫切的挑戰，並指政策制定者仍未給予足夠關注。她提到攻擊者往往難以追蹤，部分可能獲對破壞金融體系有利益的國家支持。這是風險警告，不是新的歐洲央行規例、利率決定或已發生的大型銀行事故；但對香港銀行、金融科技及依賴少數雲端供應商的企業而言，應加強 AI 輔助攻擊演練、供應商集中風險及事故應變，而非只購入更多 AI 工具。",
+    "category": "AI 安全與金融",
+    "publishedAt": "2026-11-20T09:30:46Z",
+    "sourceLabel": "Reuters／歐洲央行",
+    "sourceUrl": "https://www.reuters.com/legal/government/ecbs-lagarde-cyber-threat-boosted-by-ai-is-my-top-worry-2026-11-20/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-20-anthropic-ipo-first-day-close",
     "title": "Anthropic Nasdaq 首日收報 97.17 美元，較 83 美元招股價升約 17%，盤中升幅明顯收窄",
     "summary": "Anthropic 的 ANT 股份 11 月 19 日正式在 Nasdaq 開始交易，開市報 111.50 美元，較 83 美元 IPO 定價高約 34%；其後一度見 115 美元，但收市回落至 97.17 美元，仍較發售價高約 17%。這是 11 月 20 日 DAILY 所報『定價及預期掛牌』之後的實際交易新進展，並非再把招股公告當新消息。美股整體同日下跌，首日股價波動不足以證明長期商業價值。對香港投資者而言，需把招股價、開市價與收市價分開，不宜以首日短線升幅推斷 Claude 產品或 API 的未來定價。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-11-09T13:08:00Z",
     "sourceLabel": "Adobe 官方公告／Reuters",
     "sourceUrl": "https://www.reuters.com/business/media-telecom/disney-adobe-co-develop-custom-ai-models-tailored-media-giant-2026-11-09/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-09-google-tpu-8tx-8i-max-report",
-    "title": "據報 Google 推 TPU 8tx、8i Max：分攻機密運算與長 context AI",
-    "summary": "Reuters 引述 Bloomberg News 11 月 9 日報道，Google 正引入兩個第八代 TPU 的重配置版本。TPU 8tx 針對政府及受規管行業需要的安全、機密工作負載；TPU 8i Max 則面向需要長 context window 的 AI 應用。Google AI 基建首席技術官 Amin Vahdat 向 Bloomberg 表示，兩者並非全新晶片，而是按客戶需求調整的配置。\n\nAlphabet 未即時回應 Reuters 查詢，Reuters 亦未能獨立核實報道；目前未見 Google 公開產品頁交代售價、供應地區或正式上線時間。已確認的背景是 Google 早前推出 TPU 8t 與 8i，並逐步把自研 TPU 向外部雲端客戶開放。下一步要看 Google 官方規格、可用區域及機密運算認證。",
-    "category": "AI 晶片與雲端基建",
-    "publishedAt": "2026-11-09T12:39:57Z",
-    "sourceLabel": "Reuters／Bloomberg News",
-    "sourceUrl": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
     "level": "update",
     "verified": true,
     "active": false
