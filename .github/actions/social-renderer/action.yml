@@ -8,10 +8,8 @@ runs:
         path: ~/.cache/aison-fonts
         key: noto-cjk-ubuntu24-${{ runner.os }}-${{ runner.arch }}-v2
     - shell: bash
-      timeout-minutes: 4
-      run: python -m pip install --disable-pip-version-check --timeout 30 --retries 2 'Pillow==11.3.0'
+      run: timeout 180 python -m pip install --disable-pip-version-check --timeout 30 --retries 2 'Pillow==11.3.0'
     - shell: bash
-      timeout-minutes: 6
       run: |
         set -euo pipefail
         cache="$HOME/.cache/aison-fonts"

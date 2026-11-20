@@ -30,6 +30,7 @@ jobs:
           node --check live-timeline.js
           python -m py_compile tools/patch_share_meta.py tools/build_light_payloads.py tools/editorial.py tools/check_freshness.py tools/check_storyline_classifications.py
       - name: Install social card renderer
+        timeout-minutes: 10
         uses: ./.github/actions/social-renderer
       - name: Build AIson
         env:

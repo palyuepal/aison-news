@@ -59,6 +59,21 @@ class PublicationTests(unittest.TestCase):
             ok,message=f.validate_live(self.date)
         self.assertFalse(ok);self.assertIn('receipt differs',message)
 
+    def test_public_receipt_and_artifact_hashes(self):
+        import hashlib
+        rows=json.loads((self.root/'content/daily'/f'{self.date}.json').read_text())
+        artifacts={name: name+' content' for name in ('data/latest.js','data/editorial.js','index.html','daily.html')}
+        published=p.receipt(self.date,self.root)
+        published['artifacts']={name:hashlib.sha256(text.encode()).hexdigest() for name,text in artifacts.items()}
+        responses=['window.AISON_STATUS = {"editionDate":"2026-11-20"};',
+                   'window.AISON_NEWS = '+json.dumps(rows)+';',json.dumps(published),*artifacts.values()]
+        for tamper in (False,True):
+            data=responses.copy()
+            if tamper: data[-1]='stale landing page'
+            with patch.object(f,'ROOT',self.root),patch.object(f,'DAILY_DIR',self.root/'content/daily'),patch.object(f,'fetch_text',side_effect=data):
+                ok,message=f.validate_live(self.date)
+            self.assertEqual(ok,not tamper,message)
+
     def test_network_failure_never_reports_live_success(self):
         with patch.object(live,'items_from_source',return_value=[]), patch.object(live,'items_from_public',side_effect=OSError('offline')), patch.object(sys,'argv',['check_live_publish']):
             with self.assertRaises(SystemExit): live.main()

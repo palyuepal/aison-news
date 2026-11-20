@@ -26,6 +26,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/aison-source"
           cp -a content "$RUNNER_TEMP/aison-source/"
       - name: Install social card renderer
+        timeout-minutes: 10
         uses: ./.github/actions/social-renderer
       - name: Resolve official news images
         run: python tools/enrich_official_visuals.py --limit 20
