@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-20-anthropic-retreat-ai-market-selloff",
+    "title": "Anthropic 上市翌日盤前跌 7.4%，Nasdaq 100 期貨跌 1.64%，AI 估值憂慮升溫",
+    "summary": "Reuters 於 11 月 20 日 10:37 UTC 報道，截至美東時間早上 7:03，Anthropic 上市翌日盤前跌 7.4%，而股份首日收市較 83 美元招股價仍高約 17%；同時 Nasdaq 100 期貨跌 1.64%、標普 500 期貨跌 0.74%，VIX 觸及 30，為 3 月 30 日以來首次。NVIDIA 盤前跌 2.2%，AMD、Broadcom、Marvell 及 Micron 跌 2.2% 至 6.6%。以上均屬盤前或期貨快照，不是正式收市價，也沒有改變 Claude 產品、API 價格或香港可用性；但顯示強勁 AI 需求及大型上市仍未消除市場對估值、融資成本與基建回報的疑慮。香港投資者應把短線價格反轉與公司長期產品基本面分開判斷。",
+    "category": "AI 商業與資本市場",
+    "publishedAt": "2026-11-20T10:37:04Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-20-ecb-lagarde-ai-cyber-finance-risk",
     "title": "拉加德稱 AI 強化網絡攻擊是金融業最迫切風險，未宣布新監管措施",
     "summary": "歐洲央行行長 Christine Lagarde 在法蘭克福 European Banking Congress 表示，愈來愈先進的 AI Agent 會放大網絡威脅，可能成為金融業當前最迫切的挑戰，並指政策制定者仍未給予足夠關注。她提到攻擊者往往難以追蹤，部分可能獲對破壞金融體系有利益的國家支持。這是風險警告，不是新的歐洲央行規例、利率決定或已發生的大型銀行事故；但對香港銀行、金融科技及依賴少數雲端供應商的企業而言，應加強 AI 輔助攻擊演練、供應商集中風險及事故應變，而非只購入更多 AI 工具。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters／公開聽證通知",
     "sourceUrl": "https://www.reuters.com/legal/transactional/spacex-plans-24-billion-gas-power-plant-data-center-project-texas-2026-11-09/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-09-disney-adobe-custom-ai-models",
-    "title": "Disney、Adobe 共建專屬生成式 AI 模型，延伸至園區、影視與 ESPN 工作流",
-    "summary": "Disney 與 Adobe 11 月 9 日公布多年策略合作，會透過 Adobe Firefly Foundry 建立按 Disney 角色、場景及視覺風格調校的私有生成式 AI 模型。Disney Imagineering 已把自訂圖像模型及「手繪草圖轉概念圖」工具用於主題樂園設計；合作亦會延伸至 Walt Disney Studios 的 StudioLAB，以及 ESPN 的內容與球迷互動工作。\n\nAdobe 表示模型以 Disney 自有素材及知識調校，目標是產出可供製作使用、符合品牌的內容。Disney 稱工具用來加快創作迭代而非取代 Imagineering 職位；不過公司未公布模型訓練資料範圍、創作者審批流程、成本或量化成效。下一步要看實際製作案例、權利管理與人工把關機制。",
-    "category": "AI 創作與媒體",
-    "publishedAt": "2026-11-09T13:08:00Z",
-    "sourceLabel": "Adobe 官方公告／Reuters",
-    "sourceUrl": "https://www.reuters.com/business/media-telecom/disney-adobe-co-develop-custom-ai-models-tailored-media-giant-2026-11-09/",
-    "level": "update",
     "verified": true,
     "active": false
   }
