@@ -10,7 +10,7 @@ Recovery runs on check completion and every 30 minutes from 08:07 to 23:37 Hong 
 
 A recovery merge explicitly dispatches Pages, because a GITHUB_TOKEN merge does not generate a push run. Pages and sentinel are bounded and serialized. Pages validates the due source pair before spending time rendering. Before 08:00, yesterday is due; at or after 08:00, today is due. A missing due edition fails, rather than silently serving old news with a green deployment. This also means a LIVE deployment after the DAILY deadline can be held until the missing DAILY is resolved; the live source remains intact.
 
-Pillow is pinned; CJK regular and bold fonts are cached. Package operations have network retries, per-operation limits, step limits and an overall job timeout. Render checks remain required.
+Pillow is pinned; CJK regular and bold fonts are cached. Fonts are fetched from the immutable official Noto Sans2.004 commit and checked against SHA-256 on every cache hit or miss; no apt mirror is involved. Downloads and Pillow installation have bounded network retries, per-operation limits, step limits and an overall job timeout. Render checks remain required.
 
 Pages writes `data/publication.json` into the final artifact after all HTML patches. The source pair is snapshotted before deployment-time visual enrichment. It includes source hashes, edition, story count, top3Ids, commit, run URL, state=built, and hashes of actual latest/editorial payloads and both landing pages. `built` alone never claims public verification. Post-deploy and sentinel fetch the receipt and all four artifacts from aison.hk, compare source hashes, and verify artifact hashes. LIVE network failure fails public verification; no local fallback can report a successful publication.
 
