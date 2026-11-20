@@ -72,6 +72,18 @@
     "active": true
   },
   {
+    "id": "2026-11-20-openai-gpt-live-1-1-api",
+    "title": "OpenAI GPT‑Live‑1.1 API 上線，靜默待機費低至每分鐘 0.02 美元",
+    "summary": "OpenAI 11 月 20 日正式把 GPT‑Live‑1.1 開放予 API 開發者，模型可在說話時繼續聆聽，並改善多語言發音、口音一致性、字母與數字辨識及指令跟從；開發者亦可把複雜推理或工具工作交予自選後端模型。新 Standby 設定可在靜默 5 至 60 秒後暫停推理但保持 WebRTC 通話，收費為每分鐘 0.02 美元，低於 active 的 0.05 美元；後端模型與工具用量另行計費。這不是香港專屬 rollout，也不代表粵語表現已獲獨立驗證；本地客服、預約及語音 Agent 團隊應以真實口音、噪音、同意與錄音流程測試總成本。",
+    "category": "AI 語音與 API",
+    "publishedAt": "2026-11-20T04:12:00Z",
+    "sourceLabel": "OpenAI",
+    "sourceUrl": "https://community.openai.com/t/gpt-live-1-1-has-arrived-in-the-api/1418537",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-20-anthropic-ipo-first-day-close",
     "title": "Anthropic Nasdaq 首日收報 97.17 美元，較 83 美元招股價升約 17%，盤中升幅明顯收窄",
     "summary": "Anthropic 的 ANT 股份 11 月 19 日正式在 Nasdaq 開始交易，開市報 111.50 美元，較 83 美元 IPO 定價高約 34%；其後一度見 115 美元，但收市回落至 97.17 美元，仍較發售價高約 17%。這是 11 月 20 日 DAILY 所報『定價及預期掛牌』之後的實際交易新進展，並非再把招股公告當新消息。美股整體同日下跌，首日股價波動不足以證明長期商業價值。對香港投資者而言，需把招股價、開市價與收市價分開，不宜以首日短線升幅推斷 Claude 產品或 API 的未來定價。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-11-11T05:13:22Z",
     "sourceLabel": "Reuters／公開採購紀錄",
     "sourceUrl": "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-10-anthropic-claude-meetings-google-meet",
-    "title": "Claude Meetings 登陸 Google Meet：會議進行中直接做計劃、時間線與問答",
-    "summary": "Anthropic 推出 Claude Meetings beta，讓 Team 與 Enterprise 客戶把 Claude 以可見參與者身份加入 Google Meet。Claude 可跟進對話、在聊天室回答問題，並在會議期間起草計劃及製作時間線；公司亦同步介紹 Claude Whiteboards、Claude Sheets 與 Claude Data，之後計劃擴展至其他會議平台。\n\n功能由「會後摘要」推進到「會內執行」，但現階段只屬 beta，實際權限、資料保留、外部與會者處理及錯誤行動風險仍需企業自行驗證。香港團隊若試用，應先限定可連接的工作資料與可執行範圍，保留人工確認步驟。",
-    "category": "AI Agent 與辦公工具",
-    "publishedAt": "2026-11-10T17:31:00Z",
-    "sourceLabel": "Anthropic／Reuters",
-    "sourceUrl": "https://www.reuters.com/technology/anthropic-brings-claude-google-meet-tackle-tasks-live-2026-11-10/",
     "level": "breaking",
     "verified": true,
     "active": false
