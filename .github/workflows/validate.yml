@@ -14,6 +14,7 @@ jobs:
       - name: Validate paired edition and regression tests
         run: |
           python -m unittest discover -s tests -p 'test_publication.py'
+          node tests/test_publication_recovery.cjs
           edition="$(ls content/daily/*.json | sort | tail -1)"
           python tools/publication.py --date "$(basename "$edition" .json)"
       - name: Validate phase scripts
