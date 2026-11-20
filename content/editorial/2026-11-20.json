@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-20",
+  "dailyOneLiner": "AI 今日由聊天全面走向執行：長時間 Agent、桌面 computer use、工具檢索與互動世界 API 同時落地，而資本與晶片基建亦進入新階段。",
+  "top3Ids": [
+    "2026-11-20-google-gemini-4-neon",
+    "2026-11-20-anthropic-ipo-nasdaq",
+    "2026-11-20-nvidia-q3-fy2027-rubin"
+  ],
+  "threeThemes": [
+    {
+      "title": "Agent 由回答問題走向長時間執行",
+      "summary": "Gemini 4 Neon、Mac computer use 及 Tool Retrieval 分別處理多代理協作、桌面操作與大型工具庫。",
+      "watch": "香港 rollout、權限邊界、失誤復原、工具調用成本與審計紀錄。"
+    },
+    {
+      "title": "AI 資本與基建同時擴張",
+      "summary": "Anthropic 進入公開市場，NVIDIA 數據中心收入翻倍兼開始出貨 Vera Rubin NVL72。",
+      "watch": "Anthropic 上市後披露、NVIDIA 實際交付、出口限制、電力與機房瓶頸。"
+    },
+    {
+      "title": "創作與開發工具開始提供更細控制",
+      "summary": "Canva 讓用戶選擇關閉生成式 AI，OpenAI、Microsoft 與 Google 則把模型能力拆成更專門的 API 及工作流。",
+      "watch": "方案價格、香港可用性、團隊管理設定、商業授權與第三方實測。"
+    }
+  ],
+  "biggestChange": "最大的轉變，是模型不再只爭一次回答的質素，而是爭奪整條工作流：誰負責規劃、調用工具、操作電腦、生成環境、追蹤成本及在高風險一步停下來。",
+  "watchTomorrow": "優先留意 Gemini 4 Neon 與 Mac computer use 在香港帳戶的實際開放、Anthropic IPO 交割與披露、Rubin 雲端上線，以及各項 preview API 的定價與限制。"
+}
+
