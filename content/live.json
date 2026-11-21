@@ -60,6 +60,18 @@
     "active": true
   },
   {
+    "id": "2026-11-21-meta-uma-nitro-open-science",
+    "title": "Meta 釋出 UMA Nitro：加速原子級模擬，開源 AI 科學工具再擴張",
+    "summary": "Meta 於 11 月 20 日 18:30 UTC 發布 Open Source AI for Science Summit 總結，宣布釋出 Universal Model for Atoms 的較快版本 UMA Nitro，並介紹 UMA Playground、擴大 Digital Brain Project 的開放腦部數據目標至 25,000 小時，以及 ATLAS 數學推理工具。這是科研與開源工具更新，不代表已有新藥或材料突破；Meta 亦未在公告中量化 UMA Nitro 的整體效能提升。對香港大學、材料、生命科學與 AI 開發團隊而言，可評估開源模型與數據能否降低原子模擬及科研原型成本，但正式研究仍需按領域數據、授權與可重現性驗證。",
+    "category": "AI 研究與開源科學",
+    "publishedAt": "2026-11-20T18:30:00Z",
+    "sourceLabel": "Meta",
+    "sourceUrl": "https://about.fb.com/news/2026/11/advancing-science-together-highlights-from-the-open-source-ai-for-science-summit/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-21-trump-overseas-ai-data-center-tax-live",
     "title": "特朗普稱美企海外建 AI 數據中心將面對「巨額稅項」，細節仍未交代",
     "summary": "Reuters 於 11 月 20 日 18:08 UTC 報道，美國總統特朗普表示，華府將懲罰在海外興建數據中心的美國公司，並會徵收「巨額稅項」。他未交代法律依據、稅率、涵蓋企業或實施時間；美聯社亦引述他承認尚未把計劃告知相關官員。這是政策威脅，不是已生效稅制。香港及亞洲數據中心、雲端客戶與基建投資者應留意，美資雲端商若因潛在稅務或政策風險調整海外選址，可能影響區內容量、價格與供應安排。",
@@ -703,18 +715,6 @@
     "publishedAt": "2026-11-12T05:31:00Z",
     "sourceLabel": "Reuters 獨家報道",
     "sourceUrl": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-11-nvidia-board-decides-jensen-huang-future",
-    "title": "NVIDIA 董事會開會決定黃仁勳去留，盤後股價跌逾 8%",
-    "summary": "Reuters 引述知情人士報道，NVIDIA 董事會周三晚開會，決定是否罷免共同創辦人兼行政總裁黃仁勳。這是董事會日前因黃仁勳涉及私人關係及相關國安疑慮而啟動內部調查後的實質新進展；NVIDIA 未有即時回應，會議結果尚未公布。\\n\\n消息傳出後，NVIDIA 股價盤後跌逾 8%；公司約一周後公布業績，而目前沒有明確接班人。對香港投資者、晶片客戶及 AI 基建企業而言，短期晶片需求未必即時改變，但領導層去留可能影響 NVIDIA 技術路線、資本配置及與客戶的策略關係；現階段不應把董事會開會等同已罷免。",
-    "category": "AI 晶片與企業管治",
-    "publishedAt": "2026-11-11T22:34:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
     "level": "breaking",
     "verified": true,
     "active": false
