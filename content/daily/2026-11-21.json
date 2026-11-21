@@ -1,0 +1,446 @@
+[
+  {
+    "id": "2026-11-21-us-china-human-control-military-ai",
+    "rank": 1,
+    "featured": true,
+    "title": "貝森特稱中美元首同意：重大軍事 AI 決策必須有人類參與",
+    "excerpt": "中美首次把『人類不得退出重大軍事行動決策』放進元首會晤成果，但正式文本、適用範圍與執行機制尚未公開。",
+    "category": "AI 安全與地緣政治",
+    "date": "2026-11-21",
+    "readTime": "7 分鐘",
+    "sourceUrl": "https://www.reuters.com/world/china/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-2026-11-20/",
+    "sourceLabel": "Reuters／美國財長 Scott Bessent",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "Reuters 報道",
+        "url": "https://www.reuters.com/world/china/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-2026-11-20/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "美國財長 Scott Bessent 11 月 20 日表示，特朗普與習近平在深圳會面時同意，AI 不應自主發動重大軍事行動，相關決策必須有人類參與。現時公開資料來自貝森特的會後說法，未見雙方共同文本、技術定義或核查安排，因此應視為已公布的政治共識，而不是一套已生效、可驗證的軍控條約。",
+    "summary": "中美把重大軍事 AI 行動的人類控制提升至元首層面，但真正價值取決於能否落實為可核查規則。",
+    "whatHappened": "Reuters 引述貝森特稱，中美領導人同意任何使用 AI 的重大軍事決策都要有人類參與，AI 不應自主發動重大軍事行動。他同時表示，兩國在 AI 技術競爭上的分歧不應影響這項安全共識。",
+    "reportingContext": "這項說法由美國財長公開提出，Reuters 已核實其言論；但報道未提供中美共同聲明、軍方執行細則或中國方面的獨立確認。『重大軍事行動』如何界定、預警與防止誤判仍屬未解問題。",
+    "deepDive": "自主武器最危險的情境，不只在於模型是否直接按下發射掣，亦包括模型篩選目標、判斷威脅及加快決策節奏，令人工覆核流於形式。若中美把人類控制寫成具體指揮鏈、測試、事故通報及危機溝通安排，才可能真正降低失控升級風險。",
+    "whyImportant": "全球兩個最大 AI 與軍事強國若承認重大行動不可完全交給機器，會為其他國家的軍事 AI 準則、供應商責任及國際談判建立重要基線。",
+    "hkImpact": [
+      "香港企業：提供無人機、影像分析、雲端或雙重用途技術的公司，日後可能面對更清楚的人類覆核、終端用途及審計要求。",
+      "開發者與研究團隊：涉及高風險自動化時，應把可中止、可追蹤及人工批准設計成系統要求，而不是事後補上一個確認畫面。",
+      "一般用戶與投資者：這是降低誤判風險的政治訊號，但未有條約文本前，不宜把它理解為中美已全面限制自主武器。"
+    ],
+    "whatToWatch": "留意中美會否發布共同文本、軍方指揮鏈與『重大行動』定義，以及危機熱線、事故通報和第三方核查會否跟進。",
+    "take": "AIson 分析：今次最大突破是把『人必須在場』提升到元首層面；下一關不是再講原則，而是證明那個人有足夠時間、資料及權力真正叫停系統。",
+    "actionVerdict": "watch",
+    "actionReason": "屬重要安全共識，但缺乏共同文本及執行細節，現階段應追蹤落實而非假設風險已解決。",
+    "aisonScore": 9.7,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 5
+    },
+    "tags": ["中美", "軍事 AI", "自主武器", "人類控制"]
+  },
+  {
+    "id": "2026-11-21-trump-overseas-ai-data-center-tax-threat",
+    "rank": 2,
+    "featured": true,
+    "title": "特朗普擬重稅美企海外 AI 數據中心，全球算力布局添變數",
+    "excerpt": "特朗普稱美國公司若在海外建數據中心將面對『巨額稅項』，但承認尚未向幕僚交代，執行方式仍未成形。",
+    "category": "AI 基建與政策",
+    "date": "2026-11-21",
+    "readTime": "6 分鐘",
+    "sourceUrl": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/",
+    "sourceLabel": "Reuters／AP",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "Reuters 報道",
+        "url": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/"
+      },
+      {
+        "label": "AP 報道",
+        "url": "https://apnews.com/article/trump-artificial-intelligence-data-centers-f1ac03b73d13445400eeed8631d9d879"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "特朗普 11 月 20 日在白宮表示，會對在美國以外興建 AI 數據中心的美國公司徵收『巨額稅項』，理由是要把算力投資與就業留在國內。AP 指他同時承認尚未把建議交給幕僚，亦未交代法律依據、稅率、適用公司或現有項目會否豁免；因此這是高影響政策威脅，未是已生效措施。",
+    "summary": "美國把 AI 算力本地化推到稅務層面，若落實將重寫跨境雲端、延遲、電力及資本成本。",
+    "whatHappened": "特朗普表示不希望美國企業在海外建立數據中心，並稱違者可面對重稅。Reuters 指 Equinix、Digital Realty 等美國營運商已有全球設施；AP 則報道，特朗普未向幕僚正式交代方案，具體執行仍不清楚。",
+    "reportingContext": "已確認的是總統公開說法，不是法案、行政命令或稅務規例。美國企業會否因海外地區、雲端租用、合資項目或既有設施而受影響，現時沒有正式答案。",
+    "deepDive": "AI 數據中心通常靠近用戶、電力及網絡節點，以減少延遲和傳輸成本。若美國以稅項逼企業把容量留在本土，亞洲客戶可能面對較高價格、更遠延遲或較少區域選擇；但美國本土亦受電力、輸電、用水及社區反對限制，未必能立即承接全部新增需求。",
+    "whyImportant": "這不只關乎建築地點，而是把 AI 供應鏈、晶片出口與雲端算力一起納入產業政策，可能影響全球雲端商的投資回報及地區服務。",
+    "hkImpact": [
+      "香港企業：使用美國雲端商亞洲區域的公司要留意長約、價格調整、資料區域及災難備援條款，暫毋須因一句政策表態立即遷移。",
+      "數據中心與供應鏈：本地及區內項目的美資客戶、融資和設備訂單或增加政策折讓，應為不同稅務情境做壓力測試。",
+      "開發者與用戶：若工作負載被迫移到更遠地區，延遲、跨境資料與出口管制成本可能上升，系統設計要保留多區域及多供應商選項。"
+    ],
+    "whatToWatch": "留意白宮或財政部會否提出正式文本、適用範圍與生效時間，以及美國企業海外現有項目和亞洲雲端區域會否獲豁免。",
+    "take": "AIson 分析：最值得留意的不是『重稅』兩個字，而是美國正把算力視為不可外移的戰略產能；若真的立法，AI 雲端將由全球化服務變成更明顯的地緣產品。",
+    "actionVerdict": "watch",
+    "actionReason": "政策尚未成形；企業應盤點依賴與合約風險，但不應根據口頭威脅倉促遷移。",
+    "aisonScore": 9.4,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    },
+    "tags": ["特朗普", "數據中心", "雲端", "AI 基建"]
+  },
+  {
+    "id": "2026-11-21-oracle-openai-infrastructure-funded",
+    "rank": 3,
+    "featured": true,
+    "title": "Oracle 稱 OpenAI 基建合約資金已到位，Rubin 機架數周內交付",
+    "excerpt": "Oracle 完成 200 億美元融資後，表示 OpenAI 相關基建已有完整資金，下一個德州 gigawatt 級園區亦已獲批。",
+    "category": "AI 基建與融資",
+    "date": "2026-11-21",
+    "readTime": "6 分鐘",
+    "sourceUrl": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/",
+    "sourceLabel": "Reuters／Oracle",
+    "sourceType": "公司聲明／可靠媒體",
+    "references": [
+      {
+        "label": "Reuters 報道",
+        "url": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "Oracle 11 月 20 日表示，月初完成約 200 億美元股債融資後，與 OpenAI 的基建合約所需資金已經到位；雙方計劃在美國新增 4.5GW 數據中心容量。Oracle 又稱 Abilene 園區接近完成，Shackelford County 下一個 gigawatt 級園區已獲完整許可，NVIDIA Vera Rubin 機架預計數周內交付。以上屬 Oracle 對融資與工程進度的公司聲明，仍須由後續交付、使用率和現金流驗證。",
+    "summary": "OpenAI 的算力承諾由規劃推進至融資、許可與硬件交付，市場焦點轉向項目能否按期產生回報。",
+    "whatHappened": "Oracle 表示，Investor Day 公布的融資安排連同供應商融資已落實，與 OpenAI 的基建合約現已全數獲資金支持。公司同時更新 Abilene 與 Shackelford County 兩個德州項目的工程及 Rubin 機架交付時間。",
+    "reportingContext": "『資金已到位』及工程進度由 Oracle 發布，Reuters 核實其聲明與 200 億美元融資資料；這不等於所有容量已建成、已被使用或合約風險已消失。",
+    "deepDive": "4.5GW 是大型電力與資本承諾，涉及伺服器、網絡、散熱、輸電和長期融資。若 OpenAI 用量按計劃增長，Oracle 可把大量資本轉為雲端收入；若模型需求、晶片交付或電力時間表落後，固定成本與客戶集中風險亦會同步放大。",
+    "whyImportant": "AI 基建競賽的瓶頸正由『有沒有計劃』轉到『資金、電力、許可與下一代硬件能否同時到位』，直接影響模型供應、推理價格及雲端競爭。",
+    "hkImpact": [
+      "香港企業：OpenAI 算力供應若增加，長遠或改善容量和服務穩定性，但短期價格、香港區域與資料處理安排沒有因此自動改變。",
+      "開發者：不應因基建融資完成便假設 API 價格會下降；仍要用實際延遲、配額、可靠度及供應商備援做採購決定。",
+      "投資者與供應鏈：要把 Oracle 的融資、OpenAI 客戶集中、Rubin 交付與電力建設放在同一張風險表，而不是只看新增 GW 數字。"
+    ],
+    "whatToWatch": "留意 Rubin 機架是否如期交付、園區通電與移交、OpenAI 實際使用率，以及 Oracle 之後披露的資本開支、負債與合約現金流。",
+    "take": "AIson 分析：Oracle 已回答『錢從哪裡來』，但市場下一題更難——4.5GW 何時變成可收費、可持續使用的算力，而不是停留在資產負債表上的承諾。",
+    "actionVerdict": "watch",
+    "actionReason": "融資與許可進度重要，但仍待實際硬件、通電與收入驗證。",
+    "aisonScore": 9.1,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 3,
+      "developer": 5
+    },
+    "tags": ["Oracle", "OpenAI", "Vera Rubin", "數據中心"]
+  },
+  {
+    "id": "2026-11-21-un-autonomous-weapons-talks-overtime",
+    "rank": 4,
+    "featured": false,
+    "title": "聯合國自主武器談判過期未果，具約束力規則再被拖慢",
+    "excerpt": "約百國支持更強規則，但草案放棄立即啟動具法律約束力安排，美俄等武器大國偏向國家指引。",
+    "category": "AI 安全與國際政策",
+    "date": "2026-11-21",
+    "readTime": "5 分鐘",
+    "sourceUrl": "https://www.reuters.com/world/americas/thorny-un-talks-regulating-killer-robots-drag-past-deadline-2026-11-20/",
+    "sourceLabel": "Reuters",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "Reuters 報道",
+        "url": "https://www.reuters.com/world/americas/thorny-un-talks-regulating-killer-robots-drag-past-deadline-2026-11-20/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "聯合國日內瓦自主武器談判原定 11 月 20 日結束，但因各國分歧延長至周六。Reuters 查閱的草案沒有立即啟動具法律約束力規則，只要求逐步發展其他措施；約百國支持更強約束，美國、俄羅斯與以色列等主要軍事國家則反對。談判仍在進行，草案不是最終協議。",
+    "summary": "元首層面開始談人類控制，但多邊制度仍卡在是否制定有法律約束力規則。",
+    "whatHappened": "128 個締約方在共識機制下討論 lethal autonomous weapons systems，五日會議因未能形成折衷而過期。現有草案傾向非約束性安排，正式結果仍待會議結束。",
+    "reportingContext": "Reuters 核實談判進度並查閱草案；但談判尚未完成，任何條文、支持國數量與後續程序仍可能改變。AI 輔助武器已在多個衝突中使用，不代表所有系統都完全自主。",
+    "deepDive": "國際規則最大的技術難題，是如何界定『有意義的人類控制』：人類是否了解目標資料、是否有時間覆核，以及能否在攻擊前真正中止。若規則只要求形式上有人按掣，便可能追不上愈來愈快的自動化目標鏈。",
+    "whyImportant": "沒有共同最低標準，各國與軍工供應商會以不同方式定義自主程度，增加誤判、責任真空與軍備競賽風險。",
+    "hkImpact": [
+      "科技及供應鏈企業：雙重用途感測器、模型、無人系統與雲端服務的終端用途審查會愈來愈重要，即使全球條約仍未落實。",
+      "開發者與研究機構：高風險系統應保存資料來源、決策紀錄、人工覆核及中止機制，不能等待國際規則先完成才處理。",
+      "一般讀者：本輪仍是談判草案，不等於聯合國已批准『殺手機械人』，亦不代表自主武器已被禁止。"
+    ],
+    "whatToWatch": "留意最終文本會否保留具約束力談判路徑、哪些國家提出保留，以及共識機制以外會否出現另行締約進程。",
+    "take": "AIson 分析：雙邊政治承諾可以快，多邊軍控卻被共識規則拖慢；真正風險是武器能力的更新速度遠高於規則速度。",
+    "actionVerdict": "watch",
+    "actionReason": "談判未結束，應追蹤最終文本與後續程序，不把草案當成已落實規則。",
+    "aisonScore": 8.9,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": ["聯合國", "自主武器", "軍事 AI", "AI 安全"]
+  },
+  {
+    "id": "2026-11-21-google-semantic-agent-governance-preview",
+    "rank": 5,
+    "featured": false,
+    "title": "Google 推 Agent 語義治理預覽：每次工具調用前先檢查意圖與公司規則",
+    "excerpt": "Gemini 平台的新政策層置於 Agent 外部，會在電郵、刪檔等動作執行前判斷有否偏離用戶要求。",
+    "category": "AI Agent 與企業安全",
+    "date": "2026-11-21",
+    "readTime": "5 分鐘",
+    "sourceUrl": "https://developers.googleblog.com/en/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/",
+    "sourceLabel": "Google Developers Blog",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Google 官方技術公告",
+        "url": "https://developers.googleblog.com/en/check-what-your-ai-agents-do-before-they-do-it-with-semantic-governance-policies/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "Google 在 Gemini platform 以 Preview 推出 Semantic governance policies。企業可用自然語言寫規則，系統透過 Agent Gateway 在每個工具調用真正執行前，同時檢查公司政策與用戶原始意圖；通過才放行，否則用拒絕訊息取代工具調用，並把判斷與理由寫入 Cloud Logging。",
+    "summary": "企業 Agent 的安全控制由權限名單走向逐項動作判斷，但 LLM 判官本身仍有機率性。",
+    "whatHappened": "新政策引擎會在 Agent 外部攔截工具調用，支援 Gemini API、Anthropic Messages API、OpenAI 相容端點及自架模型等路徑。內置意圖檢查預設啟用，企業亦可加入披露、付款、審批或人工覆核規則。",
+    "reportingContext": "功能目前是 Preview，Google 明確指出判斷由 LLM 作出，結果可能變動，建議先用 dry run 測試並配合其他控制。串流文字回應不在這個工具調用檢查範圍內。",
+    "deepDive": "傳統 IAM 只能回答 Agent 有沒有權用某工具，無法判斷某一次寄信、退款或刪檔是否符合情境。把政策放在 Agent 程式外，可降低 prompt injection 改寫系統規則的風險；但工具描述、對話內容與政策文字若含糊，仍會影響判斷。",
+    "whyImportant": "企業要讓 Agent 真正執行工作，最大的障礙往往不是模型能力，而是能否在每個高風險動作前套用可審計的商業規則。",
+    "hkImpact": [
+      "香港企業：金融、醫療、零售與專業服務可把發送、付款、退款及客戶資料處理規則放到工具調用前，但仍要由合規與 IT 共同驗證。",
+      "開發者：可先在 dry run 比較誤批與誤拒，並補好工具描述、日誌與人工升級流程，Preview 不宜直接成為唯一防線。",
+      "打工仔：Agent 違反公司規則時或更常停下來解釋與要求批准，流程較慢，但可減少未授權電郵、刪檔或對外披露。"
+    ],
+    "whatToWatch": "留意香港及亞洲區域供應、定價、Agent Gateway 依賴、Prompt Injection 基準結果，以及正式 GA 後的 SLA 和責任界線。",
+    "take": "AIson 分析：Agent 能否進企業，關鍵不只在『做得到』，而是每一個動作都能回答『點解獲准』；但用另一個 LLM 做守門員，仍要防守門員自己判錯。",
+    "actionVerdict": "try-now",
+    "actionReason": "適合在測試環境以 dry run 評估，正式執行前仍須保留 IAM、人工批准及其他防護。",
+    "aisonScore": 8.8,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 2,
+      "developer": 5
+    },
+    "tags": ["Google", "Gemini platform", "Agent Governance", "Prompt Injection"]
+  },
+  {
+    "id": "2026-11-21-amd-unsloth-npu-agent-apps",
+    "rank": 6,
+    "featured": false,
+    "title": "AMD、Unsloth 讓逾 100 款 Agent 工具用 NPU 在 PC 本機推理",
+    "excerpt": "支援 XDNA 2 的 Ryzen AI PC 可把模型請求交給 NPU，減少長時間 Agent 工作對 CPU、GPU 與雲端的依賴。",
+    "category": "本機 AI 與晶片",
+    "date": "2026-11-21",
+    "readTime": "5 分鐘",
+    "sourceUrl": "https://newsroom.amd.com/news/amd-unsloth-bring-npu-support-agentic-ai-applications/",
+    "sourceLabel": "AMD",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "AMD 官方公告",
+        "url": "https://newsroom.amd.com/news/amd-unsloth-bring-npu-support-agentic-ai-applications/"
+      }
+    ],
+    "verified": true,
+    "freshness": "48 小時內",
+    "quickTake": "AMD 與 Unsloth 11 月 19 日公布，Unsloth Desktop 首次支援 AMD XDNA 2 NPU，讓逾 100 款相容 Agent 應用和工作流在支援的 Ryzen AI PC 上做本機推理。連接採用 OpenAI 相容 API，示例包括 Open WebUI、Cline、LangChain 及 GitHub Copilot；實際可跑的模型、速度與記憶體限制仍視個別裝置。",
+    "summary": "PC NPU 由背景功能走向通用 Agent 推理端點，令本機私隱、離線能力與功耗成為新的部署選項。",
+    "whatHappened": "相容應用把模型請求送到 Unsloth Desktop API，再由 Lemonade 與 FastFlowLM 在 XDNA 2 NPU 上服務支援模型。NPU 負責持續、低功耗推理，CPU 與 GPU可留給編排及其他應用。",
+    "reportingContext": "『逾 100 款』指可透過 API 連接的相容應用與工作流，不等於每款工具所有功能、所有模型都完全在 NPU 執行。公告亦沒有提供統一效能、粵語質素或耗電比較。",
+    "deepDive": "本機 Agent 的價值是敏感資料毋須每次送上雲端，亦可減少持續待機成本。限制則包括模型大小、NPU 支援、裝置記憶體與更新維護；企業仍要知道資料是否真的全程留在本機，以及工具是否另有網絡調用。",
+    "whyImportant": "若 NPU 可承擔日常推理，AI PC 的價值會由偶爾加速功能轉成長時間運作的個人 Agent 基建，亦會改變雲端 API 支出。",
+    "hkImpact": [
+      "香港中小企：可用於內部文件分類、草稿和離線助手，但先核對模型授權、裝置規格及資料是否真的不離開電腦。",
+      "創作者：本機推理可減少上載未公開素材的需要，惟輸出質素與支援模型可能不及大型雲端服務。",
+      "開發者：OpenAI 相容端點降低接入成本，但仍要測試 NPU fallback、記憶體、功耗、粵語及多工具工作流的實際穩定性。"
+    ],
+    "whatToWatch": "留意支援的 Ryzen AI 型號與模型清單、香港裝置供應、獨立效能／功耗測試，以及工具是否可完整離線。",
+    "take": "AIson 分析：AI PC 真正有用的一刻，不是跑一次 demo，而是 Agent 可以成日開住、資料留在本機，又不搶走你正在用的 CPU 和 GPU。",
+    "actionVerdict": "try-now",
+    "actionReason": "已有可用整合，適合支援硬件用戶以非敏感流程實測，但毋須為未驗證效能立即換機。",
+    "aisonScore": 8.5,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 4,
+      "developer": 5
+    },
+    "tags": ["AMD", "Unsloth", "NPU", "本機 AI"]
+  },
+  {
+    "id": "2026-11-21-meta-uma-nitro-open-science",
+    "rank": 7,
+    "featured": false,
+    "title": "Meta 釋出 UMA Nitro，加速原子級模擬並擴大開放科學資料",
+    "excerpt": "Meta 同時擴大去識別腦部數據目標、推出更快原子模型及開放數學形式化資源，AI for Science 由模型走向共享工具。",
+    "category": "AI for Science",
+    "date": "2026-11-21",
+    "readTime": "5 分鐘",
+    "sourceUrl": "https://about.fb.com/news/2026/11/advancing-science-together-highlights-from-the-open-source-ai-for-science-summit/",
+    "sourceLabel": "Meta",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "Meta 官方公告",
+        "url": "https://about.fb.com/news/2026/11/advancing-science-together-highlights-from-the-open-source-ai-for-science-summit/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "Meta 11 月 20 日公布 Open Source AI for Science Summit 成果，包括釋出更快的原子通用模型 UMA Nitro、把 Digital Brain Project 的去識別腦部數據目標由 15,000 小時增至 25,000 小時，以及公開 ATLAS 數學資源。官方稱 ATLAS 已形式化 26 本開放教材及逾 45,000 個可由電腦檢查的定義與結果。",
+    "summary": "Meta 把開放 AI 模型、資料與可驗證科學工具連成生態，焦點由聊天功能轉向研究基建。",
+    "whatHappened": "UMA Nitro 已釋出，目標是加速分子、材料及酵素的原子級模擬；UMA Playground 亦讓學生視覺化化學反應。Meta 同時擴大腦部數據計劃，並展示以 Lean 驗證數學內容的 ATLAS 開放庫。",
+    "reportingContext": "以上成果來自 Meta 與合作機構的官方摘要；對藥物、腦科學及材料研究的效益仍需同行評審、獨立重現與實驗驗證。去識別資料亦不等於完全沒有再識別或治理風險。",
+    "deepDive": "AI for Science 的關鍵不是生成更多假設，而是把模型輸出連到可驗證模擬、形式化證明與實驗。開放模型和資料可降低研究門檻，但資料同意、偏差、計算成本與研究人員覆核仍是落地條件。",
+    "whyImportant": "當大型科技公司把模型、數據與科學工具開放，學術與產業團隊可更快重用成果，亦會加速藥物、材料、教育及數學研究競爭。",
+    "hkImpact": [
+      "香港大學與研發團隊：可評估 UMA Nitro、ATLAS 及開放資料作教學或研究，但需要保留獨立驗證與資料倫理審批。",
+      "生物科技與材料企業：原子級模擬或可縮短候選篩選時間，不能取代濕實驗、法規證據及專家審查。",
+      "教育工作者：UMA Playground 類工具可提升化學視覺化，但要清楚區分教學模擬、模型推斷與真實實驗結果。"
+    ],
+    "whatToWatch": "留意 UMA Nitro 的授權、基準與第三方重現，Digital Brain Project 的資料治理，以及 ATLAS 是否持續擴展並獲數學界採用。",
+    "take": "AIson 分析：AI for Science 最有價值的不是替科學家寫答案，而是把假設推到下一個可驗證步驟；今次開放資源的含金量，要看社群能否重現與累積。",
+    "actionVerdict": "watch",
+    "actionReason": "資源已發布但屬研究用途，應先看授權、基準與獨立驗證。",
+    "aisonScore": 8.2,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": ["Meta", "UMA Nitro", "AI for Science", "開放科學"]
+  },
+  {
+    "id": "2026-11-21-us-senate-ai-select-committee-proposal",
+    "rank": 8,
+    "featured": false,
+    "title": "美國參議員倡設 AI 專責委員會，數據中心與第三方評測成監管焦點",
+    "excerpt": "民主黨準備明年取得參議院多數後加快 AI 立法，但委員會架構、法案內容及跨黨支持仍未落實。",
+    "category": "AI 政策與監管",
+    "date": "2026-11-21",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://apnews.com/article/artificial-intelligence-congress-schumer-senate-047d0ab21237984701decd9ed5ced403",
+    "sourceLabel": "AP",
+    "sourceType": "可靠媒體",
+    "references": [
+      {
+        "label": "AP 報道",
+        "url": "https://apnews.com/article/artificial-intelligence-congress-schumer-senate-047d0ab21237984701decd9ed5ced403"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "科羅拉多州參議員 John Hickenlooper 倡議新一屆國會設立 AI 專責委員會，並要求民主黨領導層首日提出負責任監管計劃。AP 指民主黨正討論數據中心、AI 安全標準、監測研究、第三方評測及國家安全等方向，但部分現有委員會主席未承諾支持，特朗普亦持續主張少監管。",
+    "summary": "美國 AI 監管議程可能由分散聽證走向集中立法，但目前仍是政治提案而非新規則。",
+    "whatHappened": "Hickenlooper 向兩名民主黨參議院領袖候選人提出 select committee 構想，Van Hollen 表示支持，Schumer 團隊則稱正準備明年全面 AI 議程。數據中心、第三方評測、企業問責與安全成為優先討論事項。",
+    "reportingContext": "專責委員會尚未成立，民主黨內部亦未形成一致架構；任何法案仍須通過國會並面對總統否決權。不能把政策方向寫成已生效監管。",
+    "deepDive": "若 AI 議題集中到一個委員會，或可減少商務、司法、國安及能源監管各自為政；但也可能與現有委員會爭奪權限。第三方評測若寫入法律，模型供應商的測試、披露與採購文件會更標準化。",
+    "whyImportant": "美國規則會影響全球模型、雲端與數據中心供應商的產品設計，香港企業即使不在美國營運，也可能經供應商合約承受新要求。",
+    "hkImpact": [
+      "香港企業：採購美國模型及雲端服務時，可預先要求安全評測、事故通報及數據中心位置資料，以免日後監管變動才補文件。",
+      "開發者：第三方評測若成為標準，紅隊測試、模型卡、工具權限和事故紀錄將更可能影響企業採用。",
+      "投資者與商戶：數據中心成本與 AI 公司責任或成新一屆國會焦點，但目前未有確定稅項、禁令或合規期限。"
+    ],
+    "whatToWatch": "留意 12 月 1 日民主黨領導選舉、委員會是否成立、首批法案內容，以及共和黨與白宮會否支持部分安全或數據中心措施。",
+    "take": "AIson 分析：美國監管真正的轉折點，不是再開一次聽證，而是能否把第三方評測、數據中心成本與公司責任寫成同一套可執行規則。",
+    "actionVerdict": "watch",
+    "actionReason": "仍屬立法與組織提案，企業宜預備文件但不應把它當成現行法律。",
+    "aisonScore": 7.9,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": ["美國國會", "AI 監管", "第三方評測", "數據中心"]
+  },
+  {
+    "id": "2026-11-21-eu-ai-literacy-conclusions",
+    "rank": 9,
+    "featured": false,
+    "title": "歐盟理事會通過 AI 素養結論，要求教育與培訓全階段跟上技術變化",
+    "excerpt": "歐盟成員國把有效、批判及負責任使用 AI 列為全民能力，教師支援與終身學習成為政策方向。",
+    "category": "AI 教育與政策",
+    "date": "2026-11-21",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.consilium.europa.eu/en/meetings/eycs/2026/11/19/",
+    "sourceLabel": "歐盟理事會",
+    "sourceType": "官方文件",
+    "references": [
+      {
+        "label": "歐盟理事會會議結果",
+        "url": "https://www.consilium.europa.eu/en/meetings/eycs/2026/11/19/"
+      }
+    ],
+    "verified": true,
+    "freshness": "48 小時內",
+    "quickTake": "歐盟教育、青年、文化及體育理事會通過結論，要求公民在不同人生階段具備有效、批判及負責任使用 AI 的能力，並促請各級教育與培訓適應技術變化。結論同時強調支援教育工作者、終身學習、批判思考與人類能動性；這是成員國政策方向，不是即時對學校或企業生效的新法例。",
+    "summary": "AI 素養由個人興趣升級為公共教育政策，『懂得質疑與負責任使用』與操作技巧同樣重要。",
+    "whatHappened": "歐盟成員國在 11 月 19 日會議通過 AI 技能與能力結論，提出調整教育及培訓制度，並討論如何在數碼環境維持批判思考與人類自主判斷。",
+    "reportingContext": "理事會結論提供共同政策方向，具體課程、資助、教師培訓及評核方式仍由歐盟機構與成員國後續推進。它不是 AI Act 的新罰則或即時合規期限。",
+    "deepDive": "只教提示詞不足以構成 AI 素養；學生與員工還要識別資料偏差、查證來源、理解私隱與知道何時不用 AI。歐盟的方向可能推動學校、僱主及產品供應商把培訓和使用紀錄納入治理。",
+    "whyImportant": "當 AI 素養成為正式教育政策，企業的培訓、招聘與風險管理會逐步由『有用就學』變成基本職能要求。",
+    "hkImpact": [
+      "香港學校與培訓機構：可參考『有效、批判、負責任』三層框架，避免課程只教工具操作而欠缺查證、私隱與學術誠信。",
+      "企業與打工仔：面向歐洲客戶的團隊可預先建立角色化 AI 培訓及使用規則，為供應商和客戶審查留下證據。",
+      "內容創作者：AI 素養會提高受眾對來源、標示及人手責任的要求，作品流程應保留事實核對與素材授權紀錄。"
+    ],
+    "whatToWatch": "留意歐盟及成員國後續課程、教師支援、資助與評核工具，並觀察 AI 素養要求會否連到僱主或供應商責任。",
+    "take": "AIson 分析：AI 教育的下一階段不是人人都識寫 prompt，而是人人都知道模型何時不可信、資料不應交出去，以及最後由誰負責。",
+    "actionVerdict": "watch",
+    "actionReason": "屬政策方向而非即時法規；教育及企業可借鏡框架，等待具體落實措施。",
+    "aisonScore": 7.6,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 3,
+      "creator": 4,
+      "developer": 2
+    },
+    "tags": ["歐盟", "AI 素養", "教育", "終身學習"]
+  },
+  {
+    "id": "2026-11-21-mit-bounded-chaotic-ai-models",
+    "rank": 10,
+    "featured": false,
+    "title": "MIT 為混沌系統 AI 加入硬物理約束，長時間預測不再無限失控",
+    "excerpt": "新方法以能量耗散和投影層保證模型輸出保持有界，目標是提升天氣、氣候與湍流模擬可靠度。",
+    "category": "AI 研究與科學計算",
+    "date": "2026-11-21",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120",
+    "sourceLabel": "MIT News／PNAS",
+    "sourceType": "研究發表",
+    "references": [
+      {
+        "label": "MIT News 研究摘要",
+        "url": "https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "MIT 團隊提出一種為混沌動力系統建立硬約束的方法：模型同時學習類似能量的函數與可容納混沌行為的邊界，再以投影層強制邊界外的能量下降。研究人員稱這為機器學習混沌模型首次提供長時間輸出保持有界的形式保證，已在多種物理系統測試，程式碼和論文公開；但距離實際天氣系統仍需更大規模驗證。",
+    "summary": "科學 AI 由追求短期擬合，走向把不能違反的物理原則直接寫進模型結構。",
+    "whatHappened": "研究針對混沌模型的小誤差會隨時間累積，最終生成不可能數值的問題。新投影層在推理時亦強制能量耗散，不只在訓練期間用懲罰項鼓勵模型守規則。",
+    "reportingContext": "團隊在教科書級至高維物理系統測試，結果較一般方法穩定；研究人員仍計劃在更大型、真實的天氣資料上驗證，因此不能把它寫成已改善日常天氣預報。",
+    "deepDive": "混沌不等於任何結果都可能發生，真實系統仍受能量與物理邊界限制。把這些限制做成硬約束，可避免模型在未見資料上出現無限發散，同時保留複雜動態，對高風險科學模擬比單靠平均誤差更重要。",
+    "whyImportant": "天氣、氣候、航空與能源系統需要長時間可靠預測；形式保證可讓科學 AI 由『通常準』進一步接近『至少不會產生某類不可能結果』。",
+    "hkImpact": [
+      "香港研究與工程團隊：做氣象、海洋、樓宇能源或流體模擬時，可留意開源方法，但必須以本地資料和物理條件重驗。",
+      "企業決策者：形式保證只覆蓋有界性，不等於每次預測都準，不能因此取消傳統模型、專家覆核或安全邊界。",
+      "開發者與學生：這是把領域知識寫進模型結構的實例，適合學習高風險 AI 為何不能只靠 benchmark 平均分。"
+    ],
+    "whatToWatch": "留意在真實天氣與氣候模型的擴展結果、計算成本、不同神經網絡架構的兼容度，以及其他物理保證能否一併加入。",
+    "take": "AIson 分析：高風險 AI 的下一步不是再多幾個小數點，而是把『絕對不能發生』變成模型本身守得到的規則。",
+    "actionVerdict": "watch",
+    "actionReason": "研究方向重要且已開源，但仍待真實大型系統驗證，未到一般企業直接採用階段。",
+    "aisonScore": 7.4,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 2,
+      "creator": 1,
+      "developer": 4
+    },
+    "tags": ["MIT", "物理 AI", "混沌系統", "可信 AI"]
+  }
+]

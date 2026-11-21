@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-21",
+  "dailyOneLiner": "AI 今日同時進入三條更硬的現實軌道：軍事決策要保留人類控制、算力投資受地緣與融資左右，而企業 Agent 開始在每次實際動作前接受政策審查。",
+  "top3Ids": [
+    "2026-11-21-us-china-human-control-military-ai",
+    "2026-11-21-trump-overseas-ai-data-center-tax-threat",
+    "2026-11-21-oracle-openai-infrastructure-funded"
+  ],
+  "threeThemes": [
+    {
+      "title": "軍事 AI 的人類控制由口號走向外交議題",
+      "summary": "貝森特稱中美元首同意重大軍事 AI 行動必須有人類參與，同日聯合國自主武器談判卻因具約束力規則分歧延長。",
+      "watch": "中美共同文本、重大行動定義、事故通報，以及聯合國最終草案會否保留具約束力談判路徑。"
+    },
+    {
+      "title": "算力成為產業政策與融資考驗",
+      "summary": "特朗普威脅重稅海外數據中心；Oracle 則稱 OpenAI 的 4.5GW 額外基建資金已到位，Rubin 機架即將交付。",
+      "watch": "美國正式稅務文本、亞洲雲端區域影響、園區通電、Rubin 交付與 Oracle 合約現金流。"
+    },
+    {
+      "title": "Agent 由能力競賽走向治理與本機部署",
+      "summary": "Google 把公司規則放到每次工具調用之前，AMD 與 Unsloth 則讓逾 100 款相容工作流把模型推理移到 PC NPU。",
+      "watch": "Preview 的誤批誤拒、香港可用性、工具審計，以及本機模型的效能、私隱與離線邊界。"
+    }
+  ],
+  "biggestChange": "今日最大的改變，是 AI 的競爭單位由『模型回答得幾好』再向外擴一層：國家要決定機器可否動武、政府要決定算力可否外移，企業則要決定每一次 Agent 動作由哪套規則放行。",
+  "watchTomorrow": "優先留意中美會否發布軍事 AI 共同文本、聯合國自主武器談判最終結果、白宮海外數據中心稅務方案，以及 Oracle 的 Rubin 交付與 Google Agent 治理 Preview 的區域和價格細節。"
+}
