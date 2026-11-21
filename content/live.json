@@ -1,5 +1,29 @@
 [
   {
+    "id": "2026-11-21-ai-stocks-market-close-correction",
+    "title": "AI 股收市急挫：S&P 500 跌 3.7% 入調整區，Nasdaq 跌 5.3% 轉為全年負回報",
+    "summary": "美聯社在美股 11 月 20 日收市後報道，S&P 500 單日跌 3.7%，較 10 月 6 日歷史高位回落逾 10%，進入市場通常所稱的「調整區」；Nasdaq 跌 5.3%，年內回報轉負。半導體指數跌 10.7%，NVIDIA、AMD、Micron、Broadcom 分別跌 14%、13.3%、13.9%及 12.2%；Anthropic 跌 8.5%至 88.91 美元，但仍高於 83 美元招股價。這是正式收市數據，更新早前盤前／即市 LIVE，而非產品需求突然消失的證據；香港投資者應把估值重定價與實際訂單、現金流及 AI 基建回報分開判斷。",
+    "category": "AI 商業與資本市場",
+    "publishedAt": "2026-11-20T21:30:16Z",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/c10b797a17c2acf37924d834efebe135",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-21-nvidia-sec-accounting-probe",
+    "title": "Reuters：美國 SEC 正調查 NVIDIA 會計處理，具體範圍與時間仍未公開",
+    "summary": "Reuters 於 11 月 20 日 19:13 UTC 引述兩名獲簡報人士報道，美國證券交易委員會執法人員正審視 NVIDIA 的潛在會計問題；SEC 拒絕置評，NVIDIA 未有即時回應。報道指出，外界近期重新檢視 NVIDIA 去年改用客戶總部而非帳單地址呈報地區收入，以及晶片商協助客戶融資建數據中心的安排，但 Reuters 未能確定調查何時展開、具體查甚麼；調查本身不等於公司違規。對香港投資者與區內供應鏈而言，下一步要看正式文件、公司披露，以及收入地域與融資承擔會否需要修訂。",
+    "category": "AI 晶片與監管",
+    "publishedAt": "2026-11-20T19:13:43Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-20-nvidia-below-alphabet-market-cap",
     "title": "NVIDIA 市值跌至 Alphabet 之後，連跌七周創 2008 年以來最長紀錄",
     "summary": "Reuters 於 11 月 20 日 15:31 UTC 報道，截至發稿時 NVIDIA 股價跌約 3%，市值約 3.4 萬億美元，落後 Alphabet 約 3.44 萬億美元，成為美國市值第四大公司；股份同時勢將連跌第七周，為 2008 年以來最長周跌紀錄。這是即市估值快照，不是正式全日收市排名，也不代表 NVIDIA 產品需求或 Vera Rubin 出貨突然改變；但顯示投資者正把領導層變動、AI 基建回報及融資成本重新計價。香港投資者應把短線市值排名與晶片訂單、毛利及客戶資本開支分開判斷。",
@@ -93,7 +117,7 @@
     "sourceUrl": "https://www.businessinsider.com/anthropic-ipo-ant-stock-market-nasdaq-2026-11",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-fed-goolsbee-ai-inflation",
@@ -105,7 +129,7 @@
     "sourceUrl": "https://www.reuters.com/business/feds-goolsbee-says-ai-surge-could-strain-us-capacity-overheat-economy-2026-11-19/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-us-ai-chip-china-license-disclosure",
@@ -117,7 +141,7 @@
     "sourceUrl": "https://www.reuters.com/world/license-information-ai-chips-sent-china-released-by-us-house-committee-2026-11-19/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-us-lawmakers-doj-openai-copyright-probe",
@@ -129,7 +153,7 @@
     "sourceUrl": "https://www.reuters.com/legal/government/democratic-lawmakers-probe-doj-filing-openai-copyright-case-2026-11-19/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-alibaba-cloud-september-quarter",
@@ -141,7 +165,7 @@
     "sourceUrl": "https://home.alibabagroup.com/en-US/document-2060213191907999744",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-16-california-openai-cyberattack-lawsuit",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-11-11T12:17:16Z",
     "sourceLabel": "印尼國會聽證／Reuters",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/meta-tiktok-join-google-opposing-indonesias-copyright-law-revision-2026-11-11/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-11-ai-agent-tajik-government-document-theft",
-    "title": "研究員：哈薩克相關黑客用 AI Agent 竊取逾 2,000 份塔吉克政府文件",
-    "summary": "新加坡網安公司 CloudSek 表示，名為 Silent Lynx、被研究員指與哈薩克有關的黑客組織，利用開源自主 Agent 框架 Hermes 入侵塔吉克政府電子文件系統，竊取逾 2,000 份涉及國家安全的文件。CloudSek 因攻擊者誤把伺服器暴露在互聯網，取得指令與操作紀錄；資料顯示 Agent 由偵察、撰寫下載程式、整理到分拆檔案外傳均有參與。\n\n歸因來自 CloudSek 對語言、工作時段與網絡連線的分析，哈薩克及塔吉克官員未有回應，不能視為政府已確認。事件顯示 AI Agent 已由輔助寫惡意程式走向編排整段間諜入侵；香港機構要把 Agent 工具、外部內容、憑證及資料外傳行為納入同一套監控與隔離。",
-    "category": "AI 安全與網絡攻擊",
-    "publishedAt": "2026-11-11T11:07:00Z",
-    "sourceLabel": "CloudSek 研究／Reuters",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/kazakhstan-linked-hackers-used-ai-steal-tajik-government-documents-researchers-2026-11-11/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-11-nvidia-h200-blacklisted-chinese-university",
-    "title": "美國黑名單中國大學仍買到 NVIDIA H200，出口管制漏洞再受關注",
-    "summary": "Reuters 根據採購紀錄報道，與中國解放軍研究關係密切、列入美國實體清單的西北工業大學，上月經中國供應商購入兩枚 NVIDIA H200，成交價 874,700 元人民幣；校方今年亦透過多份合約租用載有 H200、A100 及 A800 的算力。H200 屬受出口許可限制的高階 AI 晶片，而實體清單機構一般面對拒批政策。\n\nReuters 檢視 26 份中國採購及企業紀錄，發現多間大學或研究機構經本地供應商購買受限晶片或租用相關算力，但未能確定晶片原始來源及部分伺服器所在地。事件顯示單靠邊境出口許可未必能堵截轉售與遙距算力，下一步要看美國會否加推晶片追蹤、雲端 KYC 或更嚴格的最終用戶核查。",
-    "category": "AI 晶片與政策",
-    "publishedAt": "2026-11-11T05:13:22Z",
-    "sourceLabel": "Reuters／公開採購紀錄",
-    "sourceUrl": "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/",
     "level": "breaking",
     "verified": true,
     "active": false
