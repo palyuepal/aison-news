@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-21-bessent-older-nvidia-chip-curbs",
+    "title": "貝森特稱舊款 NVIDIA 對華晶片毋須再收緊，遠端高階算力限制已足夠",
+    "summary": "美聯社於 11 月 20 日 22:36 UTC 報道，美國財長 Scott Bessent 表示，針對向中國出售較舊款 NVIDIA 晶片，目前毋須再加限制，因為華府已對中國經第三國數據中心遠端使用先進晶片實施管制。他又稱現有措施已屬適當限制。眾議院一份報告顯示，截至 5 月 11 日，商務部工業與安全局已批准 21 宗許可申請、涉及 879,868 枚 NVIDIA 及 AMD 晶片；獲批不等於已出貨，NVIDIA 亦稱即使許可已批，仍停止 H200 對華付運。這是政策取態，不是新規例或恢復出貨決定；香港晶片、雲端及數據中心企業應繼續按實際出口規則、許可與遠端存取限制判斷合規。",
+    "category": "AI 晶片與出口管制",
+    "publishedAt": "2026-11-20T22:36:47Z",
+    "sourceLabel": "Associated Press",
+    "sourceUrl": "https://apnews.com/article/nvidia-chip-export-restrictions-china-bessent-lutnick-88142455395552afe74caec3399a648b",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-21-ai-stocks-market-close-correction",
     "title": "AI 股收市急挫：S&P 500 跌 3.7% 入調整區，Nasdaq 跌 5.3% 轉為全年負回報",
     "summary": "美聯社在美股 11 月 20 日收市後報道，S&P 500 單日跌 3.7%，較 10 月 6 日歷史高位回落逾 10%，進入市場通常所稱的「調整區」；Nasdaq 跌 5.3%，年內回報轉負。半導體指數跌 10.7%，NVIDIA、AMD、Micron、Broadcom 分別跌 14%、13.3%、13.9%及 12.2%；Anthropic 跌 8.5%至 88.91 美元，但仍高於 83 美元招股價。這是正式收市數據，更新早前盤前／即市 LIVE，而非產品需求突然消失的證據；香港投資者應把估值重定價與實際訂單、現金流及 AI 基建回報分開判斷。",
@@ -19,6 +31,30 @@
     "publishedAt": "2026-11-20T19:13:43Z",
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-21-trump-overseas-ai-data-center-tax-live",
+    "title": "特朗普稱美企海外建 AI 數據中心將面對「巨額稅項」，細節仍未交代",
+    "summary": "Reuters 於 11 月 20 日 18:08 UTC 報道，美國總統特朗普表示，華府將懲罰在海外興建數據中心的美國公司，並會徵收「巨額稅項」。他未交代法律依據、稅率、涵蓋企業或實施時間；美聯社亦引述他承認尚未把計劃告知相關官員。這是政策威脅，不是已生效稅制。香港及亞洲數據中心、雲端客戶與基建投資者應留意，美資雲端商若因潛在稅務或政策風險調整海外選址，可能影響區內容量、價格與供應安排。",
+    "category": "AI 基建與政策",
+    "publishedAt": "2026-11-20T18:08:18Z",
+    "sourceLabel": "Reuters／Associated Press",
+    "sourceUrl": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-21-us-china-military-ai-human-control-live",
+    "title": "貝森特稱中美元首同意重大軍事 AI 決策必須有人類參與",
+    "summary": "Reuters 於 11 月 20 日 16:48 UTC 報道，美國財長 Scott Bessent 表示，特朗普與中國國家主席習近平已同意，在重大的軍事 AI 決策中「必須始終有人類參與」，不能由 AI 自主執行重大軍事行動。現時未見中美共同文本、中方獨立確認、具體定義、核查或落實機制，因此應視為美方官員對領袖共識的陳述，而非已簽署條約。對香港雙用途技術、雲端及 AI 開發團隊而言，後續若形成規範，可能提高人類審批、可追溯紀錄與最終用途審查要求。",
+    "category": "AI 安全與地緣政治",
+    "publishedAt": "2026-11-20T16:48:39Z",
+    "sourceLabel": "Reuters／美國財長 Scott Bessent",
+    "sourceUrl": "https://www.reuters.com/world/china/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-2026-11-20/",
     "level": "breaking",
     "verified": true,
     "active": true
@@ -680,42 +716,6 @@
     "sourceLabel": "United Airlines 官方公告／Reuters",
     "sourceUrl": "https://united.mediaroom.com/news-releases?item=125496",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-11-google-gemini-decisions-api",
-    "title": "Google 推 Gemini Decisions API：一次處理最多 1,000 個多模態判斷",
-    "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驅動，專門處理真假、選項及評分等封閉式判斷。單一請求可輸入最多 256K tokens 的文字、圖片、音訊、影片或 PDF，並一次回答最多 1,000 條獨立問題，適合工具選擇、政策檢查、模型路由及內容評分。\n\nGoogle 稱端到端延遲約 150–250 毫秒，收費為每百萬輸入 token 0.10 美元，毋須支付輸出 token；API 已經可經 Gemini API／Google AI Studio 使用。以上速度與成本屬官方資料，香港開發者仍應用真實工作負載測試準確度、校準及誤判成本，尤其不應把概率分數直接當成合規或安全決定。",
-    "category": "AI 模型與 API",
-    "publishedAt": "2026-11-11T18:00:00Z",
-    "sourceLabel": "Google DeepMind 官方公告",
-    "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-11-fractile-series-c-ai-inference-chip",
-    "title": "英國 AI 晶片初創 Fractile 融資 7.2 億美元，估值升至 70 億美元",
-    "summary": "英國倫敦及布里斯托 AI 晶片初創 Fractile 完成 7.2 億美元 C 輪融資，據參與交易人士稱公司估值達 70 億美元。融資由 Thrive Capital、Founders Fund、Lightspeed 及 Redpoint 領投，Google 旗下 CapitalG、BlackRock、英國 Sovereign AI fund 與 British Business Bank 等亦有參與。\n\nFractile 主攻 AI 推理晶片，聲稱可提高速度並降低能源與成本，計劃明年推出首款商用晶片；實際效能仍待獨立測試與量產驗證。交易顯示投資者仍願意押注 NVIDIA 以外的推理硬件，但香港企業及投資者應把融資估值、產品落地與可持續競爭力分開判斷。",
-    "category": "AI 晶片與融資",
-    "publishedAt": "2026-11-11T14:53:00Z",
-    "sourceLabel": "Reuters／Fractile",
-    "sourceUrl": "https://www.reuters.com/legal/transactional/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-funding-round-2026-11-11/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-11-indonesia-ai-copyright-platform-opposition",
-    "title": "Meta、TikTok 加入 Google 反對印尼 AI 版權法修訂",
-    "summary": "Meta、TikTok 與 Google 在印尼國會聽證會反對版權法修訂草案。草案擬要求數碼平台就展示新聞內容向出版商付費，並為 AI 設立規則；若通過，印尼或成為東南亞首個把 AI 納入版權法的國家。\n\nGoogle 與 Meta 爭議焦點包括連結新聞是否等同重製內容、付費要求會否減少出版商流量；TikTok 則要求純輔助式 AI 使用不應承受完整披露義務，並保留安全港保障。法案仍未通過，條文亦可能修改；香港內容平台、媒體及 AI 開發者應留意它會否成為區內訓練資料、生成內容標示與平台責任的新參考框架。",
-    "category": "AI 政策與版權",
-    "publishedAt": "2026-11-11T12:17:16Z",
-    "sourceLabel": "印尼國會聽證／Reuters",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/meta-tiktok-join-google-opposing-indonesias-copyright-law-revision-2026-11-11/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
