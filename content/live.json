@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-21-un-autonomous-weapons-talks-2028-followup",
+    "title": "聯合國同意兩年內繼續制定自主武器規則，具法律約束力仍未有共識",
+    "summary": "Reuters 於 11 月 21 日 05:36 UTC 報道，聯合國《特定常規武器公約》成員國經通宵談判後，同意在未來兩年繼續制定規管自主武器的新規則。約 100 個國家支持盡快建立具法律約束力的制度，但美國、俄羅斯及以色列等主要軍事國家反對，最終協議沒有確定未來措施是否具法律效力。這是 11 月 20 日談判延長後的正式結果，但不等於國際禁令已經成立。對香港雙用途 AI、無人系統及相關研究團隊而言，下一步要留意人類監督、目標識別、責任追蹤與出口合規會否形成具體國際標準。",
+    "category": "AI 政策與自主武器",
+    "publishedAt": "2026-11-21T05:36:06Z",
+    "sourceLabel": "Reuters／聯合國《特定常規武器公約》",
+    "sourceUrl": "https://www.reuters.com/world/states-agree-to-un-talks-aiming-regulate-killer-robots-by-2028-2026-11-21/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-21-bessent-older-nvidia-chip-curbs",
     "title": "貝森特稱舊款 NVIDIA 對華晶片毋須再收緊，遠端高階算力限制已足夠",
     "summary": "美聯社於 11 月 20 日 22:36 UTC 報道，美國財長 Scott Bessent 表示，針對向中國出售較舊款 NVIDIA 晶片，目前毋須再加限制，因為華府已對中國經第三國數據中心遠端使用先進晶片實施管制。他又稱現有措施已屬適當限制。眾議院一份報告顯示，截至 5 月 11 日，商務部工業與安全局已批准 21 宗許可申請、涉及 879,868 枚 NVIDIA 及 AMD 晶片；獲批不等於已出貨，NVIDIA 亦稱即使許可已批，仍停止 H200 對華付運。這是政策取態，不是新規例或恢復出貨決定；香港晶片、雲端及數據中心企業應繼續按實際出口規則、許可與遠端存取限制判斷合規。",
@@ -7,6 +19,18 @@
     "publishedAt": "2026-11-20T22:36:47Z",
     "sourceLabel": "Associated Press",
     "sourceUrl": "https://apnews.com/article/nvidia-chip-export-restrictions-china-bessent-lutnick-88142455395552afe74caec3399a648b",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-21-oracle-openai-infrastructure-funded-live",
+    "title": "Oracle 稱 OpenAI 基建合約資金已到位，Vera Rubin 機架數周內交付",
+    "summary": "Reuters 於 11 月 20 日 22:11 UTC 報道，Oracle 表示與 OpenAI 的基建合約已在本月最後一輪集資後獲得完整資金，早前投資者關注的融資缺口暫獲公司回應。Oracle 與 OpenAI 計劃在美國增加 4.5 吉瓦數據中心容量；公司稱 Abilene 園區接近完成，Shackelford County 的下一個吉瓦級園區已取得許可，NVIDIA Vera Rubin 機架預計數周內交付。以上屬 Oracle 公布的進度，並不等於所有容量已經上線或 OpenAI 需求風險消失；香港雲端、基建及供應鏈企業應留意實際交付、用電、資本成本與客戶集中度。",
+    "category": "AI 基建與融資",
+    "publishedAt": "2026-11-20T22:11:13Z",
+    "sourceLabel": "Reuters／Oracle",
+    "sourceUrl": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/",
     "level": "update",
     "verified": true,
     "active": true
@@ -692,30 +716,6 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-11-google-gemini-apple-carplay",
-    "title": "Gemini 正式登陸 Apple CarPlay，全球 iOS 用戶可免提處理電郵與行程",
-    "summary": "Google 宣布把 Gemini app 帶到 Apple CarPlay，並由 11 月 11 日起向全球所有使用支援 Gemini Live 語言的 iOS 用戶陸續推出。駕駛者可免提與 Gemini Live 對話、查日程、整理未讀電郵、準備會議或腦暴；CarPlay 對話會同步回 iPhone。\\n\\n用戶需更新 Gemini iPhone app、開啟咪高峰權限，並先在手機使用過 Gemini Live。Google 稱介面以減少駕駛分心為設計目標，但生成內容仍可能出錯；香港司機應只在安全情況下使用，重要電郵、路線與行程資料仍要自行核對。",
-    "category": "AI 助手與汽車",
-    "publishedAt": "2026-11-11T19:50:00Z",
-    "sourceLabel": "Google 官方公告／MacRumors",
-    "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-11-united-restricts-third-party-ai-agents",
-    "title": "United 限制第三方 AI Agent 代客訂票，安全與航空合規成新門檻",
-    "summary": "United Airlines 宣布限制未獲授權的第三方個人 AI Agent 存取其數碼平台，措施涵蓋 United 自家渠道，以及旅行社和票務聚合平台。公司指，共享帳戶憑證可能暴露敏感資料，Agent 亦可能造成非預期購買、帳戶變更或誤用 MileagePlus 里數。\n\nUnited 亦指出，航班登機等流程涉及 FAA／美國運輸部規定，例如旅客須親自確認行李沒有禁運物品，因此部分步驟不能完全交由自動化工具。公司尚未交代受影響 Agent 名單、技術執行細節或全面生效時間；對香港旅客而言，AI 仍可協助比較行程，但涉及付款、里數及登機確認時應預期需要本人完成。",
-    "category": "AI Agent 與旅遊",
-    "publishedAt": "2026-11-11T18:50:00Z",
-    "sourceLabel": "United Airlines 官方公告／Reuters",
-    "sourceUrl": "https://united.mediaroom.com/news-releases?item=125496",
-    "level": "update",
     "verified": true,
     "active": false
   }
