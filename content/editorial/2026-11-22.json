@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-22",
+  "dailyOneLiner": "AI 今日最實際的轉折，是 Agent 已能把網攻試錯壓縮到分鐘級，治理卻仍在兩年談判；企業同時把模型搬進協作空間、瀏覽器與代管 GPU，工作流程與防線都要重畫。",
+  "top3Ids": [
+    "2026-11-22-aws-cairn-ai-agent-zero-day",
+    "2026-11-22-un-autonomous-weapons-two-year-talks",
+    "2026-11-22-eu-commission-ai-assisted-cyberattack"
+  ],
+  "threeThemes": [
+    {
+      "title": "自主 Agent 由助手變成攻防速度戰",
+      "summary": "Amazon 披露 Cairn Agent 可在約 11 分鐘找出零日漏洞；歐盟委員會亦確認 AI 輔助網攻曾令多個內部工具離線。",
+      "watch": "漏洞完整公告、更多受害範圍、AI 攻擊工具濫用，以及企業是否把高信心偵測與自動反應真正接起來。"
+    },
+    {
+      "title": "AI 治理追不上軍事與算力現實",
+      "summary": "聯合國只同意再談兩年，未承諾具法律約束力；美國遠端算力規則則已令中國科技公司評估海外數據中心布局。",
+      "watch": "自主武器的人類控制與責任條款、遠端算力許可執法，以及香港與亞洲機房的客戶盡職審查。"
+    },
+    {
+      "title": "模型能力落入持續工作與本機部署",
+      "summary": "ChatGPT Space 擴至 Plus，Microsoft 把開放模型 serving 及 Edge 本機小模型產品化；科研則用新基準量度藥物化學推理。",
+      "watch": "香港 rollout、地域與資料控制、代管 GPU 真實成本、瀏覽器標準化，以及科研 benchmark 能否轉化為前瞻實驗成果。"
+    }
+  ],
+  "biggestChange": "今日最大的改變，是 AI 風險和價值都由『模型答了甚麼』移到『模型可以連續做甚麼』：攻擊 Agent 可長時間自行試錯，協作 Agent 可持續更新工作成果，企業防線與責任因此必須由單次覆核升級為全流程控制。",
+  "watchTomorrow": "優先留意 Cairn 零日漏洞與受害範圍的後續披露、歐盟網攻調查、聯合國自主武器具體工作文件，以及 ChatGPT Space、Foundry Managed Compute 和 Edge Aion 在香港或亞洲的實際可用性與限制。"
+}
