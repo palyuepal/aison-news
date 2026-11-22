@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-21-lean-mathlib-riemann-proof-verified-live",
+    "title": "Lean／Mathlib 社群完成核驗 Claude 輔助黎曼猜想形式化證明，Clay 仍列「未解」",
+    "summary": "Lean 與 Mathlib 社群於 11 月 21 日 13:55 UTC 發表聯合聲明，表示已核對 Levent Alpöge 與 Claude 合作產生、以 Lean 編寫的 1,700 萬行形式化證明，並確認程式編譯、所證命題與 Mathlib 的黎曼猜想定義一致，原始證明亦通過 Lean 官方核心及多個獨立檢查器。MIT 等團隊公開了可重現核驗紀錄，令 11 月 20 日仍屬待驗證的主張出現實質新進展。不過，Clay Mathematics Institute 目前仍把黎曼猜想列為「未解」，人類可讀的完整論證與傳統數學界審閱亦未完成，因此不應稱為 Clay 已正式認可或百萬美元獎金已批出。對香港科研、金融量化及 AI 開發團隊而言，今次事件顯示 AI 生成的大型形式化證明可透過可重現建置與獨立核心交叉核驗，但仍需把機器驗證、數學理解與正式學術認可分開。",
+    "category": "AI 科學與形式化驗證",
+    "publishedAt": "2026-11-21T13:55:00Z",
+    "sourceLabel": "Lean／Mathlib communities",
+    "sourceUrl": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-22-korea-ulsan-sk-aws-ai-data-center-live",
     "title": "南韓總統視察 SK／AWS 蔚山 AI 數據中心，首批設施 2027 年啟用",
     "summary": "Reuters 於 11 月 21 日 05:34 UTC 報道，南韓總統李在明視察 SK Group 與 AWS 在蔚山興建的 AI 數據中心，強調全球 AI 基建競爭重視建設速度。南韓總統府其後公布，工地進度約 71%，項目預計 2027 年底開始運作；科學技術情報通信部早前規劃先以 41MW 局部啟用，再於 2029 年達到 103MW。Reuters 指整體投資估算約 7 萬億韓圜，長遠另有接近 900MW 的擴建構想，但今次視察沒有公布新增投資額或首批客戶。對香港數據中心、雲端客戶與工程人才而言，這反映亞洲競爭正由宣布投資轉向能否準時通電、交付機架、取得 GPU 與培訓電力及冷卻人才。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters（NVIDIA 官方公告交叉核實）",
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-12-enterprises-open-weight-ai-costs",
-    "title": "近六成大型企業擬增用開放權重模型，AI 支出平均超預算 24%",
-    "summary": "Reuters 引述 Capgemini 對 10 個國家、500 名大型企業高層的調查：59% 受訪者表示過去一年 AI 支出明顯超出預期或預算，平均超支 24%；同樣有 59% 計劃未來一年增加使用較便宜的開放權重模型。受訪企業年收入均超過 10 億美元，結果反映大型企業正由單純追求最強模型，轉向控制整體 AI 成本。\\n\\nCapgemini 指開放權重模型 token 平均比封閉模型便宜 87%；今年 9 月它們佔 OpenRouter 流量 72%，但只佔支出 27%。不過，半數受訪者仍會在複雜任務保留封閉模型，調查亦不代表所有企業或實際工作負載都能取得同等節省。對香港企業而言，下一步應按任務比較準確度、基建、私隱及維運成本，而不是只比較 API 單價。",
-    "category": "AI 模型與企業成本",
-    "publishedAt": "2026-11-12T09:01:56Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/most-large-firms-plan-higher-open-weight-ai-use-cap-bills-study-shows-2026-11-12/",
-    "level": "update",
     "verified": true,
     "active": false
   }
