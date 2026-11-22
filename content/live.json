@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-22-korea-ulsan-sk-aws-ai-data-center-live",
+    "title": "南韓總統視察 SK／AWS 蔚山 AI 數據中心，首批設施 2027 年啟用",
+    "summary": "Reuters 於 11 月 21 日 05:34 UTC 報道，南韓總統李在明視察 SK Group 與 AWS 在蔚山興建的 AI 數據中心，強調全球 AI 基建競爭重視建設速度。南韓總統府其後公布，工地進度約 71%，項目預計 2027 年底開始運作；科學技術情報通信部早前規劃先以 41MW 局部啟用，再於 2029 年達到 103MW。Reuters 指整體投資估算約 7 萬億韓圜，長遠另有接近 900MW 的擴建構想，但今次視察沒有公布新增投資額或首批客戶。對香港數據中心、雲端客戶與工程人才而言，這反映亞洲競爭正由宣布投資轉向能否準時通電、交付機架、取得 GPU 與培訓電力及冷卻人才。",
+    "category": "AI 基建與亞洲算力",
+    "publishedAt": "2026-11-21T05:34:34Z",
+    "sourceLabel": "Reuters／南韓總統府",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-21-un-autonomous-weapons-talks-2028-followup",
     "title": "聯合國同意兩年內繼續制定自主武器規則，具法律約束力仍未有共識",
     "summary": "Reuters 於 11 月 21 日 05:36 UTC 報道，聯合國《特定常規武器公約》成員國經通宵談判後，同意在未來兩年繼續制定規管自主武器的新規則。約 100 個國家支持盡快建立具法律約束力的制度，但美國、俄羅斯及以色列等主要軍事國家反對，最終協議沒有確定未來措施是否具法律效力。這是 11 月 20 日談判延長後的正式結果，但不等於國際禁令已經成立。對香港雙用途 AI、無人系統及相關研究團隊而言，下一步要留意人類監督、目標識別、責任追蹤與出口合規會否形成具體國際標準。",
@@ -21,7 +33,7 @@
     "sourceUrl": "https://apnews.com/article/nvidia-chip-export-restrictions-china-bessent-lutnick-88142455395552afe74caec3399a648b",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-21-oracle-openai-infrastructure-funded-live",
@@ -33,7 +45,7 @@
     "sourceUrl": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-21-ai-stocks-market-close-correction",
@@ -45,7 +57,7 @@
     "sourceUrl": "https://apnews.com/article/c10b797a17c2acf37924d834efebe135",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-21-nvidia-sec-accounting-probe",
@@ -57,7 +69,7 @@
     "sourceUrl": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-21-meta-uma-nitro-open-science",
@@ -69,7 +81,7 @@
     "sourceUrl": "https://about.fb.com/news/2026/11/advancing-science-together-highlights-from-the-open-source-ai-for-science-summit/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-21-trump-overseas-ai-data-center-tax-live",
@@ -81,7 +93,7 @@
     "sourceUrl": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-21-us-china-military-ai-human-control-live",
@@ -93,7 +105,7 @@
     "sourceUrl": "https://www.reuters.com/world/china/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-2026-11-20/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-nvidia-below-alphabet-market-cap",
@@ -105,7 +117,7 @@
     "sourceUrl": "https://www.reuters.com/business/retail-consumer/nvidias-share-slide-knocks-it-below-alphabet-valuation-2026-11-20/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-anthropic-ipo-greenshoe-proceeds",
@@ -117,7 +129,7 @@
     "sourceUrl": "https://www.reuters.com/business/finance/anthropic-ipo-haul-rises-935-billion-after-underwriters-exercise-greenshoe-2026-11-20/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-anthropic-retreat-ai-market-selloff",
@@ -129,7 +141,7 @@
     "sourceUrl": "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-nvidia-megaspeed-congress-probe",
@@ -141,7 +153,7 @@
     "sourceUrl": "https://www.reuters.com/business/finance/democrats-open-probe-into-nvidia-influence-us-megaspeed-investigation-2026-11-20/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-ecb-lagarde-ai-cyber-finance-risk",
@@ -153,7 +165,7 @@
     "sourceUrl": "https://www.reuters.com/legal/government/ecbs-lagarde-cyber-threat-boosted-by-ai-is-my-top-worry-2026-11-20/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-signal-blocks-os-ai-agent-screen-capture",
@@ -165,7 +177,7 @@
     "sourceUrl": "https://signal.org/blog/protecting-your-privacy/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-openai-gpt-live-1-1-api",
@@ -177,7 +189,7 @@
     "sourceUrl": "https://community.openai.com/t/gpt-live-1-1-has-arrived-in-the-api/1418537",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-20-anthropic-ipo-first-day-close",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/business/most-large-firms-plan-higher-open-weight-ai-use-cap-bills-study-shows-2026-11-12/",
     "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-12-chinese-ai-firms-overseas-nvidia-capacity",
-    "title": "中國 AI 公司急租海外 NVIDIA 算力，憂美國收緊雲端晶片管制",
-    "summary": "Reuters 引述三名知情人士報道，中國 AI 公司正嘗試預留中國境外、由 NVIDIA 晶片驅動的數據中心算力。一間大型中國雲端供應商曾內部討論鎖定海外容量，部分較小型 AI 實驗室亦接觸東南亞算力營運商；涉事公司未被點名，NVIDIA 及美國商務部亦未有即時回應。\\n\\n企業憂慮黃仁勳相關風波會推高華府收緊遙距取用先進晶片的政治壓力；美國眾議院已通過 Remote Access Security Act，法案仍待參議院處理。Reuters 未能獨立核實相關間諜指控，中國亦已否認；但預留海外算力及灰市囤貨反映，出口管制風險正由實體晶片延伸至跨境雲端容量，香港與東南亞數據中心的客戶審查壓力可能上升。",
-    "category": "AI 晶片與政策",
-    "publishedAt": "2026-11-12T05:31:00Z",
-    "sourceLabel": "Reuters 獨家報道",
-    "sourceUrl": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
