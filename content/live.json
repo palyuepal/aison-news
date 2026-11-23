@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-23-openai-perplexity-common-limits-live",
+    "title": "OpenAI 首席科學家倡以「困惑度」設共同能力紅線，監測未達標前不再跨越",
+    "summary": "OpenAI 首席科學家 Jakub Pachocki 於 11 月 22 日發表研究文章，首次公開部分內部預訓練困惑度數據，倡議主要模型開發商以困惑度或交叉熵損失等可比較指標設定共同能力上限；在理解及監測 AI 行為的技術未達到明確里程碑前，各公司應承諾不跨越上限。Reuters 於 11 月 22 日 23:09 UTC 報道，OpenAI CEO Sam Altman 已公開支持共同限制。這是業界安全倡議，不是已生效的監管規例，亦未見其他主要模型公司承諾採用；不同訓練資料及評估集的可比性仍待解決。對香港企業與開發者而言，採購前沿模型時應保留版本鎖定、回歸測試及回退流程，並要求供應商交代能力躍升、監測與安全放行標準。",
+    "category": "AI 安全與前沿模型",
+    "publishedAt": "2026-11-22T23:09:53Z",
+    "sourceLabel": "OpenAI／Reuters",
+    "sourceUrl": "https://www.reuters.com/business/openai-scientist-proposes-industry-ai-limits-tied-model-intelligence-metric-2026-11-22/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-23-us-nvidia-china-chip-compliance-answers-followup",
     "title": "美國政府稱 Nvidia 中國晶片合規答覆仍未到，正追查責任層級",
     "summary": "Reuters 於 11 月 22 日 17:48 UTC 報道，美國財長 Scott Bessent 表示，政府已與 Nvidia 臨時管理層、首席董事及律師聯絡，但仍未取得所需答案，並會查明中國晶片銷售合規問題由公司哪一層負責。CBS《Face the Nation》訪談紀錄亦確認，相關答案須交予美國政府，Nvidia 內部委員會正進行調查。這是既有出口管制爭議的實質監管進展，但並非 Nvidia 已被裁定違規，亦未公布新禁令、罰款或完成調查。對香港及區內雲端、數據中心、晶片轉售與供應鏈企業而言，客戶身分、最終用途、第三地轉運及遠端算力存取紀錄會繼續面對更嚴格審查；下一步要看 Nvidia 正式答覆、政府調查結果及任何新增實施細則。",
@@ -8,6 +20,18 @@
     "sourceLabel": "Reuters／CBS News",
     "sourceUrl": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
     "level": "followup",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-23-germany-ai-targeting-lithuania-live",
+    "title": "德軍首次在立陶宛實測 AI 目標分析與自殺式無人機",
+    "summary": "Reuters 於 11 月 22 日 14:47 UTC 報道，德國陸軍在立陶宛 Freedom Shield 演習中首次戰術測試 Helsing 及 Stark 製造的滯空彈藥，並在數日前試用 Helsing Clarity，把衛星、無人機與其他感測器資料快速分析後向指揮官提出行動建議。演習使用惰性彈頭；報道只證實系統建議行動，未證實 AI 可自行授權致命攻擊，測試亦不等於全面部署。這顯示歐洲軍事 AI 已由單一無人機走向感測、分析、指揮與武器整合。對香港雙用途 AI、航拍、感測器及研究團隊而言，需留意人類監督、用途限制、責任追蹤與出口合規。",
+    "category": "軍事 AI 與自主系統",
+    "publishedAt": "2026-11-22T14:47:16Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/business/aerospace-defense/german-army-starts-testing-kamikaze-drones-ai-targeting-tool-lithuania-2026-11-22/",
+    "level": "update",
     "verified": true,
     "active": true
   },
@@ -21,19 +45,7 @@
     "sourceUrl": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
     "level": "followup",
     "verified": true,
-    "active": true
-  },
-  {
-    "id": "2026-11-22-korea-ulsan-sk-aws-ai-data-center-live",
-    "title": "南韓總統視察 SK／AWS 蔚山 AI 數據中心，首批設施 2027 年啟用",
-    "summary": "Reuters 於 11 月 21 日 05:34 UTC 報道，南韓總統李在明視察 SK Group 與 AWS 在蔚山興建的 AI 數據中心，強調全球 AI 基建競爭重視建設速度。南韓總統府其後公布，工地進度約 71%，項目預計 2027 年底開始運作；科學技術情報通信部早前規劃先以 41MW 局部啟用，再於 2029 年達到 103MW。Reuters 指整體投資估算約 7 萬億韓圜，長遠另有接近 900MW 的擴建構想，但今次視察沒有公布新增投資額或首批客戶。對香港數據中心、雲端客戶與工程人才而言，這反映亞洲競爭正由宣布投資轉向能否準時通電、交付機架、取得 GPU 與培訓電力及冷卻人才。",
-    "category": "AI 基建與亞洲算力",
-    "publishedAt": "2026-11-21T05:34:34Z",
-    "sourceLabel": "Reuters／南韓總統府",
-    "sourceUrl": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/",
-    "level": "update",
-    "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-21-un-autonomous-weapons-talks-2028-followup",
@@ -45,7 +57,19 @@
     "sourceUrl": "https://www.reuters.com/world/states-agree-to-un-talks-aiming-regulate-killer-robots-by-2028-2026-11-21/",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
+  },
+  {
+    "id": "2026-11-22-korea-ulsan-sk-aws-ai-data-center-live",
+    "title": "南韓總統視察 SK／AWS 蔚山 AI 數據中心，首批設施 2027 年啟用",
+    "summary": "Reuters 於 11 月 21 日 05:34 UTC 報道，南韓總統李在明視察 SK Group 與 AWS 在蔚山興建的 AI 數據中心，強調全球 AI 基建競爭重視建設速度。南韓總統府其後公布，工地進度約 71%，項目預計 2027 年底開始運作；科學技術情報通信部早前規劃先以 41MW 局部啟用，再於 2029 年達到 103MW。Reuters 指整體投資估算約 7 萬億韓圜，長遠另有接近 900MW 的擴建構想，但今次視察沒有公布新增投資額或首批客戶。對香港數據中心、雲端客戶與工程人才而言，這反映亞洲競爭正由宣布投資轉向能否準時通電、交付機架、取得 GPU 與培訓電力及冷卻人才。",
+    "category": "AI 基建與亞洲算力",
+    "publishedAt": "2026-11-21T05:34:34Z",
+    "sourceLabel": "Reuters／南韓總統府",
+    "sourceUrl": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/",
+    "level": "update",
+    "verified": true,
+    "active": false
   },
   {
     "id": "2026-11-21-bessent-older-nvidia-chip-curbs",
@@ -691,30 +715,6 @@
     "publishedAt": "2026-11-12T18:00:00Z",
     "sourceLabel": "OpenAI",
     "sourceUrl": "https://openai.com/cyber-at-the-frontier/",
-    "level": "update",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-12-mirendil-billion-series-a-ai-rd-agents",
-    "title": "Anthropic 前研究員創辦 Mirendil 完成 10 億美元 Series A，押注多 Agent 自動做 AI 研發",
-    "summary": "Mirendil 宣布完成 10 億美元 Series A，由 Kleiner Perkins 與 Clearlake Capital 領投；WSJ 亦核實融資。這間由前 Anthropic 研究員創辦的公司主攻以大量 AI agents 長時間編寫程式及執行實驗，Lor 平台目前仍是 private beta。\\n\\n公司稱一名研究員配合 agents，用少於 1,000 萬美元算力及 3.5 個月由零訓練出 Mirendil-Base，再把模型後訓練成可處理最多 1,000 萬 token 的 Fern；這些效能與成本數字來自公司，尚未有充分獨立評測。對香港 AI 團隊而言，事件反映資金正由單一模型競賽流向「自動化研發團隊」；下一步要看 Lor 的公開資格、可靠度、安全控制及真實研發產出。",
-    "category": "AI Agent 與融資",
-    "publishedAt": "2026-11-12T17:00:00Z",
-    "sourceLabel": "Mirendil／WSJ",
-    "sourceUrl": "https://mirendil.com/news/series-a/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-12-google-samsung-gemini-intelligent-eyewear-preorders",
-    "title": "Google、Samsung Gemini 智能眼鏡開放預訂，AI 助手正式走到相機與視野層",
-    "summary": "Google 與 Samsung 聯同 Warby Parker、Gentle Monster 推出 Intelligent Eyewear，已在美國及南韓開放預訂，12 月 10 日發售。產品由 Gemini 提供免提查詢、地圖導航、逾 70 種語言即時翻譯、視覺描述及日曆等功能；Warby Parker 款式由 395 美元起，Gentle Monster 由 449 美元起。\\n\\n眼鏡約重 41 克，標示最長 9 小時電量，配備 1,200 萬像素鏡頭；Google 稱 Gemini 視覺資料不會儲存於 Gemini History，會在處理前遮蔽旁人面孔，錄影燈被遮蓋時亦會停止錄影。現時只支援美國或南韓 Google 帳戶，香港未正式開售；本地用戶應先觀察語言、私隱提示、旁人同意及跨區功能限制。",
-    "category": "AI 穿戴裝置",
-    "publishedAt": "2026-11-12T14:00:00Z",
-    "sourceLabel": "Google／Samsung",
-    "sourceUrl": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order/",
     "level": "update",
     "verified": true,
     "active": false
