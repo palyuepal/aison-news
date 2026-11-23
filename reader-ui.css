@@ -104,3 +104,61 @@ html[data-theme="dark"] body[data-page="home"] :is(.b2-pulse,.v6-signal-card) { 
  #aison-reader body .page-hero { padding:30px 0!important; }
  #aison-reader body .daily-item>div:last-child { padding:18px!important; }
 }
+
+/* ===== AIson Concept C — article page (2026-11-23) ===== */
+/* specificity must beat styles.css body:not(...) .article-hero !important rule */
+body:not([data-page="home"]):not([data-page="admin"]):not(.admin-body):not(.notfound)[data-page="article"] .article-hero{background:linear-gradient(135deg,#081426 55%,#0d2138)!important;color:#fff;padding:34px 0 40px}
+body[data-page="article"] .breadcrumbs{color:#8fa5ba!important}
+body[data-page="article"] .breadcrumbs a{color:#c3d2e0!important}
+body[data-page="article"] .article-meta{color:#b9c9d8!important;gap:10px}
+body[data-page="article"] .article-meta .aison-score{background:#f2a900;color:#081426;font-weight:900;font-size:14px;border-radius:999px;padding:5px 14px;letter-spacing:.02em}
+body[data-page="article"] .article-meta .source-badge{color:#57d992}
+body[data-page="article"] #articleTitle{font-family:'Noto Serif TC',Georgia,serif;font-weight:900;line-height:1.35;color:#fff!important}
+body[data-page="article"] #articleExcerpt{color:#c3d2e0!important;font-size:18px;line-height:1.8}
+body[data-page="article"] .article-buttons .primary-btn{background:#f2a900;color:#081426;border:none;font-weight:700}
+body[data-page="article"] .article-buttons .ghost-dark{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.25)}
+body[data-page="article"] .article-visual{border-radius:18px;overflow:hidden;box-shadow:0 24px 48px rgba(0,0,0,.4)}
+body[data-page="article"] .report-opening{background:#faf6ef;border:1px solid #e5ddcb;border-radius:16px;padding:22px 24px}
+body[data-page="article"] .report-opening h2{font-family:'Noto Serif TC',Georgia,serif;color:#14273d}
+body[data-page="article"] .info-block h2,body[data-page="article"] .hkbox h2,body[data-page="article"] .take h2{font-family:'Noto Serif TC',Georgia,serif;color:#14273d;border-left:5px solid #f2a900;padding-left:12px}
+body[data-page="article"] .hkbox{background:#eef3f8;border:1px solid #d7e2ee;border-radius:16px;padding:22px 24px}
+body[data-page="article"] .take{background:#fffaf0;border-left:5px solid #f2a900;border-radius:0 16px 16px 0;padding:20px 24px}
+body[data-page="article"] .take p{font-family:'Noto Serif TC',Georgia,serif;font-size:18px;line-height:1.85;color:#14273d}
+body[data-page="article"] .article-related-card{border-radius:16px;transition:box-shadow .2s ease}
+body[data-page="article"] .article-related-card:hover{box-shadow:0 14px 30px rgba(8,20,38,.14)}
+body[data-page="article"] .article-related-card b{font-family:'Noto Serif TC',Georgia,serif;line-height:1.55}
+.acc-progress{position:fixed;top:0;left:0;height:3px;background:#f2a900;z-index:1200;width:0}
+.acc-subbar{position:fixed;left:50%;transform:translate(-50%,120px);bottom:18px;z-index:1100;background:#081426;color:#fff;border-radius:999px;padding:10px 12px 10px 22px;display:flex;align-items:center;gap:16px;box-shadow:0 18px 40px rgba(0,0,0,.35);transition:transform .35s ease;max-width:calc(100vw - 24px)}
+.acc-subbar.show{transform:translate(-50%,0)}
+.acc-subbar b{font-size:14px;white-space:nowrap}
+.acc-subbar span{font-size:12px;color:#b9c9d8;white-space:nowrap}
+.acc-subbar a{background:#f2a900;color:#081426;font-weight:700;border-radius:999px;padding:8px 16px;font-size:13px;text-decoration:none;white-space:nowrap}
+.acc-subbar button{background:none;border:none;color:#8fa5ba;font-size:16px;cursor:pointer;padding:2px 6px}
+@media(max-width:640px){.acc-subbar span{display:none}}
+html[data-theme="dark"] body[data-page="article"] .report-opening{background:#101f33;border-color:#1e3850}
+html[data-theme="dark"] body[data-page="article"] .report-opening h2,html[data-theme="dark"] body[data-page="article"] .info-block h2,html[data-theme="dark"] body[data-page="article"] .hkbox h2,html[data-theme="dark"] body[data-page="article"] .take h2{color:#f2f5f8}
+html[data-theme="dark"] body[data-page="article"] .hkbox{background:#0d1c2e;border-color:#1e3850}
+html[data-theme="dark"] body[data-page="article"] .take{background:#14273d}
+html[data-theme="dark"] body[data-page="article"] .take p{color:#e8eef4}
+
+/* ===== AIson Concept C — daily ranking page (2026-11-23) ===== */
+body[data-page="daily"] .daily-hero{background:linear-gradient(135deg,#081426 55%,#0d2138);color:#fff}
+body[data-page="daily"] .daily-hero .mini-label{color:#f2a900;letter-spacing:.3em}
+body[data-page="daily"] .daily-hero h1{font-family:'Noto Serif TC',Georgia,serif;font-weight:900;color:#fff}
+body[data-page="daily"] .daily-hero h1 em{font-style:normal;color:#f2a900}
+body[data-page="daily"] .daily-hero p{color:#b9c9d8}
+body[data-page="daily"] .daily-item{background:#fff;border:1px solid #e5ddcb;border-radius:18px;padding:24px 26px;margin-bottom:18px}
+body[data-page="daily"] .daily-rank{font-family:'Noto Serif TC',Georgia,serif;font-size:40px;font-weight:900;color:#c1912a;line-height:1}
+body[data-page="daily"] .daily-item h2{font-family:'Noto Serif TC',Georgia,serif;font-weight:900;line-height:1.45}
+body[data-page="daily"] .daily-item h2 a{color:#14273d;text-decoration:none}
+body[data-page="daily"] #dailyList .daily-item:nth-child(-n+3){border-color:#f2a900;box-shadow:0 10px 26px rgba(8,20,38,.08)}
+body[data-page="daily"] .daily-take{background:#fffaf0;border-radius:10px;padding:10px 14px}
+body[data-page="daily"] .daily-why b,body[data-page="daily"] .daily-summary b{color:#33608c}
+body[data-page="daily"] .daily-morning-brief{border:2px solid #f2a900}
+html[data-theme="dark"] body[data-page="daily"] .daily-item{background:#101f33;border-color:#1e3850}
+html[data-theme="dark"] body[data-page="daily"] .daily-item h2 a{color:#f2f5f8}
+html[data-theme="dark"] body[data-page="daily"] .daily-take{background:#14273d}
+body[data-page="article"] .article-hero .article-trust-record{color:#b9c9d8;border-color:rgba(255,255,255,.25)}
+body[data-page="article"] .article-hero .article-trust-record a{color:#ffd76a}
+body[data-page="article"] .article-hero .meta,body[data-page="article"] .article-hero #articleTags{color:#8fa5ba}
+body[data-page="article"] .article-hero .article-meta>span{color:#b9c9d8}
