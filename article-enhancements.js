@@ -170,3 +170,46 @@
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(initArticleLabels,0),{once:true});else setTimeout(initArticleLabels,0);
 })();
+
+/* ===== AIson Concept C — article layer (2026-11-23) ===== */
+(() => {
+  'use strict';
+  try {
+    if (document.body?.dataset.page !== 'article') return;
+    if (!document.querySelector('link[data-cc-font]')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet'; link.setAttribute('data-cc-font', '1');
+      link.href = 'https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&display=swap';
+      document.head.appendChild(link);
+    }
+    const bar = document.createElement('div');
+    bar.className = 'acc-progress'; bar.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(bar);
+    let dismissed = false;
+    try { dismissed = sessionStorage.getItem('aison-acc-subbar') === '1'; } catch {}
+    const sub = document.createElement('div');
+    sub.className = 'acc-subbar';
+    sub.innerHTML = '<b>AIson Morning Brief</b><span>重要 AI 新聞，朝早直接送到</span><a href="https://subscribe-forms.beehiiv.com/v3/forms/418139e2-4ed2-45c5-8d7e-d01b96fcfed3" target="_blank" rel="noopener noreferrer">免費訂閱</a><button type="button" aria-label="關閉訂閱提示">✕</button>';
+    sub.querySelector('button').addEventListener('click', () => {
+      sub.classList.remove('show');
+      try { sessionStorage.setItem('aison-acc-subbar', '1'); } catch {}
+      dismissed = true;
+    });
+    document.body.appendChild(sub);
+    const article = document.getElementById('articleBody');
+    const onScroll = () => {
+      const total = document.documentElement.scrollHeight - innerHeight;
+      const y = scrollY;
+      bar.style.width = (total > 0 ? Math.min(100, (y / total) * 100) : 0) + '%';
+      if (!dismissed && article) {
+        const rect = article.getBoundingClientRect();
+        const read = rect.top < innerHeight * 0.4 && rect.bottom > innerHeight * 0.6;
+        sub.classList.toggle('show', read && y > 500);
+      }
+    };
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  } catch (error) {
+    console.warn('AIson Concept C article layer skipped', error);
+  }
+})();
