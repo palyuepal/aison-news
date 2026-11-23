@@ -1,0 +1,504 @@
+[
+  {
+    "id": "2026-11-23-openai-perplexity-common-limits",
+    "rank": 1,
+    "featured": true,
+    "title": "OpenAI 首席科學家倡以「困惑度」設共同能力紅線，監測未達標前不再跨越",
+    "excerpt": "Jakub Pachocki 公開模型預訓練進展，建議業界用可比較指標設定第一道共同上限；Sam Altman 表態支持。",
+    "category": "AI 安全與前沿模型",
+    "date": "2026-11-23",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://openai.com/index/perplexity-and-intelligence/",
+    "sourceLabel": "OpenAI",
+    "sourceType": "官方研究公告／可靠媒體",
+    "references": [
+      {
+        "label": "OpenAI｜Perplexity and Intelligence",
+        "url": "https://openai.com/index/perplexity-and-intelligence/"
+      },
+      {
+        "label": "Reuters｜OpenAI scientist proposes industry AI limits",
+        "url": "https://www.reuters.com/business/openai-scientist-proposes-industry-ai-limits-tied-model-intelligence-metric-2026-11-22/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "OpenAI 提議用困惑度等指標，將模型能力進展與安全監測門檻綁定。",
+    "summary": "OpenAI 首席科學家 Jakub Pachocki 建議前沿模型開發商共同公開並比較困惑度等預訓練指標，預先設定不可跨越的能力門檻，直至理解與監測 AI 行為的技術達到明確里程碑。",
+    "whatHappened": "Pachocki 在 11 月 22 日文章公開 OpenAI 內部用來追蹤預訓練進展的部分資料，主張以困惑度或交叉熵損失作跨實驗室共同度量。他警告 AI 最快 2027 年可能反過來加速預訓練研究，而對齊及監測未必同步跟上；Sam Altman 隨後公開支持建立共同限制。",
+    "reportingContext": "這仍是 OpenAI 高層提出的業界倡議，並非已生效的監管規例，也未見其他主要模型公司承諾採用同一門檻。",
+    "deepDive": "困惑度衡量模型預測下一個 token 的平均能力，數值越低通常代表預測更準。Pachocki 同時承認不同實驗室的訓練資料、評估集與模型架構會令直接比較困難，因此共同標準仍需解決可比性、可審計性與具體安全里程碑三個問題。",
+    "whyImportant": "若業界接受，模型競賽會首次有一個可量度的「先停一停」機制；但若指標不能跨公司驗證，門檻可能只停留在自願承諾。",
+    "hkImpact": [
+      "香港企業採購前沿模型時，除價錢與功能外，要開始問供應商如何量度能力躍升及監測失效風險。",
+      "受規管行業可把模型版本、評測門檻與人工覆核寫入採購及風險政策，避免自動升級後能力突然改變。",
+      "開發者短期毋須改 API，但應保留模型版本鎖定、回歸測試與可回退流程，因前沿模型發布節奏可能受新安全標準影響。"
+    ],
+    "whatToWatch": "其他前沿實驗室會否公開可比較數據，以及 OpenAI 會否把倡議寫入正式 Preparedness Framework 或模型發布政策。",
+    "take": "AIson 判斷：真正突破不是多一個 benchmark，而是嘗試把能力增長與安全放行條件綁死；下一步要看能否由單一公司倡議變成可審計的多方制度。",
+    "actionVerdict": "watch",
+    "actionReason": "屬重大安全治理倡議，但尚未成為約束性政策。",
+    "aisonScore": 9.7,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 4,
+      "developer": 5
+    },
+    "tags": [
+      "OpenAI",
+      "AI Safety",
+      "Perplexity",
+      "Frontier Models"
+    ]
+  },
+  {
+    "id": "2026-11-23-lean-mathlib-riemann-proof-verification",
+    "rank": 2,
+    "featured": true,
+    "title": "Lean／Mathlib 社群完成核驗 Claude 輔助黎曼猜想形式化證明，數學界仍待傳統審閱",
+    "excerpt": "17 million 行 Lean 證明已通過機器檢查及定義核對，但 Clay Mathematics Institute 仍把黎曼猜想列為未解。",
+    "category": "AI for Science",
+    "date": "2026-11-23",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+    "sourceLabel": "Lean Prover Community",
+    "sourceType": "官方技術核驗／可靠媒體",
+    "references": [
+      {
+        "label": "Lean Prover Community｜Riemann hypothesis verification",
+        "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+      },
+      {
+        "label": "AP｜Anthropic worker claims AI-assisted proof",
+        "url": "https://apnews.com/article/4fe8b69a891f160f9e7f0c85af8c55c8"
+      }
+    ],
+    "verified": true,
+    "freshness": "48 小時內",
+    "quickTake": "機器核驗確認程式化證明通過，但不等於千禧年難題已獲正式承認。",
+    "summary": "Lean／Mathlib 社群表示，Levent Alpöge 與 Claude 產生的形式化證明已可由 Lean kernel 核驗，並完成核心定義對照；這大幅提高可信度，但傳統數學解釋、同行審閱與 Clay 的正式程序仍未完成。",
+    "whatHappened": "Anthropic 技術人員 Alpöge 公布約 1,700 萬行 Lean 程式後，Lean／Mathlib 社群獨立重建環境並檢查定理陳述與依賴，確認 kernel 接受證明。AP 訪問數學家時亦強調，機器極嚴格但人類仍需理解整個論證；Clay 網站截至核對時仍列為未解。",
+    "reportingContext": "本稿跟進的是『第三方技術核驗完成』這個新進展，不把最初的個人聲稱當作定論。形式化通過與獎項認可、傳統論文審閱是不同程序。",
+    "deepDive": "形式化證明把每一步轉成可由小型可信 kernel 檢查的物件，可排除大量手算疏漏，但仍要確保定理定義精確對應原問題、沒有借用過強假設，並把超大型程式轉化成數學界可理解及維護的論證。",
+    "whyImportant": "若最終獲廣泛承認，AI 的角色會由輔助搜尋提升至共同產生及驗證超大型數學成果，同時迫使學術界重新設計審閱、署名與可理解性標準。",
+    "hkImpact": [
+      "香港大學及研究團隊可加快引入 Lean、Mathlib 等形式化工具，但仍需獨立數學審閱。",
+      "教育機構可把『機器通過』與『人類理解』分開教，避免把 AI 輸出或形式化結果直接當權威答案。",
+      "科技企業做高風險驗證時，可借鏡小型可信核心與可重現環境，而非只相信模型解釋。"
+    ],
+    "whatToWatch": "Clay 及主要數學期刊會否啟動正式評審、社群能否把 1,700 萬行證明壓縮成可理解論文，以及是否出現定義或依賴爭議。",
+    "take": "AIson 判斷：這次最有價值的不是『AI 宣布解題』，而是第三方可重現的形式化核驗；真正落槌仍要等人類審閱與正式程序。",
+    "actionVerdict": "watch",
+    "actionReason": "科研里程碑潛力極高，但正式承認程序未完成。",
+    "aisonScore": 9.4,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 3,
+      "creator": 4,
+      "developer": 5
+    },
+    "tags": [
+      "Claude",
+      "Lean",
+      "Mathlib",
+      "Riemann Hypothesis"
+    ]
+  },
+  {
+    "id": "2026-11-23-us-nvidia-china-chip-compliance",
+    "rank": 3,
+    "featured": true,
+    "title": "美國政府稱 Nvidia 中國晶片合規答覆仍未到，出口管制追查升級",
+    "excerpt": "美國財長表示仍在等 Nvidia 解釋對華晶片銷售與責任層級，合規焦點由產品規格擴展至客戶及管理鏈。",
+    "category": "AI 晶片與出口管制",
+    "date": "2026-11-23",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+    "sourceLabel": "Reuters",
+    "sourceType": "可靠媒體／政府訪問",
+    "references": [
+      {
+        "label": "Reuters｜US seeks answers from Nvidia",
+        "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "華府仍未收到 Nvidia 的完整合規答覆，晶片供應鏈調查未完結。",
+    "summary": "美國財長 Scott Bessent 表示，政府正追查 Nvidia 向中國銷售先進晶片的合規情況，仍等待公司提供所需答案，並要釐清責任落在甚麼管理層級。",
+    "whatHappened": "Bessent 在周日訪問中說，當局關注中國客戶如何取得晶片、公司內部誰負責審批及監督。消息顯示調查由單純型號限制擴展至客戶識別、轉售路徑與企業管治。",
+    "reportingContext": "現階段未有當局公布違規裁決或罰則，Nvidia 的最終回應亦未公開；因此不能把調查等同已定罪。",
+    "deepDive": "新一輪出口管制把責任推向晶片商、雲端供應商及數據中心的客戶盡職審查。即使香港並非最終受限制地區，轉售、租用算力或替第三方代管模型訓練都可能觸發額外文件及審查。",
+    "whyImportant": "若華府要求企業像金融機構般掌握客戶及客戶的客戶，先進算力的合規成本、交付速度與地區可用性都會改變。",
+    "hkImpact": [
+      "香港雲端、數據中心及系統整合商要保存最終用途、受益人與轉售紀錄，不能只核對直接買家。",
+      "本地企業採購高階 GPU 或海外算力，交付期與合規問卷可能拉長，項目預算要預留替代方案。",
+      "開發者宜把模型訓練工作負載設計成可跨晶片與雲端遷移，減少單一供應鏈突然受限的風險。"
+    ],
+    "whatToWatch": "Nvidia 的正式答覆、是否出現執法行動，以及美國商務部對雲端與第三方數據中心的 KYC 要求。",
+    "take": "AIson 判斷：真正風險由『買不到某款晶片』轉成整條算力鏈都要證明最終用途，香港中介與雲端服務商會更早感受到摩擦。",
+    "actionVerdict": "watch",
+    "actionReason": "調查未有裁決，但會直接影響亞洲算力供應與合規。",
+    "aisonScore": 9.1,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
+    },
+    "tags": [
+      "Nvidia",
+      "Export Controls",
+      "China",
+      "Compute"
+    ]
+  },
+  {
+    "id": "2026-11-23-germany-ai-targeting-lithuania",
+    "rank": 4,
+    "featured": false,
+    "title": "德軍首次在立陶宛實測 AI 目標分析與自殺式無人機",
+    "excerpt": "德軍在 Freedom Shield 演習測試 Helsing Clarity，把衛星、無人機與感測器資料快速整理並提出行動建議。",
+    "category": "軍事 AI 與自主系統",
+    "date": "2026-11-23",
+    "readTime": "3 分鐘",
+    "sourceUrl": "https://www.reuters.com/business/aerospace-defense/german-army-starts-testing-kamikaze-drones-ai-targeting-tool-lithuania-2026-11-22/",
+    "sourceLabel": "Reuters",
+    "sourceType": "可靠媒體／現場採訪",
+    "references": [
+      {
+        "label": "Reuters｜German army tests drones and AI targeting",
+        "url": "https://www.reuters.com/business/aerospace-defense/german-army-starts-testing-kamikaze-drones-ai-targeting-tool-lithuania-2026-11-22/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "AI 由情報整理走向軍事行動建議，歐洲開始在大型演習中驗證整套鏈路。",
+    "summary": "德國陸軍在立陶宛大型演習中首次戰術測試滯空彈藥，並試用 Helsing 的 Clarity AI 目標分析工具，將多源感測資料更快轉成可供指揮官判斷的建議。",
+    "whatHappened": "Freedom Shield 演習在白俄羅斯邊境附近舉行，Helsing 與 Stark 製造的無人機使用惰性彈頭擊中坦克目標；數日前，部隊亦測試 Clarity 分析衛星、無人機及其他感測資料。",
+    "reportingContext": "報道指系統會『建議行動』，未證實它能自行授權致命攻擊；測試亦不等於全面部署。",
+    "deepDive": "軍事 AI 的關鍵不只識別目標，而是把感測、分析、指揮與武器串成更短決策鏈。速度提升同時放大誤判、資料污染及人類覆核不足的風險。",
+    "whyImportant": "歐洲軍隊把 AI 目標分析帶入實兵演習，顯示自主武器國際規則未定之際，部署能力已先行。",
+    "hkImpact": [
+      "香港的 AI、航拍及感測供應商要留意產品是否可能落入軍民兩用出口管制。",
+      "研究機構參與國際軍事或安全項目時，需要更清楚的用途限制、資料治理及人類決策責任。",
+      "企業採用同類多源分析技術做物流或保安，亦應保留人工覆核與事件追蹤，避免把軍事速度思維直接搬入民用。"
+    ],
+    "whatToWatch": "德軍是否採購及常態部署 Clarity、致命決策的人類控制規則，以及聯合國自主武器談判會否涵蓋這類『建議型』系統。",
+    "take": "AIson 判斷：技術焦點已由單一無人機轉到整條殺傷鏈的資料與決策加速；規則若只盯住最後開火一步，可能追不上部署方式。",
+    "actionVerdict": "watch",
+    "actionReason": "重大軍事 AI 測試，香港主要是供應鏈與雙重用途合規影響。",
+    "aisonScore": 8.8,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 3,
+      "developer": 4
+    },
+    "tags": [
+      "Military AI",
+      "Helsing",
+      "Drones",
+      "Europe"
+    ]
+  },
+  {
+    "id": "2026-11-23-us-tech-outages-upgrade-warning",
+    "rank": 5,
+    "featured": false,
+    "title": "美國情報主管警告科技升級期將有更多停機，否認近期事故屬協同行動",
+    "excerpt": "航空、Microsoft 郵件、銀行及 NSA 網絡接連中斷後，美方把主要原因指向舊系統升級與技術故障。",
+    "category": "科技基建與營運韌性",
+    "date": "2026-11-23",
+    "readTime": "3 分鐘",
+    "sourceUrl": "https://www.reuters.com/business/finance/us-intelligence-chief-predicts-more-tech-outages-systems-undergo-upgrades-2026-11-22/",
+    "sourceLabel": "Reuters",
+    "sourceType": "可靠媒體／政府訪問",
+    "references": [
+      {
+        "label": "Reuters｜US intelligence chief predicts more outages",
+        "url": "https://www.reuters.com/business/finance/us-intelligence-chief-predicts-more-tech-outages-systems-undergo-upgrades-2026-11-22/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "大規模系統升級會繼續帶來停機，健康監察不等於服務鏈沒有單點風險。",
+    "summary": "美國國家情報總監 Jay Clayton 表示，企業及政府更換老化系統時應預期出現更多故障、空檔與服務中斷；他再次稱近期一連串事故沒有證據顯示是協調或國家支持的攻擊。",
+    "whatHappened": "本月美國先後出現全國航空停運、Microsoft 郵件故障、多家銀行技術事故及 NSA 網絡短暫中斷。Clayton 指升級對效能及網絡安全屬必要，但遷移期間仍會有風險。",
+    "reportingContext": "部分獨立網攻調查仍未完成，美方的說法不是對所有事故的最終技術根因報告。",
+    "deepDive": "AI 工作流愈依賴雲端、身份、郵件與支付平台，任何上游升級都可能造成連鎖失效。單一健康檢查只證明某個端點可用，不能證明編採、排程、身份驗證與發布整條鏈路都正常。",
+    "whyImportant": "企業正同時升級 AI、雲端與保安基建，營運風險由單一服務故障變成跨供應商依賴失效。",
+    "hkImpact": [
+      "香港中小企應為登入、支付、郵件及雲端 AI 各設替代渠道與人工應急步驟。",
+      "內容團隊要把『網站可開』與『編採有更新』分開監察，避免健康燈號掩蓋流程停擺。",
+      "IT 團隊做大型遷移時應分批、設回退點及離線通訊渠道，並預先通知業務部門。"
+    ],
+    "whatToWatch": "各事故的正式根因報告、供應商是否公布補救措施，以及升級相關停機是否出現共同架構問題。",
+    "take": "AIson 判斷：2027 年的可靠性競爭不只看模型 uptime，而是整條業務鏈能否降級運作、回退及留下可追溯紀錄。",
+    "actionVerdict": "try-now",
+    "actionReason": "可立即檢查備援、回退與端到端監察。",
+    "aisonScore": 8.5,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 5,
+      "creator": 4,
+      "developer": 5
+    },
+    "tags": [
+      "Outage",
+      "Cloud",
+      "Resilience",
+      "Operations"
+    ]
+  },
+  {
+    "id": "2026-11-23-anthropic-ipo-process-controls",
+    "rank": 6,
+    "featured": false,
+    "title": "Anthropic 破紀錄上市流程被指高度封閉，銀行家須面對罕見競業限制",
+    "excerpt": "Reuters 指 Anthropic 壓縮時間表、限制團隊人數並用可追蹤文件平台防外洩，部分銀行家對流程不滿。",
+    "category": "AI 公司與資本市場",
+    "date": "2026-11-23",
+    "readTime": "3 分鐘",
+    "sourceUrl": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
+    "sourceLabel": "Reuters",
+    "sourceType": "可靠媒體／多方採訪",
+    "references": [
+      {
+        "label": "Reuters｜Anthropic unusual IPO process",
+        "url": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/"
+      }
+    ],
+    "verified": true,
+    "freshness": "24 小時內",
+    "quickTake": "AI 巨企的議價能力開始改寫華爾街上市慣例，保密與競業限制成新焦點。",
+    "summary": "據 Reuters 訪問多名接近交易人士，Anthropic 的 Project Lantern 上市採用壓縮時間表、限制銀行團隊人數、個人化水印及可追蹤文件平台，並要求部分銀行高層接受廣泛競業限制。",
+    "whatHappened": "Anthropic 的 IPO 超越 SpaceX，銀行費用逾 5 億美元，但部分參與者抱怨財務預測分享延遲、文件審批倉促、深夜修改及防外洩措施妨礙工作。公司及主要承銷商拒絕評論。",
+    "reportingContext": "這些流程問題主要來自匿名交易人士；上市本身成功完成，不能據此推斷財務數據有誤。",
+    "deepDive": "Anthropic 據報要求核心銀行人員上市後六個月內不得服務 OpenAI、Cursor、DeepSeek、Hugging Face 等對手，反映前沿 AI 公司同時爭奪資金、人才與敏感商業資料。",
+    "whyImportant": "AI 公司估值與融資規模令它們有能力把保密、競業及文件控制要求推向供應商，可能影響往後 OpenAI 等大型上市流程。",
+    "hkImpact": [
+      "香港金融、法律及顧問團隊參與 AI 融資時，要更早界定資訊隔離、競業範圍與文件存取紀錄。",
+      "本地 AI 初創可借鏡水印與最小權限，但不應以保密為由削弱正常盡職審查。",
+      "投資者要把上市熱度與公司治理、現金消耗及資訊透明度分開評估。"
+    ],
+    "whatToWatch": "監管文件是否披露更多治理與風險資料、競業限制是否引發法律爭議，以及其他 AI 公司會否複製同類安排。",
+    "take": "AIson 判斷：這不是單純華爾街花絮，而是 AI 巨企把平台權力延伸到融資供應鏈；透明度會成為估值之外的核心風險。",
+    "actionVerdict": "watch",
+    "actionReason": "對投資及專業服務有啟示，但未有直接產品變動。",
+    "aisonScore": 8.2,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 3,
+      "developer": 3
+    },
+    "tags": [
+      "Anthropic",
+      "IPO",
+      "Governance",
+      "Finance"
+    ]
+  },
+  {
+    "id": "2026-11-23-ai-stock-selloff-anthropic-volatility",
+    "rank": 7,
+    "featured": false,
+    "title": "AI 股沽售加劇，Anthropic 上市翌日跌 8.5%｜市場開始重估算力燒錢速度",
+    "excerpt": "Anthropic 雖仍高於招股價，但由盤中高位回落約 23%；晶片、光纖與能源相關股份同步受壓。",
+    "category": "AI 經濟與市場",
+    "date": "2026-11-23",
+    "readTime": "3 分鐘",
+    "sourceUrl": "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad",
+    "sourceLabel": "Associated Press",
+    "sourceType": "可靠媒體／市場數據",
+    "references": [
+      {
+        "label": "AP｜Tech sell-off worsens",
+        "url": "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad"
+      }
+    ],
+    "verified": true,
+    "freshness": "72 小時內",
+    "quickTake": "破紀錄 IPO 未能扭轉 AI 股調整，投資者由收入增長轉向追問回報與融資壓力。",
+    "summary": "美股科技沽售擴大，Anthropic 上市第二日跌 8.5% 至 88.91 美元，仍高於 83 美元招股價，但較首日盤中高位回落約 23%。Nvidia、記憶體、光纖及數據中心能源股亦下跌。",
+    "whatHappened": "AP 指市場憂慮 AI 公司估值、巨額基建開支及回報時間，S&P 500 跌 3.7%，Nasdaq 年內表現轉負。Anthropic 的破紀錄集資未能阻止整個 AI 交易降溫。",
+    "reportingContext": "單日價格波動不代表 AI 需求或公司基本面已逆轉；新股上市初期本來就容易大幅上落。",
+    "deepDive": "資本市場開始把模型能力、雲端收入與未來數千億美元算力承諾一併計價。利率、電力、晶片供應及數據中心審批任何一項收緊，都會改變現金流預期。",
+    "whyImportant": "AI 產業的融資成本會影響模型價格、免費額度、基建擴張及初創退出環境，不只是投資者問題。",
+    "hkImpact": [
+      "香港企業不宜因股價下跌便停用 AI，但應審視供應商財務持續性與合約退出條款。",
+      "本地 AI 初創融資時要更清楚展示收入質素、推理毛利及客戶留存，而非只講模型能力。",
+      "投資者要把高波動視為估值重定價，避免用單日升跌推斷長期技術勝負。"
+    ],
+    "whatToWatch": "Anthropic 未來業績與現金消耗、AI 基建股能否止跌，以及利率與數據中心政策對融資成本的影響。",
+    "take": "AIson 判斷：市場沒有否定 AI，而是開始要求『算力投入如何變成現金流』；這會令產品定價與企業採購更現實。",
+    "actionVerdict": "watch",
+    "actionReason": "宏觀訊號重要，但不適合用作短線投資指示。",
+    "aisonScore": 7.9,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 3,
+      "developer": 3
+    },
+    "tags": [
+      "AI Stocks",
+      "Anthropic",
+      "Data Centers",
+      "Capital"
+    ]
+  },
+  {
+    "id": "2026-11-23-uk-ai-human-rights-response",
+    "rank": 8,
+    "featured": false,
+    "title": "英國政府回應 AI 人權監管報告：維持跨部門框架，暫未另立單一 AI 法",
+    "excerpt": "英國重申以現有監管機構及人權框架處理 AI，並支持歐洲委員會 AI 公約，但多項落實細節仍待跟進。",
+    "category": "AI 政策與人權",
+    "date": "2026-11-23",
+    "readTime": "3 分鐘",
+    "sourceUrl": "https://publications.parliament.uk/pa/jt5902/jtselect/jtrights/844/report.html",
+    "sourceLabel": "UK Parliament",
+    "sourceType": "官方監管文件",
+    "references": [
+      {
+        "label": "UK Parliament｜Human Rights and the Regulation of AI: Government Response",
+        "url": "https://publications.parliament.uk/pa/jt5902/jtselect/jtrights/844/report.html"
+      }
+    ],
+    "verified": true,
+    "freshness": "72 小時內",
+    "quickTake": "英國選擇在現有法律與監管架構內加強 AI 人權保障，而非即時推出一部統一 AI 法。",
+    "summary": "英國政府正式回應國會人權聯席委員會報告，表示會以現有監管機構、資料與人權法律推動負責任 AI，並重申支持歐洲委員會 AI 框架公約。",
+    "whatHappened": "回應文件於 11 月 20 日公布，涉及高風險用途、公共部門透明度、申訴與監管協調。政府稱新部門架構已由商業、創新、科學與貿易部牽頭 AI 政策。",
+    "reportingContext": "這是政府對委員會建議的政策回應，不等於所有建議已立法或有具體生效日期。",
+    "deepDive": "英國的做法與歐盟 AI Act 的橫向法規不同，更依賴既有監管者按行業執法。企業面對的挑戰是同一 AI 系統可能同時落入資料保障、消費者、就業及人權規則。",
+    "whyImportant": "英國仍是香港企業常見市場及法律參照；跨部門模式會增加合規判斷的情境性與文件要求。",
+    "hkImpact": [
+      "向英國客戶提供 AI 服務的香港公司要按用途建立人權、偏見、私隱及申訴評估。",
+      "HR、信貸或公共服務 AI 不能只靠供應商聲明，需保存決策理由及人工覆核紀錄。",
+      "法務與產品團隊要追蹤各監管機構指引，而非只等待一部統一 AI 法。"
+    ],
+    "whatToWatch": "政府會否提出具體立法、監管機構協調機制與公共部門透明度要求，以及歐洲委員會公約的本地落實。",
+    "take": "AIson 判斷：沒有單一 AI 法不代表規管較少，反而可能把責任分散到多個現有制度；跨境企業要建立用途級合規地圖。",
+    "actionVerdict": "watch",
+    "actionReason": "政策方向已確認，但具體義務仍分散及待落實。",
+    "aisonScore": 7.6,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 3,
+      "developer": 4
+    },
+    "tags": [
+      "UK",
+      "AI Regulation",
+      "Human Rights",
+      "Compliance"
+    ]
+  },
+  {
+    "id": "2026-11-23-eu-uk-digital-partnership-ai",
+    "rank": 9,
+    "featured": false,
+    "title": "歐盟與英國擬明年啟動數碼夥伴關係，AI 安全與量子列合作範圍",
+    "excerpt": "雙方峰會聯合聲明把 AI、連接、數碼身份、網絡安全及量子納入合作方向，同時保留各自監管自主。",
+    "category": "AI 政策與跨境合作",
+    "date": "2026-11-23",
+    "readTime": "3 分鐘",
+    "sourceUrl": "https://www.consilium.europa.eu/media/ccpczdvj/joint-statement-eu-uk-summit-20-november-2026.pdf",
+    "sourceLabel": "Council of the European Union",
+    "sourceType": "官方聯合聲明",
+    "references": [
+      {
+        "label": "EU–UK Summit Joint Statement",
+        "url": "https://www.consilium.europa.eu/media/ccpczdvj/joint-statement-eu-uk-summit-20-november-2026.pdf"
+      }
+    ],
+    "verified": true,
+    "freshness": "72 小時內",
+    "quickTake": "英歐準備把 AI 安全及數碼規則放入新合作框架，但細節與企業義務仍未公布。",
+    "summary": "歐盟與英國在 11 月 20 日峰會聲明表示，計劃於明年初啟動數碼夥伴關係，合作範圍可涵蓋 AI 安全、關鍵技術、量子、數碼身份、連接及網絡韌性。",
+    "whatHappened": "雙方表示希望把現有零散合作納入共同架構，同時明確保留各自監管自主權。聲明未列出具體法規互認、時間表或企業申報要求。",
+    "reportingContext": "這是政治承諾與談判框架，不代表英國已重新加入歐盟數碼單一市場，也不等於 AI 規則已互相承認。",
+    "deepDive": "若後續建立測試、標準或安全評估合作，跨境 AI 供應商可能減少重複審查；但兩地制度差異仍會維持，尤其歐盟 AI Act 與英國行業監管模式。",
+    "whyImportant": "英歐是全球 AI 規則的重要輸出者，任何標準協調都會影響跨境產品文件、評測及供應鏈。",
+    "hkImpact": [
+      "同時服務英國及歐盟的香港公司可望減少部分重複評測，但現階段仍要分開合規。",
+      "產品團隊應保留模型卡、風險評估與事故紀錄，方便日後對接共同標準。",
+      "數碼身份與信任服務若納入合作，跨境電商及專業服務的驗證流程可能受影響。"
+    ],
+    "whatToWatch": "明年初談判是否訂出共同 AI 安全測試、標準互認、資料流安排及明確生效時間。",
+    "take": "AIson 判斷：短期是方向多於義務；真正價值要看能否把兩套監管的重複成本變成可互認證據。",
+    "actionVerdict": "wait",
+    "actionReason": "合作框架尚未轉化成企業可執行規則。",
+    "aisonScore": 7.3,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 3
+    },
+    "tags": [
+      "European Union",
+      "United Kingdom",
+      "AI Safety",
+      "Digital Policy"
+    ]
+  },
+  {
+    "id": "2026-11-23-google-iit-kharagpur-ai-funding",
+    "rank": 10,
+    "featured": false,
+    "title": "Google 向 IIT Kharagpur 投放 500 萬美元，聚焦印度語言、農業與 AI 教育",
+    "excerpt": "資助涵蓋應用研究、課程與校園 AI 工具，未公布個別項目與交付時間。",
+    "category": "AI 人才與研究",
+    "date": "2026-11-23",
+    "readTime": "3 分鐘",
+    "sourceUrl": "https://blog.google/intl/en-in/company-news/supporting-ai-research-and-talent-development-with-iit-kharagpur/",
+    "sourceLabel": "Google India",
+    "sourceType": "官方企業公告／可靠媒體",
+    "references": [
+      {
+        "label": "Google India｜Supporting AI research with IIT Kharagpur",
+        "url": "https://blog.google/intl/en-in/company-news/supporting-ai-research-and-talent-development-with-iit-kharagpur/"
+      },
+      {
+        "label": "Indian Express｜Google backs IIT Kharagpur",
+        "url": "https://indianexpress.com/article/education/google-5-million-funding-iit-kharagpur-ai-research-indic-languages-sundar-pichai-10972693/lite/"
+      }
+    ],
+    "verified": true,
+    "freshness": "48 小時內",
+    "quickTake": "Google 把 500 萬美元投向本地語言與產業應用，人才與校園基建同時推進。",
+    "summary": "Google 宣布向印度理工學院 Kharagpur 分校提供 500 萬美元，支援印度語言、材料科學、農業及教育科技的應用 AI 研究，並擴大師生培訓與校園工具。",
+    "whatHappened": "資助在該校 75 周年活動公布，分為進階研究、教育機會及 AI 能力建設三部分。Google 與校方尚未列出各項目分配、課程名單或完成時間。",
+    "reportingContext": "這是研究與人才投資，不是新模型發布；影響要看後續成果、開放程度與能否擴展至校外。",
+    "deepDive": "印度語言與農業是全球模型常見資料與產品缺口。大型科技公司透過大學合作，同時獲得本地研究、人才管道與市場適配經驗。",
+    "whyImportant": "AI 競爭不只在最大模型，也在低資源語言、產業資料及可落地人才。亞洲研究網絡的重要性正在上升。",
+    "hkImpact": [
+      "香港大學可參考把研究、課程與校園工具綁在同一資助框架，而非只做單一實驗室項目。",
+      "本地企業開拓南亞市場時，語言、農業及教育場景需要本地資料與合作夥伴。",
+      "創作者及教育機構可關注研究成果是否開放，尋找粵語與區域語言技術的合作模式。"
+    ],
+    "whatToWatch": "個別研究項目、資料與模型是否開放、成果評估方式，以及 Google 會否把同類計劃擴展至其他亞洲院校。",
+    "take": "AIson 判斷：金額不是最大，但方向清楚——下一輪亞洲 AI 差異化會來自本地語言、場景與人才，而非只追逐參數規模。",
+    "actionVerdict": "watch",
+    "actionReason": "值得追蹤亞洲人才與本地化研究成果，暫無即時產品變動。",
+    "aisonScore": 7,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 3,
+      "creator": 3,
+      "developer": 4
+    },
+    "tags": [
+      "Google",
+      "India",
+      "AI Research",
+      "Education"
+    ]
+  }
+]
