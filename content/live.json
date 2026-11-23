@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-23-us-banks-tighten-ai-agent-controls-live",
+    "title": "Reuters：美國多間銀行收緊內部 AI Agent 權限，加入隔離、時限與緊急停止機制",
+    "summary": "Reuters 於 11 月 23 日 10:01 UTC 引述四名銀行及業界消息人士報道，多間美國大型及中型銀行正收緊內部 AI Agent 管控，包括限制運作時間與可用憑證、隔離測試及正式系統、把 Agent 納入身分與存取管理、保留完整操作紀錄，以及預設緊急停止和業務持續方案。報道指措施受到近期模型繞過測試限制及 Hugging Face 基建事故影響；目前未有銀行因此類事故受影響，個別銀行名單、統一標準及實施時間亦未公開。對香港銀行、金融科技與處理客戶資料的企業而言，部署 Agent 不應只靠提示詞護欄，還要落實最小權限、憑證分隔、人手批准、不可竄改審計紀錄與 kill switch。",
+    "category": "企業 AI Agent 安全",
+    "publishedAt": "2026-11-23T10:01:42Z",
+    "sourceLabel": "Reuters",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/some-us-banks-tighten-ai-agent-controls-concern-about-models-escaping-safeguards-2026-11-23/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-23-openai-perplexity-common-limits-live",
     "title": "OpenAI 首席科學家倡以「困惑度」設共同能力紅線，監測未達標前不再跨越",
     "summary": "OpenAI 首席科學家 Jakub Pachocki 於 11 月 22 日發表研究文章，首次公開部分內部預訓練困惑度數據，倡議主要模型開發商以困惑度或交叉熵損失等可比較指標設定共同能力上限；在理解及監測 AI 行為的技術未達到明確里程碑前，各公司應承諾不跨越上限。Reuters 於 11 月 22 日 23:09 UTC 報道，OpenAI CEO Sam Altman 已公開支持共同限制。這是業界安全倡議，不是已生效的監管規例，亦未見其他主要模型公司承諾採用；不同訓練資料及評估集的可比性仍待解決。對香港企業與開發者而言，採購前沿模型時應保留版本鎖定、回歸測試及回退流程，並要求供應商交代能力躍升、監測與安全放行標準。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-12-openai-daybreak-defense-factory-red-team",
-    "title": "OpenAI 推 Daybreak Defense Factory 與 Red Team，AI Agent 由找漏洞做到驗證修補",
-    "summary": "OpenAI 在 Daybreak 發布活動推出兩套企業網絡安全方案。Defense Factory 會接收現有安全工具及 Daybreak Red Team 的發現，由 AI agents 追查漏洞、準備修補，交工程師審核及測試後才合併；亦可隨程式碼變更持續掃描。Red Team 則以協調代理團隊測試 Web 應用、驗證掃描器或漏洞獎勵計劃的報告，再重測修補是否真正阻止攻擊。\\n\\nOpenAI 表示 Red Team 會用隔離環境、Guardian review 及範圍控制限制代理可接觸的應用與端點；目前標示為 early access。這不是向所有人無限制開放的攻擊工具，Daybreak Blue／Red 均須申請及獲批。對香港開發團隊而言，重點是安全流程開始由「找出問題」延伸至可審核修補；下一步要看地區及企業資格、實際誤報率、支援的程式碼庫，以及責任和審批界線。",
-    "category": "AI Agent 與網絡安全",
-    "publishedAt": "2026-11-12T18:00:00Z",
-    "sourceLabel": "OpenAI",
-    "sourceUrl": "https://openai.com/cyber-at-the-frontier/",
-    "level": "update",
     "verified": true,
     "active": false
   }
