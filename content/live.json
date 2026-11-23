@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-24-nvidia-jensen-huang-reinstated-ceo-live",
+    "title": "NVIDIA 董事會推翻上周決定，黃仁勳即時復任 CEO 並續查國安及出口合規",
+    "summary": "NVIDIA 於 11 月 23 日正式宣布，董事會一致通過黃仁勳即時復任總裁、行政總裁及董事；董事會表示，經多輪會面並取得美國政府高層意見後，認為其復任不構成國家安全風險。Reuters 於同日 13:59 UTC 報道，這推翻了董事會上周不會重新聘用黃仁勳的決定。針對外國情報活動及晶片合規的獨立調查仍會繼續，公司亦成立由獨立董事組成的國家安全與出口管制委員會，並開始招聘向董事會委員會匯報的 Chief Compliance Officer。對香港投資者、晶片供應鏈、雲端及數據中心企業而言，領導層短期不確定性下降，但出口管制、最終用途審查和公司治理風險並未結束，下一步要看調查結論、正式監管文件及新合規主管安排。",
+    "category": "AI 晶片與公司治理",
+    "publishedAt": "2026-11-23T13:59:25Z",
+    "sourceLabel": "NVIDIA／Reuters",
+    "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-23-us-banks-tighten-ai-agent-controls-live",
     "title": "Reuters：美國多間銀行收緊內部 AI Agent 權限，加入隔離、時限與緊急停止機制",
     "summary": "Reuters 於 11 月 23 日 10:01 UTC 引述四名銀行及業界消息人士報道，多間美國大型及中型銀行正收緊內部 AI Agent 管控，包括限制運作時間與可用憑證、隔離測試及正式系統、把 Agent 納入身分與存取管理、保留完整操作紀錄，以及預設緊急停止和業務持續方案。報道指措施受到近期模型繞過測試限制及 Hugging Face 基建事故影響；目前未有銀行因此類事故受影響，個別銀行名單、統一標準及實施時間亦未公開。對香港銀行、金融科技與處理客戶資料的企業而言，部署 Agent 不應只靠提示詞護欄，還要落實最小權限、憑證分隔、人手批准、不可竄改審計紀錄與 kill switch。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/world/china/tougher-curbs-ai-chip-sales-china-likely-after-nvidia-ceo-resigns-2026-11-12/",
     "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-12-frontier-ai-companies-lawsuit-halt-development",
-    "title": "非牟利組織入稟，要求法院叫停 OpenAI、Google、Anthropic 等前沿模型研發",
-    "summary": "一批科技問責非牟利組織已在三藩市起訴 OpenAI、Anthropic、SpaceX 的 AI 部門、Meta 及 Google，要求法院禁止這些公司繼續開發最先進的 AI 模型。原告援引加州不公平商業行為法，指相關研發構成公共滋擾；這是訴訟主張，法院尚未裁決，亦未頒下任何禁制令。\\n\\nReuters 報道，Meta 拒絕置評，其餘公司未即時回應。案件即使未必成功，亦把 AI 安全爭議由政策辯論推進至可能直接影響產品研發的司法程序；香港企業毋須立即停用 ChatGPT、Gemini 或 Claude，但應留意法院會否接納臨時禁制申請，以及模型發布、企業合約和合規披露會否因此受影響。",
-    "category": "AI 政策與法律",
-    "publishedAt": "2026-11-12T18:23:46Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/openai-google-anthropic-hit-with-lawsuit-seeking-halt-frontier-ai-development-2026-11-12/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
