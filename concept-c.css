@@ -99,3 +99,7 @@ html[data-theme="dark"] body[data-page="home"].cc-ready .cc-sec-head h2 { color:
 html[data-theme="dark"] body[data-page="home"].cc-ready .cc-card { background: #101f33; border-color: #1e3850; color: #e8eef4; }
 html[data-theme="dark"] body[data-page="home"].cc-ready .cc-card h3 { color: #f2f5f8; }
 html[data-theme="dark"] body[data-page="home"].cc-ready .cc-ticker { background: #0d1c2e; border-color: #1e3850; }
+
+/* Hotfix: headline ticker contrast in dark mode */
+html[data-theme="dark"] .cc-ticker{color:#a9bcd8}
+html[data-theme="dark"] .cc-ticker b{color:#f2a900}
