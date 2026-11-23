@@ -14,6 +14,12 @@ except ModuleNotFoundError:
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# Mirror of the story schema that tools/build.py enforces at build time.
+# The paired-edition gate must reject the same violations up front, in one
+# pass, instead of letting the build fail on the first bad field it meets.
+AUDIENCE_KEYS = {'worker', 'sme', 'creator', 'developer'}
+ACTION_VERDICTS = {'try-now', 'watch', 'wait', 'skip'}
+
 
 def due_date(now=None):
     now = now or datetime.now(ZoneInfo('Asia/Hong_Kong'))
@@ -31,6 +37,7 @@ def validate_pair(date, root=ROOT):
         from read_time import read_minutes
     except ModuleNotFoundError:
         from tools.read_time import read_minutes
+    schema_errors = []
     for row in rows:
         for key in ('id', 'title', 'excerpt', 'category', 'sourceUrl', 'sourceLabel',
                     'summary', 'whatHappened', 'reportingContext', 'deepDive',
@@ -45,6 +52,22 @@ def validate_pair(date, root=ROOT):
             raise ValueError('sourceUrl must use HTTPS')
         if not isinstance(row.get('hkImpact'), list) or len(row['hkImpact']) < 3 or not all(isinstance(x, str) and x.strip() for x in row['hkImpact']):
             raise ValueError('hkImpact requires at least three entries')
+        audience = row.get('audienceImpact')
+        if audience is not None:
+            if not isinstance(audience, dict) or set(audience) - AUDIENCE_KEYS:
+                schema_errors.append(f"{row.get('id')}: audienceImpact must use worker/sme/creator/developer")
+            else:
+                for audience_key, value in audience.items():
+                    if not isinstance(value, int) or isinstance(value, bool) or not 1 <= value <= 5:
+                        schema_errors.append(f"{row.get('id')}: audienceImpact.{audience_key} must be an integer 1..5")
+        verdict = row.get('actionVerdict')
+        if verdict is not None and verdict not in ACTION_VERDICTS:
+            schema_errors.append(f"{row.get('id')}: actionVerdict must be one of {sorted(ACTION_VERDICTS)}")
+        score = row.get('aisonScore')
+        if score is not None and (isinstance(score, bool) or not isinstance(score, (int, float)) or not 0 <= score <= 10):
+            schema_errors.append(f"{row.get('id')}: aisonScore must be a number between 0 and 10")
+    if schema_errors:
+        raise ValueError('story schema violations: ' + '; '.join(schema_errors))
     meta = validate_meta(json.loads(editorial.read_text()), date, rows)
     if any(next(r for r in rows if r['id'] == i).get('featured') is not True for i in meta['top3Ids']):
         raise ValueError('top3Ids must refer to featured stories')

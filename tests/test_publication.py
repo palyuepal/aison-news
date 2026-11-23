@@ -46,6 +46,19 @@ class PublicationTests(unittest.TestCase):
         meta.write_text(json.dumps(obj))
         with self.assertRaises(SystemExit): p.receipt(self.date,self.root)
 
+    def test_build_schema_fields_gate_and_report_all(self):
+        daily=self.root/'content/daily'/f'{self.date}.json'
+        rows=json.loads(daily.read_text())
+        rows[0]['audienceImpact']['worker']=9
+        rows[1]['audienceImpact']={'sme':'high'}
+        rows[2]['actionVerdict']='bogus'
+        rows[3]['aisonScore']=42
+        daily.write_text(json.dumps(rows))
+        with self.assertRaises(ValueError) as ctx: p.receipt(self.date,self.root)
+        message=str(ctx.exception)
+        for fragment in ('audienceImpact.worker','audienceImpact.sme','actionVerdict','aisonScore'):
+            self.assertIn(fragment,message)
+
     def test_due_boundary_and_delayed_start(self):
         for hour,expected in [(7,'2026-11-19'),(8,'2026-11-20'),(23,'2026-11-20')]:
             self.assertEqual(p.due_date(datetime(2026,11,20,hour,tzinfo=ZoneInfo('Asia/Hong_Kong'))),expected)
