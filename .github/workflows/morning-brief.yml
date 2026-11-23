@@ -1,0 +1,66 @@
+name: Send AIson Morning Brief
+
+# Route B (2026-11-23): Beehiiv holds the list, Resend sends the mail.
+# Runs after each successful Pages deploy; tools/send_morning_brief.py
+# guards against stale editions and re-sends, and skips cleanly while
+# the secrets are not configured yet.
+
+on:
+  workflow_run:
+    workflows: ["Deploy AIson to GitHub Pages"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Compose only, send nothing"
+        type: boolean
+        default: true
+      force:
+        description: "Ignore the edition-freshness guard"
+        type: boolean
+        default: false
+
+concurrency:
+  group: morning-brief
+  cancel-in-progress: false
+
+jobs:
+  send:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Restore sent-edition marker
+        if: github.event_name == 'workflow_run'
+        uses: actions/cache/restore@v4
+        with:
+          path: .brief-sent
+          key: brief-sent-${{ hashFiles('content/daily/*.json') }}
+      - name: Send Morning Brief
+        env:
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUBLICATION_ID: ${{ secrets.BEEHIIV_PUBLICATION_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          UNSUB_SECRET: ${{ secrets.UNSUB_SECRET }}
+          UNSUBSCRIBE_BASE: https://unsub.aison.hk
+        run: |
+          if [ -f .brief-sent ]; then
+            echo "This edition was already sent — skipping."
+            exit 0
+          fi
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          python3 tools/send_morning_brief.py $ARGS
+      - name: Save sent-edition marker
+        if: github.event_name == 'workflow_run' && success()
+        uses: actions/cache/save@v4
+        with:
+          path: .brief-sent
+          key: brief-sent-${{ hashFiles('content/daily/*.json') }}
