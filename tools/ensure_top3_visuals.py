@@ -26,6 +26,7 @@ from typing import Iterable
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DAILY_DIR = ROOT / "content" / "daily"
 REL_AUTO_DIR = Path("assets") / "editorial" / "auto" / "top3"
+REL_CLEAN_DIR = Path("assets") / "editorial" / "auto" / "top3clean"
 
 W, H = 1200, 630
 NAVY = (7, 26, 51)
@@ -380,6 +381,32 @@ def _render_editorial(root: Path, story: dict) -> str:
     return target.relative_to(root).as_posix()
 
 
+def _render_card_variant(root: Path, story: dict) -> str:
+    """Text-free variant of the editorial graphic for homepage cards.
+
+    The standard Top 3 graphic bakes the headline into the image, which
+    duplicates the card headline when used as card media. This variant
+    keeps only the background, motif and a small brand footer. It is a
+    progressive enhancement: callers must never let it fail the build.
+    """
+    Image, ImageDraw, ImageFont = _pil()
+    font = _font_factory(ImageFont)
+    image = _linear_gradient(Image, ImageDraw)
+    draw = ImageDraw.Draw(image, "RGB")
+    for x in range(0, W, 72):
+        draw.line((x, 0, x, H), fill=(12, 45, 78), width=1)
+    for y in range(0, H, 72):
+        draw.line((0, y, W, y), fill=(12, 45, 78), width=1)
+    draw.rectangle((0, 0, 14, H), fill=GOLD)
+    template = _story_template(story)
+    MOTIFS[template](draw, 330, 65)
+    draw.text((52, 568), "AIson EDITORIAL VISUAL", font=font(15, True), fill=GOLD)
+    target = root / REL_CLEAN_DIR / f"{_slug(story.get('id'))}.webp"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    image.save(target, "WEBP", quality=88, method=6)
+    return target.relative_to(root).as_posix()
+
+
 def ensure_top3(root: Path, daily_file: Path, *, force: bool = False) -> dict:
     stories = _load_stories(daily_file)
     top = _top3(stories)
@@ -402,6 +429,18 @@ def ensure_top3(root: Path, daily_file: Path, *, force: bool = False) -> dict:
             "template": _story_template(story),
         }
         generated.append(sid)
+
+    # Progressive enhancement: text-free card variants for aison-original
+    # visuals (used as homepage card media). Never fail the build over this.
+    for story in top:
+        visual = story.get("visual")
+        if isinstance(visual, dict) and visual.get("kind") == "aison-original":
+            card_src = str(visual.get("cardSrc") or "").strip()
+            if force or not card_src or not (root / card_src).is_file():
+                try:
+                    visual["cardSrc"] = _render_card_variant(root, story)
+                except Exception as exc:  # noqa: BLE001 - enhancement only
+                    print(f"[top3-visuals] card variant skipped for {story.get('id')}: {exc}")
 
     # Hard gate: Top 3 must all leave this step with a valid local visual.
     failures = []

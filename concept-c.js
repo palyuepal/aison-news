@@ -28,6 +28,9 @@
   function heroArt(lead) {
     const v = lead && lead.visual && typeof lead.visual === 'object' && lead.visual.src ? lead.visual : null;
     const fallback = '<div class="cc-art-fallback"><span class="cc-af-cat">' + esc(lead.category || 'AI NEWS') + '</span><b>01</b><span class="cc-af-cap">TODAY\'S SIGNAL · AISON DAILY</span></div>';
+    if (v && v.cardSrc) {
+      return '<figure class="cc-hero-art">' + fallback + '<img src="' + esc(v.cardSrc) + '" alt="' + esc(v.alt || lead.title || '') + '" onerror="this.remove()"><figcaption>' + esc(v.credit || 'AIson 編輯配圖') + '</figcaption></figure>';
+    }
     if (v && v.kind !== 'aison-original') {
       return '<figure class="cc-hero-art">' + fallback + '<img src="' + esc(v.src) + '" alt="' + esc(v.alt || lead.title || '') + '" onerror="this.remove()"><figcaption>' + esc(v.credit || 'AIson 編輯配圖') + '</figcaption></figure>';
     }
@@ -36,6 +39,9 @@
 
   function cardMedia(n, rank) {
     const v = n && n.visual && typeof n.visual === 'object' && n.visual.src ? n.visual : null;
+    if (v && v.cardSrc) {
+      return '<div class="cc-card-media"><img src="' + esc(v.cardSrc) + '" alt="' + esc(v.alt || n.title || '') + '" loading="lazy" decoding="async"><span class="cc-card-rank">0' + rank + '</span></div>';
+    }
     if (v && v.kind !== 'aison-original') {
       return '<div class="cc-card-media"><img src="' + esc(v.src) + '" alt="' + esc(v.alt || n.title || '') + '" loading="lazy" decoding="async"><span class="cc-card-rank">0' + rank + '</span></div>';
     }
