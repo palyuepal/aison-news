@@ -162,3 +162,13 @@ body[data-page="article"] .article-hero .article-trust-record{color:#b9c9d8;bord
 body[data-page="article"] .article-hero .article-trust-record a{color:#ffd76a}
 body[data-page="article"] .article-hero .meta,body[data-page="article"] .article-hero #articleTags{color:#8fa5ba}
 body[data-page="article"] .article-hero .article-meta>span{color:#b9c9d8}
+
+/* ===== AIson Concept C — weekly / topics / archive consistency (2026-11-23) ===== */
+body[data-page="weekly"] .weekly-hero h1,body[data-page="weekly"] .weekly-focus h2,body[data-page="weekly"] .weekly-theme h3{font-family:'Noto Serif TC',Georgia,serif;font-weight:900}
+body[data-page="weekly"] .weekly-focus,body[data-page="weekly"] .weekly-theme{border-radius:16px}
+body[data-page="weekly"] .weekly-number{font-family:'Noto Serif TC',Georgia,serif;color:#c1912a;font-weight:900}
+body[data-page="topics"] .topic-hero h1,body[data-page="archive"] .page-hero h1{font-family:'Noto Serif TC',Georgia,serif;font-weight:900}
+body[data-page="topics"] .topic-hero h1 em,body[data-page="archive"] .page-hero h1 em{font-style:normal;color:#f2a900}
+body[data-page="topics"] .news-card h3,body[data-page="archive"] .news-card h3{font-family:'Noto Serif TC',Georgia,serif;line-height:1.5}
+body[data-page="topics"] .news-card,body[data-page="archive"] .news-card{border-radius:16px}
+body[data-page="topics"] .news-card .aison-score,body[data-page="archive"] .news-card .aison-score,body[data-page="weekly"] .aison-score{background:#081426;color:#f2a900;font-weight:900;border-radius:999px;padding:3px 10px}

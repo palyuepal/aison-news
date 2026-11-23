@@ -105,3 +105,27 @@
     console.warn('AIson Concept C layer skipped', error);
   }
 })();
+
+/* ===== AIson Concept C — home sticky subscribe bar ===== */
+(() => {
+  'use strict';
+  try {
+    if (document.body?.dataset.page !== 'home') return;
+    let dismissed = false;
+    try { dismissed = sessionStorage.getItem('aison-acc-subbar') === '1'; } catch {}
+    if (dismissed) return;
+    const sub = document.createElement('div');
+    sub.className = 'acc-subbar';
+    sub.innerHTML = '<b>AIson Morning Brief</b><span>重要 AI 新聞，朝早直接送到</span><a href="#newsletter">免費訂閱</a><button type="button" aria-label="關閉訂閱提示">✕</button>';
+    sub.querySelector('button').addEventListener('click', () => {
+      sub.classList.remove('show');
+      try { sessionStorage.setItem('aison-acc-subbar', '1'); } catch {}
+    });
+    document.body.appendChild(sub);
+    const onScroll = () => sub.classList.toggle('show', scrollY > innerHeight * 0.9);
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  } catch (error) {
+    console.warn('AIson Concept C sticky bar skipped', error);
+  }
+})();
