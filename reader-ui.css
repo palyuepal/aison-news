@@ -172,3 +172,12 @@ body[data-page="topics"] .topic-hero h1 em,body[data-page="archive"] .page-hero 
 body[data-page="topics"] .news-card h3,body[data-page="archive"] .news-card h3{font-family:'Noto Serif TC',Georgia,serif;line-height:1.5}
 body[data-page="topics"] .news-card,body[data-page="archive"] .news-card{border-radius:16px}
 body[data-page="topics"] .news-card .aison-score,body[data-page="archive"] .news-card .aison-score,body[data-page="weekly"] .aison-score{background:#081426;color:#f2a900;font-weight:900;border-radius:999px;padding:3px 10px}
+
+/* ===== AIson hotfix — nav active link, light & dark (2026-11-23) ===== */
+/* Light theme: the active homepage link was white on the white topbar
+   (home-v6.css forces #fff) — restore navy so the current page is visible. */
+html:not([data-theme="dark"]) body[data-page="home"].b2-ready .navlinks a.active{color:#0b2345!important}
+/* The legacy ::after dash sits at bottom:-18px and escapes the topbar
+   (visible as a stray floating bar, doubled with the underline). Remove it
+   everywhere; the reader-ui text-decoration underline stays as the marker. */
+body .navlinks a.active::after{display:none!important}
