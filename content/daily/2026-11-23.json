@@ -40,10 +40,10 @@
     "actionReason": "屬重大安全治理倡議，但尚未成為約束性政策。",
     "aisonScore": 9.7,
     "audienceImpact": {
-      "worker": 7,
-      "sme": 9,
-      "creator": 7,
-      "developer": 10
+      "worker": 4,
+      "sme": 5,
+      "creator": 4,
+      "developer": 5
     },
     "tags": [
       "OpenAI",
@@ -93,10 +93,10 @@
     "actionReason": "科研里程碑潛力極高，但正式承認程序未完成。",
     "aisonScore": 9.4,
     "audienceImpact": {
-      "worker": 6,
-      "sme": 6,
-      "creator": 8,
-      "developer": 9
+      "worker": 3,
+      "sme": 3,
+      "creator": 4,
+      "developer": 5
     },
     "tags": [
       "Claude",
@@ -142,10 +142,10 @@
     "actionReason": "調查未有裁決，但會直接影響亞洲算力供應與合規。",
     "aisonScore": 9.1,
     "audienceImpact": {
-      "worker": 5,
-      "sme": 9,
-      "creator": 5,
-      "developer": 9
+      "worker": 3,
+      "sme": 5,
+      "creator": 3,
+      "developer": 5
     },
     "tags": [
       "Nvidia",
@@ -191,10 +191,10 @@
     "actionReason": "重大軍事 AI 測試，香港主要是供應鏈與雙重用途合規影響。",
     "aisonScore": 8.8,
     "audienceImpact": {
-      "worker": 4,
-      "sme": 7,
-      "creator": 6,
-      "developer": 8
+      "worker": 2,
+      "sme": 4,
+      "creator": 3,
+      "developer": 4
     },
     "tags": [
       "Military AI",
@@ -240,10 +240,10 @@
     "actionReason": "可立即檢查備援、回退與端到端監察。",
     "aisonScore": 8.5,
     "audienceImpact": {
-      "worker": 8,
-      "sme": 10,
-      "creator": 8,
-      "developer": 9
+      "worker": 4,
+      "sme": 5,
+      "creator": 4,
+      "developer": 5
     },
     "tags": [
       "Outage",
@@ -289,10 +289,10 @@
     "actionReason": "對投資及專業服務有啟示，但未有直接產品變動。",
     "aisonScore": 8.2,
     "audienceImpact": {
-      "worker": 6,
-      "sme": 8,
-      "creator": 6,
-      "developer": 5
+      "worker": 3,
+      "sme": 4,
+      "creator": 3,
+      "developer": 3
     },
     "tags": [
       "Anthropic",
@@ -338,10 +338,10 @@
     "actionReason": "宏觀訊號重要，但不適合用作短線投資指示。",
     "aisonScore": 7.9,
     "audienceImpact": {
-      "worker": 5,
-      "sme": 8,
-      "creator": 5,
-      "developer": 6
+      "worker": 3,
+      "sme": 4,
+      "creator": 3,
+      "developer": 3
     },
     "tags": [
       "AI Stocks",
@@ -387,10 +387,10 @@
     "actionReason": "政策方向已確認，但具體義務仍分散及待落實。",
     "aisonScore": 7.6,
     "audienceImpact": {
-      "worker": 7,
-      "sme": 8,
-      "creator": 5,
-      "developer": 7
+      "worker": 4,
+      "sme": 4,
+      "creator": 3,
+      "developer": 4
     },
     "tags": [
       "UK",
@@ -436,10 +436,10 @@
     "actionReason": "合作框架尚未轉化成企業可執行規則。",
     "aisonScore": 7.3,
     "audienceImpact": {
-      "worker": 4,
-      "sme": 7,
-      "creator": 4,
-      "developer": 6
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 3
     },
     "tags": [
       "European Union",
@@ -489,10 +489,10 @@
     "actionReason": "值得追蹤亞洲人才與本地化研究成果，暫無即時產品變動。",
     "aisonScore": 7,
     "audienceImpact": {
-      "worker": 5,
-      "sme": 6,
-      "creator": 6,
-      "developer": 7
+      "worker": 3,
+      "sme": 3,
+      "creator": 3,
+      "developer": 4
     },
     "tags": [
       "Google",
