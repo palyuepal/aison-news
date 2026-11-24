@@ -64,7 +64,7 @@
     root.innerHTML =
       '<div class="cc-hero"><div class="cc-wrap cc-hero-grid">' +
         '<div class="cc-hero-copy">' +
-          '<div class="cc-kicker">AISON DAILY · 今日頭條 STORY 01</div>' +
+          '<div class="cc-kicker">AISON DAILY · ' + esc(fmt(lead.date)) + ' · 今日頭條 STORY 01</div>' +
           '<h2 class="cc-hero-title">' + highlightTitle(lead.title) + '</h2>' +
           '<p class="cc-dek">' + esc(brief(oneLine === (lead.summary || '') ? (lead.excerpt || oneLine) : oneLine, 190)) + '</p>' +
           '<div class="cc-hero-meta">' + scoreRing(score) +
@@ -83,7 +83,7 @@
           return '<a class="cc-card" href="' + url(n) + '">' + cardMedia(n, i + 2) +
             '<div class="cc-card-body"><span class="cc-cat">' + esc(n.category || 'AI NEWS') + '</span>' +
             '<h3>' + esc(n.title) + '</h3><p>' + esc(brief(n.quickTake || n.excerpt || n.summary, 108)) + '</p>' +
-            '<div class="cc-card-meta">' + (n.verified ? '<span class="cc-verified">✓ 已核實</span>' : '') + '<span class="cc-score-chip">' + s.toFixed(1) + ' / 10</span><span class="cc-sbar"><span style="width:' + (s * 10).toFixed(0) + '%"></span></span></div></div></a>';
+            '<div class="cc-card-meta">' + (n.verified ? '<span class="cc-verified">✓ 已核實</span>' : '') + '<span class="cc-score-chip">' + s.toFixed(1) + ' / 10</span><span class="cc-sbar"><span style="width:' + (s * 10).toFixed(0) + '%"></span></span><time class="cc-card-date">' + esc(fmt(n.date)) + '</time></div></div></a>';
         }).join('') + '</div>' +
       '</div></section>';
 
