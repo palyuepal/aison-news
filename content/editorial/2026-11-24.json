@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-24",
+  "dailyOneLiner": "黃仁勳復職、晶片黑名單擴大、AI 證明聲稱升級——今日三條主線指向同一件事：AI 的權力與可信度，正在被重新定價。",
+  "top3Ids": [
+    "2026-11-24-nvidia-reinstates-jensen-huang-ceo",
+    "2026-11-24-us-blacklist-megaspeed-alibaba-subsidiary",
+    "2026-11-24-claude-generalized-riemann-claim-scrutiny"
+  ],
+  "threeThemes": [
+    {
+      "title": "晶片權力與國家安全綁定",
+      "summary": "輝達董事會以「聽取美國政府意見」為由恢復黃仁勳職務並新設出口管制委員會，同日商務部把 Megaspeed 與阿里子公司列入黑名單：晶片業的管治與執法，同日向國家安全靠攏。",
+      "watch": "輝達特別委員會調查結論、黑名單完整名單與阿里回應，以及馬來西亞數據中心的實際執行範圍。"
+    },
+    {
+      "title": "AI 成果的可驗證性之爭",
+      "summary": "Claude 的廣義黎曼猜想聲稱遇上「定義空轉」質疑，DeepMind 的量子算法改進則以 Lean 核驗開源：同一周內，形式化驗證既是 AI 科研的加速器，也是其公信力的考場。",
+      "watch": "數學界對黎曼聲稱的書面覆核、Lean 機構對廣義版本的態度，以及量子算法數字的獨立重現。"
+    },
+    {
+      "title": "代理進入交付與防禦的把關位置",
+      "summary": "Claude Ship 讓 AI 審查並批准程式合併，GPT-6.2 Sol 接管 ChatGPT 預設並訂下舊版退役日，Shirudo 示範 AI 即時撰寫安全防護：AI 正由「做事」走向「把關」，政策與審計成為新戰場。",
+      "watch": "Claude Ship 的誤批數據、GPT-5.6 退役遷移的實際影響，以及 AI 生成防護的社群採用情況。"
+    }
+  ],
+  "biggestChange": "輝達董事會在公告中明文以美國政府高層意見支持復職決定，並新設國家安全與出口管制委員會——全球最大 AI 晶片公司的管治，首次以白紙黑字與國家安全綁定，這比人事本身更深遠。",
+  "watchTomorrow": "輝達股價能否守住復職升幅與調查後續、實體清單對阿里及東南亞數據中心的實際影響、黎曼猜想聲稱的同行覆核進展，以及 GPT-6.2 Sol 的獨立評測是否確認官方升幅。",
+  "source": "manual-recovery"
+}
