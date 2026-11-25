@@ -95,6 +95,28 @@ class PublicationTests(unittest.TestCase):
             f.main()
         validate.assert_called_once_with('2026-11-19')
 
+    def test_effective_date_prefers_due_then_latest_then_none(self):
+        with patch.object(p,'due_date',return_value='2026-11-20'):
+            self.assertEqual(p.effective_date(root=self.root),'2026-11-20')
+        with patch.object(p,'due_date',return_value='2026-11-21'):
+            self.assertEqual(p.effective_date(root=self.root),'2026-11-20')
+        (self.root/'content/editorial'/f'{self.date}.json').unlink()
+        with patch.object(p,'due_date',return_value='2026-11-21'):
+            self.assertIsNone(p.effective_date(root=self.root))
+
+    def test_main_falls_back_to_latest_when_due_edition_missing(self):
+        import io, contextlib
+        out=io.StringIO()
+        with patch.object(p,'due_date',return_value='2026-11-21'), \
+             patch.object(sys,'argv',['publication','--source-root',str(self.root)]), \
+             contextlib.redirect_stdout(out):
+            p.main()
+        self.assertIn('"editionDate": "2026-11-20"', out.getvalue())
+
+    def test_main_explicit_date_stays_strict(self):
+        with patch.object(sys,'argv',['publication','--date','2026-11-21','--source-root',str(self.root)]):
+            with self.assertRaises(FileNotFoundError): p.main()
+
     def test_live_detects_changed_body_link_and_active_flag(self):
         row={'id':'test','publishedAt':'2026-11-20T08:00:00+08:00','title':'same',
              'summary':'current facts','sourceUrl':'https://example.com/source','active':True}
