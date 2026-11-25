@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-25",
+  "dailyOneLiner": "CrowdStrike 用 439 億買代理安全、Anthropic 一周跌破發行價——AI 的錢，今日正式由「講故事」轉向「買把關」。",
+  "top3Ids": [
+    "2026-11-25-crowdstrike-acquires-zscaler-ai-agent-security",
+    "2026-11-25-anthropic-stock-below-ipo-price",
+    "2026-11-25-meta-muse-agent-uk-regulator-warning"
+  ],
+  "threeThemes": [
+    {
+      "title": "資本重新定價 AI",
+      "summary": "CrowdStrike 以約 439 億美元收購 Zscaler 押注代理接入安全，Anthropic 卻在上市一周內跌破發行價：市場一邊為「治理與把關」付溢價，一邊要求模型公司交出毛利答案。",
+      "watch": "CrowdStrike 交易的監管審查、Anthropic 首份上市後財報，以及 OpenAI 上市定價會否受影響。"
+    },
+    {
+      "title": "代理上線，制度追趕",
+      "summary": "Meta 的 Muse 代理登陸英國即遇監管警告，日本開專家會議研究代理責任，紐約立法禁售 AI 聊天玩具：產品每向生活邁進一步，制度就補上一課。",
+      "watch": "英國監管對 Meta 的具體要求、日本專家會議的中期框架，以及美國各州兒童 AI 立法的跟進情況。"
+    },
+    {
+      "title": "中國算力與產品的自立進度",
+      "summary": "中國電信用 8,192 張昇騰芯片完成 2,850 億參數訓練並公開論文，字節的個人代理小豆開始公測：由芯片到應用，中國 AI 的自立路線同日交出兩張進度表。",
+      "watch": "國產集群下一個量級的公開結果、小豆整合進豆包後的實際能力，以及管制政策的回應。"
+    }
+  ],
+  "biggestChange": "資安業歷來最大的併購之一，收購理由不是防黑客，而是防 AI 代理——「代理治理」由概念變成 439 億美元的真金白銀，這是今日最值得記住的定價訊號。",
+  "watchTomorrow": "輝達參議院聽證的議程公布、Anthropic 股價能否守住發行價下方企穩、英國監管與 Meta 的後續交鋒，以及 Tidal 禁令會否引發大平台跟進。",
+  "source": "manual-recovery"
+}
