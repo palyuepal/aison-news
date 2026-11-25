@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import os
+import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -26,6 +27,27 @@ def due_date(now=None):
     now = now.astimezone(ZoneInfo('Asia/Hong_Kong'))
     # Before 08:00 the previous edition is still due; delayed runs keep today's date.
     return (now.date() - timedelta(days=now.hour < 8)).isoformat()
+
+
+def edition_dates(root=ROOT):
+    """Dates that have a complete daily+editorial pair on disk, ascending."""
+    daily_dir = root / 'content/daily'
+    if not daily_dir.is_dir():
+        return []
+    return sorted(path.stem for path in daily_dir.glob('*.json')
+                  if (root / 'content/editorial' / (path.stem + '.json')).exists())
+
+
+def effective_date(now=None, root=ROOT):
+    """The edition a deploy should publish: the due edition when it exists,
+    otherwise the newest complete edition on disk. A missing due edition must
+    degrade the site to the previous edition, never freeze every deploy.
+    Returns None when no complete edition exists at all."""
+    due = due_date(now)
+    dates = edition_dates(root)
+    if due in dates:
+        return due
+    return dates[-1] if dates else None
 
 
 def validate_pair(date, root=ROOT):
@@ -93,7 +115,18 @@ def main():
     p.add_argument('--artifact-root', type=Path, default=ROOT)
     p.add_argument('--source-root', type=Path, default=ROOT)
     args = p.parse_args()
-    result = receipt(args.date or due_date(), args.source_root)
+    date = args.date
+    if not date:
+        due = due_date()
+        # Deploy path: fall back to the newest complete edition when the due
+        # edition is missing, so one missing edition cannot freeze the site.
+        # An explicit --date stays strict, and with no complete edition at
+        # all the original due-date failure is preserved.
+        date = effective_date(root=args.source_root) or due
+        if date != due:
+            print(f"::warning::Due edition {due} is missing; "
+                  f"using latest available edition {date} instead.", file=sys.stderr)
+    result = receipt(date, args.source_root)
     if args.write:
         result.update(commitSha=os.environ.get('GITHUB_SHA', ''),
                       runUrl=os.environ.get('GITHUB_SERVER_URL', 'https://github.com') + '/' +
