@@ -104,7 +104,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          edition="$(python -c 'from tools.publication import due_date; print(due_date())')"
+          edition="$(python -c 'from tools.publication import effective_date; print(effective_date())')"
           echo "Verifying due public edition $edition after Pages deployment"
           python tools/check_freshness.py --source-only --date "$edition"
           for attempt in $(seq 1 8); do
