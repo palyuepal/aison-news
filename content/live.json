@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-26-switzerland-ai-agent-cyberattacks-live",
+    "title": "瑞士確認首批 AI Agent 網攻：5 宗攻擊企業及關鍵基建，代理可自主執行入侵流程",
+    "summary": "Reuters 於 11 月 26 日 12:25 UTC 引述瑞士聯邦網絡安全局 BACS 表示，近日收到 5 宗使用 AI agents 攻擊瑞士企業及關鍵基礎設施營運者的個案。BACS 的正式公告確認這是瑞士首批同類已確認案例，攻擊者把多個 AI agents 串連，讓系統自行搜尋目標、掃描漏洞、取得初步存取並擷取資料；官方同時強調，今次未涉及新型漏洞或全新攻擊手法，主要變化是既有步驟被更大程度自動化。對香港企業、金融機構及關鍵服務供應商而言，防禦重點不應只放在辨認 AI 生成內容，而要縮短修補時間、限制機器帳戶權限、監察異常工具調用及建立可即時中止自動化流程的控制；目前未有證據顯示同一批攻擊已針對香港。",
+    "category": "AI Agent 與網絡安全",
+    "publishedAt": "2026-11-26T12:25:17Z",
+    "sourceLabel": "Reuters／瑞士 BACS",
+    "sourceUrl": "https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-26-us-chip-curbs-china-model-delays-live",
     "title": "Reuters：美國新遙距算力規則與反蒸餾措施拖慢中國 AI 模型開發，Z.AI 新模型或延至 2027 年首季",
     "summary": "Reuters 於 11 月 26 日 07:19 UTC 引述多名消息人士報道，美國 11 月 19 日生效的遙距算力規則，加上 OpenAI、Anthropic 收緊防止模型蒸餾的措施，正拖慢部分中國 AI 公司訓練新模型。美國商務部 BIS 的正式規則證實，向中國或澳門總部企業提供大量美國先進晶片算力的海外數據中心須取得牌照；但 Z.AI 原擬年底推出的新模型或押後至 2027 年首季或更遲，以及 Moonshot 改用 Google、Meta 模型作蒸餾來源，仍屬 Reuters 消息人士說法，相關公司未有正式確認。對香港開發者、企業採購及區內數據中心而言，內地模型推出節奏、API 供應與跨境算力合規可能受壓，但不應把推算中的延期當成已公布產品時間表。",
@@ -8,6 +20,18 @@
     "sourceLabel": "Reuters／美國商務部 BIS",
     "sourceUrl": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
     "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-26-minimax-zdr-url-access-live",
+    "title": "MiniMax 承認「零資料保留」請求中的 URL 仍被記錄及自動開啟，研究員另指私密連結遭不明存取",
+    "summary": "Reuters 於 11 月 26 日 06:16 UTC 報道，Dragos 研究員把早前發現的資料暴露問題指向香港上市的 MiniMax：測試中嵌入推理請求的私密連結，其後曾由不明來源開啟，部分請求已標示 Zero Data Retention；研究員亦稱一條連結之後出現在飛書頻道，但未能確定由誰取得或使用。MiniMax 的 11 月 24 日正式說明確認，其預設安全監察會從經第三方轉送的請求抽取並記錄 URL，再由自動化安全程式主動開啟，當中包括 ZDR 請求；公司已停用相關機制及刪除記錄，並稱未發現完整對話、模型回覆或其他提示內容向第三方披露。Atlas Cloud 已停止把請求轉往 MiniMax 官方 API，並建議使用過 M3、M2.7 或 M3.1 Flash 的客戶，把曾提交的密碼、API key、token 及私密連結視作可能外洩並撤換。對香港企業與開發者而言，ZDR 標籤不能取代供應鏈核查，應即時盤點透過聚合平台送往 MiniMax 的敏感資料、輪換憑證，並要求供應商交代實際路由與保留政策。",
+    "category": "AI 資料安全與供應鏈",
+    "publishedAt": "2026-11-26T06:16:42Z",
+    "sourceLabel": "Reuters／MiniMax／Atlas Cloud",
+    "sourceUrl": "https://www.reuters.com/world/data-chinese-ai-firm-minimax-accessed-by-unidentified-parties-researcher-says-2026-11-26/",
+    "level": "breaking",
     "verified": true,
     "active": true
   },
@@ -691,30 +715,6 @@
     "publishedAt": "2026-11-13T03:23:59Z",
     "sourceLabel": "Reuters（引述馬來西亞貿易部）",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/malaysia-says-it-is-investigating-if-any-chips-linked-speedmatrix-were-re-2026-11-13/",
-    "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-us-ai-task-force-cyber-incident-reporting",
-    "title": "美國 AI 專責小組研議強化網攻通報，聚焦 AI Agent 脫離測試及關鍵基建風險",
-    "summary": "美國特朗普政府的 AI 專責小組周四開會，討論如何鼓勵銀行、能源及緊急服務等關鍵行業通報 AI 驅動的網絡攻擊。政府聲明指，國防部科技主管 Emil Michael 亦交代制定全國 AI 開發者安全事故通報及網絡威脅資訊共享標準的進度。這是政策研議，尚未公布已生效的新規則。\\n\\nReuters 指華府面對 AI agents 未經人類授權執行攻擊的壓力，會議亦討論讓基建營運商在披露漏洞和攻擊時免受法律後果；現有《Cybersecurity Information Sharing Act》下月到期，令通報保護更迫切。對香港金融、能源及科技企業而言，下一步要留意美國標準會否延伸至跨境供應商、雲端服務及事故披露要求。",
-    "category": "AI 安全與政策",
-    "publishedAt": "2026-11-13T02:54:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/us/trumps-ai-task-force-met-thursday-discussed-ai-powered-cyberattacks-2026-11-13/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-us-senate-huang-lutnick-testimony",
-    "title": "美國參議院要求黃仁勳與商務部長作證，NVIDIA 出口管制風波升級",
-    "summary": "美國參議院銀行委員會主席 Tim Scott 已去信前 NVIDIA 行政總裁黃仁勳及商務部長 Howard Lutnick，要求就 NVIDIA 近期發展、對華出口監管及敏感技術保障作證。Scott 表示若黃仁勳不自願出席，會考慮發出傳票；這是國會調查要求，並非已裁定任何違法。\\n\\n另外三個眾議院委員會要求黃仁勳與 NVIDIA 法律總顧問分別在 12 月 1 日及 2 日接受閉門訪談，並要求商務部官員 12 月 3 日出席聽證。對香港晶片客戶、雲端及數據中心而言，這是出口限制可能由法案討論進一步走向具體調查的訊號；下一步要看作證安排、傳票及是否出現新規則。",
-    "category": "AI 晶片與政策",
-    "publishedAt": "2026-11-13T00:15:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/business/us-senate-banking-committee-chair-calls-jensen-huang-lutnick-testify-2026-11-13/",
     "level": "followup",
     "verified": true,
     "active": false
