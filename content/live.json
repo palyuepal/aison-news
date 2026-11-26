@@ -1,17 +1,5 @@
 [
   {
-    "id": "2026-11-26-minimax-zdr-url-access-live",
-    "title": "MiniMax 承認「零資料保留」請求中的 URL 仍被記錄及自動開啟，研究員另指私密連結遭不明存取",
-    "summary": "Reuters 於 11 月 26 日 06:16 UTC 報道，Dragos 研究員把早前發現的資料暴露問題指向香港上市的 MiniMax：測試中嵌入推理請求的私密連結，其後曾由不明來源開啟，部分請求已標示 Zero Data Retention；研究員亦稱一條連結之後出現在飛書頻道，但未能確定由誰取得或使用。MiniMax 的 11 月 24 日正式說明確認，其預設安全監察會從經第三方轉送的請求抽取並記錄 URL，再由自動化安全程式主動開啟，當中包括 ZDR 請求；公司已停用相關機制及刪除記錄，並稱未發現完整對話、模型回覆或其他提示內容向第三方披露。Atlas Cloud 已停止把請求轉往 MiniMax 官方 API，並建議使用過 M3、M2.7 或 M3.1 Flash 的客戶，把曾提交的密碼、API key、token 及私密連結視作可能外洩並撤換。對香港企業與開發者而言，ZDR 標籤不能取代供應鏈核查，應即時盤點透過聚合平台送往 MiniMax 的敏感資料、輪換憑證，並要求供應商交代實際路由與保留政策。",
-    "category": "AI 資料安全與供應鏈",
-    "publishedAt": "2026-11-26T06:16:42Z",
-    "sourceLabel": "Reuters／MiniMax／Atlas Cloud",
-    "sourceUrl": "https://www.reuters.com/world/data-chinese-ai-firm-minimax-accessed-by-unidentified-parties-researcher-says-2026-11-26/",
-    "level": "breaking",
-    "verified": true,
-    "active": true
-  },
-  {
     "id": "2026-11-26-switzerland-ai-agent-cyberattacks-live",
     "title": "瑞士確認首批 AI Agent 網攻：5 宗攻擊企業及關鍵基建，代理可自主執行入侵流程",
     "summary": "Reuters 於 11 月 26 日 12:25 UTC 引述瑞士聯邦網絡安全局 BACS 表示，近日收到 5 宗使用 AI agents 攻擊瑞士企業及關鍵基礎設施營運者的個案。BACS 的正式公告確認這是瑞士首批同類已確認案例，攻擊者把多個 AI agents 串連，讓系統自行搜尋目標、掃描漏洞、取得初步存取並擷取資料；官方同時強調，今次未涉及新型漏洞或全新攻擊手法，主要變化是既有步驟被更大程度自動化。對香港企業、金融機構及關鍵服務供應商而言，防禦重點不應只放在辨認 AI 生成內容，而要縮短修補時間、限制機器帳戶權限、監察異常工具調用及建立可即時中止自動化流程的控制；目前未有證據顯示同一批攻擊已針對香港。",
@@ -19,6 +7,18 @@
     "publishedAt": "2026-11-26T12:25:17Z",
     "sourceLabel": "Reuters／瑞士 BACS",
     "sourceUrl": "https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-26-minimax-zdr-url-access-live",
+    "title": "MiniMax 承認「零資料保留」請求中的 URL 仍被記錄及自動開啟，研究員另指私密連結遭不明存取",
+    "summary": "Reuters 於 11 月 26 日 06:16 UTC 報道，Dragos 研究員把早前發現的資料暴露問題指向香港上市的 MiniMax：測試中嵌入推理請求的私密連結，其後曾由不明來源開啟，部分請求已標示 Zero Data Retention；研究員亦稱一條連結之後出現在飛書頻道，但未能確定由誰取得或使用。MiniMax 的 11 月 24 日正式說明確認，其預設安全監察會從經第三方轉送的請求抽取並記錄 URL，再由自動化安全程式主動開啟，當中包括 ZDR 請求；公司已停用相關機制及刪除記錄，並稱未發現完整對話、模型回覆或其他提示內容向第三方披露。Atlas Cloud 已停止把請求轉往 MiniMax 官方 API，並建議使用過 M3、M2.7 或 M3.1 Flash 的客戶，把曾提交的密碼、API key、token 及私密連結視作可能外洩並撤換。對香港企業與開發者而言，ZDR 標籤不能取代供應鏈核查，應即時盤點透過聚合平台送往 MiniMax 的敏感資料、輪換憑證，並要求供應商交代實際路由與保留政策。",
+    "category": "AI 資料安全與供應鏈",
+    "publishedAt": "2026-11-26T06:16:42Z",
+    "sourceLabel": "Reuters／MiniMax／Atlas Cloud",
+    "sourceUrl": "https://www.reuters.com/world/data-chinese-ai-firm-minimax-accessed-by-unidentified-parties-researcher-says-2026-11-26/",
     "level": "breaking",
     "verified": true,
     "active": true
