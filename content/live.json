@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-26-us-chip-curbs-china-model-delays-live",
+    "title": "Reuters：美國新遙距算力規則與反蒸餾措施拖慢中國 AI 模型開發，Z.AI 新模型或延至 2027 年首季",
+    "summary": "Reuters 於 11 月 26 日 07:19 UTC 引述多名消息人士報道，美國 11 月 19 日生效的遙距算力規則，加上 OpenAI、Anthropic 收緊防止模型蒸餾的措施，正拖慢部分中國 AI 公司訓練新模型。美國商務部 BIS 的正式規則證實，向中國或澳門總部企業提供大量美國先進晶片算力的海外數據中心須取得牌照；但 Z.AI 原擬年底推出的新模型或押後至 2027 年首季或更遲，以及 Moonshot 改用 Google、Meta 模型作蒸餾來源，仍屬 Reuters 消息人士說法，相關公司未有正式確認。對香港開發者、企業採購及區內數據中心而言，內地模型推出節奏、API 供應與跨境算力合規可能受壓，但不應把推算中的延期當成已公布產品時間表。",
+    "category": "AI 模型與出口管制",
+    "publishedAt": "2026-11-26T07:19:35Z",
+    "sourceLabel": "Reuters／美國商務部 BIS",
+    "sourceUrl": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-26-nvidia-se-asia-server-shipments-halt-live",
     "title": "NVIDIA 據報暫停四個東南亞市場 AI 伺服器付運，新出口牌照規則即時衝擊區內算力供應",
     "summary": "Financial Times 及 Reuters 於 11 月 26 日報道，NVIDIA 已要求製造合作夥伴停止向馬來西亞、新加坡、泰國及印尼付運含其晶片的伺服器；Dell、Supermicro 等合作夥伴據報已通知買家暫停出貨。NVIDIA、Dell 及 Supermicro 截至報道時未有回應，亦未確認暫停會維持多久，因此不應視作永久禁售。美國商務部工業與安全局 11 月 19 日生效的臨時最終規則，已把上述四地及巴西列為先進半導體較高轉移風險目的地，相關出口、再出口及境內轉移原則上要申領牌照，部分美國總部最終用戶在符合申報條件時獲豁免。香港不在今次五地名單，但本港雲端、數據中心、系統整合商及跨境企業如透過新加坡或東南亞機房取得 GPU 容量，可能面對交付延誤、KYC／最終用途審查加強及區內算力價格波動；下一步要看 NVIDIA 正式聲明、牌照處理速度及合作夥伴何時恢復付運。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters",
     "sourceUrl": "https://www.reuters.com/business/us-senate-banking-committee-chair-calls-jensen-huang-lutnick-testify-2026-11-13/",
     "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-12-north-korea-facestealer-ai-deepfake-crypto",
-    "title": "北韓黑客用偷拍視像與 AI Deepfake 擴散詐騙，FBI 指18個月盜逾4億美元",
-    "summary": "美國 FBI 表示，北韓國家支持黑客以「FaceStealer」社交工程行動，在過去18個月盜取逾4億美元加密貨幣。攻擊者先入侵真實聯絡人的社交及通訊帳戶，用暗中錄下的視像冒充對方，誘使目標進入偽冒 Zoom、Teams 或 Google Meet；再以技術故障為由要求點擊「修復」連結，感染電腦及帳戶。FBI 已識別並扣押超過900段受害者 webcam 影片。\\n\\nFBI 指攻擊者開始利用 AI 製作加密貨幣及區塊鏈業界知名人士的 deepfake 視像，並將行動歸因於 Sapphire Sleet／UNC1069；歸因屬 FBI 評估。對香港企業和投資者而言，熟悉聯絡人及視像畫面已不足以證明身份；涉及付款、錢包、密碼重設或軟件安裝時，應改用獨立渠道覆核，並禁止會議連結要求的即時安裝。",
-    "category": "AI 安全與 Deepfake",
-    "publishedAt": "2026-11-12T21:40:00Z",
-    "sourceLabel": "Reuters（引述 FBI 公告）",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/north-korean-hackers-steal-more-than-400-million-using-video-images-fbi-says-2026-11-12/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
