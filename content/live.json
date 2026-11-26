@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-26-nvidia-se-asia-server-shipments-halt-live",
+    "title": "NVIDIA 據報暫停四個東南亞市場 AI 伺服器付運，新出口牌照規則即時衝擊區內算力供應",
+    "summary": "Financial Times 及 Reuters 於 11 月 26 日報道，NVIDIA 已要求製造合作夥伴停止向馬來西亞、新加坡、泰國及印尼付運含其晶片的伺服器；Dell、Supermicro 等合作夥伴據報已通知買家暫停出貨。NVIDIA、Dell 及 Supermicro 截至報道時未有回應，亦未確認暫停會維持多久，因此不應視作永久禁售。美國商務部工業與安全局 11 月 19 日生效的臨時最終規則，已把上述四地及巴西列為先進半導體較高轉移風險目的地，相關出口、再出口及境內轉移原則上要申領牌照，部分美國總部最終用戶在符合申報條件時獲豁免。香港不在今次五地名單，但本港雲端、數據中心、系統整合商及跨境企業如透過新加坡或東南亞機房取得 GPU 容量，可能面對交付延誤、KYC／最終用途審查加強及區內算力價格波動；下一步要看 NVIDIA 正式聲明、牌照處理速度及合作夥伴何時恢復付運。",
+    "category": "AI 晶片與出口管制",
+    "publishedAt": "2026-11-26T05:09:51Z",
+    "sourceLabel": "Reuters／Financial Times／美國 BIS",
+    "sourceUrl": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-24-nvidia-jensen-huang-reinstated-ceo-live",
     "title": "NVIDIA 董事會推翻上周決定，黃仁勳即時復任 CEO 並續查國安及出口合規",
     "summary": "NVIDIA 於 11 月 23 日正式宣布，董事會一致通過黃仁勳即時復任總裁、行政總裁及董事；董事會表示，經多輪會面並取得美國政府高層意見後，認為其復任不構成國家安全風險。Reuters 於同日 13:59 UTC 報道，這推翻了董事會上周不會重新聘用黃仁勳的決定。針對外國情報活動及晶片合規的獨立調查仍會繼續，公司亦成立由獨立董事組成的國家安全與出口管制委員會，並開始招聘向董事會委員會匯報的 Chief Compliance Officer。對香港投資者、晶片供應鏈、雲端及數據中心企業而言，領導層短期不確定性下降，但出口管制、最終用途審查和公司治理風險並未結束，下一步要看調查結論、正式監管文件及新合規主管安排。",
@@ -704,18 +716,6 @@
     "sourceLabel": "Reuters（引述 FBI 公告）",
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/north-korean-hackers-steal-more-than-400-million-using-video-images-fbi-says-2026-11-12/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-12-us-congress-tighter-ai-chip-curbs-after-huang",
-    "title": "黃仁勳辭任後美國國會加推 AI 晶片管制，海外租算力亦成焦點",
-    "summary": "Reuters 報道，美國兩黨議員正推動多項收緊中國取得先進 AI 晶片的法案，眾議院議長 Mike Johnson 稱國會正形成支持加強限制的共識。參議院版國防授權法案已包括 AI Overwatch Act、Chip Security Act 和 MATCH Act；相關方案分別增加國會對出口規則的審查、要求晶片商追蹤先進處理器及報告疑似轉運，並促使荷蘭、日本等盟友同步限制晶片製造設備。\\n\\n另一項 Remote Access Security Act 已獲眾議院通過、仍待參議院處理，目標是讓商務部規管中國企業經海外數據中心租用 NVIDIA 算力。這是立法推動而非已生效新禁令；對香港及亞洲數據中心而言，下一步要留意最終條文、客戶盡職審查、晶片追蹤責任及跨境雲端合約成本。",
-    "category": "AI 晶片與政策",
-    "publishedAt": "2026-11-12T18:47:00Z",
-    "sourceLabel": "Reuters",
-    "sourceUrl": "https://www.reuters.com/world/china/tougher-curbs-ai-chip-sales-china-likely-after-nvidia-ceo-resigns-2026-11-12/",
-    "level": "followup",
     "verified": true,
     "active": false
   }
