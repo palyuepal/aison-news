@@ -1,0 +1,535 @@
+[
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-openai-gpt6-protein-design",
+    "rank": 1,
+    "featured": true,
+    "title": "GPT-6 識得設計蛋白質：322 個設計有 35 個實驗室證實結合，通用模型闖入生物學",
+    "excerpt": "OpenAI 公布 GPT-6.2 設計的蛋白質在實驗室證實能結合五個與癌症及免疫疾病相關的靶點，35 個設計成功結合；通用推理模型第一次在濕實驗室交出蛋白質設計的成績表。",
+    "category": "AI 科研與生技",
+    "readTime": "8 分鐘",
+    "sourceUrl": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+    "sourceLabel": "OpenAI 官方研究文章",
+    "sourceType": "官方研究發布",
+    "references": [
+      {
+        "label": "OpenAI｜GPT-6 models demonstrate intrinsic protein-design capabilities",
+        "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+      },
+      {
+        "label": "TechRepublic｜GPT-6.2 Protein Design: What the Lab Binding Data Show",
+        "url": "https://www.techrepublic.com/article/news-gpt-6-2-protein-design-lab-binding-results/"
+      }
+    ],
+    "quickTake": "通用模型唔再只係識講生物學，而係落手設計出嚟、再去實驗室驗證——由聊天室行入濕實驗室的一步，比任何跑分都實在。",
+    "summary": "OpenAI 11 月 24 日發表研究文章與預印本，展示 GPT-6 系列模型能夠以推理與程式碼設計新蛋白質結構與氨基酸序列，毋須依賴專門生物模型生成設計。與研究夥伴 Onava 合作的實驗室測試中，322 個按 GPT-6.2 設計製造的迷你結合蛋白有 35 個證實能結合目標蛋白，命中率 10.9%，橫跨五個與癌症及免疫疾病相關的靶點。",
+    "whatHappened": "OpenAI 在 11 月 24 日發表研究文章，並同步公開預印本《GPT-6 as a Universal Foundation Model for Protein Biology: Beyond Specialized Models》。研究團隊將五個靶點蛋白的三維結構交給 GPT-6.2，標明希望迷你結合蛋白附著的位置，由模型設計全新的蛋白質形狀；氨基酸序列則由專門模型協助生成與篩選。研究夥伴 Onava 其後在實驗室製造並測試了 322 個迷你結合蛋白，結果 35 個證實能結合目標，命中率 10.9%。分靶點計，PD-L1 有 5 個、IL-7Rα 有 3 個、TrkA 有 1 個、VEGF-A 有 8 個、IL-17A 有 18 個。團隊亦測試了序列重設計：為已知結構設計新序列時，MDM2 有 75 個（共 88 個，85%）、VEGF-A 有 26 個（共 42 個，62%）保留結合能力，抗體片段重設計亦有約三分之二保留結合。",
+    "reportingContext": "蛋白質設計本來是專門模型的地盤：由結構預測到從頭設計，過去幾年一直由 AlphaFold、RFdiffusion 這類為生物而設的系統主導。今次的看點不在於 GPT-6.2 擊敗了專門模型——OpenAI 自己承認，在計算評估上其三維設計得分略低於 RFdiffusion，結構預測仍是明顯弱項——而在於通用模型第一次用同一套推理與寫程式的能力，跨界做到專家系統的工作，而且拿得出實驗室數據。結果要小心解讀：預印本未經同行評議，命中率受篩選嚴格程度影響極大，而「結合」不等於「有效藥物」，親和力、毒性與體內表現全部未驗證。同一日 DeepMind 亦公布 Gemini 4 代理團隊改良量子演算法，兩單新聞合起來指向同一趨勢：通用模型正由問答工具，變成可以交出可驗證科學成果的研究助手。另一點值得留意的是發表方式：OpenAI 選擇同步公開預印本全文與方法細節，而非只發一篇新聞稿，意味著研究願意接受學界的公開檢驗。諾華行政總裁近日亦預測，AI 可以將藥物開發時間縮短四年，雖然他同時質疑十年內治癒癌症之類的預測過於樂觀。蛋白質設計的評估標準正在轉變：過去看計算分數，今日要看實驗室結果。對讀者而言，解讀這類新聞的新準則是：有無濕實驗室數據、有無承認局限、有無公開方法——三者齊備，方可認真看待。",
+    "deepDive": "這項研究的真正意義分四層。第一是方法論的轉變：蛋白質設計長期被視為要「專門模型做專門事」的領域，今次 OpenAI 證明通用推理模型加程式碼工具，可以處理結構設計、序列生成以至性質排序等多個環節。模型不是靠背誦生物知識，而是用推理去「諗」一個形狀應該點摺、點樣先至啱位——這正是通用模型與專門模型的分界開始模糊的證據。第二是數字的誠實讀法：10.9% 的命中率看似偏低，但要放在正確的比較框架下看。迷你結合蛋白由零設計，難度遠高於改良現成結構；而在序列重設計任務上，MDM2 高達 85% 的保留率，說明模型在「執靚現成設計」上已經相當可靠。分靶點的差異亦值得留意：IL-17A 有 18 個命中，TrkA 只有 1 個，顯示模型能力並非均勻分布，靶點難度與數據多寡都會影響結果。第三是驗證鏈的完整性：計算評估、濕實驗室測試、公開預印本三層俱備，而且 OpenAI 沒有隱藏局限——論文明言部分實驗仍需專門模型協助序列生成與篩選，未做到完全端到端。這種自我設限的寫法，反而令結果更可信。第四是雙重用途的陰影：通用模型識得設計結合蛋白，本身就是生物安全治理的議題。結合不等於武器，但設計能力一旦商品化，審查與管控的討論必然跟上。OpenAI 選擇先發表預印本、公開方法與局限，是把這場討論擺上枱面的做法。對科研界而言，真正的考驗在下一步：獨立實驗室能否重現結果，以及模型能否由「識得設計」進步到「識得設計得好而且穩定」。第五個層次是經濟學：專門生物模型需要大量領域數據與訓練成本，每做一個新任務就要重新訓練；通用模型把成本攤分到所有任務上，邊際成本極低。這正是通用模型跨界的最大誘因——一旦證明可行，專門模型的生存空間就會被壓縮到最深的專業角落。但通用模型的弱點同樣明顯：結構預測仍是弱項，部分實驗仍需專門模型協助，說明「通用」今日仍是「通用加專門輔助」，而非完全取代。長遠看，藥物發現的整條流水線——由靶點發現、分子設計到臨床前測試——通用模型可能逐環滲透，每滲透一環，相關環節的成本結構與人才需求都會改變。最後是監管層面：通用模型識得設計生物分子，生物安全框架必須跟上。美國已在討論對 DNA 合成與生物設計工具的篩查要求，今次發表很可能加速這場討論。對香港的生科政策制定者，問題已經唔係「要唔要管」，而係「點樣管到既唔窒礙研究、又守得住安全線」。",
+    "whyImportant": "藥物發現最昂貴的環節是早期：由靶點到候選分子的篩選，往往要燒幾年時間與大量實驗成本。通用模型一旦能夠可靠地參與蛋白質設計，門檻會大幅降低——不只大藥廠受惠，大學實驗室與小型生科公司亦可以用 API 級工具參與以往只有專門團隊才做到的工作。對香港尤其切身：本地大學與科學園的生科生態正在擴張，通用模型帶來的設計能力，可能比任何一項資助更直接改變研究節奏。但同一時間，生物安全審查亦要升級：當設計蛋白質變得人人可及，實驗室安全、出口管制與發表規範都要重新校準。對本地大學的科研資助申請亦有即時影響：評審將越來越期望研究計劃善用通用模型工具，而非由零自建。生科課程亦要加入 AI 工具訓練，否則畢業生入行即落後。",
+    "hkImpact": [
+      "本地大學與生科初創：通用模型降低蛋白質設計門檻，研究團隊可評估以 API 工具輔助早期藥物發現，但要為實驗驗證預留預算與時間。",
+      "科學園與創投：蛋白質設計由專門技術變成通用能力，相關初創的技術壁壘評估要重寫，盡職審查應加入模型依賴與重現性問題。",
+      "醫療與監管從業者：通用模型設計生物分子的雙重用途風險，將成為生物安全與出口管制討論的新題目，值得追蹤國際指引變化。"
+    ],
+    "whatToWatch": "預印本的同行評議與獨立實驗室重現結果、OpenAI 會否把蛋白質設計能力開放為正式工具或 API、模型在更多靶點與更嚴格篩選下的命中率、生物安全社群對通用模型設計能力的政策回應，以及藥廠會否公布基於這類方法的合作項目。Onava 會否公布更多靶點的測試結果、其他實驗室的重現嘗試、OpenAI 會否把蛋白質設計能力開放為正式工具或 API，以及美國生物安全政策會否因通用模型的設計能力而收緊。同時留意 GPT-6.2 後續版本會否改善結構預測這個已知弱項，以及學界會否建立通用模型生物設計能力的統一評估基準。",
+    "take": "AIson 判斷：10.9% 不是一個漂亮的數字，但它是一個誠實的起點——通用模型第一次在濕實驗室證明自己識得設計蛋白質，這一步的分量，遠大於命中率本身。",
+    "actionVerdict": "watch",
+    "actionReason": "實驗室結合只是第一步，成藥仍遠；宜追蹤獨立驗證與工具開放，而非即時押注。",
+    "aisonScore": 9.2,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": [
+      "OpenAI",
+      "GPT-6",
+      "蛋白質設計",
+      "生物科技",
+      "Onava"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-anthropic-claude-install-as-app",
+    "rank": 2,
+    "featured": true,
+    "title": "Claude 生出來的工具可以直接裝成桌面 App：Anthropic「Install as app」上線，最高權限可讀寫刪檔案",
+    "excerpt": "Anthropic 11 月 24 日推出「Install as app」測試版，Claude 生成的 artifact 可以一鍵裝成 Mac 與 Windows 桌面程式，自帶圖示與視窗；三級權限中最高一級可執行程式、讀寫及刪除檔案，而且 Anthropic 事前不會審查。",
+    "category": "AI 產品與平台",
+    "readTime": "8 分鐘",
+    "sourceUrl": "https://www.macrumors.com/2026/11/25/claude-install-artifacts-desktop-apps/",
+    "sourceLabel": "MacRumors",
+    "sourceType": "科技媒體報道",
+    "references": [
+      {
+        "label": "MacRumors｜Claude Now Lets You Install Artifacts as Desktop Apps",
+        "url": "https://www.macrumors.com/2026/11/25/claude-install-artifacts-desktop-apps/"
+      },
+      {
+        "label": "eWeek｜Claude Artifacts Can Now Become Mac and Windows Desktop Apps",
+        "url": "https://www.eweek.com/news/claude-artifacts-install-as-app-mac-windows/"
+      }
+    ],
+    "quickTake": "AI 寫 App 的最後一哩路消失了：由「喺對話框入面玩下」變成「喺你部電腦入面長期駐守」——方便與風險同一個開關。",
+    "summary": "Anthropic 11 月 24 日起向所有 Claude 計劃（包括免費版）推出「Install as app」測試版。用戶在 Claude 桌面版建立或打開一個 artifact，經分享選單一點即可安裝成 Mac 或 Windows 的獨立應用程式，自帶圖示與視窗，毋須打包、簽署或另外申請 API 金鑰。安裝後的 App 仍需連網與登入 Claude 帳戶，改動 artifact 會自動同步到 App。",
+    "whatHappened": "功能於 11 月 24 日開始推出，列入 Anthropic 同日的版本更新紀錄。用戶需將 Mac 或 Windows 版 Claude 更新至 6.28899.0 或更新版本，然後打開任何合資格的 artifact，在標題選單、右鍵選單或分享選單選擇「Install as app」。安裝後的程式會在 Mac 的 Claude Apps 資料夾或 Windows 的開始選單出現，有獨立圖示與視窗，毋須用戶自行打包或簽署程式碼。Anthropic 設三級權限：預設權限只限瀏覽器能力範圍；App 權限可要求發送通知、使用全域鍵盤快捷鍵、置頂浮動視窗（涉及追蹤滑鼠游標位置）；最高一級「完整電腦存取」可執行程式、讀取、修改及刪除檔案，毋須每次逐項確認。Anthropic 明言不會在安裝前審查這些 App。功能不支援 Linux、網頁與手機；Claude Docs、Slides、Sheets、舊版 artifact 與即時 Cowork artifact 暫時不能安裝；具 HIPAA 配置的機構與混合部署不適用，企業版用戶需管理員手動開啟。",
+    "reportingContext": "這是 Anthropic 由聊天助手轉型為「軟件工廠」的關鍵一步。過去一年，Claude 的 artifact 只能活在對話框旁邊的面板入面，是一個展示品；今日起它可以變成常駐工具，直接與 OpenAI 的 Codex、Google 的 Antigravity 等代理編程產品競爭「幫你生出可用軟件」的市場。值得留意的是 Anthropic 的取捨：它選擇了最開放的路線——唔審查、唔簽署、權限由用戶逐個 App 決定，把安全責任交給用戶與企業 IT。同一批更新亦包括每月回顧功能脫離測試版、與已連接 App 互傳檔案，以及電腦操作功能已於 11 月 20 日進入 Team 與 Enterprise 測試版，顯示 Anthropic 正系統性地把 Claude 由雲端推向桌面。與傳統低代碼平台相比，Install as app 的門檻更低：Power Apps 或 Retool 仍要用戶理解數據結構與流程，Claude 只需要一句說話。Anthropic 選擇向免費版全面開放，商業意圖明顯：先用免費工具擴大用戶基礎，再以用量限額推動升級。與 Apple App Store 的審查模式對比亦值得留意：蘋果以審查換取信任，Anthropic 以開放換取速度，兩種模式的勝負，將由首批安全事故的嚴重程度決定。企業版用戶現階段需要管理員手動開啟，顯示 Anthropic 亦意識到企業 IT 未必準備好迎接員工自攜 AI 工具的浪潮。",
+    "deepDive": "這次更新值得由五個層次拆解。第一是產品邏輯的質變：artifact 由一次性的展示品，變成可以長期使用的工具。Claude 的價值主張由「答得好」變成「留得低」——用戶生出來的計時器、檔案整理器、系統監控工具，可以由對話紀錄入面走出嚟，變成每日打開的程式。這是 Anthropic 留存策略的核心一著。第二是權限設計的取捨：三級制表面上是把關，但最高一級等於把整部電腦的鑰匙交給一段由 AI 生成、未經任何人審查的程式碼。Anthropic 明言唔審查，意味安全責任完全外判——個人用戶要自己判斷每一個 App 可不可信，企業 IT 則要面對員工一鍵安裝未經審查程式的新現實。第三是與電腦操作功能的合流：Claude 已經識得睇畫面、操作桌面程式，Install as app 再令代理可以常駐桌面，兩者合起來就是一個「識睇、識郁、識留低」的常駐代理，能力邊界比任何一個單獨功能都大。第四是商業模式：安裝與使用會計入計劃用量，免費版都用到，擴大漏斗之餘亦把用量壓力轉化為升級誘因。第五是風險面：artifact 的來源是對話內容，惡意提示、被污染的指示、或者純粹寫錯的程式碼，都可能藉著「完整電腦存取」造成實質損害。企業的影子 IT 問題亦會升級：以往員工要裝軟件至少要經過下載與安裝兩個關口，今日一句說話加一點就可以完成。第六個層次是軟件分發模式的改變：軟件由「買回來、裝上去」變成「講出來、生出來」。對獨立開發者，這是直接衝擊：計時器、檔案整理、簡單監控這類小型工具 App 的市場，可能被一句提示詞取代；開發者的價值將由「寫得出」轉向「想得到」——懂得發現值得自動化的工作流程，比懂得寫程式更重要。第七個層次是法律責任的真空：若 AI 生成的 App 誤刪檔案、誤發訊息，責任在用戶、Anthropic，還是寫出提示詞的人？現行法律未有明確答案，而 Anthropic「唔審查」的立場，等於把這個問題留給法庭日後回答。第八個層次是平台野心：把各項更新放在一起看，Anthropic 正在搭建作業系統層的拼圖——artifact 是應用、電腦操作功能是手腳、Install as app 是安裝器、連接器是數據管道。Claude 的終局不是一個聊天機械人，而是一個以對話為介面的新作業系統。這個野心的成敗，取決於用戶是否願意把電腦的鑰匙交給它。",
+    "whyImportant": "對一般用戶，這是第一次可以用一句說話生出真正屬於自己的桌面工具：檔案整理、圖片處理、系統監控，唔識寫程式都做到。對香港中小企與創作者，內部工具的成本可能由外判幾萬元變成幾句提示。但同一時間，IT 政策要即時更新：邊個可以安裝、邊個權限級別、點樣撤銷、點樣審計，都要寫清楚。個人用戶亦要建立新習慣：安裝前先問一句，這個 App 需唔需要咁大權限？預設權限已經夠用的話，就唔好畀完整存取。對香港初創與自由工作者，提示詞生工具的能力將成為基本技能：識得準確描述想要的工具，等於識得外判一個程式員。數碼素養的定義亦要更新：唔識寫程式唔再係障礙，識唔識判斷 AI 生成工具可不可信，先至係新的分水嶺。",
+    "hkImpact": [
+      "中小企與創作者：可以用一句說話生出內部小工具，減低外判成本；但應先立下安裝與權限規矩，避免員工隨意授權完整電腦存取。",
+      "企業 IT 與合規：員工一鍵安裝未經審查程式的能力，令影子 IT 風險升級，應檢視裝置管理政策與 Claude 企業版的開關設定。",
+      "開發者：AI 生成工具由對話框走向桌面分發，值得留意用戶會否接受未經簽署的 App，以及 Anthropic 會否引入審查或簽署機制。"
+    ],
+    "whatToWatch": "首批濫用或安全事故報告、企業版管理員控制會否收緊、Anthropic 會否引入審查、簽署或權限預設收緊、微軟與 Google 會否推出同類功能競賽，以及用量限額會否引起用戶反彈。首個惡意或出錯 artifact 的公開案例、Anthropic 會否推出 App 分享或商店機制、企業採購與裝置管理政策的反應，以及微軟與 Google 會否在同類功能上跟進並引入審查，以及用戶對權限提示的實際接受程度。",
+    "take": "AIson 判斷：由對話框到桌面，差的不只是安裝步驟，而是信任模型——Anthropic 把審查的責任交咗畀你，方便的代價是你自己要識得把關。",
+    "actionVerdict": "try-now",
+    "actionReason": "免費版都用到，值得即試；但先用預設權限，唔好隨便畀「完整電腦存取」。",
+    "aisonScore": 8.8,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 3,
+      "creator": 4,
+      "developer": 5
+    },
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "桌面應用程式",
+      "AI 代理",
+      "Install as app"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-meta-muse-instagram-walmart",
+    "rank": 3,
+    "featured": true,
+    "title": "Muse 殺入 Instagram 私訊兼幫手買 Walmart 黑五：代理購物由示範變成真金白銀",
+    "excerpt": "Meta 11 月 24 日把 AI 代理 Muse 帶入 Instagram 私訊，同時 Walmart 宣布顧客可以直接經 Muse 購買黑五優惠；代理唔再只係答問題，而係開始經手真實交易。",
+    "category": "AI 代理與商業",
+    "readTime": "8 分鐘",
+    "sourceUrl": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
+    "sourceLabel": "TechCrunch",
+    "sourceType": "科技媒體報道",
+    "references": [
+      {
+        "label": "TechCrunch｜Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
+        "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/"
+      },
+      {
+        "label": "Gadgets 360｜Instagram Adds Meta Muse AI Assistant to DMs",
+        "url": "https://www.gadgets360.com/ai/news/instagram-brings-meta-muse-ai-assistant-to-dms-12374666?pfrom=home-ndtvworld_world_gadgets&technology"
+      }
+    ],
+    "quickTake": "尋日先因為私隱警告上頭條，今日就殺入你個私訊匣幫手買嘢——Muse 的擴張速度，正正係監管者追趕的對象。",
+    "summary": "Meta 11 月 24 日同步推進 Muse 的兩步商業化：Muse 正式進入 Instagram 私訊，用戶可以直接在 DM 對話串與代理對話；Walmart 則宣布顧客可以經 Muse 購買黑五優惠，由代理搵貨、組購物籃到結帳。兩件事同一日發生，標誌代理由「幫你搵資料」變成「幫你完成交易」。",
+    "whatHappened": "Instagram 私訊整合於 11 月 24 日起向美國、加拿大、墨西哥、日本與新加坡的 iOS 及 Android 用戶推出。用戶可以在 DM 對話串直接問 Muse 關於帖文、地點或產品的問題、追回錯過的對話內容、將帖文分享給 Muse 要求採取行動，例如把咖啡店加入旅行行程，或者搵一對鞋的黑五優惠。Muse 亦可以整理收藏的帖文與 Reels 成為 Collections（先在美國與加拿大推出）、將食譜短片變成購物清單、將旅行帖文變成行程。與 Muse 在 Instagram 的對話，會同步成為 Muse App 內的一個側邊對話。Meta 表示，未經用戶同意，Muse 不會分享、發布或發送任何內容，用戶亦可要求它遺忘資料或還原操作。同一日，Walmart 宣布顧客可以經 Muse 購買黑五優惠：用戶在 Muse App 內登入 Walmart 帳戶，講出想買的東西，Muse 會經 Walmart 的 Agent Gateway（10 月推出）傳送要求，由 Walmart 回傳合適產品並組裝購物籃。首次加購時用戶要建立 Agent Profile 並設定消費上限，以 Walmart 帳戶已存的卡付款，價錢與 Walmart.com 一致；Walmart 表示 Muse 接觸唔到顧客的整體購買紀錄，用戶可隨時刪除 Agent Profile。",
+    "reportingContext": "這一日的新聞要連同昨日一齊讀：Muse 11 月 24 日在英國推出，同日英國監管機構就私隱與消費者保障向 Meta 發出警告；今日商業化再加速，產品擴張與監管追趕的賽跑更加明顯。代理購物的競爭亦已全面展開：OpenAI 推出 ChatGPT Wallet，Google 在六個國家免費推出 Gemini Tasks，可以代打電話與訂位；Walmart 的 Agent Gateway 計劃開放給更多開發者，Muse 只是第一個接入的代理。Meta 的增長策略亦值得留意：它正複製當年用 Instagram 流量餵大 Threads 的打法，把 Muse 植入用戶每日已經花最多時間的地方。值得一提的是，Muse 在英國的推出與購物功能暫時分開處理，英國用戶現階段得到的是購物助手定位，而非完整交易功能。據報道，Muse 在推出六周內已突破 1,000 萬用戶，增長速度是 Meta 押注代理購物的底氣。競爭格局亦已成形：OpenAI 的 ChatGPT Wallet 主打支付環節，Google 的 Gemini Tasks 主打代辦事項，Meta 則主打社交與購物場景——三家巨頭由三個不同入口進攻同一個市場：由 AI 代你完成交易。Walmart 的 Agent Gateway 計劃開放給更多開發者，意味著 Muse 只是第一個接入的代理，日後可能有更多助手可以直接在 Walmart 購物。對 Meta 而言，今次合作的真正價值不在 Walmart 一家，而在證明 Agent Gateway 這類「代理專用通道」可以運作——一旦模式跑通，零售商爭相開放通道，代理購物就會由個別合作變成行業標準。",
+    "deepDive": "這次更新值得由五個層次拆解。第一是商業模式的轉捩點：代理的價值由「慳時間」變成「經手交易」。一旦代理可以落單、付款，抽成、廣告與數據三條收入線就全部打通；平台不再只賣注意力，而是賣成交。第二是信任設計的標準答案：Agent Profile、消費上限、可隨時刪除、唔接觸整體購買紀錄——Walmart 這套組合，是平台為代理購物補信任的標準動作。但核心問題仍未有判例：代理買錯嘢、買貴咗、或者理解錯指示，責任在用戶、平台還是商戶？第三是 Instagram 場景的特殊性：私訊是用戶最私密的場景之一，Muse 可以摘要你錯過的對話、整理你的收藏，等於把社交圖譜直接變成購物漏斗。用戶對「AI 讀我文件」的接受度，遠高於「AI 讀我訊息」，Meta 選擇由購物切入，正是要用實用價值換取信任。第四是對商戶的權力轉移：以往是用戶自己搜尋、比較、決定，今日是代理代為搜尋與篩選。品牌要學識的新功課，是點樣「被代理揀中」——產品資料要機器讀得明、價錢要透明、退貨條款要清楚。第五是香港的距離：首批五國名單暫時無香港，但 Walmart 模式一旦在黑五跑通，本地零售平台跟進只是時間問題。香港中小企與其等到時先反應，不如而家開始整理產品資料結構。第六個層次是數據飛輪：代理經手的每一宗交易，都會令它更了解用戶的喜好、預算與決策模式，下一次推薦就更準確。這種飛輪一旦轉動，率先取得交易數據的平台將越來越難被追趕。第七個層次是廣告模式的轉變：Meta 過去賣的是展示與點擊，代理購物賣的是成交。一旦抽成模式成立，廣告的定價邏輯將由「有幾多人睇到」變成「有幾多人經代理買咗」。第八個層次是對小型商戶的衝擊：以往商戶靠精美圖片與文案吸引顧客，今日要學識「被代理揀中」——產品資料結構化、價錢透明、退貨政策清晰，將成為新的上架基本功。第九個層次是私隱的深層問題：Muse 可以摘要你錯過的 DM 對話，但群組對話入面的其他成員並未同意被 AI 摘要。英國監管機構今次的警告正正觸及這一點：當代理進入多人對話場景，同意的邊界應該點畫，至今未有答案。最後一個層次是地緣：五國名單包括日本與新加坡，顯示 Meta 正以亞太市場作為代理購物的試驗場；香港雖然暫不在名單，但新加坡的經驗將直接決定香港的推出時間表。",
+    "whyImportant": "香港是 Instagram 與 WhatsApp 的重度使用市場，Muse 這類跨應用代理若按 Meta 的節奏推展，遲早會來到香港帳戶。今次的擴張預演了兩個所有用戶將要面對的問題：當 AI 代理能讀你的社交與訊息、又代表你完成交易，你的同意邊界與保障在哪裡。對依賴 Meta 平台營商的香港中小企，這些規則遲早會以平台政策的形式落到商戶條款上，早一步理解，早一步適應。對一般用戶，實用建議只有一句：代理購物功能推出初期，先逐項檢查授權與消費上限，唔好畀預設值替你做決定。對香港廣告與電商行業，代理購物意味著投放邏輯要重寫：以往追逐曝光與點擊，日後要追逐「被代理推薦」。品牌由今日開始，就應該整理產品資料的結構，令機器讀得明、比價比得準。對消費者，新的數碼素養是管理代理授權：識得設定消費上限、識得撤銷授權，將成為使用 AI 代理的基本功。",
+    "hkImpact": [
+      "一般用戶：Muse 或同類代理購物功能日後在香港推出時，先設定消費上限、逐項檢查資料授權再啟用，並留意代理身份披露是否清晰。",
+      "在 Meta 平台經營的香港品牌：顧客可能經代理而非直接瀏覽專頁購物，產品資料要機器讀得明，退貨與責任條款要預先寫清楚。",
+      "本地零售與電商：Walmart 的 Agent Gateway 模式值得研究，代理購物一旦成為主流，搜尋與比價的入口將由平台轉移到代理手上。"
+    ],
+    "whatToWatch": "黑五實戰表現，包括出錯率、退貨率與顧客投訴、美國以外市場的推出時間表、英國監管會否就購物功能再出手、Amazon 會否跟進開放類似的代理購物通道，以及代理購物的抽成與收費模式會否公開。黑五之後的退貨與投訴數據、Muse 會否接入 Amazon（據報道 Meta 與 Amazon 已就此多輪談判）、歐盟會否跟進英國的監管取態，以及 Agent Gateway 模式會否擴展到更多零售商。",
+    "take": "AIson 判斷：代理之戰的決勝點已經由「識唔識答」變成「敢唔敢畀佢買」——Muse 今日買到的不只是黑五訂單，而係用戶對代理經手金錢的第一份信任。",
+    "actionVerdict": "try-now",
+    "actionReason": "功能已在五國推出，值得留意用法；香港未有，先觀察黑五實戰與監管回應。",
+    "aisonScore": 8.7,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 4,
+      "creator": 4,
+      "developer": 3
+    },
+    "tags": [
+      "Meta",
+      "Muse",
+      "Instagram",
+      "Walmart",
+      "代理購物"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-deepmind-gemini4-quantum-lean",
+    "rank": 4,
+    "title": "DeepMind 派 Gemini 4 代理團隊改寫量子演算法：成本最多慳 290 倍，每個結果都有 Lean 證明",
+    "excerpt": "Google DeepMind 與 Google Quantum AI 公布，Gemini 4 代理團隊改良多條量子演算法，聚變模擬成本降低 11.8 倍、常用算術步驟快 290 倍，而且每個結果都經過 Lean 形式化驗證。",
+    "category": "AI 科研與量子",
+    "readTime": "5 分鐘",
+    "sourceUrl": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "sourceLabel": "Google DeepMind 官方網誌",
+    "sourceType": "官方研究發布",
+    "references": [
+      {
+        "label": "Google DeepMind｜Finding faster quantum algorithms with agents and formal verification",
+        "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+      },
+      {
+        "label": "Dealroom｜DeepMind's AI agents cut quantum algorithm costs up to 290x",
+        "url": "https://dealroom.co/news/175290-deepmind-s-ai-agents-cut-quantum-algorithm-costs-up-to-290x/"
+      }
+    ],
+    "quickTake": "AI 生成的科學結果，最怕無人驗證——DeepMind 的答案是：唔信模擬，信數學證明。",
+    "summary": "Google DeepMind 與 Google Quantum AI 11 月 23 日公布，用 Gemini 4 驅動的多個代理團隊，改良了多條著名量子演算法的電路設計，全部結果均以 Lean 形式化定理證明器驗證。聚變模擬的計算成本降低 11.8 倍，常用算術步驟 arcsin 更快 290 倍。團隊已把 Lean 函式庫、問題規格與已驗證的解法在 GitHub 開源。",
+    "whatHappened": "研究團隊為每個問題派出獨立的代理團隊，各自尋找演算法改良方案；只有通過 Lean 驗證的想法，才可以寫入共享筆記本，供其他團隊參考與改進。成果包括：慣性約束聚變關鍵性質的計算成本降低 11.8 倍，所需記憶體由 5,650 個糾錯量子位元降至 4,338 個；光化學分子的量子模擬便宜 8 倍；藥物代謝關鍵酶 Cytochrome P450 的模擬成本降低 2.5 倍，記憶體由 481 個降至 333 個量子位元；Grover 搜尋演算法的特定實現快 2.57 倍；常用算術步驟 arcsin 的成本降低 290 倍。論文於 11 月 6 日上載 arXiv，11 月 9 日修訂，11 月 23 日由 DeepMind 正式公布。",
+    "reportingContext": "這項工作的真正創新不在於數字，而在於驗證方式。量子電路動輒涉及數百至數千個邏輯量子位元，既無法在傳統電腦模擬，亦無法在現有小型量子處理器上運行——傳統的「跑一次睇下得唔得」根本行不通。DeepMind 的解法是把 Lean 變成驗收標準：代理提出的每個電路，都要附上機器可檢查的正確性與成本證明，外部檢查器會重新運行每條證明，防止代理走捷徑。這與同日 OpenAI 公布的蛋白質設計形成呼應：兩邊都在回答同一個問題——AI 生成的科學結果，憑什麼令人相信？一邊用濕實驗室，另一邊用數學證明。",
+    "deepDive": "數字要冷靜讀：290 倍聽落驚人，但它屬於 arcsin 這個載入數字的算術子程序，而非整個量子模擬；聚變、光化學與藥物代謝的改進幅度在 2.5 至 11.8 倍之間，而且全部是資源估算，不是硬件實測。DeepMind 自己亦承認，即使經過這些削減，完整的科學模擬仍然超出首批糾錯量子電腦的能力範圍。真正的訊號在方法論：多代理團隊加形式化驗證，是一套可以複製到其他科學領域的工作模式。研究方向由人類指定、代理負責探索、數學負責把關，分工清晰。對量子計算行業，這亦是一個務實的提醒：硬件未到之前，演算法層面的改進仍然有巨大空間，而且改進的成果可以用證明固定下來，不會因為換一批研究員而流失。",
+    "whyImportant": "對科研界，這是「AI for Science」由示範走向工作流程的又一例證；對香港的大學與科研機構，Lean 這類形式化驗證工具值得留意——當 AI 開始參與證明與設計，可驗證性將成為科研誠信的新基建。對投資者，量子演算法的進步不等於量子電腦即將商用，兩者之間仍隔著糾錯硬件的鴻溝，估值時要分開計算。",
+    "hkImpact": [
+      "本地大學科研團隊：多代理加形式化驗證的工作模式值得參考，尤其數學、物理與電腦科學的交叉研究，可評估引入 Lean 等工具。",
+      "量子與深科技投資者：演算法成本下降是利好，但不等於硬件時間表提前，投資判斷應分開評估演算法與硬件兩條線。",
+      "AI 研究者：AI 生成結果的驗證方式正在成為核心競爭力，形式化驗證是其中一條值得投入的路線。"
+    ],
+    "whatToWatch": "開源 Lean 函式庫的社群採用情況、獨立團隊能否用同一方法改進更多演算法、量子硬件廠商對演算法進步的回應，以及形式化驗證會否擴展到 AI 生成的其他科學結果。",
+    "take": "AIson 判斷：290 倍是標題，Lean 證明才是正文——當 AI 開始做科學，可驗證比可生成更值錢。",
+    "actionVerdict": "watch",
+    "actionReason": "資源估算而非硬件實測，宜觀察開源工具的實際採用與後續驗證。",
+    "aisonScore": 8.5,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 3,
+      "creator": 2,
+      "developer": 5
+    },
+    "tags": [
+      "Google DeepMind",
+      "Gemini 4",
+      "量子計算",
+      "Lean",
+      "AI 科研"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-oregon-virginia-sue-spacexsi-grok",
+    "rank": 5,
+    "title": "弗吉尼亞與俄勒岡州政府起訴 SpaceX：Grok 被指生成未經同意性化影像，包括疑似未成年人",
+    "excerpt": "美國兩個州 11 月 23 日入稟起訴 SpaceX 旗下 AI 公司，指 Grok 的圖像功能可以將真人相片變成未經同意的裸露或性化影像，涉事影像估計數以百萬計，包括約兩萬張疑似未成年人影像。",
+    "category": "AI 法律與監管",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.channelnewsasia.com/business/virginia-oregon-sue-musks-spacex-over-grok-ais-creation-child-sexual-abuse-images-and-videos-6574851",
+    "sourceLabel": "CNA（Channel News Asia）",
+    "sourceType": "通訊社報道",
+    "references": [
+      {
+        "label": "CNA｜Virginia, Oregon sue Musk's SpaceX over Grok AI's creation of child sexual abuse images",
+        "url": "https://www.channelnewsasia.com/business/virginia-oregon-sue-musks-spacex-over-grok-ais-creation-child-sexual-abuse-images-and-videos-6574851"
+      },
+      {
+        "label": "NPR｜Virginia, Oregon sue Elon Musk's SpaceXSI over deepfake nonconsensual sexual images",
+        "url": "https://www.khsu.org/2026-11-23/virginia-oregon-sue-elon-musks-spacexsi-over-deepfake-nonconsensual-sexual-images"
+      }
+    ],
+    "quickTake": "由「AI 生成內容要管」到「州政府親自入稟」，Grok 的圖像功能終於由公關危機變成法律案件。",
+    "summary": "美國弗吉尼亞州與俄勒岡州 11 月 23 日分別入稟起訴 SpaceX 旗下 AI 公司 SpaceX Super Intelligence 及關聯實體，指其聊天機械人 Grok 的圖像生成功能，可以將真人相片變成未經同意的裸露或性化影像與短片，包括疑似未成年人的影像。兩州以消費者保障法提訴，是首宗州政府就 Grok 性化影像功能提出的訴訟。",
+    "whatHappened": "兩州的訴訟於 11 月 23 日星期一在州法院提出，指控 SpaceX Super Intelligence、X Corp 等實體違反州消費者保障法。弗吉尼亞州檢察長 Jay Jones 與俄勒岡州檢察長 Dan Rayfield 指，Grok 可以用一張現有相片，生成描繪該真人裸露、半裸或處於性化場景的影像或短片，而當事人並不知情亦未同意。訴訟指出，公司一邊對外宣傳保障措施有效，一邊讓「spicy mode」等功能容許這類生成。弗吉尼亞州的訴狀引述反數碼仇恨中心的研究，估計 Grok 在 2025 年 12 月 29 日至 2026 年 1 月 8 日期間，在 X 生成並發布約 300 萬張性化影像，包括約 20,000 張疑似描繪未成年人的影像。弗吉尼亞州要求禁制令、消費者賠償、交出不當得益，以及每宗蓄意違規最高 2,500 美元的民事罰款。SpaceX Super Intelligence 回應稱，涉及未成年人的性內容「不論真實或 AI 生成，都是可憎的」，在 X 與 Grok 均無容身之處。",
+    "reportingContext": "這是 Grok 圖像爭議由輿論走向法庭的轉捩點。此前已有十多宗個人訴訟，指 Grok 生成了當事人未成年或成年時的未經同意性化影像；多個州檢察長亦已展開調查，但弗吉尼亞與俄勒岡是首批正式提訴的州政府。訴訟的法律策略值得留意：兩州沒有以刑事罪名起訴，而是用消費者保障法，指控公司就保障措施作出失實陳述、從中獲利——這條路的舉證門檻較低，而且可以直接追討罰款與賠償。弗吉尼亞州檢察長在提訴前接受訪問時明言，州政府正在成為科技行業的監管力量，尤其在聯邦對 AI 監管相對有限的情況下。",
+    "deepDive": "這宗訴訟有三個層次值得留意。第一是產品設計責任：訴狀的核心指控不是「AI 出錯」，而是「設計選擇」——Grok 在 2025 年 12 月向所有用戶推出圖像生成與編輯功能時，其他主流 AI 開發商早已把系統設計成無法生成性化影像；SpaceX 選擇了一條不同的路，訴訟認為這個選擇本身就是問題。第二是執法模式的轉變：聯邦層面未有全面的 AI 監管，州政府正以消費者保障法填補真空。這種「州政府逐個擊破」的模式，對全美營運的 AI 公司構成持續的法律風險——每一州都可以獨立提訴，罰款按違規宗數累計。第三是平台責任的擴大：訴訟同時針對 X 平台本身，指平台在影像氾濫時未有有效處理。對所有營運生成式 AI 產品的公司，這是一個清晰訊號：保障措施不能只寫在宣傳材料上，實際效果會被逐項檢驗，而且檢驗者可能是手握傳票的州檢察長。",
+    "whyImportant": "香港雖然沒有同類州政府訴訟制度，但這宗案件確立的原則會外溢：生成式 AI 產品的保障措施是否有效，將由法庭而非宣傳稿判定。對在香港營運 AI 產品的公司，產品上線前的保障設計、未成年人保護與投訴處理機制，都要預設「會被公開檢驗」的標準。對家長與教育工作者，案件亦提醒：AI 圖像工具的濫用風險是真實且正在發生，需要具體的防範教育，而非抽象的警告。",
+    "hkImpact": [
+      "在港營運 AI 產品的公司：保障措施的有效性可能成為法律責任問題，上線前應做獨立的對抗測試，並保留測試紀錄。",
+      "家長與教育界：AI 圖像工具可將真人相片變成性化影像的風險真實存在，學校的數碼素養教育應加入具體的防範與求助指引。",
+      "法律與合規從業者：美國州政府以消費者保障法追究 AI 公司的模式，可能成為其他司法管轄區的參考，值得追蹤案件進展。"
+    ],
+    "whatToWatch": "兩州訴訟的法庭回應與審理時間表、SpaceX 會否調整 Grok 圖像功能的設計、其他州檢察長會否跟進提訴，以及聯邦層面會否因此加快 AI 安全立法。",
+    "take": "AIson 判斷：當保障措施只存在於宣傳稿，法庭就會成為下一道防線——Grok 一案的真正教訓，是產品設計選擇本身可以成為法律責任。",
+    "actionVerdict": "watch",
+    "actionReason": "訴訟剛展開，宜追蹤法庭回應與其他州會否跟進，再判斷對行業的實質影響。",
+    "aisonScore": 8.6,
+    "audienceImpact": {
+      "worker": 4,
+      "sme": 3,
+      "creator": 4,
+      "developer": 2
+    },
+    "tags": [
+      "Grok",
+      "SpaceX",
+      "訴訟",
+      "未經同意影像",
+      "AI 安全"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-xai-rent-over-build-anthropic-compute",
+    "rank": 6,
+    "title": "xAI 轉行租算力：Anthropic 每月約 31 億美元成最大客戶，佔收入一半以上",
+    "excerpt": "《紐約時報》報道，xAI 已由模型公司轉型為算力出租商，Anthropic 每月約 31 億美元的租約佔其收入一半以上；Anthropic 自己的招股文件亦披露，總承擔高達 1,205 億美元。",
+    "category": "AI 經濟與市場",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy/",
+    "sourceLabel": "The Decoder（引述《紐約時報》）",
+    "sourceType": "科技媒體報道",
+    "references": [
+      {
+        "label": "The Decoder｜Anthropic's appetite for compute is pushing xAI toward a rent-over-build strategy",
+        "url": "https://the-decoder.com/anthropics-appetite-for-compute-is-pushing-xai-toward-a-rent-over-build-strategy/"
+      },
+      {
+        "label": "FourWeekMBA｜Anthropic's SpaceX Bill Set to Reach $3.1B a Month",
+        "url": "https://fourweekmba.com/ai-anthropics-spacex-bill-set-to-reach-3-1b-a-month-up-2-5x/"
+      }
+    ],
+    "quickTake": "AI 行業最諷刺的交易：Anthropic 向最大的競爭對手租子彈，而且一租就係每月 31 億美元。",
+    "summary": "《紐約時報》11 月 23 日報道，xAI 已由模型開發商轉型為算力出租商，自 5 月起向對手出租數據中心容量；Anthropic 是其最大客戶，每月約 31 億美元的合約佔 xAI 收入一半以上。Anthropic 在 11 月 2 日修訂的招股文件亦披露，與 SpaceXAI 的算力協議總承擔高達 1,205 億美元，至 2029 年。",
+    "whatHappened": "據《紐約時報》報道，xAI 自 5 月起開始出租算力，6 月上市後盈利壓力加大，令出租業務變成收入重心。Anthropic 是最大客戶，合約價值每月約 31 億美元，佔 xAI 總收入一半以上；Google 亦以每年約 8 億美元租用同一服務。Anthropic 在 11 月 2 日向美國證交會提交的修訂招股文件（S-1/A）披露，2026 年 5 月至 10 月期間與 SpaceX.AI（前稱 X.AI）簽訂多份協議，使用輝達 GPU 算力，總承擔高達 1,205 億美元，條款延至 2029 年；全部容量預計 2026 年 12 月交付，屆時每月費用約 31 億美元。協議設有不可取消期，分別至 2027 年 1 月與 3 月，其後任何一方可提前 90 日通知取消。xAI 亦在 11 月解散了負責 Grok Imagine 圖像與短片生成器的約 60 人團隊，集中資源發展 AI 編程工具與代理產品。",
+    "reportingContext": "這宗交易要放在兩個背景下讀。第一是算力經濟學的逆轉：訓練前沿模型的成本已經高到連頂級實驗室都要向對手租用算力，Anthropic 的處境最能說明問題——它一邊要與 OpenAI、Google 競爭模型能力，一邊要向 SpaceX 支付每月數十億美元租金。第二是 xAI 的身份轉變：由「要做出最強模型的實驗室」變成「出租 GPU 的房東」，反映模型競爭的資本門檻已經高到連馬斯克的公司都要重新計算。SpaceX 第三季 AI 業務收入 75.6 億美元，大部分來自出租算力，對比去年同期 8.13 億美元，說明轉型在財務上已經見效。但代價是戰略自主：當收入一半以上來自單一客戶，而且合約可以 90 日通知取消，xAI 的收入波動風險極大。",
+    "deepDive": "這筆交易的諷刺意味值得細味。Anthropic 的算力有相當部分是向競爭對手租來的：Google 是其股東兼雲端供應商，xAI 據報每月收數十億美元租金，亞馬遜同樣既是股東又是供應商。這種「向對手買子彈」的結構在增長期是靈活性，在上市後卻是投資者眼中的利潤漏損——收入每增長一元，有多少會流回對手的口袋，將是每季財報會上被追問的問題。對 xAI 而言，轉型亦是一場賭博：出租算力的毛利遠低於自家模型成功後的回報，但勝在現金流即時可見。解散 Grok Imagine 團隊的決定，進一步確認了優先次序：消費級生成工具讓路，企業級算力與編程工具行先。長遠看，這宗交易可能預示行業分工的重組：少數公司擁有算力並出租，多數實驗室專注模型與應用，算力變成水電煤一樣的基礎設施——而掌握水電煤的人，定價權自然最大。",
+    "whyImportant": "對投資者，這宗交易揭示了模型公司的真實成本結構：Anthropic 上市後首份財報，算力合約條款將是市場最關注的數字。對香港的創科與創投圈，算力租賃模式的興起意味著初創不一定要自建算力，但同時要面對租金波動與供應商集中的風險。對企業用戶，模型供應商的財務可持續性應列入選型標準——供應商向誰租算力、租約幾時到期，都可能影響日後的定價與服務穩定性。",
+    "hkImpact": [
+      "投資者：Anthropic 首份上市後財報的算力成本披露是關鍵，評估模型公司時應將算力租約結構列入分析框架。",
+      "本地 AI 初創：算力租賃模式成熟，初創可評估租用而非自建，但要留意供應商集中與租金波動風險。",
+      "企業用戶：選用模型 API 時，應把供應商的算力來源與財務可持續性列入選型標準，保留多模型切換能力。"
+    ],
+    "whatToWatch": "Anthropic 首份上市後財報的算力成本披露、xAI 會否公布更多出租客戶、Grok 產品線在團隊解散後的走向，以及算力租賃價格會否因供求變化而波動。",
+    "take": "AIson 判斷：當連實驗室都要向對手租算力，算力就正式由競爭優勢變成行業水電煤——而收租的人，永遠比用水的人穩陣。",
+    "actionVerdict": "watch",
+    "actionReason": "租約可 90 日通知取消，收入集中度高；宜待 Anthropic 財報披露再判斷成本結構。",
+    "aisonScore": 8.4,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 4
+    },
+    "tags": [
+      "xAI",
+      "Anthropic",
+      "算力",
+      "SpaceX",
+      "AI 經濟"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-azure-apim-classic-flaw",
+    "rank": 7,
+    "title": "微軟 Azure 漏洞被用來偷客戶密鑰：APIM Classic 用戶要即時輪換所有憑證",
+    "excerpt": "微軟證實 Azure API Management Classic 的漏洞已被用來盜取客戶密鑰，挪威當局將其與能源公司遇襲連結；修補已完成，但被盜走的憑證唔會自動失效，用戶必須自行輪換。",
+    "category": "網絡安全",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+    "sourceLabel": "BleepingComputer",
+    "sourceType": "科技媒體報道",
+    "references": [
+      {
+        "label": "BleepingComputer｜Microsoft Azure flaw exploited to steal customers' API credentials",
+        "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/"
+      },
+      {
+        "label": "Network World｜Attackers exploited an Azure API Management flaw to steal secrets",
+        "url": "https://www.networkworld.com/article/4252523/attackers-exploited-an-azure-api-management-flaw-to-steal-secrets-microsoft-warns-2.html"
+      }
+    ],
+    "quickTake": "廠商修補咗個窿，但唔會幫你換鎖——被偷走的密鑰一日唔換，個門一日都係開住。",
+    "summary": "微軟向客戶發出安全通告，指 Azure API Management（APIM）Classic 版本的漏洞已被利用，盜取客戶儲存的 API 憑證。微軟 11 月 18 日發現漏洞，11 月 19 日完成服務端修補；挪威國家安全局其後將漏洞與能源公司 Equinor 及 Skagerak Energi 遇襲連結，並呼籲所有 APIM 用戶假設憑證已經外洩，立即輪換。",
+    "whatHappened": "微軟透過 Azure Service Health 安全通告（追蹤編號 MZK9-GH0）通知客戶，11 月 18 日發現 APIM Classic 的漏洞，並於 11 月 19 日部署修補。受影響的是 APIM Classic 的 Developer、Basic、Standard 與 Premium 層級；Consumption 層級與全部 APIM v2 層級不受影響。漏洞容許未經授權者，在未按微軟建議配置的 APIM Classic 執行個體上存取管理功能，進而讀取儲存的密鑰，包括 Named Values 內的密鑰、身份提供者與 OpenID Connect 提供者的客戶端密鑰、訂閱金鑰，以及呼叫直接管理 API 的權杖。微軟表示已關閉未經授權的存取路徑，並輪換了由微軟控制的金鑰與憑證，但明確警告：修補不會自動令可能已被盜取的客戶憑證失效。挪威國家安全局 11 月 20 日發布通告，指不明攻擊者主動搜掠 APIM 的權杖、密鑰與 Named Values，並將攻擊與 Equinor 及 Skagerak Energi 遇襲連結；Equinor 11 月 17 日通報部分 IT 系統遇襲，11 月 20 日表示攻擊已停止、生產正常。",
+    "reportingContext": "這次事件的特別之處，在於發現者不是微軟，而是挪威能源行業。Equinor 率先偵測到攻擊並通報當局，當局再追蹤到 APIM 漏洞，微軟其後才確認並修補——事件暴露了雲端供應鏈的偵測缺口：漏洞存在期間，客戶未必知道自己已經暴露。另一點值得留意的是資訊披露方式：微軟沒有發布公開通告與 CVE 編號，而是透過非公開的 Azure Service Health 通告通知客戶；挪威當局的公開警告，反而成為大多數人得知事件的渠道。這種「私下通知、公開靠別國當局」的做法，令不少未收到通告的用戶可能至今仍未知自己受影響。",
+    "deepDive": "事件的核心教訓只有一句：修補不等於善後。微軟的修補關閉了未經授權的存取路徑，但已經被盜走的密鑰仍然有效——攻擊者可以繼續用偷來的訂閱金鑰與權杖存取下游系統，直到客戶逐一輪換。挪威當局的建議亦反映這一點：假設所有密鑰與 Named Values 已經外洩，全部輪換，並檢查過去 30 日的日誌有無異常的密鑰讀取、政策修改或陌生訂閱。對使用 APIM 的企業，這是一次強制性的憑證盤點：要列出每一個執行個體、標記 Classic 層級、由發行方開始輪換、再更新 APIM、測試、撤銷舊密鑰。更深一層的問題是配置責任：微軟指出漏洞只影響未按建議配置的執行個體，意味著「跟足最佳實踐」本身就是一道防線——但現實是大量企業的舊執行個體多年未檢視，今次事件正好暴露了技術債的代價。對香港用戶，重點不在挪威能源公司，而在自己帳戶入面有無 Classic 層級的 APIM 執行個體。",
+    "whyImportant": "APIM 是不少企業 API 架構的門面，背後連接付款、身份驗證與內部系統；一旦密鑰外洩，攻擊者不只拿到一把鎖匙，而是拿到成串鎖匙。今次事件亦提醒，雲端漏洞的修補責任是分擔的：廠商負責關閉漏洞，客戶負責輪換憑證——後者往往被忽略，卻是真正決定損失大小的一環。",
+    "hkImpact": [
+      "使用 Azure APIM 的香港企業：即日檢查有無 Classic 層級執行個體，假設憑證已外洩並逐一輪換，同時檢查過去 30 日日誌。",
+      "金融與受監管行業：APIM 背後的密鑰可能連接付款與客戶系統，應將今次事件納入事故應變演練，檢視憑證盤點流程。",
+      "雲端架構與 DevOps 團隊：舊執行個體的配置漂移是真實風險，應定期對照廠商最佳實踐檢查，並考慮遷移至 APIM v2。"
+    ],
+    "whatToWatch": "微軟會否發布 CVE 編號或公開通告、CISA 會否將漏洞列入已知被利用漏洞目錄、其他國家或行業會否通報同類受害個案，以及受影響企業的憑證輪換完成率。",
+    "take": "AIson 判斷：雲端安全最危險的一刻，唔係漏洞被發現嗰日，而係廠商修補完、客戶以為無事嗰日——鎖匙已經被偷走，換鎖的工作無人可以代勞。",
+    "actionVerdict": "try-now",
+    "actionReason": "有 Azure APIM Classic 的話，今日就要列清單輪換憑證，唔好等。",
+    "aisonScore": 8.8,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 4,
+      "creator": 2,
+      "developer": 5
+    },
+    "tags": [
+      "Microsoft",
+      "Azure",
+      "網絡安全",
+      "API",
+      "憑證外洩"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-deepseek-15b-round-star-ipo",
+    "rank": 8,
+    "title": "DeepSeek 再融約 150 億美元、估值 860 億美元：創辦人身家估計 550 億，科創板上市在望",
+    "excerpt": "DeepSeek 完成第二輪對外融資約 1,000 億元人民幣，估值約 860 億美元，創辦人梁文鋒身家估計升至 550 億美元；公司已聘請中信證券籌備科創板上市，招股書預計年底前提交。",
+    "category": "AI 經濟與市場",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.freemalaysiatoday.com/category/business/2026/11/24/deepseek-founder-is-worth-us-55bil-after-latest-fundraising",
+    "sourceLabel": "Free Malaysia Today（引述彭博）",
+    "sourceType": "財經媒體報道",
+    "references": [
+      {
+        "label": "Free Malaysia Today｜DeepSeek founder is worth US$55bil after latest fundraising",
+        "url": "https://www.freemalaysiatoday.com/category/business/2026/11/24/deepseek-founder-is-worth-us-55bil-after-latest-fundraising"
+      },
+      {
+        "label": "Nexi Fund｜DeepSeek Closed a $15 Billion Round and Still Rations Tokens",
+        "url": "https://nexi.fund/deepseek-15b-compute-crunch/"
+      }
+    ],
+    "quickTake": "融到 150 億美元都要限流——DeepSeek 的故事說明，今日 AI 競賽的瓶頸唔係錢，而係算力。",
+    "summary": "DeepSeek 完成第二輪對外融資約 1,000 億元人民幣（約 150 億美元），投後估值約 860 億美元。據財新 11 月 20 日報道，融資已於 11 月 17 日完成工商登記變更；The Information 則報道融資額約 1,055 億元人民幣、估值約 6,155 億元人民幣。公司已聘請中信證券籌備上海科創板上市，招股書預計 2026 年底前提交。",
+    "whatHappened": "DeepSeek 的第二輪對外融資於 11 月 17 日完成工商登記變更，新投資者合夥企業杭州程彥持有營運公司約 17.265% 股權，消息於 11 月 19 日至 20 日公開。財新報道融資額約 1,000 億元人民幣、估值約 860 億美元；The Information 報道融資額約 1,055 億元人民幣（約 158 億美元）、投後估值約 6,155 億元人民幣（約 890 億美元）。公司未有官方確認具體數字。新投資者共約 31 家，包括騰訊、電池製造商寧德時代與中國移動關聯方。彭博億萬富翁指數估計，創辦人梁文鋒身家升至約 550 億美元。DeepSeek 於 9 月聘請中信證券籌備科創板上市，目標年底前啟動程序、2027 年上市。與此同時，公司自 11 月 15 日起限制長對話與部分文件讀取功能，理由是算力不足；其最新快速模型 V4.1 Flash 在截至 11 月 15 日的一周內，於 OpenRouter 平台處理 592 億個 token，全球排名第一。",
+    "reportingContext": "這輪融資的規模要放在中國 AI 資本競賽入面讀。DeepSeek 第一輪對外融資在 2026 年 6 月完成，約 500 億元人民幣、投後估值約 3,500 億元人民幣；五個月後估值升至約 860 億美元，升幅反映市場對其開源模型路線的定價。但融資數字背後有一個矛盾：公司一邊融到 150 億美元，一邊要限制用戶用量，因為算力仍然是瓶頸。報道亦指，DeepSeek 計劃以至少 16 萬張華為昇騰 950DT 芯片，在內蒙古烏蘭察布的新數據中心預訓練下一代模型 V5，最快 2026 年底開始——這將是中國 AI 行業自美國出口管制以來最具指標性的基建決定。投資者結構亦值得留意：首輪投資者無投票權並設五年鎖定期，新一輪據報沿用同一結構，意味梁文鋒以一人決策換取巨額資金。",
+    "deepDive": "DeepSeek 的融資故事有三個層次。第一是估值的可信度：860 億美元的估值建基於工商登記與媒體報道，未經任何公開市場檢驗；科創板上市的最大意義，正是為這個數字提供第一個公開定價。第二是算力瓶頸的現實：融到錢唔等於買到算力。在出口管制下，DeepSeek 能否將資金轉化為足夠的訓練與推理容量，取決於國產芯片的供應與效能，V5 在昇騰芯片上的預訓練將是第一個公開答案。第三是治理結構：創辦人以無投票權融資換取絕對控制，短期有利決策速度，長期則令外部投資者缺乏制衡。對行業而言，DeepSeek 的上市進程將成為中國 AI 資產的定價錨：招股書首次公開收入與成本結構的一刻，所有同類公司的估值都要重新校準。",
+    "whyImportant": "對香港投資者，DeepSeek 的科創板上市將是觀察中國 AI 資本市場的第一個窗口，招股書披露的收入與成本數字，比融資估值更有參考價值。對本地創科圈，DeepSeek 證明開源模型路線可以換取巨額資本，但同時示範了算力瓶頸如何制約增長——融資額再大，解決唔到芯片供應，產品都要限流。對使用 DeepSeek 模型的開發者，容量限制可能持續，宜預備多模型備援方案。",
+    "hkImpact": [
+      "投資者：科創板招股書是下一個關鍵節點，屆時首次公開 DeepSeek 的收入與成本結構，值得追蹤。",
+      "本地 AI 初創：DeepSeek 的開源路線與融資規模值得參考，但算力瓶頸的教訓同樣重要，擴張計劃應以實際容量為準。",
+      "使用 DeepSeek 模型的開發者：容量限制可能持續，應預備多模型切換方案，避免單一供應商限流影響服務。"
+    ],
+    "whatToWatch": "科創板招股書的提交時間與披露內容、V5 在昇騰芯片上的預訓練進度、用量限制會否解除，以及融資額與估值的最終確認數字。",
+    "take": "AIson 判斷：150 億美元買到的是估值，唔係算力——DeepSeek 的真正考驗不在融資桌上，而在烏蘭察布的數據中心入面。",
+    "actionVerdict": "watch",
+    "actionReason": "估值未經公開市場檢驗，宜待招股書披露收入與成本再判斷。",
+    "aisonScore": 8.3,
+    "audienceImpact": {
+      "worker": 2,
+      "sme": 4,
+      "creator": 2,
+      "developer": 3
+    },
+    "tags": [
+      "DeepSeek",
+      "融資",
+      "科創板",
+      "梁文鋒",
+      "中國 AI"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-nhs-edith-ai-breast-screening",
+    "rank": 9,
+    "title": "NHS 啟動全球最大 AI 乳癌篩查試驗：近 70 萬女性參與，AI 做放射科醫生的第二雙眼",
+    "excerpt": "英格蘭 NHS 11 月 23 日啟動全球最大 AI 輔助乳癌篩查試驗 EDITH，未來三年近 70 萬名女性參與，測試 AI 能否幫手更早發現癌症，同時減輕放射科醫生工作量。",
+    "category": "AI 醫療與健康",
+    "readTime": "3 分鐘",
+    "sourceUrl": "https://www.england.nhs.uk/2026/11/first-women-join-world-leading-ai-assisted-nhs-breast-screening-trial/",
+    "sourceLabel": "NHS England 官方公告",
+    "sourceType": "官方公告",
+    "references": [
+      {
+        "label": "NHS England｜First women join world-leading AI-assisted NHS breast screening trial",
+        "url": "https://www.england.nhs.uk/2026/11/first-women-join-world-leading-ai-assisted-nhs-breast-screening-trial/"
+      },
+      {
+        "label": "University of Cambridge｜Cambridge co-leading world's largest trial to use AI to help detect breast cancers earlier",
+        "url": "https://www.cam.ac.uk/research/news/cambridge-co-leading-worlds-largest-trial-to-use-ai-to-help-detect-breast-cancers-earlier"
+      }
+    ],
+    "quickTake": "AI 醫療最可信的進場方式：唔係取代醫生，而係做醫生的第二雙眼——而且要用 70 萬人、三年時間證明。",
+    "summary": "英格蘭 NHS 11 月 23 日啟動全球最大 AI 輔助乳癌篩查試驗 EDITH，未來三年近 70 萬名接受常規篩查的女性將參與，測試 AI 輔助工具能否改善早期癌症檢測，同時釋放專科醫生時間。試驗由英國國家健康與護理研究院資助 1,000 萬英鎊，劍橋大學醫院為首個試點，30 個試點將陸續加入。",
+    "whatHappened": "NHS 宣布，EDITH 試驗（Early Detection using Information Technology in Health）已開始邀請女性參與，首批在劍橋大學醫院展開，其後將擴展至英國 30 個篩查中心，三年內近 70 萬名女性參與。試驗中 AI 輔助讀片工具會協助臨床人員審閱常規乳房 X 光影像，尋找肉眼難以察覺的早期癌症徵兆；試驗不會改變篩查預約本身的流程，只改變影像的審閱方式，參與者可選擇退出。試驗由華威大學、劍橋大學與劍橋大學醫院 NHS 基金會主導，與 NHS England 合作，四家 AI 公司參與研究，並由 NHS England 開發的 AI 研究篩查平台支援。英國衛生大臣 Yvette Cooper 到訪 Addenbrooke's 醫院試驗團隊，稱這是全球最大的 AI 乳癌試驗。",
+    "reportingContext": "乳癌篩查是 AI 醫療最成熟的應用場景之一：多項小型研究已顯示 AI 可以提升檢測率，但一直缺乏大規模、真實臨床環境的證據。EDITH 的設計正正是要補這一課——70 萬人、30 個中心、三年時間，規模足以回答「在日常篩查入面，AI 是否安全有效」這個問題。值得留意的是試驗的保守設計：AI 只做輔助，唔會取代任何一位放射科醫生；NHS 明言，只有在證據證明安全有效的前提下，才會改變篩查流程。這種「先證明、後改變」的節奏，與消費級 AI 產品「先推出、後修補」的做法形成對比，亦是醫療 AI 應有的節奏。",
+    "deepDive": "EDITH 的真正價值在於證據等級。AI 醫療的討論長期停留在「某模型在某數據集上準確率幾高」的層次，但臨床決策需要的是另一種證據：在真實工作流程、真實病人組合、真實人力配置下，AI 能否穩定地改善結果而不增加風險。70 萬人的樣本量，令試驗有能力回答細分問題：AI 對不同年齡、不同乳房密度、不同地區的女性是否同樣有效？會否增加假陽性、令更多人接受不必要的跟進檢查？放射科醫生的工作量實際減輕幾多？這些問題的答案，將直接決定 NHS 會否把 AI 輔助讀片變成常規配置。對全球醫療系統，EDITH 的結果亦會成為參考標準——英國 NHS 的採納決定，往往會影響其他國家的政策取態。",
+    "whyImportant": "對香港，EDITH 是一個可直接參考的範本：醫管局的乳癌篩查與影像診斷同樣面對人手壓力，AI 輔助讀片的引入需要本地證據，而唔係照搬外國結果。對一般讀者，試驗傳遞一個重要訊息：AI 在醫療的正確角色是輔助而非取代，而可信的引入方式，是用大規模試驗證明，而非用宣傳口號說服。",
+    "hkImpact": [
+      "醫療界與醫管局：EDITH 的試驗設計與結果值得追蹤，作為本地引入 AI 輔助讀片的參考框架。",
+      "本地 AI 醫療初創：大規模臨床試驗是醫療 AI 產品的必經之路，商業計劃應預留試驗時間與成本。",
+      "一般市民：AI 輔助篩查的討論將越來越多，了解「輔助而非取代」的定位，有助日後理性看待相關政策。"
+    ],
+    "whatToWatch": "30 個試點的擴展進度、中期結果公布時間、AI 工具在不同人群的表現差異，以及 NHS 會否在試驗完成前擴大應用範圍。",
+    "take": "AIson 判斷：70 萬人、三年、只做輔助——EDITH 示範了 AI 醫療應有的耐心：寧願慢，也要用證據說話。",
+    "actionVerdict": "watch",
+    "actionReason": "試驗剛開始，宜追蹤中期結果與試點擴展，而非即時下結論。",
+    "aisonScore": 8.0,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 3,
+      "creator": 2,
+      "developer": 2
+    },
+    "tags": [
+      "NHS",
+      "乳癌篩查",
+      "AI 醫療",
+      "EDITH",
+      "英國"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "verified": true,
+    "freshness": "24 小時內",
+    "id": "2026-11-26-uk-fca-agentic-ai-expectations",
+    "rank": 10,
+    "title": "英國 FCA 開宗明義：會郁錢的 AI 代理就要攞牌，科技公司唔可以話自己唔係金融機構",
+    "excerpt": "英國金融行為監管局 11 月 24 日更新對代理 AI 的期望：會代客付款、借貸或做投資決定的 AI 代理，可能已屬受監管活動；責任永遠在持牌機構與高級管理人員身上，唔可以外判畀科技供應商。",
+    "category": "AI 金融監管",
+    "readTime": "4 分鐘",
+    "sourceUrl": "https://www.fca.org.uk/firms/innovation/ai-approach/agentic-ai",
+    "sourceLabel": "英國金融行為監管局（FCA）",
+    "sourceType": "監管機構公告",
+    "references": [
+      {
+        "label": "FCA｜Our approach to Agentic AI",
+        "url": "https://www.fca.org.uk/firms/innovation/ai-approach/agentic-ai"
+      },
+      {
+        "label": "Finance Magnates｜Treat AI Agents Like Human Users: UK Regulators Propose 'Zero Trust' Rules for Bots",
+        "url": "https://www.financemagnates.com/forex/regulation/treat-ai-agents-like-human-users-uk-regulators-propose-zero-trust-rules-for-bots/"
+      }
+    ],
+    "quickTake": "監管的界線終於畫清楚：代理識唔識郁錢，決定咗你係科技公司定係金融機構。",
+    "summary": "英國金融行為監管局（FCA）11 月 24 日更新對代理 AI 的期望，明確指出：當 AI 代理由提供資訊進化到代客交易、轉移資金、安排借貸或作出投資決定，相關活動可能已屬受監管範圍，機構必須取得授權；自稱科技供應商或社交平台，並不能豁免。FCA 同時強調，責任永遠在持牌機構與高級管理人員身上，不能外判給科技供應商。",
+    "whatHappened": "FCA 在 11 月 24 日更新其「代理 AI 方針」專頁，列出對有意在金融服務業開發與部署代理 AI 產品的公司、科技供應商與社交平台的期望。專頁指出，業界正由試驗走向部署，FCA 已與有意向英國消費者提供個人 AI 代理產品的公司接觸。關鍵界線在於：當 AI 超越提供資訊，開始代客交易、轉移資金、安排借貸或作出投資決定，機構必須了解哪些活動需要授權、哪些監管要求適用。FCA 明言，若認為受監管金融服務在未經授權下提供，將毫不猶豫動用干預權力。專頁亦要求 AI 供應商以清晰、相稱及一致的免責聲明，幫助消費者理解模型生成的金融資訊與建議的局限，並輔以有效的營運保障。FCA 同時宣布推出專門的代理政策衝刺（Agentic Policy Sprint），促進業界、政策制定者與科技供應商合作。此前數日，FCA、審慎監管局與英倫銀行亦聯合發布諮詢文件，建議將 AI 代理納入系統「用戶」定義，實施零信任與最小權限原則，並要求保存不可竄改的詳細操作日誌。",
+    "reportingContext": "這是英國監管機構對代理 AI 最明確的一次表態，而且時機絕非偶然：Meta 的 Muse 代理同一日在英國推出並即時收到監管警告，代理由示範走向大眾市場的速度，迫使監管者由「出事後處罰」轉向「推出即約束」。FCA 的立場建基於現有框架而非新例：消費者責任（Consumer Duty）、高級管理人員與認證制度（SM&CR）與系統治理要求早已存在，FCA 的訊息是這些要求同樣適用於 AI 代理活動。據英倫銀行與 FCA 10 月公布的第四次聯合調查，86% 的英國金融服務公司已在某種形式上使用 AI——問題已不再係用唔用 AI，而係邊個為 AI 的行為負責。",
+    "deepDive": "FCA 的文件有三個層次值得細讀。第一是監管邊界的定義：界線唔係由公司自稱什麼來決定，而係由代理實際做什麼來決定。提供資訊與代客交易之間只有一線之差，而大型語言模型的深度情境理解能力，令這條線更加模糊——一句看似中性的建議，在特定情境下可能已經構成受監管的投資建議。第二是責任的不可轉移性：持牌機構部署代理 AI 或依賴第三方供應商，合規責任永遠在機構與高級管理人員身上；高級管理人員要理解系統的自主程度、控制措施，以及壓力情境下的表現。FCA 10 月 19 日的良好與不良實踐報告發現，常見的失敗模式是管治框架在系統上線後先至補做，而非事前建立。第三是營運韌性的新要求：聯合諮詢文件建議將 AI 代理視為系統「用戶」，實施零信任原則、保存不可竄改的詳細日誌、定期進行針對提示注入等技術的紅隊測試。這些要求合起來，等於為代理 AI 建立一套與人類員工相若的管治標準——有權限、有紀錄、有問責。",
+    "whyImportant": "香港是國際金融中心，英國的取態極可能成為本地監管的參考框架。金管局與證監會日後處理同類產品時，FCA 劃出的三條線——授權邊界、責任歸屬、營運韌性——大概率會以類似形式出現。對在港營運的金融機構與金融科技公司，現在就是檢視代理 AI 部署的時候：哪些功能已經越過「提供資訊」的界線？高級管理人員是否理解系統的自主程度？日誌與控制是否足夠應付監管查詢？對一般投資者，訊息亦很實際：經 AI 代理得到的投資建議，未必享有與持牌顧問相同的保障，使用前要問清楚。",
+    "hkImpact": [
+      "金融機構與合規團隊：FCA 的三條線（授權邊界、責任歸屬、營運韌性）很可能成為本地監管的參考，應即時檢視代理 AI 部署。",
+      "金融科技初創：向金融機構銷售代理工具時，要預備回答授權、責任與日誌問題，產品設計應內置相關控制。",
+      "投資者：經 AI 代理得到的投資建議，未必享有持牌顧問的保障，使用前應確認建議的性質與投訴渠道。"
+    ],
+    "whatToWatch": "FCA 代理政策衝刺的成果、FCA、審慎監管局與英倫銀行聯合諮詢的最終指引、首宗針對未經授權代理活動的執法行動，以及香港監管機構會否發表類似立場。",
+    "take": "AIson 判斷：FCA 今次唔係立新例，而係講明舊例一樣適用——代理識郁錢嗰一刻，科技公司的外衣就著唔住。",
+    "actionVerdict": "watch",
+    "actionReason": "諮詢文件未定稿，宜追蹤最終指引與首宗執法，再判斷實質影響。",
+    "aisonScore": 8.1,
+    "audienceImpact": {
+      "worker": 3,
+      "sme": 5,
+      "creator": 2,
+      "developer": 3
+    },
+    "tags": [
+      "FCA",
+      "英國監管",
+      "AI 代理",
+      "金融科技",
+      "合規"
+    ]
+  }
+]
