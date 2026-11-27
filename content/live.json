@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-11-27-uk-agentic-pay-by-bank-live",
+    "title": "英國試驗 AI Agent 直接由銀行戶口付款：九個 Pizza、先批後付",
+    "summary": "《衛報》及《泰晤士報》報道，Papa John’s AI Agent 在 FCA Supercharged Sandbox 測試中，透過 TrueLayer Pay by Bank 與 Lloyds 銀行戶口完成九個迷你 Margherita Pizza 訂單的付款。TrueLayer CEO 稱這是英國首次 AI Agent 為真實客戶向零售商付款；客戶先確認訂單，銀行設定每宗及每月支出上限，沒有把帳戶安全資料交給 Agent。FCA 公開資料確認 TrueLayer 參與 agent-led payments 測試，但參與 Sandbox 不等於 FCA 認可產品；實際交易日期及上限金額未披露。",
+    "category": "AI Agent 與支付",
+    "publishedAt": "2026-11-27T09:53:00Z",
+    "sourceLabel": "The Guardian（引述 TrueLayer CEO）／The Times",
+    "sourceUrl": "https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer",
+    "references": [
+      {
+        "label": "The Times｜How AI made UK shopping history",
+        "url": "https://www.thetimes.com/business/entrepreneurs/article/first-ai-agent-cardless-transaction-papa-johns-fbjg25l8x"
+      },
+      {
+        "label": "FCA｜Supercharged Sandbox（參與測試背景；非對交易作認證）",
+        "url": "https://www.fca.org.uk/firms/innovation/supercharged-sandbox"
+      }
+    ],
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-27-boj-ai-financial-cybersecurity-live",
     "title": "日本央行警告 AI 加速漏洞發現與利用：金融支付基建要從設計起加固",
     "summary": "日本銀行執行董事神山和重 11 月 27 日在 IMF MCM-OAP 東京研討會演講，指出穩定幣、代幣化存款與 AI Agent 正推動金融基建轉型；Agent 將可能代表家庭、企業與金融機構發起及執行交易，與可程式化貨幣結合後，安全、互通和韌性更重要。他亦警告 AI 發現和利用漏洞的能力上升，金融機構須強化防禦。這是政策方向提醒，並非新監管規則或即時措施。",
@@ -715,18 +737,6 @@
     "publishedAt": "2026-11-13T18:13:17Z",
     "sourceLabel": "Microsoft／Business Insider",
     "sourceUrl": "https://www.businessinsider.com/microsoft-365-outage-outlook-teams-down-claude-what-we-know-2026-11",
-    "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-eu-first-leaders-ai-summit",
-    "title": "歐盟首場領袖級 AI 峰會落幕：追加資金、AI 主權與 2027 就業峰會成後續主線",
-    "summary": "歐盟首場領袖級人工智能峰會在都柏林結束。歐洲理事會公布的正式結果顯示，領袖把大規模公私營投資、AI 基建、潔淨及可負擔能源、供應鏈安全與減少關鍵依賴列為提升競爭力的重點，並指出下一份歐盟長期預算及新的 European Competitiveness Fund 將具決定性作用；今次未公布新法例、確定撥款或七座 AI gigafactory 的落實時間表。\\n\\n安全方面，領袖討論基本權利、民主程序、網絡安全、市場集中及 AI 對勞工市場的影響，並會在 2027 年 2 月 5 日再次討論 AI，把 AI 與社會影響列為 2027 社會峰會主題。對面向歐洲的香港企業，短期毋須因峰會即時改合規流程，但應留意後續預算、AI Act 執行、基建採購與就業政策會否轉成具約束力措施。",
-    "category": "AI 政策與基建",
-    "publishedAt": "2026-11-13T18:08:00Z",
-    "sourceLabel": "歐洲理事會",
-    "sourceUrl": "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/13/",
     "level": "followup",
     "verified": true,
     "active": false
