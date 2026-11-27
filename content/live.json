@@ -1,5 +1,23 @@
 [
   {
+    "id": "2026-11-27-boj-ai-financial-cybersecurity-live",
+    "title": "日本央行警告 AI 加速漏洞發現與利用：金融支付基建要從設計起加固",
+    "summary": "日本銀行執行董事神山和重 11 月 27 日在 IMF MCM-OAP 東京研討會演講，指出穩定幣、代幣化存款與 AI Agent 正推動金融基建轉型；Agent 將可能代表家庭、企業與金融機構發起及執行交易，與可程式化貨幣結合後，安全、互通和韌性更重要。他亦警告 AI 發現和利用漏洞的能力上升，金融機構須強化防禦。這是政策方向提醒，並非新監管規則或即時措施。",
+    "category": "AI 金融安全與 Agent",
+    "publishedAt": "2026-11-27T01:47:00Z",
+    "sourceLabel": "Reuters／日本銀行官方演說",
+    "sourceUrl": "https://www.reuters.com/technology/boj-calls-safeguards-against-digital-money-ai-risks-2026-11-27/",
+    "references": [
+      {
+        "label": "Bank of Japan｜Digital Money and Payments: Transitioning Toward a New Paradigm",
+        "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261127a.htm"
+      }
+    ],
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-27-boe-ai-financing-risk-live",
     "title": "英倫銀行把 AI 融資列入金融穩定風險：超大規模雲端企業潛在曝險逾 4 萬億美元",
     "summary": "英倫銀行 11 月 26 日的《金融穩定報告》警告，AI 投資的融資正由股權、投資級債券擴展至槓桿融資、私募信貸及更複雜的結構，令全球金融體系的互相依賴加深。銀行內部估算，超大規模雲端企業的債務及表外合約承諾等總潛在曝險略高於 4 萬億美元；2026 年相關企業債券發行預計超過 3,050 億美元。這不是已發生的損失或爆煲預測，而是央行首次把 AI 融資、共同雲端依賴、agent 安全與營運韌性放入同一套系統風險框架。對香港金融機構、資產管理公司及依賴單一雲端的企業而言，需穿透檢視 AI／數據中心資產的最終借款人、長約與擔保安排，並準備供應商退出和備援方案。",
@@ -20,6 +38,24 @@
     "sourceLabel": "Reuters／瑞士 BACS",
     "sourceUrl": "https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/",
     "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-27-thomson-reuters-thomson11-live",
+    "title": "Thomson Reuters 年內推 Thomson 1.1：轉用 Z.ai GLM＋Google Gemma",
+    "summary": "Thomson Reuters 11 月 26 日確認，年內推出的 Thomson 1.1 會由原本 Qwen 基礎轉向採用 Z.ai GLM 和 Google Gemma 的不同變體；公司稱早期預覽在相若或更好表現下縮短推理痕跡，Agent 任務亦減少工具呼叫。官方表示其 model-agnostic training pipeline 可讓公司按工作負載更換基礎模型；Business Insider 訪問另引述公司指已投入約 4,000 萬美元、內部模型佔 AI token 用量少於 5%。產品尚未正式發布，客戶可用性和精確模型版本未公布。",
+    "category": "AI 模型與企業應用",
+    "publishedAt": "2026-11-26T10:00:01Z",
+    "sourceLabel": "Business Insider／Thomson Reuters 官方博客",
+    "sourceUrl": "https://www.businessinsider.com/thomson-reuters-us-china-ai-cut-model-costs-2026-11",
+    "references": [
+      {
+        "label": "Thomson Reuters｜Thomson, Three Months In: What We’ve Learned, and What’s Next",
+        "url": "https://www.thomsonreuters.com/en-us/posts/innovation/thomson-three-months-in-what-weve-learned-and-whats-next/"
+      }
+    ],
+    "level": "update",
     "verified": true,
     "active": true
   },
@@ -692,30 +728,6 @@
     "sourceLabel": "歐洲理事會",
     "sourceUrl": "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/13/",
     "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-openai-chatgpt-wallet-agent-payments",
-    "title": "OpenAI 推 ChatGPT Wallet：Agent 可代付款，但每宗交易仍要生物認證",
-    "summary": "OpenAI 推出 ChatGPT Wallet，讓 AI agent 在用戶確認後代為完成網上付款。系統以 token 化方式連接合資格的 American Express、Mastercard 及 Visa 卡，agent 不會看到實際卡號；每宗交易都要由用戶覆核，並通過裝置生物認證。首階段透過「dots」向美國年滿 18 歲的 ChatGPT Pro 用戶開放，暫只支援合資格的美國發卡。\\n\\nOpenAI 表示，用戶仍直接與商戶交易，定價、履約、退貨及客戶服務由商戶負責。對香港用戶而言目前未開放，但這是 agent 從「幫你比較」走向「代你付款」的重要一步；企業應預先把付款上限、人工覆核、退款責任及審計紀錄寫入 agent 採購流程。",
-    "category": "AI Agent 與支付",
-    "publishedAt": "2026-11-13T15:43:18Z",
-    "sourceLabel": "OpenAI／Reuters",
-    "sourceUrl": "https://openai.com/index/introducing-chatgpt-wallet/",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-china-nvidia-ai-projects-3-billion",
-    "title": "Reuters 查出逾 32 億美元中國 AI 項目依賴受限 NVIDIA 晶片，供應與改造風險升溫",
-    "summary": "Reuters 審閱逾 150 份中國採購公告、投資計劃、建設合約及公司披露，識別出總值逾 230 億元人民幣（約 32 億美元）的運算項目與設備協議，涉及 NVIDIA 受出口限制的處理器，範圍由沿海科技中心延伸至地方政府項目、大學及區域算力中心。金額包括建築、電力系統等基建，並非全部是晶片支出；部分設施已營運或施工，但報道沒有證實這些受限硬件如何進入中國。\\n\\n這批項目未被指與 Megaspeed 或黃仁勳相關指控有關，亦沒有證據表明所有項目違反出口規則。實際風險在於美國收緊管制後，營運商可能面對延誤、供應中斷或改用國產晶片的昂貴重設計；香港及區內雲端、融資與設備供應商應加強最終用戶、晶片來源及替代方案審查。",
-    "category": "AI 晶片與供應鏈",
-    "publishedAt": "2026-11-13T08:31:00Z",
-    "sourceLabel": "Reuters 獨家調查",
-    "sourceUrl": "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
