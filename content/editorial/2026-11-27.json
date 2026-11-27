@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-27",
+  "dailyOneLiner": "AI 今日由「模型有幾勁」轉向「系統頂唔頂得住」：資金、用量、權限、私隱同雲端可靠性，同時變成採用 AI 的硬成本。",
+  "top3Ids": [
+    "2026-11-27-boe-ai-financing-risk",
+    "2026-11-27-openai-shared-usage-limits",
+    "2026-11-27-microsoft-artex-threat"
+  ],
+  "threeThemes": [
+    {
+      "title": "AI 基建正式進入金融穩定視野",
+      "summary": "英倫銀行把數萬億美元潛在曝險、私募信貸與共同雲端依賴連成一幅系統風險圖。",
+      "watch": "其他央行是否跟進，以及數據中心融資成本與違約數據。"
+    },
+    {
+      "title": "代理的成本與規則開始收緊",
+      "summary": "OpenAI 合併 ChatGPT/Codex 用量，Google 為 Workspace agent 設 MCP 死線與配額分層。",
+      "watch": "實際 token 額度、Scaled Tier 價格與香港 rollout。"
+    },
+    {
+      "title": "安全由單點漏洞變成機器速度",
+      "summary": "ARTEX、代理群越界與黑五網攻顯示，攻守雙方都在用 agent 提速，傳統人工反應窗口被壓縮。",
+      "watch": "行為式偵測、短期權限和自動隔離能否跟上。"
+    }
+  ],
+  "biggestChange": "央行開始把 AI 融資、前沿代理風險與共同雲端依賴視為同一個金融穩定問題；AI 已由科技板塊議題升級成系統性風險議題。",
+  "watchTomorrow": "OpenAI 會否補充 ChatGPT/Codex 精確額度；Character.AI 拍賣條件有沒有法庭新裁決；黑五實際網安事故；以及 Google Workspace MCP 的香港帳戶 rollout。",
+  "source": "scheduled-daily"
+}
+
