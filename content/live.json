@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-27-boe-ai-financing-risk-live",
+    "title": "英倫銀行把 AI 融資列入金融穩定風險：超大規模雲端企業潛在曝險逾 4 萬億美元",
+    "summary": "英倫銀行 11 月 26 日的《金融穩定報告》警告，AI 投資的融資正由股權、投資級債券擴展至槓桿融資、私募信貸及更複雜的結構，令全球金融體系的互相依賴加深。銀行內部估算，超大規模雲端企業的債務及表外合約承諾等總潛在曝險略高於 4 萬億美元；2026 年相關企業債券發行預計超過 3,050 億美元。這不是已發生的損失或爆煲預測，而是央行首次把 AI 融資、共同雲端依賴、agent 安全與營運韌性放入同一套系統風險框架。對香港金融機構、資產管理公司及依賴單一雲端的企業而言，需穿透檢視 AI／數據中心資產的最終借款人、長約與擔保安排，並準備供應商退出和備援方案。",
+    "category": "AI 融資與金融穩定",
+    "publishedAt": "2026-11-26T15:30:08Z",
+    "sourceLabel": "英倫銀行／Reuters",
+    "sourceUrl": "https://www.reuters.com/business/finance/bank-england-sees-growing-financial-risks-ai-borrowing-surges-2026-11-26/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-26-switzerland-ai-agent-cyberattacks-live",
     "title": "瑞士確認首批 AI Agent 網攻：5 宗攻擊企業及關鍵基建，代理可自主執行入侵流程",
     "summary": "Reuters 於 11 月 26 日 12:25 UTC 引述瑞士聯邦網絡安全局 BACS 表示，近日收到 5 宗使用 AI agents 攻擊瑞士企業及關鍵基礎設施營運者的個案。BACS 的正式公告確認這是瑞士首批同類已確認案例，攻擊者把多個 AI agents 串連，讓系統自行搜尋目標、掃描漏洞、取得初步存取並擷取資料；官方同時強調，今次未涉及新型漏洞或全新攻擊手法，主要變化是既有步驟被更大程度自動化。對香港企業、金融機構及關鍵服務供應商而言，防禦重點不應只放在辨認 AI 生成內容，而要縮短修補時間、限制機器帳戶權限、監察異常工具調用及建立可即時中止自動化流程的控制；目前未有證據顯示同一批攻擊已針對香港。",
@@ -48,6 +60,18 @@
     "active": true
   },
   {
+    "id": "2026-11-27-openai-gpt62-usage-billing-correction-live",
+    "title": "OpenAI 修正 GPT-6.2 用量計算：Astra 同一工作快 40% 撞限額，Sol 快 25%",
+    "summary": "OpenAI ChatGPT／Codex 工程負責人 Thibault Sottiaux 於 11 月 26 日 10:50 香港時間確認，GPT-6.2 推出時出現用量計算錯誤，令大部分用戶的 Astra 及 Sol 使用量被錯誤低估；修正後，相較上周，同一工作會令 GPT-6.2 Astra 用戶快 40% 到達方案限額，Sol 快 25%。OpenAI 表示其他模型不受影響、不會追收過往差額，並向 Go、Plus、Pro 及 Business 用戶提供一次 banked reset；其後官方已確認 reset 上線。對香港開發者、創作者與企業而言，這不是訂閱月費改動，但實際可完成工作量即時下降，應重新量度長任務、Ultrafast 及團隊共用額度的消耗，不能再按上周用量預算。",
+    "category": "OpenAI 用量與收費",
+    "publishedAt": "2026-11-26T02:50:00Z",
+    "sourceLabel": "OpenAI ChatGPT／Codex 工程負責人／Business Insider",
+    "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-24-nvidia-jensen-huang-reinstated-ceo-live",
     "title": "NVIDIA 董事會推翻上周決定，黃仁勳即時復任 CEO 並續查國安及出口合規",
     "summary": "NVIDIA 於 11 月 23 日正式宣布，董事會一致通過黃仁勳即時復任總裁、行政總裁及董事；董事會表示，經多輪會面並取得美國政府高層意見後，認為其復任不構成國家安全風險。Reuters 於同日 13:59 UTC 報道，這推翻了董事會上周不會重新聘用黃仁勳的決定。針對外國情報活動及晶片合規的獨立調查仍會繼續，公司亦成立由獨立董事組成的國家安全與出口管制委員會，並開始招聘向董事會委員會匯報的 Chief Compliance Officer。對香港投資者、晶片供應鏈、雲端及數據中心企業而言，領導層短期不確定性下降，但出口管制、最終用途審查和公司治理風險並未結束，下一步要看調查結論、正式監管文件及新合規主管安排。",
@@ -57,7 +81,7 @@
     "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-23-us-banks-tighten-ai-agent-controls-live",
@@ -69,7 +93,7 @@
     "sourceUrl": "https://www.reuters.com/legal/litigation/some-us-banks-tighten-ai-agent-controls-concern-about-models-escaping-safeguards-2026-11-23/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-23-openai-perplexity-common-limits-live",
@@ -81,7 +105,7 @@
     "sourceUrl": "https://www.reuters.com/business/openai-scientist-proposes-industry-ai-limits-tied-model-intelligence-metric-2026-11-22/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-23-us-nvidia-china-chip-compliance-answers-followup",
@@ -93,7 +117,7 @@
     "sourceUrl": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
     "level": "followup",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-23-germany-ai-targeting-lithuania-live",
@@ -105,7 +129,7 @@
     "sourceUrl": "https://www.reuters.com/business/aerospace-defense/german-army-starts-testing-kamikaze-drones-ai-targeting-tool-lithuania-2026-11-22/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-21-lean-mathlib-riemann-proof-verified-live",
@@ -692,30 +716,6 @@
     "sourceLabel": "Reuters 獨家調查",
     "sourceUrl": "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-singapore-fifth-person-ai-server-fraud",
-    "title": "新加坡 AI 伺服器案再控一人兩公司，涉 917 部伺服器與 41 宗交易",
-    "summary": "新加坡警方表示，第五名被告 Shi Bingzhe 及其兩間相關公司 Superphi、NJ Global 已就洗黑錢罪名被起訴。當局指兩公司在 2024 年 5 月至 2025 年 2 月、共 41 宗交易中向 Aperia International 購入 917 部伺服器，控方指被告有合理理由相信這些伺服器涉及 Aperia 以虛假陳述取得的犯罪得益；這是控罪及指控，案件尚未判決。\\n\\nReuters 指相關伺服器可能包含 NVIDIA AI 晶片，美國亦限制高階晶片輸往中國，但本輪起訴本身未證實晶片最終流向。案件目前累計五人及六間公司被控，反映區內硬件採購的最終用戶陳述、轉售紀錄與資金來源正成為刑事執法重點；香港供應商應保存可追溯文件並獨立核實買家用途。",
-    "category": "AI 晶片與執法",
-    "publishedAt": "2026-11-13T04:25:57Z",
-    "sourceLabel": "Reuters／新加坡警方",
-    "sourceUrl": "https://www.reuters.com/legal/government/singapore-charges-fifth-person-ai-server-fraud-case-2026-11-13/",
-    "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-malaysia-speedmatrix-ai-chip-reexport-probe",
-    "title": "馬來西亞調查 SpeedMatrix AI 晶片有否再出口，亞洲數據中心合規升級",
-    "summary": "馬來西亞投資、貿易及工業部表示，正聯同海關調查 SpeedMatrix 帶入當地的伺服器及 AI 晶片有否再出口，以及任何轉運是否符合馬來西亞法律。SpeedMatrix 是新加坡雲端公司 Megaspeed 的馬來西亞單位；當局強調過往設施視察只是常規監察，並非已為公司「清白」。目前是調查，未有證據或裁決證實違法。\\n\\n馬來西亞規定，美國來源高效能 AI 晶片如要再出口、轉運或過境須先取得許可，向海關提供虛假資料亦屬違法；當局正與新加坡及美國合作，並考慮進一步加強管制。對香港雲端、數據中心及硬件供應商而言，晶片來源、最終用戶與跨境流向紀錄將更重要。",
-    "category": "AI 晶片與合規",
-    "publishedAt": "2026-11-13T03:23:59Z",
-    "sourceLabel": "Reuters（引述馬來西亞貿易部）",
-    "sourceUrl": "https://www.reuters.com/world/asia-pacific/malaysia-says-it-is-investigating-if-any-chips-linked-speedmatrix-were-re-2026-11-13/",
-    "level": "followup",
     "verified": true,
     "active": false
   }
