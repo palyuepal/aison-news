@@ -1,5 +1,23 @@
 [
   {
+    "id": "2026-11-28-nvidia-blackwell-shanghai-live",
+    "title": "Bloomberg：受限制 NVIDIA GB300 機架現身上海數據中心，貸款文件揭露硬件序號",
+    "summary": "Bloomberg 查閱 11 月提交中國監管機構的文件及上海創新銀行貸款資料，指上海兩間公司在與 Alice Huang 有關的「長三角項目」數據中心安裝 NVIDIA GB300 NVL72 機架；上海 Shuoyao 更以該硬件為抵押，取得 9,600 萬元人民幣貸款。文件列出的序號經公開保養資料辨認為由 Gigabyte 組裝的 GB300 機架，而 Blackwell 產品出口中國一向需要美國許可。現有文件證明硬件在場，但未證明由誰安排付運、是否取得許可，亦未裁定 NVIDIA、Megaspeed 或相關人士違規；美國調查仍在進行。",
+    "category": "AI 晶片與出口管制",
+    "publishedAt": "2026-11-27T11:45:00Z",
+    "sourceLabel": "Bloomberg News",
+    "sourceUrl": "https://news.bloomberglaw.com/tech-and-telecom-law/nvidia-blackwell-chips-turn-up-at-china-site-tied-to-alice-huang",
+    "references": [
+      {
+        "label": "Yahoo Finance｜Bloomberg 報道轉載",
+        "url": "https://finance.yahoo.com/technology/articles/nvidia-blackwell-chips-turn-china-114546617.html"
+      }
+    ],
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-27-uk-agentic-pay-by-bank-live",
     "title": "英國試驗 AI Agent 直接由銀行戶口付款：九個 Pizza、先批後付",
     "summary": "《衛報》及《泰晤士報》報道，Papa John’s AI Agent 在 FCA Supercharged Sandbox 測試中，透過 TrueLayer Pay by Bank 與 Lloyds 銀行戶口完成九個迷你 Margherita Pizza 訂單的付款。TrueLayer CEO 稱這是英國首次 AI Agent 為真實客戶向零售商付款；客戶先確認訂單，銀行設定每宗及每月支出上限，沒有把帳戶安全資料交給 Agent。FCA 公開資料確認 TrueLayer 參與 agent-led payments 測試，但參與 Sandbox 不等於 FCA 認可產品；實際交易日期及上限金額未披露。",
@@ -59,6 +77,28 @@
     "publishedAt": "2026-11-26T12:25:17Z",
     "sourceLabel": "Reuters／瑞士 BACS",
     "sourceUrl": "https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/",
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-28-gigachat4-open-model-live",
+    "title": "Sber 開放 GigaChat 4：708B MoE 模型採 MIT 授權，原生 100 萬 token context",
+    "summary": "Sber 11 月 26 日在 AI Journey 發布 GigaChat 4，並把 708B、每次啟用 41B 參數的模型權重放上 Hugging Face，以 MIT 授權供開發者下載。官方技術報告指模型原生支援 100 萬 token context、Instant／Reasoning 模式、工具調用及 MCP；在其自家測試中，Reasoning 模式於 Terminal-Bench 2.0 得 71.26%，較上一代 30.30% 提升，但成績仍屬廠商評測，未有獨立覆核。對香港開發者而言，權重可直接取得，但 708B 部署所需硬件與成本極高，實際採用仍要評估語言表現、合規及供應鏈。",
+    "category": "AI 模型與開源",
+    "publishedAt": "2026-11-26T10:15:00Z",
+    "sourceLabel": "Sber／GigaChat 官方技術報告",
+    "sourceUrl": "https://www.sberbank.com/ru/news-and-media/press-releases/article?blockID=7&lang=ru&newsID=64476fc5-50de-4287-b772-bc5e9276a1b5&regionID=77&type=NEWS",
+    "references": [
+      {
+        "label": "GigaChat 4 Technical Report",
+        "url": "https://giga.chat/blog/en/posts/gigachat-4-tech-report"
+      },
+      {
+        "label": "Hugging Face｜GigaChat4-708B-A41B（MIT）",
+        "url": "https://huggingface.co/ai-sage/GigaChat4-708B-A41B"
+      }
+    ],
     "level": "breaking",
     "verified": true,
     "active": true
@@ -714,30 +754,6 @@
     "sourceLabel": "Reuters／Anthropic／SEC",
     "sourceUrl": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
     "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-fed-ai-financial-stability-risk",
-    "title": "美聯儲調查：87% 市場聯絡人把 AI 列為金融穩定風險，較五月 50% 急升",
-    "summary": "美國聯儲局最新《金融穩定報告》顯示，23 名銀行、券商、基金及顧問業界聯絡人之中，87% 把 AI 列為未來 12 至 18 個月可能衝擊金融體系的顯著風險，較五月調查的 50% 上升。關注包括高估值與盈利不及預期引發市場調整、AI 相關網絡攻擊，以及數據中心與算力基建的複雜融資；這是受訪者在九月至十月提出的風險看法，不是 87% 危機概率，也不代表美聯儲預測危機已發生。\n\n報告指出，科技公司、公開信貸、私募貸款及特殊目的融資工具之間的連結需要密切監察；部分大型企業雖有能力吸收損失，但實際曝險亦可能高於資產負債表顯示。對香港銀行、基金、保險及科技企業而言，應把資料中心融資、交易對手集中及 AI 估值回調納入壓力測試；下一步留意監管機構會否要求更多披露、風險集中度管理或資本緩衝。",
-    "category": "AI 金融與風險",
-    "publishedAt": "2026-11-13T21:02:00Z",
-    "sourceLabel": "美國聯儲局／Reuters",
-    "sourceUrl": "https://www.federalreserve.gov/publications/financial-stability-report.htm",
-    "level": "breaking",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-microsoft-365-global-outage-ai-connectors",
-    "title": "Microsoft 指 365 全球故障源於網絡容量升級問題，已處理根因但仍在復原",
-    "summary": "Microsoft 就持續超過 22 小時、影響 Outlook、Teams、Copilot 及多項 Microsoft 365 服務的全球故障致歉，並首次交代事故由較早前網絡容量升級中的問題引起，其後一次網絡變更令問題浮現。公司表示事件屬技術故障，與網攻或 AI agents 無關；根本問題已處理，但截至最新更新仍在恢復餘下客戶及地區，未公布全面復原時間。\\n\\n香港企業不應把「已處理根因」當成所有服務已正常：應繼續保留獨立通訊渠道、核對延遲電郵與重跑失敗工作，並待 Microsoft、OpenAI 及 Anthropic 狀態頁確認相關連接器穩定後，才恢復依賴 Microsoft 365 的關鍵 AI 自動化。",
-    "category": "雲端服務與 AI 工具",
-    "publishedAt": "2026-11-13T18:13:17Z",
-    "sourceLabel": "Microsoft／Business Insider",
-    "sourceUrl": "https://www.businessinsider.com/microsoft-365-outage-outlook-teams-down-claude-what-we-know-2026-11",
-    "level": "followup",
     "verified": true,
     "active": false
   }
