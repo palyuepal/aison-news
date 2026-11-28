@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-28",
+  "dailyOneLiner": "AI 今日真正的競爭不只在模型：監管要可執法、晶片要可取得、記憶體要分層，而企業要能證明系統安全可靠。",
+  "top3Ids": [
+    "2026-11-28-japan-ai-law-penalties",
+    "2026-11-28-singapore-high-end-chip-access",
+    "2026-11-28-kioxia-nvidia-scada-ssd"
+  ],
+  "threeThemes": [
+    {"title": "亞洲 AI 規則開始硬化", "summary": "日本擬把高階 AI 供應商由原則式指引帶入可調查、可要求防護及可能處罰的制度。", "watch": "正式法案的適用門檻、域外效力及事故通報要求。"},
+    {"title": "算力取得變成政府與供應鏈問題", "summary": "星加坡與美國磋商可信高階晶片存取，加拿大以 7 億加元擴算力補貼，英國則量化長期需求。", "watch": "出口許可、區域雲端容量與主權算力政策的實際成本。"},
+    {"title": "AI 基建由 GPU 走向完整系統", "summary": "Kioxia 與 NVIDIA 測試 SSD 擴展 GPU 記憶體，Anthropic 用可驗證遷移降低 API 資源消耗。", "watch": "PoC 商用效能、分層記憶體價格及 AI 生成程式的驗證方法。"}
+  ],
+  "biggestChange": "日本修法綱要顯示亞洲 AI 監管正由鼓勵創新與自願指引，轉向要求高階模型供應商交代安全措施並承擔可執行責任。",
+  "watchTomorrow": "日本 AI 法正式文本、星美晶片磋商與供應商通知、Kioxia／NVIDIA 商用路線，以及 SAP 是否公布受影響系統與客戶行動指引。",
+  "source": "scheduled-daily"
+}
