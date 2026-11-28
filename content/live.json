@@ -80,6 +80,28 @@
     "active": true
   },
   {
+    "id": "2026-11-28-singapore-high-end-chip-access-live",
+    "title": "星加坡與美國磋商保留高階 AI 晶片存取：政府稱 NVIDIA 停運傳聞未獲確認",
+    "summary": "星加坡副總理兼能源及貿工部長（貿易）顏金勇 11 月 27 日在 Asia Future Summit 表示，政府正接觸企業評估美國新晶片規則的實際影響，並會與美國處理安全疑慮，爭取星加坡企業繼續安全取得高階晶片及算力。他同時明言，政府尚未確認 NVIDIA 已停止向包括星加坡在內的東南亞市場付運，並正檢視監察及執法流程，避免當地成為非法晶片交易渠道。這是政府磋商及影響評估的實質進展，不代表出貨已恢復或豁免已獲批；香港及區內企業應向雲端和硬件供應商核對實際區域、許可狀態與替代容量。",
+    "category": "AI 晶片與供應鏈",
+    "publishedAt": "2026-11-27T01:51:00Z",
+    "sourceLabel": "星加坡能源及貿工部／CNA",
+    "sourceUrl": "https://www.meti.gov.sg/newsroom/transcript-of-dialogue-by-dpm-gan-at-the-sph-asia-future-summit-2026/",
+    "references": [
+      {
+        "label": "CNA｜No confirmation Nvidia halted shipments",
+        "url": "https://www.channelnewsasia.com/singapore/economic-nationalism-asean-partnership-nvidia-chips-dpm-gan-6585321"
+      },
+      {
+        "label": "Reuters｜NVIDIA 據報暫停四個東南亞市場伺服器付運",
+        "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/"
+      }
+    ],
+    "level": "update",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-27-boj-ai-financial-cybersecurity-live",
     "title": "日本央行警告 AI 加速漏洞發現與利用：金融支付基建要從設計起加固",
     "summary": "日本銀行執行董事神山和重 11 月 27 日在 IMF MCM-OAP 東京研討會演講，指出穩定幣、代幣化存款與 AI Agent 正推動金融基建轉型；Agent 將可能代表家庭、企業與金融機構發起及執行交易，與可程式化貨幣結合後，安全、互通和韌性更重要。他亦警告 AI 發現和利用漏洞的能力上升，金融機構須強化防禦。這是政策方向提醒，並非新監管規則或即時措施。",
@@ -757,18 +779,6 @@
     "publishedAt": "2026-11-14T09:11:59Z",
     "sourceLabel": "Microsoft／AP",
     "sourceUrl": "https://apnews.com/article/ca395c0f1e51af784b6d70afb6554f6a",
-    "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-15-us-nvidia-chip-export-pressure-trump-xi",
-    "title": "NVIDIA 風波推高美國對華晶片限制壓力，議員要求即時暫停先進 AI 晶片出口",
-    "summary": "美聯社報道，在特朗普下周訪華並與習近平會面前，美國國會兩黨議員正藉 NVIDIA 管理層風波要求收緊對華科技出口；多名民主黨議員已要求商務部即時暫停先進 AI 晶片出口。參議院國防政策法案版本亦包括讓國會審查對華晶片許可、授權追蹤晶片去向，以及要求盟友配合出口限制等條文。\n\n相關措施尚未全部成為生效政策，特朗普政府亦未表示會在會面中直接提出 NVIDIA 事件。北京否認相關間諜指控，反對以事件作為新增科技限制的理由。對香港企業而言，這是出口管制政治風險的實質升級訊號，但採購與合規決策仍應以最終法例、商務部規則和實際許可為準。",
-    "category": "AI 晶片與中美政策",
-    "publishedAt": "2026-11-14T05:17:45Z",
-    "sourceLabel": "Associated Press",
-    "sourceUrl": "https://apnews.com/article/nvidia-trump-xi-huang-ai-rivalry-aba7f92a1ec2f0f9e4b4da206d640d61",
     "level": "followup",
     "verified": true,
     "active": false
