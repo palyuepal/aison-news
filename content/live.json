@@ -1,5 +1,45 @@
 [
   {
+    "id": "2026-11-28-openai-apple-trade-secrets-counterclaim-live",
+    "title": "OpenAI 反告 Apple 竊取商業機密兼阻撓硬件供應：雙方爭奪未來 AI 裝置控制權",
+    "summary": "OpenAI 11 月 27 日向加州聯邦法院提出反申索，指控 Apple 透過重新聘用一名前 OpenAI 員工取得新裝置及產品路線圖的機密資料，並向硬件供應商施壓，阻止其與 OpenAI 合作。Apple 否認利用該員工取得 OpenAI 機密，也否認壓制 AI 裝置競爭，並稱反申索是轉移其原先控告 OpenAI 挖角及盜用 Apple 商業機密的焦點。現階段兩邊說法均屬訴訟主張，法院尚未裁定任何一方違法；事件顯示 OpenAI 的消費硬件計劃正與 Apple 形成直接競爭，但未有新產品日期或香港上市安排。",
+    "category": "AI 硬件與商業訴訟",
+    "publishedAt": "2026-11-27T18:28:36Z",
+    "sourceLabel": "Reuters／OpenAI 訴訟文件",
+    "sourceUrl": "https://www.reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/",
+    "references": [
+      {
+        "label": "OpenAI｜Apple is getting this wrong（案件文件與公司立場）",
+        "url": "https://openai.com/index/apple-is-getting-this-wrong/"
+      },
+      {
+        "label": "CBS News｜OpenAI countersues Apple",
+        "url": "https://www.cbsnews.com/news/openai-countersues-apple-trade-secrets-lawsuit/"
+      }
+    ],
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "2026-11-28-japan-ai-law-penalties-live",
+    "title": "日本擬修訂 AI 法：高階模型供應商須防網攻，違規可被調查及處罰",
+    "summary": "日本政府 AI 戰略小組 11 月 27 日提出修法綱要，擬要求高階 AI 服務供應商採取防止網絡攻擊的措施，並加強政府調查、指導及處罰權力；政府希望盡快定稿並提交國會。現行 AI 法以促進應用為主，執行力被指有限。現時尚未公布正式法案全文、適用門檻、罰款金額、域外效力或生效日期，因此不能把綱要當作已通過法律。對在日本提供服務或處理日本客戶資料的香港企業而言，下一步應留意事故通報、安全證據及第三方審計要求。",
+    "category": "AI 政策與監管",
+    "publishedAt": "2026-11-27T14:14:00Z",
+    "sourceLabel": "Jiji Press／Nippon.com",
+    "sourceUrl": "https://www.nippon.com/en/articles/-/58131",
+    "references": [
+      {
+        "label": "AI4Japan｜修法綱要與仍待確認細節",
+        "url": "https://ai4japan.com/en/news/japan-drafts-ai-act-amendment-requiring-frontier-ai-providers-to-take-safety-measures-and-report-incidents-with-penalties/"
+      }
+    ],
+    "level": "breaking",
+    "verified": true,
+    "active": true
+  },
+  {
     "id": "2026-11-28-nvidia-blackwell-shanghai-live",
     "title": "Bloomberg：受限制 NVIDIA GB300 機架現身上海數據中心，貸款文件揭露硬件序號",
     "summary": "Bloomberg 查閱 11 月提交中國監管機構的文件及上海創新銀行貸款資料，指上海兩間公司在與 Alice Huang 有關的「長三角項目」數據中心安裝 NVIDIA GB300 NVL72 機架；上海 Shuoyao 更以該硬件為抵押，取得 9,600 萬元人民幣貸款。文件列出的序號經公開保養資料辨認為由 Gigabyte 組裝的 GB300 機架，而 Blackwell 產品出口中國一向需要美國許可。現有文件證明硬件在場，但未證明由誰安排付運、是否取得許可，亦未裁定 NVIDIA、Megaspeed 或相關人士違規；美國調查仍在進行。",
@@ -67,7 +107,7 @@
     "sourceUrl": "https://www.reuters.com/business/finance/bank-england-sees-growing-financial-risks-ai-borrowing-surges-2026-11-26/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-26-switzerland-ai-agent-cyberattacks-live",
@@ -79,7 +119,7 @@
     "sourceUrl": "https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-28-gigachat4-open-model-live",
@@ -101,7 +141,7 @@
     ],
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-27-thomson-reuters-thomson11-live",
@@ -119,7 +159,7 @@
     ],
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-26-us-chip-curbs-china-model-delays-live",
@@ -131,7 +171,7 @@
     "sourceUrl": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
     "level": "update",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-26-minimax-zdr-url-access-live",
@@ -143,7 +183,7 @@
     "sourceUrl": "https://www.reuters.com/world/data-chinese-ai-firm-minimax-accessed-by-unidentified-parties-researcher-says-2026-11-26/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-26-nvidia-se-asia-server-shipments-halt-live",
@@ -155,7 +195,7 @@
     "sourceUrl": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-27-openai-gpt62-usage-billing-correction-live",
@@ -167,7 +207,7 @@
     "sourceUrl": "https://x.com/thsottiaux/status/2125784147889393806",
     "level": "breaking",
     "verified": true,
-    "active": true
+    "active": false
   },
   {
     "id": "2026-11-24-nvidia-jensen-huang-reinstated-ceo-live",
@@ -730,30 +770,6 @@
     "sourceLabel": "Associated Press",
     "sourceUrl": "https://apnews.com/article/nvidia-trump-xi-huang-ai-rivalry-aba7f92a1ec2f0f9e4b4da206d640d61",
     "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-14-nvidia-arm-rene-haas-ceo-search",
-    "title": "NVIDIA 接班搜尋傳接觸 Arm CEO Rene Haas，公司稱尚未正式接洽候選人",
-    "summary": "Reuters 引述《金融時報》報道，NVIDIA 董事會已接觸 Arm 行政總裁 Rene Haas，將他列為黃仁勳離任後的潛在接班人之一；Haas 曾在 NVIDIA 工作七年，2022 年起領導 Arm，並帶領公司於 2023 年在 Nasdaq 上市。不過 Reuters 未能獨立核實報道，Arm 拒絕置評，亦未有證據顯示 Haas 已獲正式聘任或接受職位。\n\nNVIDIA 董事會的正式說法是仍在挑選行政總裁搜尋顧問，尚未正式接洽任何候選人，個別人選的揣測仍屬時之尚早；財務總監 Colette Kress 繼續暫代行政總裁。對香港雲端、晶片客戶及投資者而言，這項進展反映接班搜尋已成為市場焦點，但產品路線與客戶承諾暫無官方改動；下一步應看搜尋顧問、正式候選名單、11 月 17 日業績會及最終任命。",
-    "category": "AI 晶片與企業治理",
-    "publishedAt": "2026-11-14T00:11:00Z",
-    "sourceLabel": "Reuters／NVIDIA／Financial Times",
-    "sourceUrl": "https://www.reuters.com/business/media-telecom/arms-haas-approached-by-nvidia-board-part-ceo-search-ft-reports-2026-11-13/",
-    "level": "followup",
-    "verified": true,
-    "active": false
-  },
-  {
-    "id": "2026-11-13-anthropic-ipo-roadshow-six-times-subscribed",
-    "title": "Anthropic IPO 據報獲約 6 倍認購，估值與模型優勢仍成投資者焦點",
-    "summary": "Reuters 引述熟悉路演情況的消息人士報道，Anthropic 的首次公開招股在路演首日約獲兩倍認購，到周四已增至約六倍，早期需求快過 SpaceX 同期。Anthropic 官方招股文件確認今次發售 8.25 億股、每股預期 70 至 78 美元，最高集資規模約 643.5 億美元，擬以「ANT」在 Nasdaq 上市；路演預計下周三定價，註冊聲明仍未生效。\n\n認購倍數來自匿名消息人士，Anthropic 拒絕評論，訂單亦可在定價前改變，不能視為最終成交或上市後表現保證。投資者同時質疑 Claude 能否在 Google 等對手追近下維持模型優勢，並由程式編寫擴展至更廣泛知識工作；香港投資者與 AI 企業應把高認購、估值、財務披露及產品競爭力分開判斷，下一步留意最終定價、有效註冊及首日交易。",
-    "category": "AI 商業與資本市場",
-    "publishedAt": "2026-11-13T22:03:58Z",
-    "sourceLabel": "Reuters／Anthropic／SEC",
-    "sourceUrl": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
-    "level": "breaking",
     "verified": true,
     "active": false
   }
